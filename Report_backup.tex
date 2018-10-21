@@ -1,0 +1,136 @@
+\documentclass[11pt,a4paper]{report}
+
+%------------ package pour langue fr ------
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+%------------- for embedding images----------
+\usepackage{graphicx} 
+\usepackage{float}
+\usepackage[export]{adjustbox}
+%--------- pour le style de la page ----------
+%\usepackage[top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
+\usepackage[]{geometry}
+\usepackage{setspace}
+\setstretch{1,5}
+%\usepackage{txfonts} //pour utiliser times new roman dans le document
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{Bousbiat Hafsa}
+\fancyhead[R]{Rapport Master}
+%--------------------------- Sommaire ----------------------------%
+\usepackage{hyperref}
+\usepackage{natbib}
+
+\begin{document}
+
+%Page de garde (page de titre)							Obligatoire
+
+\input{./title.tex}
+
+%Remerciements											Obligatoire
+\input{./Remerciement.tex}
+
+%Résumé												Obligatoire
+\input{./abstract.tex}
+
+%Sommaire (Table des matières)							Obligatoire
+\tableofcontents
+\newpage
+
+%Liste des figures										Selon besoin
+\listoffigures
+\addcontentsline{toc}{chapter}{\numberline{}Liste des figures}
+\cleardoublepage
+
+%Liste des tableaux										Selon besoin
+
+\listoftables
+\addcontentsline{toc}{chapter}{\numberline{}Liste des tableaux}
+\cleardoublepage
+
+%Introduction (début de la pagination)					bligatoire
+
+
+\part{Introduction} 
+
+
+%---->chapitre 01 :« cadrage du projet »
+	\chapter{ Théorie des graphes}
+	
+%---->Introduire les graphe la motivation deriere leurs utilisation pour modeliser	
+	
+	\section{Graphe non orienté}
+		\subsection{Définitions et généralités}
+		\subsection{Représentation graphique}
+		\subsection{Propriété d'un graphe} %% a revoir 
+			\subsubsection{Degré d'un graphe:} %% esk le degre de graphe ou de neoud
+			\subsubsection{Rayon d'un graphe:}
+			%%%% A revoire d'autre memoire sur Graph theory
+			
+	
+	
+	\section{Graphe orienté}
+		\subsection{Définitions et généralités}
+		\subsection{Représentation graphique}
+		\subsection{Propriété d'un graphe} %%% Arevoire 
+			\subsubsection{Degré d'un graphe:}
+			\subsubsection{Rayon d'un graphe:}
+	
+	\section{Type de graphe} %% classifier selon le type du graphe en entree
+	
+	\section{Représentation Structurelle d'un graphe}
+		\subsection{Représentation par une matrice}
+			\subsubsection{Matrice d'adjacence}
+			\subsubsection{Matrice d'incidence}
+		\subsection{Représentation par une liste}
+			\subsubsection{Liste d'adjacence}
+			\subsubsection{Liste d'incidence}
+			
+			
+	\section{Les domaines d'application}
+	
+
+%---->chapitre 02 :« »
+	\chapter{Compression de graphe}
+	
+
+
+%---->chapitre 03 :« Etude empirique »
+	\chapter{chapitre 03: etude empirique}
+
+%Conclusion Générale									Obligatoire
+\part{Conclusion} 
+
+%Références Bibliographiques (fin de la pagination)		Obligatoire
+
+%Annexes													Selon besoin
+Random citation \citep{seo2018effective} embeddeed in text.
+
+Random citation \citep{brisaboa2009k} embeddeed in text.
+
+\newpage
+\bibliography{Bibliographie}
+\bibliographystyle{apalike}
+
+\end{document}
+
+%\renewcommand{\thefigure}{\arabic{figure}}
+%\setcounter{figure}{0}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=1]{ressources/image/LAAS-2016.jpg}
+%	\label{fig:figure1}
+%	\caption{This is a teste of figure}
+	
+%\end{figure}
+
+
+
+
+
+
+
+

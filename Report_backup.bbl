@@ -1,0 +1,16 @@
+\begin{thebibliography}{}
+
+\bibitem[Brisaboa et~al., 2009]{brisaboa2009k}
+Brisaboa, N.~R., Ladra, S., and Navarro, G. (2009).
+\newblock k 2-trees for compact web graph representation.
+\newblock In {\em International Symposium on String Processing and Information
+  Retrieval}, pages 18--30. Springer.
+
+\bibitem[Seo et~al., 2018]{seo2018effective}
+Seo, H., Park, K., Han, Y., Kim, H., Umair, M., Khan, K.~U., and Lee, Y.-K.
+  (2018).
+\newblock An effective graph summarization and compression technique for a
+  large-scaled graph.
+\newblock {\em The Journal of Supercomputing}, pages 1--15.
+
+\end{thebibliography}

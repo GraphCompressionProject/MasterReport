@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{report}
+
+%------------ package pour langue fr ------
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+
+%------------- for embedding images----------
+\usepackage{graphicx} 
+\usepackage{float}
+
+%--------- pour le style de la page ----------
+%\usepackage[top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
+\usepackage[]{geometry}
+\usepackage{setspace}
+\setstretch{1,5}
+%\usepackage{txfonts} //pour utiliser times new roman dans le document
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{Bousbiat Hafsa}
+\fancyhead[R]{Rapport Master}
+
+%--------------------------- Sommaire ----------------------------%
+\usepackage{hyperref}
+
+\begin{document}
+\chapter{Graph Summarization Methods and Applications: A Survey}
+\section{Les avantages de compression de graphe:}
+
+Les avantages de la compression de graphe sont nombreux parmis eux on trouve :
+
+
+
+\subsection{Optimisation de l'espace mémoire:}
+\paragraph{
+En effet, Les techniques de compression peuvent réduire le nombre d'opérations d'E/S, réduire le volume de communication entre les clusters dans un paramètre distribué, charger le graphique récapitulatif en mémoire et faciliter l'utilisation des outils de visualisation graphique.}
+
+
+
+
+\subsection{Accélération des algorithmes de graphe et des requêtes de parcours:}
+\paragraph{
+Une panoplie d'algorithme destinée aux graphes existent mais la plupart  ne sont pas adaptés pour les traiter les grands graphes avec efficacité. La compression permet de réduire la taille du graphe en ne gardant que les informations utiles. De ce fait, le compressée peut être utilisée a la place du graphe origine et rendre ainsi la compréhension et l'analyse du graphe tres efficace en utilisant les outils et algorithmes existant.}
+
+
+
+
+
+\subsection{Analyse interactive :}
+
+\subsection{Élimination du bruit:}
+
+
+\section{Les Challenges:}
+
+La compression de graphe dépend des applications qui vont exploiter sa sortie et peut  être défini de manière différente selon son but. Généralement, les algorithmes de  compression de graphe font face a cinq (05) chalenges:
+\begin{itemize}
+\item Le grand volume de donnée
+\item La complexité des données : 
+	\begin{itemize}
+	\item Difficulté de partitionner le graphe
+	\item Hiterogeniete des nœuds et des arêtes
+	\item Les graphes inclut du bruit ou des informations manquantes
+	\end{itemize}
+\item Définition des frontière entre information utile et information non utile
+\item Évaluation dépend du domaine d'application
+\item Graphe Dynamique
+\end{itemize}
+
+
+
+\end{document}
+
+%\renewcommand{\thefigure}{\arabic{figure}}
+%\setcounter{figure}{0}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=1]{ressources/image/LAAS-2016.jpg}
+%	\label{fig:figure1}
+%	\caption{This is a teste of figure}
+	
+%\end{figure}
+
+
+
+
+
+
+
+
