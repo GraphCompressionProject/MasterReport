@@ -1,10 +1,35 @@
 \begin{thebibliography}{}
 
+\bibitem[IUT, 2012]{IUTLyonInformatique}
+ (2012).
+\newblock {\em Quelques rappels sur la th{\'e}orie des graphes}.
+\newblock IUT Lyon Informatique.
+
 \bibitem[Brisaboa et~al., 2009]{brisaboa2009k}
 Brisaboa, N.~R., Ladra, S., and Navarro, G. (2009).
 \newblock k 2-trees for compact web graph representation.
 \newblock In {\em International Symposium on String Processing and Information
   Retrieval}, pages 18--30. Springer.
+
+\bibitem[Jean-Charles~R{\'e}gin, 2016]{Pres}
+Jean-Charles~R{\'e}gin, A.~M. (2016).
+\newblock Th{\'e}orie des graphes.
+\newblock Technical report.
+
+\bibitem[M{\"u}ller, 2012]{muller}
+M{\"u}ller, D. (2012).
+\newblock {\em Introduction {\`a} la th{\'e}orie des graphes}.
+\newblock Commission romande de math{\'e}matique (CRM).
+
+\bibitem[Rigo, 2010]{bac}
+Rigo, M. (2010).
+\newblock {\em Th{\'e}orie des graphesorie des graphes}.
+\newblock Universit{\'e} de li{\`e}ge, Facult{\'e} des sciences D{\'e}partement
+  de math{\'e}matiques.
+
+\bibitem[Roux, 2014]{DUT}
+Roux, P. (2014).
+\newblock {\em Th{\'e}orie des graphes}.
 
 \bibitem[Seo et~al., 2018]{seo2018effective}
 Seo, H., Park, K., Han, Y., Kim, H., Umair, M., Khan, K.~U., and Lee, Y.-K.

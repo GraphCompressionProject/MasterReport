@@ -9,6 +9,11 @@
 \usepackage{graphicx} 
 \usepackage{float}
 \usepackage[export]{adjustbox}
+\usepackage{amsfonts,epsfig,epstopdf,titling,url,array}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
 %--------- pour le style de la page ----------
 %\usepackage[top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
 \usepackage[]{geometry}
@@ -22,8 +27,12 @@
 \fancyhead[R]{Rapport Master}
 %--------------------------- Sommaire ----------------------------%
 \usepackage{hyperref}
+\usepackage{amssymb}
 \usepackage{natbib}
-
+\theoremstyle{definition}
+		\newtheorem{defn}{Definition}[section]
+		\newtheorem{conj}{Conjecture}[section]
+		\newtheorem{exmp}{Example}[section]
 \begin{document}
 
 %Page de garde (page de titre)							Obligatoire
@@ -72,14 +81,16 @@
 			
 	
 	
-	\section{Graphe orienté}
-		\subsection{Définitions et généralités}
-		\subsection{Représentation graphique}
-		\subsection{Propriété d'un graphe} %%% Arevoire 
-			\subsubsection{Degré d'un graphe:}
-			\subsubsection{Rayon d'un graphe:}
 	
+	\input{./Chapitres/TheorieDesGraphes/GrapheOrientee.tex}
+	
+	
+			 
+			
 	\section{Type de graphe} %% classifier selon le type du graphe en entree
+		\begin{defn}
+			Here is a new definition
+		\end{defn}
 	
 	\section{Représentation Structurelle d'un graphe}
 		\subsection{Représentation par une matrice}
