@@ -1,0 +1,96 @@
+Bien que la représentation graphique soit un moyen pratique pour définir un graphe, elle n’est clairement pas adaptée ni au stockage du graphe dans une mémoire, ni à son traitement. Pour cela plusieurs structures de donnés ont été utilisés pour représenter un graphe, ces structures varient selon l’usage du graphe et la nature des traitements appliquer. Nous allons présenter dans cette partie les structures les plus utilisés.
+\\Soit un graphe G(V,E) d’ordre n et de taille m dont les sommets $\textit{v}_{1}$, $\textit{v}_{2}$,..., $\textit{v}_{n}$ et les arêtes (ou arcs) $\textit{v}_{1}$, $\textit{v}_{2}$,..., $\textit{v}_{m}$ sont ordonnés de 1 à n et de 1 à m respectivement.
+		
+		
+
+		
+			\subsection{Matrice d'adjacence}
+			
+				La matrice d’adjacence de G est une matrice booléenne 					carré d’ordre n : ${({m}_{ij})}_{(i,j) \in {[0;n]}^{2}}$,  dont les 					lignes (i) et les colons (j)  représentent les sommets de G, 			où les entrés (ij) prenent une valeur de "1" s’il existe un 				arc (une aréte dans le cas d'un graph non orienté) allant du 			sommet i au sommet j et un "0" sinon, e.i \citep{lehman2010mathematics} \citep{mathieu} \citep{IUT} :
+			\[{m}_{ij} :=
+			\left\{
+			\begin{array}{r c l}
+			1 & si & (\textit{v}_{i} , \textit{v}_{i}) \in E \\
+			0 & sinon
+			\end{array}
+			\right.
+			\]
+			\\
+			Dans le cas d’un graphe non orienté, la matrice est 						symétrique par rapport a la diagonale descendante de gauche	 			à droite . e.i. ${m}_{ij}$ = ${m}_{ji}$, dans ce cas le 						graphe peut être représenter avec  la composante 							triangulaire supérieure de la matrice d'adjacence.\\
+			\textbf{Note :} Cette représentation est valide pour le cas 					d'un graphe non orienté et orienté.\\
+			\textbf{Exemple :} La figure \ref{matriceAdjac} représente 					un exemple de matrice d'adjacence pour le graphe G ci-contre 			(figure \ref{grapAdjac}) :
+			
+\begin{figure}[!h]
+	\begin{minipage}[c]{.46\linewidth}
+	\begin{center}
+		\includegraphics[height=100 pt, width=110 pt]{./ressources/image/graphAdjace.png} 
+		\caption{Graphe orientée G}
+		\label{grapAdjac}
+	\end{center}
+	\end{minipage} 
+	\begin{minipage}[c]{.46\linewidth}
+	\begin{center}
+		\includegraphics[height=110 pt, width=140 pt]{./ressources/image/matriceAdjac.png} 
+		\caption{Matrice d'adjacence du graphe G}
+		\label{matriceAdjac}
+	\end{center}
+	\end{minipage} 
+\end{figure}
+			
+			\subsection{Matrice d'incidence}
+			La matrice d’incidence d’un graphe orienté  G est une matrice de taille $n \times m$ , dont les lignes représentent les sommets (i $\in$ V) et les colons représentent les arcs (j $\in$ E) et dont les coefficients (${m}_{ij}$) sont dans \{-1, 0, 1\}, tel que :
+			\[{m}_{ij} :=
+			\left\{
+			\begin{array}{r c l}
+			1 & si $ le sommet i est l'éxtrémité final de 					l'aréte j $ \\
+			
+			-1 & si $ le sommets i est l'éxtrémité initial de 				l'aréte j $ \\
+			0 & sinon \\
+			\end{array}
+			\right.
+			\]
+			\\
+\textbf{Exemple :} La figure \ref{matriceIncid} représente 					un exemple de matrice d'incidence pour le graphe G ci-contre 			(figure \ref{grapIncid}) :
+			
+\begin{figure}[!h]
+	\begin{minipage}[c]{.46\linewidth}
+	\begin{center}
+		\includegraphics[height=100 pt, width=110 pt]{./ressources/image/graphIncid.png} 
+		\caption{Graphe orientée G}
+		\label{grapIncid}
+	\end{center}
+	\end{minipage} 
+	\begin{minipage}[c]{.46\linewidth}
+	\begin{center}
+		\includegraphics[height=110 pt, width=140 pt]{./ressources/image/matriceIncid.png} 
+		\caption{Matrice d'incidence du graphe G}
+		\label{matriceIncid}
+	\end{center}
+	\end{minipage} 
+\end{figure}
+
+		
+		
+		\subsection{Liste d'adjacence}
+			La liste d'adjacence d'un graphe G est un tableau de n listes, où chaque entrée (i) du tableau correspond a un sommet et comporte la liste T[i] des successeurs (ou prédécesseur) de ce sommet, c'est à dire tous les sommets j tel que (i,j) $\in$ E .\\
+Dans le cas d'un graphe non orienté on aura : j $\in$ la liste T[i]  $\iff$ i $\in$ la liste T[j].
+
+\textbf{Exemple :} La figure \ref{listeAdjac} représente 					un exemple de matrice d'incidence pour le graphe G ci-contre 			(figure \ref{grapAdjac2}) :
+			
+\begin{figure}[H]
+	\begin{minipage}[c]{.46\linewidth}
+	\begin{center}
+		\includegraphics[height=100 pt, width=110 pt]{./ressources/image/graphAdjace.png} 
+		\caption{Graphe orientée G}
+		\label{grapAdjac2}
+	\end{center}
+	\end{minipage} 
+	\begin{minipage}[c]{.46\linewidth}
+	\begin{center}
+		\includegraphics[height=110 pt, width=140 pt]{./ressources/image/listeAdjace.png} 
+		\caption{Liste d'adjacence du graphe G}
+		\label{listeAdjac}
+	\end{center}
+	\end{minipage} 
+\end{figure}
+	

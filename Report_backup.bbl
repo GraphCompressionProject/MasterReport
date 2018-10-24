@@ -11,15 +11,56 @@ Brisaboa, N.~R., Ladra, S., and Navarro, G. (2009).
 \newblock In {\em International Symposium on String Processing and Information
   Retrieval}, pages 18--30. Springer.
 
+\bibitem[Fages, 2014]{fages2014exploitation}
+Fages, J.-G. (2014).
+\newblock {\em Exploitation de structures de graphe en programmation par
+  contraintes}.
+\newblock PhD thesis, Ecole des Mines de Nantes.
+
+\bibitem[Guillaume and Latapy, 2002]{guillaume2002web}
+Guillaume, J.-L. and Latapy, M. (2002).
+\newblock The web graph: an overview.
+\newblock In {\em Actes d'ALGOTEL'02 (Quatri{\`e}mes Rencontres Francophones
+  sur les aspects Algorithmiques des T{\'e}l{\'e}communications)}.
+
+\bibitem[Hennecart et~al., 2012]{hennecart2012elements}
+Hennecart, F., Bretto, A., and Faisant, A. (2012).
+\newblock El{\'e}ments de th{\'e}orie des graphes.
+
 \bibitem[Jean-Charles~R{\'e}gin, 2016]{Pres}
 Jean-Charles~R{\'e}gin, A.~M. (2016).
 \newblock Th{\'e}orie des graphes.
 \newblock Technical report.
 
+\bibitem[Koutra et~al., 2015]{koutra2015summarizing}
+Koutra, D., Kang, U., Vreeken, J., and Faloutsos, C. (2015).
+\newblock Summarizing and understanding large graphs.
+\newblock {\em Statistical Analysis and Data Mining: The ASA Data Science
+  Journal}, 8(3):183--202.
+
+\bibitem[Lehman et~al., 2010]{lehman2010mathematics}
+Lehman, E., Leighton, F.~T., and Meyer, A.~R. (2010).
+\newblock Mathematics for computer science.
+\newblock Technical report, Technical report, 2006. Lecture notes.
+
+\bibitem[Lemmouchi, 2012]{lemmouchi2012etude}
+Lemmouchi, S. (2012).
+\newblock {\em Etude de la robustesse des graphes sociaux {\'e}mergents}.
+\newblock PhD thesis, Universit{\'e} Claude Bernard-Lyon I.
+
+\bibitem[Lopez, 2003]{lopez2003cours}
+Lopez, P. (2003).
+\newblock Cours de graphes.
+
 \bibitem[M{\"u}ller, 2012]{muller}
 M{\"u}ller, D. (2012).
 \newblock {\em Introduction {\`a} la th{\'e}orie des graphes}.
 \newblock Commission romande de math{\'e}matique (CRM).
+
+\bibitem[Pellegrini et~al., 2004]{pellegrini2004protein}
+Pellegrini, M., Haynor, D., and Johnson, J.~M. (2004).
+\newblock Protein interaction networks.
+\newblock {\em Expert review of proteomics}, 1(2):239--249.
 
 \bibitem[Rigo, 2010]{bac}
 Rigo, M. (2010).
@@ -30,6 +71,10 @@ Rigo, M. (2010).
 \bibitem[Roux, 2014]{DUT}
 Roux, P. (2014).
 \newblock {\em Th{\'e}orie des graphes}.
+
+\bibitem[SABLIK, 2018]{mathieu}
+SABLIK, M. (2018).
+\newblock Graphe et langage.
 
 \bibitem[Seo et~al., 2018]{seo2018effective}
 Seo, H., Park, K., Han, Y., Kim, H., Umair, M., Khan, K.~U., and Lee, Y.-K.

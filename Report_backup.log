@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  22 OCT 2018 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  24 OCT 2018 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -129,6 +129,14 @@ Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
 \colbreak@box=\box51
 \mc@col@check@num=\count107
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip50
+\enit@outerparindent=\dimen115
+\enit@toks=\toks18
+\enit@inbox=\box52
+\enitdp@description=\count108
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -146,16 +154,16 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen115
-\Gin@req@width=\dimen116
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count108
-\float@exts=\toks18
-\float@box=\box52
-\@float@everytoks=\toks19
-\@floatcapt=\box53
+\c@float@type=\count109
+\float@exts=\toks19
+\float@box=\box53
+\@float@everytoks=\toks20
+\@floatcapt=\box54
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2018/04/08 v1.1 Adjusting TeX boxes (trim, clip, ...)
@@ -165,10 +173,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks20
-\XKV@tempa@toks=\toks21
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
 )
-\XKV@depth=\count109
+\XKV@depth=\count110
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -180,40 +188,40 @@ Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box54
+\collectedbox=\box55
 )
-\tc@llx=\dimen117
-\tc@lly=\dimen118
-\tc@urx=\dimen119
-\tc@ury=\dimen120
+\tc@llx=\dimen118
+\tc@lly=\dimen119
+\tc@urx=\dimen120
+\tc@ury=\dimen121
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2018/04/08 v2.1 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen121
-\adjbox@Height=\dimen122
-\adjbox@Depth=\dimen123
-\adjbox@Totalheight=\dimen124
-\adjbox@pwidth=\dimen125
-\adjbox@pheight=\dimen126
-\adjbox@pdepth=\dimen127
-\adjbox@ptotalheight=\dimen128
+\adjbox@Width=\dimen122
+\adjbox@Height=\dimen123
+\adjbox@Depth=\dimen124
+\adjbox@Totalheight=\dimen125
+\adjbox@pwidth=\dimen126
+\adjbox@pheight=\dimen127
+\adjbox@pdepth=\dimen128
+\adjbox@ptotalheight=\dimen129
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count110
+\c@checkoddpage=\count111
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box55
-\sift@deathcycles=\count111
-\@vwid@loff=\dimen129
-\@vwid@roff=\dimen130
+\@vwid@box=\box56
+\sift@deathcycles=\count112
+\@vwid@loff=\dimen130
+\@vwid@roff=\dimen131
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks22
+\@emptytoks=\toks23
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -221,8 +229,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen131
-\epsfysize=\dimen132
+\epsfxsize=\dimen132
+\epsfysize=\dimen133
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
@@ -285,9 +293,9 @@ e
 )))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip50
-\thanksmargin=\skip51
-\droptitle=\skip52
+\thanksmarkwidth=\skip51
+\thanksmargin=\skip52
+\droptitle=\skip53
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -295,17 +303,17 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
-\col@sep=\dimen133
-\ar@mcellbox=\box56
-\extrarowheight=\dimen134
-\NC@list=\toks23
-\extratabsurround=\skip53
-\backup@length=\skip54
-\ar@cellbox=\box57
+\col@sep=\dimen134
+\ar@mcellbox=\box57
+\extrarowheight=\dimen135
+\NC@list=\toks24
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box58
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip55
+\@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -313,51 +321,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks24
-\ex@=\dimen135
+\@emptytoks=\toks25
+\ex@=\dimen136
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
+\pmbraise@=\dimen137
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count112
+\inf@bad=\count113
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count113
-\leftroot@=\count114
+\uproot@=\count114
+\leftroot@=\count115
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count115
-\DOTSCASE@=\count116
+\classnum@=\count116
+\DOTSCASE@=\count117
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box58
-\strutbox@=\box59
-\big@size=\dimen137
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+\big@size=\dimen138
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count117
-\c@MaxMatrixCols=\count118
+\macc@depth=\count118
+\c@MaxMatrixCols=\count119
 \dotsspace@=\muskip11
-\c@parentequation=\count119
-\dspbrk@lvl=\count120
-\tag@help=\toks25
-\row@=\count121
-\column@=\count122
-\maxfields@=\count123
-\andhelp@=\toks26
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
-\@envbody=\toks27
-\multlinegap=\skip56
-\multlinetaggap=\skip57
-\mathdisplay@stack=\toks28
+\c@parentequation=\count120
+\dspbrk@lvl=\count121
+\tag@help=\toks26
+\row@=\count122
+\column@=\count123
+\maxfields@=\count124
+\andhelp@=\toks27
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
+\@envbody=\toks28
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -366,15 +374,15 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks29
-\thm@bodyfont=\toks30
-\thm@headfont=\toks31
-\thm@notefont=\toks32
-\thm@headpunct=\toks33
-\thm@preskip=\skip58
-\thm@postskip=\skip59
-\thm@headsep=\skip60
-\dth@everypar=\toks34
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
+\thm@preskip=\skip59
+\thm@postskip=\skip60
+\thm@headsep=\skip61
+\dth@everypar=\toks35
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
@@ -386,18 +394,18 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count124
-\Gm@cntv=\count125
-\c@Gm@tempcnt=\count126
-\Gm@bindingoffset=\dimen144
-\Gm@wd@mp=\dimen145
-\Gm@odd@mp=\dimen146
-\Gm@even@mp=\dimen147
-\Gm@layoutwidth=\dimen148
-\Gm@layoutheight=\dimen149
-\Gm@layouthoffset=\dimen150
-\Gm@layoutvoffset=\dimen151
-\Gm@dimlist=\toks35
+\Gm@cnth=\count125
+\Gm@cntv=\count126
+\c@Gm@tempcnt=\count127
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks36
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -405,15 +413,15 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip61
-\f@nch@O@elh=\skip62
-\f@nch@O@erh=\skip63
-\f@nch@O@olh=\skip64
-\f@nch@O@orh=\skip65
-\f@nch@O@elf=\skip66
-\f@nch@O@erf=\skip67
-\f@nch@O@olf=\skip68
-\f@nch@O@orf=\skip69
+\f@nch@headwidth=\skip62
+\f@nch@O@elh=\skip63
+\f@nch@O@erh=\skip64
+\f@nch@O@olh=\skip65
+\f@nch@O@orh=\skip66
+\f@nch@O@elf=\skip67
+\f@nch@O@erf=\skip68
+\f@nch@O@olf=\skip69
+\f@nch@O@orf=\skip70
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -454,16 +462,16 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen152
-\Hy@linkcounter=\count127
-\Hy@pagecounter=\count128
+\@linkdim=\dimen153
+\Hy@linkcounter=\count128
+\Hy@pagecounter=\count129
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count129
+\Hy@SavedSpaceFactor=\count130
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -475,12 +483,12 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count130
+\c@Hy@tempcnt=\count131
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen153
-\Fld@menulength=\count131
-\Field@Width=\dimen154
-\Fld@charsize=\dimen155
+\XeTeXLinkMargin=\dimen154
+\Fld@menulength=\count132
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -490,73 +498,79 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count132
-\c@Item=\count133
-\c@Hfootnote=\count134
+\Hy@abspage=\count133
+\c@Item=\count134
+\c@Hfootnote=\count135
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count135
-\c@bookmark@seq@number=\count136
+\Fld@listcount=\count136
+\c@bookmark@seq@number=\count137
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip70
+\Hy@SectionHShift=\skip71
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip71
-\bibsep=\skip72
+\bibhang=\skip72
+\bibsep=\skip73
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count137
+\c@NAT@ctr=\count138
 )
-\c@defn=\count138
-\c@conj=\count139
-\c@exmp=\count140
+\c@defn=\count139
+\c@conj=\count140
+\c@exmp=\count141
 
 (./Report_backup.aux)
 \openout1 = `Report_backup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Info: Redefining \degres on input line 36.
-LaTeX Info: Redefining \dots on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Info: Redefining \degres on input line 37.
+LaTeX Info: Redefining \dots on input line 37.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 36.
+(french.ldf)                BEFORE babel/french; reported on input line 37.
 
-LaTeX Info: Redefining \up on input line 36.
+Package french.ldf Info: Setting StandardItemizeEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 37.
+Package french.ldf Info: Setting StandardEnumerateEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 37.
+LaTeX Info: Redefining \up on input line 37.
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count141
-\scratchdimen=\dimen156
-\scratchbox=\box60
-\nofMPsegments=\count142
-\nofMParguments=\count143
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count144
-\MPscratchDim=\dimen157
-\MPnumerator=\count145
-\makeMPintoPDFobject=\count146
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count142
+\scratchdimen=\dimen157
+\scratchbox=\box61
+\nofMPsegments=\count143
+\nofMParguments=\count144
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count145
+\MPscratchDim=\dimen158
+\MPnumerator=\count146
+\makeMPintoPDFobject=\count147
+\everyMPtoPDFconversion=\toks38
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -592,19 +606,19 @@ LaTeX Info: Redefining \up on input line 36.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 36.
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 37.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count147
+\c@section@level=\count148
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./Report_backup.out) (./Report_backup.out)
 \@outlinefile=\write3
@@ -643,7 +657,7 @@ LaTeX Info: Redefining \nameref on input line 36.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./ressources/image/ESI.png, id=91, 651.43375pt x 190.7125pt>
+<./ressources/image/ESI.png, id=151, 651.43375pt x 190.7125pt>
 File: ./ressources/image/ESI.png Graphic file (type png)
 <use ./ressources/image/ESI.png>
 Package pdftex.def Info: ./ressources/image/ESI.png  used on input line 10.
@@ -711,9 +725,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Chapitre 1.
-(./Chapitres/TheorieDesGraphes/GrapheOrientee.tex [8
+(./Chapitres/TheorieDesGraphes/TheorieDesGraphes.tex
+(./Chapitres/TheorieDesGraphes/GrapheNonOrientee.tex
+
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 3.
+
+[8
 
 ]
+<./ressources/image/graphNonOriente.png, id=271, 328.75764pt x 333.00882pt>
+File: ./ressources/image/graphNonOriente.png Graphic file (type png)
+<use ./ressources/image/graphNonOriente.png>
+Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
+line 29.
+(pdftex.def)             Requested size: 130.00081pt x 119.99994pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--33
+
+ []
+
+[9] [10 <./ressources/image/graphNonOriente.png>])
+(./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
 Overfull \hbox (27.54167pt too wide) in paragraph at lines 32--33
 []\T1/cmr/m/n/10.95 Soit g = ($\OML/cmm/m/it/10.95 V[]$ \T1/cmr/m/n/10.95 , $\O
 ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
@@ -721,73 +753,150 @@ ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
 r/m/n/10.95 = {(1,2),(1,3),(3,2),(3,4),(4,3)}. 
  []
 
-<./ressources/image/RepDiGraphe.png, id=184, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=320, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
  39.
 (pdftex.def)             Requested size: 180.6672pt x 119.69202pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
-[9 <./ressources/image/RepDiGraphe.png>]) [10]
+) (./Chapitres/TheorieDesGraphes/GraphTypes.tex [12 <./ressources/image/RepDiGr
+aphe.png>]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex [13])
+(./Chapitres/TheorieDesGraphes/structRep.tex
+
+Package natbib Warning: Citation `IUT' on page 14 undefined on input line 9.
+
+
+Overfull \hbox (3.10071pt too wide) in paragraph at lines 9--10
+[]\T1/cmr/m/n/10.95 La ma-trice d'ad-ja-cence de G est une ma-trice boo-léenne 
+carré d'ordre n : $[][]$,
+ []
+
+[14]
+<./ressources/image/graphAdjace.png, id=384, 361.35pt x 306.0847pt>
+File: ./ressources/image/graphAdjace.png Graphic file (type png)
+<use ./ressources/image/graphAdjace.png>
+Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
+ 26.
+(pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
+<./ressources/image/matriceAdjac.png, id=385, 143.3355pt x 72.87225pt>
+File: ./ressources/image/matriceAdjac.png Graphic file (type png)
+<use ./ressources/image/matriceAdjac.png>
+Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
+e 33.
+(pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
+ [15 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>
+]
+<./ressources/image/graphIncid.png, id=395, 410.94705pt x 365.60118pt>
+File: ./ressources/image/graphIncid.png Graphic file (type png)
+<use ./ressources/image/graphIncid.png>
+Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
+58.
+(pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
+<./ressources/image/matriceIncid.png, id=396, 192.11775pt x 101.178pt>
+File: ./ressources/image/matriceIncid.png Graphic file (type png)
+<use ./ressources/image/matriceIncid.png>
+Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
+e 65.
+(pdftex.def)             Requested size: 140.00441pt x 110.00546pt.
+File: ./ressources/image/graphAdjace.png Graphic file (type png)
+<use ./ressources/image/graphAdjace.png>
+Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
+ 83.
+(pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
+<./ressources/image/listeAdjace.png, id=399, 362.76706pt x 294.74823pt>
+File: ./ressources/image/listeAdjace.png Graphic file (type png)
+<use ./ressources/image/listeAdjace.png>
+Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
+ 90.
+(pdftex.def)             Requested size: 139.9951pt x 109.9996pt.
+
+Underfull \hbox (badness 2653) in paragraph at lines 91--91
+[]\T1/cmr/m/sc/10.95 Figure \T1/cmr/m/n/10.95 1.8 ^^U []Liste d'ad-ja-cence du
+ []
+
+) (./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [16 <./ressources/image/
+graphIncid.png> <./ressources/image/matriceIncid.png> <./ressources/image/liste
+Adjace.png>]) [17]
+Overfull \hbox (1.07074pt too wide) in paragraph at lines 31--33
+[]\T1/cmr/m/n/10.95 Dans ce cha-pitre nous avons pré-sen-ter les no-tions et le
+s concepts gé-né-raux qui touchent
+ []
+
+) [18]
 Chapitre 2.
-[11
+[19
 
 ]
 Chapitre 3.
-[12
+[20
 
-] [13
+] [21
 
-] [14] (./Report_backup.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
- [15
+] [22] (./Report_backup.bbl [23
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
+])
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+[24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
  (./Report_backup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
-Package rerunfilecheck Info: File `Report_backup.out' has not changed.
-(rerunfilecheck)             Checksum: 3E81745BF2CD3D88CB78A35271A421C5;1523.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
+
+
+Package rerunfilecheck Warning: File `Report_backup.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_backup.out':
+(rerunfilecheck)             Before: 7C156ACF62BCE6D7975373970855F1D8;2722
+(rerunfilecheck)             After:  116F9A6C5AF198B48E79907D80B7C25A;2719.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
- 9708 strings out of 492649
- 140269 string characters out of 6129622
- 250854 words of memory out of 5000000
- 13326 multiletter control sequences out of 15000+600000
- 20379 words of font info for 48 fonts, out of 8000000 for 9000
+ 10124 strings out of 492649
+ 148281 string characters out of 6129622
+ 259778 words of memory out of 5000000
+ 13674 multiletter control sequences out of 15000+600000
+ 23282 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,518b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,43p,914b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/cm-super/sfti2488.pfb>
-Output written on Report_backup.pdf (16 pages, 377828 bytes).
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfti2488.pfb>
+Output written on Report_backup.pdf (25 pages, 478765 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

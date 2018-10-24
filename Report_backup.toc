@@ -5,25 +5,36 @@
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des tableaux}{6}{chapter*.3}
 \contentsline {part}{I\hspace {1em}Introduction}{7}{part.1}
 \contentsline {chapter}{\numberline {1} Th\IeC {\'e}orie des graphes}{8}{chapter.1}
-\contentsline {section}{\numberline {1.1}Graphe non orient\IeC {\'e}}{8}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{8}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Repr\IeC {\'e}sentation graphique}{8}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Propri\IeC {\'e}t\IeC {\'e} d'un graphe}{8}{subsection.1.1.3}
-\contentsline {subsubsection}{Degr\IeC {\'e} d'un graphe:}{8}{section*.4}
-\contentsline {subsubsection}{Rayon d'un graphe:}{8}{section*.5}
-\contentsline {section}{\numberline {1.2}Graphe orient\IeC {\'e}}{8}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{8}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Repr\IeC {\'e}sentation graphique}{9}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Quelques Propri\IeC {\'e}t\IeC {\'e}s:}{9}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Type de graphe}{10}{section.1.3}
-\contentsline {section}{\numberline {1.4}Repr\IeC {\'e}sentation Structurelle d'un graphe}{10}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Repr\IeC {\'e}sentation par une matrice}{10}{subsection.1.4.1}
-\contentsline {subsubsection}{Matrice d'adjacence}{10}{section*.6}
-\contentsline {subsubsection}{Matrice d'incidence}{10}{section*.7}
-\contentsline {subsection}{\numberline {1.4.2}Repr\IeC {\'e}sentation par une liste}{10}{subsection.1.4.2}
-\contentsline {subsubsection}{Liste d'adjacence}{10}{section*.8}
-\contentsline {subsubsection}{Liste d'incidence}{10}{section*.9}
-\contentsline {section}{\numberline {1.5}Les domaines d'application}{10}{section.1.5}
-\contentsline {chapter}{\numberline {2}Compression de graphe}{11}{chapter.2}
-\contentsline {chapter}{\numberline {3}chapitre 03: etude empirique}{12}{chapter.3}
-\contentsline {part}{II\hspace {1em}Conclusion}{13}{part.2}
+\contentsline {section}{\numberline {1.1}Graphe non orient\IeC {\'e}}{9}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{9}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Repr\IeC {\'e}sentation graphique}{9}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Propri\IeC {\'e}t\IeC {\'e} d'un graphe}{10}{subsection.1.1.3}
+\contentsline {subsubsection}{Degr\IeC {\'e} d'un graphe:}{10}{section*.4}
+\contentsline {subsubsection}{Rayon et diam\IeC {\'e}tre d'un graphe: }{10}{section*.5}
+\contentsline {section}{\numberline {1.2}Graphe orient\IeC {\'e}}{11}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{11}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Repr\IeC {\'e}sentation graphique}{11}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Quelques Propri\IeC {\'e}t\IeC {\'e}s:}{12}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Quelques types de graphe}{12}{section.1.3}
+\contentsline {section}{\numberline {1.4}Graphe partiel et sous graphe:}{13}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}D\IeC {\'e}finitions:}{13}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Quelques Types de sous graphes:}{14}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Repr\IeC {\'e}sentation Structurelle d'un graphe}{14}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Matrice d'adjacence}{14}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Matrice d'incidence}{15}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Liste d'adjacence}{16}{subsection.1.5.3}
+\contentsline {section}{\numberline {1.6}Les domaines d'application}{17}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Graphes des r\IeC {\'e}seaux sociaux:}{17}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Graphes en Bioinformatique:}{17}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Le Graphe du web:}{18}{subsection.1.6.3}
+\contentsline {section}{\numberline {1.7}Conclusion}{18}{section.1.7}
+\contentsline {chapter}{\numberline {2}Compression de graphe}{19}{chapter.2}
+\contentsline {section}{\numberline {2.1}Compression de donn\IeC {\'e}es: }{19}{section.2.1}
+\contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{19}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Motivations derri\IeC {\`e}re la compression de graphes }{19}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Les types de compression:}{19}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{19}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Classification des m\IeC {\'e}thodes de compression:}{19}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Conclusion}{19}{section.2.3}
+\contentsline {chapter}{\numberline {3}chapitre 03: etude empirique}{20}{chapter.3}
+\contentsline {part}{II\hspace {1em}Conclusion}{21}{part.2}
