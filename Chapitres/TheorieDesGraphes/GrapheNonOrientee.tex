@@ -1,0 +1,54 @@
+	\subsection{Définitions et généralités}
+		
+Un graph non orienté G est la donnée d’un couple (V , E) où V = \{$ \textit{v}_{1} , \textit{v}_{2} ,..., \textit{v}_{n} $\} est un ensemble fini dont les éléments sont appelés sommets ou nœuds ( Vertices en anglais ) et E=\{ $\textit{e}_{1} ,  \textit{e}_{2} ,…, \textit{e}_{m} $  \} est un ensemble fini d'arêtes ( Edges en anglais ). Toute arête \textit{e} de E correspond à un couple non ordonné de sommets \{ $\textit{v}_{i} , \textit{v}_{j}$ \} $\in$ E $\subset$  $V \times V$ représentants ses extrémités \citep{muller} \citep{fages2014exploitation}.
+\\Soient \textit{e} = ($\textit{v}_{i} , \textit{v}_{j}$) et \textit{e'}=($\textit{v}_{k} , \textit{v}_{l}$) deux arêtes de E, On dit que :
+\begin{itemize}
+\item $\textit{v}_{i}$ et $\textit{v}_{j}$ sont les extrémités de  \textit{e} et \textit{e} est incident en $\textit{v}_{i}$ et en  $\textit{v}_{j}$ \citep{hennecart2012elements}.
+\item $\textit{v}_{i}$ et $\textit{v}_{j}$ sont voisins ou adjacents, car il y’a au moins une arête entre eux dans E \citep{IUTLyonInformatique}.
+\item L'ensemble des sommets adjacents au sommet \textit{e} est appelé le voisinage de \textit{e} \citep{muller}. 
+\item \textit{e} et \textit{e'} sont voisins si ils ont une extrémité commune , i.e. : $\textit{v}_{i}$ = $\textit{v}_{k}$ par exemple \citep{lopez2003cours}.
+\item L’arête \textit{e} est une boucle si ses extrémités coïncident, i.e. : $\textit{v}_{i}$ = $\textit{v}_{j}$ \citep{IUTLyonInformatique}. 
+\item L’arête \textit{e} est multiple si elle a plus d’une seule occurrence dans l'ensemble E.
+\end{itemize}	
+		 
+		\subsection{Représentation graphique}
+		Un graph non orienté G peut être représenter par un dessin sur un plan comme suit \citep{muller}:
+		\begin{itemize}
+
+\item Les nœuds de G : $\textit{v}_{i}$ $\in$ V sont représenter par des points distincts.
+\item 	Les arêtes de G : \textit{e} = ($\textit{v}_{i}$,$\textit{v}_{i}$) $\in$ E sont représenter par des lignes pas forcement rectilignes qui relient les extrémités de chaque arête \textit{e}.
+\end{itemize}
+
+%% L'exemple de la représentation graphique 
+\textbf{Exemple :}
+ Soit g=(V1 , E1) un graphe non orienté tel que : V1=\{ 1,2,3,5 \} et E=\{ (1,2), (1,4), (2,2), (2,3) ,(2,5) ,(3,4) \}.
+La représentation graphique de g est alors donnée par le schéma de la figure \ref{graphNonOriente}.
+\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=120 pt, width=130 pt]{./ressources/image/graphNonOriente.png} 
+\end{center}
+\caption{Exemple de représentation graphique d'un graphe non orienté}
+\label{graphNonOriente}
+\end{figure}
+
+		\subsection{Propriété d'un graphe} %% a revoir 
+		
+			\textbf{Ordre d'un graphe:} On appel ordre d’un 					graphe le nombre de ses sommets.i.e. Card(V) \citep{DUT}.
+			
+			\textbf{Taille d'un graphe:} On appel taille d’un 				graphe le nombre de ses arêtes.i.e. Card(E) \citep{DUT}.
+			
+			\subsubsection{Degré d'un graphe:} %% esk le degre de graphe ou de neoud
+			\textbf{Degré d'un sommet : } Le degré d’un sommet 					noté \textit{d}($\textit{v}_{i}$) est le nombre 					d'arêtes incidents a ce sommet, sachant qu’une boucle 			compte pour 2 \citep{muller} . Dans l'exemple de la figure \ref{graphNonOriente}, le 					degré du sommet (1) est : \textit{d}(1)=2.
+			
+			\textbf{Degré d'un graphe : }Le degré d’un graphe est 			le degré maximum de ses sommets. e.i. c’est 						max(\textit{d}($\textit{v}_{i}$)) \citep{muller}. Dans l’exemple de 				la figure \ref{graphNonOriente}, le degré du graphe est \textit{d}(2)=5.
+			
+			\subsubsection{Rayon et diamétre d'un graphe: }
+			\textbf{Distance : }La distance entre deux sommets 					\textit{v} et \textit{u} est le plus petit nombre 					d’arêtes qu’on doit parcourir pour aller de 						\textit{v} a \textit{u} ou de \textit{u} a 							\textit{v} \citep{muller}. 
+			
+			\textbf{Diamètre d’un graphe :} C’est la plus grande 				distance entre deux sommets de ce graphe 							\citep{muller}. 
+			
+			\textbf{Rayon d’un graph : }C’est la plus pette 					distance entre deux sommets de ce graphe. 
+			%%%% A revoire d'autre memoire sur Graph theory
+		
+	

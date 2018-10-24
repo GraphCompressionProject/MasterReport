@@ -1,9 +1,9 @@
-\section{Graphe orienté}
+
 		\subsection{Définitions et généralités}
 		Un graphe orienté G est la donnée d'un couple (V , E) où
 		V est un ensemble fini dont les éléments sont appelés les sommets de G et 
-		E  $\subset$ V x V est un ensemble de couples ordonnés de sommets dits arcs ou arêtes \citep{muller}. G est appelé dans ce cas digraphe (directed graphe).
-		 Pour tout arc e = ( $v_{i}$ , $v_{j}$) $\epsilon$ E :
+		E  $\subset$ V x V est un ensemble de couples ordonnés de sommets dits arcs ou arêtes \citep{muller}. G est appelé dans ce cas digraphe (directed graphe).\\
+		 Pour tout arc e = ( $v_{i}$ , $v_{j}$) $\in$ E :
 		 \begin{itemize}  
 			\item $v_{i}$ est dit extrémité initiale ou origine de e et $v_{j}$ est l'extrémité finale de e \citep{muller}.
 			
@@ -23,8 +23,8 @@
 		
 		Un graphe G = (V , E) peut être projeter sur le plan en représentant:
 		\begin{itemize} 
-		\item dans un premier temps les nœuds $v_{i}$ $\epsilon$ V par des points disjoints du plan.
-		\item et dans un second temps les arêtes e = ( $v_{i}$ , $v_{j}$) $\epsilon$ E par des lignes orientées reliant par des flèches les deux extrémités de e. 
+		\item dans un premier temps les nœuds $v_{i}$ $\in$ V par des points disjoints du plan.
+		\item et dans un second temps les arêtes e = ( $v_{i}$ , $v_{j}$) $\in$ E par des lignes orientées reliant par des flèches les deux extrémités de e. 
 		\end{itemize}
 		
 		\textbf{Exemple:}
@@ -42,20 +42,21 @@
 			
 		
 		\subsection{Quelques Propriétés:} %%% Arevoire 
+		
 			\textbf{Ordre d'un digraphe:}
 			est le nombre de sommets n = Card(V) \citep{DUT}.
 			
 			\textbf{taille d'un digraphe:} est le nombre d’arcs m = Card(A) \citep{DUT}.
 			
 			\textbf{Degré dans un digraphe:}\\
-			Le degré d'un sommet $v_{i}$ $\epsilon$ V dans un digraphe G = (V , E) est donnée par la formule :\\
+			Le degré d'un sommet $v_{i}$ $\in$ V dans un digraphe G = (V , E) est donnée par la formule :\\
 			\begin{center}
 				d($v_{i}$) = $d^+(v_{i}$) + $d^-(v_{i}$\\
 			\end{center}			 
 			 où $d^+(v_{i}$) est le nombre d'arcs sortants au sommet $v_{i}$ et est appelé degré extérieure et $d^-(v_{i}$) représente le nombre d'arcs incidents et est appelé degré intérieur \citep{muller}.
 			 
 			 \textbf{Voisinage dans un digraphe:}\\
-			 Le voisinage d'un sommet $v_{i}$ $\epsilon$ V, noté V($v_{i}$), dans un digraphe G = (V , E) est:
+			 Le voisinage d'un sommet $v_{i}$ $\in$ V, noté V($v_{i}$), dans un digraphe G = (V , E) est:
 			 	\begin{center}
 				V($v_{i}$) = succ($v_{i}$) $\bigcup$ pred($v_{i}$),
 				\end{center}
