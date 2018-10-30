@@ -43,6 +43,11 @@ Lehman, E., Leighton, F.~T., and Meyer, A.~R. (2010).
 \newblock Mathematics for computer science.
 \newblock Technical report, Technical report, 2006. Lecture notes.
 
+\bibitem[Lelewer and Hirschberg, 1987]{lelewer1987data}
+Lelewer, D.~A. and Hirschberg, D.~S. (1987).
+\newblock Data compression.
+\newblock {\em ACM Computing Surveys (CSUR)}, 19(3):261--296.
+
 \bibitem[Lemmouchi, 2012]{lemmouchi2012etude}
 Lemmouchi, S. (2012).
 \newblock {\em Etude de la robustesse des graphes sociaux {\'e}mergents}.
@@ -82,5 +87,11 @@ Seo, H., Park, K., Han, Y., Kim, H., Umair, M., Khan, K.~U., and Lee, Y.-K.
 \newblock An effective graph summarization and compression technique for a
   large-scaled graph.
 \newblock {\em The Journal of Supercomputing}, pages 1--15.
+
+\bibitem[Sethi et~al., 2014]{sethi2014data}
+Sethi, G., Shaw, S., Vinutha, K., and Chakravorty, C. (2014).
+\newblock Data compression techniques.
+\newblock {\em International Journal of Computer Science and Information
+  Technologies}, 5(4):5584--6.
 
 \end{thebibliography}

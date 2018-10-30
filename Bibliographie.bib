@@ -1,12 +1,35 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Macbook at 2018-10-24 16:02:44 +0100 
+%% Created for Macbook at 2018-10-30 09:40:57 +0100 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{sethi2014data,
+	Author = {Sethi, Gaurav and Shaw, Sweta and Vinutha, K and Chakravorty, Chandrani},
+	Date-Added = {2018-10-30 09:40:46 +0100},
+	Date-Modified = {2018-10-30 09:40:46 +0100},
+	Journal = {International Journal of Computer Science and Information Technologies},
+	Number = {4},
+	Pages = {5584--6},
+	Title = {Data compression techniques},
+	Volume = {5},
+	Year = {2014}}
+
+@article{lelewer1987data,
+	Author = {Lelewer, Debra A and Hirschberg, Daniel S},
+	Date-Added = {2018-10-29 23:25:32 +0100},
+	Date-Modified = {2018-10-29 23:25:32 +0100},
+	Journal = {ACM Computing Surveys (CSUR)},
+	Number = {3},
+	Pages = {261--296},
+	Publisher = {ACM},
+	Title = {Data compression},
+	Volume = {19},
+	Year = {1987}}
 
 @misc{hennecart2012elements,
 	Author = {Hennecart, Fran{\c{c}}ois and Bretto, Alain and Faisant, Alain},
@@ -121,9 +144,109 @@
 	Year = {2012}}
 
 @article{karypis2000multilevel,
+	Abstract = {
+
+
+	Ce travaille propose un nouveau algorithme de partitionnement qui depasse l'algorithme de K=PM/LR (etat de l'art )dans le sperformances.
+
+	Le probleme ici est de partitionner le graphe en k partie tq une fonction d'objective est optimiser. Une fonction objectif couramment utilis{\'e}e consiste {\`a} minimiser le nombre d'hyper-aretes  qui couvrent diff{\'e}rentes partitions. cependant, un certain nombre d'autres fonctions objectives sont {\'e}galement consid{\'e}r{\'e}es utiles.
+
+	L'approche la plus couramment utilis{\'e}e pour calculer un partitionnement k-way est bas{\'e}e sur le paradigme de la bissection r{\'e}cursive (dichotomie), qui r{\'e}duit le probl{\`e}me du calcul d'un partitionnement k-way {\`a} celui de la r{\'e}alisation d'une s{\'e}quence de bissections. Le probl{\`e}me du calcul de la bissection optimale d'un hypergraphe est NP-hard  Cependant, de nombreux algorithmes heuristiques ont {\'e}t{\'e} d{\'e}velopp{\'e}s.
+
+	Une nouvelle classe d'algorithme de bissection de graphe est apparue ,basee sur le paradigme multi-niveaux. Dans cette classe, une s{\'e}quence d'hyper graphes successivement plus petits (plus grossiers) est construite. Une bissection du plus petit hypergraphe est calcul{\'e}e. Cette bissection est ensuite projet{\'e}e successivement au niveau hypergraphe plus fin, et {\`a} chaque niveau, un algorithme de raffinement it{\'e}ratif est utilis{\'e} pour am{\'e}liorer encore la bissection.
+
+	Plusieurs raisons ont fait que l'utilisation de la bissection recursive a ete abondonner. Premi{\`e}rement, un algorithme de bissection r{\'e}cursive ne nous permet pas d'optimiser directement des objectifs de nature globale et d{\'e}pend de la vue directe de toutes les k partitions. Deuxi{\`e}mement, un algorithme de partitionnement k-way est capable d'appliquer des contraintes d'{\'e}quilibrage plus strictes tout en conservant la capacit{\'e} d'explorer suffisamment l'espace de solution r{\'e}alisable pour optimiser l'objectif de partitionnement surtout lorsque la solution de partitionnement doit simultan{\'e}ment satisfaire {\`a} plusieurs contraintes d'{\'e}quilibrage. Troisi{\`e}mement, une m{\'e}thode qui obtient directement un partitionnement k-way peut potentiellement produire de meilleurs partitionnements qu'une m{\'e}thode qui calcule un partitionnement k-way via une bissection r{\'e}cursive.
+
+	Le chercheurs depuis se sont mis a proposee de salgorithmes de partitionnement qui calcule le k-way artiotionnement directement les plus imporatants sont une genenralisation de l'algorithme FM pour partitionnement k-way. Le probleme est que cet algorithme sont les minimums locales. Les algorithmes K-PM / LFI r{\'e}cemment d{\'e}velopp{\'e}s par Cong et Lim [19] tentent de r{\'e}soudre ce probl{\`e}me en affinant un partitionnement en k-way en appliquant une s{\'e}quence de raffinement FM {\`a} 2 voies {\`a} des paires de domaines. L'appariement des domaines est bas{\'e} sur le gain de la derni{\`e}re passe, et le mouvement des cellules deux {\`a} deux se poursuit jusqu'{\`a} ce qu'il ne soit plus possible d'obtenir un gain suppl{\'e}mentaire. 
+
+	N{\'e}anmoins, tous les partitionneurs ci-dessus ont tendance {\`a} produire des solutions inf{\'e}rieures {\`a} celles produites par les algorithmes de bissection r{\'e}currents {\`a} la pointe de la technologie, en particulier lorsqu'elles sont utilis{\'e}es pour optimiser un objectif pouvant {\^e}tre directement optimis{\'e} par le cadre de bissection r{\'e}cursif.
+
+	L'algorithme proposee par els auteurs utilise le paradigme multi-niveau pour calculer un k-way partiotionnmenet et est facilement parrallelisable. 
+
+	Definition formel du probleme :
+	------------------------------------------ 
+The k-way hypergraph partitioning pro- blem is defined as follows: Given a hypergraph G- (V,E) (where V is the set or vertices and E is the set of hyperedges) and an overall load imbalance tolerance c such that c _> 1.0, the goal is to partition the set V into k disjoint subsets,
+V,V2,...,V such that the number of vertices in each set V is bounded by IVI/(ck) < Ivi[ clvI/k (contrainte de partitionnement ), and a function defined over the hyperedges is optimized (objective du partitionnemnt).
+
+	Algorithme proposee : dite « multilevel k-way partitioning algorithm  »
+	------------------------------
+		Se compose principallement de 3 phases essenciels :
+
+			1. La phase de Grossisement ou de  Coarsening : consite en le groupement de noeuds selon un critere pour former un hypergraphe. Deux schema peuvent etre appliquee dans cette pahse :
+
+				a. edge-coarsenning : choisir les groupes les pairs de sommet qui appairaissent  dans plusieurs hyper-aretes. Les sommets sont visitee dans un ordre aleatoire. Pour chaque sommet v, tous les sommets non appari{\'e}s appartenant aux hypergers incidents {\`a} v sont pris en compte, et celui qui est connect{\'e} via l'arete ayant le poids le plus {\'e}lev{\'e} est associ{\'e} {\`a} v.
+
+				b. hyperedge-coarsening : choisir l'ensemble le plus grand d'hyperaretes independantes (chaque sommet appartient a un seul groupe) et chaque groupe de noeuds d'une hyperarete sont groupees ensemble.
+				
+				Il est a notee que la 2eme approche est plus performantes selon les experiences.Le probl{\`e}me potentiel des  deux approche est que l'exigence d'ind{\'e}pendance (et dans une certaine mesure, de maximalit{\'e}) peut d{\'e}truire certaines grappes de sommets qui existent naturellement dans l'hypergraphe
+				De ce fait, un nouveau schema a ete proposee  baptis{\'e} FirstChoice. Il est basee sur le edge-coarsening on prenant en compte toute les sommets et non pas les unmateched sommets uniquement.
+
+			2. Phase de partitionnement : 
+				Cette phase consiste en le parttiotionnement du graphe en respecetant les contrainte du probleme et en optimisant la fonction objective. Une facon d'obtenir une k-way prtition est de de repeter la phase 1 jusqu a obtention de k sommets (contient des inconvenients ). 
+				Dans l'algorithme proposee ici, le pakcage hmetise est utlisee qui un multi niveau algo de bissection pour les hypergraphes.
+
+			3.Phase de Uncoarsening : 
+				Durant cette phase, un partitionnement de l'hypergraphe plus grossier est projet{\'e} successivement vers le niveau suivant et un algo de rafinnement est appliquee pour optimiser la fonction objective sans bien evidemment violer les contraintes du probleme. L
+
+
+
+Definitions :
+
+	- Given a k-way partitioning and a hyperedge e, the external degree of e is defined to be 0, if e is not cut by the partitioning, otherwise it is equal to the number of partitions that is spanned by e.
+
+	- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+},
 	Author = {Karypis, George and Kumar, Vipin},
 	Date-Added = {2018-10-17 20:22:24 +0100},
-	Date-Modified = {2018-10-17 20:22:54 +0100},
+	Date-Modified = {2018-10-28 22:02:26 +0100},
 	Journal = {VLSI design},
 	Number = {3},
 	Pages = {285--300},
@@ -216,16 +339,35 @@ Note :
 	Abstract = {
 
 
-	Les sous-graphe de communautee sont caracterisee par leur leins dense. La mesure de la qualitee d'une communautee est tres importante. En effet plusieurs mesure d'evaluation existe dans lalitterature, ce travaille evalue les communautee en se basant sur le concepte de k-core.
+	Les sous-graphe de communautee sont caracterisee par leur liens dense. La mesure de la qualitee d'une communautee est tres importante. En effet plusieurs mesure d'evaluation existe dans lalitterature, ce travaille evalue les communautee en se basant sur le concepte de k-core et propose une extention de cette mesure aux cas des graphes ponderes.
+
+	1. Algorithme pour extraction du k-core :
+		IN: graphe non oriente D , un nombre positive k
+		OUT : k-core(D)
+		Complexite :  O(kn) steps ==> peut etre appliquer aux graphe dense 
+			1. F= D
+			2.Supprimer tt les neouds ayant un degre < k
+
+	
 
 
 
 
 Definitions:
+---------------
+	- We denote by ∆(G) the minimum degree of a vertex in G
 	- we define the k-core of a graph as the maximum size subgraph H of G where ∆(H) ≥ k , where k is a positive integer.
 		en terme plus simple c'est le graphe initiale en iliminant les noeuds ayant un degree < k .
+
 	- The degeneracy of G is defined as follows.  δ∗(G) = max{∆(H) | H ⊆ G}.
 
+	- (Vertex core number) The core number of a vertex v of G is the maximum k for which v belongs in the k-core of G.
+	- The core number of a subset S of the vertices of G is the maximum k for which all vertices of S belong in the k-core of G
+
+
+Remarque:
+---------------
+	- Dans le but de quantifier la  notion d'importance d'un n{\oe}ud dans un graphe, les chercheurs ont propos{\'e} plusieurs d{\'e}finitions connues sous le nom de mesures de centralit{\'e}
 
 
 Beatiful Expressions : _To use in the abstract_
@@ -234,7 +376,7 @@ Beatiful Expressions : _To use in the abstract_
 	Author = {Giatsidis, Christos and Thilikos, Dimitrios M and Vazirgiannis, Michalis},
 	Booktitle = {Advances in Social Networks Analysis and Mining (ASONAM), 2011 International Conference on},
 	Date-Added = {2018-10-17 15:49:25 +0100},
-	Date-Modified = {2018-10-24 14:49:19 +0100},
+	Date-Modified = {2018-10-27 23:39:31 +0100},
 	Organization = {IEEE},
 	Pages = {87--93},
 	Title = {Evaluating cooperation in communities with the k-core structure},
@@ -315,13 +457,24 @@ Information Supplementaire :
 	Abstract = {
 
 												                     VoG Overlapp
+Methode proposee est basee sur le k-core . L'algorithme de base est :
+
+2. Algorithm 2 KCBC: k-core-based Graph Clustering
+		Input: graph G
+		While the graph is nonempty
+			Step 1: Compute core numbers (max k for which the node is present in the decomposition) for all nodes in the graph.
+			Step 2: Choose the maximum k (kmax) for which the decomposition is non-empty, and identify nodes which are present in the decomposition as the ``decomposition set.'' Terminate when kmax = . 
+			Step 3: For the induced subgraph from the decomposition set, identify each connected component as a structure.
+			Step 4: Remove all edges in the graph between nodes in the decomposition set---they have been identified as structures already. 
+		return set of all identified structures
+
 
 Comparaison entre 5differentes technique de detection de communitee et de clustering en terme de la taille et de la qualite du resultat de ses dernieres. Les cinq methode sont : METIS, Louvain, spectral clustering, SlashBurn et la methode proposee dans cet article k-core-based clustering notee KCBC.
 
 },
 	Author = {Liu, Yike and Shah, Neil and Koutra, Danai},
 	Date-Added = {2018-10-17 10:10:12 +0100},
-	Date-Modified = {2018-10-17 12:10:43 +0100},
+	Date-Modified = {2018-10-27 23:41:59 +0100},
 	Journal = {arXiv preprint arXiv:1511.06820},
 	Title = {An empirical comparison of the summarization power of graph clustering methods},
 	Url = {https://arxiv.org/pdf/1511.06820.pdf},
