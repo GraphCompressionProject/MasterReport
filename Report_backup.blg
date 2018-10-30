@@ -7,45 +7,45 @@ Warning--I didn't find a database entry for "IUT"
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
 Warning--empty author and editor in IUTLyonInformatique
 Warning--empty institution in Pres
-You've used 16 entries,
+You've used 18 entries,
             1935 wiz_defined-function locations,
-            554 strings with 5902 characters,
-and the built_in function-call counts, 5292 in all, are:
-= -- 511
-> -- 202
-< -- 11
-+ -- 70
-- -- 66
-* -- 405
-:= -- 959
-add.period$ -- 45
-call.type$ -- 16
-change.case$ -- 109
-chr.to.int$ -- 16
-cite$ -- 20
-duplicate$ -- 223
-empty$ -- 370
-format.name$ -- 83
-if$ -- 1016
+            568 strings with 6208 characters,
+and the built_in function-call counts, 6147 in all, are:
+= -- 597
+> -- 238
+< -- 12
++ -- 82
+- -- 78
+* -- 486
+:= -- 1106
+add.period$ -- 51
+call.type$ -- 18
+change.case$ -- 125
+chr.to.int$ -- 18
+cite$ -- 22
+duplicate$ -- 251
+empty$ -- 429
+format.name$ -- 99
+if$ -- 1180
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 79
-num.names$ -- 45
-pop$ -- 113
+missing$ -- 12
+newline$ -- 89
+num.names$ -- 51
+pop$ -- 124
 preamble$ -- 1
-purify$ -- 113
+purify$ -- 129
 quote$ -- 0
-skip$ -- 166
+skip$ -- 187
 stack$ -- 0
-substring$ -- 290
-swap$ -- 24
+substring$ -- 361
+swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
+type$ -- 102
 warning$ -- 3
-while$ -- 40
+while$ -- 48
 width$ -- 0
-write$ -- 193
+write$ -- 219
 (There were 4 warnings)

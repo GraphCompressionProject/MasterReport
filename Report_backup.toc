@@ -30,11 +30,11 @@
 \contentsline {section}{\numberline {1.7}Conclusion}{18}{section.1.7}
 \contentsline {chapter}{\numberline {2}Compression de graphe}{19}{chapter.2}
 \contentsline {section}{\numberline {2.1}Compression de donn\IeC {\'e}es: }{19}{section.2.1}
-\contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{19}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Motivations derri\IeC {\`e}re la compression de graphes }{19}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Les types de compression:}{19}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{19}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Classification des m\IeC {\'e}thodes de compression:}{19}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Conclusion}{19}{section.2.3}
-\contentsline {chapter}{\numberline {3}chapitre 03: etude empirique}{20}{chapter.3}
-\contentsline {part}{II\hspace {1em}Conclusion}{21}{part.2}
+\contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{20}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Motivations derri\IeC {\`e}re la compression de graphes }{20}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Les types de compression:}{20}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{20}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Classification des m\IeC {\'e}thodes de compression:}{20}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Conclusion}{20}{section.2.3}
+\contentsline {chapter}{\numberline {3}chapitre 03: etude empirique}{21}{chapter.3}
+\contentsline {part}{II\hspace {1em}Conclusion}{22}{part.2}
