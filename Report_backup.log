@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  31 OCT 2018 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  31 OCT 2018 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -657,7 +657,7 @@ LaTeX Info: Redefining \nameref on input line 37.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./ressources/image/ESI.png, id=151, 651.43375pt x 190.7125pt>
+<./ressources/image/ESI.png, id=155, 651.43375pt x 190.7125pt>
 File: ./ressources/image/ESI.png Graphic file (type png)
 <use ./ressources/image/ESI.png>
 Package pdftex.def Info: ./ressources/image/ESI.png  used on input line 10.
@@ -733,7 +733,7 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 3.
 [8
 
 ]
-<./ressources/image/graphNonOriente.png, id=271, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=276, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -753,7 +753,7 @@ ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
 r/m/n/10.95 = {(1,2),(1,3),(3,2),(3,4),(4,3)}. 
  []
 
-<./ressources/image/RepDiGraphe.png, id=318, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=323, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
@@ -775,37 +775,42 @@ Overfull \hbox (3.10071pt too wide) in paragraph at lines 9--10
 carré d'ordre n : $[][]$,
  []
 
-<./ressources/image/graphAdjace.png, id=381, 361.35pt x 306.0847pt>
+<./ressources/image/graphAdjace.png, id=386, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  26.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=382, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=387, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
 e 33.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
-[15 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>]
-<./ressources/image/graphIncid.png, id=393, 410.94705pt x 365.60118pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15]
+<./ressources/image/graphIncid.png, id=397, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 58.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=394, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=398, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
 e 65.
 (pdftex.def)             Requested size: 140.00441pt x 110.00546pt.
+ [16 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>
+ <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>]
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  83.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=397, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=407, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
@@ -816,9 +821,8 @@ Underfull \hbox (badness 2653) in paragraph at lines 91--91
 []\T1/cmr/m/sc/10.95 Figure \T1/cmr/m/n/10.95 1.8 ^^U []Liste d'ad-ja-cence du
  []
 
-[16 <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>])
-(./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [17 <./ressources/image/li
-steAdjace.png>])
+) (./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [17 <./ressources/image/
+listeAdjace.png>])
 Overfull \hbox (1.07074pt too wide) in paragraph at lines 37--39
 []\T1/cmr/m/n/10.95 Dans ce cha-pitre nous avons pré-sen-ter les no-tions et le
 s concepts gé-né-raux qui touchent
@@ -840,69 +844,54 @@ Chapitre 3.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
 [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./Report_backup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
+Package rerunfilecheck Info: File `Report_backup.out' has not changed.
+(rerunfilecheck)             Checksum: D949F6C9F7961146191F1B3D8CF1306C;2788.
 
-
-Package rerunfilecheck Warning: File `Report_backup.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Report_backup.out':
-(rerunfilecheck)             Before: 116F9A6C5AF198B48E79907D80B7C25A;2719
-(rerunfilecheck)             After:  D949F6C9F7961146191F1B3D8CF1306C;2788.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 10143 strings out of 492649
- 148754 string characters out of 6129622
+ 10141 strings out of 492649
+ 148719 string characters out of 6129622
  259852 words of memory out of 5000000
- 13680 multiletter control sequences out of 15000+600000
+ 13681 multiletter control sequences out of 15000+600000
  23282 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,914b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.1.5.3} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.5.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/cm-super/sfti2488.pfb>
-Output written on Report_backup.pdf (27 pages, 482562 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfti2488.pfb>
+Output written on Report_backup.pdf (27 pages, 482684 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 503 compressed objects within 6 object streams
- 95 named destinations out of 1000 (max. 500000)
- 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 345 words of extra memory for PDF output out of 10000 (max. 10000000)
 
