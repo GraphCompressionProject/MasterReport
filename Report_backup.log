@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  31 OCT 2018 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  31 OCT 2018 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -733,7 +733,7 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 3.
 [8
 
 ]
-<./ressources/image/graphNonOriente.png, id=280, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=282, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -744,8 +744,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--33
 
  []
 
-[9] [10 <./ressources/image/graphNonOriente.png>])
-(./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
+[9] [10 <./ressources/image/graphNonOriente.png>]
+
+Package natbib Warning: Citation `parlebas1972centralite' on page 11 undefined 
+on input line 67.
+
+) (./Chapitres/TheorieDesGraphes/GrapheOrientee.tex [11]
 Overfull \hbox (27.54167pt too wide) in paragraph at lines 32--33
 []\T1/cmr/m/n/10.95 Soit g = ($\OML/cmm/m/it/10.95 V[]$ \T1/cmr/m/n/10.95 , $\O
 ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
@@ -753,94 +757,85 @@ ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
 r/m/n/10.95 = {(1,2),(1,3),(3,2),(3,4),(4,3)}. 
  []
 
-<./ressources/image/RepDiGraphe.png, id=327, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=335, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
  39.
 (pdftex.def)             Requested size: 180.6672pt x 119.69202pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11]) (./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepD
-iGraphe.png>]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex [13])
+) (./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepDiGra
+phe.png>]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex [13])
 (./Chapitres/TheorieDesGraphes/GraphTypes.tex)
 (./Chapitres/TheorieDesGraphes/structRep.tex [14]
-
-Package natbib Warning: Citation `IUT' on page 15 undefined on input line 9.
-
-
 Overfull \hbox (3.10071pt too wide) in paragraph at lines 9--10
 []\T1/cmr/m/n/10.95 La ma-trice d'ad-ja-cence de G est une ma-trice boo-léenne 
 carré d'ordre n : $[][]$,
  []
 
-<./ressources/image/graphAdjace.png, id=390, 361.35pt x 306.0847pt>
+<./ressources/image/graphAdjace.png, id=400, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
- 26.
+ 30.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=391, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=401, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
-e 33.
+e 37.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [15]
-<./ressources/image/graphIncid.png, id=401, 410.94705pt x 365.60118pt>
+<./ressources/image/graphIncid.png, id=419, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
-58.
+73.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=402, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=420, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
-e 65.
+e 80.
 (pdftex.def)             Requested size: 140.00441pt x 110.00546pt.
  [16 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>
- <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>]
+]
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
- 83.
+ 98.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=411, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=433, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
- 90.
+ 105.
 (pdftex.def)             Requested size: 139.9951pt x 109.9996pt.
 
-Underfull \hbox (badness 2653) in paragraph at lines 91--91
+Underfull \hbox (badness 2653) in paragraph at lines 106--106
 []\T1/cmr/m/sc/10.95 Figure \T1/cmr/m/n/10.95 1.8 ^^U []Liste d'ad-ja-cence du
  []
 
-) (./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [17 <./ressources/image/
-listeAdjace.png>])
+) [17 <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>
+ <./ressources/image/listeAdjace.png>]
+(./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [18])
 Overfull \hbox (1.07074pt too wide) in paragraph at lines 43--45
 []\T1/cmr/m/n/10.95 Dans ce cha-pitre nous avons pré-sen-ter les no-tions et le
 s concepts gé-né-raux qui touchent
  []
 
-[18]) [19]
+) [19]
 Chapitre 2.
 (./Chapitres/CompressionDesGraphes/datacompression.tex)
 (./Chapitres/CompressionDesGraphes/TypeDeCompression.tex [20
 
 ]
-<./ressources/image/SansPerte.png, id=452, 2441.12pt x 321.2pt>
+<./ressources/image/SansPerte.png, id=476, 2441.12pt x 321.2pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 7
 .
 (pdftex.def)             Requested size: 366.1522pt x 48.17792pt.
-<./ressources/image/AvecPerte.png, id=453, 2445.135pt x 325.215pt>
+<./ressources/image/AvecPerte.png, id=477, 2445.135pt x 325.215pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
@@ -871,6 +866,10 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `Report_backup.out' has not changed.
 (rerunfilecheck)             Checksum: EC60D39972C9365532115DD96F7BC6D3;2789.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
@@ -903,10 +902,10 @@ st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/cm-super/sfti2488.pfb>
-Output written on Report_backup.pdf (27 pages, 566819 bytes).
+Output written on Report_backup.pdf (27 pages, 569277 bytes).
 PDF statistics:
- 574 PDF objects out of 1000 (max. 8388607)
- 505 compressed objects within 6 object streams
+ 598 PDF objects out of 1000 (max. 8388607)
+ 529 compressed objects within 6 object streams
  95 named destinations out of 1000 (max. 500000)
  355 words of extra memory for PDF output out of 10000 (max. 10000000)
 
