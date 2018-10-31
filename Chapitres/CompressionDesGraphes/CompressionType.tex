@@ -1,0 +1,17 @@
+	
+			La compression de graphe est définie comme l'ensemble des méthodes et techniques permettant de réduire l'espace mémoire occupé par ce derniers sans perte significative d'information. Dès lors, deux approches se présente : la compression avec ou sans perte.
+			
+			\subsubsection{Compression Sans Perte}
+			Certains domaines d'application de la compression nécessitent un niveau élevé d'exactitude et une restitution exacte, donc une compression sans perte. Dans cette catégorie, le graphe G subi des transformation pour avoir une représentation compacte G' qui lors de la décompression donne exactement G. La figure ci-dessous illustre cette définition.
+			\begin{figure}[h]
+			\includegraphics[scale=0.3,center]{./ressources/image/SansPerte.png}
+			\caption[Compression Sans Perte.]{Compression sans perte.}
+			\end{figure}
+			
+			\subsubsection{Compression Avec Perte}
+			
+			Contrairement à la compression sans perte, la compression avec perte permet la suppression permanente de certaines informations jugées inutile (redondantes) pour améliorer la qualité de la compression. En d'autres termes, le graphe G subi des transformations pour avoir une représentation compacte G’ qui lors de la décompression donne un graphe G'' probablement différent de G mais l'approximant le plus possible. La figure ci-dessous illustre cette définition.
+			\begin{figure}[h]
+			\includegraphics[scale=0.3,center]{./ressources/image/AvecPerte.png}
+			\caption[Compression avec perte.]{Compression avec perte.}
+			\end{figure}
