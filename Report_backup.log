@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  31 OCT 2018 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  5 NOV 2018 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -657,7 +657,7 @@ LaTeX Info: Redefining \nameref on input line 37.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./ressources/image/ESI.png, id=155, 651.43375pt x 190.7125pt>
+<./ressources/image/ESI.png, id=159, 651.43375pt x 190.7125pt>
 File: ./ressources/image/ESI.png Graphic file (type png)
 <use ./ressources/image/ESI.png>
 Package pdftex.def Info: ./ressources/image/ESI.png  used on input line 10.
@@ -733,7 +733,7 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 3.
 [8
 
 ]
-<./ressources/image/graphNonOriente.png, id=282, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=285, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -744,12 +744,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--33
 
  []
 
-[9] [10 <./ressources/image/graphNonOriente.png>]
-
-Package natbib Warning: Citation `parlebas1972centralite' on page 11 undefined 
-on input line 67.
-
-) (./Chapitres/TheorieDesGraphes/GrapheOrientee.tex [11]
+[9] [10 <./ressources/image/graphNonOriente.png>])
+(./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
 Overfull \hbox (27.54167pt too wide) in paragraph at lines 32--33
 []\T1/cmr/m/n/10.95 Soit g = ($\OML/cmm/m/it/10.95 V[]$ \T1/cmr/m/n/10.95 , $\O
 ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
@@ -763,8 +759,8 @@ File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
  39.
 (pdftex.def)             Requested size: 180.6672pt x 119.69202pt.
-) (./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepDiGra
-phe.png>]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex [13])
+[11]) (./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepD
+iGraphe.png>]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex [13])
 (./Chapitres/TheorieDesGraphes/GraphTypes.tex)
 (./Chapitres/TheorieDesGraphes/structRep.tex [14]
 Overfull \hbox (3.10071pt too wide) in paragraph at lines 9--10
@@ -772,26 +768,26 @@ Overfull \hbox (3.10071pt too wide) in paragraph at lines 9--10
 carré d'ordre n : $[][]$,
  []
 
-<./ressources/image/graphAdjace.png, id=400, 361.35pt x 306.0847pt>
+<./ressources/image/graphAdjace.png, id=406, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  30.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=401, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=407, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
 e 37.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
 [15]
-<./ressources/image/graphIncid.png, id=419, 410.94705pt x 365.60118pt>
+<./ressources/image/graphIncid.png, id=425, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 73.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=420, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=426, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
@@ -804,7 +800,7 @@ File: ./ressources/image/graphAdjace.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  98.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=433, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=439, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
@@ -825,17 +821,21 @@ s concepts gé-né-raux qui touchent
 
 ) [19]
 Chapitre 2.
-(./Chapitres/CompressionDesGraphes/datacompression.tex)
-(./Chapitres/CompressionDesGraphes/TypeDeCompression.tex [20
+[20
 
 ]
-<./ressources/image/SansPerte.png, id=476, 2441.12pt x 321.2pt>
+Chapitre 3.
+(./Chapitres/CompressionDesGraphes/datacompression.tex)
+(./Chapitres/CompressionDesGraphes/TypeDeCompression.tex [21
+
+]
+<./ressources/image/SansPerte.png, id=486, 2441.12pt x 321.2pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 7
 .
 (pdftex.def)             Requested size: 366.1522pt x 48.17792pt.
-<./ressources/image/AvecPerte.png, id=477, 2445.135pt x 325.215pt>
+<./ressources/image/AvecPerte.png, id=487, 2445.135pt x 325.215pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
@@ -845,41 +845,34 @@ Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [21 <./ressources/image/SansPerte.png>] [22 <./ressources/image/AvecPerte.png
->]
-Chapitre 3.
-[23
+) (./Chapitres/CompressionDesGraphes/MOE.tex [22 <./ressources/image/SansPerte.
+png>] [23 <./ressources/image/AvecPerte.png>]) [24]
+Chapitre 4.
+[25
 
-] [24
+] [26
 
-] (./Report_backup.bbl [25
+] (./Report_backup.bbl [27
 
 ])
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-[26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+ [28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
  (./Report_backup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
 Package rerunfilecheck Info: File `Report_backup.out' has not changed.
-(rerunfilecheck)             Checksum: EC60D39972C9365532115DD96F7BC6D3;2789.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+(rerunfilecheck)             Checksum: DD54E2FEB616D0A77105E194AC3FD3EA;2869.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 123.
  ) 
 Here is how much of TeX's memory you used:
- 10154 strings out of 492649
- 149113 string characters out of 6129622
- 259822 words of memory out of 5000000
- 13686 multiletter control sequences out of 15000+600000
+ 10172 strings out of 492649
+ 149492 string characters out of 6129622
+ 259888 words of memory out of 5000000
+ 13693 multiletter control sequences out of 15000+600000
  23282 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,914b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,43p,914b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -902,10 +895,10 @@ st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist
 /fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/f
 onts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fon
 ts/type1/public/cm-super/sfti2488.pfb>
-Output written on Report_backup.pdf (27 pages, 569277 bytes).
+Output written on Report_backup.pdf (29 pages, 577587 bytes).
 PDF statistics:
- 598 PDF objects out of 1000 (max. 8388607)
- 529 compressed objects within 6 object streams
- 95 named destinations out of 1000 (max. 500000)
- 355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 549 compressed objects within 6 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

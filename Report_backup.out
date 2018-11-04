@@ -26,13 +26,14 @@
 \BOOKMARK [2][-]{subsection.1.7.2}{Graphes en Bioinformatique:}{section.1.7}% 26
 \BOOKMARK [2][-]{subsection.1.7.3}{Le Graphe du web:}{section.1.7}% 27
 \BOOKMARK [1][-]{section.1.8}{Conclusion}{chapter.1}% 28
-\BOOKMARK [0][-]{chapter.2}{Compression de graphe}{part.1}% 29
-\BOOKMARK [1][-]{section.2.1}{Compression de donn\351es: }{chapter.2}% 30
-\BOOKMARK [1][-]{section.2.2}{Compression appliqu\351e aux graphes:}{chapter.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.1}{Motivations derri\350re la compression de graphes: }{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.2}{Les types de compression:}{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.3}{Les m\351triques d'\351valuation des algorithmes de compression:}{section.2.2}% 34
-\BOOKMARK [2][-]{subsection.2.2.4}{Classification des m\351thodes de compression:}{section.2.2}% 35
-\BOOKMARK [1][-]{section.2.3}{Conclusion}{chapter.2}% 36
-\BOOKMARK [0][-]{chapter.3}{chapitre 03: etude empirique}{part.1}% 37
-\BOOKMARK [-1][-]{part.2}{II Conclusion}{}% 38
+\BOOKMARK [0][-]{chapter.2}{Les m\351thodes d'extraction de motifs}{part.1}% 29
+\BOOKMARK [0][-]{chapter.3}{Compression de graphe}{part.1}% 30
+\BOOKMARK [1][-]{section.3.1}{Compression de donn\351es: }{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.2}{Compression appliqu\351e aux graphes:}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.2.1}{Motivations derri\350re la compression de graphes: }{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.2}{Les types de compression:}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.3}{Les m\351triques d'\351valuation des algorithmes de compression:}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.4}{Classification des m\351thodes de compression:}{section.3.2}% 36
+\BOOKMARK [1][-]{section.3.3}{Conclusion}{chapter.3}% 37
+\BOOKMARK [0][-]{chapter.4}{chapitre 03: etude empirique}{part.1}% 38
+\BOOKMARK [-1][-]{part.2}{II Conclusion}{}% 39

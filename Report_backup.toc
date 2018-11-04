@@ -27,15 +27,19 @@
 \contentsline {subsection}{\numberline {1.7.2}Graphes en Bioinformatique:}{18}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}Le Graphe du web:}{19}{subsection.1.7.3}
 \contentsline {section}{\numberline {1.8}Conclusion}{19}{section.1.8}
-\contentsline {chapter}{\numberline {2}Compression de graphe}{20}{chapter.2}
-\contentsline {section}{\numberline {2.1}Compression de donn\IeC {\'e}es: }{20}{section.2.1}
-\contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{21}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Motivations derri\IeC {\`e}re la compression de graphes: }{21}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Les types de compression:}{21}{subsection.2.2.2}
-\contentsline {subsubsection}{Compression Sans Perte:}{21}{section*.4}
-\contentsline {subsubsection}{Compression Avec Perte:}{21}{section*.5}
-\contentsline {subsection}{\numberline {2.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{22}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Classification des m\IeC {\'e}thodes de compression:}{22}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Conclusion}{22}{section.2.3}
-\contentsline {chapter}{\numberline {3}chapitre 03: etude empirique}{23}{chapter.3}
-\contentsline {part}{II\hspace {1em}Conclusion}{24}{part.2}
+\contentsline {chapter}{\numberline {2}Les m\IeC {\'e}thodes d'extraction de motifs}{20}{chapter.2}
+\contentsline {chapter}{\numberline {3}Compression de graphe}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Compression de donn\IeC {\'e}es: }{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}Compression appliqu\IeC {\'e}e aux graphes:}{22}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Motivations derri\IeC {\`e}re la compression de graphes: }{22}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Les types de compression:}{22}{subsection.3.2.2}
+\contentsline {subsubsection}{Compression Sans Perte:}{22}{section*.4}
+\contentsline {subsubsection}{Compression Avec Perte:}{22}{section*.5}
+\contentsline {subsection}{\numberline {3.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{23}{subsection.3.2.3}
+\contentsline {subsubsection}{Le temps de compression:}{23}{section*.6}
+\contentsline {subsubsection}{Le ratio de compression:}{23}{section*.7}
+\contentsline {subsubsection}{Le taux de compression:}{24}{section*.8}
+\contentsline {subsection}{\numberline {3.2.4}Classification des m\IeC {\'e}thodes de compression:}{24}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Conclusion}{24}{section.3.3}
+\contentsline {chapter}{\numberline {4}chapitre 03: etude empirique}{25}{chapter.4}
+\contentsline {part}{II\hspace {1em}Conclusion}{26}{part.2}
