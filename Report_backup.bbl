@@ -53,6 +53,12 @@ Lemmouchi, S. (2012).
 \newblock {\em Etude de la robustesse des graphes sociaux {\'e}mergents}.
 \newblock PhD thesis, Universit{\'e} Claude Bernard-Lyon I.
 
+\bibitem[Liu et~al., 2015]{liu2015empirical}
+Liu, Y., Shah, N., and Koutra, D. (2015).
+\newblock An empirical comparison of the summarization power of graph
+  clustering methods.
+\newblock {\em arXiv preprint arXiv:1511.06820}.
+
 \bibitem[Lopez, 2003]{lopez2003cours}
 Lopez, P. (2003).
 \newblock Cours de graphes.

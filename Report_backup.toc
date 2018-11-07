@@ -40,6 +40,7 @@
 \contentsline {subsubsection}{Le ratio de compression:}{23}{section*.7}
 \contentsline {subsubsection}{Le taux de compression:}{24}{section*.8}
 \contentsline {subsection}{\numberline {3.2.4}Classification des m\IeC {\'e}thodes de compression:}{24}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Conclusion}{24}{section.3.3}
-\contentsline {chapter}{\numberline {4}chapitre 03: etude empirique}{25}{chapter.4}
-\contentsline {part}{II\hspace {1em}Conclusion}{26}{part.2}
+\contentsline {subsection}{\numberline {3.2.5}Les m\IeC {\'e}thodes de Compression par Extraction de motifs}{24}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Conclusion}{25}{section.3.3}
+\contentsline {chapter}{\numberline {4}chapitre 03: etude empirique}{26}{chapter.4}
+\contentsline {part}{II\hspace {1em}Conclusion}{27}{part.2}
