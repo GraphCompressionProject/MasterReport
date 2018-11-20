@@ -15,6 +15,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+%%algorithme
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
 %--------- pour le style de la page ----------
 %\usepackage[top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
 \usepackage[]{geometry}
@@ -75,24 +78,12 @@
 %---->chapitre 02 :« »
 	\chapter{Compression de graphe}
 	
-		\section{Compression de données: }
-	
-		\section{Compression appliquée aux graphes:}
-	
-			\subsection{Motivations derrière la compression de graphes }
-	
-			\subsection{Les types de compression:}
-	
-			\subsection{Les métriques d'évaluation des algorithmes de compression:}
-			
-			\subsection{Classification des méthodes de compression:}
-			
-		\section{Conclusion}
+		\input{./Chapitres/Compression/CompressionDeGraphes.tex}
 
 
 %---->chapitre 03 :« Etude empirique »
 	\chapter{chapitre 03: etude empirique}
-	
+
 	\begin{defn}
 			Here is a new definition
 		\end{defn}
@@ -111,7 +102,6 @@ Random citation \citep{brisaboa2009k} embeddeed in text.
 \newpage
 \bibliography{Bibliographie}
 \bibliographystyle{apalike}
-
 \end{document}
 
 %\renewcommand{\thefigure}{\arabic{figure}}
@@ -121,13 +111,4 @@ Random citation \citep{brisaboa2009k} embeddeed in text.
 %	\includegraphics[scale=1]{ressources/image/LAAS-2016.jpg}
 %	\label{fig:figure1}
 %	\caption{This is a teste of figure}
-	
 %\end{figure}
-
-
-
-
-
-
-
-

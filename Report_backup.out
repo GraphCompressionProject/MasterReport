@@ -28,10 +28,13 @@
 \BOOKMARK [0][-]{chapter.2}{Compression de graphe}{part.1}% 28
 \BOOKMARK [1][-]{section.2.1}{Compression de donn\351es: }{chapter.2}% 29
 \BOOKMARK [1][-]{section.2.2}{Compression appliqu\351e aux graphes:}{chapter.2}% 30
-\BOOKMARK [2][-]{subsection.2.2.1}{Motivations derri\350re la compression de graphes }{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.2}{Les types de compression:}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.3}{Les m\351triques d'\351valuation des algorithmes de compression:}{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.4}{Classification des m\351thodes de compression:}{section.2.2}% 34
-\BOOKMARK [1][-]{section.2.3}{Conclusion}{chapter.2}% 35
-\BOOKMARK [0][-]{chapter.3}{chapitre 03: etude empirique}{part.1}% 36
-\BOOKMARK [-1][-]{part.2}{II Conclusion}{}% 37
+\BOOKMARK [2][-]{subsection.2.2.1}{Les types de compression:}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.2}{Les m\351triques d'\351valuation des algorithmes de compression:}{section.2.2}% 32
+\BOOKMARK [1][-]{section.2.3}{Classification des m\351thodes de compression:}{chapter.2}% 33
+\BOOKMARK [1][-]{section.2.4}{M\351thodes de compression bas\351s sur les k2-trees :}{chapter.2}% 34
+\BOOKMARK [1][-]{section.2.5}{M\351thodes de compression bas\351s sur l'extraction de motifs :}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.5.1}{VOG : Vocabulary Based Summarization of Graphs}{section.2.5}% 36
+\BOOKMARK [1][-]{section.2.6}{M\351thodes de compression bas\351s les k2-trees :}{chapter.2}% 37
+\BOOKMARK [1][-]{section.2.7}{Conclusion}{chapter.2}% 38
+\BOOKMARK [0][-]{chapter.3}{chapitre 03: etude empirique}{part.1}% 39
+\BOOKMARK [-1][-]{part.2}{II Conclusion}{}% 40

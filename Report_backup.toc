@@ -31,10 +31,15 @@
 \contentsline {chapter}{\numberline {2}Compression de graphe}{20}{chapter.2}
 \contentsline {section}{\numberline {2.1}Compression de donn\IeC {\'e}es: }{20}{section.2.1}
 \contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{20}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Motivations derri\IeC {\`e}re la compression de graphes }{20}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Les types de compression:}{20}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{20}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Classification des m\IeC {\'e}thodes de compression:}{20}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Conclusion}{20}{section.2.3}
-\contentsline {chapter}{\numberline {3}chapitre 03: etude empirique}{21}{chapter.3}
-\contentsline {part}{II\hspace {1em}Conclusion}{22}{part.2}
+\contentsline {subsection}{\numberline {2.2.1}Les types de compression:}{21}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{21}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Classification des m\IeC {\'e}thodes de compression:}{21}{section.2.3}
+\contentsline {section}{\numberline {2.4}M\IeC {\'e}thodes de compression bas\IeC {\'e}s sur les k2-trees :}{21}{section.2.4}
+\contentsline {section}{\numberline {2.5}M\IeC {\'e}thodes de compression bas\IeC {\'e}s sur l'extraction de motifs :}{21}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}VOG : Vocabulary Based Summarization of Graphs}{21}{subsection.2.5.1}
+\contentsline {subparagraph}{Principe g\IeC {\'e}n\IeC {\'e}ral :}{21}{section*.6}
+\contentsline {subparagraph}{Algorithme de VoG :}{24}{section*.7}
+\contentsline {section}{\numberline {2.6}M\IeC {\'e}thodes de compression bas\IeC {\'e}s les k2-trees :}{26}{section.2.6}
+\contentsline {section}{\numberline {2.7}Conclusion}{26}{section.2.7}
+\contentsline {chapter}{\numberline {3}chapitre 03: etude empirique}{27}{chapter.3}
+\contentsline {part}{II\hspace {1em}Conclusion}{28}{part.2}
