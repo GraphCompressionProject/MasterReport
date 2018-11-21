@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  19 NOV 2018 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  21 NOV 2018 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,21 +407,91 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen152
 \Gm@dimlist=\toks36
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count128
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\algocf@hangindent=\skip62
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip63
+\skiplinenumber=\skip64
+\skiprule=\skip65
+\skiphlne=\skip66
+\skiptext=\skip67
+\skiplength=\skip68
+\algomargin=\skip69
+\skipalgocfslide=\skip70
+\algowidth=\dimen153
+\inoutsize=\dimen154
+\inoutindent=\dimen155
+\interspacetitleruled=\dimen156
+\interspacealgoruled=\dimen157
+\interspacetitleboxruled=\dimen158
+\algocf@ruledwidth=\skip71
+\algocf@inoutbox=\box61
+\algocf@inputbox=\box62
+\AlCapSkip=\skip72
+\AlCapHSkip=\skip73
+\algoskipindent=\skip74
+\algocf@nlbox=\box63
+\algocf@hangingbox=\box64
+\algocf@untilbox=\box65
+\algocf@skipuntil=\skip75
+\algocf@capbox=\box66
+\algocf@lcaptionbox=\skip76
+\algoheightruledefault=\skip77
+\algoheightrule=\skip78
+\algotitleheightruledefault=\skip79
+\algotitleheightrule=\skip80
+\c@algocfline=\count129
+\c@algocfproc=\count130
+\c@algocf=\count131
+\algocf@algoframe=\box67
+\algocf@algobox=\box68
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count132
+\c@ALG@rem=\count133
+\c@ALG@nested=\count134
+\ALG@tlm=\skip81
+\ALG@thistlm=\skip82
+\c@ALG@Lnr=\count135
+\c@ALG@blocknr=\count136
+\c@ALG@storecount=\count137
+\c@ALG@tmpcounter=\count138
+\ALG@tmplength=\skip83
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip62
-\f@nch@O@elh=\skip63
-\f@nch@O@erh=\skip64
-\f@nch@O@olh=\skip65
-\f@nch@O@orh=\skip66
-\f@nch@O@elf=\skip67
-\f@nch@O@erf=\skip68
-\f@nch@O@olf=\skip69
-\f@nch@O@orf=\skip70
+\f@nch@headwidth=\skip84
+\f@nch@O@elh=\skip85
+\f@nch@O@erh=\skip86
+\f@nch@O@olh=\skip87
+\f@nch@O@orh=\skip88
+\f@nch@O@elf=\skip89
+\f@nch@O@erf=\skip90
+\f@nch@O@olf=\skip91
+\f@nch@O@orf=\skip92
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -462,16 +532,16 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen153
-\Hy@linkcounter=\count128
-\Hy@pagecounter=\count129
+\@linkdim=\dimen159
+\Hy@linkcounter=\count139
+\Hy@pagecounter=\count140
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count130
+\Hy@SavedSpaceFactor=\count141
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -483,12 +553,12 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count131
+\c@Hy@tempcnt=\count142
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen154
-\Fld@menulength=\count132
-\Field@Width=\dimen155
-\Fld@charsize=\dimen156
+\XeTeXLinkMargin=\dimen160
+\Fld@menulength=\count143
+\Field@Width=\dimen161
+\Fld@charsize=\dimen162
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -498,78 +568,78 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count133
-\c@Item=\count134
-\c@Hfootnote=\count135
+\Hy@abspage=\count144
+\c@Item=\count145
+\c@Hfootnote=\count146
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count136
-\c@bookmark@seq@number=\count137
+\Fld@listcount=\count147
+\c@bookmark@seq@number=\count148
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip71
+\Hy@SectionHShift=\skip93
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip72
-\bibsep=\skip73
+\bibhang=\skip94
+\bibsep=\skip95
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count138
+\c@NAT@ctr=\count149
 )
-\c@defn=\count139
-\c@conj=\count140
-\c@exmp=\count141
+\c@defn=\count150
+\c@conj=\count151
+\c@exmp=\count152
 
 (./Report_backup.aux)
 \openout1 = `Report_backup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Info: Redefining \degres on input line 37.
-LaTeX Info: Redefining \dots on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Info: Redefining \degres on input line 39.
+LaTeX Info: Redefining \dots on input line 39.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 37.
+(french.ldf)                BEFORE babel/french; reported on input line 39.
 
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 37.
+(french.ldf)             reported on input line 39.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 37.
-LaTeX Info: Redefining \up on input line 37.
+(french.ldf)             reported on input line 39.
+LaTeX Info: Redefining \up on input line 39.
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
-\scratchdimen=\dimen157
-\scratchbox=\box61
-\nofMPsegments=\count143
-\nofMParguments=\count144
+\scratchcounter=\count153
+\scratchdimen=\dimen163
+\scratchbox=\box69
+\nofMPsegments=\count154
+\nofMParguments=\count155
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count145
-\MPscratchDim=\dimen158
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
+\MPscratchCnt=\count156
+\MPscratchDim=\dimen164
+\MPnumerator=\count157
+\makeMPintoPDFobject=\count158
 \everyMPtoPDFconversion=\toks38
 )
 *geometry* driver: auto-detecting
@@ -606,19 +676,19 @@ LaTeX Info: Redefining \up on input line 37.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 37.
+\AtBeginShipoutBox=\box70
+Package hyperref Info: Link coloring OFF on input line 39.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count148
+\c@section@level=\count159
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (./Report_backup.out) (./Report_backup.out)
 \@outlinefile=\write3
@@ -732,10 +802,40 @@ Chapitre 2.
 
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 3.
 
+
+Package natbib Warning: Citation `muller' on page 8 undefined on input line 3.
+
+
+Package natbib Warning: Citation `fages2014exploitation' on page 8 undefined on
+ input line 3.
+
 [8
 
 ]
-<./ressources/image/graphNonOriente.png, id=299, 328.75764pt x 333.00882pt>
+
+Package natbib Warning: Citation `hennecart2012elements' on page 9 undefined on
+ input line 6.
+
+
+Package natbib Warning: Citation `IUTLyonInformatique' on page 9 undefined on i
+nput line 7.
+
+
+Package natbib Warning: Citation `muller' on page 9 undefined on input line 8.
+
+
+Package natbib Warning: Citation `lopez2003cours' on page 9 undefined on input 
+line 9.
+
+
+Package natbib Warning: Citation `IUTLyonInformatique' on page 9 undefined on i
+nput line 10.
+
+
+Package natbib Warning: Citation `muller' on page 9 undefined on input line 15.
+
+
+<./ressources/image/graphNonOriente.png, id=283, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -746,8 +846,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--33
 
  []
 
-[9] [10 <./ressources/image/graphNonOriente.png>])
+[9]
+
+Package natbib Warning: Citation `DUT' on page 10 undefined on input line 39.
+
+
+Package natbib Warning: Citation `DUT' on page 10 undefined on input line 41.
+
+
+Package natbib Warning: Citation `muller' on page 10 undefined on input line 47
+.
+
+
+Package natbib Warning: Citation `muller' on page 10 undefined on input line 49
+.
+
+
+Package natbib Warning: Citation `muller' on page 10 undefined on input line 54
+.
+
+
+Package natbib Warning: Citation `muller' on page 10 undefined on input line 56
+.
+
+
+Package natbib Warning: Citation `parlebas1972centralite' on page 10 undefined 
+on input line 66.
+
+[10 <./ressources/image/graphNonOriente.png>])
 (./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
+
+Package natbib Warning: Citation `muller' on page 11 undefined on input line 5.
+
+
+
+Package natbib Warning: Citation `muller' on page 11 undefined on input line 8.
+
+
+
+Package natbib Warning: Citation `IUTLyonInformatique' on page 11 undefined on 
+input line 10.
+
+
+Package natbib Warning: Citation `Pres' on page 11 undefined on input line 12.
+
+
+Package natbib Warning: Citation `Pres' on page 11 undefined on input line 14.
+
+
+Package natbib Warning: Citation `IUTLyonInformatique' on page 11 undefined on 
+input line 16.
+
+
 Overfull \hbox (27.54167pt too wide) in paragraph at lines 32--33
 []\T1/cmr/m/n/10.95 Soit g = ($\OML/cmm/m/it/10.95 V[]$ \T1/cmr/m/n/10.95 , $\O
 ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
@@ -755,54 +905,157 @@ ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
 r/m/n/10.95 = {(1,2),(1,3),(3,2),(3,4),(4,3)}. 
  []
 
-<./ressources/image/RepDiGraphe.png, id=350, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=301, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
  39.
 (pdftex.def)             Requested size: 180.6672pt x 119.69202pt.
-[11]) (./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepD
-iGraphe.png>]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex [13])
-(./Chapitres/TheorieDesGraphes/GraphTypes.tex)
-(./Chapitres/TheorieDesGraphes/structRep.tex [14]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `DUT' on page 11 undefined on input line 47.
+
+[11]
+
+Package natbib Warning: Citation `DUT' on page 12 undefined on input line 49.
+
+
+Package natbib Warning: Citation `muller' on page 12 undefined on input line 56
+.
+
+
+Package natbib Warning: Citation `bac' on page 12 undefined on input line 64.
+
+) (./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepDiGra
+phe.png>]
+
+Package natbib Warning: Citation `DUT' on page 13 undefined on input line 10.
+
+
+Package natbib Warning: Citation `muller' on page 13 undefined on input line 13
+.
+
+) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex
+
+Package natbib Warning: Citation `DUT' on page 13 undefined on input line 11.
+
+
+Package natbib Warning: Citation `bac' on page 13 undefined on input line 15.
+
+
+Package natbib Warning: Citation `bac' on page 13 undefined on input line 24.
+
+
+Package natbib Warning: Citation `bac' on page 13 undefined on input line 26.
+
+[13]
+
+Package natbib Warning: Citation `koutra2015summarizing' on page 14 undefined o
+n input line 29.
+
+) (./Chapitres/TheorieDesGraphes/GraphTypes.tex
+
+Package natbib Warning: Citation `Pres' on page 14 undefined on input line 7.
+
+
+Package natbib Warning: Citation `DUT' on page 14 undefined on input line 7.
+
+
+Package natbib Warning: Citation `DUT' on page 14 undefined on input line 11.
+
+
+Package natbib Warning: Citation `IUTLyonInformatique' on page 14 undefined on 
+input line 14.
+
+) (./Chapitres/TheorieDesGraphes/structRep.tex [14]
+
+Package natbib Warning: Citation `lehman2010mathematics' on page 15 undefined o
+n input line 9.
+
+
+Package natbib Warning: Citation `mathieu' on page 15 undefined on input line 9
+.
+
+
+Package natbib Warning: Citation `IUTLyonInformatique' on page 15 undefined on 
+input line 9.
+
+
 Overfull \hbox (3.10071pt too wide) in paragraph at lines 9--10
 []\T1/cmr/m/n/10.95 La ma-trice d'ad-ja-cence de G est une ma-trice boo-léenne 
 carré d'ordre n : $[][]$,
  []
 
-<./ressources/image/graphAdjace.png, id=421, 361.35pt x 306.0847pt>
+
+Package natbib Warning: Citation `muller' on page 15 undefined on input line 19
+.
+
+
+Package natbib Warning: Citation `lopez2003cours' on page 15 undefined on input
+ line 22.
+
+
+Package natbib Warning: Citation `hennecart2012elements' on page 15 undefined o
+n input line 23.
+
+<./ressources/image/graphAdjace.png, id=327, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  30.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=422, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=328, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
 e 37.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
 [15]
-<./ressources/image/graphIncid.png, id=440, 410.94705pt x 365.60118pt>
+
+Package natbib Warning: Citation `lopez2003cours' on page 16 undefined on input
+ line 44.
+
+
+Package natbib Warning: Citation `hennecart2012elements' on page 16 undefined o
+n input line 46.
+
+
+Package natbib Warning: Citation `mathieu' on page 16 undefined on input line 4
+6.
+
+
+Package natbib Warning: Citation `hennecart2012elements' on page 16 undefined o
+n input line 58.
+
+<./ressources/image/graphIncid.png, id=336, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 73.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=441, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=337, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
 e 80.
 (pdftex.def)             Requested size: 140.00441pt x 110.00546pt.
- [16 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>
-]
+[16 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>]
+
+Package natbib Warning: Citation `mathieu' on page 17 undefined on input line 9
+0.
+
+
+Package natbib Warning: Citation `IUTLyonInformatique' on page 17 undefined on 
+input line 91.
+
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  98.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=454, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=345, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
@@ -813,9 +1066,30 @@ Underfull \hbox (badness 2653) in paragraph at lines 106--106
 []\T1/cmr/m/sc/10.95 Figure \T1/cmr/m/n/10.95 2.8 ^^U []Liste d'ad-ja-cence du
  []
 
-) [17 <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>
- <./ressources/image/listeAdjace.png>]
-(./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [18])
+) (./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [17 <./ressources/image/
+graphIncid.png> <./ressources/image/matriceIncid.png> <./ressources/image/liste
+Adjace.png>]
+
+Package natbib Warning: Citation `lemmouchi2012etude' on page 18 undefined on i
+nput line 9.
+
+
+Package natbib Warning: Citation `pellegrini2004protein' on page 18 undefined o
+n input line 13.
+
+
+Package natbib Warning: Citation `pellegrini2004protein' on page 18 undefined o
+n input line 15.
+
+
+Package natbib Warning: Citation `brisaboa2009k' on page 18 undefined on input 
+line 19.
+
+
+Package natbib Warning: Citation `guillaume2002web' on page 18 undefined on inp
+ut line 19.
+
+) [18]
 Overfull \hbox (1.07074pt too wide) in paragraph at lines 43--45
 []\T1/cmr/m/n/10.95 Dans ce cha-pitre nous avons pré-sen-ter les no-tions et le
 s concepts gé-né-raux qui touchent
@@ -823,17 +1097,25 @@ s concepts gé-né-raux qui touchent
 
 ) [19]
 Chapitre 3.
-(./Chapitres/CompressionDesGraphes/datacompression.tex)
-(./Chapitres/CompressionDesGraphes/TypeDeCompression.tex [20
+(./Chapitres/CompressionDesGraphes/datacompression.tex
+
+Package natbib Warning: Citation `lelewer1987data' on page 20 undefined on inpu
+t line 2.
+
+
+Package natbib Warning: Citation `sethi2014data' on page 20 undefined on input 
+line 6.
+
+) (./Chapitres/CompressionDesGraphes/TypeDeCompression.tex [20
 
 ]
-<./ressources/image/SansPerte.png, id=497, 2441.12pt x 321.2pt>
+<./ressources/image/SansPerte.png, id=364, 2441.12pt x 321.2pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 7
 .
 (pdftex.def)             Requested size: 366.1522pt x 48.17792pt.
-<./ressources/image/AvecPerte.png, id=498, 2445.135pt x 325.215pt>
+<./ressources/image/AvecPerte.png, id=365, 2445.135pt x 325.215pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
@@ -844,17 +1126,46 @@ Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./Chapitres/CompressionDesGraphes/MOE.tex [21 <./ressources/image/SansPerte.
-png>] [22 <./ressources/image/AvecPerte.png>]) [23]
-Chapitre 4.
-[24
+png>]
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Package natbib Warning: Citation `uthayakumar2018survey' on page 22 undefined o
+n input line 16.
+
+[22 <./ressources/image/AvecPerte.png>]) [23]
+Chapitre 4.
+(./Chapitres/ExtractionMotifs/VOG.tex [24
+
+] [25] [26] [27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Overfull \hbox (30.07521pt too wide) in paragraph at lines 137--141
+Overfull \hbox (17.0pt too wide) detected at line 126
+[][] 
+ []
+
+) (./Chapitres/ExtractionMotifs/VOG_Overlapp.tex
+
+Package natbib Warning: Citation `koutra2015summarizing' on page 29 undefined o
+n input line 2.
+
+
+Package natbib Warning: Citation `liu2015empirical' on page 29 undefined on inp
+ut line 4.
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+) (./Chapitres/ExtractionMotifs/TimeCrunch.tex
+
+Package natbib Warning: Citation `shah2015timecrunch' on page 30 undefined on i
+nput line 2.
+
+
+Overfull \hbox (30.07521pt too wide) in paragraph at lines 5--9
 \OT1/cmr/m/n/10.95 
  = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 st \OT1/cmr/m/n/10.95 (\OML/cmm/m/i
 t/10.95 etoile\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  fc\OT1/cmr/m/n/10.95 (
@@ -867,69 +1178,85 @@ bipartie\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  ch\OT1/cmr/m/n/10.95 (\OML/c
 mm/m/it/10.95 chaine\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 g$
  []
 
-[25]
+[30]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 144.
+(amsmath)                 on input line 12.
 
-[26] [27]
+) [31] [32]
 Chapitre 5.
-[28
+[33
 
 ]
 Chapitre 6.
-[29
+[34
 
-] (./Report_backup.bbl [30
+] (./Report_backup.bbl [35
 
-] [31])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
- [32]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
- (./Report_backup.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+] [36])
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
+[37]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+ (./Report_backup.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
 Package rerunfilecheck Info: File `Report_backup.out' has not changed.
 (rerunfilecheck)             Checksum: E3B6BD6A75B28D1770A45FCC80F71C1B;3098.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 10195 strings out of 492649
- 149851 string characters out of 6129622
- 260016 words of memory out of 5000000
- 13705 multiletter control sequences out of 15000+600000
- 24839 words of font info for 54 fonts, out of 8000000 for 9000
+ 11642 strings out of 492649
+ 172484 string characters out of 6129622
+ 292971 words of memory out of 5000000
+ 15105 multiletter control sequences out of 15000+600000
+ 26533 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,914b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,43p,1063b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/cm-super/sfti2488.pfb>
-Output written on Report_backup.pdf (33 pages, 608470 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/cm-super/sfti2488.pfb>
+Output written on Report_backup.pdf (38 pages, 650674 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 594 compressed objects within 6 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
  387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

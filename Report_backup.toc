@@ -13,12 +13,12 @@
 \contentsline {subsection}{\numberline {2.2.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{11}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Repr\IeC {\'e}sentation graphique}{11}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Quelques Propri\IeC {\'e}t\IeC {\'e}s:}{12}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Notion de Connexit\IeC {\'e}}{13}{section.2.3}
+\contentsline {section}{\numberline {2.3}Notion de Connexit\IeC {\'e}}{12}{section.2.3}
 \contentsline {section}{\numberline {2.4}Graphe partiel et sous graphe:}{13}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}D\IeC {\'e}finitions:}{13}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Quelques Types de sous graphes:}{14}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Quelques Types de sous graphes:}{13}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Quelques types de graphe}{14}{section.2.5}
-\contentsline {section}{\numberline {2.6}Repr\IeC {\'e}sentation Structurelle d'un graphe}{15}{section.2.6}
+\contentsline {section}{\numberline {2.6}Repr\IeC {\'e}sentation Structurelle d'un graphe}{14}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Matrice d'adjacence}{15}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Matrice d'incidence}{16}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}Liste d'adjacence}{17}{subsection.2.6.3}
@@ -43,6 +43,8 @@
 \contentsline {chapter}{\numberline {4} Les m\IeC {\'e}thodes de compression par extraction de motifs}{24}{chapter.4}
 \contentsline {section}{\numberline {4.1}Les m\IeC {\'e}thodes d'extraction de motifs}{24}{section.4.1}
 \contentsline {section}{\numberline {4.2}Compression par extraction de motifs}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}Conclusion}{27}{section.4.3}
-\contentsline {chapter}{\numberline {5}Les m\IeC {\'e}thodes de compression k2-Trees}{28}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}
+\contentsline {subparagraph}{Principe g\IeC {\'e}n\IeC {\'e}ral :}{24}{section*.9}
+\contentsline {subparagraph}{Algorithme de VoG :}{27}{section*.10}
+\contentsline {section}{\numberline {4.3}Conclusion}{32}{section.4.3}
+\contentsline {chapter}{\numberline {5}Les m\IeC {\'e}thodes de compression k2-Trees}{33}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{34}{chapter.6}
