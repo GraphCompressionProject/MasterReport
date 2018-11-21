@@ -98,6 +98,12 @@ Sethi, G., Shaw, S., Vinutha, K., and Chakravorty, C. (2014).
 \newblock {\em International Journal of Computer Science and Information
   Technologies}, 5(4):5584--6.
 
+\bibitem[Shah et~al., 2015]{shah2015timecrunch}
+Shah, N., Koutra, D., Zou, T., Gallagher, B., and Faloutsos, C. (2015).
+\newblock Timecrunch: Interpretable dynamic graph summarization.
+\newblock In {\em Proceedings of the 21th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, pages 1055--1064. ACM.
+
 \bibitem[Uthayakumar et~al., 2018]{uthayakumar2018survey}
 Uthayakumar, J., Vengattaraman, T., and Dhavachelvan, P. (2018).
 \newblock A survey on data compression techniques: From the perspective of data

@@ -64,14 +64,13 @@
 %Introduction (début de la pagination)					bligatoire
 
 
-\part{Introduction} 
+\chapter{Introduction} 
 
 
 %---->chapitre 01 :« cadrage du projet »
 	\chapter{ Théorie des graphes}
 	  \input{./Chapitres/TheorieDesGraphes/TheorieDesGraphes.tex}
 	
-	\chapter{Les méthodes d'extraction de motifs}
 
 %---->chapitre 02 :« »
 	\chapter{Compression de graphe}
@@ -93,48 +92,97 @@
 			
 			\subsection{Classification des méthodes de compression:}
 			
-			\subsection{Les méthodes de Compression par Extraction de motifs}
+		\section{Conclusion}
 			
+%--------->chapitre 03
+
+\chapter{ Les méthodes de compression par extraction de motifs}
+			
+						
+			
+			\section{Les méthodes d'extraction de motifs}
+			
+			\section{Compression par extraction de motifs}
 			%%%VoG Overlapp
-			Comme nous l'avons déjà précisé, VOG formule le problème de compression de graphe en tant que problème d'optimisation basé sur la théorie de l'information, l'objectif étant de rechercher les structures  qui minimisent la longueur de description globale du graphe. Un élément clé de VoG est la méthode de décomposition utilisée qui peut donner en sortie des sous-graphes ayant des nœuds/arêtes en commun et dont VoG ne prend en compte que le premiers cas. 
+			Comme nous l'avons déjà précisé, VOG formule le problème de compression de graphe en tant que problème d'optimisation basé sur la théorie de l'information, l'objectif étant de rechercher les structures  qui minimisent la longueur de description globale du graphe. Un élément clé de VoG est la méthode de décomposition utilisée qui peut donner en sortie des sous-graphes ayant des nœuds et/ou des arêtes en commun et dont VoG\citep{koutra2015summarizing} ne suppose que le premiers cas. 
 			
-			A partir de cette constatation, les auteurs de \citep{liu2015empirical} propose VoG-overlapp, une extension de VoG prenant en compte les chevauchement des structures, ainsi qu'une étude de l'effet de diverses méthodes de décomposition sur la qualité de la compression, à savoir la méthodes SlushBurn, Louvain, Spectral clustering, Metis et KCBC qui est une nouvelle méthode proposée dans cette article et dont la description et fournie dans l'(Algorithme 1).
+			En partant de ce constat, les auteurs de \citep{liu2015empirical} propose VoG-overlapp, une extension de VoG prenant en compte les chevauchement des structures sous forme d'une étude de l'effet de diverses méthodes de décomposition sur la qualité de la compression, à savoir la méthodes SlushBurn, Louvain, Spectral clustering, Metis et KCBC qui est une nouvelle méthode proposée dans cette article et dont la description et fournie dans l'(Algorithme 1).
 			
 			
 			%%%Algorithme 01
 			
-			L'idée de base de VoG-overlapp est d'inclure une pénalité pour les chevauchements importants dans la fonction objective ce qui oriente le processus de sélection des structure vers la sortie souhaitée. La formule xx de VoG devient alors:
+			L'idée de base de VoG-overlapp est d'inclure une pénalité pour les chevauchements importants dans la fonction objective ce qui oriente le processus de sélection des structures vers la sortie souhaitée. Elle devient alors:
 			\begin{center}
 				$min\ L(G,M) = min\ \big\{L(M) + L(E) +\textbf{L(O)}\big\}$
 			\end{center}
 			
-			Le principe de calcul de $L(M)\ et\ L(E)$ est le même que dans VoG. O est une matrice cumulant le nombre de fois que chacune des arêtes a été couverte par le modèle. Le code des chevauchement est donné par la formule \eqref{eq:erl}  :
-			\begin{equation} \label{eq:erl}
+			Le principe de calcul de $L(M)\ et\ L(E)$ demeurent le même avec O, une matrice cumulant le nombre de fois que chacune des arêtes a été couverte par le modèle. Le cout du codage de la matrice des chevauchement est donné par la formule \eqref{eq:Lo}.
+			\begin{equation} \label{eq:Lo}
 				L(O) = log(|O|)\ +\ ||O||\ l_{1}\ +\ ||O||'\ l_{0}\ +\  \displaystyle{\sum_{o\in\varepsilon(O)}L_{N}(|o|)}
 			\end{equation}
 			Où :
 			\begin{itemize}[label=$\circ$]
 				\item $|O|$  est le nombre d'arêtes (distinctes) qui se répète dans le modèles M. 
 				\item $||O||$ et $||O||'$ représentent respectivement le nombre des arêtes présentes et manquantes dans O.
-				\item $l_{1} = -log (\frac{||O||}{||O||+||O||'})$, analogiquement pour $l_{0}$, sont les longueurs des codes de préfixe optimaux pour les arêtes actuelles et manquantes, respectivement
-				\item $\varepsilon(O)$  est l'ensemble des entrées non nulles dans la matrice O.
+				\item $l_{1} = -log (\frac{||O||}{||O||+||O||'})$, de manière analogique $l_{0}$, sont les longueurs des codes de préfixe optimaux pour les arêtes actuelles et manquantes, respectivement.
+				\item $\varepsilon(O)$  est l'ensemble des entrées non nulles dans la matrice O.\\
 			\end{itemize}
 			
 			
+			
+			%%%%TimeCrunch
+			Durant la même année, \citep{shah2015timecrunch} ont proposé une autre variation de VoG, TimeCrunch, pour le cas des graphes simples (sans boucles) non orientés dynamiques représentés par un ensemble de graphes associés chacun à timestamp. En d'autres termes, ils considèrent les graphes $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$.
+			
+			
+			Un nouveau vocabulaire est proposé pour décrire proprement l'évolution des sous-structures dans le temps. En effet, ils partent du même vocabulaire de structures statiques 
+			%citer les structures Ω = {st,fc,nc,bc,nb,ch}
+			$\Omega =\{ st\ (etoile),\ fc (clique),\ nc (quasi-clique),\ bc (bipartie),\ nb (quasi-bipartie),\ ch (chaine)\}$ 
+			dont ils affectent une signature temporelle $\delta \in \Delta$ où: $\Delta$ = \{ o(oneshot), r(ranged), p(periodique), f(flickering), c(constante) \}. 
+			
+			 Comme les éléments du modèle sont modifiés, son cout est alors aussi modifié pour inclure pour chaque structure $s$ non seulement sa connectivité $c(s)$ correspondant aux arêtes des zones induites par $s$ mais aussi sa présence temporelle $u(s)$ correspondant aux timestamps dans lesquels $s$ apparait dans le graphe G. 
+			 
+			 $L(M) = L_{N}(|M|+1)\ +\ $log${|M|+|\Phi|-1}\choose{|\Phi|-1}$ $+\ \displaystyle{\sum_{s\in M}(logP(v(s)|M) + L(c(s)) + \textbf{L(u(s))})}$
+			 
+			 Le cout de l'encodage de la présence temporelle diffèrent selon ses caractéristiques. Nous présenterons dans ce qui suit la formule correspondant à chaque signature.
+			 
+			 \begin{itemize}[label=$\circ$]
+			 \item \textbf{Oneshot}: cette signature décrit les sous-structure qui apparaissent dans un seul timestamp ,i.e $|u(s)|=1$. Donc le cout de l'encodage se réduit aux nombre de bits nécessaires pour sauvegarder le timestamp : $L(u(s)) = log(t)$.
+			 \item \textbf{Ranged}: dans ce cas la sous-structure apparait dans tous les graphes se trouvant entre deux timestamps $t_{1}$ et $t_{2}$. Le cout englobe le nombre de timestamps dans lesquels elle apparait ainsi que les identifiants des deux timestamp $t_{debut}$ et $t_{fin}$ : $L(u(s)) = L_{N}(|u(s)|) +log$ ${t}\choose{2}$.
+			 \item \textbf{Periodic}: cette catégorie est une extension   de la précédente avec les timestamps qui sont éloigné de plus d'un pas d'où: $L(p) = L(r)$.
+			 
+			 En effet, la périodicité peut être déduite des marqueurs début et de fin ainsi que du nombre de pas de temps $|u(s)|$, permettant ainsi de reconstruire $u(s)$
+			 \item \textbf{Flickering}: ce type décrit les structures qui apparaissent dans $n$ timesteps de manière aléatoire. Le cout doit englober donc le nombre de timesteps ainsi que leurs identifiants d'où: 
+			 $L(u(s)) = L_{N}(|u(s)|) +log$ ${t}\choose{|u(s)|}$.
+			 \item \textbf{Constant}: dans ce cas la sous-structure apparait dans tout les timesteps et donc elle ne dépend pas du temps d'où L(c)=0.
+			 \end{itemize}
+			 
+			 
+			 Nous notons que décrire $u(s)$ est encore un autre problème de sélection de modèle pour lequel nous pouvons tirer parti de MDL. En effet juste comme pour le codage de la connectivité, il peut ne pas être précis avec une signature temporelle donnée. Toutefois, toute approximation entraînera des coûts supplémentaires pour l'encodage de l'erreur qui englobent l'erreur de l'encodage de la connectivité ainsi que l'erreur de l'encodage de la signature temporelle.
+			 
+			 
+			 
+			 
+			 
+			 
+			 
 			
 		\section{Conclusion}
 
 
 %---->chapitre 03 :« Etude empirique »
-	\chapter{chapitre 03: etude empirique}
+	\chapter{Les méthodes de compression k2-Trees}
 	
-	\begin{defn}
-			Here is a new definition
-	\end{defn}
+	
+	
+	
+	
+	%\begin{defn}
+	%		Here is a new definition
+	%\end{defn}
 	
 
 %Conclusion Générale									Obligatoire
-\part{Conclusion} 
+\chapter{Conclusion} 
 
 %Références Bibliographiques (fin de la pagination)		Obligatoire
 
