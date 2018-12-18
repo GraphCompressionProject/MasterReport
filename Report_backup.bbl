@@ -5,17 +5,100 @@
 \newblock {\em Quelques rappels sur la th{\'e}orie des graphes}.
 \newblock IUT Lyon Informatique.
 
+\bibitem[Alvarez-Garcia et~al., 2017]{alvarez2017succinct}
+Alvarez-Garcia, S., de~Bernardo, G., Brisaboa, N.~R., and Navarro, G. (2017).
+\newblock A succinct data structure for self-indexing ternary relations.
+\newblock {\em Journal of Discrete Algorithms}, 43:38--53.
+
+\bibitem[{\'A}lvarez-Garc{\'\i}a et~al., 2018]{alvarez2018compact}
+{\'A}lvarez-Garc{\'\i}a, S., Freire, B., Ladra, S., and Pedreira, {\'O}.
+  (2018).
+\newblock Compact and efficient representation of general graph databases.
+\newblock {\em Knowledge and Information Systems}, pages 1--32.
+
+\bibitem[Aragon and Seidel, 1989]{aragon1989randomized}
+Aragon, C.~R. and Seidel, R.~G. (1989).
+\newblock Randomized search trees.
+\newblock In {\em Foundations of Computer Science, 1989., 30th Annual Symposium
+  on}, pages 540--545. IEEE.
+
+\bibitem[Badr, 2013]{badr2013traitement}
+Badr, M. (2013).
+\newblock {\em Traitement de requ{\^e}tes top-k multicrit{\`e}res et
+  application {\`a} la recherche par le contenu dans les bases de donn{\'e}es
+  multim{\'e}dia}.
+\newblock PhD thesis, Cergy-Pontoise.
+
+\bibitem[Brisaboa et~al., 2015]{brisaboa2015efficient}
+Brisaboa, N.~R., de~Bernardo, G., Guti{\'e}rrez, G., Ladra, S., Penabad, M.~R.,
+  and Troncoso, B.~A. (2015).
+\newblock Efficient set operations over k2-trees.
+\newblock In {\em Data Compression Conference (DCC), 2015}, pages 373--382.
+  IEEE.
+
+\bibitem[Brisaboa et~al., 2014a]{brisaboa2014k}
+Brisaboa, N.~R., De~Bernardo, G., Konow, R., and Navarro, G. (2014a).
+\newblock K 2-treaps: Range top-k queries in compact space.
+\newblock In {\em International Symposium on String Processing and Information
+  Retrieval}, pages 215--226. Springer.
+
+\bibitem[Brisaboa et~al., 2012]{brisaboa2012compressed}
+Brisaboa, N.~R., De~Bernardo, G., and Navarro, G. (2012).
+\newblock Compressed dynamic binary relations.
+\newblock In {\em Data Compression Conference (DCC), 2012}, pages 52--61. IEEE.
+
 \bibitem[Brisaboa et~al., 2009]{brisaboa2009k}
 Brisaboa, N.~R., Ladra, S., and Navarro, G. (2009).
 \newblock k 2-trees for compact web graph representation.
 \newblock In {\em International Symposium on String Processing and Information
   Retrieval}, pages 18--30. Springer.
 
+\bibitem[Brisaboa et~al., 2013]{brisaboa2013dacs}
+Brisaboa, N.~R., Ladra, S., and Navarro, G. (2013).
+\newblock Dacs: Bringing direct access to variable-length codes.
+\newblock {\em Information Processing \& Management}, 49(1):392--404.
+
+\bibitem[Brisaboa et~al., 2014b]{brisaboa2014compact}
+Brisaboa, N.~R., Ladra, S., and Navarro, G. (2014b).
+\newblock Compact representation of web graphs with extended functionality.
+\newblock {\em Information Systems}, 39:152--174.
+
+\bibitem[De~Berg et~al., 1997]{de1997computational}
+De~Berg, M., Van~Kreveld, M., Overmars, M., and Schwarzkopf, O. (1997).
+\newblock Computational geometry.
+\newblock In {\em Computational geometry}, pages 1--17. Springer.
+
+\bibitem[De~Bernardo et~al., 2013]{de2013compact}
+De~Bernardo, G., {\'A}lvarez-Garc{\'\i}a, S., Brisaboa, N.~R., Navarro, G., and
+  Pedreira, O. (2013).
+\newblock Compact querieable representations of raster data.
+\newblock In {\em International Symposium on String Processing and Information
+  Retrieval}, pages 96--108. Springer.
+
+\bibitem[de~Bernardo~Roca, 2014]{de2014new}
+de~Bernardo~Roca, G. (2014).
+\newblock {\em New data structures and algorithms for the efficient management
+  of large spatial datasets}.
+\newblock PhD thesis, Citeseer.
+
 \bibitem[Fages, 2014]{fages2014exploitation}
 Fages, J.-G. (2014).
 \newblock {\em Exploitation de structures de graphe en programmation par
   contraintes}.
 \newblock PhD thesis, Ecole des Mines de Nantes.
+
+\bibitem[Garcia et~al., 2014]{garcia2014interleaved}
+Garcia, S.~A., Brisaboa, N.~R., de~Bernardo, G., and Navarro, G. (2014).
+\newblock Interleaved k2-tree: Indexing and navigating ternary relations.
+\newblock In {\em Data Compression Conference (DCC), 2014}, pages 342--351.
+  IEEE.
+
+\bibitem[Grossi et~al., 2003]{grossi2003high}
+Grossi, R., Gupta, A., and Vitter, J.~S. (2003).
+\newblock High-order entropy-compressed text indexes.
+\newblock In {\em Proceedings of the fourteenth annual ACM-SIAM symposium on
+  Discrete algorithms}, pages 841--850. Society for Industrial and Applied
+  Mathematics.
 
 \bibitem[Guillaume and Latapy, 2002]{guillaume2002web}
 Guillaume, J.-L. and Latapy, M. (2002).
@@ -47,6 +130,11 @@ Lehman, E., Leighton, F.~T., and Meyer, A.~R. (2010).
 Lemmouchi, S. (2012).
 \newblock {\em Etude de la robustesse des graphes sociaux {\'e}mergents}.
 \newblock PhD thesis, Universit{\'e} Claude Bernard-Lyon I.
+
+\bibitem[Liu et~al., 2018]{liu2018graph}
+Liu, Y., Safavi, T., Dighe, A., and Koutra, D. (2018).
+\newblock Graph summarization methods and applications: A survey.
+\newblock {\em ACM Computing Surveys (CSUR)}, 51(3):62.
 
 \bibitem[Lopez, 2003]{lopez2003cours}
 Lopez, P. (2003).
@@ -87,5 +175,16 @@ Seo, H., Park, K., Han, Y., Kim, H., Umair, M., Khan, K.~U., and Lee, Y.-K.
 \newblock An effective graph summarization and compression technique for a
   large-scaled graph.
 \newblock {\em The Journal of Supercomputing}, pages 1--15.
+
+\bibitem[Shi et~al., 2012]{shi2012optimizing}
+Shi, Q., Xiao, Y., Bessis, N., Lu, Y., Chen, Y., and Hill, R. (2012).
+\newblock Optimizing k2 trees: A case for validating the maturity of network of
+  practices.
+\newblock {\em Computers \& Mathematics with Applications}, 63(2):427--436.
+
+\bibitem[Zhang et~al., 2014]{zhang2014delta}
+Zhang, Y., Xiong, G., Liu, Y., Liu, M., Liu, P., and Guo, L. (2014).
+\newblock Delta-k 2-tree for compact representation of web graphs.
+\newblock In {\em Asia-Pacific Web Conference}, pages 270--281. Springer.
 
 \end{thebibliography}

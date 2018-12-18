@@ -1,8 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Report_backup.aux
 The style file: apalike.bst
 Database file #1: Bibliographie.bib
-Warning--I didn't find a database entry for "IUT"
+Repeated entry---line 139 of file Bibliographie.bib
+ : @inproceedings{de2013compact
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 148 of file Bibliographie.bib
+ : @article{alvarez2017succinct
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 158 of file Bibliographie.bib
+ : @article{shi2012optimizing
+ :                           ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
 Warning--empty author and editor in IUTLyonInformatique
 Warning--empty institution in Pres
-(There were 4 warnings)
+(There were 3 error messages)
