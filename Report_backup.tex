@@ -18,6 +18,13 @@
 %--------- pour le style de la page ----------
 %\usepackage[top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
 \usepackage[]{geometry}
+
+
+%Algorithme 
+%%algorithme
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
 \usepackage{setspace}
 \setstretch{1,5}
 %\usepackage{txfonts} //pour utiliser times new roman dans le document
@@ -64,14 +71,13 @@
 %Introduction (début de la pagination)					bligatoire
 
 
-\part{Introduction} 
+\chapter{Introduction} 
 
 
 %---->chapitre 01 :« cadrage du projet »
 	\chapter{ Théorie des graphes}
 	  \input{./Chapitres/TheorieDesGraphes/TheorieDesGraphes.tex}
 	
-	\chapter{Les méthodes d'extraction de motifs}
 
 %---->chapitre 02 :« »
 	\chapter{Compression de graphe}
@@ -93,48 +99,37 @@
 			
 			\subsection{Classification des méthodes de compression:}
 			
-			\subsection{Les méthodes de Compression par Extraction de motifs}
+		\section{Conclusion}
 			
-			%%%VoG Overlapp
-			Comme nous l'avons déjà précisé, VOG formule le problème de compression de graphe en tant que problème d'optimisation basé sur la théorie de l'information, l'objectif étant de rechercher les structures  qui minimisent la longueur de description globale du graphe. Un élément clé de VoG est la méthode de décomposition utilisée qui peut donner en sortie des sous-graphes ayant des nœuds/arêtes en commun et dont VoG ne prend en compte que le premiers cas. 
+%--------->chapitre 03
+
+\chapter{ Les méthodes de compression par extraction de motifs}
 			
-			A partir de cette constatation, les auteurs de \citep{liu2015empirical} propose VoG-overlapp, une extension de VoG prenant en compte les chevauchement des structures, ainsi qu'une étude de l'effet de diverses méthodes de décomposition sur la qualité de la compression, à savoir la méthodes SlushBurn, Louvain, Spectral clustering, Metis et KCBC qui est une nouvelle méthode proposée dans cette article et dont la description et fournie dans l'(Algorithme 1).
+						
 			
+			\section{Les méthodes d'extraction de motifs}
 			
-			%%%Algorithme 01
-			
-			L'idée de base de VoG-overlapp est d'inclure une pénalité pour les chevauchements importants dans la fonction objective ce qui oriente le processus de sélection des structure vers la sortie souhaitée. La formule xx de VoG devient alors:
-			\begin{center}
-				$min\ L(G,M) = min\ \big\{L(M) + L(E) +\textbf{L(O)}\big\}$
-			\end{center}
-			
-			Le principe de calcul de $L(M)\ et\ L(E)$ est le même que dans VoG. O est une matrice cumulant le nombre de fois que chacune des arêtes a été couverte par le modèle. Le code des chevauchement est donné par la formule \eqref{eq:erl}  :
-			\begin{equation} \label{eq:erl}
-				L(O) = log(|O|)\ +\ ||O||\ l_{1}\ +\ ||O||'\ l_{0}\ +\  \displaystyle{\sum_{o\in\varepsilon(O)}L_{N}(|o|)}
-			\end{equation}
-			Où :
-			\begin{itemize}[label=$\circ$]
-				\item $|O|$  est le nombre d'arêtes (distinctes) qui se répète dans le modèles M. 
-				\item $||O||$ et $||O||'$ représentent respectivement le nombre des arêtes présentes et manquantes dans O.
-				\item $l_{1} = -log (\frac{||O||}{||O||+||O||'})$, analogiquement pour $l_{0}$, sont les longueurs des codes de préfixe optimaux pour les arêtes actuelles et manquantes, respectivement
-				\item $\varepsilon(O)$  est l'ensemble des entrées non nulles dans la matrice O.
-			\end{itemize}
-			
-			
-			
+			\section{Compression par extraction de motifs}
+				\input{./Chapitres/ExtractionMotifs/VOG.tex}
+				\input{./Chapitres/ExtractionMotifs/VOG_Overlapp.tex}
+				\input{./Chapitres/ExtractionMotifs/TimeCrunch.tex}
 		\section{Conclusion}
 
 
 %---->chapitre 03 :« Etude empirique »
-	\chapter{chapitre 03: etude empirique}
+	\chapter{Les méthodes de compression k2-Trees}
 	
-	\begin{defn}
-			Here is a new definition
-	\end{defn}
+	
+	
+	
+	
+	%\begin{defn}
+	%		Here is a new definition
+	%\end{defn}
 	
 
 %Conclusion Générale									Obligatoire
-\part{Conclusion} 
+\chapter{Conclusion} 
 
 %Références Bibliographiques (fin de la pagination)		Obligatoire
 
