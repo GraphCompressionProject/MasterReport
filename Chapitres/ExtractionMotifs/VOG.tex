@@ -1,19 +1,12 @@
 %%VOG*
 
-\subparagraph{Principe général :}
+Une première technique de compression usant de ces méthodes s'intitule VOG \citep{koutra2015summarizing}. C'est une méthode de base sur laquelle s'appuient plusieurs autres méthodes de cette classe. Elle permet de compresser un graphe statique non orienté G à l'aide d'un vocabulaire de sous-structures qui apparaissent fréquemment dans les graphes réels et ayant  une signification sémantique tout en minimisant le cout du codage en utilisant le principe MDL qui est un concept de la théorie de l'information permettant de trouver le modèle ayant une longueur minimale: \textit{min}(\textit{D},\textit{M}) = L(\textit{M}) + L(\textit{D} | \textit{M}) où L(\textit{M}) est la longueur du modèle et L(\textit{D} | \textit{M}) est la longueur en bits de la description des donnés en utilisant le modèle \textit{M}. 
+%Soit un graphe non orienté G(V,E), sans boucle avec n nœuds et m arêtes et soit A sa matrice d'adjacence. le résultat de VoG est une liste ordonnée de structures notés \textit{M}, on note par 
+ Le vocabulaire $\Omega$ utilisé est composé de six structures qui sont : clique (\textit{fc}) et quasi-clique (\textit{nc}), noyau bipartie (\textit{cb}) et quasi-noyau bipartie (\textit{nb}), étoile (\textit{st}) et chaine (\textit{ch}). On peut avoir un chevauchement au niveau des nœuds, les liens quand a eux sont servit selon un ordre FIFO et ne peuvent pas se chevauchés, i.e la première structure $ s \in \textit{M} $ qui décrit l'arête dans A détermine sa valeur.
 
-VOG est une méthode de base sur laquelle s'appuient plusieurs autres méthodes de compression par extraction de motifs, elle décrit le graphe en se basant sur un ensemble appelé vocabulaire composé d'un ensemble de structures communes  qui apparaissent souvent dans les graphes du monde réel et qui ont généralement une signification sémantique.De plus VoG utilise le principe de longueur de description minimale (MDL) pour minimiser le cout de la description du graphe en terme de bits.
-
-La problématique traité par VoG peut étre résumé comme suite : étant donné un graph statique non orienté G, on cherche a trouver un ensemble de sous-graphes chevauchés pour décrire de manière succinct le graphe donné en entré tout en minimisant le cout du codage en utilisant le principe MDL.
-
-Le principe  Minimum Description Length MDL  est un concept de la théorie de l'information qui permet de codifier un ensemble de donnés en se basant sur un modèle, tout en minimisant le cout de codage par une fonction objective. Il peut être définit comme suite : étant donné un ensemble de modèles \textit{M}, choisir celui qui minimise la fonction suivante : \textit{min}(\textit{D},\textit{M}) = L(\textit{M}) + L(\textit{D} | \textit{M}) où L(\textit{M}) est la longueur, en bits de la description de \textit{M} et L(\textit{D} | \textit{M}) est la longueur, en bits de la description des donnés en utilisant le modèle \textit{M}. Pour utiliser le principe MDL dans VoG, il est d'abord essentiel de définir l'ensemble de modèles \textit{M}, comment un modèle \textit{M} peut il décrire un graphe et comment l'encoder. Nous notant aussi que pour une comparaison équitable entre les différents modèles, MDL nécessite que la description soit sans perte.
-
-Soit un graphe non orienté G(V,E), sans boucle avec n nœuds et m arêtes et soit A sa matrice d'adjacence. le résultat de VoG est une liste ordonnée de structures noté \textit{M}, on note par $\Omega$ le vocabulaire composé de six structures qui sont : clique (\textit{fc}) et quasi-clique (\textit{nc}), noyau bipartie (\textit{cb}) et quasi-noyau bipartie (\textit{nb}), étoile (\textit{st}) et chaine (\textit{ch}). On aura $\Omega$ =\{ \textit{fc},\textit{nc},\textit{cb},\textit{nb},\textit{st},\textit{ch} \}. Chaque structure $ s \in \textit{M} $ identifie une partie de la matrice d'adjacence A. Nous notons cette partie area(s). On peut avoir un chevauchement au niveau des nœuds, les liens quand a eux sont servit selon un ordre FIFO et ne peuvent pas étre chevauchés, e.i. la première structure $ s \in \textit{M} $ qui décrit l'arête dans A détermine sa valeur.
-
-On note par $\mathcal{C}_{x}$ l'ensemble de tous les sous-graphes possible de type $x \in \Omega$, et $\mathcal{C}$ l'union de tous ces ensembles, $\mathcal{C}$ = ${\cup}_{x}\mathcal{C}_{x}$. La famille de modèles noté $\mathcal{M}$ représente tous les permutations possibles des éléments de $\mathcal{C}$. Par MDL, on cherche $\textit{M} \in \mathcal{M}$ qui minimise le mieux le cout de stockage du modèle et de la matrice d'adjacence.\\
-Pour calculer le cout totale de description général, on construit d'abord une approximation $\mathbf{M}$ de la matrice d'adjacence, en utilisant le modèle \textit{M} : nous considérons de manière itérative chaque structure $s \in  \textit{M}$ et complétons la connectivité de area(s) dans $\mathbf{M}$. Comme on a $ \mathbf{M} \neq  A$ et comme notre méthode est une méthode sans perte, on aura besoin d'une matrice d'erreur E pour reconstituer la matrice d'adjacence tel que E= A $\bigoplus$ $\mathbf{M} $.\\
-la fonction objective deviens donc :
- \textit{min}(\textit{D},\textit{M}) = L(\textit{M}) + L(E).
+On note par $\mathcal{C}_{x}$ l'ensemble de tous les sous-graphes possible de type $x \in \Omega$, et $\mathcal{C}$ l'union de tous ces ensembles, $\mathcal{C}$ = ${\cup}_{x}\mathcal{C}_{x}$. La famille de modèles noté $\mathcal{M}$ représente tous les permutations possibles des éléments de $\mathcal{C}$. Par MDL, on cherche $\textit{M} \in \mathcal{M}$ qui minimise le mieux le cout de stockage du modèle et de la matrice d'adjacence.
+En d'autre terme, VoG formule le problème de compression comme un problème d'optimisation dont la fonction objective est :
+ \textit{min}(\textit{D},\textit{M}) = L(\textit{M}) + L(E) avec E= A $\bigoplus$ $\mathbf{M} $ représentant l'erreur. 
 
 Pour l'encodage du modèle, on a pour chaque $\textit{M} \in  \mathcal{M}$ : 
 
@@ -24,86 +17,88 @@ L(\textit{M}) = $L_{\mathbb{N}}$(|M|+1) + log $\left( \begin{array}{c}
 \end{array} \right)$ + $\sum\limits_{s  \in \textit{M}} ( - log Pr(x(s)  |  \textit{M} ) + L(s) )$\\
 \end{center}
 
-Au début, on calcule le nombre de structures dans le modèle avec $L_{\mathbb{N}}$, et on encode le nombre de structures par type $x \in \Omega$ . Ensuite pour chaque structure $s \in \textit{M}$, on encode son type x(s) avec un code de préfixe optimal et enfin on encode la structure.\\
-Le codage des structures se fait selon leurs type :\\
+Le premier terme représente le nombre de structures dans le modèle avec $L_{\mathbb{N}}$, le second terme encode le nombre de structures par type $x \in \Omega$ tant dis que le troisième terme permet  pour chaque structure $s \in \textit{M}$, d'encoder son type x(s) avec un code de préfixe optimal et d'encoder sa structure. Le codage des structures se fait selon leurs type :
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+
 \textbf{Clique :} Pour l'encodage d'une clique, on calcule le nombre des nœuds de celle-ci, et on encode leurs ids :
+L(\textit{fc}) = $L_{\mathbb{N}}$(|\textit{fc}|) + log ${n}\choose{|f_{c}|}$
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+%----------------------------------------------------------------
 
-\begin{center}
-L(\textit{fc}) = $L_{\mathbb{N}}$(|\textit{fc}|) + log $\left( \begin{array}{c}
-n \\
-|\textit{fc}| \\
-\end{array} \right)$ \\
-\end{center}
+\textbf{Quasi-Clique :} Les quasi cliques sont encoder comme des cliques complètes, toute en identifiant les arêtes ajoutés dont le nombre est ||\textit{nc}||  et manquantes dont le nombre est noté ||\textit{nc}|| en utilisant des codes de préfixe optimaux : 
+L(\textit{nc}) = $L_{\mathbb{N}}$(|\textit{nc}|) + log ${n}\choose{|n_{c}|}$ + log(|\textit{nc})|) + ||\textit{nc}||\textit{$l_{1}$} +  ||\textit{nc}||'\textit{$l_{0}$}
+où \textit{$l_{1}$} = - log(||\textit{nc}||/(||\textit{nc}||+||\textit{nc}||')) et analogique à \textit{$l_{0}$} sont les longueurs des codes de préfixe optimaux des arêtes  ajoutés et manquantes.
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+%----------------------------------------------------------------
 
-\textbf{Quasi-Clique :} Les quasi cliques sont encoder comme des cliques complètes, toute en identifiant les arêtes ajoutés et manquantes en utilisant des codes de préfixe optimaux, on utilise ||\textit{nc}|| et ||\textit{nc}||' pour transmettre respectivement le nombre d'arêtes ajoutés et manquantes.  
-
-\begin{center}
-L(\textit{nc}) = $L_{\mathbb{N}}$(|\textit{nc}|) + log $\left( \begin{array}{c}
-n \\
-|\textit{nc}| \\
-\end{array} \right)$ + log(|area(\textit{nc})|) + ||\textit{nc}||\textit{$l_{1}$} +  ||\textit{nc}||'\textit{$l_{0}$}\\
-\end{center}
- 
-Où \textit{$l_{1}$} = - log(||\textit{nc}||/(||\textit{nc}||+||\textit{nc}||')) et analogique à \textit{$l_{0}$} sont les longueurs des codes de préfixe optimaux des arêtes  ajoutés et manquantes.\\
 \textbf{Noyau bipartie :} notant par A et B les deux ensemble du noyau bipartie, On encode leurs tailles, ainsi que les ids de leurs sommets : 
- 
-\begin{center}
-L(\textit{fb}) = $L_{\mathbb{N}}$(|\textit{A}|) + $L_{\mathbb{N}}$(|\textit{B}|) + log $\left( \begin{array}{c}
-n \\
-|\textit{A}| \\
-\end{array} \right)$ + log $\left( \begin{array}{c}
-n - |\textit{A}|\\
-|\textit{B}| \\
-\end{array} \right)$\\
-\end{center}
+L(\textit{fb}) = $L_{\mathbb{N}}$(|\textit{A}|) + $L_{\mathbb{N}}$(|\textit{B}|) + log ${n}\choose{|A|}$ + log ${n-|A|}\choose{|B|}$.
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+
 \textbf{Quasi-Noyau bipartie :} Comme les quasi-cliques, les noyau bipartie sont codé comme suit :
+L(\textit{nb}) = $L_{\mathbb{N}}$(|\textit{A}|) + $L_{\mathbb{N}}$(|\textit{B}|) + log ${n}\choose{|A|}$  + log ${n-|A|}\choose{|B|}$+log(|area(\textit{nb})|) + ||\textit{nb}||\textit{$l_{1}$} + ||\textit{nb}||'\textit{$l_{0}$}.
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+%----------------------------------------------------------------
 
-\begin{center}
-L(\textit{nb}) = $L_{\mathbb{N}}$(|\textit{A}|) + $L_{\mathbb{N}}$(|\textit{B}|) + log $\left( \begin{array}{c}
-n \\
-|\textit{A}| \\
-\end{array} \right)$ + log $\left( \begin{array}{c}
-n - |\textit{A}|\\
-|\textit{B}| \\
-\end{array} \right)$+log(|area(\textit{nb})|) + ||\textit{nb}||\textit{$l_{1}$} + ||\textit{nb}||'\textit{$l_{0}$}\\
-\end{center}
-\textbf{Étoile :} L'étoile est un cas particulier des noyau bipartie où l'un des ensembles est constituer d'un seule élément (appelé hub) et l'autre ensemble est constituer des sommets restants (appelé spokes). Le codage est calculer comme suit, d'abord on calcule la nombre de spokes de l'étoile, ensuite on identifie le hub parmi les n sommets et les spokes parmi les n-1 restants.
+\textbf{Étoile :} comme l'étoile est un cas particulier des noyau bipartie, d'abord on calcule la nombre de spokes de l'étoile, ensuite on identifie le hub parmi les n sommets et les spokes parmi les n-1 restants.
+L(\textit{st}) = $L_{\mathbb{N}}$(|\textit{st}|-1) +  log n + log ${n-1}\choose{|st|-1}$.
+%----------------------------------------------------------------
+%----------------------------------------------------------------
+%----------------------------------------------------------------
 
-\begin{center}
-L(\textit{st}) = $L_{\mathbb{N}}$(|\textit{st}|-1) +  log n + log $\left( \begin{array}{c}
-n - 1  \\
-|\textit{st}| - 1 \\
-\end{array} \right)$ \\
-\end{center}
 \textbf{Chaine :} On calcule d'abord le nombre d'éléments de la chaine, ensuite on encode les ids des nœuds selon leurs ordre dans la chaine :
+L(\textit{ch}) = $L_{\mathbb{N}}$(|\textit{ch}| - 1) + $\sum\limits_{i=0}^{|\textit{ch}|} ( n - i )$
 
+%----------------------------------------------------------------
+%---------------------La matrice de l'erreur----------------------
+%----------------------------------------------------------------
+\textbf{Matrice d'erreur :} la matrice d'erreur E est encoder sur deux parties $E^{+}$ et $E^{-}$. $E^{+}$  correspond à la partie de A que M modélise en rajoutant des liens non existants contrairement à $E^{-}$ qui représente les partie de A que M ne modélise pas. Notons que les quasi-clique et les quasi-noyau bipartie ne sont pas inclut dans la matrice d'erreur puisque ils sont encodés exactement donc on les ignorent. Le codage de $E^{+}$ et $E^{-}$ est similaire à celui des quasi-clique, on a :
 \begin{center}
-L(\textit{ch}) = $L_{\mathbb{N}}$(|\textit{ch}| - 1) + $\sum\limits_{i=0}^{|\textit{ch}|} ( n - i )$\\
-\end{center}
-\textbf{Matrice d'erreur :} la matrice d'erreur E est encoder sur deux parties $E^{+}$ et $E^{-}$. $E^{+}$  correspond a la partie de A que M modélise en rajoutant des liens non existants. contrairement à $E^{-}$ qui représente les partie de A que M ne modélise pas. Notons que les quasi-clique et les quasi-noyau bipartie ne sont pas inclut dans la matrice d'erreur puisque ils sont encodés exactement donc on les ignorent. Le codage de $E^{+}$ et $E^{-}$ est similaire a celui des quasi-clique, on a :
-
-\begin{center}
-L(${E}^{+}$) = log(|area(|${E}^{+}$|) + ||${E}^{+}$||\textit{$l_{1}$} + ||${E}^{+}$||'\textit{$l_{0}$}\\
-L(${E}^{-}$) = log(|area(|${E}^{-}$|) + ||${E}^{-}$||\textit{$l_{1}$} + ||${E}^{-}$||'\textit{$l_{0}$}\\
+L(${E}^{+}$) = log(|${E}^{+}$|) + ||${E}^{+}$||\textit{$l_{1}$} + ||${E}^{+}$||'\textit{$l_{0}$}\\
+L(${E}^{-}$) = log(|${E}^{-}$|) + ||${E}^{-}$||\textit{$l_{1}$} + ||${E}^{-}$||'\textit{$l_{0}$}\\
 \end{center} 
  
 
-
-\subparagraph{Algorithme de VoG :}
 Pour la recherche du meilleur modèle $ \textit{M} \in \mathcal{M} $ , VoG procède sur trois étapes :
+%---------------------------------------------------
+%---------------------etape 01----------------------
+%---------------------------------------------------
 \begin{enumerate}
- \item Génération des sous-structures : Dans cette phase, Les méthodes de détection de communautés et de clustering sont utilisé pour décomposer le graphe en sous-graphes pas forcément disjoints. La méthode de décomposition utilisé dans VOG est SlashBurn.  
- \item Étiquetage des sous-graphes : L'algorithme cherche pour chaque sous-graphe généré dans l'étape précédente la structure $x \in \Omega$ qui le décrit le mieux, en tolérant un certain seuil d'erreur.
+ \item \textbf{Génération des sous-structures }: Dans cette phase, Les méthodes de détection de communautés et de clustering sont utilisé pour décomposer le graphe en sous-graphes pas forcément disjoints. La méthode de décomposition utilisé dans VOG est SlashBurn.  
+%---------------------------------------------------
+%---------------------etape 02----------------------
+%---------------------------------------------------
+ \item \textbf{Étiquetage des sous-graphes }: L'algorithme cherche pour chaque sous-graphe généré dans l'étape précédente la structure $x \in \Omega$ qui le décrit le mieux, en tolérant un certain seuil d'erreur.
   \begin{enumerate}[label=\alph*]
-     \item Étiquetage des structures parfaites : Tout d'abord, le sous-graphe est testé par rapport au structures complètes du vocabulaire (e.i. clique , étoile, chaine et noyau bipartie) pour une similarité sans erreur. Le test des cliques et des chaines est basé sur la distribution des degrés, Plus précisément, si tous les sommets d'un sous graphe d'ordre n ont un degré égale a n-1, il s'agit alors d'une clique. De même si tous les sommets ont un degré de 2 sauf deux sommets ayant le degré 1, le  sous-graphe est une chaine. D'un autre coté, le sous-graphe est considéré comme noyau bipartie si les amplitudes de ses valeurs propres maximales et minimales sont égales, pour pouvoir identifier les sommets de chaque ensemble du noyau nous utilisons le parcours BFS avec la coloration des sommets. Quant a l'étoile, elle est considéré comme un cas particulier d'un noyau bipartie, il suffit donc que l'un des ensemble soit composé d'un seule sommet.
+     \item \textbf{Étiquetage des structures parfaites} : Tout d'abord, le sous-graphe est testé pour une similarité sans erreur par rapport au structures complètes du vocabulaire :
+		%----------------------------------------------------
+		%---------------------etape 2.1----------------------
+		%----------------------------------------------------
+\begin{itemize}[label=$\circ$]
+	\item si tous les sommets d'un sous graphe d'ordre n ont un degré égale à n-1, il s'agit alors d'une clique
+	\item si tous les sommets ont un degré de 2 sauf deux sommets ayant le degré 1, le  sous-graphe est une chaine.
+	\item si les amplitudes de ses valeurs propres maximales et minimales sont égales, le sous-graphe est un noyau bipartie où les sommet de chaque nœuds sont identifié à travers un parcours parcours BFS avec coloration des sommets.
+	\item  Quant à l'étoile, elle est considéré comme un cas particulier d'un noyau bipartie, il suffit donc que l'un des ensemble soit composé d'un seule sommet.
+\end{itemize}     
+		%----------------------------------------------------
+		%---------------------etape 2.2----------------------
+		%----------------------------------------------------
+     \item \textbf{Étiquetage des structures approximative }: Si le sous graphe ne correspond pas à une structures complète, on cherche la structure qui l'approxime le mieux en terme du principe MDL.
      
-     \item Étiquetage des structures approximative : Si le sous graphe ne correspond pas à une structures complète, on cherche la structure qui l'approxime mieux en terme de MDL. Pour ce faire, on le représente sous forme de chaque type $x \in \Omega$ et on choisit le type avec la description minimal.\\
-     Remarque : Pour les structure parfaites (clique, étoile, chaine et noyau bipartie), en plus du cout d'encodage de la structure, on rajoute le cout de l'erreur local c'est a dire, L($x^{*}$) + L($\textit{E}^{+}_{x^{*}}$) + L($\textit{E}^{-}_{x^{*}}$) où L($x^{*}$) est la description de la structure, L($\textit{E}^{+}_{x^{*}}$) et L($\textit{E}^{-}_{x^{*}}$) sont les arêtes incorrectement modélisés et les arêtes non  modélisés respectivement dans area($x^{*}$).
   \end{enumerate} 
+ % \textbf{Remarque} : Pour les structure parfaites, en plus du cout d'encodage de la structure, on rajoute le cout de l'erreur local c'est a dire, L($x^{*}$) + L($\textit{E}^{+}_{x^{*}}$) + L($\textit{E}^{-}_{x^{*}}$) où L($x^{*}$) est la description de la structure, L($\textit{E}^{+}_{x^{*}}$) et L($\textit{E}^{-}_{x^{*}}$) sont les arêtes incorrectement modélisés et les arêtes non  modélisés respectivement dans area($x^{*}$).
+  
+  
+Après avoir représenter le sous graphe sous forme d'une structure, on l'ajoute à l'ensemble des structure candidates $\mathcal{C}$, en l'associant à son cout.
 
-Après avoir représenter le sous graphe sous forme d'une structure, on l'ajoute a l'ensemble des structure candidates $\mathcal{C}$, en l'associant a son cout.
-
-\item Assemblage du modèle : Dans cette dernier étape, une sélection d'un ensemble de structures parmi ceux de $\mathcal{C}$ est réaliser,  des heuristiques de sélections sont utilisés car le nombre de permutations est très grand ce qui implique des calcules exhaustifs. Les heuristiques permettent d'avoir des résultats approximatives et rapides, parmi les heuristiques utilisés dans VOG on trouve :
+\item \textbf{Assemblage du modèle }: Dans cette dernier étape, une sélection d'un ensemble de structures parmi ceux de $\mathcal{C}$ est réaliser,  des heuristiques de sélections sont utilisés car le nombre de permutations est très grand ce qui implique des calcules exhaustifs. Les heuristiques permettent d'avoir des résultats approximatives et rapides, parmi les heuristiques utilisés dans VOG on trouve :
 \begin{itemize}
 \item PLAIN : Cette heuristique retourne tout les structures candidates. e.i. \textit{M}= $\mathcal{C}$.
 \item TOP-K :  Cette heuristique sélectionne les k meilleurs candidats en fonction de leurs gain en bits.
@@ -111,19 +106,19 @@ Après avoir représenter le sous graphe sous forme d'une structure, on l'ajoute
 \end{itemize}  
 \end{enumerate}
 
+%Ci-dessous le pseudo algorithme de VOG :
 
-Ci-dessous le pseudo algorithme de VOG :\\
+%\begin{algorithm}
+%\caption{Pseudo Algorithme VOG}\label{euclid}
+%\begin{algorithmic}[1]
+%	\STATE \textbf{Entré :} Graphe G.
+%	\STATE \textbf{Étape 1 :}  Génération des sous-graphe en utilisant une méthode de décomposition.  
+%	\STATE \textbf{Étape 2 :} Étiquetage des sous graphe en choisissant la structure $x \in \Omega$ qui représente chaque sous- graphe avec le moindre coût.
+%	\STATE \textbf{Étape 3 :} Assemblage des sous graphes en utilisant des heuristiques pour sélectionner un sous-ensemble non-redondant à partir des structure candidate de l'étape 2.
+%	\STATE \textbf{Sortie :} Modèle \textit{M} et son cout d'encodage.
+%\end{algorithmic}
+%\end{algorithm}
 
-\begin{algorithm}
-\caption{Pseudo Algorithme VOG}\label{euclid}
-\begin{algorithmic}[1]
-\State \textbf{Entré :} Graphe G.
-\State \textbf{Étape 1 :}  Génération des sous-graphe en utilisant une méthode de décomposition.  
-\State \textbf{Étape 2 :} Étiquetage des sous graphe en choisissant la structure $x \in \Omega$ qui représente chaque sous- graphe avec le moindre coût.
-\State \textbf{Étape 3 :} Assemblage des sous graphes en utilisant des heuristiques pour sélectionner un sous-ensemble non-redondant à partir des structure candidate de l'étape 2.
-\State \textbf{Sortie :} Modèle \textit{M} et son cout d'encodage.
-\end{algorithmic}
-\end{algorithm}
 
 
 

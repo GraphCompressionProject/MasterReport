@@ -1,0 +1,39 @@
+						\begin{landscape}
+								\begin{table}
+									\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+										\hline
+										\multirow{2}{*}[-25pt]{Article}  & \multicolumn{4}{c|}{Graphe en entrée} & \multicolumn{2}{c|}{Compression} & \multicolumn{2}{c|}{Structure en sortie} & \multicolumn{2}{c|}{Complexité} & \multirow{2}{*}[-25pt]{Graphe de test} & \multirow{2}{*}[-25pt]{Résultat}  \\ \cline{2-11}
+				& \rotatebox[origin=c]{90}{ Orienté }  & \rotatebox[origin=c]{90}{ Non orienté } & \rotatebox[origin=c]{90}{ Statique } & \rotatebox[origin=c]{90}{ Dynamique } & \rotatebox[origin=c]{90}{ Avec perte } & \rotatebox[origin=c]{90}{ Sans perte } & \rotatebox[origin=c]{90}{ Succincte } & \rotatebox[origin=c]{90}{ Structurelle } & \rotatebox[origin=c]{90}{ Temporelle} & \rotatebox[origin=c]{90}{ Spaciale} & & \\ \hline				%%%%%%Fin du header
+				
+				\hline ECWG
+ \citep{asano2008efficient}& \cmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark & & &
+										
+	\begin{minipage}[t]{0.3\textwidth}
+	uk-2002
+    \begin{itemize}
+    \item 18 millions de nœuds
+    \item 298 millions liens\\
+    
+    \end{itemize}
+  \end{minipage}	
+										 & 76.1\%	\\
+										
+										\hline GCUPMT \citep{shah2018graph} & \cmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark & & & 
+										
+	\begin{minipage}[t]{0.3\textwidth}
+	graphes avec :
+    \begin{itemize}
+    \item 8192 nœuds
+    \\
+    
+    \end{itemize}
+  \end{minipage}								 
+			  & 70\%	\\
+
+										\hline
+									\end{tabular}
+									\caption{Synthèse des méthode de compression par extraction de motifs basées vocabulaire exploitant les propriétés de la matrice d'adjacence.}									
+									
+								\end{table}
+								
+							\end{landscape}

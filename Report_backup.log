@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  21 NOV 2018 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  20 DEC 2018 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -137,6 +137,13 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box52
 \enitdp@description=\count108
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count109
+\multirow@dima=\skip52
+\bigstrutjot=\dimen116
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -154,12 +161,12 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen116
-\Gin@req@width=\dimen117
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count109
+\c@float@type=\count110
 \float@exts=\toks19
 \float@box=\box53
 \@float@everytoks=\toks20
@@ -176,7 +183,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks21
 \XKV@tempa@toks=\toks22
 )
-\XKV@depth=\count110
+\XKV@depth=\count111
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -190,34 +197,34 @@ Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box55
 )
-\tc@llx=\dimen118
-\tc@lly=\dimen119
-\tc@urx=\dimen120
-\tc@ury=\dimen121
+\tc@llx=\dimen119
+\tc@lly=\dimen120
+\tc@urx=\dimen121
+\tc@ury=\dimen122
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2018/04/08 v2.1 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen122
-\adjbox@Height=\dimen123
-\adjbox@Depth=\dimen124
-\adjbox@Totalheight=\dimen125
-\adjbox@pwidth=\dimen126
-\adjbox@pheight=\dimen127
-\adjbox@pdepth=\dimen128
-\adjbox@ptotalheight=\dimen129
+\adjbox@Width=\dimen123
+\adjbox@Height=\dimen124
+\adjbox@Depth=\dimen125
+\adjbox@Totalheight=\dimen126
+\adjbox@pwidth=\dimen127
+\adjbox@pheight=\dimen128
+\adjbox@pdepth=\dimen129
+\adjbox@ptotalheight=\dimen130
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count111
+\c@checkoddpage=\count112
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box56
-\sift@deathcycles=\count112
-\@vwid@loff=\dimen130
-\@vwid@roff=\dimen131
+\sift@deathcycles=\count113
+\@vwid@loff=\dimen131
+\@vwid@roff=\dimen132
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -229,8 +236,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen132
-\epsfysize=\dimen133
+\epsfxsize=\dimen133
+\epsfysize=\dimen134
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
@@ -293,9 +300,9 @@ e
 )))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip51
-\thanksmargin=\skip52
-\droptitle=\skip53
+\thanksmarkwidth=\skip53
+\thanksmargin=\skip54
+\droptitle=\skip55
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -303,17 +310,20 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
-\col@sep=\dimen134
+\col@sep=\dimen135
 \ar@mcellbox=\box57
-\extrarowheight=\dimen135
+\extrarowheight=\dimen136
 \NC@list=\toks24
-\extratabsurround=\skip54
-\backup@length=\skip55
+\extratabsurround=\skip56
+\backup@length=\skip57
 \ar@cellbox=\box58
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip56
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -322,49 +332,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
-\ex@=\dimen136
+\ex@=\dimen137
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen137
+\pmbraise@=\dimen138
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count113
+\inf@bad=\count114
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count114
-\leftroot@=\count115
+\uproot@=\count115
+\leftroot@=\count116
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count116
-\DOTSCASE@=\count117
+\classnum@=\count117
+\DOTSCASE@=\count118
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box59
 \strutbox@=\box60
-\big@size=\dimen138
+\big@size=\dimen139
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count118
-\c@MaxMatrixCols=\count119
+\macc@depth=\count119
+\c@MaxMatrixCols=\count120
 \dotsspace@=\muskip11
-\c@parentequation=\count120
-\dspbrk@lvl=\count121
+\c@parentequation=\count121
+\dspbrk@lvl=\count122
 \tag@help=\toks26
-\row@=\count122
-\column@=\count123
-\maxfields@=\count124
+\row@=\count123
+\column@=\count124
+\maxfields@=\count125
 \andhelp@=\toks27
-\eqnshift@=\dimen139
-\alignsep@=\dimen140
-\tagshift@=\dimen141
-\tagwidth@=\dimen142
-\totwidth@=\dimen143
-\lineht@=\dimen144
+\eqnshift@=\dimen140
+\alignsep@=\dimen141
+\tagshift@=\dimen142
+\tagwidth@=\dimen143
+\totwidth@=\dimen144
+\lineht@=\dimen145
 \@envbody=\toks28
-\multlinegap=\skip57
-\multlinetaggap=\skip58
+\multlinegap=\skip59
+\multlinetaggap=\skip60
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -379,9 +389,9 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headfont=\toks32
 \thm@notefont=\toks33
 \thm@headpunct=\toks34
-\thm@preskip=\skip59
-\thm@postskip=\skip60
-\thm@headsep=\skip61
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
 \dth@everypar=\toks35
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
@@ -394,104 +404,53 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count125
-\Gm@cntv=\count126
-\c@Gm@tempcnt=\count127
-\Gm@bindingoffset=\dimen145
-\Gm@wd@mp=\dimen146
-\Gm@odd@mp=\dimen147
-\Gm@even@mp=\dimen148
-\Gm@layoutwidth=\dimen149
-\Gm@layoutheight=\dimen150
-\Gm@layouthoffset=\dimen151
-\Gm@layoutvoffset=\dimen152
+\Gm@cnth=\count126
+\Gm@cntv=\count127
+\c@Gm@tempcnt=\count128
+\Gm@bindingoffset=\dimen146
+\Gm@wd@mp=\dimen147
+\Gm@odd@mp=\dimen148
+\Gm@even@mp=\dimen149
+\Gm@layoutwidth=\dimen150
+\Gm@layoutheight=\dimen151
+\Gm@layouthoffset=\dimen152
+\Gm@layoutvoffset=\dimen153
 \Gm@dimlist=\toks36
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count128
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\algocf@hangindent=\skip62
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+\@float@every@algorithm=\toks37
+\c@algorithm=\count129
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2013/03/29 ver 4.1
+(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count130
+\c@ALC@line=\count131
+\c@ALC@rem=\count132
+\c@ALC@depth=\count133
+\ALC@tlm=\skip64
+\algorithmicindent=\skip65
 )
-\skiptotal=\skip63
-\skiplinenumber=\skip64
-\skiprule=\skip65
-\skiphlne=\skip66
-\skiptext=\skip67
-\skiplength=\skip68
-\algomargin=\skip69
-\skipalgocfslide=\skip70
-\algowidth=\dimen153
-\inoutsize=\dimen154
-\inoutindent=\dimen155
-\interspacetitleruled=\dimen156
-\interspacealgoruled=\dimen157
-\interspacetitleboxruled=\dimen158
-\algocf@ruledwidth=\skip71
-\algocf@inoutbox=\box61
-\algocf@inputbox=\box62
-\AlCapSkip=\skip72
-\AlCapHSkip=\skip73
-\algoskipindent=\skip74
-\algocf@nlbox=\box63
-\algocf@hangingbox=\box64
-\algocf@untilbox=\box65
-\algocf@skipuntil=\skip75
-\algocf@capbox=\box66
-\algocf@lcaptionbox=\skip76
-\algoheightruledefault=\skip77
-\algoheightrule=\skip78
-\algotitleheightruledefault=\skip79
-\algotitleheightrule=\skip80
-\c@algocfline=\count129
-\c@algocfproc=\count130
-\c@algocf=\count131
-\algocf@algoframe=\box67
-\algocf@algobox=\box68
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
-Package: algpseudocode 
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
-Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
-
-Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count132
-\c@ALG@rem=\count133
-\c@ALG@nested=\count134
-\ALG@tlm=\skip81
-\ALG@thistlm=\skip82
-\c@ALG@Lnr=\count135
-\c@ALG@blocknr=\count136
-\c@ALG@storecount=\count137
-\c@ALG@tmpcounter=\count138
-\ALG@tmplength=\skip83
-)
-Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip84
-\f@nch@O@elh=\skip85
-\f@nch@O@erh=\skip86
-\f@nch@O@olh=\skip87
-\f@nch@O@orh=\skip88
-\f@nch@O@elf=\skip89
-\f@nch@O@erf=\skip90
-\f@nch@O@olf=\skip91
-\f@nch@O@orf=\skip92
+\f@nch@headwidth=\skip66
+\f@nch@O@elh=\skip67
+\f@nch@O@erh=\skip68
+\f@nch@O@olh=\skip69
+\f@nch@O@orh=\skip70
+\f@nch@O@elf=\skip71
+\f@nch@O@erf=\skip72
+\f@nch@O@olf=\skip73
+\f@nch@O@orf=\skip74
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -532,16 +491,16 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen159
-\Hy@linkcounter=\count139
-\Hy@pagecounter=\count140
+\@linkdim=\dimen154
+\Hy@linkcounter=\count134
+\Hy@pagecounter=\count135
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count141
+\Hy@SavedSpaceFactor=\count136
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -553,12 +512,12 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count142
+\c@Hy@tempcnt=\count137
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen160
-\Fld@menulength=\count143
-\Field@Width=\dimen161
-\Fld@charsize=\dimen162
+\XeTeXLinkMargin=\dimen155
+\Fld@menulength=\count138
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -568,79 +527,125 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count144
-\c@Item=\count145
-\c@Hfootnote=\count146
+\Hy@abspage=\count139
+\c@Item=\count140
+\c@Hfootnote=\count141
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count147
-\c@bookmark@seq@number=\count148
+\Fld@listcount=\count142
+\c@bookmark@seq@number=\count143
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip93
+\Hy@SectionHShift=\skip75
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip94
-\bibsep=\skip95
+\bibhang=\skip76
+\bibsep=\skip77
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count149
+\c@NAT@ctr=\count144
 )
-\c@defn=\count150
-\c@conj=\count151
-\c@exmp=\count152
+\c@defn=\count145
+\c@conj=\count146
+\c@exmp=\count147
 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks38
+\minrowclearance=\skip78
+)
+\rownum=\count148
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 (./Report_backup.aux)
 \openout1 = `Report_backup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Info: Redefining \degres on input line 39.
-LaTeX Info: Redefining \dots on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Info: Redefining \degres on input line 56.
+LaTeX Info: Redefining \dots on input line 56.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 39.
+(french.ldf)                BEFORE babel/french; reported on input line 56.
 
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 39.
+(french.ldf)             reported on input line 56.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 39.
-LaTeX Info: Redefining \up on input line 39.
+(french.ldf)             reported on input line 56.
+LaTeX Info: Redefining \up on input line 56.
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count153
-\scratchdimen=\dimen163
-\scratchbox=\box69
-\nofMPsegments=\count154
-\nofMParguments=\count155
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count156
-\MPscratchDim=\dimen164
-\MPnumerator=\count157
-\makeMPintoPDFobject=\count158
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count149
+\scratchdimen=\dimen158
+\scratchbox=\box61
+\nofMPsegments=\count150
+\nofMParguments=\count151
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count152
+\MPscratchDim=\dimen159
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
+\everyMPtoPDFconversion=\toks40
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -650,15 +655,15 @@ LaTeX Info: Redefining \up on input line 39.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* h-part:(L,W,R)=(71.13188pt, 469.47049pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=591.5302pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=-7.86334pt
+* \textwidth=469.47049pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -676,19 +681,19 @@ LaTeX Info: Redefining \up on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box70
-Package hyperref Info: Link coloring OFF on input line 39.
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 56.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count159
+\c@section@level=\count155
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 
 (./Report_backup.out) (./Report_backup.out)
 \@outlinefile=\write3
@@ -727,7 +732,7 @@ LaTeX Info: Redefining \nameref on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./ressources/image/ESI.png, id=171, 651.43375pt x 190.7125pt>
+<./ressources/image/ESI.png, id=175, 651.43375pt x 190.7125pt>
 File: ./ressources/image/ESI.png Graphic file (type png)
 <use ./ressources/image/ESI.png>
 Package pdftex.def Info: ./ressources/image/ESI.png  used on input line 10.
@@ -760,39 +765,49 @@ been already used, duplicate ignored
 l.16 \newpage
               [1
 
-]) (./abstract.tex [2]) (./Report_backup.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+]) (./abstract.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3
+)
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+[3]) (./Report_backup.toc [4
 
 ])
 \tf@toc=\write4
 \openout4 = `Report_backup.toc'.
 
- [4]
-(./Report_backup.lof)
+ [5] (./Report_backup.lof)
 \tf@lof=\write5
 \openout5 = `Report_backup.lof'.
 
- [5
+ [6
 
-] (./Report_backup.lot)
+]
+(./Report_backup.lot)
 \tf@lot=\write6
 \openout6 = `Report_backup.lot'.
 
- [6
+ [7
 
 
 ]
 Chapitre 1.
-[7
+[8
 
 
 ]
@@ -802,40 +817,10 @@ Chapitre 2.
 
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 3.
 
-
-Package natbib Warning: Citation `muller' on page 8 undefined on input line 3.
-
-
-Package natbib Warning: Citation `fages2014exploitation' on page 8 undefined on
- input line 3.
-
-[8
+[9
 
 ]
-
-Package natbib Warning: Citation `hennecart2012elements' on page 9 undefined on
- input line 6.
-
-
-Package natbib Warning: Citation `IUTLyonInformatique' on page 9 undefined on i
-nput line 7.
-
-
-Package natbib Warning: Citation `muller' on page 9 undefined on input line 8.
-
-
-Package natbib Warning: Citation `lopez2003cours' on page 9 undefined on input 
-line 9.
-
-
-Package natbib Warning: Citation `IUTLyonInformatique' on page 9 undefined on i
-nput line 10.
-
-
-Package natbib Warning: Citation `muller' on page 9 undefined on input line 15.
-
-
-<./ressources/image/graphNonOriente.png, id=283, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=345, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -846,417 +831,549 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--33
 
  []
 
-[9]
-
-Package natbib Warning: Citation `DUT' on page 10 undefined on input line 39.
-
-
-Package natbib Warning: Citation `DUT' on page 10 undefined on input line 41.
-
-
-Package natbib Warning: Citation `muller' on page 10 undefined on input line 47
-.
-
-
-Package natbib Warning: Citation `muller' on page 10 undefined on input line 49
-.
-
-
-Package natbib Warning: Citation `muller' on page 10 undefined on input line 54
-.
-
-
-Package natbib Warning: Citation `muller' on page 10 undefined on input line 56
-.
-
-
-Package natbib Warning: Citation `parlebas1972centralite' on page 10 undefined 
-on input line 66.
-
 [10 <./ressources/image/graphNonOriente.png>])
-(./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
-
-Package natbib Warning: Citation `muller' on page 11 undefined on input line 5.
-
-
-
-Package natbib Warning: Citation `muller' on page 11 undefined on input line 8.
-
-
-
-Package natbib Warning: Citation `IUTLyonInformatique' on page 11 undefined on 
-input line 10.
-
-
-Package natbib Warning: Citation `Pres' on page 11 undefined on input line 12.
-
-
-Package natbib Warning: Citation `Pres' on page 11 undefined on input line 14.
-
-
-Package natbib Warning: Citation `IUTLyonInformatique' on page 11 undefined on 
-input line 16.
-
-
-Overfull \hbox (27.54167pt too wide) in paragraph at lines 32--33
-[]\T1/cmr/m/n/10.95 Soit g = ($\OML/cmm/m/it/10.95 V[]$ \T1/cmr/m/n/10.95 , $\O
-ML/cmm/m/it/10.95 E[]$\T1/cmr/m/n/10.95 ) un di-graphe tel que : $\OML/cmm/m/it
-/10.95 V[]$ \T1/cmr/m/n/10.95 = { 1,2,3,4 } et $\OML/cmm/m/it/10.95 E[]$ \T1/cm
-r/m/n/10.95 = {(1,2),(1,3),(3,2),(3,4),(4,3)}. 
- []
-
-<./ressources/image/RepDiGraphe.png, id=301, 1204.5pt x 797.98125pt>
+(./Chapitres/TheorieDesGraphes/GrapheOrientee.tex [11]
+<./ressources/image/RepDiGraphe.png, id=390, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
  39.
 (pdftex.def)             Requested size: 180.6672pt x 119.69202pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `DUT' on page 11 undefined on input line 47.
-
-[11]
-
-Package natbib Warning: Citation `DUT' on page 12 undefined on input line 49.
-
-
-Package natbib Warning: Citation `muller' on page 12 undefined on input line 56
-.
-
-
-Package natbib Warning: Citation `bac' on page 12 undefined on input line 64.
-
-) (./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepDiGra
-phe.png>]
-
-Package natbib Warning: Citation `DUT' on page 13 undefined on input line 10.
-
-
-Package natbib Warning: Citation `muller' on page 13 undefined on input line 13
-.
-
-) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex
-
-Package natbib Warning: Citation `DUT' on page 13 undefined on input line 11.
-
-
-Package natbib Warning: Citation `bac' on page 13 undefined on input line 15.
-
-
-Package natbib Warning: Citation `bac' on page 13 undefined on input line 24.
-
-
-Package natbib Warning: Citation `bac' on page 13 undefined on input line 26.
-
-[13]
-
-Package natbib Warning: Citation `koutra2015summarizing' on page 14 undefined o
-n input line 29.
-
-) (./Chapitres/TheorieDesGraphes/GraphTypes.tex
-
-Package natbib Warning: Citation `Pres' on page 14 undefined on input line 7.
-
-
-Package natbib Warning: Citation `DUT' on page 14 undefined on input line 7.
-
-
-Package natbib Warning: Citation `DUT' on page 14 undefined on input line 11.
-
-
-Package natbib Warning: Citation `IUTLyonInformatique' on page 14 undefined on 
-input line 14.
-
-) (./Chapitres/TheorieDesGraphes/structRep.tex [14]
-
-Package natbib Warning: Citation `lehman2010mathematics' on page 15 undefined o
-n input line 9.
-
-
-Package natbib Warning: Citation `mathieu' on page 15 undefined on input line 9
-.
-
-
-Package natbib Warning: Citation `IUTLyonInformatique' on page 15 undefined on 
-input line 9.
-
-
-Overfull \hbox (3.10071pt too wide) in paragraph at lines 9--10
-[]\T1/cmr/m/n/10.95 La ma-trice d'ad-ja-cence de G est une ma-trice boo-léenne 
-carré d'ordre n : $[][]$,
- []
-
-
-Package natbib Warning: Citation `muller' on page 15 undefined on input line 19
-.
-
-
-Package natbib Warning: Citation `lopez2003cours' on page 15 undefined on input
- line 22.
-
-
-Package natbib Warning: Citation `hennecart2012elements' on page 15 undefined o
-n input line 23.
-
-<./ressources/image/graphAdjace.png, id=327, 361.35pt x 306.0847pt>
+)
+(./Chapitres/TheorieDesGraphes/Connexite.tex [12 <./ressources/image/RepDiGraph
+e.png>]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex [13])
+(./Chapitres/TheorieDesGraphes/GraphTypes.tex)
+(./Chapitres/TheorieDesGraphes/structRep.tex [14]
+<./ressources/image/graphAdjace.png, id=457, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  30.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=328, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=458, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
 e 37.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
-[15]
-
-Package natbib Warning: Citation `lopez2003cours' on page 16 undefined on input
- line 44.
-
-
-Package natbib Warning: Citation `hennecart2012elements' on page 16 undefined o
-n input line 46.
-
-
-Package natbib Warning: Citation `mathieu' on page 16 undefined on input line 4
-6.
-
-
-Package natbib Warning: Citation `hennecart2012elements' on page 16 undefined o
-n input line 58.
-
-<./ressources/image/graphIncid.png, id=336, 410.94705pt x 365.60118pt>
+ [15 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>
+]
+<./ressources/image/graphIncid.png, id=476, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 73.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=337, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=477, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
 e 80.
 (pdftex.def)             Requested size: 140.00441pt x 110.00546pt.
-[16 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>]
-
-Package natbib Warning: Citation `mathieu' on page 17 undefined on input line 9
-0.
-
-
-Package natbib Warning: Citation `IUTLyonInformatique' on page 17 undefined on 
-input line 91.
-
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  98.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=345, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=484, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
  105.
 (pdftex.def)             Requested size: 139.9951pt x 109.9996pt.
-
-Underfull \hbox (badness 2653) in paragraph at lines 106--106
-[]\T1/cmr/m/sc/10.95 Figure \T1/cmr/m/n/10.95 2.8 ^^U []Liste d'ad-ja-cence du
- []
-
-) (./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [17 <./ressources/image/
-graphIncid.png> <./ressources/image/matriceIncid.png> <./ressources/image/liste
-Adjace.png>]
-
-Package natbib Warning: Citation `lemmouchi2012etude' on page 18 undefined on i
-nput line 9.
-
-
-Package natbib Warning: Citation `pellegrini2004protein' on page 18 undefined o
-n input line 13.
-
-
-Package natbib Warning: Citation `pellegrini2004protein' on page 18 undefined o
-n input line 15.
-
-
-Package natbib Warning: Citation `brisaboa2009k' on page 18 undefined on input 
-line 19.
-
-
-Package natbib Warning: Citation `guillaume2002web' on page 18 undefined on inp
-ut line 19.
-
-) [18]
-Overfull \hbox (1.07074pt too wide) in paragraph at lines 43--45
-[]\T1/cmr/m/n/10.95 Dans ce cha-pitre nous avons pré-sen-ter les no-tions et le
-s concepts gé-né-raux qui touchent
- []
-
-) [19]
+ [16 <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>]
+)
+(./Chapitres/TheorieDesGraphes/ApplicationDomain.tex [17 <./ressources/image/li
+steAdjace.png>])) [18]
 Chapitre 3.
-(./Chapitres/CompressionDesGraphes/datacompression.tex
-
-Package natbib Warning: Citation `lelewer1987data' on page 20 undefined on inpu
-t line 2.
-
-
-Package natbib Warning: Citation `sethi2014data' on page 20 undefined on input 
-line 6.
-
-) (./Chapitres/CompressionDesGraphes/TypeDeCompression.tex [20
+(./Chapitres/CompressionDesGraphes/datacompression.tex)
+(./Chapitres/CompressionDesGraphes/TypeDeCompression.tex [19
 
 ]
-<./ressources/image/SansPerte.png, id=364, 2441.12pt x 321.2pt>
+<./ressources/image/SansPerte.png, id=524, 2441.12pt x 321.2pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 7
 .
 (pdftex.def)             Requested size: 366.1522pt x 48.17792pt.
-<./ressources/image/AvecPerte.png, id=365, 2445.135pt x 325.215pt>
+<./ressources/image/AvecPerte.png, id=525, 2445.135pt x 325.215pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
 7.
 (pdftex.def)             Requested size: 366.75443pt x 48.78014pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./Chapitres/CompressionDesGraphes/MOE.tex [21 <./ressources/image/SansPerte.
-png>]
-
-Package natbib Warning: Citation `uthayakumar2018survey' on page 22 undefined o
-n input line 16.
-
-[22 <./ressources/image/AvecPerte.png>]) [23]
+)
+(./Chapitres/CompressionDesGraphes/MOE.tex [20 <./ressources/image/SansPerte.pn
+g> <./ressources/image/AvecPerte.png>]) [21]
 Chapitre 4.
-(./Chapitres/ExtractionMotifs/VOG.tex [24
+[22
 
-] [25] [26] [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
+] (./Chapitres/ExtractionMotifs/EM.tex [23]
+Overfull \hbox (4.68845pt too wide) in paragraph at lines 19--19
+ []|\T1/cmr/m/n/9 Chevau- 
  []
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
 
-Overfull \hbox (17.0pt too wide) detected at line 126
+Overfull \hbox (2.41519pt too wide) in paragraph at lines 18--33
 [][] 
  []
 
-) (./Chapitres/ExtractionMotifs/VOG_Overlapp.tex
 
-Package natbib Warning: Citation `koutra2015summarizing' on page 29 undefined o
-n input line 2.
-
-
-Package natbib Warning: Citation `liu2015empirical' on page 29 undefined on inp
-ut line 4.
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 18--33
 
  []
 
-) (./Chapitres/ExtractionMotifs/TimeCrunch.tex
+) (./Chapitres/ExtractionMotifs/VOG.tex [24]
 
-Package natbib Warning: Citation `shah2015timecrunch' on page 30 undefined on i
-nput line 2.
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 26.
 
-
-Overfull \hbox (30.07521pt too wide) in paragraph at lines 5--9
-\OT1/cmr/m/n/10.95 
+[25] [26]) (./Chapitres/ExtractionMotifs/VOG_Overlapp.tex [27])
+(./Chapitres/ExtractionMotifs/TimeCrunch.tex
+Overfull \hbox (2.77132pt too wide) in paragraph at lines 1--6
+\T1/cmr/m/n/10.95 laire de struc-tures sta-tiques $\OT1/cmr/m/n/10.95 
  = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 st \OT1/cmr/m/n/10.95 (\OML/cmm/m/i
 t/10.95 etoile\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  fc\OT1/cmr/m/n/10.95 (
 \OML/cmm/m/it/10.95 clique\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  nc\OT1/cmr
 /m/n/10.95 (\OML/cmm/m/it/10.95 quasi \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.
 95 clique\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  bc\OT1/cmr/m/n/10.95 (\OML/
 cmm/m/it/10.95 bipartie\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  nb\OT1/cmr/m/
-n/10.95 (\OML/cmm/m/it/10.95 quasi \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 
-bipartie\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  ch\OT1/cmr/m/n/10.95 (\OML/c
-mm/m/it/10.95 chaine\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 g$
+n/10.95 (\OML/cmm/m/it/10.95 quasi \OMS/cmsy/m/n/10.95 ^^@
  []
 
-[30]
+[28]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 28.
+) (./Chapitres/ExtractionMotifs/CanDense.tex
 
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 12.
+LaTeX Warning: Reference `euclid' on page 29 undefined on input line 4.
 
-) [31] [32]
+) (./Chapitres/ExtractionMotifs/SynNoeudClust.tex [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Overfull \hbox (32.28378pt too wide) in paragraph at lines 3--54
+[][] 
+ []
+
+[31]) (./Chapitres/ExtractionMotifs/intra_inter_mot_mat.tex
+<ressources/image/inter_intra.png, id=658, 980.66376pt x 326.21875pt>
+File: ressources/image/inter_intra.png Graphic file (type png)
+<use ressources/image/inter_intra.png>
+Package pdftex.def Info: ressources/image/inter_intra.png  used on input line 5
+.
+(pdftex.def)             Requested size: 490.33067pt x 163.10896pt.
+
+Overfull \hbox (20.86018pt too wide) in paragraph at lines 5--6
+[][] 
+ []
+
+) (./Chapitres/ExtractionMotifs/mot_mat.tex [32
+
+
+ <./ressources/image/inter_intra.png>]) (./Chapitres/ExtractionMotifs/SynMatMot
+.tex [33]
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+
+ []
+
+
+Overfull \hbox (12.06915pt too wide) in paragraph at lines 3--35
+[][] 
+ []
+
+[34]) (./Chapitres/ExtractionMotifs/SubDue.tex)
+(./Chapitres/ExtractionMotifs/GraphZip.tex)
+(./Chapitres/ExtractionMotifs/SynAgrNoeud.tex [35
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Overfull \hbox (40.26561pt too wide) in paragraph at lines 3--27
+[][] 
+ []
+
+[36]) (./Chapitres/ExtractionMotifs/appRep.tex)
+(./Chapitres/ExtractionMotifs/appRepAmel.tex)
+(./Chapitres/ExtractionMotifs/k2-partitionned.tex [37
+
+
+])
+(./Chapitres/ExtractionMotifs/gRepair.tex)
+(./Chapitres/ExtractionMotifs/SynGram.tex [38]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Overfull \hbox (17.06862pt too wide) in paragraph at lines 3--39
+[][] 
+ []
+
+[39]) (./Chapitres/ExtractionMotifs/VNM.tex
+
+LaTeX Warning: Command \' invalid in math mode on input line 17.
+
+Missing character: There is no é in font cmr10!
+[40
+
+
+]
+Overfull \hbox (2.52309pt too wide) in paragraph at lines 42--42
+[]|$\OML/cmm/m/it/10.95 h[]$|  
+ []
+
+
+Overfull \hbox (2.52309pt too wide) in paragraph at lines 42--42
+[]|$\OML/cmm/m/it/10.95 h[]$|  
+ []
+
+
+Overfull \hbox (2.52309pt too wide) in paragraph at lines 42--43
+[]|$\OML/cmm/m/it/10.95 h[]$|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 43--43
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 43--43
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 43--44
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 44--44
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 44--44
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 44--45
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 45--46
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 46--46
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 46--46
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 46--47
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 47--47
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 47--47
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 47--48
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 48--48
+ []|\T1/cmr/m/n/10.95 102|
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 48--48
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 48--48
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 48--49
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 49--49
+ []|\T1/cmr/m/n/10.95 204|
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 49--49
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 49--49
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 49--50
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 50--50
+ []|\T1/cmr/m/n/10.95 431|
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 50--50
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 50--50
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 50--51
+[]|\T1/cmr/m/n/10.95 12|  
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 51--51
+ []|\T1/cmr/m/n/10.95 480|
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 51--51
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 51--51
+[]|\T1/cmr/m/n/10.95 11|  
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 52--52
+ []|\T1/cmr/m/n/10.95 501|
+ []
+
+
+Overfull \hbox (2.35197pt too wide) in paragraph at lines 52--52
+[]|\T1/cmr/m/n/10.95 10|  
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 69--69
+ []|\T1/cmr/m/n/10.95 102|
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 70--70
+ []|\T1/cmr/m/n/10.95 204|
+ []
+
+
+Overfull \hbox (4.9509pt too wide) in paragraph at lines 71--71
+ []|\T1/cmr/m/n/10.95 431|
+ []
+
+
+Overfull \hbox (3.79224pt too wide) in paragraph at lines 62--73
+ []|[] 
+ []
+
+<ressources/image/VNM_exemple.png, id=762, 452.69125pt x 649.42625pt>
+File: ressources/image/VNM_exemple.png Graphic file (type png)
+<use ressources/image/VNM_exemple.png>
+Package pdftex.def Info: ressources/image/VNM_exemple.png  used on input line 7
+7.
+(pdftex.def)             Requested size: 135.80841pt x 194.82938pt.
+
+Overfull \hbox (12.77101pt too wide) in paragraph at lines 75--79
+ [] 
+ []
+
+
+Overfull \hbox (7.29736pt too wide) in paragraph at lines 84--84
+ []|\T1/cmr/m/n/10.95 Savings| 
+ []
+
+) (./Chapitres/ExtractionMotifs/DSM.tex
+<ressources/image/VNM2_exemple.png, id=767, 1595.9625pt x 652.4375pt>
+File: ressources/image/VNM2_exemple.png Graphic file (type png)
+<use ressources/image/VNM2_exemple.png>
+Package pdftex.def Info: ressources/image/VNM2_exemple.png  used on input line 
+7.
+(pdftex.def)             Requested size: 398.98965pt x 163.10896pt.
+)
+(./Chapitres/ExtractionMotifs/SynAgrlien.tex [41 <./ressources/image/VNM_exempl
+e.png>] [42 <./ressources/image/VNM2_exemple.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Overfull \hbox (45.52138pt too wide) in paragraph at lines 3--34
+[][] 
+ []
+
+[43]) [44
+
+
+]
 Chapitre 5.
-[33
+[45
 
 ]
 Chapitre 6.
-[34
+[46
 
-] (./Report_backup.bbl [35
+] (./Report_backup.bbl [47
 
-] [36])
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
-[37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
- (./Report_backup.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+] [48] [49])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+ [50]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
+ (./Report_backup.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `Report_backup.out' has not changed.
-(rerunfilecheck)             Checksum: E3B6BD6A75B28D1770A45FCC80F71C1B;3098.
+(rerunfilecheck)             Checksum: 9F69AD3CF58D4C87E3F92923F41DE93A;3198.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 11642 strings out of 492649
- 172484 string characters out of 6129622
- 292971 words of memory out of 5000000
- 15105 multiletter control sequences out of 15000+600000
- 26533 words of font info for 58 fonts, out of 8000000 for 9000
+ 11359 strings out of 492649
+ 167049 string characters out of 6129622
+ 293331 words of memory out of 5000000
+ 14666 multiletter control sequences out of 15000+600000
+ 31375 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,43p,1063b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,22n,43p,1040b,744s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/font
-s/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/cm-super/sfti2488.pfb>
-Output written on Report_backup.pdf (38 pages, 650674 bytes).
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfsl1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfti2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/z
+apfding/uzdr.pfb>
+Output written on Report_backup.pdf (51 pages, 1159022 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
- 513 compressed objects within 6 object streams
- 126 named destinations out of 1000 (max. 500000)
- 387 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 975 PDF objects out of 1000 (max. 8388607)
+ 861 compressed objects within 9 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 410 words of extra memory for PDF output out of 10000 (max. 10000000)
 

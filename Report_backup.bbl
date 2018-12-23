@@ -5,11 +5,59 @@
 \newblock {\em Quelques rappels sur la th{\'e}orie des graphes}.
 \newblock IUT Lyon Informatique.
 
+\bibitem[Araujo et~al., 2014]{araujo2014beyond}
+Araujo, M., G{\"u}nnemann, S., Mateos, G., and Faloutsos, C. (2014).
+\newblock Beyond blocks: Hyperbolic community detection.
+\newblock In {\em Joint European Conference on Machine Learning and Knowledge
+  Discovery in Databases}, pages 50--65. Springer.
+
+\bibitem[Asano et~al., 2008]{asano2008efficient}
+Asano, Y., Miyawaki, Y., and Nishizeki, T. (2008).
+\newblock Efficient compression of web graphs.
+\newblock In {\em International Computing and Combinatorics Conference}, pages
+  1--11. Springer.
+
+\bibitem[Barbay et~al., 2006]{barbay2006adaptive}
+Barbay, J., Golynski, A., Munro, J.~I., and Rao, S.~S. (2006).
+\newblock Adaptive searching in succinctly encoded binary relations and
+  tree-structured documents.
+\newblock In {\em Annual Symposium on Combinatorial Pattern Matching}, pages
+  24--35. Springer.
+
+\bibitem[Blondel et~al., 2008]{blondel2008fast}
+Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
+\newblock Fast unfolding of communities in large networks.
+\newblock {\em Journal of statistical mechanics: theory and experiment},
+  2008(10):P10008.
+
 \bibitem[Brisaboa et~al., 2009]{brisaboa2009k}
 Brisaboa, N.~R., Ladra, S., and Navarro, G. (2009).
 \newblock k 2-trees for compact web graph representation.
 \newblock In {\em International Symposium on String Processing and Information
   Retrieval}, pages 18--30. Springer.
+
+\bibitem[Buehrer and Chellapilla, 2008]{buehrer2008scalable}
+Buehrer, G. and Chellapilla, K. (2008).
+\newblock A scalable pattern mining approach to web graph compression with
+  communities.
+\newblock In {\em Proceedings of the 2008 International Conference on Web
+  Search and Data Mining}, pages 95--106. ACM.
+
+\bibitem[Claude and Ladra, 2011]{claude2011practical}
+Claude, F. and Ladra, S. (2011).
+\newblock Practical representations for web and social graphs.
+\newblock In {\em Proceedings of the 20th ACM international conference on
+  Information and knowledge management}, pages 1185--1190. ACM.
+
+\bibitem[Claude and Navarro, 2010a]{claude2010extended}
+Claude, F. and Navarro, G. (2010a).
+\newblock Extended compact web graph representations.
+\newblock In {\em Algorithms and Applications}, pages 77--91. Springer.
+
+\bibitem[Claude and Navarro, 2010b]{claude2010fast}
+Claude, F. and Navarro, G. (2010b).
+\newblock Fast and compact web graph representations.
+\newblock {\em ACM Transactions on the Web (TWEB)}, 4(4):16.
 
 \bibitem[Fages, 2014]{fages2014exploitation}
 Fages, J.-G. (2014).
@@ -27,10 +75,38 @@ Guillaume, J.-L. and Latapy, M. (2002).
 Hennecart, F., Bretto, A., and Faisant, A. (2012).
 \newblock El{\'e}ments de th{\'e}orie des graphes.
 
+\bibitem[Hern{\'a}ndez and Navarro, 2014]{hernandez2014compressed}
+Hern{\'a}ndez, C. and Navarro, G. (2014).
+\newblock Compressed representations for web and social graphs.
+\newblock {\em Knowledge and information systems}, 40(2):279--313.
+
+\bibitem[Hespanha, 2004]{hespanha2004efficient}
+Hespanha, J.~P. (2004).
+\newblock An efficient matlab algorithm for graph partitioning.
+\newblock {\em Santa Barbara, CA, USA: University of California}.
+
 \bibitem[Jean-Charles~R{\'e}gin, 2016]{Pres}
 Jean-Charles~R{\'e}gin, A.~M. (2016).
 \newblock Th{\'e}orie des graphes.
 \newblock Technical report.
+
+\bibitem[Kang and Faloutsos, 2011]{kang2011beyond}
+Kang, U. and Faloutsos, C. (2011).
+\newblock Beyond'caveman communities': Hubs and spokes for graph compression
+  and mining.
+\newblock In {\em Data Mining (ICDM), 2011 IEEE 11th International Conference
+  on}, pages 300--309. IEEE.
+
+\bibitem[Karypis and Kumar, 2000]{karypis2000multilevel}
+Karypis, G. and Kumar, V. (2000).
+\newblock Multilevel k-way hypergraph partitioning.
+\newblock {\em VLSI design}, 11(3):285--300.
+
+\bibitem[Ketkar et~al., 2005]{ketkar2005subdue}
+Ketkar, N.~S., Holder, L.~B., and Cook, D.~J. (2005).
+\newblock Subdue: Compression-based frequent pattern discovery in graph data.
+\newblock In {\em Proceedings of the 1st international workshop on open source
+  data mining: frequent pattern mining implementations}, pages 71--76. ACM.
 
 \bibitem[Koutra et~al., 2015]{koutra2015summarizing}
 Koutra, D., Kang, U., Vreeken, J., and Faloutsos, C. (2015).
@@ -53,6 +129,11 @@ Lemmouchi, S. (2012).
 \newblock {\em Etude de la robustesse des graphes sociaux {\'e}mergents}.
 \newblock PhD thesis, Universit{\'e} Claude Bernard-Lyon I.
 
+\bibitem[Liu et~al., 2018]{liu2018reducing}
+Liu, Y., Safavi, T., Shah, N., and Koutra, D. (2018).
+\newblock Reducing large graphs to small supergraphs: a unified approach.
+\newblock {\em Social Network Analysis and Mining}, 8(1):17.
+
 \bibitem[Liu et~al., 2015]{liu2015empirical}
 Liu, Y., Shah, N., and Koutra, D. (2015).
 \newblock An empirical comparison of the summarization power of graph
@@ -62,6 +143,16 @@ Liu, Y., Shah, N., and Koutra, D. (2015).
 \bibitem[Lopez, 2003]{lopez2003cours}
 Lopez, P. (2003).
 \newblock Cours de graphes.
+
+\bibitem[Maneth and Peternek, 2015]{maneth2015survey}
+Maneth, S. and Peternek, F. (2015).
+\newblock A survey on methods and systems for graph compression.
+\newblock {\em arXiv preprint arXiv:1504.00616}.
+
+\bibitem[Maneth and Peternek, 2018]{maneth2018grammar}
+Maneth, S. and Peternek, F. (2018).
+\newblock Grammar-based graph compression.
+\newblock {\em Information Systems}, 76:19--45.
 
 \bibitem[M{\"u}ller, 2012]{muller}
 M{\"u}ller, D. (2012).
@@ -84,6 +175,11 @@ Rigo, M. (2010).
 \newblock Universit{\'e} de li{\`e}ge, Facult{\'e} des sciences D{\'e}partement
   de math{\'e}matiques.
 
+\bibitem[Rossi and Zhou, 2018]{rossi2018graphzip}
+Rossi, R.~A. and Zhou, R. (2018).
+\newblock Graphzip: a clique-based sparse graph compression method.
+\newblock {\em Journal of Big Data}, 5(1):10.
+
 \bibitem[Roux, 2014]{DUT}
 Roux, P. (2014).
 \newblock {\em Th{\'e}orie des graphes}.
@@ -104,11 +200,23 @@ Shah, N., Koutra, D., Zou, T., Gallagher, B., and Faloutsos, C. (2015).
 \newblock In {\em Proceedings of the 21th ACM SIGKDD International Conference
   on Knowledge Discovery and Data Mining}, pages 1055--1064. ACM.
 
+\bibitem[Shah, 2018]{shah2018graph}
+Shah, R.~J. (2018).
+\newblock Graph compression using pattern matching techniques.
+\newblock {\em arXiv preprint arXiv:1806.01504}.
+
 \bibitem[Uthayakumar et~al., 2018]{uthayakumar2018survey}
 Uthayakumar, J., Vengattaraman, T., and Dhavachelvan, P. (2018).
 \newblock A survey on data compression techniques: From the perspective of data
   quality, coding schemes, data type and applications.
 \newblock {\em Journal of King Saud University-Computer and Information
   Sciences}.
+
+\bibitem[Yang and Leskovec, 2013]{yang2013overlapping}
+Yang, J. and Leskovec, J. (2013).
+\newblock Overlapping community detection at scale: a nonnegative matrix
+  factorization approach.
+\newblock In {\em Proceedings of the sixth ACM international conference on Web
+  search and data mining}, pages 587--596. ACM.
 
 \end{thebibliography}

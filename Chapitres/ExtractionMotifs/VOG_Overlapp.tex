@@ -1,9 +1,6 @@
 %%%VoG Overlapp
 			Comme nous l'avons déjà précisé, VOG formule le problème de compression de graphe en tant que problème d'optimisation basé sur la théorie de l'information, l'objectif étant de rechercher les structures  qui minimisent la longueur de description globale du graphe. Un élément clé de VoG est la méthode de décomposition utilisée qui peut donner en sortie des sous-graphes ayant des nœuds et/ou des arêtes en commun et dont VoG\citep{koutra2015summarizing} ne suppose que le premiers cas. 
-			
-			En partant de ce constat, les auteurs de \citep{liu2015empirical} propose VoG-overlapp, une extension de VoG prenant en compte les chevauchement des structures sous forme d'une étude de l'effet de diverses méthodes de décomposition sur la qualité de la compression, à savoir la méthodes SlushBurn, Louvain, Spectral clustering, Metis et KCBC qui est une nouvelle méthode proposée dans cette article et dont la description et fournie dans l'(Algorithme 1).
-			
-			
+			En partant de ce constat, les auteurs de \citep{liu2015empirical} propose VoG-overlapp, une extension de VoG prenant en compte les chevauchement des structures sous forme d'une étude de l'effet de diverses méthodes de décomposition sur la qualité de la compression, à savoir la méthodes SlushBurn, Louvain, Spectral clustering, Metis et KCBC.
 			%%%Algorithme 01
 			
 			L'idée de base de VoG-overlapp est d'inclure une pénalité pour les chevauchements importants dans la fonction objective ce qui oriente le processus de sélection des structures vers la sortie souhaitée. Elle devient alors:
@@ -20,5 +17,5 @@
 				\item $|O|$  est le nombre d'arêtes (distinctes) qui se répète dans le modèles M. 
 				\item $||O||$ et $||O||'$ représentent respectivement le nombre des arêtes présentes et manquantes dans O.
 				\item $l_{1} = -log (\frac{||O||}{||O||+||O||'})$, de manière analogique $l_{0}$, sont les longueurs des codes de préfixe optimaux pour les arêtes actuelles et manquantes, respectivement.
-				\item $\varepsilon(O)$  est l'ensemble des entrées non nulles dans la matrice O.\\
+				\item $\varepsilon(O)$  est l'ensemble des entrées non nulles dans la matrice O.
 			\end{itemize}

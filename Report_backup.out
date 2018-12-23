@@ -35,8 +35,9 @@
 \BOOKMARK [2][-]{subsection.3.2.4}{Classification des m\351thodes de compression:}{section.3.2}% 35
 \BOOKMARK [1][-]{section.3.3}{Conclusion}{chapter.3}% 36
 \BOOKMARK [0][-]{chapter.4}{ Les m\351thodes de compression par extraction de motifs}{}% 37
-\BOOKMARK [1][-]{section.4.1}{Les m\351thodes d'extraction de motifs}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.2}{Compression par extraction de motifs}{chapter.4}% 39
-\BOOKMARK [1][-]{section.4.3}{Conclusion}{chapter.4}% 40
-\BOOKMARK [0][-]{chapter.5}{Les m\351thodes de compression k2-Trees}{}% 41
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Compression par extraction de motifs}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.1.1}{Compression bas\351e vocabulaire}{section.4.1}% 39
+\BOOKMARK [2][-]{subsection.4.1.2}{Compression bas\351e Agr\351gation des motifs}{section.4.1}% 40
+\BOOKMARK [1][-]{section.4.2}{Conclusion}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{Les m\351thodes de compression k2-Trees}{}% 42
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 43

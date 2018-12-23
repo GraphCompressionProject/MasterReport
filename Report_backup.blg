@@ -6,45 +6,45 @@ Database file #1: Bibliographie.bib
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
 Warning--empty author and editor in IUTLyonInformatique
 Warning--empty institution in Pres
-You've used 21 entries,
+You've used 40 entries,
             1935 wiz_defined-function locations,
-            583 strings with 6861 characters,
-and the built_in function-call counts, 7234 in all, are:
-= -- 709
-> -- 271
-< -- 13
-+ -- 94
-- -- 88
-* -- 564
-:= -- 1292
-add.period$ -- 61
-call.type$ -- 21
-change.case$ -- 145
-chr.to.int$ -- 21
-cite$ -- 25
-duplicate$ -- 301
-empty$ -- 510
-format.name$ -- 112
-if$ -- 1398
-int.to.chr$ -- 1
+            687 strings with 10161 characters,
+and the built_in function-call counts, 15563 in all, are:
+= -- 1568
+> -- 556
+< -- 35
++ -- 193
+- -- 180
+* -- 1209
+:= -- 2646
+add.period$ -- 127
+call.type$ -- 40
+change.case$ -- 286
+chr.to.int$ -- 39
+cite$ -- 44
+duplicate$ -- 669
+empty$ -- 1125
+format.name$ -- 245
+if$ -- 3131
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 15
-newline$ -- 104
-num.names$ -- 60
-pop$ -- 144
+missing$ -- 34
+newline$ -- 199
+num.names$ -- 117
+pop$ -- 285
 preamble$ -- 1
-purify$ -- 149
+purify$ -- 290
 quote$ -- 0
-skip$ -- 226
+skip$ -- 509
 stack$ -- 0
-substring$ -- 436
-swap$ -- 35
-text.length$ -- 2
+substring$ -- 1021
+swap$ -- 123
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
+type$ -- 234
 warning$ -- 3
-while$ -- 56
+while$ -- 131
 width$ -- 0
-write$ -- 257
+write$ -- 510
 (There were 3 warnings)

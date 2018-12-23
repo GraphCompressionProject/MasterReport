@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{report}
+\documentclass[a4paper,oneside,11pt]{report}
 
 %------------ package pour langue fr ------
 \usepackage[utf8]{inputenc}
@@ -6,28 +6,34 @@
 \usepackage[T1]{fontenc}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage{multirow}
 %------------- for embedding images----------
 \usepackage{graphicx} 
 \usepackage{float}
 \usepackage[export]{adjustbox}
 \usepackage{amsfonts,epsfig,epstopdf,titling,url,array}
+\usepackage{lscape}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
 %--------- pour le style de la page ----------
-%\usepackage[top=2cm, bottom=2cm, right=2cm, left=2cm]{geometry}
+\usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2cm]{geometry}
+
 \usepackage[]{geometry}
-\usepackage[]{algorithm2e}
-\usepackage{algpseudocode} 
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+
 \usepackage{setspace}
 \setstretch{1,5}
 %\usepackage{txfonts} //pour utiliser times new roman dans le document
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\renewcommand\headrulewidth{1pt}
-\fancyhead[L]{Bousbiat Hafsa - Ihadadene Sana}
-\fancyhead[R]{Rapport Master}
+%\renewcommand\headrulewidth{1pt}
+%\fancyhead[L]{Bousbiat Hafsa - Ihadadene Sana}
+%\fancyhead[R]{Rapport Master}
 %--------------------------- Sommaire ----------------------------%
 \usepackage{hyperref}
 \usepackage{amssymb}
@@ -36,6 +42,17 @@
 		\newtheorem{defn}{Definition}[section]
 		\newtheorem{conj}{Conjecture}[section]
 		\newtheorem{exmp}{Example}[section]
+\usepackage[table,dvipsnames]{xcolor}	
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\xmark}{\color{red}\ding{55}}%
+\newcommand{\cmark}{\color{PineGreen}\ding{51}}	
+\usepackage[T1]{fontenc}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+
+
 \begin{document}
 
 %Page de garde (page de titre)							Obligatoire
@@ -100,14 +117,90 @@
 
 \chapter{ Les méthodes de compression par extraction de motifs}
 			
-						
+			La découverte de connaissances et l'exploration de données (KDD) ont pour objectif d'extraire des informations utiles à partir de sources de données, souvent sous la forme de modèles récurrents. Les motifs fréquents sont  des sous-graphes .
 			
-			\section{Les méthodes d'extraction de motifs}
-			
+				
 			\section{Compression par extraction de motifs}
-				\input{./Chapitres/ExtractionMotifs/VOG.tex}
-				\input{./Chapitres/ExtractionMotifs/VOG_Overlapp.tex}
-				\input{./Chapitres/ExtractionMotifs/TimeCrunch.tex}
+			 Les motifs fréquents sont des connaissances extraites sur des données. Leur but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils offrent ainsi à l'utilisateur une meilleure appréhension des données. L'extraction de motifs fréquents est ainsi devenue une tâche importante de la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement%%%% verifier ce mot
+			 utilisée dans le domaine de compression des graphes vue qu'elle permet de ne garder que l'information utiles et d'éliminer les redondances de manière efficace. En effet, nous trouvons plusieurs méthodes basées sur ce principe dont nous proposons de les classifier en deux grandes classes: 
+			 (i) les méthodes  de compression basées vocabulaire
+			 (ii) les méthodes  de compression basées Agrégation.
+			 
+				Dans cette section, nous allons expliquer le principe de base de chaque classe où nous allons subdiviser chacune  en plusieurs sous-classe en se basant sur ce dernier. 
+				%%% a revoir le dernier paragraphe
+			 
+				\subsection{Compression basée vocabulaire}
+				Les méthodes de compression par extraction de motifs basées vocabulaire sont des méthodes qui ont attirées l'attention des chercheurs ces dernières années car elles permettent une meilleurs compréhension du graphe. Elles partent toujours d'un ensemble de structures prédéfinies qui ont été prouvées fréquent dans les graphes réels. Deux sous classes de cette dernières peuvent être d:
+				 
+					 \textbf{Basées sur des méthodes de clustering}
+							
+							Les méthodes de cette classe s'appuient sur le fait qu'on ne peut pas comprendre facilement les graphes denses, alors que quelques structures simples sont beaucoup plus faciles à comprendre et souvent très utiles pour analyser le graphe. Elles se basent sur des algorithmes de détection de communautés. 
+							La question suivante peut alors se poser: pourquoi ne pas appliquer l'un des nombreux algorithmes de détection de communauté ou de partitionnement de graphe pour compresser le graphe en termes de communautés? La réponse est que ces algorithmes ne servent pas tout à fait le même objectif que la compression. Généralement, ils détectent de nombreuses communautés sans ordre explicite, de sorte qu'une procédure de sélection des sous-graphes les plus «importants» est toujours nécessaire. En plus de cela, ces méthodes renvoient simplement les communautés découvertes, sans les caractériser (par exemple, clique, étoile) et ne permettent donc pas à l'utilisateur de mieux comprendre les propriétés du graphe. 
+							
+							\input{./Chapitres/ExtractionMotifs/EM.tex}
+							\input{./Chapitres/ExtractionMotifs/VOG.tex}
+							\input{./Chapitres/ExtractionMotifs/VOG_Overlapp.tex}
+							\input{./Chapitres/ExtractionMotifs/TimeCrunch.tex}
+							\input{./Chapitres/ExtractionMotifs/CanDense.tex}
+							\input{./Chapitres/ExtractionMotifs/SynNoeudClust.tex}
+			
+					 \textbf{Basée sur les propriétés de la matrice d'adjacence}
+							
+							Les graphes peuvent avoir différentes représentations. Chacune des structures de données présente des avantages et des inconvénients en ce qui concerne la quantité de mémoire nécessaire pour stocker les données et la facilité d'accès aux données. Selon les besoins, il est parfois utile de stocker les données dans des structures de données plus grandes, qui nécessitent plus d'espace mais offrent un accès efficace aux données. En se basant sur ce constat plusieurs méthodes ont été  proposée dans la littérature pour compresser la matrice d'adjacence en exploitant les propriété des graphes réels pour trouver les motifs les plus fréquent dans cette dernière.
+							
+							\input{./Chapitres/ExtractionMotifs/intra_inter_mot_mat.tex}
+							\input{./Chapitres/ExtractionMotifs/mot_mat.tex}
+							\input{./Chapitres/ExtractionMotifs/SynMatMot.tex}
+					
+				
+				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+				\subsection{Compression basée Agrégation des motifs}
+				
+					Les méthodes de compression par extraction de motifs basées sur l'agrégation sont des méthodes   qui agrègent plusieurs nœuds ou liens d'un motif en un seul nœud ou lien, appelés respectivement super-nœud et super-lien. Le graphe en sortie, dit super-graphe, devient dès lors plus simple et moins offrant ainsi une aisance et une facilité de traitement, d'exploration et de visualisation. 
+					
+					Nous présenterons dans ce qui suit les deux sous-classes de cette classe. 
+					
+					 
+					\subsubsection{Compression basée Agrégation de nœuds}
+					
+					Les techniques de compression basées sur l'agrégation des nœuds des motifs sont des méthodes qui ont existé depuis plusieurs décennies offrant plusieurs avantages. 
+					Elles visent à résumer le graphe initial en agrégeant les nœuds des motifs découvert dans le but de diminuer le nombre de nœuds existants  et d'offrir une meilleur visibilité et analyse du graphe. 
+						
+						\input{./Chapitres/ExtractionMotifs/SubDue.tex}
+						\input{./Chapitres/ExtractionMotifs/GraphZip.tex}
+						\input{./Chapitres/ExtractionMotifs/SynAgrNoeud.tex}
+						
+					\subsubsection{Compression basée agrégation de liens}
+						Les méthodes de compression par extraction de motifs basées agrégation de liens sont parmi les méthode les plus populaires. Leur objectif est de produire un graphe compressé à partir du graphe initial en remplaçant les liens denses du graphe par un nouveau super-nœud ou une nouvelle super-arêtes. Elle se divise selon le principe en deux grandes classes: celles utilisant les règles de grammaire et celles utilisant des méthode de clustering. Nous détaillerons dans ce qui suit ces deux classes et nous conclurons par une synthèse sur les méthodes de chaque classe.
+						
+						 \textbf{Basées sur les règles de grammaire} 
+								
+								La classe des méthodes de compression basées sur les règles de grammaire est une généralisation d'une méthode de compression des dictionnaire s'intitulant Re-pair. Son principe de base consiste en la  recherche, à chaque itération, de la paire de symboles la plus fréquente dans une séquence de caractères et à la remplacer par un nouveau symbole, jusqu'à ce qu'il ne soit plus commode de les remplacer. Nous notons que dans ce cas le motif est sous forme de deux arêtes ayant un sommet en commun, nommé \textit{digraph}.
+								
+								\input{./Chapitres/ExtractionMotifs/appRep.tex}
+								 %%%%exemple ???
+								\input{./Chapitres/ExtractionMotifs/appRepAmel.tex}
+								\input{./Chapitres/ExtractionMotifs/k2-partitionned.tex}
+							
+								\input{./Chapitres/ExtractionMotifs/gRepair.tex}
+								%%%%exemple ???
+								\input{./Chapitres/ExtractionMotifs/SynGram.tex}
+								
+
+								
+%%% Ajouter son algorithme
+%%%% Ajouter un exmple illustant cette methode
+								
+						 \textbf{Basées sur des méthodes de clustering}
+						 
+						 		Les méthodes de compression appartenant à la classe courante sont des méthodes basées sur la recherche des sous-graphes denses (ayant des nœuds fortement connectés). Ils sont destinées principalement aux graphes du Web et les graphes des réseaux sociaux dans but de faciliter leurs exploration et analyse.
+								
+								\input{./Chapitres/ExtractionMotifs/VNM.tex}
+								\input{./Chapitres/ExtractionMotifs/DSM.tex}
+								\input{./Chapitres/ExtractionMotifs/SynAgrlien.tex}
+						
+												
+								
 		\section{Conclusion}
 
 

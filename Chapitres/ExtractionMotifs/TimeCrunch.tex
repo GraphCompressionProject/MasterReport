@@ -1,17 +1,14 @@
-%%%%TimeCrunch
-			Durant la même année, \citep{shah2015timecrunch} ont proposé une autre variation de VoG, TimeCrunch, pour le cas des graphes simples (sans boucles) non orientés dynamiques représentés par un ensemble de graphes associés chacun à timestamp. En d'autres termes, ils considèrent les graphes $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$.
-			
-			
+Durant la même année, \citep{shah2015timecrunch} ont proposé une autre variation de VoG, TimeCrunch, pour le cas des graphes simples (sans boucles) non orientés dynamiques représentés par un ensemble de graphes associés chacun à timestamp. En d'autres termes, ils considèrent les graphes $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$.
 			Un nouveau vocabulaire est proposé pour décrire proprement l'évolution des sous-structures dans le temps. En effet, ils partent du même vocabulaire de structures statiques 
 			%citer les structures Ω = {st,fc,nc,bc,nb,ch}
 			$\Omega =\{ st\ (etoile),\ fc (clique),\ nc (quasi-clique),\ bc (bipartie),\ nb (quasi-bipartie),\ ch (chaine)\}$ 
-			dont ils affectent une signature temporelle $\delta \in \Delta$ où: $\Delta$ = \{ o(oneshot), r(ranged), p(periodique), f(flickering), c(constante) \}. 
+			dont ils affectent une signature temporelle $\delta \in \Delta$ où: $\Delta$ = \{o(oneshot), r(ranged), p(periodique), f(flickering), c(constante) \}. 
 			
 			 Comme les éléments du modèle sont modifiés, son cout est alors aussi modifié pour inclure pour chaque structure $s$ non seulement sa connectivité $c(s)$ correspondant aux arêtes des zones induites par $s$ mais aussi sa présence temporelle $u(s)$ correspondant aux timestamps dans lesquels $s$ apparait dans le graphe G. 
 			 
 			 $L(M) = L_{N}(|M|+1)\ +\ $log${|M|+|\Phi|-1}\choose{|\Phi|-1}$ $+\ \displaystyle{\sum_{s\in M}(logP(v(s)|M) + L(c(s)) + \textbf{L(u(s))})}$
 			 
-			 Le cout de l'encodage de la présence temporelle diffèrent selon ses caractéristiques. Nous présenterons dans ce qui suit la formule correspondant à chaque signature.
+			 Le cout de l'encodage de la présence temporelle diffère selon ses caractéristiques. Nous présenterons dans ce qui suit la formule correspondant à chaque signature.
 			 
 			 \begin{itemize}[label=$\circ$]
 			 \item \textbf{Oneshot}: cette signature décrit les sous-structure qui apparaissent dans un seul timestamp ,i.e $|u(s)|=1$. Donc le cout de l'encodage se réduit aux nombre de bits nécessaires pour sauvegarder le timestamp : $L(u(s)) = log(t)$.
@@ -25,4 +22,30 @@
 			 \end{itemize}
 			 
 			 
-			 Nous notons que décrire $u(s)$ est encore un autre problème de sélection de modèle pour lequel nous pouvons tirer parti de MDL. En effet juste comme pour le codage de la connectivité, il peut ne pas être précis avec une signature temporelle donnée. Toutefois, toute approximation entraînera des coûts supplémentaires pour l'encodage de l'erreur qui englobent l'erreur de l'encodage de la connectivité ainsi que l'erreur de l'encodage de la signature temporelle.
+			 Nous notons que décrire $u(s)$ est encore un autre problème de sélection de modèle pour lequel les auteurs tirent parti du principe MDL. En effet juste comme pour le codage de la connectivité, il peut ne pas être précis avec une signature temporelle donnée. Toutefois, toute approximation entraînera des coûts supplémentaires pour l'encodage de l'erreur qui englobent dans ce cas l'erreur de l'encodage de la connectivité ainsi que l'erreur de l'encodage de la signature temporelle.
+			 
+			 \begin{algorithm}
+					\caption{TIMECRUNCH}
+				\begin{algorithmic} [1]
+					\STATE \textbf{Génération de sous-structure candidate: }Génération de sous-graphe pour chaque $G_{t_{i}}$ en utilisant un des algorithmes de décomposition de graphe statiques
+					
+					
+					\STATE  \textbf{Étiquetage de sous-structure candidate: }Associer chaque sous-structure à une etiquette $x \in \Omega$ minimisant son MDL.
+					
+					\STATE  \textbf{Assemblage des sous-structures candidates temporelles :} Assembler les sous-structure des graphes $G_{t_{i}}$ pour former des structures temporelles avec un comportement de connectivité cohérente et étiquetez-les conformément en minimisant le coût de codage de la présence temporelle. Enregistrer le jeu de candidats $C_{x} \in C $.
+					
+					\STATE \textbf{Composition du graphe compressé: }Composition du modèle M d'importantes structures temporelles non redondantes qui résument G à l'aide des méthodes heuristiques VANILLA, TOP-10, TOP-100 et STEPWISE. Choisir M associé à l'heuristique qui génère le coût de codage total le plus faible.
+				\end{algorithmic}
+			\end{algorithm}
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 
+			 

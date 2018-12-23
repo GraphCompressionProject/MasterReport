@@ -1,0 +1,37 @@
+%Le partitionnement des graphes et la détection de communautés présentent un grand intérêt pour de nombreux domaines, notamment les sciences sociales, biologiques et Web. 
+%			Ces dernières permettent d'obtenir des résumés de graphes diversifiés, chaque méthode étant orientée vers certains types de structures, telles que des cliques et des noyaux bipartites ou des étoiles. 
+			Parmi les méthodes de détection les plus importants dans la littérature nous trouvons :
+			\begin{enumerate}
+				\item \textbf{METIS\citep{karypis2000multilevel}}:est un schéma de partitionnement de graphe multiniveau basé sur la coupe basé sur la bissection récursive multiniveau (MLRB). Tant que la taille du graphe n'est pas sensiblement réduite, il grossit d'abord le graphe d'entrée en regroupant les nœuds dans les super-noeuds de manière itérative, de sorte que la coupe des bords soit préservée. Ensuite, le graphe grossi est partitionné à l'aide de MLRB et le partitionnement est projeté sur le graphe d'entrée G par le biais du retour en arrière. La méthode produit k partitions à peu près égales.
+				\item \textbf{SPECTRAL\citep{hespanha2004efficient}}: partitionne un graphe en effectuant une classification en k-means sur les k premiers vecteurs propres du graphe d'entrée. L'idée derrière cette classification est que les nœuds avec une connectivité similaire ont des scores propres similaires dans les k premiers vecteurs.
+				\item \textbf{LOUVAIN\citep{blondel2008fast}}:est une méthode de partitionnement basée sur la modularité pour détecter la structure de communauté hiérarchique. Comme SLASHBURN, LOUVAIN est itératif: (i) Chaque nœud est placé dans sa propre communauté. Ensuite, les voisins j de chaque nœud i sont pris en compte et i est déplacé vers la communauté j si le déplacement produit le gain de modularité maximum. Le processus est appliqué à plusieurs reprises jusqu'à ce qu'aucun gain supplémentaire ne soit possible. (ii) Un nouveau graphe est créé dont les super nœuds représentent les communautés et les super arêtes sont pondérés par la somme des poids des liens entre les deux communautés. L'algorithme converge généralement en quelques itérations.
+				\item \textbf{SLASHBURN \citep{kang2011beyond}}:est un algorithme de ré-ordonnancement de nœud initialement développé pour la compression de graphes. Il effectue deux étapes de manière itérative: (i) il supprime les nœuds de haute centralité du graphe (ii) Il réorganise les nœuds de manière à ce que les identificateurs les plus petit soient attribués aux nœuds de degré élevé et les nœuds des composants déconnectés obtiennent les identificateurs les plus élevés. Le processus est répété sur le composant connecté.
+				\item \textbf{BIGCLAM\citep{yang2013overlapping}}:est une méthode de détection de communauté à chevauchement évolutive. Il est construit sur le constat que les chevauchements entre les communautés sont étroitement liés. En modélisant explicitement la force d’affiliation de chaque couple nœud-communauté, un facteur latent non négatif est attribué à cette dernière, qui représente le degré d’appartenance à la communauté. Ensuite, la probabilité d'un bord est modélisée en fonction des affiliations de communautés partagées. L’identification des communautés de réseau est réalisée en adaptant BIGCLAM à un réseau non dirigé donné G.
+				\item \textbf{HYCOM\citep{araujo2014beyond}}:est un algorithme sans paramètre qui détecte les communautés à structure hyperbolique. Il se rapproche de la solution optimale en détectant de manière itérative les communautés importantes. L'idée clé est de trouver dans chaque étape une communauté unique qui minimise une fonction d'objectif basée sur la MDL en fonction des communautés précédemment détectées. La procédure itérative comprend trois étapes: les candidats à la communauté, la construction de la communauté et la déflation matricielle.
+				
+			\end{enumerate}
+			
+			%%%%%Un tableau Comparative
+			 Nous présenterons dans ce qui suit une étude comparative entre ces méthodes dans le but de mieux comprendre leurs influence sur les méthode de compression.
+			 \begin{table}[h]
+							\footnotesize
+							\begin{tabular}{|R{2cm}||C{1cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{2.5cm}|}
+								\hline & Chevau-che-ment & Clique & Étoile & sous-graphe Bipartie & Chaîne & Structure Hyperbolique & Complexité \\
+								\hline \textbf{Metis} & \textcolor{red}{\xmark} & \textcolor{PineGreen}{Beaucoup} & \textcolor{BurntOrange}{certaines} & \textcolor{BurntOrange}{certains} & \textcolor{red}{peu}  & \textcolor{red}{peu}  & O(m·k)\\
+								\hline	\textbf{Spectral} & \textcolor{red}{\xmark} & \textcolor{PineGreen}{Beaucoup} & \textcolor{BurntOrange}{certaines} & \textcolor{PineGreen}{Beaucoup} & \textcolor{red}{peu}  & \textcolor{red}{peu}  & O($n^3$)\\
+								\hline \textbf{Louvain} & \textcolor{red}{\xmark} & \textcolor{PineGreen}{Beaucoup} & \textcolor{BurntOrange}{certaines} & \textcolor{red}{peu}  & \textcolor{red}{peu}  & \textcolor{red}{peu} & O($n log n$)\\
+								\hline \textbf{SlashBurn} & \textcolor{PineGreen}{\checkmark} & \textcolor{PineGreen}{Beaucoup} & \textcolor{PineGreen}{Beaucoup} & \textcolor{BurntOrange}{certains} & \textcolor{red}{peu} & \textcolor{red}{peu} & O(t($m+nlogn$)) \\
+								\hline \textbf{Bigclam} & \textcolor{PineGreen}{\checkmark}  & \textcolor{PineGreen}{Beaucoup} & \textcolor{BurntOrange}{certaines} & \textcolor{red}{peu}  & \textcolor{red}{peu}  & \textcolor{red}{peu}  & O(d · n · t)\\					
+								\hline \textbf{Hycom} & \textcolor{PineGreen}{\checkmark}  & \textcolor{BurntOrange}{certaines} & \textcolor{PineGreen}{Beaucoup} & \textcolor{BurntOrange}{certains} & \textcolor{red}{peu}  & \textcolor{PineGreen}{Beaucoup}  & O($k(m + h log h^2 +hm_{h} )$)\\
+								
+								
+								
+								\hline \textbf{KCBC} & \textcolor{PineGreen}{\checkmark} & \textcolor{PineGreen}{Beaucoup} & \textcolor{BurntOrange}{certaines} & \textcolor{red}{peu}  & \textcolor{red}{peu}  & \textcolor{red}{peu}  & O(t(m + n))\\
+								
+								\hline 
+							\end{tabular} \\
+								\caption{Tableau comparative entre les méthodes de clustering avec n = nombre de nœuds, m = nombre d'arêtes, k = nombre de clusters, t = nombre d'itérations, d = degré moyen de nœuds, h($m_{h}$) = nombre de nœuds (arêtes) dans la structure hyperbolique.}
+    								\label{tab:clusteringMethode} 
+							\end{table}
+							\normalsize	
+			 
