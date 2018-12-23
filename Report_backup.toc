@@ -55,5 +55,10 @@
 \contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{52}{section*.18}
 \contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{54}{section*.19}
 \contentsline {section}{\numberline {3.5}Conclusion}{61}{section.3.5}
-\contentsline {chapter}{\numberline {4}Les m\IeC {\'e}thodes de compression k2-Trees}{62}{chapter.4}
+\contentsline {chapter}{\numberline {4}Contribution}{62}{chapter.4}
+\contentsline {section}{\numberline {4.1}Formulation du probl\IeC {\`e}me}{62}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Description conceptuelle}{62}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Pseudo algorithme}{62}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Analyse de complexit\IeC {\'e}}{62}{section.4.2}
+\contentsline {section}{\numberline {4.3}Conclusion}{62}{section.4.3}
 \contentsline {chapter}{\numberline {5}Conclusion}{63}{chapter.5}

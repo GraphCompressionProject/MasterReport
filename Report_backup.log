@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  23 DEC 2018 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  23 DEC 2018 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -911,6 +911,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
  []
 
 
+Package natbib Warning: Citation `claude2010fas' on page 21 undefined on input 
+line 3.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -931,7 +935,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
  []
 
 [23]
-<./ressources/image/k2-trees.png, id=623, 702.2235pt x 285.4665pt>
+<./ressources/image/k2-trees.png, id=619, 702.2235pt x 285.4665pt>
 File: ./ressources/image/k2-trees.png Graphic file (type png)
 <use ./ressources/image/k2-trees.png>
 Package pdftex.def Info: ./ressources/image/k2-trees.png  used on input line 16
@@ -958,14 +962,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--40
  []
 
 [25]
-<./ressources/image/dk2-trees.png, id=656, 874.467pt x 200.54926pt>
+<./ressources/image/dk2-trees.png, id=652, 874.467pt x 200.54926pt>
 File: ./ressources/image/dk2-trees.png Graphic file (type png)
 <use ./ressources/image/dk2-trees.png>
 Package pdftex.def Info: ./ressources/image/dk2-trees.png  used on input line 4
 7.
 (pdftex.def)             Requested size: 380.00311pt x 99.99896pt.
  [26]
-<./ressources/image/kn-trees.png, id=670, 443.256pt x 148.75575pt>
+<./ressources/image/kn-trees.png, id=666, 443.256pt x 148.75575pt>
 File: ./ressources/image/kn-trees.png Graphic file (type png)
 <use ./ressources/image/kn-trees.png>
 Package pdftex.def Info: ./ressources/image/kn-trees.png  used on input line 59
@@ -977,7 +981,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
  []
 
 [27 <./ressources/image/dk2-trees.png> <./ressources/image/kn-trees.png>]
-<./ressources/image/k2-trees1.png, id=686, 874.467pt x 546.24075pt>
+<./ressources/image/k2-trees1.png, id=682, 874.467pt x 546.24075pt>
 File: ./ressources/image/k2-trees1.png Graphic file (type png)
 <use ./ressources/image/k2-trees1.png>
 Package pdftex.def Info: ./ressources/image/k2-trees1.png  used on input line 8
@@ -1005,41 +1009,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
  []
 
 [29 <./ressources/image/k2-trees1.png>]
-<./ressources/image/k2-trees-delta.png, id=707, 781.11826pt x 376.40625pt>
+<./ressources/image/k2-trees-delta.png, id=703, 781.11826pt x 376.40625pt>
 File: ./ressources/image/k2-trees-delta.png Graphic file (type png)
 <use ./ressources/image/k2-trees-delta.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-delta.png  used on input l
 ine 112.
 (pdftex.def)             Requested size: 380.00995pt x 150.0027pt.
-<./ressources/image/k2-treaps.png, id=718, 784.1295pt x 439.04025pt>
+<./ressources/image/k2-treaps.png, id=714, 784.1295pt x 439.04025pt>
 File: ./ressources/image/k2-treaps.png Graphic file (type png)
 <use ./ressources/image/k2-treaps.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps.png  used on input line 1
 25.
 (pdftex.def)             Requested size: 379.99127pt x 199.9981pt.
  [30 <./ressources/image/k2-trees-delta.png>]
-<./ressources/image/k2-treaps-structure.png, id=735, 943.1235pt x 415.5525pt>
+<./ressources/image/k2-treaps-structure.png, id=731, 943.1235pt x 415.5525pt>
 File: ./ressources/image/k2-treaps-structure.png Graphic file (type png)
 <use ./ressources/image/k2-treaps-structure.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps-structure.png  used on in
 put line 143.
 (pdftex.def)             Requested size: 380.00577pt x 200.00189pt.
  [31 <./ressources/image/k2-treaps.png>]
-<./ressources/image/Ik2-trees.png, id=746, 493.24275pt x 345.08925pt>
+<./ressources/image/Ik2-trees.png, id=742, 493.24275pt x 345.08925pt>
 File: ./ressources/image/Ik2-trees.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees.png  used on input line 1
 55.
 (pdftex.def)             Requested size: 380.01636pt x 200.00447pt.
  [32 <./ressources/image/k2-treaps-structure.png>]
-<./ressources/image/Ik2-trees-diff.png, id=759, 451.08525pt x 431.211pt>
+<./ressources/image/Ik2-trees-diff.png, id=755, 451.08525pt x 431.211pt>
 File: ./ressources/image/Ik2-trees-diff.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees-diff.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees-diff.png  used on input l
 ine 168.
 (pdftex.def)             Requested size: 380.0172pt x 199.99782pt.
  [33 <./ressources/image/Ik2-trees.png>]
-<./ressources/image/k2-trees-att-graphe.png, id=771, 490.2315pt x 413.1435pt>
+<./ressources/image/k2-trees-att-graphe.png, id=767, 490.2315pt x 413.1435pt>
 File: ./ressources/image/k2-trees-att-graphe.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-graphe.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-att-graphe.png  used on in
@@ -1047,14 +1051,14 @@ put line 180.
 (pdftex.def)             Requested size: 280.00336pt x 199.9961pt.
  [34 <./ressources/image/Ik2-trees-diff.png> <./ressources/image/k2-trees-att-g
 raphe.png>]
-<./ressources/image/k2-trees-att-schema.png, id=784, 369.17924pt x 485.4135pt>
+<./ressources/image/k2-trees-att-schema.png, id=780, 369.17924pt x 485.4135pt>
 File: ./ressources/image/k2-trees-att-schema.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-schema.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-att-schema.png  used on in
 put line 202.
 (pdftex.def)             Requested size: 280.01582pt x 199.99852pt.
  [35]
-<./ressources/image/k2-trees-att-relation.png, id=795, 555.2745pt x 334.24875pt
+<./ressources/image/k2-trees-att-relation.png, id=791, 555.2745pt x 334.24875pt
 >
 File: ./ressources/image/k2-trees-att-relation.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-relation.png>
@@ -1175,7 +1179,7 @@ Overfull \hbox (32.28378pt too wide) in paragraph at lines 3--54
  []
 
 [48]) (./Chapitres/ExtractionMotifs/intra_inter_mot_mat.tex
-<ressources/image/inter_intra.png, id=969, 980.66376pt x 326.21875pt>
+<ressources/image/inter_intra.png, id=965, 980.66376pt x 326.21875pt>
 File: ressources/image/inter_intra.png Graphic file (type png)
 <use ressources/image/inter_intra.png>
 Package pdftex.def Info: ressources/image/inter_intra.png  used on input line 5
@@ -1450,7 +1454,7 @@ Overfull \hbox (3.79224pt too wide) in paragraph at lines 62--73
  []|[] 
  []
 
-<ressources/image/VNM_exemple.png, id=1072, 452.69125pt x 649.42625pt>
+<ressources/image/VNM_exemple.png, id=1068, 452.69125pt x 649.42625pt>
 File: ressources/image/VNM_exemple.png Graphic file (type png)
 <use ressources/image/VNM_exemple.png>
 Package pdftex.def Info: ressources/image/VNM_exemple.png  used on input line 7
@@ -1467,7 +1471,7 @@ Overfull \hbox (7.29736pt too wide) in paragraph at lines 84--84
  []
 
 ) (./Chapitres/ExtractionMotifs/DSM.tex
-<ressources/image/VNM2_exemple.png, id=1077, 1595.9625pt x 652.4375pt>
+<ressources/image/VNM2_exemple.png, id=1073, 1595.9625pt x 652.4375pt>
 File: ressources/image/VNM2_exemple.png Graphic file (type png)
 <use ressources/image/VNM2_exemple.png>
 Package pdftex.def Info: ressources/image/VNM2_exemple.png  used on input line 
@@ -1504,76 +1508,77 @@ Chapitre 5.
 ] (./Report_backup.bbl [64
 
 ] [65] [66] [67] [68])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
- [69]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
- (./Report_backup.aux
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
+Package natbib Warning: There were undefined citations.
 
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
-Package rerunfilecheck Info: File `Report_backup.out' has not changed.
-(rerunfilecheck)             Checksum: 630F60B76B5B7527A97C4C508C40835C;3124.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
+[69]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
+ (./Report_backup.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
 
+
+Package rerunfilecheck Warning: File `Report_backup.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_backup.out':
+(rerunfilecheck)             Before: 9264F064168238F2816A708DF24E24A1;3097
+(rerunfilecheck)             After:  CB0F912DEF90086F4A871C558B161D34;3447.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  ) 
 Here is how much of TeX's memory you used:
- 11588 strings out of 492649
- 172486 string characters out of 6129622
- 295322 words of memory out of 5000000
- 14802 multiletter control sequences out of 15000+600000
+ 11591 strings out of 492649
+ 172518 string characters out of 6129622
+ 295283 words of memory out of 5000000
+ 14801 multiletter control sequences out of 15000+600000
  31375 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,22n,43p,1770b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{cite.claude2010fas} has been referenced but does 
-not exist, replaced by a fixed one
-
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2
-018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2018/
-texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/cm-super/sfsl1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/cm-super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-cm-super/sfti2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/zapfd
-ing/uzdr.pfb>
-Output written on Report_backup.pdf (70 pages, 2682225 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfsl1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfti0800.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/cm-super/sfti2488.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/zap
+fding/uzdr.pfb>
+Output written on Report_backup.pdf (70 pages, 2682478 bytes).
 PDF statistics:
- 1312 PDF objects out of 1440 (max. 8388607)
- 1151 compressed objects within 12 object streams
- 259 named destinations out of 1000 (max. 500000)
+ 1313 PDF objects out of 1440 (max. 8388607)
+ 1152 compressed objects within 12 object streams
+ 263 named destinations out of 1000 (max. 500000)
  462 words of extra memory for PDF output out of 10000 (max. 10000000)
 
