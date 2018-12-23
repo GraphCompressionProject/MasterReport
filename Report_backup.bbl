@@ -5,6 +5,23 @@
 \newblock {\em Quelques rappels sur la th{\'e}orie des graphes}.
 \newblock IUT Lyon Informatique.
 
+\bibitem[Alvarez-Garcia et~al., 2017]{alvarez2017succinct}
+Alvarez-Garcia, S., de~Bernardo, G., Brisaboa, N.~R., and Navarro, G. (2017).
+\newblock A succinct data structure for self-indexing ternary relations.
+\newblock {\em Journal of Discrete Algorithms}, 43:38--53.
+
+\bibitem[{\'A}lvarez-Garc{\'\i}a et~al., 2018]{alvarez2018compact}
+{\'A}lvarez-Garc{\'\i}a, S., Freire, B., Ladra, S., and Pedreira, {\'O}.
+  (2018).
+\newblock Compact and efficient representation of general graph databases.
+\newblock {\em Knowledge and Information Systems}, pages 1--32.
+
+\bibitem[Aragon and Seidel, 1989]{aragon1989randomized}
+Aragon, C.~R. and Seidel, R.~G. (1989).
+\newblock Randomized search trees.
+\newblock In {\em Foundations of Computer Science, 1989., 30th Annual Symposium
+  on}, pages 540--545. IEEE.
+
 \bibitem[Araujo et~al., 2014]{araujo2014beyond}
 Araujo, M., G{\"u}nnemann, S., Mateos, G., and Faloutsos, C. (2014).
 \newblock Beyond blocks: Hyperbolic community detection.
@@ -16,6 +33,13 @@ Asano, Y., Miyawaki, Y., and Nishizeki, T. (2008).
 \newblock Efficient compression of web graphs.
 \newblock In {\em International Computing and Combinatorics Conference}, pages
   1--11. Springer.
+
+\bibitem[Badr, 2013]{badr2013traitement}
+Badr, M. (2013).
+\newblock {\em Traitement de requ{\^e}tes top-k multicrit{\`e}res et
+  application {\`a} la recherche par le contenu dans les bases de donn{\'e}es
+  multim{\'e}dia}.
+\newblock PhD thesis, Cergy-Pontoise.
 
 \bibitem[Barbay et~al., 2006]{barbay2006adaptive}
 Barbay, J., Golynski, A., Munro, J.~I., and Rao, S.~S. (2006).
@@ -30,11 +54,45 @@ Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
 \newblock {\em Journal of statistical mechanics: theory and experiment},
   2008(10):P10008.
 
+\bibitem[Boldi and Vigna, 2004]{boldi2004webgraph}
+Boldi, P. and Vigna, S. (2004).
+\newblock The webgraph framework i: compression techniques.
+\newblock In {\em Proceedings of the 13th international conference on World
+  Wide Web}, pages 595--602. ACM.
+
+\bibitem[Brisaboa et~al., 2015]{brisaboa2015efficient}
+Brisaboa, N.~R., de~Bernardo, G., Guti{\'e}rrez, G., Ladra, S., Penabad, M.~R.,
+  and Troncoso, B.~A. (2015).
+\newblock Efficient set operations over k2-trees.
+\newblock In {\em Data Compression Conference (DCC), 2015}, pages 373--382.
+  IEEE.
+
+\bibitem[Brisaboa et~al., 2014a]{brisaboa2014k}
+Brisaboa, N.~R., De~Bernardo, G., Konow, R., and Navarro, G. (2014a).
+\newblock K 2-treaps: Range top-k queries in compact space.
+\newblock In {\em International Symposium on String Processing and Information
+  Retrieval}, pages 215--226. Springer.
+
+\bibitem[Brisaboa et~al., 2012]{brisaboa2012compressed}
+Brisaboa, N.~R., De~Bernardo, G., and Navarro, G. (2012).
+\newblock Compressed dynamic binary relations.
+\newblock In {\em Data Compression Conference (DCC), 2012}, pages 52--61. IEEE.
+
 \bibitem[Brisaboa et~al., 2009]{brisaboa2009k}
 Brisaboa, N.~R., Ladra, S., and Navarro, G. (2009).
 \newblock k 2-trees for compact web graph representation.
 \newblock In {\em International Symposium on String Processing and Information
   Retrieval}, pages 18--30. Springer.
+
+\bibitem[Brisaboa et~al., 2013]{brisaboa2013dacs}
+Brisaboa, N.~R., Ladra, S., and Navarro, G. (2013).
+\newblock Dacs: Bringing direct access to variable-length codes.
+\newblock {\em Information Processing \& Management}, 49(1):392--404.
+
+\bibitem[Brisaboa et~al., 2014b]{brisaboa2014compact}
+Brisaboa, N.~R., Ladra, S., and Navarro, G. (2014b).
+\newblock Compact representation of web graphs with extended functionality.
+\newblock {\em Information Systems}, 39:152--174.
 
 \bibitem[Buehrer and Chellapilla, 2008]{buehrer2008scalable}
 Buehrer, G. and Chellapilla, K. (2008).
@@ -59,11 +117,42 @@ Claude, F. and Navarro, G. (2010b).
 \newblock Fast and compact web graph representations.
 \newblock {\em ACM Transactions on the Web (TWEB)}, 4(4):16.
 
+\bibitem[De~Berg et~al., 1997]{de1997computational}
+De~Berg, M., Van~Kreveld, M., Overmars, M., and Schwarzkopf, O. (1997).
+\newblock Computational geometry.
+\newblock In {\em Computational geometry}, pages 1--17. Springer.
+
+\bibitem[De~Bernardo et~al., 2013]{de2013compact}
+De~Bernardo, G., {\'A}lvarez-Garc{\'\i}a, S., Brisaboa, N.~R., Navarro, G., and
+  Pedreira, O. (2013).
+\newblock Compact querieable representations of raster data.
+\newblock In {\em International Symposium on String Processing and Information
+  Retrieval}, pages 96--108. Springer.
+
+\bibitem[de~Bernardo~Roca, 2014]{de2014new}
+de~Bernardo~Roca, G. (2014).
+\newblock {\em New data structures and algorithms for the efficient management
+  of large spatial datasets}.
+\newblock PhD thesis, Citeseer.
+
 \bibitem[Fages, 2014]{fages2014exploitation}
 Fages, J.-G. (2014).
 \newblock {\em Exploitation de structures de graphe en programmation par
   contraintes}.
 \newblock PhD thesis, Ecole des Mines de Nantes.
+
+\bibitem[Garcia et~al., 2014]{garcia2014interleaved}
+Garcia, S.~A., Brisaboa, N.~R., de~Bernardo, G., and Navarro, G. (2014).
+\newblock Interleaved k2-tree: Indexing and navigating ternary relations.
+\newblock In {\em Data Compression Conference (DCC), 2014}, pages 342--351.
+  IEEE.
+
+\bibitem[Grossi et~al., 2003]{grossi2003high}
+Grossi, R., Gupta, A., and Vitter, J.~S. (2003).
+\newblock High-order entropy-compressed text indexes.
+\newblock In {\em Proceedings of the fourteenth annual ACM-SIAM symposium on
+  Discrete algorithms}, pages 841--850. Society for Industrial and Applied
+  Mathematics.
 
 \bibitem[Guillaume and Latapy, 2002]{guillaume2002web}
 Guillaume, J.-L. and Latapy, M. (2002).
@@ -108,11 +197,23 @@ Ketkar, N.~S., Holder, L.~B., and Cook, D.~J. (2005).
 \newblock In {\em Proceedings of the 1st international workshop on open source
   data mining: frequent pattern mining implementations}, pages 71--76. ACM.
 
+\bibitem[Khan et~al., 2014]{khan2014set}
+Khan, K.~U., Nawaz, W., and Lee, Y.-K. (2014).
+\newblock Set-based unified approach for attributed graph summarization.
+\newblock In {\em Big Data and Cloud Computing (BdCloud), 2014 IEEE Fourth
+  International Conference on}, pages 378--385. IEEE.
+
 \bibitem[Koutra et~al., 2015]{koutra2015summarizing}
 Koutra, D., Kang, U., Vreeken, J., and Faloutsos, C. (2015).
 \newblock Summarizing and understanding large graphs.
 \newblock {\em Statistical Analysis and Data Mining: The ASA Data Science
   Journal}, 8(3):183--202.
+
+\bibitem[LeFevre and Terzi, 2010]{lefevre2010grass}
+LeFevre, K. and Terzi, E. (2010).
+\newblock Grass: Graph structure summarization.
+\newblock In {\em Proceedings of the 2010 SIAM International Conference on Data
+  Mining}, pages 454--465. SIAM.
 
 \bibitem[Lehman et~al., 2010]{lehman2010mathematics}
 Lehman, E., Leighton, F.~T., and Meyer, A.~R. (2010).
@@ -129,8 +230,13 @@ Lemmouchi, S. (2012).
 \newblock {\em Etude de la robustesse des graphes sociaux {\'e}mergents}.
 \newblock PhD thesis, Universit{\'e} Claude Bernard-Lyon I.
 
-\bibitem[Liu et~al., 2018]{liu2018reducing}
-Liu, Y., Safavi, T., Shah, N., and Koutra, D. (2018).
+\bibitem[Liu et~al., 2018a]{liu2018graph}
+Liu, Y., Safavi, T., Dighe, A., and Koutra, D. (2018a).
+\newblock Graph summarization methods and applications: A survey.
+\newblock {\em ACM Computing Surveys (CSUR)}, 51(3):62.
+
+\bibitem[Liu et~al., 2018b]{liu2018reducing}
+Liu, Y., Safavi, T., Shah, N., and Koutra, D. (2018b).
 \newblock Reducing large graphs to small supergraphs: a unified approach.
 \newblock {\em Social Network Analysis and Mining}, 8(1):17.
 
@@ -153,6 +259,12 @@ Maneth, S. and Peternek, F. (2015).
 Maneth, S. and Peternek, F. (2018).
 \newblock Grammar-based graph compression.
 \newblock {\em Information Systems}, 76:19--45.
+
+\bibitem[Mart{\'\i}nez-Prieto et~al., 2012]{martinez2012compression}
+Mart{\'\i}nez-Prieto, M.~A., Fern{\'a}ndez, J.~D., and C{\'a}novas, R. (2012).
+\newblock Compression of rdf dictionaries.
+\newblock In {\em Proceedings of the 27th Annual ACM Symposium on Applied
+  Computing}, pages 340--347. ACM.
 
 \bibitem[M{\"u}ller, 2012]{muller}
 M{\"u}ller, D. (2012).
@@ -205,6 +317,25 @@ Shah, R.~J. (2018).
 \newblock Graph compression using pattern matching techniques.
 \newblock {\em arXiv preprint arXiv:1806.01504}.
 
+\bibitem[Shen et~al., 2006]{shen2006visual}
+Shen, Z., Ma, K.-L., and Eliassi-Rad, T. (2006).
+\newblock Visual analysis of large heterogeneous social networks by semantic
+  and structural abstraction.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  12(6):1427--1439.
+
+\bibitem[Shi et~al., 2015]{shi2015vegas}
+Shi, L., Tong, H., Tang, J., and Lin, C. (2015).
+\newblock Vegas: Visual influence graph summarization on citation networks.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering},
+  27(12):3417--3431.
+
+\bibitem[Shi et~al., 2012]{shi2012optimizing}
+Shi, Q., Xiao, Y., Bessis, N., Lu, Y., Chen, Y., and Hill, R. (2012).
+\newblock Optimizing k2 trees: A case for validating the maturity of network of
+  practices.
+\newblock {\em Computers \& Mathematics with Applications}, 63(2):427--436.
+
 \bibitem[Uthayakumar et~al., 2018]{uthayakumar2018survey}
 Uthayakumar, J., Vengattaraman, T., and Dhavachelvan, P. (2018).
 \newblock A survey on data compression techniques: From the perspective of data
@@ -212,11 +343,27 @@ Uthayakumar, J., Vengattaraman, T., and Dhavachelvan, P. (2018).
 \newblock {\em Journal of King Saud University-Computer and Information
   Sciences}.
 
+\bibitem[W.~GUERMAH, 2018]{master2017}
+W.~GUERMAH, T.~B. (2018).
+\newblock {\em Compression de Graphes : étude et classification}.
+\newblock PhD thesis, Esi.
+
 \bibitem[Yang and Leskovec, 2013]{yang2013overlapping}
 Yang, J. and Leskovec, J. (2013).
 \newblock Overlapping community detection at scale: a nonnegative matrix
   factorization approach.
 \newblock In {\em Proceedings of the sixth ACM international conference on Web
   search and data mining}, pages 587--596. ACM.
+
+\bibitem[Zhang et~al., 2014a]{zhang2014assg}
+Zhang, H., Duan, Y., Yuan, X., and Zhang, Y. (2014a).
+\newblock Assg: Adaptive structural summary for rdf graph data.
+\newblock In {\em International Semantic Web Conference (Posters \& Demos)},
+  pages 233--236. Citeseer.
+
+\bibitem[Zhang et~al., 2014b]{zhang2014delta}
+Zhang, Y., Xiong, G., Liu, Y., Liu, M., Liu, P., and Guo, L. (2014b).
+\newblock Delta-k 2-tree for compact representation of web graphs.
+\newblock In {\em Asia-Pacific Web Conference}, pages 270--281. Springer.
 
 \end{thebibliography}

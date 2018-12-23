@@ -1,0 +1,196 @@
+														\begin{landscape}
+								\begin{table}
+									\begin{tabular}{|C{3cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+										\hline
+										\multirow{2}{*}[-25pt]{     Article   }  & \multicolumn{5}{c|}{Graphe en entrée} & \multicolumn{2}{c|}{Compression} & \multicolumn{2}{c|}{Structure en sortie} & \multirow{2}{*}[-25pt]{Graphe de test} & \multirow{2}{*}[-25pt]{Résultat (bits/lien)}  \\ \cline{2-10}
+				     & \rotatebox[origin=c]{90}{ Orienté }  & \rotatebox[origin=c]{90}{ Non orienté } & \rotatebox[origin=c]{90}{ Statique } & \rotatebox[origin=c]{90}{ Dynamique } & \rotatebox[origin=c]{90}{ Autre Propriétés } &  \rotatebox[origin=c]{90}{ Avec perte } & \rotatebox[origin=c]{90}{ Sans perte } & \rotatebox[origin=c]{90}{ Succincte } & \rotatebox[origin=c]{90}{ Structurelle } & & \\ \hline				%%%%%%Fin du header
+				
+\hline  $k^2$-trees : Algorithme de base
+   \citep{brisaboa2009k} 
+   & \cmark & \cmark & \cmark & \xmark &  & \xmark &  \cmark & \cmark & \xmark	 & 		
+	\begin{minipage}[t]{0.1\textwidth}
+	eu-2005\\
+	
+	cond-mat
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	 5.21 bits/lien \\
+	 taux de compression : 16.88\% \\
+	 taux de compression : 15.58\% 
+  \end{minipage}	\\
+
+\hline $k^2$-trees : Hybridation \citep{brisaboa2009k} & \cmark & \cmark & \cmark & \xmark &  & \xmark &  \cmark & \cmark & \xmark  & 
+										\begin{minipage}[t]{0.1\textwidth}
+	eu-2005
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	 5.21 bits/lien 
+  \end{minipage}	\\  
+\hline $k^2$-trees : Optimisation \citep{shi2012optimizing} & \cmark & \cmark & \cmark & \xmark &  & \xmark &  \cmark & \cmark & \xmark  & 
+\begin{minipage}[t]{0.1\textwidth}
+	cond-mat
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 taux de compression : 37.96\% 
+  \end{minipage}	\\
+  			\hline
+  			
+\hline $k^2$-trees : Amélioration \citep{brisaboa2014compact} & \cmark & \cmark & \cmark & \xmark &  & \xmark &  \cmark & \cmark & \xmark  & 
+  				\begin{minipage}[t]{0.1\textwidth}
+	eu-2005
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 3.22 bits/lien
+  \end{minipage}	\\
+  				
+  				\hline  		
+  			
+\hline d$k^2$-trees \citep{brisaboa2012compressed} & \cmark & \cmark & \xmark & \cmark &  & \xmark &  \cmark & \cmark & \xmark  &
+  				\begin{minipage}[t]{0.1\textwidth}
+	eu-2005
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 6.2 bits/lien
+  \end{minipage}	\\
+  \hline 
+  			
+\hline $k^n$-trees \citep{de2013compact} & \cmark & \cmark & \xmark & \cmark & & \xmark & \cmark & \cmark & \xmark  &
+  				\begin{minipage}[t]{0.1\textwidth}
+	CommNet
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 taux de compression : 65.16\% 
+  \end{minipage}	\\
+  \hline  	
+  			
+\hline $k^2$-trees1\citep{de2014new} & \cmark & \cmark & \cmark & \xmark & & \xmark & \cmark & \cmark & \xmark  & 
+  							\begin{minipage}[t]{0.1\textwidth}
+	eu-2005
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	 taux de compression : 16.23\% 
+  \end{minipage}	\\
+  \hline  
+  			
+
+  					
+ 	
+  			
+									\end{tabular}
+									\caption{Synthèse des méthodes de compression par $k^2$-trees.}									
+									
+								\end{table}
+								
+							\end{landscape}
+							
+							
+							
+%% deuxiéme tableau
+
+					\begin{landscape}
+								\begin{table}
+									\begin{tabular}{|C{3cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+										\hline
+										\multirow{2}{*}[-25pt]{Article}  & \multicolumn{5}{c|}{Graphe en entrée} & \multicolumn{2}{c|}{Compression} & \multicolumn{2}{c|}{Structure en sortie} & \multirow{2}{*}[-25pt]{Graphe de test} & \multirow{2}{*}[-25pt]{Résultat (bits/lien)}  \\ \cline{2-10}
+				& \rotatebox[origin=c]{90}{ Orienté }  & \rotatebox[origin=c]{90}{ Non orienté } & \rotatebox[origin=c]{90}{ Statique } & \rotatebox[origin=c]{90}{ Dynamique } & \rotatebox[origin=c]{90}{ Autre Propriétés } &  \rotatebox[origin=c]{90}{ Avec perte } & \rotatebox[origin=c]{90}{ Sans perte } & \rotatebox[origin=c]{90}{ Succincte } & \rotatebox[origin=c]{90}{ Structurelle } & & \\ \hline				%%%%%%Fin du header
+				
+  			
+\hline Delta-$k^2$-trees  \citep{zhang2014delta} & \cmark & \cmark & \cmark & \xmark & & \xmark & \cmark & \cmark & \xmark  & 
+  							\begin{minipage}[t]{0.1\textwidth}
+	eu-2005
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	 3.24 bits/lien 
+  \end{minipage}	\\
+  \hline  
+  
+\hline $k^2$-treaps  \citep{brisaboa2014k} & \cmark & \cmark & \cmark & \xmark & 
+\begin{minipage}[t]{0.1\textwidth}
+  			Pondéré 
+  \end{minipage}		
+   & \xmark & \cmark & \cmark & \xmark  & 
+  							\begin{minipage}[t]{0.1\textwidth}
+	SalesDay
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	 2.48 bits/lien
+  \end{minipage}	\\
+  \hline  
+ 
+\hline I$k^2$-trees  \citep{garcia2014interleaved} & \cmark & \cmark & \xmark & \cmark & & \xmark & \cmark & \cmark & \xmark  & 
+  							\begin{minipage}[t]{0.1\textwidth}
+	CommNet
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 taux de compression : 60.43\% 
+  \end{minipage}	\\
+  \hline  	
+  			
+ 
+\hline Diff I$k^2$-trees  \citep{alvarez2017succinct} & \cmark & \cmark & \xmark & \cmark & & \xmark & \cmark & \cmark & \xmark  & 
+  							\begin{minipage}[t]{0.1\textwidth}
+	CommNet
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 taux de compression : 60.43\% 
+  \end{minipage}	\\
+  \hline 
+				
+				 
+\hline Att $k^2$-trees  \citep{alvarez2018compact} & \cmark & \cmark & \cmark & \xmark & 
+\begin{minipage}[t]{0.1\textwidth}
+  			Étiqueté\\
+  			Attribué\\
+  			Multiple
+  \end{minipage}	
+& \xmark & \cmark & \cmark & \xmark  & 
+  							\begin{minipage}[t]{0.1\textwidth}
+	Movielen-10M
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 taux de compression : 89.97\% 
+  \end{minipage}	\\
+  \hline 
+  			
+\hline dynAtt $k^2$-trees  \citep{alvarez2018compact} & \cmark & \cmark & \xmark & \cmark & 
+\begin{minipage}[t]{0.1\textwidth}
+  			Étiqueté\\
+  			Attribué\\
+  			Multiple
+  \end{minipage}	
+& \xmark & \cmark & \cmark & \xmark  & 
+			\begin{minipage}[t]{0.1\textwidth}
+	Movielen-10M
+  \end{minipage}	
+										 &
+	\begin{minipage}[t]{0.3\textwidth}
+	
+	 taux de compression : 93.75\% 
+  \end{minipage}	\\  				
+  				\hline 
+				
+									\end{tabular}
+									\caption{Synthèse des méthodes de compression par $k^2$-trees.}									
+									
+								\end{table}
+								
+							\end{landscape}				

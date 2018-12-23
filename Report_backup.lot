@@ -2,13 +2,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tableau comparative entre les m\IeC {\'e}thodes de clustering avec n = nombre de n\IeC {\oe }uds, m = nombre d'ar\IeC {\^e}tes, k = nombre de clusters, t = nombre d'it\IeC {\'e}rations, d = degr\IeC {\'e} moyen de n\IeC {\oe }uds, h($m_{h}$) = nombre de n\IeC {\oe }uds (ar\IeC {\^e}tes) dans la structure hyperbolique.}}{24}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thode de compression par extraction de motifs bas\IeC {\'e}es sur des m\IeC {\'e}thodes de clustering.}}{31}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thode de compression par extraction de motifs bas\IeC {\'e}es vocabulaire exploitant les propri\IeC {\'e}t\IeC {\'e}s de la matrice d'adjacence.}}{34}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs bas\IeC {\'e}es agr\IeC {\'e}gation de n\IeC {\oe }uds.}}{36}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs bas\IeC {\'e}es agr\IeC {\'e}gation de liens en utilisant les r\IeC {\`e}gles de grammaire.}}{39}{table.4.5}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM}}{41}{table.4.6}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs bas\IeC {\'e}es agr\IeC {\'e}gation de liens en utilisant des heuristiques de clustering.}}{43}{table.4.7}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par $k^2$-trees.}}{38}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par $k^2$-trees.}}{39}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Tableau comparative entre les m\IeC {\'e}thodes de clustering avec n = nombre de n\IeC {\oe }uds, m = nombre d'ar\IeC {\^e}tes, k = nombre de clusters, t = nombre d'it\IeC {\'e}rations, d = degr\IeC {\'e} moyen de n\IeC {\oe }uds, h($m_{h}$) = nombre de n\IeC {\oe }uds (ar\IeC {\^e}tes) dans la structure hyperbolique.}}{42}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thode de compression par extraction de motifs bas\IeC {\'e}es sur des m\IeC {\'e}thodes de clustering.}}{48}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thode de compression par extraction de motifs bas\IeC {\'e}es vocabulaire exploitant les propri\IeC {\'e}t\IeC {\'e}s de la matrice d'adjacence.}}{51}{table.3.5}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs bas\IeC {\'e}es agr\IeC {\'e}gation de n\IeC {\oe }uds.}}{53}{table.3.6}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs bas\IeC {\'e}es agr\IeC {\'e}gation de liens en utilisant les r\IeC {\`e}gles de grammaire.}}{56}{table.3.7}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM}}{58}{table.3.8}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs bas\IeC {\'e}es agr\IeC {\'e}gation de liens en utilisant des heuristiques de clustering.}}{60}{table.3.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
