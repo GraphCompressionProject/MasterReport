@@ -11,10 +11,10 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Liste d'adjacence du graphe G}}{16}{figure.2.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Compression sans perte.}}{19}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression avec perte.}}{19}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression avec perte.}}{20}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-trees d'une matrice d'adjacence d'un graphe}}{23}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-trees}}{25}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-trees}}{25}{figure.3.5}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-trees}}{26}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-trees1 d'une matrice d'adjacence d'un graphe}}{27}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Exemple de repr\IeC {\'e}sentation Delta-$k^2$-trees d'une matrice d'adjacence d'un graphe}}{28}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-treaps d'une matrice d'adjacence d'un graphe pond\IeC {\'e}r\IeC {\'e}}}{29}{figure.3.8}
