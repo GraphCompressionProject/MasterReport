@@ -27,7 +27,7 @@
 
 
 \usepackage{setspace}
-\setstretch{1,5}
+\setstretch{1,15}
 %\usepackage{txfonts} //pour utiliser times new roman dans le document
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -52,6 +52,22 @@
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
 
+\usepackage[most]{tcolorbox}
+
+\tcbset{
+    frame code={}
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!70,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+    boxsep=5pt,
+    arc=0pt,outer arc=0pt,
+    }
 
 \begin{document}
 
@@ -198,15 +214,87 @@
 		\section{Conclusion}
 
 
-%---->chapitre 03 :« Etude empirique »
+
 	\chapter{Contribution}
-		%%%%
+		Comme on vient de voir dans les chapitres précédents, de nombreux phénomènes dans des contextes très variés peuvent être représenter par des graphes. Citons en particuliers les réseaux sociaux qui nous attirent vue leurs évolutions. Aujourd'hui 3.0 milliards de personnes utilisent les réseaux sociaux, voir 40\% de la population sur terre. Ces grandes tailles des données manipulées rendent impossible tout traitement et demandent un grand espace de stockage faisant intervenir des algorithmes de compression adéquats qui changent selon le type de graphes. Les graphes statiques ne sont pas toujours suffisants pour décrire les situations de la vie réel et leurs évolutions dans le temps. Ajouter une dimension temporelle a ces graphes permet d'élargir l'espace de possibilités, les réseaux sociaux en ligne est un exemple qui nous captive où le suivi dynamique du graphe est nécessaire. Quoiqu'il existe de nombreuses techniques efficaces adaptés au contexte statiques, rares sont ceux qui proposent une contrepartie dynamique, ce qui nous amène à nous intéresser particulièrement à ce type de graphes toujours en cours d'évolutions. Nous nous sommes intéressés aussi dans ce travail à un autre enjeu important qui provient de la structures complexe de ces graphes qui pose un problème lors de l'exploration du graphe ce qui rend difficile l'analyser des données et l'extraction des informations pertinentes. La recherche de motifs et particulièrement les clique et les noyaux bipartie qui sont fréquents dans les réseaux sociaux répond à ce problème.\\
+Pour résumé, Nous allons dans cette partie proposé une nouvelle méthode DDSM basé sur deux approches existantes que nous avons étudier dans notre état de l'art. Notre but principal est de développer une technique de compression compétitives pour les graphes des réseaux sociaux dans un contexte dynamique en se basant sur l'extraction de motifs. Pour accomplir ce travail nous nous somme appuyer sur ces deux méthodes :
+\begin{itemize}
+\item Exploiter la structure de donnés compressés proposé dans DSM \citep{hernandez2014compressed} qui permet de représenter les sous-graphes denses comme les cliques, les bi-cliques, noyaux bipartis. Nous avons optés pour cette structure car on l'appliquant sur les réseaux sociaux, elle donne de bons résultats en termes d'espace et de temps de requêtes.  
+\item Adopter les signatures temporelles utilisés dans TimeCrunch \citep{shah2015timecrunch} pour décrire le comportement des sous-graphes dans le temps. Nous avons utilisé ces signatures car elle englobent tous les types des sous graphes temporelles qu'on peut trouver dans un graphe dynamique et c'est les seules qu'on a rencontrer dans ce genre.
+\end{itemize}	
+Nous allons dans cette partie présenter notre méthode théoriquement : principe générale, structures utilisés et un pseudo code.	
+		
 		\section{Formulation du problème}
+		Dans cette section, nous allons définir le problème de base auquel notre méthode convient tout en définissant le cadre dans lequel elle peut être appliquée. 
+		
+		Nous considèrent les graphes orientés dynamiques $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$ et un ensemble de signature temporelle. En d'autre termes, nous considérons des captures du graphe à des instants différents $t_{i}$ et un ensemble de descripteurs de comportement temporels des sous graphes des différents $G_{t_{i}}$. Le problème peut ainsi être formulé:
+		
+			\textit{\textbf{Problème:}
+		Trouver, à partir d'un graphe dynamique G et un lexique de signatures temporelles, la plus petite description du graphe initiale en terme de ces structures les plus denses et leur comportement temporel, en offrant la possibilité d'extraire les voisins directes et d'extraire les sous-graphes au besoin. }
+
+		\section{Principe générale}
+			Notre méthode s'intitule DDSM pour \textit{Dynamic Dense Substructure Mining}. Elle représente une généralisation du travail de Hernandez et Navarro\citep{hernandez2014compressed} pour le cas des graphes dynamiques qui sont de nos jours omniprésents dans différents domaines.
+			
+			Pour mieux expliquer notre méthode nous allons tout d'abords commencer par décrire les structures que nous allons utiliser. Nous enchainons par la suite  avec le pseudo algorithme détaillant les étapes essentielles de notre méthode et nous conclurons en expliquant comment les algorithmes proposés dans \citep{hernandez2014compressed} de manipulation des graphes peuvent être généraliser dans notre cas.
 			\subsection{Description conceptuelle}
-			\subsection{Pseudo algorithme}
-		\section{Analyse de complexité}
+			
+			La codification du graphe en sortie doit respecter les contraintes du problème tout en réduisant un maximum d'espace mémoire. Nous proposons pour cela d'augmenter la codification proposées dans \citep{hernandez2014compressed} dans le cas des graphes dynamiques en rajoutant une l'information temporelle. 
+			
+			Une fois les sous-structures identifiées, hernandez et al. \citep{hernandez2014compressed} proposent de représenter chacune d'elles avec trois composantes: la première contenant les sommet ayant uniquement des aretes sortantes, la deuxième contenant les sommet ayant des arêtes entrantes et sortantes et la troisième contenant les sommet ayant uniquement des arêtes entrantes. Pour pouvoir identifier les différentes composantes, ils associent un vecteur binaire à cette représentation marquant par un 1 le début de chacune des trois composantes (voir figure \ref{SDM}).
+			
+			Notre première contribution consiste en l'extension de cette structure. En effet, nous suggérons de representer chaque structure avec non trois composantes mais quartes. Les trois premières étant les même que dans \citep{hernandez2014compressed}, la quatrième représente l'information temporelle. Cette dernière peut être sous cinq formats (voir \ref{par:TimeCrunch}) dont nous résumons la représentation proposée pour chacune dans le tableau \ref{tab:signtmp}.
+			
+			\begin{table}[h]
+			\label{tab:signtmp}
+			\begin{center}
+			\begin{tabular}{|r|l|}
+			\hline Signature temporelle & Représentation	
+			\\\hline constante & 0	
+			
+			\\\hline OneShot & 1 $t_{1}$	
+			
+			\\\hline ranged & 2	$t_{1}\ t_{2}$	
+			
+			\\\hline periodic & 3  $T$	
+			
+			\\\hline flikering & 4 $t_{1}\ t_{2}\ ...\ t_{n}$	
+			
+			\\\hline			
+			\end{tabular}
+			\end{center}
+			
+			 \caption{\small {Les types de signatures temporelles et leurs représentations, $t_{i}$	 représentent les timestamps et T représente la période.}}
+			\end{table}
+			
+			Nous représentons G donc en tant qu'un ensemble de sous-graphes temporels denses. Cependant, pour obtenir une compression sans perte, nous devons aussi garder information sur l'erreur modélisant l'ensemble d'arêtes restantes dans chaque $G_{t_{i}}$. Nous proposons pour cela d'utiliser une des structures dynamiques des k2-trees qui nous permettra d'interroger le graphe de manière simple et efficace.
+			
+			\subsection{Notre méthode : DDSM}
+			 Nous visons à travers la méthode que nous proposons d'exprimer le graphe en entrée avec ses sous-structures les plus dense et leurs comportement temporels réduisant ainsi sa taille et offrant la possibilité d'effectuer les traitements dans un temps meilleur. Nous avons structurer notre algorithme sous forme de trois (03) étapes essentielles, chacune servant d'entrée pour l'étape suivante.
+			 
+			 En premier lieu, nous appliquons la découverte des sous-graphes les plus denses. Pour effectuer cela de manière efficace, nous suggérons d'utiliser l'approche proposée dans \citep{hernandez2014compressed} parallèlement sur chaque capture $G_{t_{i}}$ de G. Nous allons donc considérer les listes d'adjacences pour chaque $G_{t_{i}}$ où des fonctions de hachages sont calculées pour chaque sommet. Une arborescence est ensuite construite pour chaque ensemble de sommets ayant les même valeurs de hachages et qui permettra d'extraire les structures denses du graphe à travers un parcours de la racine vers les feuilles. 
+			 
+			 Dans une deuxième phase, nous effectuons une comparaison entre les structures découvertes dans des timestamps différents. Nous proposons pour décrire le comportement de ces derniers d'utiliser le même ensemble de signatures temporelles proposées dans \citep{shah2015timecrunch} composées de six descripteurs temporelles englobant tout les cas possibles. Durant cette étape, nous tolérons un certains seuil d'erreur qui sera inclus dans la représentation de l'erreur.
+			 
+			 Une dernière phase consiste en la codification du graphe en utilisant le codage proposés dans la section précédentes pour chaque structure de a phase (02). Nous concaténons par la suite ces représentations pour obtenir une seule représentation concise du graphe initiale en terme de ses structures les plus denses. 
+			L'algorithme ci-dessous résume les trois principales étapes de notre méthode :
+			\begin{algorithm}
+					\label{alg:DDSM}
+					\caption{DDSM}
+					\label{Pseudo Algorithme de la méthode proposée (DDSM)}
+				\begin{algorithmic} [1]
+					\STATE \textbf{Génération des sous-structures candidates: }Génération de sous-graphes, principalement les sous-graphes bipartis et les cliques.
+					
+					\STATE  \textbf{Étiquetage de sous-structures: }Associer chaque sous-structure à une signature temporelle décrivant son comportement.
+					
+					\STATE \textbf{Codification du graphe compressé: }Codifier les sous-structures étiquetées de l'étape 02 en utilisant les structures de la section précédente.
+				\end{algorithmic}
+			\end{algorithm}
+			
+			Pour les algorithmes de parcours et d'extraction de voisins, tous les algorithmes proposés dans \citep{hernandez2014compressed} peuvent être appliqués sur notre structure. En effet, le seul changement consiste en la  prise en compte de l'information temporelle dans l'incrémentation des indices de parcours. De ce fait, nous pensons que notre méthode peut offrir un très bon compromis entre l'espace mémoire et le temps d'accès des traitements dans le cas des graphes dynamiques. 
+			
 		\section{Conclusion}
-	
+	Dans ce chapitre, nous avons abordés le problème de compression des graphe dynamique par extraction de motifs. Nous avons formaliser le problème de compression d'un graphe dynamique en se basant sur les sous-graphes denses temporelles qui le composent. Pour faire face a ce problème nous avons présenter une nouvelle méthode hybride intitulé DDSM, elle combine entre deux méthodes de la littérature que nous avons juger efficaces. Notre prochain but est de tester cette méthode en la comparant avec les méthodes existantes.   
+
 	
 	
 	

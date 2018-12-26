@@ -2,29 +2,29 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Exemple de repr\IeC {\'e}sentation graphique d'un graphe non orient\IeC {\'e}}}{10}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemple de repr\IeC {\'e}sentation graphique d'un digraphe.}}{12}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Graphe orient\IeC {\'e}e G}}{15}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Matrice d'adjacence du graphe G}}{15}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Graphe orient\IeC {\'e}e G}}{16}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Matrice d'incidence du graphe G}}{16}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Graphe orient\IeC {\'e}e G}}{17}{figure.2.7}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Liste d'adjacence du graphe G}}{17}{figure.2.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemple de repr\IeC {\'e}sentation graphique d'un digraphe.}}{11}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Graphe orient\IeC {\'e}e G}}{14}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Matrice d'adjacence du graphe G}}{14}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Graphe orient\IeC {\'e}e G}}{15}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Matrice d'incidence du graphe G}}{15}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Graphe orient\IeC {\'e}e G}}{15}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Liste d'adjacence du graphe G}}{15}{figure.2.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression sans perte.}}{20}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression avec perte.}}{20}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-trees d'une matrice d'adjacence d'un graphe}}{24}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-trees}}{27}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-trees}}{27}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-trees1 d'une matrice d'adjacence d'un graphe}}{29}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Exemple de repr\IeC {\'e}sentation Delta-$k^2$-trees d'une matrice d'adjacence d'un graphe}}{30}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-treaps d'une matrice d'adjacence d'un graphe pond\IeC {\'e}r\IeC {\'e}}}{31}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Structures de donn\IeC {\'e}s pour une repr\IeC {\'e}sentation $k^2$-treaps d'une matrice}}{32}{figure.3.9}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation I$k^2$-trees}}{33}{figure.3.10}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation diff I$k^2$-trees}}{34}{figure.3.11}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Exemple d'un graphe \IeC {\'e}tiquet\IeC {\'e}, attribu\IeC {\'e}, orient\IeC {\'e} et multiple}}{34}{figure.3.12}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Exemple d'un sch\IeC {\'e}ma et donn\IeC {\'e}s de la repr\IeC {\'e}sentation Att$k^2$-trees}}{36}{figure.3.13}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces repr\IeC {\'e}sentation des relations dans Att$k^2$-trees}}{37}{figure.3.14}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{49}{figure.3.15}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Exemple d'ex\IeC {\'e}cution de SDM}}{59}{figure.3.16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Compression sans perte.}}{19}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Compression avec perte.}}{19}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-trees d'une matrice d'adjacence d'un graphe}}{22}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-trees}}{24}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-trees}}{25}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-trees1 d'une matrice d'adjacence d'un graphe}}{26}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Exemple de repr\IeC {\'e}sentation Delta-$k^2$-trees d'une matrice d'adjacence d'un graphe}}{27}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-treaps d'une matrice d'adjacence d'un graphe pond\IeC {\'e}r\IeC {\'e}}}{28}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Structures de donn\IeC {\'e}s pour une repr\IeC {\'e}sentation $k^2$-treaps d'une matrice}}{29}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation I$k^2$-trees}}{30}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation diff I$k^2$-trees}}{30}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Exemple d'un graphe \IeC {\'e}tiquet\IeC {\'e}, attribu\IeC {\'e}, orient\IeC {\'e} et multiple}}{31}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Exemple d'un sch\IeC {\'e}ma et donn\IeC {\'e}s de la repr\IeC {\'e}sentation Att$k^2$-trees}}{32}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces repr\IeC {\'e}sentation des relations dans Att$k^2$-trees}}{33}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{44}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Exemple d'ex\IeC {\'e}cution de SDM}}{53}{figure.3.16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

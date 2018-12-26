@@ -11,54 +11,54 @@
 \contentsline {subsection}{\numberline {2.1.3}Propri\IeC {\'e}t\IeC {\'e} d'un graphe}{10}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Graphe orient\IeC {\'e}}{11}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Repr\IeC {\'e}sentation graphique}{12}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Repr\IeC {\'e}sentation graphique}{11}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Quelques Propri\IeC {\'e}t\IeC {\'e}s:}{12}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Notion de Connexit\IeC {\'e}}{13}{section.2.3}
-\contentsline {section}{\numberline {2.4}Graphe partiel et sous graphe:}{13}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}D\IeC {\'e}finitions:}{13}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.3}Notion de Connexit\IeC {\'e}}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Graphe partiel et sous graphe:}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}D\IeC {\'e}finitions:}{12}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Quelques Types de sous graphes:}{13}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Quelques types de graphe}{14}{section.2.5}
-\contentsline {section}{\numberline {2.6}Repr\IeC {\'e}sentation Structurelle d'un graphe}{14}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Matrice d'adjacence}{14}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Matrice d'incidence}{15}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Liste d'adjacence}{16}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}Les domaines d'application}{17}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Graphes des r\IeC {\'e}seaux sociaux:}{17}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Graphes en Bioinformatique:}{17}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Le Graphe du web:}{18}{subsection.2.7.3}
-\contentsline {section}{\numberline {2.8}Conclusion}{18}{section.2.8}
-\contentsline {chapter}{\numberline {3}Compression de graphe}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Compression de donn\IeC {\'e}es: }{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Compression appliqu\IeC {\'e}e aux graphes:}{19}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Motivations derri\IeC {\`e}re la compression de graphes: }{19}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Les types de compression:}{19}{subsection.3.2.2}
-\contentsline {subsubsection}{Compression Sans Perte:}{20}{section*.4}
-\contentsline {subsubsection}{Compression Avec Perte:}{20}{section*.5}
-\contentsline {subsection}{\numberline {3.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{20}{subsection.3.2.3}
-\contentsline {subsubsection}{Le temps de compression:}{20}{section*.6}
-\contentsline {subsubsection}{Le ratio de compression:}{21}{section*.7}
-\contentsline {subsubsection}{Le taux de compression:}{21}{section*.8}
-\contentsline {subsection}{\numberline {3.2.4}Classification des m\IeC {\'e}thodes de compression:}{21}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Compression par les K2-Trees}{23}{section.3.3}
-\contentsline {subsubsection}{d$k^2$-trees}{26}{section*.9}
-\contentsline {subsubsection}{$k^n$-trees}{27}{section*.10}
-\contentsline {subsubsection}{$K^2$-tress1 }{28}{section*.11}
-\contentsline {subsubsection}{Delta-$K^2$-tress }{29}{section*.12}
-\contentsline {subsubsection}{$K^2$-treaps }{30}{section*.13}
-\contentsline {subsubsection}{I$k^2$-trees}{32}{section*.14}
-\contentsline {subsubsection}{diff I$k^2$-trees}{33}{section*.15}
-\contentsline {subsubsection}{Att $K^2$-trees }{34}{section*.16}
-\contentsline {subsubsection}{dynAtt$k^2$-trees }{37}{section*.17}
-\contentsline {section}{\numberline {3.4}Compression par extraction de motifs}{40}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Compression bas\IeC {\'e}e vocabulaire}{40}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{52}{subsection.3.4.2}
-\contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{52}{section*.18}
-\contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{54}{section*.19}
-\contentsline {section}{\numberline {3.5}Conclusion}{61}{section.3.5}
-\contentsline {chapter}{\numberline {4}Contribution}{62}{chapter.4}
-\contentsline {section}{\numberline {4.1}Formulation du probl\IeC {\`e}me}{62}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Description conceptuelle}{62}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Pseudo algorithme}{62}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Analyse de complexit\IeC {\'e}}{62}{section.4.2}
-\contentsline {section}{\numberline {4.3}Conclusion}{62}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusion}{63}{chapter.5}
+\contentsline {section}{\numberline {2.5}Quelques types de graphe}{13}{section.2.5}
+\contentsline {section}{\numberline {2.6}Repr\IeC {\'e}sentation Structurelle d'un graphe}{13}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Matrice d'adjacence}{13}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Matrice d'incidence}{14}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Liste d'adjacence}{15}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Les domaines d'application}{16}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Graphes des r\IeC {\'e}seaux sociaux:}{16}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Graphes en Bioinformatique:}{16}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Le Graphe du web:}{16}{subsection.2.7.3}
+\contentsline {section}{\numberline {2.8}Conclusion}{16}{section.2.8}
+\contentsline {chapter}{\numberline {3}Compression de graphe}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Compression de donn\IeC {\'e}es: }{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Compression appliqu\IeC {\'e}e aux graphes:}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Motivations derri\IeC {\`e}re la compression de graphes: }{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Les types de compression:}{18}{subsection.3.2.2}
+\contentsline {subsubsection}{Compression Sans Perte:}{18}{section*.4}
+\contentsline {subsubsection}{Compression Avec Perte:}{19}{section*.5}
+\contentsline {subsection}{\numberline {3.2.3}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{19}{subsection.3.2.3}
+\contentsline {subsubsection}{Le temps de compression:}{19}{section*.6}
+\contentsline {subsubsection}{Le ratio de compression:}{19}{section*.7}
+\contentsline {subsubsection}{Le taux de compression:}{20}{section*.8}
+\contentsline {subsection}{\numberline {3.2.4}Classification des m\IeC {\'e}thodes de compression:}{20}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Compression par les K2-Trees}{21}{section.3.3}
+\contentsline {subsubsection}{d$k^2$-trees}{24}{section*.9}
+\contentsline {subsubsection}{$k^n$-trees}{24}{section*.10}
+\contentsline {subsubsection}{$K^2$-tress1 }{25}{section*.11}
+\contentsline {subsubsection}{Delta-$K^2$-tress }{26}{section*.12}
+\contentsline {subsubsection}{$K^2$-treaps }{27}{section*.13}
+\contentsline {subsubsection}{I$k^2$-trees}{29}{section*.14}
+\contentsline {subsubsection}{diff I$k^2$-trees}{30}{section*.15}
+\contentsline {subsubsection}{Att $K^2$-trees }{31}{section*.16}
+\contentsline {subsubsection}{dynAtt$k^2$-trees }{33}{section*.17}
+\contentsline {section}{\numberline {3.4}Compression par extraction de motifs}{36}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Compression bas\IeC {\'e}e vocabulaire}{36}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{46}{subsection.3.4.2}
+\contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{46}{section*.18}
+\contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{48}{section*.19}
+\contentsline {section}{\numberline {3.5}Conclusion}{55}{section.3.5}
+\contentsline {chapter}{\numberline {4}Contribution}{56}{chapter.4}
+\contentsline {section}{\numberline {4.1}Formulation du probl\IeC {\`e}me}{57}{section.4.1}
+\contentsline {section}{\numberline {4.2}Principe g\IeC {\'e}n\IeC {\'e}rale}{57}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Description conceptuelle}{57}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Notre m\IeC {\'e}thode : DDSM}{58}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Conclusion}{59}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusion}{60}{chapter.5}
