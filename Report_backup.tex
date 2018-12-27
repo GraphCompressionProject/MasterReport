@@ -18,7 +18,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 %--------- pour le style de la page ----------
-\usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 
 \usepackage[]{geometry}
 
@@ -30,10 +30,19 @@
 \setstretch{1,15}
 %\usepackage{txfonts} //pour utiliser times new roman dans le document
 \usepackage{fancyhdr}
+\fancyhf{} % clear all header and footers
+\renewcommand{\headrulewidth}{0pt} % remove the header rule
+\fancyfoot[RE,RO]{\thepage} % Left side on Even pages; Right side on Odd pages
 \pagestyle{fancy}
-%\renewcommand\headrulewidth{1pt}
-%\fancyhead[L]{Bousbiat Hafsa - Ihadadene Sana}
-%\fancyhead[R]{Rapport Master}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf[lef,rof]{\thepage}%
+}
+\renewcommand{\headrulewidth}{0.4pt}
+\lhead{\textbf{Chapitre \thechapter}}
+\fancyhead[R]{\rightmark}
+
 %--------------------------- Sommaire ----------------------------%
 \usepackage{hyperref}
 \usepackage{amssymb}
@@ -72,7 +81,7 @@
 \begin{document}
 
 %Page de garde (page de titre)							Obligatoire
-
+\pagenumbering{Roman}
 \input{./title.tex}
 
 %Remerciements											Obligatoire
@@ -98,8 +107,25 @@
 
 %Introduction (début de la pagination)					bligatoire
 
+\pagenumbering{arabic}
 
-\chapter{Introduction} 
+
+		\Huge{ 
+			\textbf {Introduction générale}} \\[0.5in]
+			\addcontentsline{toc}{chapter}{\numberline{}Introduction générale}
+			\normalsize
+			Avec l'énorme quantité de données produites par les activités humaines de nos jours, le problème de données massives (Big data) est devenu un enjeu essentiel. Un des outils efficaces pour traiter ces données est l'utilisation de graphes. Les graphes sont des outils de modélisation utilisés dans beaucoup de domaines pour la représentation des données : réseaux sociaux et de communication (entités reliées entre elles par des liens physiques ou communautaires), chimie (relations entre les atomes), biologie (interactions entre protéines par exemple), etc.\\
+			
+Il y a plusieurs solutions pour contrer le volume de données mais nous nous intéressons à une solution aussi vieille que la discipline de traitement de données mais qui connait de nouveaux défis de nos jours : la compression.\\
+
+La compression de graphes est un domaine dans lequel le graphe initial subit des transformations pour en obtenir une version plus réduite. Différentes techniques permettent cette compression, avec ou sans perte d'information, et génèrent de nouveaux graphes sur lesquels il est intéressant d'effectuer les différents traitement. En effet, le but de la compression de graphes n'est pas uniquement la réduction du volume mais également utiliser la version compressée du graphe à la place du graphe initiale dans les applications de traitement de ces graphes.\\ 
+
+Deux types de méthodes de compression des graphes se sont distinguées parmi toute les autres types de méthodes: les k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitements. Nous présenterons dans ce travail une synthèse bibliographique sur les différentes méthodes de compression dérivant de ces deux grandes classes.	\\
+		
+			
+			 Nous avons hiérarchisé notre mémoire en trois grands chapitres. Le premier est une introduction au domaine de la théorie des graphes incluant ainsi les notion fondamentales de ce domaine, les types de graphes, leurs représentations structurelles et leurs domaines d'application. Dans le second chapitre, nous introduisons les définitions de base du domaine de compression de données appliqué aux graphes à savoir: les motivation, les types de compression et les métriques d'évaluation. Enfin, nous présenterons les classification des méthodes de compression des graphes existantes ainsi que la classification que nous proposons. Nous mettrons l'accent après sur les deux classes de méthode qui forment la problématique de notre sujet de Master: la compression par extraction de motifs et la compression par les k2-trees. Dans le troisième chapitre nous présenterons une nouvelle méthode de compression que nous proposons.
+	
+
 
 
 %---->chapitre 01 :« cadrage du projet »
@@ -152,7 +178,7 @@
 							\input{./Chapitres/ExtractionMotifs/VOG_Overlapp.tex}
 							\input{./Chapitres/ExtractionMotifs/TimeCrunch.tex}
 							\input{./Chapitres/ExtractionMotifs/CanDense.tex}
-							\input{./Chapitres/ExtractionMotifs/SynNoeudClust.tex}
+							%\input{./Chapitres/ExtractionMotifs/SynNoeudClust.tex}
 			
 					 \textbf{Basée sur les propriétés de la matrice d'adjacence}
 							
@@ -160,7 +186,7 @@
 							
 							\input{./Chapitres/ExtractionMotifs/intra_inter_mot_mat.tex}
 							\input{./Chapitres/ExtractionMotifs/mot_mat.tex}
-							\input{./Chapitres/ExtractionMotifs/SynMatMot.tex}
+						%	\input{./Chapitres/ExtractionMotifs/SynMatMot.tex}
 					
 				
 				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -178,7 +204,7 @@
 						
 						\input{./Chapitres/ExtractionMotifs/SubDue.tex}
 						\input{./Chapitres/ExtractionMotifs/GraphZip.tex}
-						\input{./Chapitres/ExtractionMotifs/SynAgrNoeud.tex}
+					%	\input{./Chapitres/ExtractionMotifs/SynAgrNoeud.tex}
 						
 					\subsubsection{Compression basée agrégation de liens}
 						Les méthodes de compression par extraction de motifs basées agrégation de liens sont parmi les méthode les plus populaires. Leur objectif est de produire un graphe compressé à partir du graphe initial en remplaçant les liens denses du graphe par un nouveau super-nœud ou une nouvelle super-arêtes. Elle se divise selon le principe en deux grandes classes: celles utilisant les règles de grammaire et celles utilisant des méthode de clustering. Nous détaillerons dans ce qui suit ces deux classes et nous conclurons par une synthèse sur les méthodes de chaque classe.
@@ -194,7 +220,7 @@
 							
 								\input{./Chapitres/ExtractionMotifs/gRepair.tex}
 								%%%%exemple ???
-								\input{./Chapitres/ExtractionMotifs/SynGram.tex}
+							%	\input{./Chapitres/ExtractionMotifs/SynGram.tex}
 								
 
 								
@@ -207,12 +233,14 @@
 								
 								\input{./Chapitres/ExtractionMotifs/VNM.tex}
 								\input{./Chapitres/ExtractionMotifs/DSM.tex}
-								\input{./Chapitres/ExtractionMotifs/SynAgrlien.tex}
+							%	\input{./Chapitres/ExtractionMotifs/SynAgrlien.tex}
 						
-												
+						\input{./Chapitres/ExtractionMotifs/SynGen.tex}						
 								
 		\section{Conclusion}
-
+	Durant ce chapitre, nous avons étudié les principes de base de la compression appliquée aux graphes. Nous avons mis l'accent sur les différentes méthodes de compression par extraction de motifs et les k2-trees existantes où avons put identifier les sous-classes de ces deux grandes familles de méthodes en se basant sur leurs approches et fondements théoriques. Ces méthodes différent aussi selon les types de graphes et les domaines auxquels elles sont destinées.
+	
+	Notre étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que :la notion de graphe temporel(dynamique) et les temps de traitements, sont encore présents. Ces défis constitues de nouvelles problématiques de recherche dont peut de travaux en été proposés pour les résoudre.
 
 
 	\chapter{Contribution}
@@ -304,7 +332,17 @@ Nous allons dans cette partie présenter notre méthode théoriquement : princip
 	
 
 %Conclusion Générale									Obligatoire
-\chapter{Conclusion} 
+
+
+\newpage
+\begin{center}
+	\par
+		\vskip 1in
+		\Huge 
+			Conclusion générale \\[0.5in]
+			\addcontentsline{toc}{chapter}{\numberline{}Conclusion}
+	
+\end{center}
 
 %Références Bibliographiques (fin de la pagination)		Obligatoire
 
