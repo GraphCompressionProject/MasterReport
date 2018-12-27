@@ -118,7 +118,7 @@
 			
 Il y a plusieurs solutions pour contrer le volume de données mais nous nous intéressons à une solution aussi vieille que la discipline de traitement de données mais qui connait de nouveaux défis de nos jours : la compression.\\
 
-La compression de graphes est un domaine dans lequel le graphe initial subit des transformations pour en obtenir une version plus réduite. Différentes techniques permettent cette compression, avec ou sans perte d'information, et génèrent de nouveaux graphes sur lesquels il est intéressant d'effectuer les différents traitement. En effet, le but de la compression de graphes n'est pas uniquement la réduction du volume mais également utiliser la version compressée du graphe à la place du graphe initiale dans les applications de traitement de ces graphes.\\ 
+La compression de graphes est un domaine dans lequel le graphe initial subit des transformations pour en obtenir une version plus réduite. Différentes techniques permettent cette compression, avec ou sans perte d'information, et génèrent de nouveaux graphes sur lesquels il est intéressant d'effectuer les différents traitement.\\ 
 
 Deux types de méthodes de compression des graphes se sont distinguées parmi toute les autres types de méthodes: les k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitements. Nous présenterons dans ce travail une synthèse bibliographique sur les différentes méthodes de compression dérivant de ces deux grandes classes.	\\
 		
@@ -237,10 +237,8 @@ Deux types de méthodes de compression des graphes se sont distinguées parmi to
 						
 						\input{./Chapitres/ExtractionMotifs/SynGen.tex}						
 								
-		\section{Conclusion}
-	Durant ce chapitre, nous avons étudié les principes de base de la compression appliquée aux graphes. Nous avons mis l'accent sur les différentes méthodes de compression par extraction de motifs et les k2-trees existantes où avons put identifier les sous-classes de ces deux grandes familles de méthodes en se basant sur leurs approches et fondements théoriques. Ces méthodes différent aussi selon les types de graphes et les domaines auxquels elles sont destinées.
+		\section{Synthèse Générale}
 	
-	Notre étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que :la notion de graphe temporel(dynamique) et les temps de traitements, sont encore présents. Ces défis constitues de nouvelles problématiques de recherche dont peut de travaux en été proposés pour les résoudre.
 
 
 	\chapter{Contribution}
@@ -335,19 +333,22 @@ Nous allons dans cette partie présenter notre méthode théoriquement : princip
 
 
 \newpage
-\begin{center}
+
 	\par
 		\vskip 1in
 		\Huge 
-			Conclusion générale \\[0.5in]
-			\addcontentsline{toc}{chapter}{\numberline{}Conclusion}
+			\textbf{Conclusion générale} \\[0.5in]
+			\addcontentsline{toc}{chapter}{\numberline{}Conclusion générale}
+		
+		\normalsize
+		
+	La situation d'abondance d'information aujourd'hui a favorisé l'incapacité d'assimilation et de réemploi de l'information et a montré l'inadaptation des outils de gestion classiques. Une des solution les plus connus pour pallier à ce problème est la compression.\\
+		
+		Nous nous sommes intéressés dans ce travail aux domaines de compression de graphes, et plus particulièrement les méthodes de compression par les k2-trees et les méthodes de compression par extraction de motifs. Nous avons présenté les différentes méthodes de compression existantes et nous avons établi une étude comparatif entre eux. Nous avons aussi essayer de rectifier la classification des proposées dans un travail de master précédent. Une dernière contribution que nous avons apporter consiste en une nouvelle méthode de compression par extraction de motifs usant des structures k2-trees.\\  
 	
-\end{center}
-
-%Références Bibliographiques (fin de la pagination)		Obligatoire
-
-%Annexes													Selon besoin
-
+	Cette étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que :la compression temps réelle et les temps de traitements, sont encore présents. Ces défis constitues de nouvelles problématiques de recherche qui sont toujours ouvert.\\
+	
+	Nous nous focaliserons dans le future à implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait nous pourrons établir une comparaison plus objective entre eux.
 
 \newpage
 \bibliography{Bibliographie}
