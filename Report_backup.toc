@@ -39,26 +39,26 @@
 \contentsline {subsubsection}{Le ratio de compression:}{11}{section*.7}
 \contentsline {subsubsection}{Le taux de compression:}{12}{section*.8}
 \contentsline {subsection}{\numberline {2.2.4}Classification des m\IeC {\'e}thodes de compression:}{12}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Compression par les K2-Trees}{13}{section.2.3}
+\contentsline {section}{\numberline {2.3}Compression par les K2-Trees}{14}{section.2.3}
 \contentsline {subsubsection}{d$k^2$-trees}{16}{section*.9}
-\contentsline {subsubsection}{$k^n$-trees}{16}{section*.10}
+\contentsline {subsubsection}{$k^n$-trees}{17}{section*.10}
 \contentsline {subsubsection}{$K^2$-tress1 }{17}{section*.11}
-\contentsline {subsubsection}{Delta-$K^2$-tress }{18}{section*.12}
-\contentsline {subsubsection}{$K^2$-treaps }{19}{section*.13}
-\contentsline {subsubsection}{I$k^2$-trees}{21}{section*.14}
-\contentsline {subsubsection}{diff I$k^2$-trees}{22}{section*.15}
-\contentsline {subsubsection}{Att $K^2$-trees }{23}{section*.16}
-\contentsline {subsubsection}{dynAtt$k^2$-trees }{25}{section*.17}
-\contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{28}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{28}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{35}{subsection.2.4.2}
-\contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{35}{section*.18}
-\contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{35}{section*.19}
-\contentsline {section}{\numberline {2.5}Synth\IeC {\`e}se G\IeC {\'e}n\IeC {\'e}rale}{40}{section.2.5}
-\contentsline {chapter}{\numberline {3}Contribution}{41}{chapter.3}
-\contentsline {section}{\numberline {3.1}Formulation du probl\IeC {\`e}me}{42}{section.3.1}
-\contentsline {section}{\numberline {3.2}Principe g\IeC {\'e}n\IeC {\'e}rale}{42}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Description conceptuelle}{42}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Notre m\IeC {\'e}thode : DDSM}{43}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Conclusion}{44}{section.3.3}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{45}{section.3.3}
+\contentsline {subsubsection}{Delta-$K^2$-tress }{19}{section*.12}
+\contentsline {subsubsection}{$K^2$-treaps }{20}{section*.13}
+\contentsline {subsubsection}{I$k^2$-trees}{22}{section*.14}
+\contentsline {subsubsection}{diff I$k^2$-trees}{23}{section*.15}
+\contentsline {subsubsection}{Att $K^2$-trees }{24}{section*.16}
+\contentsline {subsubsection}{dynAtt$k^2$-trees }{26}{section*.17}
+\contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{29}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{29}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{36}{subsection.2.4.2}
+\contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{36}{section*.18}
+\contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{36}{section*.19}
+\contentsline {section}{\numberline {2.5}Synth\IeC {\`e}se G\IeC {\'e}n\IeC {\'e}rale}{41}{section.2.5}
+\contentsline {chapter}{\numberline {3}Contribution}{42}{chapter.3}
+\contentsline {section}{\numberline {3.1}Formulation du probl\IeC {\`e}me}{43}{section.3.1}
+\contentsline {section}{\numberline {3.2}Principe g\IeC {\'e}n\IeC {\'e}rale}{43}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Description conceptuelle}{43}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Notre m\IeC {\'e}thode : DDSM}{44}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Conclusion}{45}{section.3.3}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{46}{section.3.3}
