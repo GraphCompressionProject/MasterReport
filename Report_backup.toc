@@ -54,7 +54,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{36}{subsection.2.4.2}
 \contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{36}{section*.18}
 \contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{36}{section*.19}
-\contentsline {section}{\numberline {2.5}Synth\IeC {\`e}se G\IeC {\'e}n\IeC {\'e}rale}{41}{section.2.5}
+\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}rale}{41}{section.2.5}
 \contentsline {chapter}{\numberline {3}Contribution}{42}{chapter.3}
 \contentsline {section}{\numberline {3.1}Formulation du probl\IeC {\`e}me}{43}{section.3.1}
 \contentsline {section}{\numberline {3.2}Principe g\IeC {\'e}n\IeC {\'e}rale}{43}{section.3.2}

@@ -1,0 +1,36 @@
+Nous avons étudié dans ce chapitre deux classe de compression, après avoir balayer les méthodes existantes dans chaque classe, nous allons établir une étude comparative entre ces deux catégories :
+ 
+\begin{table}[H]
+\begin{tabular}{|c|p{6cm}|p{6cm}|}
+
+\hline & \begin{center}
+\textbf{$k^2$-trees}
+\end{center}     &  \begin{center} \textbf{Extraction de motifs} \end{center}  \\
+										
+										
+\hline Type de compression & toujours sans perte & toujours sans perte \\
+\hline Structure en sortie & Toujours succinct & Peut être succinct où structurelle où les deux en même temps\\
+
+\hline technique utilisé & exploitation de la matrice d'adjacence du graphe & exploitation des motifs fréquents dans le graphe\\
+
+\hline Dépendance & Dépend du paramètre k & Dépend selon la méthode de l'algorithme de clustering ou du vocabulaire de motifs utilisé  \\
+
+\hline Objectif & 
+\begin{minipage}[t]{0.35\textwidth}
+  			Compression,\\
+  			Réduire l'espace de stockage et le temps de parcours\\
+  \end{minipage}
+  &
+  \begin{minipage}[t]{0.35\textwidth}
+  			Compression,\\
+  			Réduire l'espace de stockage et le temps de parcours,\\
+  			Extraire les informations pertinentes, \\
+  			Visualisation \\
+  \end{minipage}
+  \\
+  \hline Domaine d'application & tout les domaines & tout les domaines \\
+  \hline
+\end{tabular}
+									\caption{Comparaison entre les méthodes basés sur$k^2$-trees et basés sur l'extraction de motifs.}									
+									
+								\end{table}
