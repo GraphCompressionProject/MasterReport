@@ -128,4 +128,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Notre m\IeC {\'e}thode : DDSM}{43}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Conclusion}{44}{section.3.3}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{45}{section.3.3}
+<<<<<<< HEAD
+>>>>>>> parent of e8a063f... Classif
+=======
 >>>>>>> parent of e8a063f... Classif
