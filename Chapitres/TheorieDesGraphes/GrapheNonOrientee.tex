@@ -4,24 +4,24 @@ Un graph non orienté G est la donnée d’un couple (V , E) où V = \{$ \textit
 \\Soient \textit{e} = ($\textit{v}_{i} , \textit{v}_{j}$) et \textit{e'}=($\textit{v}_{k} , \textit{v}_{l}$) deux arêtes de E, On dit que :
 \begin{itemize}
 \item $\textit{v}_{i}$ et $\textit{v}_{j}$ sont les extrémités de  \textit{e} et \textit{e} est incident en $\textit{v}_{i}$ et en  $\textit{v}_{j}$ \citep{hennecart2012elements}.
-\item $\textit{v}_{i}$ et $\textit{v}_{j}$ sont voisins ou adjacents, car il y’a au moins une arête entre eux dans E \citep{IUTLyonInformatique}.
+\item $\textit{v}_{i}$ et $\textit{v}_{j}$ sont voisins ou adjacents, car il y a au moins une arête entre eux dans E \citep{IUTLyonInformatique}.
 \item L'ensemble des sommets adjacents au sommet \textit{e} est appelé le voisinage de \textit{e} \citep{muller}. 
 \item \textit{e} et \textit{e'} sont voisins si ils ont une extrémité commune , i.e. : $\textit{v}_{i}$ = $\textit{v}_{k}$ par exemple \citep{lopez2003cours}.
-\item L’arête \textit{e} est une boucle si ses extrémités coïncident, i.e. : $\textit{v}_{i}$ = $\textit{v}_{j}$ \citep{IUTLyonInformatique}. 
-\item L’arête \textit{e} est multiple si elle a plus d’une seule occurrence dans l'ensemble E.
+\item L'arête \textit{e} est une boucle si ses extrémités coïncident, i.e. : $\textit{v}_{i}$ = $\textit{v}_{j}$ \citep{IUTLyonInformatique}. 
+\item L'arête \textit{e} est multiple si elle a plus d'une seule occurrence dans l'ensemble E.
 \end{itemize}	
 		 
-		\subsection{Représentation graphique}
-		Un graph non orienté G peut être représenter par un dessin sur un plan comme suit \citep{muller}:
-		\begin{itemize}
+\subsection{Représentation graphique}
+Un graph non orienté G peut être représenter par un dessin sur un plan comme suit \citep{muller}:
 
-\item Les nœuds de G : $\textit{v}_{i}$ $\in$ V sont représenter par des points distincts.
-\item 	Les arêtes de G : \textit{e} = ($\textit{v}_{i}$,$\textit{v}_{i}$) $\in$ E sont représenter par des lignes pas forcement rectilignes qui relient les extrémités de chaque arête \textit{e}.
+\begin{itemize}
+\item Les nœuds de G : $\textit{v}_{i}$ $\in$ V sont représentés par des points distincts.
+\item 	Les arêtes de G : \textit{e} = ($\textit{v}_{i}$,$\textit{v}_{i}$) $\in$ E sont représentés par des lignes pas forcement rectilignes qui relient les extrémités de chaque arête \textit{e}.
 \end{itemize}
 
 %% L'exemple de la représentation graphique 
 \textbf{Exemple :}
- Soit g=(V1 , E1) un graphe non orienté tel que : V1=\{ 1,2,3,5 \} et E=\{ (1,2), (1,4), (2,2), (2,3) ,(2,5) ,(3,4) \}.
+ Soit g=(V1 , E1) un graphe non orienté tel que : V1=\{ 1,2,3,5 \} et E1=\{ (1,2), (1,4), (2,2), (2,3) ,(2,5) ,(3,4) \}.
 La représentation graphique de g est alors donnée par le schéma de la figure \ref{graphNonOriente}.
 \\
 \begin{figure}[H]
@@ -32,7 +32,7 @@ La représentation graphique de g est alors donnée par le schéma de la figure 
 \label{graphNonOriente}
 \end{figure}
 
-		\subsection{Propriété d'un graphe}
+		\subsection{Propriétés d'un graphe}
 		
 		\begin{itemize}[label=$\circ$]
 			
@@ -44,27 +44,21 @@ La représentation graphique de g est alors donnée par le schéma de la figure 
 			
 			
 			\begin{itemize}[label=$\bullet$]
-				\item \textbf{Degré d'un sommet : } Le degré d’un sommet noté \textit{d}($\textit{v}_{i}$) est le nombre d'arêtes incidents a ce sommet, sachant qu’une boucle compte pour 2 \citep{muller} . Dans l'exemple de la figure \ref{graphNonOriente}, le degré du sommet (1) est : \textit{d}(1)=2.
+				\item \textbf{Degré d'un sommet : } Le degré d’un sommet noté \textit{d}($\textit{v}_{i}$) est le nombre d'arêtes incidentes à ce sommet, sachant qu’une boucle compte pour deux \citep{muller} . Dans l'exemple de la figure \ref{graphNonOriente}, le degré du sommet (1) est : \textit{d}(1)=2.
 				
-				\item \textbf{Degré d'un graphe : }Le degré d’un graphe est 			le degré maximum de ses sommets. e.i. c’est 						max(\textit{d}($\textit{v}_{i}$)) \citep{muller}. Dans l’exemple de 				la figure \ref{graphNonOriente}, le degré du graphe est \textit{d}(2)=5.
+				\item \textbf{Degré d'un graphe : }Le degré d’un graphe est le degré maximum de ses sommets. e.i. c’est 						max(\textit{d}($\textit{v}_{i}$)) \citep{muller}. Dans l’exemple de 				la figure \ref{graphNonOriente}, le degré du graphe est \textit{d}(2)=5.
 			\end{itemize}
 			
-			\item \textbf{Rayon et diamétre d'un graphe:}
+			\item \textbf{Rayon et diamètre d'un graphe:}
 			\begin{itemize}[label=$\bullet$]
-				\item \textbf{Distance : }La distance entre deux sommets 	\textit{v} et \textit{u} est le plus petit nombre d’arêtes qu’on doit parcourir pour aller de \textit{v} a \textit{u} ou de \textit{u} a \textit{v} \citep{muller}. 
+				\item \textbf{Distance : }La distance entre deux sommets 	\textit{v} et \textit{u} est le plus petit nombre d’arêtes qu’on doit parcourir pour aller de \textit{v} à \textit{u} ou de \textit{u} à \textit{v} \citep{muller}. 
 				
 				\item 	\textbf{Diamètre d’un graphe :} C’est la plus grande 	distance entre deux sommets de ce graphe \citep{muller}. 
 				
-				\item 	\textbf{Rayon d’un graph : }C’est la plus petite distance entre deux sommets de ce graphe. 
+				\item 	\textbf{Rayon d’un graph : }C’est la plus petite distance entre deux sommets de ce graphe \citep{parlebas1972centralite}. 
 			\end{itemize}
 		\end{itemize}
 		
 	
 			
-		
-=======
-			\textbf{Rayon d’un graph : }C’est la plus pette 					distance entre deux sommets de ce graphe \citep{parlebas1972centralite}. 
->>>>>>> 0e4b8dd6bd0e83a265e861d99710ae5cff85ecfa
-			%%%% A revoire d'autre memoire sur Graph theory
-		
 	
