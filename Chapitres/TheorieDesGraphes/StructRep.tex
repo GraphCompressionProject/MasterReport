@@ -1,22 +1,23 @@
-Bien que la représentation graphique soit un moyen pratique pour définir un graphe, elle n'est clairement pas adaptée ni au stockage du graphe dans une mémoire, ni à son traitement. Pour cela, plusieurs structures de données ont été utilisées pour représenter un graphe, ces structures varient selon l’usage du graphe et la nature des traitements appliqués. Nous allons présenter dans cette partie les structures les plus utilisés.
-\\Soit un graphe G(V,E) d’ordre n et de taille m dont les sommets $\textit{v}_{1}$, $\textit{v}_{2}$,..., $\textit{v}_{n}$ et les arêtes (ou arcs) $\textit{v}_{1}$, $\textit{v}_{2}$,..., $\textit{v}_{m}$ sont ordonnés de 1 à n et de 1 à m respectivement.
+Bien que la représentation graphique soit un moyen pratique pour définir un graphe, elle n'est clairement pas adaptée ni au stockage du graphe dans une mémoire, ni à son traitement. Pour cela, plusieurs structures de données ont été utilisées pour représenter un graphe, ces structures varient selon l’usage du graphe et la nature des traitements appliqués. Nous allons présenter dans cette partie les structures les plus utilisées.
+
+Soit un graphe G(V,E) d'ordre n et de taille m dont les sommets $\textit{v}_{1}$, $\textit{v}_{2}$,..., $\textit{v}_{n}$ et les arêtes (ou arcs) $\textit{e}_{1}$, $\textit{e}_{2}$,..., $\textit{e}_{m}$ sont ordonnés de 1 à n et de 1 à m respectivement.
 		
 		
 
 		
 			\subsection{Matrice d'adjacence}
 			
-				La matrice d’adjacence de G est une matrice booléenne 					carré d’ordre n : ${({m}_{ij})}_{(i,j) \in {[0;n]}^{2}}$,  dont les 					lignes (i) et les colons (j)  représentent les sommets de G. Les entrés (ij) prenent une valeur de "1" s’il existe un 				arc (une aréte dans le cas d'un graph non orienté) allant du 			sommet i au sommet j et un "0" sinon, e.i \citep{lehman2010mathematics} \citep{mathieu} \citep{IUTLyonInformatique} :
+				La matrice d’adjacence de G est une matrice booléenne 					carré d’ordre n : ${({m}_{ij})}_{(i,j) \in {[0;n]}^{2}}$,  dont les 					lignes (i) et les colons (j)  représentent les sommets de G. Les entrées (ij) prennent une valeur de "1" s’il existe un 				arc (une arête dans le cas d'un graph non orienté) allant du 			sommet i au sommet j et un "0" sinon, i.e \citep{lehman2010mathematics} \citep{mathieu} \citep{IUTLyonInformatique} :
 			\[{m}_{ij} :=
 			\left\{
 			\begin{array}{r c l}
-			1 & si & (\textit{v}_{i} , \textit{v}_{i}) \in E \\
+			1 & si & (\textit{v}_{i} , \textit{v}_{j}) \in E \\
 			0 & sinon
 			\end{array}
 			\right.
 			\]
 			\\
-			Dans le cas d’un graphe non orienté, la matrice est 						symétrique par rapport à la diagonale descendante de gauche	 			à droite . e.i. ${m}_{ij}$ = ${m}_{ji}$, dans ce cas le 						graphe peut être représenter avec  la composante 							triangulaire supérieure de la matrice d'adjacence \citep{muller}.\\
+			Dans le cas d’un graphe non orienté, la matrice est 						symétrique par rapport à la première diagonale, i.e. ${m}_{ij}$ = ${m}_{ji}$, dans ce cas le 						graphe peut être représenter avec  la composante 							triangulaire supérieure de la matrice d'adjacence \citep{muller}.\\
 			\textbf{Note :} \begin{itemize} 
 			\item Cette représentation est valide pour le cas 					d'un graphe non orienté et orienté.
 			\item Dans le cas d'un graphe pondéré, les "1" sont remplacés par les poids des arêtes (ou arcs) \citep{lopez2003cours}.
