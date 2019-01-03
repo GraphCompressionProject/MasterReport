@@ -1,4 +1,4 @@
-		Une première méthode de suivant ce principe a été proposée dans \citep{claude2010fast} baptisé \textit{Approximate Re-pair}. Dans cette méthode un graphe G=(V,E) est représenté sous forme d'une sequence de caractères T: \begin{center}
+		Une première méthode suivant ce principe a été proposée dans \citep{claude2010fast} baptisée \textit{Approximate Re-pair}. Dans cette méthode un graphe G=(V,E) est représenté sous forme d'une sequence de caractères T: \begin{center}
 		T=T(G)= $\overline{v_{1}}\ v_{1,1}\ ...\ v_{1,a}\ \overline{v_{2}}\ v_{2,1}\ ...\ v_{2,a_{2}} ... \overline{v_{n}}\ v_{n,1}\ ...\ v_{n,a_{n}}\ $						
 \end{center}	
 où $\overline{v_{i}}$ représente un indicateur du sommet $v_{i}$. Elle procède en trois étapes essentielles expliquer dans l'algorithme \textbf{\ref{alg:re_pair}} .
@@ -6,9 +6,9 @@ où $\overline{v_{i}}$ représente un indicateur du sommet $v_{i}$. Elle procèd
 		\caption{Approximate Re-pair}
 		\label{alg:re_pair}
 		\begin{algorithmic}[1]
-			\STATE \textbf{Calcule des fréquences:} T est parcourue séquentiellement et chaque pair $t_{i}t_{i+1}$ est ajouté à un tableau de hachage H avec leurs nombre d'occurence. 
-			\STATE \textbf{Recherche des k meilleurs paires:}  H est parcourue et  les k paires les plus fréquentes sont retenues, en utilisant k pointeurs vers les cellules de H.
-			\STATE \textbf{Le remplacement simultané:} les k paires identifiés dans l'étape précédente sont simultanément remplacées par un nouveau identifiant et une règle de production est ajoutée.
+			\STATE \textbf{Calcule des fréquences:} T est parcourue séquentiellement et chaque pair $t_{i}t_{i+1}$ est ajoutée à un tableau de hachage H avec leur nombre d'occurrences. 
+			\STATE \textbf{Recherche des k meilleurs paires:}  H est parcourue et les k paires les plus fréquentes sont retenues, en utilisant k pointeurs vers les cellules de H.
+			\STATE \textbf{Le remplacement simultané:} les k paires identifiées dans l'étape précédente sont simultanément remplacées par un nouveau identifiant et une règle de production est ajoutée.
 		\end{algorithmic}
 	\end{algorithm}
 	Lorsqu'il n'y a plus de paires à remplacer, Approximate Re-pair s'arrête donnant comme résultat un compressé compacte C de la chaine T. Pour finaliser le processus, tous les indicateurs de nœuds $\overline{v_{i}}$ seront supprimés de C. De plus, l'algorithme crée une table qui contiendra des pointeurs vers le début de la liste d'adjacence de chaque nœud dans C. Grâce à cette table l'algorithme pourra répondre aux requêtes de recherche de successeurs en un temps optimal.

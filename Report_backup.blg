@@ -1,51 +1,7 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: Report_backup.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Report_backup.aux
 The style file: apalike.bst
 Database file #1: Bibliographie.bib
-Warning--I didn't find a database entry for "claude2010fas"
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
 Warning--empty author and editor in IUTLyonInformatique
 Warning--empty institution in Pres
-You've used 65 entries,
-            1935 wiz_defined-function locations,
-            814 strings with 14666 characters,
-and the built_in function-call counts, 27949 in all, are:
-= -- 2846
-> -- 1053
-< -- 56
-+ -- 370
-- -- 350
-* -- 2193
-:= -- 4643
-add.period$ -- 216
-call.type$ -- 65
-change.case$ -- 493
-chr.to.int$ -- 61
-cite$ -- 69
-duplicate$ -- 1192
-empty$ -- 1991
-format.name$ -- 446
-if$ -- 5706
-int.to.chr$ -- 5
-int.to.str$ -- 0
-missing$ -- 56
-newline$ -- 324
-num.names$ -- 192
-pop$ -- 514
-preamble$ -- 1
-purify$ -- 500
-quote$ -- 0
-skip$ -- 907
-stack$ -- 0
-substring$ -- 1928
-swap$ -- 271
-text.length$ -- 26
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 384
-warning$ -- 3
-while$ -- 239
-width$ -- 0
-write$ -- 849
-(There were 4 warnings)
+(There were 3 warnings)

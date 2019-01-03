@@ -8,10 +8,10 @@
 					Le but de cette première étape est de contourner la tâche presque impossible d'extraction simultanée de centaines de millions de points de données en groupant d'abord les sommets similaires dans le graphes dans des clusters. 
 				Pour cela k fonctions de hachage indépendantes sont utilisées pour obtenir une matrice de taille V * k. Par la suite, les lignes de la matrice  sont triées lexicographiquement
 				%Ce tri est assez rapide car il ne nécessite que O (2V log V) en mémoire à la fois, ce qui tient dans la RAM (ou nous le faisons en minant le graphique en morceaux). 
-				et elle est parcourue colonne par colonne en regroupant les lignes ayant la même valeur. Lorsque le nombre total de lignes chute au-dessous d'un seuil ou que le bord de la matrice de hachage est atteint, les identifiants des sommets associés aux lignes sont renvoyé au processus d'extraction (Phase 02). 
+				et elle est parcourue colonne par colonne en regroupant les lignes ayant la même valeur. Lorsque le nombre total de lignes chute au-dessous d'un seuil ou que le bord de la matrice de hachage est atteint, les identifiants des sommets associés aux lignes sont renvoyés au processus d'extraction (Phase 02). 
 					
 					\item \textbf{Phase d'Extraction de Motifs :}				Le but de cette étape est de localiser des sous-ensembles communs de liens sortants dans les sommets donnés. 
-				Ainsi les ensembles plus grands et fréquents présentent un intérêt, car ils peuvent représenter des motifs plus pertinents et une meilleure compression. En effet, les performances de compression d'un motif  sont calculés en fonction de sa fréquence dans la liste d'adjacence, et de sa taille qui est le nombre de liens qu'il contient \eqref{eqcompperf}.
+				Ainsi les ensembles plus grands et fréquents présentent un intérêt, car ils peuvent représenter des motifs plus pertinents et une meilleure compression. En effet, les performances de compression d'un motif sont calculés en fonction de sa fréquence dans la liste d'adjacence, et de sa taille qui est le nombre de liens qu'il contient \eqref{eqcompperf}.
 				%%% Formule
 				\begin{equation}
 				Compression(P)=(P.fréquence-1)(P.taille-1)-1
@@ -22,12 +22,12 @@
 				\item Extraire un histogramme des identifiants de liaison sortante à partir de la liste d'adjacence des sommets données.
 				\item Les listes sont réorganisées dans l'ordre décroissant des fréquences des liens sortants en éliminant ceux qui apparaissent une seul fois uniquement.
 				\item Chaque lien sortant est ajouté à un arbre de préfixes avec l'ensemble trié de ces extrémités initiales selon leurs identifiants. 
-				\item L'arbre est par la suite parcouru afin d'identifier les motifs qui maximisent la formule de performance de la compression \ref{eqcompperf}. Ces motifs sont ensuite convertis en nœuds virtuels et les identificateurs de sommet de leurs listes sont supprimés.
+				\item L'arbre est par la suite parcouru afin d'identifier les motifs qui maximisent la formule de performance de la compression \ref{eqcompperf}. Ces motifs sont ensuite convertis en nœuds virtuels et les identificateurs de sommets de leurs listes sont remplacés par les ids des nœuds virtuels dans la liste d'adjacence.
 				\end{enumerate}
 				 
 				\end{enumerate}
 				
-				L'algorithme est appliqué jusqu'à ce que la réduction n'apporte pas un gain significative. La figure \ref{VNM_exemple} illustre le principe de fonctionnement de cette méthode sur un exemple.
+				L'algorithme est appliqué jusqu'à ce que la réduction n'apporte pas un gain significatif. La figure \ref{VNM_exemple} illustre le principe de fonctionnement de cette méthode sur un exemple.
 				
 				
 			%%%%		Inclure un exemple 

@@ -1,4 +1,4 @@
-Durant la même année, Shah et al.\citep{shah2015timecrunch} ont proposé une autre variation de VoG, TimeCrunch, pour le cas des graphes simples (sans boucles) non orientés dynamiques représentés par un ensemble de graphes associés chacun à timestamp. En d'autres termes, ils considèrent les graphes $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$.
+Durant la même année, Shah et al.\citep{shah2015timecrunch} ont proposé une autre variation de VoG, TimeCrunch, pour le cas des graphes simples (sans boucles) non orientés dynamiques représentés par un ensemble de graphes associés chacun à un timestamp. En d'autres termes, ils considèrent les graphes $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$.
 			Un nouveau vocabulaire est proposé pour décrire proprement l'évolution des sous-structures dans le temps. En effet, ils partent du même vocabulaire de structures statiques 
 			%citer les structures Ω = {st,fc,nc,bc,nb,ch}
 			$\Omega =\{ st\ (etoile),\ fc (clique),\ nc (quasi-clique),\ bc (bipartie),\ nb (quasi-bipartie),\ ch (chaine)\}$ 
@@ -12,28 +12,27 @@ Durant la même année, Shah et al.\citep{shah2015timecrunch} ont proposé une a
 
 			 
 			 \begin{itemize}[label=$\circ$]
-			 \item \textbf{Oneshot}: cette signature décrit les sous-structure qui apparaissent dans un seul timestamp ,i.e $|u(s)|=1$. Donc le cout de l'encodage se réduit aux nombre de bits nécessaires pour sauvegarder le timestamp : $L(u(s)) = log(t)$.
+			 \item \textbf{Oneshot}: cette signature décrit les sous-structures qui apparaissent dans un seul timestamp ,i.e $|u(s)|=1$. Donc le cout de l'encodage se réduit aux nombre de bits nécessaires pour sauvegarder le timestamp : $L(u(s)) = log(t)$.
 			 \item \textbf{Ranged}: dans ce cas la sous-structure apparait dans tous les graphes se trouvant entre deux timestamps $t_{debut}$ et $t_{fin}$. Le cout englobe le nombre de timestamps dans lesquels elle apparait ainsi que les identifiants des deux timestamp $t_{debut}$ et $t_{fin}$ : $L(u(s)) = L_{N}(|u(s)|) +log$ ${t}\choose{2}$.
-			 \item \textbf{Periodic}: cette catégorie est une extension   de la précédente avec les timestamps qui sont éloigné de plus d'un pas d'où: $L(p) = L(r)$.
-			 
-			 En effet, la périodicité peut être déduite des marqueurs début et de fin ainsi que du nombre de pas de temps $|u(s)|$, permettant ainsi de reconstruire $u(s)$
+			 \item \textbf{Periodic}: cette catégorie est une extension de la précédente d'où: $L(p) = L(r)$.
+			 En effet, la périodicité peut être déduite des marqueurs début et de fin ainsi que du nombre de pas de temps $|u(s)|$ entre chaque deux timestamps, permettant ainsi de reconstruire $u(s)$
 			 \item \textbf{Flickering}: ce type décrit les structures qui apparaissent dans $n$ timestamps de manière aléatoire. Le coût doit englober donc le nombre de timestamps ainsi que leurs identifiants d'où: 
 			 $L(u(s)) = L_{N}(|u(s)|) +log$ ${t}\choose{|u(s)|}$.
 			 \item \textbf{Constant}: dans ce cas la sous-structure apparait dans tout les timestamps et donc elle ne dépend pas du temps d'où L(c)=0.
 			 \end{itemize} \label{par:TimeCrunch}
 			 
 			 
-			 Nous notons que décrire $u(s)$ est encore un autre problème de sélection de modèle pour lequel les auteurs tirent parti du principe MDL. En effet juste comme pour le codage de la connectivité, il peut ne pas être précis avec une signature temporelle donnée. Toutefois, toute approximation entraînera des coûts supplémentaires pour l'encodage de l'erreur qui englobent dans ce cas l'erreur de l'encodage de la connectivité ainsi que l'erreur de l'encodage de la signature temporelle.
+			 Nous notons que décrire $u(s)$ est encore un autre problème de sélection de modèle pour lequel les auteurs tirent parti du principe MDL. En effet, juste comme pour le codage de la connectivité, il peut ne pas être précis avec une signature temporelle donnée. Toutefois, toute approximation entraînera des coûts supplémentaires pour l'encodage de l'erreur qui englobent dans ce cas l'erreur de l'encodage de la connectivité ainsi que l'erreur de l'encodage de la signature temporelle.
 			 
 			 \begin{algorithm}
 					\caption{TIMECRUNCH}
 				\begin{algorithmic} [1]
-					\STATE \textbf{Génération de sous-structure candidate: }Génération de sous-graphe pour chaque $G_{t_{i}}$ en utilisant un des algorithmes de décomposition de graphe statiques
+					\STATE \textbf{Génération des sous-structures candidates: }Génération de sous-graphes pour chaque $G_{t_{i}}$ en utilisant un des algorithmes de décomposition de graphe statiques.
 					
 					
-					\STATE  \textbf{Étiquetage de sous-structure candidate: }Associer chaque sous-structure à une etiquette $x \in \Omega$ minimisant son MDL.
+					\STATE  \textbf{Étiquetage des sous-structures candidates: }Associer chaque sous-structure à une étiquette $x \in \Omega$ minimisant son MDL.
 					
-					\STATE  \textbf{Assemblage des sous-structures candidates temporelles :} Assembler les sous-structure des graphes $G_{t_{i}}$ pour former des structures temporelles avec un comportement de connectivité cohérente et étiquetez-les conformément en minimisant le coût de codage de la présence temporelle. Enregistrer le jeu de candidats $C_{x} \in C $.
+					\STATE  \textbf{Assemblage des sous-structures candidates temporelles :} Assembler les sous-structure des graphes $G_{t_{i}}$ pour former des structures temporelles avec un comportement de connectivité cohérent et les étiqueter conformément en minimisant le coût de codage de la présence temporelle. Enregistrer le jeu de candidats $C_{x} \in C $.
 					
 					\STATE \textbf{Composition du graphe compressé: }Composition du modèle M d'importantes structures temporelles non redondantes qui résument G à l'aide des méthodes heuristiques VANILLA, TOP-10, TOP-100 et STEPWISE. Choisir M associé à l'heuristique qui génère le coût de codage total le plus faible.
 				\end{algorithmic}

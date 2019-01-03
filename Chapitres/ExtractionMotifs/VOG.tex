@@ -48,7 +48,7 @@ L(\textit{nb}) = $L_{\mathbb{N}}$(|\textit{A}|) + $L_{\mathbb{N}}$(|\textit{B}|)
 %----------------------------------------------------------------
 %----------------------------------------------------------------
 
-\textbf{Étoile :} L'étoile est un cas particulier d'un noyau bipartie. D'abord on calcule la nombre de spokes de l'étoile, ensuite on identifie le hub parmi les n sommets et les spokes parmi les n-1 restants.
+\textbf{Étoile :} L'étoile est un cas particulier d'un noyau bipartie. D'abord on calcule le nombre de spokes de l'étoile, ensuite on identifie le hub parmi les n sommets et les spokes parmi les n-1 restants.
 L(\textit{st}) = $L_{\mathbb{N}}$(|\textit{st}|-1) +  log n + log ${n-1}\choose{|st|-1}$.
 %----------------------------------------------------------------
 %----------------------------------------------------------------
@@ -83,7 +83,7 @@ Pour la recherche du meilleur modèle $ \textit{M} \in \mathcal{M} $ , VoG proc�
 \begin{itemize}[label=$\circ$]
 	\item si tous les sommets d'un sous graphe d'ordre n ont un degré égale à n-1, il s'agit alors d'une clique.
 	\item si tous les sommets ont un degré de 2 sauf deux sommets ayant le degré 1, le  sous-graphe est une chaine.
-	\item si les amplitudes de ses valeurs propres maximales et minimales sont égaux, le sous-graphe est un noyau bipartie où les sommet de chaque nœuds sont identifiés à travers un parcours BFS avec coloration des sommets.
+	\item si les amplitudes de ses valeurs propres maximales et minimales sont égales, le sous-graphe est un noyau bipartie où les sommet de chaque nœuds sont identifiés à travers un parcours BFS avec coloration des sommets.
 	\item  Quant à l'étoile, elle est considérée comme un cas particulier d'un noyau bipartie, il suffit donc que l'un des ensembles soit composé d'un seule sommet.
 \end{itemize}     
 		%----------------------------------------------------
@@ -95,9 +95,9 @@ Pour la recherche du meilleur modèle $ \textit{M} \in \mathcal{M} $ , VoG proc�
  % \textbf{Remarque} : Pour les structure parfaites, en plus du cout d'encodage de la structure, on rajoute le cout de l'erreur local c'est a dire, L($x^{*}$) + L($\textit{E}^{+}_{x^{*}}$) + L($\textit{E}^{-}_{x^{*}}$) où L($x^{*}$) est la description de la structure, L($\textit{E}^{+}_{x^{*}}$) et L($\textit{E}^{-}_{x^{*}}$) sont les arêtes incorrectement modélisés et les arêtes non  modélisés respectivement dans area($x^{*}$).
   
   
-Après avoir représenter le sous graphe sous forme d'une structure, on l'ajoute à l'ensemble des structure candidates $\mathcal{C}$, en l'associant à son cout.
+Après avoir représenter le sous graphe sous forme d'une structure, on l'ajoute à l'ensemble des structures candidates $\mathcal{C}$, en l'associant à son cout.
 
-\item \textbf{Assemblage du modèle }: Dans cette dernière étape, une sélection d'un ensemble de structures parmi ceux de $\mathcal{C}$ est réalisée. Des heuristiques de sélections sont utilisées car le nombre de permutations est très grand ce qui implique des calcules exhaustifs. Les heuristiques permettent d'avoir des résultats approximatives et rapides, parmi les heuristiques utilisées dans VOG on trouve :
+\item \textbf{Assemblage du modèle }: Dans cette dernière étape, une sélection d'un ensemble de structures parmi ceux de $\mathcal{C}$ est réalisée. Des heuristiques de sélections sont utilisées car le nombre de permutations est très grand ce qui implique des calcules exhaustifs. Les heuristiques permettent d'avoir des résultats approximatifs et rapides, parmi les heuristiques utilisées dans VOG on trouve :
 \begin{itemize}
 \item PLAIN : Cette heuristique retourne toutes les structures candidates. e.i. \textit{M}= $\mathcal{C}$.
 \item TOP-K :  Cette heuristique sélectionne les k meilleurs candidats en fonction de leurs gain en bits.

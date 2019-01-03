@@ -29,19 +29,18 @@
 \BOOKMARK [0][-]{chapter.2}{Compression de graphe}{}% 29
 \BOOKMARK [1][-]{section.2.1}{Compression de donn\351es: }{chapter.2}% 30
 \BOOKMARK [1][-]{section.2.2}{Compression appliqu\351e aux graphes:}{chapter.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.1}{Motivations derri\350re la compression de graphes: }{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.2}{Les types de compression:}{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.3}{Les m\351triques d'\351valuation des algorithmes de compression:}{section.2.2}% 34
-\BOOKMARK [2][-]{subsection.2.2.4}{Classification des m\351thodes de compression:}{section.2.2}% 35
-\BOOKMARK [1][-]{section.2.3}{Compression par les K2-Trees}{chapter.2}% 36
-\BOOKMARK [1][-]{section.2.4}{Compression par extraction de motifs}{chapter.2}% 37
-\BOOKMARK [2][-]{subsection.2.4.1}{Compression bas\351e vocabulaire}{section.2.4}% 38
-\BOOKMARK [2][-]{subsection.2.4.2}{Compression bas\351e Agr\351gation des motifs}{section.2.4}% 39
-\BOOKMARK [1][-]{section.2.5}{Bilan g\351n\351rale}{chapter.2}% 40
-\BOOKMARK [0][-]{chapter.3}{Contribution}{}% 41
-\BOOKMARK [1][-]{section.3.1}{Formulation du probl\350me}{chapter.3}% 42
-\BOOKMARK [1][-]{section.3.2}{Principe g\351n\351rale}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.2.1}{Description conceptuelle}{section.3.2}% 44
-\BOOKMARK [2][-]{subsection.3.2.2}{Notre m\351thode : DDSM}{section.3.2}% 45
-\BOOKMARK [1][-]{section.3.3}{Conclusion}{chapter.3}% 46
-\BOOKMARK [0][-]{section.3.3}{Conclusion g\351n\351rale}{}% 47
+\BOOKMARK [2][-]{subsection.2.2.1}{Les types de compression:}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.2}{Les m\351triques d'\351valuation des algorithmes de compression:}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.3}{Classification des m\351thodes de compression:}{section.2.2}% 34
+\BOOKMARK [1][-]{section.2.3}{Compression par les K2-Trees}{chapter.2}% 35
+\BOOKMARK [1][-]{section.2.4}{Compression par extraction de motifs}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.4.1}{Compression bas\351e vocabulaire}{section.2.4}% 37
+\BOOKMARK [2][-]{subsection.2.4.2}{Compression bas\351e Agr\351gation des motifs}{section.2.4}% 38
+\BOOKMARK [1][-]{section.2.5}{Bilan g\351n\351ral}{chapter.2}% 39
+\BOOKMARK [0][-]{chapter.3}{Contribution}{}% 40
+\BOOKMARK [1][-]{section.3.1}{Formulation du probl\350me}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.2}{Principe g\351n\351rale}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.2.1}{Description conceptuelle}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.2}{Notre m\351thode : DDSM}{section.3.2}% 44
+\BOOKMARK [1][-]{section.3.3}{Conclusion}{chapter.3}% 45
+\BOOKMARK [0][-]{section.3.3}{Conclusion g\351n\351rale}{}% 46
