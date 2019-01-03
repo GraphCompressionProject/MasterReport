@@ -1,7 +1,16 @@
-Nous avons étudiés dans ce chapitre deux classes de compression, après avoir balayer les méthodes existantes dans chaque classe, nous allons établir une étude comparative entre ces deux catégories :
+
+Nous avons étudiés dans ce chapitre deux classes de compression de graphes: (i)  Les méthodes de compression par les k2-trees, (ii) Les méthodes de compression par extraction de motifs.
+%\begin{itemize}
+%	\item (i)  Les méthodes de compression par les k2-trees
+%	\item (ii) Les méthodes de compression par extraction de motifs
+%\end{itemize} 
+Nous avons ainsi présenter le principe de fonctionnement des méthodes de compression relatifs à chaque classe tout en comparant entre leurs caractéristiques. 
+
+Cependant une étude comparative entre les deux classes reste primordiale. Dans le tableau \ref{comgen} , nous allons essayer de synthétiser les principaux différences et similitudes entre ces deux classes que nous avons put constater à travers notre recherche bibliographique et qui ont un fort impact sur le choix de la méthode de compression.
+
  
 \begin{table}[H]
-\begin{tabular}{|c|p{6cm}|p{6cm}|}
+\begin{tabular}{|c|p{6cm}|p{4cm}|}
 
 \hline & \begin{center}
 \textbf{$k^2$-trees}
@@ -21,16 +30,16 @@ Nous avons étudiés dans ce chapitre deux classes de compression, après avoir 
   			Réduire l'espace de stockage et le temps de parcours\\
   \end{minipage}
   &
-  \begin{minipage}[t]{0.35\textwidth}
-  			Compression,\\
-  			Réduire l'espace de stockage et le temps de parcours,\\
-  			Extraire les informations pertinentes, \\
-  			Visualisation \\
+  \begin{minipage}[t]{0.25\textwidth}
+  			- Compression,\\
+  			- Réduire l'espace de  stockage et le temps de parcours,\\
+  			- Extraire les informations pertinentes, \\
+  			- Visualisation \\
   \end{minipage}
   \\
   \hline Domaine d'application & tous les domaines & tous les domaines \\
   \hline
 \end{tabular}
-									\caption{Comparaison entre les méthodes basées sur$k^2$-trees et basées sur l'extraction de motifs.}									
+									\caption{Comparaison entre les méthodes basées sur$k^2$-trees et basées sur l'extraction de motifs.}									\label{comgen}
 									
 								\end{table}

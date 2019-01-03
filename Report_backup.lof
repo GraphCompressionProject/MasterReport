@@ -25,5 +25,7 @@
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-trees (1/2)}}{27}{figure.2.14}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-trees (2/2)}}{28}{figure.2.15}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{38}{figure.2.16}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Exemple d'ex\IeC {\'e}cution de SDM}}{43}{figure.2.17}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{41}{figure.2.17}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM.}}{43}{figure.2.18}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple d'ex\IeC {\'e}cution de SDM}}{43}{figure.2.19}
 \addvspace {10\p@ }

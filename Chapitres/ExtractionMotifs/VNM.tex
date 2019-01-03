@@ -27,75 +27,14 @@
 				 
 				\end{enumerate}
 				
-				L'algorithme est appliqué jusqu'à ce que la réduction n'apporte pas un gain significative. La figure \ref{tab:VNM_exm} illustre le principe de fonctionnement de cette méthode sur un exemple.
+				L'algorithme est appliqué jusqu'à ce que la réduction n'apporte pas un gain significative. La figure \ref{VNM_exemple} illustre le principe de fonctionnement de cette méthode sur un exemple.
 				
 				
 			%%%%		Inclure un exemple 
-			
-		\begin{table}[h!]
-			
-		 \begin{flushleft}
-			\begin{tabular}{C{4cm}||C{9cm} }
-				 Phase 01 &  Phase 02 \\
-				 {\renewcommand{\arraystretch}{0.6}
-					\begin{tabular}[b]{R{0.4cm}|L{0.3cm} L{0.3cm} L{0.3cm}}
-				 			id & \(\displaystyle h_{1}\)  & \(\displaystyle h_{2}\) &  \(\displaystyle h_{3}\) \\
-							\hline  13 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-							    	    23 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-								   	43 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-				  					55 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-				  					64 & \cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-				  					102 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-				  					204 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-				  					431 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&\cellcolor{blue!25}12\\
-				  					480 &\cellcolor{blue!25}10&\cellcolor{blue!25}11&2\\
-				  					501 &\cellcolor{blue!25}10&4&1\\
-			\end{tabular}
-				
-				
-				
-				1. Calcul des fonctions de hachage et groupement des sommets			
-			} &
-			{
-				 \begin{multicols}{2}
-					\renewcommand{\arraystretch}{0.6}
- 						 \begin{tabular}{R{0.4cm}|L{3.2cm} }
-				 id &  liens sortants \\\hline
-				  13 & 1 2 3 8\\
-				  23 & 1 2 3 5 6 10 12 15 \\
-				  43 & 1 2 3 5 6 10 22 31\\
-				  55 & 1 2 3 5 \\
-				  64 & 1 2 3 5 6 10 12 15 \\
-				  102 & 1 2 3 20\\
-				  204 & 1 7 8 9\\
-				  431 & 1 2 3 4 5 6 10 22 31\\
-			\end{tabular}
-			
-			
-			2.1 la Liste d'adjacence.
-			\columnbreak
- 				\includegraphics[scale=0.3]{ressources/image/VNM_exemple.png} 
- 			%	2.2 Construction de l'arbre
- 			
-			\end{multicols}
-			\begin{center}
-		\renewcommand{\arraystretch}{0.6}
-		\begin{tabular}{C{1cm} | C{1cm} L{4cm} C{1cm}}
-			taille & freq & Liste des noeuds & Savings\\\hline
-			6&4&43 431 23 64&14\\
-			3&7&23 55 102 64 43 431&11\\
-			8&2&23 64&6\\
-			7&2&43 431&5\\
 		
-				\end{tabular}
-				2.3 Extraction des Motifs
-		\end{center}
-			}
-			
-			\end{tabular}
-		\end{flushleft}
-		\caption{Exemple d'exécution de VNM}
-   			 \label{tab:VNM_exm}
-		\end{table}
 		
-		%\includegraphics[scale=0.5]{ressources/image/VNM_exemple.png}
+			\begin{figure}[!h]
+			\includegraphics[scale=0.3,center]{./ressources/image/VNM_exemple.png}
+			\caption[Exemple d'exécution de VNM.]{Exemple d'exécution de VNM.}
+			\label{VNM_exemple}
+	\end{figure}

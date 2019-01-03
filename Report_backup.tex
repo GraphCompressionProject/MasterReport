@@ -157,7 +157,7 @@ Deux types de méthodes de compression de graphes se sont distingués parmi tous
 				\input{./Chapitres/k2_trees/K2-trees.tex}
 				\input{./Chapitres/k2_trees/SynK2.tex}
 			\section{Compression par extraction de motifs}
-			 Les motifs fréquents sont des connaissances extraites sur des données. Leurs but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils offrent ainsi à l'utilisateur une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante de la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement%%%% verifier ce mot
+			 Les motifs fréquents sont des connaissances extraites sur des données. Leurs but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils lui offrent ainsi une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante dans la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement%%%% verifier ce mot
 			 utilisée dans le domaine de compression des graphes vu qu'elle permet de ne garder que l'information utile et d'éliminer les redondances de manière efficace. En effet, nous trouvons plusieurs méthodes basées sur ce principe où nous pourrons clairement distinguer deux grandes classes: 
 			 (i) les méthodes  de compression basées vocabulaire
 			 (ii) les méthodes  de compression basées Agrégation.
@@ -179,10 +179,10 @@ Deux types de méthodes de compression de graphes se sont distingués parmi tous
 							\input{./Chapitres/ExtractionMotifs/TimeCrunch.tex}
 							\input{./Chapitres/ExtractionMotifs/CanDense.tex}
 							%\input{./Chapitres/ExtractionMotifs/SynNoeudClust.tex}
-			
+			\newpage
 					 \textbf{Basée sur les propriétés de la matrice d'adjacence}
 							
-							Les graphes peuvent avoir différentes représentations. Chacune des structures de données présente des avantages et des inconvénients en ce qui concerne la quantité de mémoire nécessaire pour stocker les données et la facilité d'accès aux données. Selon les besoins, il est parfois utile de stocker les données dans des structures de données plus grandes, qui nécessitent plus d'espace mais offrent un accès efficace aux données. En se basant sur ce constat plusieurs méthodes ont été  proposée dans la littérature pour compresser la matrice d'adjacence en exploitant les propriété des graphes réels pour trouver les motifs les plus fréquent dans cette dernière.
+							Les graphes peuvent avoir différentes représentations. Chacune des structures de données présente des avantages et des inconvénients en ce qui concerne la quantité de mémoire nécessaire pour stocker les données et la facilité d'accès aux données. Selon les besoins, il est parfois utile de stocker les données dans des structures de données plus grandes, qui nécessitent plus d'espace mais offrent un accès efficace aux données. En se basant sur ce constat plusieurs méthodes ont été  proposée dans la littérature pour compresser la matrice d'adjacence en exploitant les propriétés des graphes réels pour trouver les motifs les plus fréquents dans cette dernière.
 							
 							\input{./Chapitres/ExtractionMotifs/intra_inter_mot_mat.tex}
 							\input{./Chapitres/ExtractionMotifs/mot_mat.tex}
@@ -192,9 +192,7 @@ Deux types de méthodes de compression de graphes se sont distingués parmi tous
 				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 				\subsection{Compression basée Agrégation des motifs}
 				
-					Les méthodes de compression par extraction de motifs basées sur l'agrégation sont des méthodes   qui agrègent plusieurs nœuds ou liens d'un motif en un seul nœud ou lien, appelés respectivement super-nœud et super-lien. Le graphe en sortie, dit super-graphe, devient dès lors plus simple et moins offrant ainsi une aisance et une facilité de traitement, d'exploration et de visualisation. 
-					
-					Nous présenterons dans ce qui suit les deux sous-classes de cette classe. 
+					Les méthodes de compression par extraction de motifs basées sur l'agrégation sont des méthodes   qui agrègent plusieurs nœuds ou liens d'un motif en un seul nœud ou lien, appelés respectivement super-nœud et super-lien. Le graphe en sortie, dit super-graphe, devient dès lors plus simple et moins complexe offrant ainsi une aisance et une facilité de traitement, d'exploration et de visualisation. Nous présenterons dans ce qui suit les deux sous-classes de cette classe. 
 					
 					 
 					\subsubsection{Compression basée Agrégation de nœuds}
@@ -350,6 +348,7 @@ Nous allons dans cette partie présenter notre méthode théoriquement : princip
 	
 	Nous nous focaliserons dans le future à implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait nous pourrons établir une comparaison plus objective entre eux.
 
+\pagestyle{plain}
 \newpage
 \bibliography{Bibliographie}
 \bibliographystyle{apalike}

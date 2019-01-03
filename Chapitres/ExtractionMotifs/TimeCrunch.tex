@@ -1,4 +1,4 @@
-Durant la même année, \citep{shah2015timecrunch} ont proposé une autre variation de VoG, TimeCrunch, pour le cas des graphes simples (sans boucles) non orientés dynamiques représentés par un ensemble de graphes associés chacun à timestamp. En d'autres termes, ils considèrent les graphes $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$.
+Durant la même année, Shah et al.\citep{shah2015timecrunch} ont proposé une autre variation de VoG, TimeCrunch, pour le cas des graphes simples (sans boucles) non orientés dynamiques représentés par un ensemble de graphes associés chacun à timestamp. En d'autres termes, ils considèrent les graphes $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$.
 			Un nouveau vocabulaire est proposé pour décrire proprement l'évolution des sous-structures dans le temps. En effet, ils partent du même vocabulaire de structures statiques 
 			%citer les structures Ω = {st,fc,nc,bc,nb,ch}
 			$\Omega =\{ st\ (etoile),\ fc (clique),\ nc (quasi-clique),\ bc (bipartie),\ nb (quasi-bipartie),\ ch (chaine)\}$ 
@@ -13,13 +13,13 @@ Durant la même année, \citep{shah2015timecrunch} ont proposé une autre variat
 			 
 			 \begin{itemize}[label=$\circ$]
 			 \item \textbf{Oneshot}: cette signature décrit les sous-structure qui apparaissent dans un seul timestamp ,i.e $|u(s)|=1$. Donc le cout de l'encodage se réduit aux nombre de bits nécessaires pour sauvegarder le timestamp : $L(u(s)) = log(t)$.
-			 \item \textbf{Ranged}: dans ce cas la sous-structure apparait dans tous les graphes se trouvant entre deux timestamps $t_{1}$ et $t_{2}$. Le cout englobe le nombre de timestamps dans lesquels elle apparait ainsi que les identifiants des deux timestamp $t_{debut}$ et $t_{fin}$ : $L(u(s)) = L_{N}(|u(s)|) +log$ ${t}\choose{2}$.
+			 \item \textbf{Ranged}: dans ce cas la sous-structure apparait dans tous les graphes se trouvant entre deux timestamps $t_{debut}$ et $t_{fin}$. Le cout englobe le nombre de timestamps dans lesquels elle apparait ainsi que les identifiants des deux timestamp $t_{debut}$ et $t_{fin}$ : $L(u(s)) = L_{N}(|u(s)|) +log$ ${t}\choose{2}$.
 			 \item \textbf{Periodic}: cette catégorie est une extension   de la précédente avec les timestamps qui sont éloigné de plus d'un pas d'où: $L(p) = L(r)$.
 			 
 			 En effet, la périodicité peut être déduite des marqueurs début et de fin ainsi que du nombre de pas de temps $|u(s)|$, permettant ainsi de reconstruire $u(s)$
-			 \item \textbf{Flickering}: ce type décrit les structures qui apparaissent dans $n$ timesteps de manière aléatoire. Le cout doit englober donc le nombre de timesteps ainsi que leurs identifiants d'où: 
+			 \item \textbf{Flickering}: ce type décrit les structures qui apparaissent dans $n$ timestamps de manière aléatoire. Le coût doit englober donc le nombre de timestamps ainsi que leurs identifiants d'où: 
 			 $L(u(s)) = L_{N}(|u(s)|) +log$ ${t}\choose{|u(s)|}$.
-			 \item \textbf{Constant}: dans ce cas la sous-structure apparait dans tout les timesteps et donc elle ne dépend pas du temps d'où L(c)=0.
+			 \item \textbf{Constant}: dans ce cas la sous-structure apparait dans tout les timestamps et donc elle ne dépend pas du temps d'où L(c)=0.
 			 \end{itemize} \label{par:TimeCrunch}
 			 
 			 

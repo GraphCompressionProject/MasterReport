@@ -21,6 +21,7 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \providecommand \oddpage@label [2]{}
+\providecommand\tcolorbox@label[2]{}
 \babel@aux{french}{}
 \@writefile{toc}{\contentsline {chapter}{\hbox to\@tempdima {\hfil }Remerciement}{I}{Doc-Start}}
 \@writefile{toc}{\contentsline {chapter}{\hbox to\@tempdima {\hfil }R\IeC {\'e}sum\IeC {\'e}}{II}{Doc-Start}}
@@ -228,9 +229,9 @@
 \citation{alvarez2018compact}
 \@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par $k^2$-trees.}}{30}{table.2.2}}
 \citation{karypis2000multilevel}
+\citation{hespanha2004efficient}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{31}{section.2.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{31}{subsection.2.4.1}}
-\citation{hespanha2004efficient}
 \citation{blondel2008fast}
 \citation{kang2011beyond}
 \citation{yang2013overlapping}
@@ -240,8 +241,8 @@
 \newlabel{tab:clusteringMethode}{{2.3}{33}{Tableau comparative entre les méthodes de clustering avec n = nombre de nœuds, m = nombre d'arêtes, k = nombre de clusters, t = nombre d'itérations, d = degré moyen de nœuds, h($m_{h}$) = nombre de nœuds (arêtes) dans la structure hyperbolique}{table.2.3}{}}
 \citation{koutra2015summarizing}
 \citation{liu2015empirical}
-\newlabel{eq:Lo}{{2.1}{35}{Compression basée vocabulaire}{equation.2.4.1}{}}
 \citation{shah2015timecrunch}
+\newlabel{eq:Lo}{{2.1}{36}{Compression basée vocabulaire}{equation.2.4.1}{}}
 \citation{liu2018reducing}
 \citation{liu2015empirical}
 \newlabel{par:TimeCrunch}{{2.4.1}{37}{Compression basée vocabulaire}{equation.2.4.1}{}}
@@ -251,9 +252,9 @@
 \citation{shah2018graph}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep  {asano2008efficient}}}{38}{figure.2.16}}
 \newlabel{interIntra}{{2.16}{38}{Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}{figure.2.16}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{38}{subsection.2.4.2}}
 \citation{ketkar2005subdue}
 \citation{rossi2018graphzip}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{39}{subsection.2.4.2}}
 \@writefile{toc}{\contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{39}{section*.9}}
 \@writefile{toc}{\contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{39}{section*.10}}
 \citation{claude2010fast}
@@ -265,13 +266,15 @@
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Approximate Re-pair}}{40}{algorithm.2}}
 \newlabel{alg:re_pair}{{2}{40}{Compression basée agrégation de liens}{algorithm.2}{}}
 \citation{buehrer2008scalable}
-\newlabel{eqcompperf}{{2.2}{41}{Compression basée agrégation de liens}{equation.2.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{41}{figure.2.17}}
+\newlabel{gRepair}{{2.17}{41}{Exemple d'exécution de gRepair sur G}{figure.2.17}{}}
+\newlabel{eqcompperf}{{2.2}{42}{Compression basée agrégation de liens}{equation.2.4.2}{}}
 \citation{hernandez2014compressed}
 \citation{brisaboa2009k}
-\@writefile{lot}{\contentsline {table}{\numberline {2.4}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM}}{42}{table.2.4}}
-\newlabel{tab:VNM_exm}{{2.4}{42}{Exemple d'exécution de VNM}{table.2.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces Exemple d'ex\IeC {\'e}cution de SDM}}{43}{figure.2.17}}
-\newlabel{SDM}{{2.17}{43}{Exemple d'exécution de SDM}{figure.2.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM.}}{43}{figure.2.18}}
+\newlabel{VNM_exemple}{{2.18}{43}{Exemple d'exécution de VNM}{figure.2.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple d'ex\IeC {\'e}cution de SDM}}{43}{figure.2.19}}
+\newlabel{SDM}{{2.19}{43}{Exemple d'exécution de SDM}{figure.2.19}{}}
 \citation{koutra2015summarizing}
 \citation{liu2015empirical}
 \citation{shah2015timecrunch}
@@ -285,33 +288,34 @@
 \citation{maneth2018grammar}
 \citation{buehrer2008scalable}
 \citation{hernandez2014compressed}
-\@writefile{lot}{\contentsline {table}{\numberline {2.5}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs.}}{44}{table.2.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}rale}{45}{section.2.5}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.6}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes bas\IeC {\'e}es sur$k^2$-trees et bas\IeC {\'e}es sur l'extraction de motifs.}}{45}{table.2.6}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.4}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs.}}{45}{table.2.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}rale}{46}{section.2.5}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.5}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes bas\IeC {\'e}es sur$k^2$-trees et bas\IeC {\'e}es sur l'extraction de motifs.}}{46}{table.2.5}}
+\newlabel{comgen}{{2.5}{46}{Comparaison entre les méthodes basées sur$k^2$-trees et basées sur l'extraction de motifs}{table.2.5}{}}
 \citation{hernandez2014compressed}
 \citation{shah2015timecrunch}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Contribution}{46}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Contribution}{47}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \citation{hernandez2014compressed}
 \citation{hernandez2014compressed}
 \citation{hernandez2014compressed}
 \citation{hernandez2014compressed}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Formulation du probl\IeC {\`e}me}{47}{section.3.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Principe g\IeC {\'e}n\IeC {\'e}rale}{47}{section.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Description conceptuelle}{47}{subsection.3.2.1}}
 \citation{hernandez2014compressed}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Formulation du probl\IeC {\`e}me}{48}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Principe g\IeC {\'e}n\IeC {\'e}rale}{48}{section.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Description conceptuelle}{48}{subsection.3.2.1}}
 \citation{hernandez2014compressed}
 \citation{shah2015timecrunch}
-\newlabel{tab:signtmp}{{3.2.1}{48}{Description conceptuelle}{subsection.3.2.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces \relax \fontsize  {10.95}{13.6}\selectfont  \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Les types de signatures temporelles et leurs repr\IeC {\'e}sentations, $t_{i}$ repr\IeC {\'e}sentent les timestamps et T repr\IeC {\'e}sente la p\IeC {\'e}riode.}}}{48}{table.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Notre m\IeC {\'e}thode : DDSM}{48}{subsection.3.2.2}}
 \citation{hernandez2014compressed}
+\newlabel{tab:signtmp}{{3.2.1}{49}{Description conceptuelle}{subsection.3.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces \relax \fontsize  {10.95}{13.6}\selectfont  \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Les types de signatures temporelles et leurs repr\IeC {\'e}sentations, $t_{i}$ repr\IeC {\'e}sentent les timestamps et T repr\IeC {\'e}sente la p\IeC {\'e}riode.}}}{49}{table.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Notre m\IeC {\'e}thode : DDSM}{49}{subsection.3.2.2}}
 \newlabel{alg:DDSM}{{3.2.2}{49}{Notre méthode : DDSM}{subsection.3.2.2}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces DDSM}}{49}{algorithm.3}}
 \newlabel{Pseudo Algorithme de la m\IeC {\'e}thode propos\IeC {\'e}e (DDSM)}{{3}{49}{Notre méthode : DDSM}{algorithm.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Conclusion}{49}{section.3.3}}
-\@writefile{toc}{\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{50}{section.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Conclusion}{50}{section.3.3}}
+\@writefile{toc}{\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{51}{section.3.3}}
 \bibdata{Bibliographie}
 \bibcite{IUTLyonInformatique}{{1}{2012}{{IUT}}{{}}}
 \bibcite{alvarez2017succinct}{{2}{2017}{{Alvarez-Garcia et~al.}}{{}}}
