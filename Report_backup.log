@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.22)  3 JAN 2019 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.22)  3 JAN 2019 23:57
 entering extended mode
 **./Report_backup.tex
 (Report_backup.tex
@@ -2074,8 +2074,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
  (Report_backup.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
-Package rerunfilecheck Info: File `Report_backup.out' has not changed.
-(rerunfilecheck)             Checksum: F035F5BD79044D71DF17ED05159BC6B4;3436.
+
+
+Package rerunfilecheck Warning: File `Report_backup.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report_backup.out':
+(rerunfilecheck)             Before: F035F5BD79044D71DF17ED05159BC6B4;3436
+(rerunfilecheck)             After:  FDCDCEB1E51517B6C54968E88A148F2E;3435.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 356.
  ) 
 Here is how much of TeX's memory you used:

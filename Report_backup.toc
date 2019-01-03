@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{45}{section.2.5}
 \contentsline {chapter}{\numberline {3}Contribution}{46}{chapter.3}
 \contentsline {section}{\numberline {3.1}Formulation du probl\IeC {\`e}me}{47}{section.3.1}
-\contentsline {section}{\numberline {3.2}Principe g\IeC {\'e}n\IeC {\'e}rale}{47}{section.3.2}
+\contentsline {section}{\numberline {3.2}Principe g\IeC {\'e}n\IeC {\'e}ral}{47}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Description conceptuelle}{47}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Notre m\IeC {\'e}thode : DDSM}{48}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Conclusion}{49}{section.3.3}
