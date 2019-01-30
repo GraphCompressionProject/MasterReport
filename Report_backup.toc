@@ -21,10 +21,10 @@
 \contentsline {section}{\numberline {1.6}Repr\IeC {\'e}sentation Structurelle d'un graphe}{7}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Matrice d'adjacence}{7}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Matrice d'incidence}{8}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Liste d'adjacence}{9}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.3}Liste d'adjacence}{8}{subsection.1.6.3}
 \contentsline {section}{\numberline {1.7}Les domaines d'application}{9}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}Graphes des r\IeC {\'e}seaux sociaux:}{9}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}Graphes en Bioinformatique:}{10}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.2}Graphes en Bioinformatique:}{9}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}Le Graphe du web:}{10}{subsection.1.7.3}
 \contentsline {section}{\numberline {1.8}Conclusion}{10}{section.1.8}
 \contentsline {chapter}{\numberline {2}Compression de graphe}{11}{chapter.2}
@@ -38,10 +38,10 @@
 \contentsline {subsubsection}{Le ratio de compression:}{13}{section*.7}
 \contentsline {subsubsection}{Le taux de compression:}{13}{section*.8}
 \contentsline {subsection}{\numberline {2.2.3}Classification des m\IeC {\'e}thodes de compression:}{14}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Compression par les K2-Trees}{16}{section.2.3}
+\contentsline {section}{\numberline {2.3}Compression par les K2-Trees}{15}{section.2.3}
 \contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{31}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{31}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{39}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e Agr\IeC {\'e}gation des motifs}{38}{subsection.2.4.2}
 \contentsline {subsubsection}{Compression bas\IeC {\'e}e Agr\IeC {\'e}gation de n\IeC {\oe }uds}{39}{section*.9}
 \contentsline {subsubsection}{Compression bas\IeC {\'e}e agr\IeC {\'e}gation de liens}{39}{section*.10}
 \contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{45}{section.2.5}
