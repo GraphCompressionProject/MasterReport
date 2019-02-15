@@ -1,13 +1,13 @@
 Bien que la représentation graphique soit un moyen pratique pour définir un graphe, elle n'est clairement pas adaptée ni au stockage du graphe dans une mémoire, ni à son traitement. Pour cela, plusieurs structures de données ont été utilisées pour représenter un graphe, ces structures varient selon l’usage du graphe et la nature des traitements appliqués. Nous allons présenter dans cette partie les structures les plus utilisées.
 
-Soit un graphe G(V,E) d'ordre n et de taille m dont les sommets $\textit{v}_{1}$, $\textit{v}_{2}$,..., $\textit{v}_{n}$ et les arêtes (ou arcs) $\textit{e}_{1}$, $\textit{e}_{2}$,..., $\textit{e}_{m}$ sont ordonnés de 1 à n et de 1 à m respectivement.
+Soit un graphe G(V , E) d'ordre n et de taille m dont les sommets $\textit{v}_{1}$, $\textit{v}_{2}$,..., $\textit{v}_{n}$ et les arêtes (ou arcs) $\textit{e}_{1}$, $\textit{e}_{2}$,..., $\textit{e}_{m}$ sont ordonnés de 1 à n et de 1 à m respectivement.
 		
 		
 
 		
 			\subsection{Matrice d'adjacence}
 			
-				La matrice d’adjacence de G est une matrice booléenne 					carré d’ordre n : ${({m}_{ij})}_{(i,j) \in {[0;n]}^{2}}$,  dont les 					lignes (i) et les colons (j)  représentent les sommets de G. Les entrées (ij) prennent une valeur de "1" s’il existe un 				arc (une arête dans le cas d'un graph non orienté) allant du 			sommet i au sommet j et un "0" sinon, i.e \citep{lehman2010mathematics} \citep{mathieu} \citep{IUTLyonInformatique} :
+				La matrice d’adjacence de G est une matrice booléenne 					carrée d’ordre n : ${({m}_{ij})}_{(i,j) \in {[0;n]}^{2}}$,  dont les 					lignes (i) et les colonnes (j)  représentent les sommets de G. Les entrées (ij) prennent une valeur de "1" s’il existe un 				arc (une arête dans le cas d'un graphe non orienté) allant du 			sommet i au sommet j et un "0" sinon, i.e, \citep{lehman2010mathematics} \citep{mathieu} \citep{IUTLyonInformatique} :
 			\[{m}_{ij} :=
 			\left\{
 			\begin{array}{r c l}
@@ -17,7 +17,7 @@ Soit un graphe G(V,E) d'ordre n et de taille m dont les sommets $\textit{v}_{1}$
 			\right.
 			\]
 			\\
-			Dans le cas d’un graphe non orienté, la matrice est 						symétrique par rapport à la première diagonale, i.e. ${m}_{ij}$ = ${m}_{ji}$, dans ce cas le 						graphe peut être représenter avec  la composante 							triangulaire supérieure de la matrice d'adjacence \citep{muller}.\\
+			Dans le cas d’un graphe non orienté, la matrice est 						symétrique par rapport à la première diagonale, i.e, ${m}_{ij}$ = ${m}_{ji}$. Dans ce cas le, 						graphe peut être représenter avec  la composante 							triangulaire supérieure de la matrice d'adjacence \citep{muller}.\\
 			\textbf{Note :} \begin{itemize} 
 			\item Cette représentation est valide pour le cas 					d'un graphe non orienté et orienté.
 			\item Dans le cas d'un graphe pondéré, les "1" sont remplacés par les poids des arêtes (ou arcs) \citep{lopez2003cours}.
@@ -42,7 +42,7 @@ Soit un graphe G(V,E) d'ordre n et de taille m dont les sommets $\textit{v}_{1}$
 	\end{minipage} 
 \end{figure} 
 
-\textbf{Place occupé en mémoire :} ${n}^{2}$ pour un graphe d'ordre n \citep{lopez2003cours}.			
+\textbf{Place occupé en mémoire :} ${n}^{2}$ pour un graphe d'ordre $|n|$ \citep{lopez2003cours}.			
 			\subsection{Matrice d'incidence}
 			La matrice d'incidence d'un graphe orienté  G est une matrice de taille $n \times m$  dont les lignes représentent les sommets (i $\in$ V) et les colonnes représentent les arcs (j $\in$ E) et dont les coefficients (${m}_{ij}$) sont dans \{-1, 0, 1\}, tel que \citep{hennecart2012elements} \citep{mathieu} :
 			\[{m}_{ij} :=
@@ -88,8 +88,8 @@ Pour un graphe non orienté, les coefficients (${m}_{ij}$) de la matrice sont da
 \textbf{Place occupé en mémoire :} $n \times m$
 		
 		\subsection{Liste d'adjacence}
-			La liste d'adjacence d'un graphe G est un tableau de n listes, où chaque entrée (i) du tableau correspond a un sommet et comporte la liste T[i] des successeurs (ou prédécesseur) de ce sommet, c'est à dire tous les sommets j tel que (i,j) $\in$ E \citep{mathieu}.\\
-Dans le cas d'un graphe non orienté on aura : j $\in$ la liste T[i]  $\iff$ i $\in$ la liste T[j] \citep{IUTLyonInformatique}.
+			La liste d'adjacence d'un graphe G est un tableau de $|n|$ listes, où chaque entrée (i) du tableau correspond à un sommet et comporte la liste T[i] des successeurs (ou prédécesseur) de ce sommet, c'est à dire tous les sommets j tel que (i,j) $\in$ E \citep{mathieu}.\\
+Dans le cas d'un graphe non orienté, on aura : j $\in$ la liste T[i]  $\iff$ i $\in$ la liste T[j] \citep{IUTLyonInformatique}.
 
 \textbf{Exemple :} La figure \ref{listeAdjac} représente 					un exemple d'une liste d'adjacence pour le graphe G ci-contre 			(figure \ref{grapAdjac2}) :
 			
@@ -111,4 +111,4 @@ Dans le cas d'un graphe non orienté on aura : j $\in$ la liste T[i]  $\iff$ i $
 \end{figure}
 
 
-\textbf{Place occupé en mémoire :} Dans le cas orienté l'espace est de n + m. Dans le cas non orienté, l'espace est de n + 2m car une arête est représenté deux fois.
+\textbf{Place occupé en mémoire :} Dans le cas orienté, l'espace occupé par le graphe est de n + m. Dans le cas non orienté, l'espace est de n + 2m car une arête est représenté deux fois.

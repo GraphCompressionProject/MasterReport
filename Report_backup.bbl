@@ -345,8 +345,13 @@ Uthayakumar, J., Vengattaraman, T., and Dhavachelvan, P. (2018).
 
 \bibitem[W.~GUERMAH, 2018]{master2017}
 W.~GUERMAH, T.~B. (2018).
-\newblock {\em Compression de Graphes : étude et classification}.
+\newblock {\em Compression de Graphes : {\'e}tude et classification}.
 \newblock PhD thesis, Esi.
+
+\bibitem[Wang et~al., 2019]{wang2019study}
+Wang, H., Yang, Y., Liu, B., and Fujita, H. (2019).
+\newblock A study of graph-based system for multi-view clustering.
+\newblock {\em Knowledge-Based Systems}, 163:1009--1019.
 
 \bibitem[Yang and Leskovec, 2013]{yang2013overlapping}
 Yang, J. and Leskovec, J. (2013).

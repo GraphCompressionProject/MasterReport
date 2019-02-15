@@ -42,7 +42,6 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \lhead{\textbf{Chapitre \thechapter}}
 \fancyhead[R]{\rightmark}
-
 %--------------------------- Sommaire ----------------------------%
 \usepackage{hyperref}
 \usepackage{amssymb}
@@ -63,6 +62,7 @@
 %\usepackage{arabtex}
 \usepackage[most]{tcolorbox}
 
+
 \tcbset{
     frame code={}
     center title,
@@ -77,6 +77,11 @@
     boxsep=5pt,
     arc=0pt,outer arc=0pt,
     }
+% Load the package with the acronym option
+\usepackage[acronym]{glossaries}
+ 
+% Generate the glossary
+\makeglossaries
 
 \begin{document}
 
@@ -91,8 +96,11 @@
 \input{./abstract.tex}
 
 %Sommaire (Table des matières)							Obligatoire
+\pagestyle{plain}
 \tableofcontents
 \newpage
+
+
 
 %Liste des figures										Selon besoin
 \listoffigures
@@ -103,40 +111,65 @@
 
 \listoftables
 \addcontentsline{toc}{chapter}{\numberline{}Liste des tableaux}
+%\cleardoublepage
+
+
+
+\printglossaries
+
+
+
 \cleardoublepage
 
 %Introduction (début de la pagination)					bligatoire
 
 \pagenumbering{arabic}
 
-
+	\thispagestyle{plain}
 		\Huge{ 
 			\textbf {Introduction générale}} \\[0.5in]
 			\addcontentsline{toc}{chapter}{\numberline{}Introduction générale}
 			\normalsize
-			Avec l'énorme quantité de données produites par les activités humaines de nos jours, le problème de données massives (Big data) est devenu un enjeu essentiel. Un des outils les plus efficaces pour traiter ces données est l'utilisation de graphes. Les graphes sont des outils de modélisation utilisés dans beaucoup de domaines pour la représentation des données : réseaux sociaux et de communication (entités reliées entre elles par des liens physiques ou communautaires), chimie (relations entre les atomes), biologie (interactions entre protéines par exemple), etc.\\
+			Avec l'énorme quantité de données produites par les activités humaines de nos jours, le problème de données massives (Big data) est devenu un enjeu essentiel. Un des outils les plus efficaces pour traiter ces données est l'utilisation des graphes. Les graphes sont des outils de modélisation utilisés dans beaucoup de domaines pour la représentation des données : réseaux sociaux et de communication (entités reliées entre elles par des liens physiques ou communautaires), chimie (relations entre les atomes), biologie (interactions entre protéines par exemple), ..., etc.\\
 			
-Il y a plusieurs solutions pour contrer le volume de données mais nous nous intéressons à une solution aussi vieille que la discipline de traitement de données mais qui connait de nouveaux défis de nos jours : la compression.\\
+Il y a plusieurs solutions pour contrer le volume de données mais nous nous intéressons à une solution aussi vieille que la discipline de traitement de données elle-même mais qui connait de nouveaux défis de nos jours : la compression.\\
 
 La compression de graphes est un domaine dans lequel le graphe initial subit des transformations pour en obtenir une version plus réduite. Différentes techniques permettent cette compression, avec ou sans perte d'information, et génèrent de nouveaux graphes sur lesquels il est intéressant d'effectuer les différents traitements.\\ 
 
-Deux types de méthodes de compression de graphes se sont distingués parmi tous les autres types de méthodes: les k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitement. Nous présenterons dans ce travail une synthèse bibliographique sur les différentes méthodes de compression dérivant de ces deux grandes classes.	\\
+Deux types de méthodes de compression de graphes se sont distinguées parmi tout les autres types de méthodes : les méthodes de compression en utilisant les k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitement. Nous présenterons dans ce travail une synthèse bibliographique sur les différentes méthodes de compression dérivant de ces deux grandes classes.	\\
 		
 			
-			 Nous avons hiérarchisé notre mémoire en trois grands chapitres. Le premier est une introduction au domaine de la théorie des graphes incluant ainsi les notions fondamentales de ce domaine, les types de graphes, leurs représentations structurelles et leurs domaines d'application. Dans le second chapitre, nous introduisons les définitions de base du domaine de compression de données appliqué aux graphes à savoir: les motivations, les types de compression et les métriques d'évaluation. Enfin, nous présenterons les classifications des méthodes existantes de compression de graphe ainsi que la classification que nous proposons. Nous mettrons l'accent après sur les deux classes de méthodes qui forment la problématique de notre sujet de Master: la compression par extraction de motifs et la compression par les k2-trees. Dans le troisième chapitre nous présenterons une nouvelle méthode de compression que nous proposons.
+			 Nous avons hiérarchisé notre mémoire en trois grands chapitres. Le premier est une introduction au domaine de la théorie des graphes incluant ainsi les notions fondamentales de ce domaine, les types de graphes, leurs représentations structurelles et leurs domaines d'application. Dans le second chapitre, nous introduisons les définitions de base du domaine de compression de données appliqué aux graphes à savoir : les motivations, les types de compression et les métriques d'évaluation. Enfin, nous présenterons les classifications des méthodes existantes de compression de graphe ainsi que la classification que nous proposons. Nous mettrons l'accent après sur les deux classes de méthodes qui forment la problématique de notre sujet de Master : la compression par extraction de motifs et la compression par les k2-trees. Dans le troisième chapitre nous présenterons une nouvelle méthode de compression que nous proposons.
 	
-
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf[lef,rof]{\thepage}%
+}
+\renewcommand{\headrulewidth}{0.4pt}
+\lhead{\textbf{Chapitre \thechapter}}
+\fancyhead[R]{\rightmark}
 
 
 %---->chapitre 01 :« cadrage du projet »
 	\chapter{ Théorie des graphes}
+	%%Ajouter une petite introduction pour ce chapitre
 	  \input{./Chapitres/TheorieDesGraphes/TheorieDesGraphes.tex}
 	
 
 %---->chapitre 02 :« »
-	\chapter{Compression de graphe}
+	\chapter{Compression de graphes}
+	La puissance des processeurs, de nos jours, augmente plus vite que les capacités de stockage ce qui engendre un déséquilibre entre le volume des données qu’il est possible de
+traiter et de stocker. Dès lors, la réduction de la taille des données, plus formellement la compression de données, a été un domaine de recherche très active. 
 		
-		\section{Compression de données: }
+		 Dans ce chapitre, nous allons
+ouvrir un champ de réflexion en introduisant tout d’abord le domaine de compression des données et son application dans la théorie des graphes. Puis dans un second
+temps, nous allons présenter une étude bibliographique sur les méthodes de compression existantes aujourd’hui et qui s'inscrivent dans l'une des deux classes de méthodes de compression: les méthodes de compression par les k2-trees et les méthodes de compression par extraction de motifs, pour finir avec une étude comparative entre elles.
+	
+		
+		\section{Compression de données :}
+		
 			\input{./Chapitres/CompressionDesGraphes/datacompression.tex}
 		
 		\section{Compression appliquée aux graphes:}
@@ -153,25 +186,25 @@ Deux types de méthodes de compression de graphes se sont distingués parmi tous
 			\subsection{Classification des méthodes de compression:}
 				\input{./Chapitres/CompressionDesGraphes/classification.tex}
 				
-			\section{Compression par les K2-Trees}
+			\section{Compression par les arbres $K^2$-Trees}
 				\input{./Chapitres/k2_trees/K2-trees.tex}
 				\input{./Chapitres/k2_trees/SynK2.tex}
 			\section{Compression par extraction de motifs}
-			 Les motifs fréquents sont des connaissances extraites sur des données. Leurs but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils lui offrent ainsi une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante dans la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement%%%% verifier ce mot
-			 utilisée dans le domaine de compression des graphes vu qu'elle permet de ne garder que l'information utile et d'éliminer les redondances de manière efficace. En effet, nous trouvons plusieurs méthodes basées sur ce principe où nous pourrons clairement distinguer deux grandes classes: 
-			 (i) les méthodes  de compression basées vocabulaire
-			 (ii) les méthodes  de compression basées Agrégation.
+			 Les motifs fréquents sont des connaissances extraites sur des données. Leur but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils lui offrent ainsi une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante dans la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement %%%% verifier ce mot
+			 utilisée dans le domaine de compression des graphes vu qu'elle permet de ne garder que l'information utile et d'éliminer les redondances de manière efficace. En effet, nous trouvons plusieurs méthodes basées sur ce principe où nous pourrons clairement distinguer deux grandes classes : 
+			 (i) les méthodes de compression basées vocabulaire
+			 (ii) les méthodes de compression basées Agrégation.
 			 
-				Dans cette section, nous allons expliquer le principe de base de chaque classe où nous allons subdiviser chacune  en plusieurs sous-classes en se basant sur ce dernier. 
+				Dans cette section, nous allons expliquer le principe de base de chaque classe où nous allons subdiviser chacune en plusieurs sous-classes en se basant sur ce dernier. 
 				%%% a revoir le dernier paragraphe
 			 
 				\subsection{Compression basée vocabulaire}
-				Les méthodes de compression par extraction de motifs basées vocabulaire sont des méthodes qui ont attirées l'attention des chercheurs ces dernières années car elles permettent une meilleur compréhension du graphe. Elles partent toujours d'un ensemble de structures prédéfinies qui ont été prouvées fréquentes dans les graphes réels. Deux sous classes de cette dernières peuvent être identifier:
+				Les méthodes de compression par extraction de motifs basées vocabulaire sont des méthodes qui ont attirées l'attention des chercheurs ces dernières années car elles permettent une meilleure compréhension du graphe. Elles partent toujours d'un ensemble de structures prédéfinies qui ont été prouvées fréquentes dans les graphes réels. Deux sous classes de cette dernières peuvent être identifiées :
 				 
-					 \textbf{Basées sur des méthodes de clustering}
+					 \textbf{Les Méthodes basées sur des techniques de clustering}
 							
-							Les méthodes de cette classe s'appuient sur le fait qu'on ne peut pas comprendre facilement les graphes denses, alors que quelques structures simples sont beaucoup plus faciles à comprendre et souvent très utiles pour analyser le graphe. Elles se basent sur des algorithmes de détection de communauté. 
-							La question suivante peut alors se poser: pourquoi ne pas appliquer l'un des nombreux algorithmes de détection de communauté ou de partitionnement de graphe pour compresser le graphe en termes de communautés? La réponse est que ces algorithmes ne servent pas tout à fait le même objectif que la compression. Généralement, ils détectent de nombreuses communautés sans ordre explicite, de sorte qu'une procédure de sélection des sous-graphes les plus «importants» est toujours nécessaire. En plus de cela, ces méthodes renvoient simplement les communautés découvertes, sans les caractériser (par exemple, clique, étoile) et ne permettent donc pas à l'utilisateur de mieux comprendre les propriétés du graphe. 
+							Les méthodes de cette classe s'appuient sur le fait qu'on ne peut pas comprendre facilement les graphes denses, alors que quelques structures simples sont beaucoup plus faciles à comprendre et souvent très utiles pour analyser le graphe. Elles se basent sur des algorithmes de détection de communautés. 
+							La question suivante peut alors se poser: pourquoi ne pas appliquer l'un des nombreux algorithmes de détection de communautés ou de partitionnement de graphes pour compresser le graphe en termes de communautés? La réponse est que ces algorithmes ne servent pas tout à fait le même objectif que la compression. Généralement, ils détectent de nombreuses communautés sans ordre explicite, de sorte qu'une procédure de sélection des sous-graphes les plus «importants» est toujours nécessaire. En plus de cela, ces méthodes renvoient simplement les communautés découvertes, sans les caractériser (par exemple, clique, étoile) et ne permettent donc pas à l'utilisateur de mieux comprendre les propriétés du graphe. 
 							
 							\input{./Chapitres/ExtractionMotifs/EM.tex}
 							\input{./Chapitres/ExtractionMotifs/VOG.tex}
@@ -180,7 +213,7 @@ Deux types de méthodes de compression de graphes se sont distingués parmi tous
 							\input{./Chapitres/ExtractionMotifs/CanDense.tex}
 							%\input{./Chapitres/ExtractionMotifs/SynNoeudClust.tex}
 			\newpage
-					 \textbf{Basée sur les propriétés de la matrice d'adjacence}
+					 \textbf{Les méthodes basées sur les propriétés de la matrice d'adjacence}
 							
 							Les graphes peuvent avoir différentes représentations. Chacune des structures de données présente des avantages et des inconvénients en ce qui concerne la quantité de mémoire nécessaire pour stocker les données et la facilité d'accès aux données. Selon les besoins, il est parfois utile de stocker les données dans des structures de données plus grandes, qui nécessitent plus d'espace mais offrent un accès efficace aux données. En se basant sur ce constat plusieurs méthodes ont été  proposées dans la littérature pour compresser la matrice d'adjacence en exploitant les propriétés des graphes réels pour trouver les motifs les plus fréquents dans cette dernière.
 							
@@ -190,26 +223,28 @@ Deux types de méthodes de compression de graphes se sont distingués parmi tous
 					
 				
 				%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-				\subsection{Compression basée Agrégation des motifs}
+				\subsection{Compression basée sur l'agrégation des motifs}
 				
-					Les méthodes de compression par extraction de motifs basées sur l'agrégation sont des méthodes   qui agrègent plusieurs nœuds ou liens d'un motif en un seul nœud ou lien, appelés respectivement super-nœud et super-lien. Le graphe en sortie, dit super-graphe, devient dès lors plus simple et moins complexe offrant ainsi une aisance et une facilité de traitement, d'exploration et de visualisation. Nous présenterons dans ce qui suit les deux sous-classes de cette classe. 
+					Les méthodes de compression par extraction de motifs basées sur l'agrégation sont des méthodes   qui agrègent plusieurs nœuds ou liens d'un motif en un seul nœud, appelé super-nœud. Le graphe en sortie, dit super-graphe, devient dès lors plus simple et moins complexe offrant ainsi une aisance et une facilité de traitement, d'exploration et de visualisation. Nous présenterons dans ce qui suit les deux sous-classes de cette classe qui se distinguent selon que l'agrégation concerne les nœuds ou les liens.
 					
-										 
-					\subsubsection{Compression basée Agrégation de nœuds}
+					\begin{enumerate}[label=\alph*.]
+				
+					
+					\item \subsubsection{Les méthodes de compression basées l'agrégation de nœuds}
 					
 					Les techniques de compression basées sur l'agrégation des nœuds des motifs sont des méthodes qui ont existé depuis plusieurs décennies offrant plusieurs avantages. 
-					Elles visent à résumer le graphe initial en agrégeant les nœuds des motifs découvert dans le but de diminuer le nombre de nœuds existants  et d'offrir une meilleur visibilité et analyse du graphe. 
+					Elles visent à résumer le graphe initial en agrégeant les nœuds des motifs découvert dans le but de diminuer le nombre de nœuds existants  et d'offrir une meilleure visibilité et analyse du graphe. 
 						
-						\input{./Chapitres/ExtractionMotifs/SubDue.tex}
+						\input{./Chapitres/ExtractionMotifs/SubDue.tex}\\
 						\input{./Chapitres/ExtractionMotifs/GraphZip.tex}
 					%	\input{./Chapitres/ExtractionMotifs/SynAgrNoeud.tex}
+					
+					\item \subsubsection{Les méthodes de compression basées sur l'agrégation de liens}
+						Les méthodes de compression par extraction de motifs basées sur l'agrégation de liens sont parmi les méthode les plus populaires. Leur objectif est de produire un graphe compressé à partir du graphe initial en remplaçant les liens denses du graphe par un nouveau super-nœud. Elles se divisent selon le principe en deux grandes classes: celles utilisant les règles de grammaire et celles utilisant des heuristiques de clustering. Nous détaillerons dans ce qui suit ces deux classes.
 						
-					\subsubsection{Compression basée agrégation de liens}
-						Les méthodes de compression par extraction de motifs basées agrégation de liens sont parmi les méthode les plus populaires. Leur objectif est de produire un graphe compressé à partir du graphe initial en remplaçant les liens denses du graphe par un nouveau super-nœud ou une nouvelle super-arêtes. Elle se divise selon le principe en deux grandes classes: celles utilisant les règles de grammaire et celles utilisant des méthode de clustering. Nous détaillerons dans ce qui suit ces deux classes et nous conclurons par une synthèse sur les méthodes de chaque classe.
-						
-						 \textbf{Basées sur les règles de grammaire} 
-								
-								La classe des méthodes de compression basées sur les règles de grammaire est une généralisation d'une méthode de compression des dictionnaires s'intitulant Re-pair. Son principe de base consiste en la  recherche, à chaque itération, de la paire de symboles la plus fréquente dans une séquence de caractères et de la remplacer par un nouveau symbole, jusqu'à ce qu'il ne soit plus commode de les remplacer. Nous notons que dans ce cas le motif est sous forme de deux arêtes ayant un sommet en commun, nommé \textit{digraph}.
+						\begin{enumerate}[label*=\arabic*.]
+							\item \textbf{Les méthodes de compression basées sur les règles de grammaire}
+							La classe des méthodes de compression basées sur les règles de grammaire est une généralisation d'une méthode de compression des dictionnaires s'intitulant Re-pair. Son principe de base consiste en la  recherche, à chaque itération, de la paire de symboles la plus fréquente dans une séquence de caractères et de la remplacer par un nouveau symbole, jusqu'à ce qu'il ne soit plus commode de les remplacer. Nous notons que dans ce cas le motif est sous forme de deux arêtes ayant un sommet en commun, nommé \textit{digraph}.
 								
 								\input{./Chapitres/ExtractionMotifs/appRep.tex}
 								 %%%%exemple ???
@@ -219,105 +254,22 @@ Deux types de méthodes de compression de graphes se sont distingués parmi tous
 								\input{./Chapitres/ExtractionMotifs/gRepair.tex}
 								%%%%exemple ???
 							%	\input{./Chapitres/ExtractionMotifs/SynGram.tex}
-								
-
-								
-%%% Ajouter son algorithme
-%%%% Ajouter un exmple illustant cette methode
-								
-						 \textbf{Basées sur des méthodes de clustering}
-						 
-						 		Les méthodes de compression appartenant à la classe courante sont des méthodes basées sur la recherche des sous-graphes denses (ayant des nœuds fortement connectés). Ils sont destinées principalement aux graphes du Web et les graphes des réseaux sociaux dans but de faciliter leur exploration et analyse.
+							\item \textbf{Les méthodes de compression basées sur des heuristiques de clustering} 				
+							
+							Les méthodes de compression appartenant à cette classe sont des méthodes basées sur la recherche des sous-graphes denses (ayant des nœuds fortement connectés). Elles sont destinées principalement aux graphes du Web et les graphes des réseaux sociaux dans le but de faciliter leur exploration et analyse.
 								
 								\input{./Chapitres/ExtractionMotifs/VNM.tex}
-								\input{./Chapitres/ExtractionMotifs/DSM.tex}
-							
+								\input{./Chapitres/ExtractionMotifs/DSM.tex}		
+						
+						\end{enumerate}	
+					
+					\end{enumerate}
 						
 						\input{./Chapitres/ExtractionMotifs/SynGen.tex}						
 								
 		\section{Bilan général}
 	
 \input{./Chapitres/CompressionDesGraphes/BillanGen.tex}
-
-	\chapter{Contribution}
-Comme on vient de voir dans les chapitres précédents, de nombreux phénomènes dans des contextes très variés peuvent être représenter par des graphes. Citons en particuliers les réseaux sociaux qui nous attirent vu leur évolution. Aujourd'hui 3.0 milliards de personnes utilisent les réseaux sociaux, voir 40\% de la population sur terre. Ces grandes quantités de données manipulées rendent impossible tout traitement et demandent un grand espace de stockage faisant intervenir des algorithmes de compression adéquats qui changent selon le type de graphes. Les graphes statiques ne sont pas toujours suffisants pour décrire les situations de la vie réel et leur évolution dans le temps. Ajouter une dimension temporelle à ces graphes permet d'élargir l'espace de possibilités, les réseaux sociaux en ligne est un exemple qui nous captive où le suivi dynamique du graphe est nécessaire. Quoiqu'il existe de nombreuses techniques efficaces adaptées au contexte statique, rares sont ceux qui proposent une contrepartie dynamique, ce qui nous amène à s'intéresser particulièrement à ce type de graphes toujours en cours d'évolution. Nous nous sommes intéressés aussi dans ce travail à un autre enjeu important qui provient de la structure complexe des réseaux sociaux qui pose un problème lors de leur exploration ce qui rend difficile l'analyse des données et l'extraction des informations pertinentes à partir de ces graphes. La recherche de motifs et particulièrement les clique et les noyaux bipartie qui sont fréquents dans les réseaux répond à ce problème.\\
-Pour résumé, Nous allons dans cette partie proposer une nouvelle méthode DDSM basée sur deux approches existantes que nous avons étudié dans notre état de l'art. Notre but principal est de développer une technique de compression compétitive pour les graphes des réseaux sociaux dans un contexte dynamique en se basant sur l'extraction de motifs. Pour accomplir ce travail nous nous somme appuyés sur ces deux méthodes :
-\begin{itemize}
-\item Exploiter la structure de données compressée proposée dans DSM \citep{hernandez2014compressed} qui permet de représenter les sous-graphes denses comme les cliques, les quasi-cliques, noyaux bipartis. Nous avons opté pour cette structure car en l'appliquant sur les réseaux sociaux, elle donne de bons résultats en matière d'espace et de temps de requêtes.  
-\item Adopter les signatures temporelles utilisées dans TimeCrunch \citep{shah2015timecrunch} pour décrire le comportement des sous-graphes dans le temps. Nous avons utilisé ces signatures car elle englobent tous les types des sous graphes temporelles qu'on peut trouver dans un graphe dynamique et c'est les seules qu'on a rencontrer dans ce genre.
-\end{itemize}	
-Nous allons dans cette partie présenter notre méthode théoriquement : principe général, structure utilisée et un pseudo code.	
-		
-		\section{Formulation du problème}
-		Dans cette section, nous allons définir le problème de base auquel notre méthode convient tout en définissant le cadre dans lequel elle peut être appliquée. 
-		
-		Nous considèrent les graphes orientés dynamiques $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$ et un ensemble de signatures temporelles. En d'autre termes, nous considérons des captures du graphe à des instants différents $t_{i}$ et un ensemble de descripteurs de comportement temporel des sous graphes des différents $G_{t_{i}}$. Le problème peut ainsi être formulé:
-		
-			\textit{\textbf{Problème:}
-		Trouver, à partir d'un graphe dynamique G et un lexique de signatures temporelles, la plus petite description du graphe initial en termes de ses sous structures les plus denses et leur comportement temporel, en offrant la possibilité de manipuler le graphe, d'extraire les voisins directes d'un nœud à un instant donné et d'extraire les sous-graphes au besoin. }
-
-		\section{Principe général}
-			Notre méthode s'intitule DDSM pour \textit{Dynamic Dense Substructure Mining}. Elle représente une généralisation du travail de Hernandez et Navarro\citep{hernandez2014compressed} pour le cas des graphes dynamiques qui sont de nos jours omniprésents dans différents domaines.
-			
-			Pour mieux expliquer notre méthode nous allons tout d'abords commencer par décrire les structures que nous allons utiliser. Nous enchainons par la suite  avec le pseudo algorithme détaillant les étapes essentielles de notre méthode et nous conclurons en expliquant comment les algorithmes proposés dans \citep{hernandez2014compressed} de manipulation des graphes peuvent être généraliser dans notre cas.
-			\subsection{Description conceptuelle}
-			
-			La codification du graphe en sortie doit respecter les contraintes du problème tout en réduisant un maximum d'espace mémoire. Pour cela, Nous proposons d'étendre la codification proposée dans \citep{hernandez2014compressed} pour le cas des graphes dynamiques en rajoutant une information temporelle. 
-			
-			Une fois les sous-structures identifiées, hernandez et al. \citep{hernandez2014compressed} proposent de représenter chacune d'elles avec trois composantes: la première contenant les sommets ayant uniquement des arêtes sortantes, la deuxième contenant les sommet ayant des arêtes entrantes et sortantes et la troisième contenant les sommet ayant uniquement des arêtes entrantes. Pour pouvoir identifier les différentes composantes, ils associent un vecteur binaire à cette représentation marquant par un 1 le début de chacune des trois composantes (voir figure \ref{SDM}).
-			
-			Notre première contribution consiste en l'extension de cette structure. En effet, nous suggérons de représenter chaque sous structure avec non trois composantes mais quartes. Les trois premières étant les même que dans \citep{hernandez2014compressed}, la quatrième représente l'information temporelle. Cette dernière peut être sous cinq formats (voir \ref{par:TimeCrunch}) dont nous résumons la représentation proposée pour chacune dans le tableau \ref{tab:signtmp}.
-			
-			\begin{table}[h]
-			\label{tab:signtmp}
-			\begin{center}
-			\begin{tabular}{|r|l|}
-			\hline Signature temporelle & Représentation	
-			\\\hline constante & 0	
-			
-			\\\hline OneShot & 1 $t_{1}$	
-			
-			\\\hline ranged & 2	$t_{1}\ t_{2}$	
-			
-			\\\hline periodic & 3  $T$	
-			
-			\\\hline flikering & 4 $t_{1}\ t_{2}\ ...\ t_{n}$	
-			
-			\\\hline			
-			\end{tabular}
-			\end{center}
-			
-			 \caption{\small {Les types de signatures temporelles et leurs représentations, $t_{i}$	 représentent les timestamps et T représente la période.}}
-			\end{table}
-			
-			Nous représentons G donc en tant qu'un ensemble de sous-graphes temporels denses. Cependant, pour obtenir une compression sans perte, nous devons aussi garder l'erreur modélisant l'ensemble d'arêtes restantes dans chaque $G_{t_{i}}$. Nous proposons pour cela d'utiliser une des structures dynamiques des k2-trees qui nous permettra d'interroger le graphe de manière simple et efficace.
-			
-			\subsection{Notre méthode : DDSM}
-			 Nous visons à travers la méthode que nous proposons d'exprimer le graphe en entrée avec ses sous-structures les plus denses et leur comportement temporel réduisant ainsi sa taille et offrant la possibilité d'effectuer les traitements dans un temps meilleur. Nous avons structurer notre algorithme sous forme de trois (03) étapes essentielles, chacune servant d'entrée pour l'étape suivante.
-			 
-			 En premier lieu, nous appliquons la découverte des sous-graphes les plus denses. Pour effectuer cela de manière efficace, nous suggérons d'utiliser l'approche proposée dans \citep{hernandez2014compressed} parallèlement sur chaque capture $G_{t_{i}}$ de G. Nous allons donc considérer les listes d'adjacences pour chaque $G_{t_{i}}$ où des fonctions de hachages sont calculées pour chaque sommet. Une arborescence est ensuite construite pour chaque ensemble de sommets ayant les même valeurs de hachages et qui permettra d'extraire les sous structures denses du graphe à travers un parcours de la racine vers les feuilles. 
-			 
-			 Dans une deuxième phase, nous effectuons une comparaison entre les sous structures découvertes dans des timestamps différents. Nous proposons pour décrire le comportement de ces derniers d'utiliser le même ensemble de signatures temporelles proposées dans \citep{shah2015timecrunch} composées de six descripteurs temporelles englobant tout les cas possibles. Durant cette étape, nous tolérons un certains seuil d'erreur qui sera inclus dans la représentation de l'erreur.
-			 
-			 Une dernière phase consiste en la codification du graphe en utilisant le codage proposé dans la section précédentes pour chaque sous structure de la phase (02). Nous concaténons par la suite ces représentations pour obtenir une seule représentation concise du graphe initial en termes de ses structures les plus denses. 
-			L'algorithme ci-dessous résume les trois principales étapes de notre méthode :
-			\begin{algorithm}
-					\label{alg:DDSM}
-					\caption{DDSM}
-					\label{Pseudo Algorithme de la méthode proposée (DDSM)}
-				\begin{algorithmic} [1]
-					\STATE \textbf{Génération des sous structures candidates: }Génération de sous-graphes, principalement les sous-graphes bipartis et les cliques.
-					
-					\STATE  \textbf{Étiquetage de sous-structures: }Associer chaque sous-structure à une signature temporelle décrivant son comportement.
-					
-					\STATE \textbf{Codification du graphe compressé: }Codifier les sous-structures étiquetées de l'étape (02) en utilisant les structures de la section précédente.
-				\end{algorithmic}
-			\end{algorithm}
-			
-			Pour les algorithmes de parcours et d'extraction de voisins, tous les algorithmes proposés dans \citep{hernandez2014compressed} peuvent être appliqués sur notre structure. En effet, le seul changement consiste en la  prise en compte de l'information temporelle dans l'incrémentation des indices de parcours. De ce fait, nous pensons que notre méthode peut offrir un très bon compromis entre l'espace mémoire et le temps d'accès des traitements dans le cas des graphes dynamiques. 
-			
-		\section{Conclusion}
-	Dans ce chapitre, nous avons abordé le problème de compression des graphes dynamiques par extraction de motifs. Nous avons formalisé le problème de compression d'un graphe dynamique en se basant sur les sous-graphes denses temporelles qui le composent. Pour faire face à ce problème nous avons présenté une nouvelle méthode hybride intitulée DDSM, elle combine entre deux méthodes de la littérature que nous avons jugé efficaces. Notre prochain but est de tester cette méthode en la comparant avec les méthodes existantes.   
 
 	
 	
@@ -342,11 +294,13 @@ Nous allons dans cette partie présenter notre méthode théoriquement : princip
 		
 	La situation d'abondance d'information aujourd'hui a favorisé l'incapacité d'assimilation et de réemploi de l'information et a montré l'inadaptation des outils de gestion classiques. Une des solution les plus connus pour pallier à ce problème est la compression.\\
 		
-		Nous nous sommes intéressés dans ce travail aux domaines de compression de graphes, et plus particulièrement les méthodes de compression par les k2-trees et les méthodes de compression par extraction de motifs. Nous avons présenté les différentes méthodes de compression existantes et nous avons établi une étude comparative entre eux. Nous avons aussi essayé de rectifier la classification proposée dans un travail de master précédent. Une dernière contribution que nous avons apporté consiste en une nouvelle méthode de compression par extraction de motifs usant des structures k2-trees appliquée aux graphes dynamiques.\\  
+		Nous nous sommes intéressés dans ce travail aux domaines de compression de graphes, et plus particulièrement les méthodes de compression par les k2-trees et les méthodes de compression par extraction de motifs. 
+		Nous avons présenté les différentes méthodes de compression existantes et nous avons établi une étude comparative entre elles. 
+		Nous avons également raffiné la classification des méthodes de compression de graphes proposée dans un travail de master précédent. Une dernière contribution que nous avons apporté consiste en une nouvelle méthode de compression par extraction de motifs usant des structures k2-trees appliquée aux graphes dynamiques.\\  
 	
-	Cette étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que :la compression temps réelle et les temps de traitements sont encore présents. Ces défis constitues de nouvelles problématiques de recherche qui sont toujours ouvert.\\
+	Cette étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que : la compression temps réel et les temps de traitements sont encore présents. Ces défis constituent de nouvelles problématiques de recherche qui sont toujours ouvertes.\\
 	
-	Nous nous focaliserons dans le future à implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait nous pourrons établir une comparaison plus objective entre eux.
+	Nous nous focaliserons par la suite à implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait nous pourrons établir une comparaison plus objective entre elles.
 
 \pagestyle{plain}
 \newpage

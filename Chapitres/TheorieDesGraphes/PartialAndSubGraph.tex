@@ -1,18 +1,18 @@
 
-	La quantité de données disponible aujourd'hui et sa croissance de manière exponentiel ont favorisé la décomposition des graphes en des entités plus petites afin de garantir une facilité de compréhension et d'analyse dans le but d'extraire l'information la plus pertinente. Dans cette partie nous allons définir de manière plus formelle ce que ces entités sont, ainsi que leurs types.
+	La quantité de données disponible aujourd'hui et sa croissance de manière exponentielle ont favorisé la décomposition des graphes en des entités plus petites afin de garantir une facilité de compréhension et d'analyse dans le but d'extraire l'information la plus pertinente. Dans cette partie, nous allons définir de manière plus formelle ce que ces entités sont, ainsi que leurs types.
 	
 		
 		
 		
 		\subsection{Définitions:}
-		Soient G = (V , E), G' = (V' , E') et G'' = (V'' , E'') trois graphes.
+		Soient G = (V , E), $G' = (V' , E')$ et $G'' = (V'' , E'')$ trois graphes.
 		\begin{itemize}[label=$\circ$]
 		
-			\item Le graphe G' est appelé graphe partiel de G si : V' = V et E' $\subset$ E \citep{DUT}. En d'autres termes, un graphe partiel est obtenu en supprimant une ou plusieurs arêtes de G.
+			\item Le graphe $G'$ est appelé graphe partiel de G si : $V' = V\ et\ E' \subset$ E \citep{DUT}. En d'autres termes, un graphe partiel est obtenu en supprimant une ou plusieurs arêtes de G.
 				
 
-			\item Le graphe G'' est dit sous-graphe de G si: V'' $\subset$ V et 
-			 E''$\subset$ E $\cap$ (V'' x V'') \citep{bac}, i.e un graphe partiel est obtenu en enlevant un ou plusieurs nœuds du graphe initial ainsi que les arêtes dont ils représentent l'une des deux extrémités.
+			\item Le graphe $G''$ est dit sous-graphe de G si: $V''\subset V$ et 
+			 $E''\subset E \cap (V'' x V'')$ \citep{bac}, i.e, un sous-graphe est obtenu en enlevant un ou plusieurs nœuds du graphe initial ainsi que les arêtes dont ils représentent l'une des deux extrémités.
 			 
 		\end{itemize}
 		
@@ -21,12 +21,12 @@
 		\begin{itemize} [label = $\bullet$]
 		
 		
-			\item \textbf{Une Clique :} est un sous graphe complet de G \citep{bac}.
+			\item \textbf{Une Clique :} est un sous-graphe complet de G \citep{bac}.
 			
-			\item \textbf{Bipartie :} G' est un sous graphe bipartie si il existe une partition de V' en deux sous ensembles notés $V_{1} et V_{2}$, i.e V' = $V_{1} \cup V_{2}$ et $V_{1}$ $\cap$ $V_{2}$ = $\phi$, tel que E' = $V_{1}$ x $V_{2}$ \citep{bac}.
+			\item \textbf{Biparti :} G' est un sous-graphe biparti si il existe une partition de V' en deux sous ensembles notés $V_{1}$ et $V_{2}$, i.e V' = $V_{1} \cup V_{2}$ et $V_{1}$ $\cap$ $V_{2}$ = $\phi$, tel que E' = $V_{1}$ x $V_{2}$ \citep{bac}.
 			
 			\item \textbf{Étoile :}
-			 est un cas particulier de sous graphe bipartie où $V_{1}$ est un ensemble contenant le sommet central uniquement et $V_{2}$ contient le reste des nœuds \citep{koutra2015summarizing} .
+			 est un cas particulier de sous-graphe biparti où $V_{1}$ est un ensemble contenant le sommet central (dit \textit{hub}) uniquement et $V_{2}$ contient le reste des nœuds  (dits \textit{spokes})\citep{koutra2015summarizing} .
 			 
 		
 			 

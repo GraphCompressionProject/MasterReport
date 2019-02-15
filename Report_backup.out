@@ -2,7 +2,7 @@
 \BOOKMARK [0][-]{Doc-Start}{R\351sum\351}{}% 2
 \BOOKMARK [0][-]{chapter*.2}{Liste des figures}{}% 3
 \BOOKMARK [0][-]{chapter*.3}{Liste des tableaux}{}% 4
-\BOOKMARK [0][-]{chapter*.3}{Introduction g\351n\351rale}{}% 5
+\BOOKMARK [0][-]{chapter*.5}{Introduction g\351n\351rale}{}% 5
 \BOOKMARK [0][-]{chapter.1}{ Th\351orie des graphes}{}% 6
 \BOOKMARK [1][-]{section.1.1}{Graphe non orient\351}{chapter.1}% 7
 \BOOKMARK [2][-]{subsection.1.1.1}{D\351finitions et g\351n\351ralit\351s}{section.1.1}% 8
@@ -13,7 +13,7 @@
 \BOOKMARK [2][-]{subsection.1.2.2}{Repr\351sentation graphique}{section.1.2}% 13
 \BOOKMARK [2][-]{subsection.1.2.3}{Quelques Propri\351t\351s:}{section.1.2}% 14
 \BOOKMARK [1][-]{section.1.3}{Notion de Connexit\351}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.4}{Graphe partiel et sous graphe:}{chapter.1}% 16
+\BOOKMARK [1][-]{section.1.4}{Graphe partiel et sous-graphe:}{chapter.1}% 16
 \BOOKMARK [2][-]{subsection.1.4.1}{D\351finitions:}{section.1.4}% 17
 \BOOKMARK [2][-]{subsection.1.4.2}{Quelques Types de sous graphes:}{section.1.4}% 18
 \BOOKMARK [1][-]{section.1.5}{Quelques types de graphe}{chapter.1}% 19
@@ -26,21 +26,15 @@
 \BOOKMARK [2][-]{subsection.1.7.2}{Graphes en Bioinformatique:}{section.1.7}% 26
 \BOOKMARK [2][-]{subsection.1.7.3}{Le Graphe du web:}{section.1.7}% 27
 \BOOKMARK [1][-]{section.1.8}{Conclusion}{chapter.1}% 28
-\BOOKMARK [0][-]{chapter.2}{Compression de graphe}{}% 29
-\BOOKMARK [1][-]{section.2.1}{Compression de donn\351es: }{chapter.2}% 30
+\BOOKMARK [0][-]{chapter.2}{Compression de graphes}{}% 29
+\BOOKMARK [1][-]{section.2.1}{Compression de donn\351es :}{chapter.2}% 30
 \BOOKMARK [1][-]{section.2.2}{Compression appliqu\351e aux graphes:}{chapter.2}% 31
 \BOOKMARK [2][-]{subsection.2.2.1}{Les types de compression:}{section.2.2}% 32
 \BOOKMARK [2][-]{subsection.2.2.2}{Les m\351triques d'\351valuation des algorithmes de compression:}{section.2.2}% 33
 \BOOKMARK [2][-]{subsection.2.2.3}{Classification des m\351thodes de compression:}{section.2.2}% 34
-\BOOKMARK [1][-]{section.2.3}{Compression par les K2-Trees}{chapter.2}% 35
+\BOOKMARK [1][-]{section.2.3}{Compression par les arbres K2-Trees}{chapter.2}% 35
 \BOOKMARK [1][-]{section.2.4}{Compression par extraction de motifs}{chapter.2}% 36
 \BOOKMARK [2][-]{subsection.2.4.1}{Compression bas\351e vocabulaire}{section.2.4}% 37
-\BOOKMARK [2][-]{subsection.2.4.2}{Compression bas\351e Agr\351gation des motifs}{section.2.4}% 38
+\BOOKMARK [2][-]{subsection.2.4.2}{Compression bas\351e sur l'agr\351gation des motifs}{section.2.4}% 38
 \BOOKMARK [1][-]{section.2.5}{Bilan g\351n\351ral}{chapter.2}% 39
-\BOOKMARK [0][-]{chapter.3}{Contribution}{}% 40
-\BOOKMARK [1][-]{section.3.1}{Formulation du probl\350me}{chapter.3}% 41
-\BOOKMARK [1][-]{section.3.2}{Principe g\351n\351ral}{chapter.3}% 42
-\BOOKMARK [2][-]{subsection.3.2.1}{Description conceptuelle}{section.3.2}% 43
-\BOOKMARK [2][-]{subsection.3.2.2}{Notre m\351thode : DDSM}{section.3.2}% 44
-\BOOKMARK [1][-]{section.3.3}{Conclusion}{chapter.3}% 45
-\BOOKMARK [0][-]{section.3.3}{Conclusion g\351n\351rale}{}% 46
+\BOOKMARK [0][-]{table.2.5}{Conclusion g\351n\351rale}{}% 40

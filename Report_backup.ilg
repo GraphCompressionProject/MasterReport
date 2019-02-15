@@ -1,0 +1,19 @@
+This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
+Scanning input file Report_backup.glg...
+!! Input index error (file = Report_backup.glg, line = 1):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Report_backup.glg, line = 2):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Report_backup.glg, line = 3):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Report_backup.glg, line = 4):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Report_backup.glg, line = 5):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Report_backup.glg, line = 6):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = Report_backup.glg, line = 7):
+   -- Missing arguments -- need two (premature LFD).
+done (0 entries accepted, 7 rejected).
+Nothing written in Report_backup.ind.
+Transcript written in Report_backup.ilg.

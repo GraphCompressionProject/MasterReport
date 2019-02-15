@@ -1,36 +1,34 @@
 	
-				Devant la panoplie d'algorithmes et de techniques de compression de graphe disponibles dans la littérature, des critères de comparaison  et d'évaluation entre ces méthodes doivent être bien définis. Dans cette partie nous présenterons les principaux mesures de performances.
+				Devant la panoplie d'algorithmes et de techniques de compression de graphe disponibles dans la littérature, des critères de comparaison  et d'évaluation entre ces méthodes doivent être bien définis. Dans cette partie, nous présenterons les principales mesures de performances.
 				
-				\subsubsection{Le temps de compression:}
+				\begin{enumerate}[label=\alph*)]
+					\item \subsubsection{Le temps de compression:}
 				C'est une métrique qui donne le temps d'exécution de l'algorithme de compression. Elle est généralement mesurée en secondes (ou ms).
-				\subsubsection{Le ratio de compression:}
-				C'est la mesure la plus courante pour calculer l'efficacité d'un algorithme de compression. Il est défini comme le rapport entre le nombre total de bits requis pour stocker des données non compressées et le nombre total de bits nécessaires pour stocker des données compressées.
+				
+				%\newacronym{cr}{CR}{Ratio de compression}
+				\item 	\subsubsection{Le ratio de compression }
+				Le ratio de compression (CR) est la mesure la plus courante pour calculer l'efficacité d'un algorithme de compression. Il est défini comme le rapport entre le nombre total de bits requis pour stocker les données non compressées et le nombre total de bits nécessaires pour stocker les données compressées.
 				%la formule
 				\begin{center}
 				$
-				CR = \frac{No.\ de\ bits\ du\ graphe\ originale}{No.\ de\ bits\ du\ graphe\ finale }
+				CR = \frac{Nbre.\ de\ bits\ du\ graphe\ originale}{Nbre.\ de\ bits\ du\ graphe\ finale }
 				$
 				\end{center}
 				
 				
-				Le CR est parfois appelé bit par bit (bpb) et il est définit alors comme étant le nombre moyen de bits requis pour stocker les données compressées \citep{uthayakumar2018survey}. Dans le cas des algorithmes de compression de graphe on a:
+				Le CR est parfois appelé bit par bit (bpb) et il est défini alors comme étant le nombre moyen de bits requis pour stocker les données compressées \citep{uthayakumar2018survey}. Dans le cas des algorithmes de compression de graphe on a:
 				\begin{itemize}
-					\item \textbf{Le nombre de bits par nœuds:}
-					représente l'espace mémoire nécessaire pour stocker un nœud (bpn pour bits per node).
+					\item \textbf{Le nombre de bits par nœud:}
+					représente l'espace mémoire nécessaire pour stocker un nœud (bpn pour << \textit{bits per node} >> en Anglais).
 					%% la formule
 					
-					\item \textbf{Le nombre de bits par liens:}
-					représente l'espace mémoire nécessaire pour stocker un liens (bpe pour bits per edge).
+					\item \textbf{Le nombre de bits par lien:}
+					représente l'espace mémoire nécessaire pour stocker un arc dans le cas d'un graphe orienté ou une arête dans le cas d'un graphe non orienté (bpe pour << \textit{bits per edge} >> en Anglais).
 					%%la formule 
 				\end{itemize}
 				
-				
-				
-				
-				
-				
-				\subsubsection{Le taux de compression:}
-				Exprimée en pourcentage, cette métrique permet de mesurer la performance de la méthode de compression. Elle peut être exprimer de deux manières différentes:
+				\item 	\subsubsection{Le taux de compression:}
+				Exprimée en pourcentage, cette métrique permet de mesurer la performance de la méthode de compression. Elle peut être exprimée de deux manières différentes:
 				
 				\begin{itemize}
 					\item \textbf{Le taux de compression:} Le rapport entre volume du graphe après compression et le volume initial du graphe.
@@ -49,6 +47,15 @@
 					
 					
 				\end{itemize}
-				
-				
 				%\subsubsection{L'erreur quadratique:}
+				\end{enumerate}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
