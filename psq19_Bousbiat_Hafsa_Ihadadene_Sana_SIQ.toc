@@ -1,0 +1,65 @@
+\babel@toc {french}{}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Remerciement}{I}{Doc-Start}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }R\IeC {\'e}sum\IeC {\'e}}{II}{Doc-Start}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des figures}{VI}{chapter*.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des tableaux}{VII}{chapter*.3}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction g\IeC {\'e}n\IeC {\'e}rale}{1}{chapter*.5}
+\contentsline {part}{I\hspace {1em}\IeC {\'E}tat de l'art}{3}{part.1}
+\contentsline {chapter}{\numberline {1} Th\IeC {\'e}orie des graphes}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Graphe non orient\IeC {\'e}}{4}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{4}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Repr\IeC {\'e}sentation graphique}{5}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Propri\IeC {\'e}t\IeC {\'e}s d'un graphe}{5}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Graphe orient\IeC {\'e}}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{6}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Repr\IeC {\'e}sentation graphique}{6}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Quelques Propri\IeC {\'e}t\IeC {\'e}s:}{7}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Notion de Connexit\IeC {\'e}}{7}{section.1.3}
+\contentsline {section}{\numberline {1.4}Graphe partiel et sous-graphe:}{7}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}D\IeC {\'e}finitions:}{8}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Quelques Types de sous graphes:}{8}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Quelques types de graphe}{8}{section.1.5}
+\contentsline {section}{\numberline {1.6}Repr\IeC {\'e}sentation Structurelle d'un graphe}{8}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Matrice d'adjacence}{9}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Matrice d'incidence}{10}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Liste d'adjacence}{10}{subsection.1.6.3}
+\contentsline {section}{\numberline {1.7}Les domaines d'application}{11}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Graphes des r\IeC {\'e}seaux sociaux:}{11}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Graphes en Bioinformatique:}{11}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Le Graphe du web:}{12}{subsection.1.7.3}
+\contentsline {section}{\numberline {1.8}Conclusion}{12}{section.1.8}
+\contentsline {chapter}{\numberline {2}Compression de graphes}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Compression de donn\IeC {\'e}es :}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Les types de compression:}{14}{subsection.2.2.1}
+\contentsline {subsubsection}{Compression Sans Perte:}{14}{section*.6}
+\contentsline {subsubsection}{Compression Avec Perte:}{15}{section*.7}
+\contentsline {subsection}{\numberline {2.2.2}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{15}{subsection.2.2.2}
+\contentsline {subsubsection}{Le temps de compression:}{15}{section*.8}
+\contentsline {subsubsection}{Le ratio de compression }{15}{section*.9}
+\contentsline {subsubsection}{Le taux de compression:}{16}{section*.10}
+\contentsline {subsection}{\numberline {2.2.3}Classification des m\IeC {\'e}thodes de compression:}{16}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Compression par les arbres $K^2$-Trees}{19}{section.2.3}
+\contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{34}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{34}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e sur l'agr\IeC {\'e}gation des motifs}{42}{subsection.2.4.2}
+\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es l'agr\IeC {\'e}gation de n\IeC {\oe }uds}{42}{section*.11}
+\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation de liens}{42}{section*.12}
+\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{48}{section.2.5}
+\contentsline {part}{II\hspace {1em}Contribution}{51}{part.2}
+\contentsline {chapter}{\numberline {3}Conception}{52}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{52}{section.3.1}
+\contentsline {section}{\numberline {3.2}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{52}{section.3.2}
+\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{53}{section*.13}
+\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{53}{section*.14}
+\contentsline {section}{\numberline {3.3}$k^2$-GraCE : }{55}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{55}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{55}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Conception Modulaire :}{55}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}P-GraCE :}{55}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Principe de fonctionnement :}{55}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Param\IeC {\`e}tre et notations :}{55}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Conception Modulaire :}{55}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Conclusion}{55}{section.3.5}
+\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{56}{chapter.4}
+\contentsline {chapter}{\numberline {5}Test}{57}{chapter.5}

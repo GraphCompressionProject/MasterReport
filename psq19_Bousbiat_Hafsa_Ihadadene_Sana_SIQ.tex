@@ -79,6 +79,12 @@
     }
 % Load the package with the acronym option
 \usepackage[acronym]{glossaries}
+
+%\usepackage{setspace}
+
+ 
+ 
+ 
  
 % Generate the glossary
 \makeglossaries
@@ -87,13 +93,13 @@
 
 %Page de garde (page de titre)							Obligatoire
 \pagenumbering{Roman}
-\input{./title.tex}
+\input{./title_psq.tex}
 
 %Remerciements											Obligatoire
 \input{./Remerciement.tex}
 
 %Résumé												Obligatoire
-\input{./abstract.tex}
+\input{./abstract_psq.tex}
 
 %Sommaire (Table des matières)							Obligatoire
 \pagestyle{plain}
@@ -130,17 +136,26 @@
 			\textbf {Introduction générale}} \\[0.5in]
 			\addcontentsline{toc}{chapter}{\numberline{}Introduction générale}
 			\normalsize
-			Avec l'énorme quantité de données produites par les activités humaines de nos jours, le problème de données massives (Big data) est devenu un enjeu essentiel. Un des outils les plus efficaces pour traiter ces données est l'utilisation des graphes. Les graphes sont des outils de modélisation utilisés dans beaucoup de domaines pour la représentation des données : réseaux sociaux et de communication (entités reliées entre elles par des liens physiques ou communautaires), chimie (relations entre les atomes), biologie (interactions entre protéines par exemple), ..., etc.\\
+			Avec l'énorme quantité de données produites par les activités humaines de nos jours, le problème de données massives (Big data) est devenu un enjeu essentiel. Un des outils les plus efficaces pour structurer et manipuler ces données est l'utilisation des graphes. Les graphes sont des outils de modélisation utilisés dans beaucoup de domaines pour la représentation des données : réseaux sociaux et de communication (entités reliées entre elles par des liens physiques ou communautaires), chimie (relations entre les atomes), biologie (interactions entre protéines par exemple) et bien d'autres domaines.\\
 			
-Il y a plusieurs solutions pour contrer le volume de données mais nous nous intéressons à une solution aussi vieille que la discipline de traitement de données elle-même mais qui connait de nouveaux défis de nos jours : la compression.\\
+	Face à cette infobésité, les algorithmes classiques de traitement et de gestion des donnes se montre incapable d'offrir des réponse dans un temps raisonnable. Plusieurs solution ont été pensées pour contrer ce volume de données. Une des solutions les plus anciennes mais qui connait de nouveaux défis de nos jours est \textit{la compression de données}.\\
 
-La compression de graphes est un domaine dans lequel le graphe initial subit des transformations pour en obtenir une version plus réduite. Différentes techniques permettent cette compression, avec ou sans perte d'information, et génèrent de nouveaux graphes sur lesquels il est intéressant d'effectuer les différents traitements.\\ 
+	Le domaine de compression de données est une branche de la théorie de l'information qui s'intéresse à minimiser la taille des données à stocker, traiter et transmettre améliorant ainsi de façon directe les temps de traitement. Parallèlement à cela, nous trouvons la compression des graphes qui est un domaine dans lequel le graphe initial subit des transformations pour en obtenir une version plus réduite. Différentes techniques, basées sur différentes approches, permettent cette compression, avec ou sans perte d'information, et génèrent de nouveaux graphes sur lesquels il est beaucoup plus intéressant d'effectuer les différents traitements.\\ 
 
-Deux types de méthodes de compression de graphes se sont distinguées parmi tout les autres types de méthodes : les méthodes de compression en utilisant les k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitement. Nous présenterons dans ce travail une synthèse bibliographique sur les différentes méthodes de compression dérivant de ces deux grandes classes.	\\
+Cependant, deux types de méthodes de compression de graphes se sont distinguées parmi tout les autres types de méthodes : les méthodes de compression en utilisant les arbres k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitement. Ces deux classe de méthodes feront l'objet de notre étude.\\
 		
+			Notre première contribution  portera sur la conception, l'implémentation et l'évaluation de 	deux moteurs de compression, 
+		\newacronym{$k^2$-GraCE}{$k^2$-GraCE}{$k^2$-trees Graph Compression engine}	
+		\newacronym{P-GraCE}{P-GraCE}{Pattern Graph Compression engine}			
+			\gls{$k^2$-GraCE} 
+			 et \gls{P-GraCE}, chacun englobant les méthodes relatif à une classe. Nous visons à travers cela à comparer entre leurs méthodes. Notre deuxième contribution consiste en la proposition d'une nouvelle méthode de compression pour les graphes dynamiques, s'intitulant 
+			 \newacronym{ddsm}{DDSM}{Dynamic Dense Subgraph Mining}
+			 \gls{ddsm}. \\
 			
-			 Nous avons hiérarchisé notre mémoire en trois grands chapitres. Le premier est une introduction au domaine de la théorie des graphes incluant ainsi les notions fondamentales de ce domaine, les types de graphes, leurs représentations structurelles et leurs domaines d'application. Dans le second chapitre, nous introduisons les définitions de base du domaine de compression de données appliqué aux graphes à savoir : les motivations, les types de compression et les métriques d'évaluation. Enfin, nous présenterons les classifications des méthodes existantes de compression de graphe ainsi que la classification que nous proposons. Nous mettrons l'accent après sur les deux classes de méthodes qui forment la problématique de notre sujet de Master : la compression par extraction de motifs et la compression par les k2-trees. Dans le troisième chapitre nous présenterons une nouvelle méthode de compression que nous proposons.
+			
+			 Nous avons hiérarchisé notre mémoire en trois grands chapitres. Le premier est une introduction au domaine de la théorie. Dans le second chapitre, nous introduisons les définitions de base du domaine de compression de données appliqué aux graphes ainsi que les différentes méthodes de compression existantes sous forme d'une classification que nous proposons. Par la suite, dans le chapitre trois, nous détaillons la conception de nos deux moteurs de compression de graphes et nous décrirons les bases théorique de notre méthode, puis nous donnons dans le chapitre quatre les détails de l'implémentation de nos moteurs. Dans le chapitre cinq nous présentons nos tests de performance et résultats .
 	
+	\cleardoublepage
 \pagestyle{fancy}
 \fancypagestyle{plain}{%
   \fancyhf{}%
@@ -151,7 +166,7 @@ Deux types de méthodes de compression de graphes se sont distinguées parmi tou
 \lhead{\textbf{Chapitre \thechapter}}
 \fancyhead[R]{\rightmark}
 
-
+\part{État de l'art}
 %---->chapitre 01 :« cadrage du projet »
 	\chapter{ Théorie des graphes}
 	%%Ajouter une petite introduction pour ce chapitre
@@ -274,33 +289,40 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 	
 	
 	
-	%\begin{defn}
-	%		Here is a new definition
-	%\end{defn}
+
+
+\part{Contribution}
+
+%\input{./Chapitres/DDSM/ddsm.tex}
+
+\chapter{Conception}
+	\section{Introduction}
 	
+	\section{Notre méthode: Dynamic Dense Subgraph Mining (DDSM)}
+		\input{./Chapitres/DDSM/ddsm.tex}
 
-%Conclusion Générale									Obligatoire
-
-
-\newpage
-
-	\par
-		\vskip 1in
-		\Huge 
-			\textbf{Conclusion générale} \\[0.5in]
-			\addcontentsline{toc}{chapter}{\numberline{}Conclusion générale}
-		
-		\normalsize
-		
-	La situation d'abondance d'information aujourd'hui a favorisé l'incapacité d'assimilation et de réemploi de l'information et a montré l'inadaptation des outils de gestion classiques. Une des solution les plus connus pour pallier à ce problème est la compression.\\
-		
-		Nous nous sommes intéressés dans ce travail aux domaines de compression de graphes, et plus particulièrement les méthodes de compression par les k2-trees et les méthodes de compression par extraction de motifs. 
-		Nous avons présenté les différentes méthodes de compression existantes et nous avons établi une étude comparative entre elles. 
-		Nous avons également raffiné la classification des méthodes de compression de graphes proposée dans un travail de master précédent. \\  
+	\section{$k^2$-GraCE : }
+		\subsection{Principe de fonctionnement :}
+		\subsection{Paramètre et notations :}
+		\subsection{Conception Modulaire :}
 	
-	Cette étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que : la compression temps réel et les temps de traitements sont encore présents. Ces défis constituent de nouvelles problématiques de recherche qui sont toujours ouvertes.\\
+	\section{P-GraCE :}
+		\subsection{Principe de fonctionnement :}
+		\subsection{Paramètre et notations :}
+		\subsection{Conception Modulaire :}
 	
-	Nous nous focaliserons par la suite à implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait nous pourrons établir une comparaison plus objective entre elles.
+	
+	\section{Conclusion}
+	
+\chapter{Implémentation}
+\chapter{Test}
+
+
+
+
+
+
+
 
 \pagestyle{plain}
 \newpage

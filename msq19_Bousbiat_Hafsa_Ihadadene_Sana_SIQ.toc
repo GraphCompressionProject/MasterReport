@@ -3,7 +3,7 @@
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }R\IeC {\'e}sum\IeC {\'e}}{II}{Doc-Start}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des figures}{VI}{chapter*.2}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des tableaux}{VII}{chapter*.3}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction g\IeC {\'e}n\IeC {\'e}rale}{1}{chapter*.3}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction g\IeC {\'e}n\IeC {\'e}rale}{1}{chapter*.5}
 \contentsline {chapter}{\numberline {1} Th\IeC {\'e}orie des graphes}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Graphe non orient\IeC {\'e}}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{2}{subsection.1.1.1}
@@ -31,18 +31,18 @@
 \contentsline {section}{\numberline {2.1}Compression de donn\IeC {\'e}es :}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{12}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Les types de compression:}{12}{subsection.2.2.1}
-\contentsline {subsubsection}{Compression Sans Perte:}{12}{section*.4}
-\contentsline {subsubsection}{Compression Avec Perte:}{13}{section*.5}
+\contentsline {subsubsection}{Compression Sans Perte:}{12}{section*.6}
+\contentsline {subsubsection}{Compression Avec Perte:}{13}{section*.7}
 \contentsline {subsection}{\numberline {2.2.2}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{13}{subsection.2.2.2}
-\contentsline {subsubsection}{Le temps de compression:}{13}{section*.6}
-\contentsline {subsubsection}{Le ratio de compression }{13}{section*.7}
-\contentsline {subsubsection}{Le taux de compression:}{14}{section*.8}
+\contentsline {subsubsection}{Le temps de compression:}{13}{section*.8}
+\contentsline {subsubsection}{Le ratio de compression }{13}{section*.9}
+\contentsline {subsubsection}{Le taux de compression:}{14}{section*.10}
 \contentsline {subsection}{\numberline {2.2.3}Classification des m\IeC {\'e}thodes de compression:}{14}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Compression par les arbres $K^2$-Trees}{17}{section.2.3}
 \contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{32}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{32}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e sur l'agr\IeC {\'e}gation des motifs}{40}{subsection.2.4.2}
-\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es l'agr\IeC {\'e}gation de n\IeC {\oe }uds}{40}{section*.9}
-\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation de liens}{40}{section*.10}
+\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es l'agr\IeC {\'e}gation de n\IeC {\oe }uds}{40}{section*.11}
+\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation de liens}{40}{section*.12}
 \contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{46}{section.2.5}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{49}{table.2.5}

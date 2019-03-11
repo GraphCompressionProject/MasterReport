@@ -1,0 +1,450 @@
+\ifglsentryexists{$k^2$-GraCE}{}%
+{%
+\gls@defglossaryentry{$k^2$-GraCE}%
+{%
+name={$k^2$-GraCE},%
+sort={$k^2$-GraCE},%
+type={acronym},%
+first={$k^2$-trees Graph Compression engine\glsspace ($k^2$-GraCE)},%
+firstplural={$k^2$-trees Graph Compression engine\glsspace ($k^2$-GraCE)},%
+text={$k^2$-GraCE},%
+plural={$k^2$-GraCE},%
+description={$k^2$-trees Graph Compression engine},%
+descriptionplural={$k^2$-trees Graph Compression engine\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={$k^2$-trees Graph Compression engine},%
+longplural={$k^2$-trees Graph Compression engine},%
+short={$k^2$-GraCE},%
+shortplural={$k^2$-GraCE},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{P-GraCE}{}%
+{%
+\gls@defglossaryentry{P-GraCE}%
+{%
+name={P-GraCE},%
+sort={P-GraCE},%
+type={acronym},%
+first={Pattern Graph Compression engine\glsspace (P-GraCE)},%
+firstplural={Pattern Graph Compression engine\glsspace (P-GraCE)},%
+text={P-GraCE},%
+plural={P-GraCE},%
+description={Pattern Graph Compression engine},%
+descriptionplural={Pattern Graph Compression engine\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Pattern Graph Compression engine},%
+longplural={Pattern Graph Compression engine},%
+short={P-GraCE},%
+shortplural={P-GraCE},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ddsm}{}%
+{%
+\gls@defglossaryentry{ddsm}%
+{%
+name={DDSM},%
+sort={DDSM},%
+type={acronym},%
+first={Dynamic Dense Subgraph Mining\glsspace (DDSM)},%
+firstplural={Dynamic Dense Subgraph Mining\glsspace (DDSM)},%
+text={DDSM},%
+plural={DDSM},%
+description={Dynamic Dense Subgraph Mining},%
+descriptionplural={Dynamic Dense Subgraph Mining\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Dynamic Dense Subgraph Mining},%
+longplural={Dynamic Dense Subgraph Mining},%
+short={DDSM},%
+shortplural={DDSM},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rdf}{}%
+{%
+\gls@defglossaryentry{rdf}%
+{%
+name={RDF},%
+sort={RDF},%
+type={acronym},%
+first={Resource Description Framework\glsspace (RDF)},%
+firstplural={Resource Description Framework\glsspace (RDF)},%
+text={RDF},%
+plural={RDF},%
+description={Resource Description Framework},%
+descriptionplural={Resource Description Framework\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Resource Description Framework},%
+longplural={Resource Description Framework},%
+short={RDF},%
+shortplural={RDF},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mdl}{}%
+{%
+\gls@defglossaryentry{mdl}%
+{%
+name={MDL},%
+sort={MDL},%
+type={acronym},%
+first={Minimum Description Length\glsspace (MDL)},%
+firstplural={Minimum Description Length\glsspace (MDL)},%
+text={MDL},%
+plural={MDL},%
+description={Minimum Description Length},%
+descriptionplural={Minimum Description Length\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Minimum Description Length},%
+longplural={Minimum Description Length},%
+short={MDL},%
+shortplural={MDL},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dfs}{}%
+{%
+\gls@defglossaryentry{dfs}%
+{%
+name={DFS},%
+sort={DFS},%
+type={acronym},%
+first={Deapth First Search\glsspace (DFS)},%
+firstplural={Deapth First Search\glsspace (DFS)},%
+text={DFS},%
+plural={DFS},%
+description={Deapth First Search},%
+descriptionplural={Deapth First Search\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Deapth First Search},%
+longplural={Deapth First Search},%
+short={DFS},%
+shortplural={DFS},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dac}{}%
+{%
+\gls@defglossaryentry{dac}%
+{%
+name={DAC},%
+sort={DAC},%
+type={acronym},%
+first={Directly Addressable Codes\glsspace (DAC)},%
+firstplural={Directly Addressable Codes\glsspace (DAC)},%
+text={DAC},%
+plural={DAC},%
+description={Directly Addressable Codes},%
+descriptionplural={Directly Addressable Codes\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Directly Addressable Codes},%
+longplural={Directly Addressable Codes},%
+short={DAC},%
+shortplural={DAC},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{olap}{}%
+{%
+\gls@defglossaryentry{olap}%
+{%
+name={OLAP},%
+sort={OLAP},%
+type={acronym},%
+first={Online Analytical Processing\glsspace (OLAP)},%
+firstplural={Online Analytical Processing\glsspace (OLAP)},%
+text={OLAP},%
+plural={OLAP},%
+description={Online Analytical Processing},%
+descriptionplural={Online Analytical Processing\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Online Analytical Processing},%
+longplural={Online Analytical Processing},%
+short={OLAP},%
+shortplural={OLAP},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vog}{}%
+{%
+\gls@defglossaryentry{vog}%
+{%
+name={VOG},%
+sort={VOG},%
+type={acronym},%
+first={Vocabulary Graph\glsspace (VOG)},%
+firstplural={Vocabulary Graph\glsspace (VOG)},%
+text={VOG},%
+plural={VOG},%
+description={Vocabulary Graph},%
+descriptionplural={Vocabulary Graph\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Vocabulary Graph},%
+longplural={Vocabulary Graph},%
+short={VOG},%
+shortplural={VOG},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bfs}{}%
+{%
+\gls@defglossaryentry{bfs}%
+{%
+name={BFS},%
+sort={BFS},%
+type={acronym},%
+first={Breadth First Search\glsspace (BFS)},%
+firstplural={Breadth First Search\glsspace (BFS)},%
+text={BFS},%
+plural={BFS},%
+description={Breadth First Search},%
+descriptionplural={Breadth First Search\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Breadth First Search},%
+longplural={Breadth First Search},%
+short={BFS},%
+shortplural={BFS},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ConDenSe}{}%
+{%
+\gls@defglossaryentry{ConDenSe}%
+{%
+name={CONDENSE},%
+sort={CONDENSE},%
+type={acronym},%
+first={CONditional Diversified Network Summarization\glsspace (CONDENSE)},%
+firstplural={CONditional Diversified Network Summarization\glsspace (CONDENSE)},%
+text={CONDENSE},%
+plural={CONDENSE},%
+description={CONditional Diversified Network Summarization},%
+descriptionplural={CONditional Diversified Network Summarization\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={CONditional Diversified Network Summarization},%
+longplural={CONditional Diversified Network Summarization},%
+short={CONDENSE},%
+shortplural={CONDENSE},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ecwg}{}%
+{%
+\gls@defglossaryentry{ecwg}%
+{%
+name={ECWG},%
+sort={ECWG},%
+type={acronym},%
+first={Efficient Compression of web graph \glsspace (ECWG)},%
+firstplural={Efficient Compression of web graph \glsspace (ECWG)},%
+text={ECWG},%
+plural={ECWG},%
+description={Efficient Compression of web graph},%
+descriptionplural={Efficient Compression of web graph \acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Efficient Compression of web graph},%
+longplural={Efficient Compression of web graph},%
+short={ECWG},%
+shortplural={ECWG},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gcupmt}{}%
+{%
+\gls@defglossaryentry{gcupmt}%
+{%
+name={GCUPMT},%
+sort={GCUPMT},%
+type={acronym},%
+first={Graph Compression Using Pattern Matching\glsspace (GCUPMT)},%
+firstplural={Graph Compression Using Pattern Matching\glsspace (GCUPMT)},%
+text={GCUPMT},%
+plural={GCUPMT},%
+description={Graph Compression Using Pattern Matching},%
+descriptionplural={Graph Compression Using Pattern Matching\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graph Compression Using Pattern Matching},%
+longplural={Graph Compression Using Pattern Matching},%
+short={GCUPMT},%
+shortplural={GCUPMT},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vnm}{}%
+{%
+\gls@defglossaryentry{vnm}%
+{%
+name={VNM},%
+sort={VNM},%
+type={acronym},%
+first={Virtual Node Miner\glsspace (VNM)},%
+firstplural={Virtual Node Miner\glsspace (VNM)},%
+text={VNM},%
+plural={VNM},%
+description={Virtual Node Miner},%
+descriptionplural={Virtual Node Miner\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Node Miner},%
+longplural={Virtual Node Miner},%
+short={VNM},%
+shortplural={VNM},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dsm}{}%
+{%
+\gls@defglossaryentry{dsm}%
+{%
+name={DSM},%
+sort={DSM},%
+type={acronym},%
+first={Dense SubGraph Mining\glsspace (DSM)},%
+firstplural={Dense SubGraph Mining\glsspace (DSM)},%
+text={DSM},%
+plural={DSM},%
+description={Dense SubGraph Mining},%
+descriptionplural={Dense SubGraph Mining\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Dense SubGraph Mining},%
+longplural={Dense SubGraph Mining},%
+short={DSM},%
+shortplural={DSM},%
+counter={page},%
+parent={},%
+%
+}%
+}%
