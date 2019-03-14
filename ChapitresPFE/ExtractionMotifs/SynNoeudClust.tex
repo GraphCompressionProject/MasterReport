@@ -1,0 +1,58 @@
+				\begin{landscape}
+								\begin{table}
+									\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+										\hline
+										& \multirow{2}{*}[-25pt]{Article}  & \multicolumn{4}{c|}{Graphe en entrée} & \multicolumn{2}{c|}{Compression} & \multicolumn{2}{c|}{Structure en sortie}  & \multirow{2}{*}[-25pt]{Graphe de test} & \multirow{2}{*}[-25pt]{Résultat}  \\ \cline{2-11}
+				& \rotatebox[origin=c]{90}{ Orienté }  & \rotatebox[origin=c]{90}{ Non orienté } & \rotatebox[origin=c]{90}{ Statique } & \rotatebox[origin=c]{90}{ Dynamique } & \rotatebox[origin=c]{90}{ Avec perte } & \rotatebox[origin=c]{90}{ Sans perte } & \rotatebox[origin=c]{90}{ Succincte } & \rotatebox[origin=c]{90}{ Structurelle }  & & \\ \hline				%%%%%%Fin du header
+										
+										 \rotatebox[origin=c]{90} \multirow{4}{*}[-25pt]{Basé vocabulaire en utilisant les méthodes de clustering} & VoG \citep{koutra2015summarizing} & \xmark & \cmark & \cmark & \xmark & \xmark & \cmark & \cmark & \xmark  & 
+	
+	\begin{minipage}[t]{0.3\textwidth}
+	ASOregon
+    \begin{itemize}
+    \item 13 milles nœuds
+    \item 37 milles liens\\
+    
+    \end{itemize}
+  \end{minipage}									 
+			  & 71\%	\\
+
+										 & VoG-Overlapp \citep{liu2015empirical}& \xmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark  &
+										
+	\begin{minipage}[t]{0.3\textwidth}
+	ASOregon
+    \begin{itemize}
+    \item 13 milles nœuds
+    \item 37 milles liens\\
+    
+    \end{itemize}
+  \end{minipage}	
+										 & 25\%	\\
+										 & TimeCrunch \citep{shah2015timecrunch}& \xmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark & 
+
+	\begin{minipage}[t]{0.3\textwidth}
+	Enron
+    \begin{itemize}
+    \item 80 milles nœuds
+    \item 288 milles liens\\
+    
+    \end{itemize}
+  \end{minipage}											
+										&74\%	\\
+										 & CanDenSe \citep{liu2018reducing}&     \xmark & \cmark & \xmark & \cmark & \xmark  &\cmark & \cmark & \cmark &
+\begin{minipage}[t]{0.3\textwidth}
+	Enron
+    \begin{itemize}
+    \item 80 milles nœuds
+    \item 288 milles liens\\
+    
+    \end{itemize}
+  \end{minipage}											
+										 &	 78\%\\
+										\hline
+									\end{tabular}
+									\caption{Synthèse des méthode de compression par extraction de motifs basées sur des méthodes de clustering.}									
+									
+								\end{table}
+								
+							\end{landscape}

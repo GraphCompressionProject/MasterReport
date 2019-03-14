@@ -1,12 +1,12 @@
 \babel@toc {french}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par $k^2$-trees.}}{32}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par $k^2$-trees.}}{33}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Tableau comparatif entre les m\IeC {\'e}thodes de clustering avec n = nombre de n\IeC {\oe }uds, m = nombre d'ar\IeC {\^e}tes, k = nombre de clusters, t = nombre d'it\IeC {\'e}rations, d = degr\IeC {\'e} moyen de n\IeC {\oe }uds, h($m_{h}$) = nombre de n\IeC {\oe }uds (ar\IeC {\^e}tes) dans la structure hyperbolique.}}{36}{table.2.3}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs.}}{47}{table.2.4}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes bas\IeC {\'e}es sur$k^2$-trees et bas\IeC {\'e}es sur l'extraction de motifs.}}{49}{table.2.5}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par $k^2$-trees.}}{28}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Tableau comparatif entre les m\IeC {\'e}thodes de clustering avec n = nombre de n\IeC {\oe }uds, m = nombre d'ar\IeC {\^e}tes, k = nombre de clusters, t = nombre d'it\IeC {\'e}rations, d = degr\IeC {\'e} moyen de n\IeC {\oe }uds, h($m_{h}$) = nombre de n\IeC {\oe }uds (ar\IeC {\^e}tes) dans la structure hyperbolique.}}{31}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs.}}{42}{table.2.3}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes bas\IeC {\'e}es sur$k^2$-trees et bas\IeC {\'e}es sur l'extraction de motifs.}}{44}{table.2.4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Les types de signatures temporelles et leurs repr\IeC {\'e}sentations, $t_{i}$ repr\IeC {\'e}sentent les timestamps et T repr\IeC {\'e}sente la p\IeC {\'e}riode.}}}{54}{table.3.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Les types de signatures temporelles et leurs repr\IeC {\'e}sentations, $t_{i}$ repr\IeC {\'e}sentent les timestamps et T repr\IeC {\'e}sente la p\IeC {\'e}riode.}}}{49}{table.4.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

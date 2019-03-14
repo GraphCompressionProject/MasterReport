@@ -1,0 +1,57 @@
+Les graphes sont de nos jours sont omniprésents. Cependant, leur taille présente un obstacle presque insurmontable à la compréhension du caractère essentiel des données. D'où la nécessité de la compression qui permet de réduire la taille des graphes tout en gardant le caractère utile de l'information incluse dans ces derniers.
+
+Nous avons étudié dans ce chapitre différentes méthodes de compression de graphes dans le but d'établir une classification des méthodes basée sur deux approches : l'extraction de motifs et les arbres k2-trees. Nous nous sommes appuyer pour cela sur le principe de fonctionnement de chacune d'elles. Nous  proposons six classes de méthodes : 1/ Les méthodes de compression par les k2-trees, 2/ Les méthodes de compression par extraction de motifs basées vocabulaires en utilisant des méthodes de clustering. 3/ Les méthodes de compression par extraction de motifs basées vocabulaires exploitant les propriétés de la matrice d'adjacence. 4/ Les méthodes de compression par extraction de motifs basées agrégation de nœuds. 5/ Les méthodes de compression par extraction de motifs basées agrégation de liens en utilisant des règles de grammaire.6/ Les méthodes de compression par extraction de motifs basées agrégation de liens en utilisant des heuristiques de clustering.	
+Nous avons présenté le principe de fonctionnement des méthodes relatif à chaque classe tout en comparant leurs caractéristiques. 
+
+ Ces classes diffèrent les unes des autres dans leurs fondements théoriques, le type de compression considérer, la complexité des algorithmes, les objectifs et les domaines d'application. 
+ Dans le tableau \ref{comgen} , nous allons essayer de synthétiser les principales différences et similitudes entre les deux approches, compression par extraction de motifs et compression par les arbres k2-trees, que nous avons pu constater à travers notre recherche bibliographique. 
+\begin{table}
+\begin{tabular}{|c|p{5cm}|p{6cm}|}
+
+\hline & \begin{center}
+\textbf{$k^2$-trees}
+\end{center}     &  \begin{center} \textbf{Extraction de motifs} \end{center}  \\
+										
+										
+\hline Type de compression & toujours sans perte & toujours sans perte \\
+\hline Structure en sortie & Toujours succincte & Peut être succincte où structurelle où les deux en même temps\\
+
+\hline technique utilisée & exploitation de la matrice d'adjacence du graphe & exploitation des motifs fréquents dans le graphe\\
+
+\hline Dépendance & Dépend du paramètre k & Dépend selon la méthode de l'algorithme de clustering ou du vocabulaire de motifs utilisé  \\
+
+\hline Objectif & 
+\begin{minipage}[t]{0.35\textwidth}
+  			Compression,\\
+  			Réduire l'espace de stockage et le temps de parcours\\
+  \end{minipage}
+  &
+  \begin{minipage}[t]{0.25\textwidth}
+  			- Compression,\\
+  			- Réduire l'espace de  stockage et le temps de parcours,\\
+  			- Extraire les informations pertinentes, \\
+  			- Visualisation \\
+  \end{minipage}
+  \\
+  \hline Domaine d'application & tous les domaines & tous les domaines \\
+  \hline
+\end{tabular}
+									\caption{Comparaison entre les méthodes basées sur$k^2$-trees et basées sur l'extraction de motifs.}									\label{comgen}
+									
+								\end{table}
+								
+								Malgré le nombre considérable de travaux dans
+le domaine de la compression des graphes, il y a encore
+de nombreux problèmes ouverts importants sur le terrain. Nous mentionnons ci-dessous quelques un des plus remarquables.
+ 
+
+Le premier est l'aspect récursive des méthodes de construction des arbres k2-trees qui est un obstacle envers les performances (complexité temporelle et spaciale) de cette classe de méthodes. Certe l'utilisation de l'approche récursive permet souvent d'avoir un programme naturelle, plus simple et plus facile à comprendre mais le nombre importants d'appel imbriqué généré dans le cas des graphes du monde réel augmente de manière considérable le temps d'exécution et la mémoire nécessaire pour la construction du graphe compressé. 
+
+Le deuxième aspect est la forte influence des méthodes de clustering sur les performances de la compression. \gls{ConDenSe} proposent de d'utiliser plusieurs méthodes de clustering mais cela si il améliore le taux de compression il ne fait qu'empirer le temps d'exécution. 
+
+Un autre aspect à considérer est l'aspect temporel des graphes. En effet, tant dis que plusieurs méthodes de compression par les arbres k2-trees existent pour ce type de graphes, nous n'avons trouver que quelques méthodes dans le cas des méthodes par extraction de motifs basées vocabulaire et aucune méthodes dans la sous-classe des méthodes agrégatives malgré qu'elles offrent un taux de compression compétitif dans le cas statique. De plus, il existe peut de travaux sur la compression par les arbres k2-trees des graphes temporels attribués et aucun travail, à notre connaissance, sur la compression par extraction de motifs pour ce type de graphe. Cependant, de nombreux réseaux du monde réel, tels que les réseaux sociaux où le suivie des communautés (ou motifs) est très utile, peuvent facilement être modélisés sous la forme de graphes attribués temporels. Nous avons même remarqué que dans le cas de certains types de graphes statiques, tel que les graphes multi-vue, aucun schéma de compression n'a été proposé. Une solution dans le cas de l'exemple précédent serait peut être de généraliser le schéma de compression de VoG. Cette piste de recherche est motivé par l'apparition de nouvelles méthodes de clustering, comme celle proposée \citep{wang2019study}, adaptées pour les graphes multi-vue .
+
+
+Finalement, nous pensons qu'une nouvelle direction prometteuse est l'utilisation des méthodes d'apprentissage dans le processus d'extraction de motifs des méthodes la compression des graphes. Le caractère prometteur de cette direction est due aux succès apporté par le domaine d'apprentissage ces dernières années, notamment le \textit{Deep Learning}. %De nombreux chercheurs se sont déjà investis dans le domaine, à l'exemple de \citep{sun2019big}.
+								
+
