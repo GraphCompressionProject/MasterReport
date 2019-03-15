@@ -1,0 +1,21 @@
+%%%VoG Overlapp
+			Comme nous l'avons déjà précisé, \gls{vog} formule le problème de compression de graphe en tant que problème d'optimisation basé sur la théorie de l'information, l'objectif étant de rechercher les sous structures  qui minimisent la longueur de description globale du graphe. Un élément clé de \gls{vog} est la méthode de décomposition utilisée qui peut donner en sortie des sous-graphes ayant des nœuds et/ou des arêtes en commun et dont \gls{vog} \citep{koutra2015summarizing} ne suppose que le premiers cas. 
+			En partant de ce constat, les auteurs de \citep{liu2015empirical} proposent VoG-overlapp, une extension de \gls{vog} prenant en compte les chevauchements des structures sous forme d'une étude expérimentale de l'effet de diverses méthodes de décomposition sur la qualité de la compression.
+			%%%Algorithme 01
+			
+			L'idée de base de VoG-overlapp est d'inclure une pénalité pour les chevauchements importants dans la fonction objective ce qui oriente le processus de sélection des structures vers la sortie souhaitée. Elle devient alors:
+			\begin{center}
+				$min\ L(G,M) = min\ \big\{L(M) + L(E) +\textbf{L(O)}\big\}$
+			\end{center}
+			
+			Le principe de calcul de $L(M)\ et\ L(E)$ demeure le même, avec O une matrice cumulant le nombre de fois que chacune des arêtes a été couverte par le modèle. Le cout du codage de la matrice des chevauchements est donné par la formule \eqref{eq:Lo}.
+			\begin{equation} \label{eq:Lo}
+				L(O) = log(|O|)\ +\ ||O||\ l_{1}\ +\ ||O||'\ l_{0}\ +\  \displaystyle{\sum_{o\in\varepsilon(O)}L_{N}(|o|)}
+			\end{equation}
+			Où :
+			\begin{itemize}[label=$\circ$]
+				\item $|O|$  est le nombre d'arêtes (distinctes) qui se répètent dans le modèles M. 
+				\item $||O||$ et $||O||'$ représentent respectivement le nombre d'arêtes présentes et manquantes dans O.
+				\item $l_{1} = -log (\frac{||O||}{||O||+||O||'})$, de manière analogique $l_{0}$, sont les longueurs des codes de préfixe optimaux pour les arêtes actuelles et manquantes, respectivement.
+				\item $\varepsilon(O)$  est l'ensemble des entrées non nulles dans la matrice O.
+			\end{itemize}

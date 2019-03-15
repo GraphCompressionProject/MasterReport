@@ -1,0 +1,10 @@
+Une dernière variante,
+\newacronym{ConDenSe}{CONDENSE}{CONditional Diversified Network Summarization}
+ s'intitulant \gls{ConDenSe}, a été présentée par Liu et al. \citep{liu2018reducing} où ils abordent efficacement trois contraintes principales des  méthodes précédentes: 
+				(i) leurs dépendance à la méthode d'extraction de motifs 
+				(ii) l'incapacité de certaines à gérer les motifs qui se chevauchent 
+				(iii) leur dépendance vis-à-vis de l'ordre dans lequel les structures candidates sont considérées lors de la phase d'assemblage. En effet, pour résoudre le premier problème, ils combinent plusieurs méthodes d'extraction de motifs ce qui améliore la qualité des structures candidates en dépit  du temps d'exécution. Tant dis que pour répondre à la deuxième contrainte ils utilisent la fonction objective proposée dans \citep{liu2015empirical}. Arrivant à la dernière phase de l'algorithme, ils proposent quatre nouvelles heuristiques: 
+				(1) STEP: choisie les K  meilleures structures, 
+				(2) STEP-P: partitionne le graphe et affecte chaque motif  à la partition ayant un chevauchement maximal de nœuds avec lui. Ces partitions sont parcourues parallèlement pour ne prendre que la meilleure de toutes les structures dans chacune des partitions,
+				(3) STEP-PA: amélioration de STEP-P en désignant chaque partition du graphe comme étant active, puis si une partition échoue x fois pour trouver une structure qui réduit le coût \gls{mdl} , cette partition est déclarée inactive et n'est pas visitée dans les prochaines itérations,
+				 (4) K-STEP: combinaison des trois premières heuristiques. Il transforme par la suite chaque motif trouvé en un super-nœud.		

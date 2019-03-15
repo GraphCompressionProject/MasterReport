@@ -1,0 +1,65 @@
+\begin{landscape}
+								\begin{table}
+								%\renewcommand{\arraystretch}{2}
+									\begin{tabular}{|c|C{5.5cm}|c|c|c|c|c|c|c|c|C{2.5cm}|c|}
+										\hline
+										\multirow{2}{*}[-25pt]{Classe} & \multirow{2}{4cm}[-25pt]{Méthode}  & \multicolumn{4}{c|}{Graphe en entrée} & \multicolumn{2}{c|}{Compression} & \multicolumn{2}{c|}{Structure en sortie}  & \multirow{2}{*}[-25pt]{Graphe de test} & \multirow{2}{*}[-25pt]{Résultat}  \\ \cline{3-10}
+				& & \rotatebox[origin=c]{90}{ Orienté }  & \rotatebox[origin=c]{90}{ Non orienté } & \rotatebox[origin=c]{90}{ Statique } & \rotatebox[origin=c]{90}{ Dynamique } & \rotatebox[origin=c]{90}{ Avec perte } & \rotatebox[origin=c]{90}{ Sans perte } & \rotatebox[origin=c]{90}{ Succincte } & \rotatebox[origin=c]{90}{ Structurelle }  & & \\ \hline	 \hline			%%%%%%Fin du header
+										
+										 \multirow{4}{4cm}{Basée vocabulaire en utilisant  les méthodes de clustering}& VoG \citep{koutra2015summarizing} & \xmark & \cmark & \cmark & \xmark & \xmark & \cmark & \cmark & \xmark  & 
+	
+	
+	ASOregon									 
+			  & 71\%	\\ \cline{2-12}
+
+										 & VoG-Overlapp \citep{liu2015empirical}& \xmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark  & ASOregon							 & 25\%	\\  \cline{2-12}
+										 & TimeCrunch \citep{shah2015timecrunch}& \xmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark & 
+
+	
+	Enron			&74\%	\\  \cline{2-12}
+										 & CanDenSe \citep{liu2018reducing}&     \xmark & \cmark & \xmark & \cmark & \xmark  &\cmark & \cmark & \cmark & Enron									
+										 &	 78\%\\ \hline \hline
+										 
+										 \multirow{2}{4cm}{\footnotesize{Basée vocabulaire en utilisant  les propriétés de la matrice d'adjacence}}&  ECWG
+ \citep{asano2008efficient}& \cmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark  &
+	uk-2002	 & 76.1\%	\\  \cline{2-12}
+	
+	& GCUPMT \citep{shah2018graph} & \cmark & \cmark & \cmark & \xmark & \xmark &\cmark & \cmark & \xmark & 
+	graphes 8192 nœuds
+							 
+			  & 70\%	\\ \hline \hline
+			  
+			\multirow{2}{4cm}{\small{Basée Agrégation de nœuds des motifs}} & Subdue
+ \citep{ketkar2005subdue}& \xmark & \cmark & \cmark & \xmark & \xmark & \cmark & \xmark & \cmark &		
+	Graphe des composantes chimiques
+										 & 16\%	\\ \cline{2-12}
+										 
+										 & GraphZip \citep{rossi2018graphzip} & \xmark & \cmark & \cmark & \xmark & \xmark & \cmark & \xmark & \cmark & 
+				Web-Google						
+								 
+			  & 19\%	\\ \hline \hline
+			  
+			  \multirow{3}{4cm}{Basée Agrégation de liens des motifs en utilisant les règles de grammaire} & Approximate Re-pair
+   \citep{claude2010fast}& \cmark & \xmark & \cmark & \xmark & \xmark &  \cmark & \cmark & \xmark	 &		
+	uk-2002 & 4.23	\\ \cline{2-12}
+	 &  Approximate Re-pair \citep{claude2010extended} & \cmark & \xmark & \cmark & \xmark & \xmark & \cmark & \cmark & \xmark  & 
+	uk-2002	 & 3.98 \\	\cline{2-12}
+	
+	& gRe-pair \citep{maneth2018grammar} & \cmark & \cmark & \cmark & \xmark & \xmark & \cmark & \cmark & \xmark &
+  			
+  			NotreDame
+  			& 4.84 \\ \hline \hline
+  			  \multirow{2}{4cm}{\small{Basée Agrégation de liens des motifs et les méthodes de clustering}}& VNM
+ \citep{buehrer2008scalable}& \cmark & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark & \cmark &		
+	uk-2002 	 & 1.95 \\ \cline{2-12}
+	& DSM \citep{hernandez2014compressed} & \cmark & \xmark & \cmark & \xmark &  \xmark & \cmark & \cmark & \cmark  & 
+				
+	uk-2002 					 
+			  & 1.53	\\
+									\hline	 
+									\end{tabular}
+									\caption{Synthèse des méthodes de compression par extraction de motifs.}									
+									
+								\end{table}
+								
+							\end{landscape}

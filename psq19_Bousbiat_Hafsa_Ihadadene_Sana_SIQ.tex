@@ -182,7 +182,7 @@ Cependant, deux types de méthodes de compression de graphes se sont distinguée
 %---->chapitre 01 :« cadrage du projet »
 	\chapter{ Théorie des graphes}
 	%%Ajouter une petite introduction pour ce chapitre
-	  \input{./Chapitres/TheorieDesGraphes/TheorieDesGraphes.tex}
+	  \input{./ChapitresPFE/TheorieDesGraphes/TheorieDesGraphes.tex}
 	
 
 %---->chapitre 02 :« »
@@ -197,25 +197,25 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 		
 		\section{Compression de données :}
 		
-			\input{./Chapitres/CompressionDesGraphes/datacompression.tex}
+			\input{./ChapitresPFE/CompressionDesGraphes/datacompression.tex}
 		
 		\section{Compression appliquée aux graphes:}
-			\input{./Chapitres/CompressionDesGraphes/CompressionAppliquee.tex}
+			\input{./ChapitresPFE/CompressionDesGraphes/CompressionAppliquee.tex}
 			
 	
 			\subsection{Les types de compression:}
-			\input{./Chapitres/CompressionDesGraphes/TypeDeCompression.tex}
+			\input{./ChapitresPFE/CompressionDesGraphes/TypeDeCompression.tex}
 			
 	
 			\subsection{Les métriques d'évaluation des algorithmes de compression:}
-				\input{./Chapitres/CompressionDesGraphes/MOE.tex}
+				\input{./ChapitresPFE/CompressionDesGraphes/MOE.tex}
 			
 			\subsection{Classification des méthodes de compression:}
-				\input{./Chapitres/CompressionDesGraphes/classification.tex}
+				\input{./ChapitresPFE/CompressionDesGraphes/classification.tex}
 				
 			\section{Compression par les arbres $K^2$-Trees}
-				\input{./Chapitres/k2_trees/K2-trees.tex}
-				\input{./Chapitres/k2_trees/SynK2.tex}
+				\input{./ChapitresPFE/k2_trees/K2-trees.tex}
+				\input{./ChapitresPFE/k2_trees/SynK2.tex}
 			\section{Compression par extraction de motifs}
 			 Les motifs fréquents sont des connaissances extraites sur des données. Leur but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils lui offrent ainsi une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante dans la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement %%%% verifier ce mot
 			 utilisée dans le domaine de compression des graphes vu qu'elle permet de ne garder que l'information utile et d'éliminer les redondances de manière efficace. En effet, nous trouvons plusieurs méthodes basées sur ce principe où nous pourrons clairement distinguer deux grandes classes : 
@@ -233,19 +233,19 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 							Les méthodes de cette classe s'appuient sur le fait qu'on ne peut pas comprendre facilement les graphes denses, alors que quelques structures simples sont beaucoup plus faciles à comprendre et souvent très utiles pour analyser le graphe. Elles se basent sur des algorithmes de détection de communautés. 
 							La question suivante peut alors se poser: pourquoi ne pas appliquer l'un des nombreux algorithmes de détection de communautés ou de partitionnement de graphes pour compresser le graphe en termes de communautés? La réponse est que ces algorithmes ne servent pas tout à fait le même objectif que la compression. Généralement, ils détectent de nombreuses communautés sans ordre explicite, de sorte qu'une procédure de sélection des sous-graphes les plus «importants» est toujours nécessaire. En plus de cela, ces méthodes renvoient simplement les communautés découvertes, sans les caractériser (par exemple, clique, étoile) et ne permettent donc pas à l'utilisateur de mieux comprendre les propriétés du graphe. 
 							
-							\input{./Chapitres/ExtractionMotifs/EM.tex}
-							\input{./Chapitres/ExtractionMotifs/VOG.tex}
-							\input{./Chapitres/ExtractionMotifs/VOG_Overlapp.tex}
-							\input{./Chapitres/ExtractionMotifs/TimeCrunch.tex}
-							\input{./Chapitres/ExtractionMotifs/CanDense.tex}
+							\input{./ChapitresPFE/ExtractionMotifs/EM.tex}
+							\input{./ChapitresPFE/ExtractionMotifs/VOG.tex}
+							\input{./ChapitresPFE/ExtractionMotifs/VOG_Overlapp.tex}
+							\input{./ChapitresPFE/ExtractionMotifs/TimeCrunch.tex}
+							\input{./ChapitresPFE/ExtractionMotifs/CanDense.tex}
 							%\input{./Chapitres/ExtractionMotifs/SynNoeudClust.tex}
 			\newpage
 					 \textbf{Les méthodes basées sur les propriétés de la matrice d'adjacence}
 							
 							Les graphes peuvent avoir différentes représentations. Chacune des structures de données présente des avantages et des inconvénients en ce qui concerne la quantité de mémoire nécessaire pour stocker les données et la facilité d'accès aux données. Selon les besoins, il est parfois utile de stocker les données dans des structures de données plus grandes, qui nécessitent plus d'espace mais offrent un accès efficace aux données. En se basant sur ce constat plusieurs méthodes ont été  proposées dans la littérature pour compresser la matrice d'adjacence en exploitant les propriétés des graphes réels pour trouver les motifs les plus fréquents dans cette dernière.
 							
-							\input{./Chapitres/ExtractionMotifs/intra_inter_mot_mat.tex}
-							\input{./Chapitres/ExtractionMotifs/mot_mat.tex}
+							\input{./ChapitresPFE/ExtractionMotifs/intra_inter_mot_mat.tex}
+							\input{./ChapitresPFE/ExtractionMotifs/mot_mat.tex}
 						%	\input{./Chapitres/ExtractionMotifs/SynMatMot.tex}
 					
 				
@@ -262,8 +262,8 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 					Les techniques de compression basées sur l'agrégation des nœuds des motifs sont des méthodes qui ont existé depuis plusieurs décennies offrant plusieurs avantages. 
 					Elles visent à résumer le graphe initial en agrégeant les nœuds des motifs découvert dans le but de diminuer le nombre de nœuds existants  et d'offrir une meilleure visibilité et analyse du graphe. 
 						
-						\input{./Chapitres/ExtractionMotifs/SubDue.tex}\\
-						\input{./Chapitres/ExtractionMotifs/GraphZip.tex}
+						\input{./ChapitresPFE/ExtractionMotifs/SubDue.tex}\\
+						\input{./ChapitresPFE/ExtractionMotifs/GraphZip.tex}
 					%	\input{./Chapitres/ExtractionMotifs/SynAgrNoeud.tex}
 					
 					\item \subsubsection{Les méthodes de compression basées sur l'agrégation de liens}
@@ -273,30 +273,30 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 							\item \textbf{Les méthodes de compression basées sur les règles de grammaire}
 							La classe des méthodes de compression basées sur les règles de grammaire est une généralisation d'une méthode de compression des dictionnaires s'intitulant Re-pair. Son principe de base consiste en la  recherche, à chaque itération, de la paire de symboles la plus fréquente dans une séquence de caractères et de la remplacer par un nouveau symbole, jusqu'à ce qu'il ne soit plus commode de les remplacer. Nous notons que dans ce cas le motif est sous forme de deux arêtes ayant un sommet en commun, nommé \textit{digraph}.
 								
-								\input{./Chapitres/ExtractionMotifs/appRep.tex}
+								\input{./ChapitresPFE/ExtractionMotifs/appRep.tex}
 								 %%%%exemple ???
-								\input{./Chapitres/ExtractionMotifs/appRepAmel.tex}
-								\input{./Chapitres/ExtractionMotifs/k2-partitionned.tex}
+								\input{./ChapitresPFE/ExtractionMotifs/appRepAmel.tex}
+								\input{./ChapitresPFE/ExtractionMotifs/k2-partitionned.tex}
 							
-								\input{./Chapitres/ExtractionMotifs/gRepair.tex}
+								\input{./ChapitresPFE/ExtractionMotifs/gRepair.tex}
 								%%%%exemple ???
 							%	\input{./Chapitres/ExtractionMotifs/SynGram.tex}
 							\item \textbf{Les méthodes de compression basées sur des heuristiques de clustering} 				
 							
 							Les méthodes de compression appartenant à cette classe sont des méthodes basées sur la recherche des sous-graphes denses (ayant des nœuds fortement connectés). Elles sont destinées principalement aux graphes du Web et les graphes des réseaux sociaux dans le but de faciliter leur exploration et analyse.
 								
-								\input{./Chapitres/ExtractionMotifs/VNM.tex}
-								\input{./Chapitres/ExtractionMotifs/DSM.tex}		
+								\input{./ChapitresPFE/ExtractionMotifs/VNM.tex}
+								\input{./ChapitresPFE/ExtractionMotifs/DSM.tex}		
 						
 						\end{enumerate}	
 					
 					\end{enumerate}
 						
-						\input{./Chapitres/ExtractionMotifs/SynGen.tex}						
+						\input{./ChapitresPFE/ExtractionMotifs/SynGen.tex}						
 								
 		\section{Bilan général}
 	
-\input{./Chapitres/CompressionDesGraphes/BillanGen.tex}
+\input{./ChapitresPFE/CompressionDesGraphes/BillanGen.tex}
 
 	
 	
@@ -311,7 +311,7 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 	\section{Introduction}
 	
 	\section{Notre méthode: Dynamic Dense Subgraph Mining (DDSM)}
-		\input{./Chapitres/DDSM/ddsm.tex}
+		\input{./ChapitresPFE/DDSM/ddsm.tex}
 
 	\section{$k^2$-GraCE : }
 	

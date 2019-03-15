@@ -1,0 +1,61 @@
+	
+				Devant la panoplie d'algorithmes et de techniques de compression de graphe disponibles dans la littérature, des critères de comparaison  et d'évaluation entre ces méthodes doivent être bien définis. Dans cette partie, nous présenterons les principales mesures de performances.
+				
+				\begin{enumerate}[label=\alph*)]
+					\item \subsubsection{Le temps de compression:}
+				C'est une métrique qui donne le temps d'exécution de l'algorithme de compression. Elle est généralement mesurée en secondes (ou ms).
+				
+				%\newacronym{cr}{CR}{Ratio de compression}
+				\item 	\subsubsection{Le ratio de compression }
+				Le ratio de compression (CR) est la mesure la plus courante pour calculer l'efficacité d'un algorithme de compression. Il est défini comme le rapport entre le nombre total de bits requis pour stocker les données non compressées et le nombre total de bits nécessaires pour stocker les données compressées.
+				%la formule
+				\begin{center}
+				$
+				CR = \frac{Nbre.\ de\ bits\ du\ graphe\ originale}{Nbre.\ de\ bits\ du\ graphe\ finale }
+				$
+				\end{center}
+				
+				
+				Le CR est parfois appelé bit par bit (bpb) et il est défini alors comme étant le nombre moyen de bits requis pour stocker les données compressées \citep{uthayakumar2018survey}. Dans le cas des algorithmes de compression de graphe on a:
+				\begin{itemize}
+					\item \textbf{Le nombre de bits par nœud:}
+					représente l'espace mémoire nécessaire pour stocker un nœud (bpn pour << \textit{bits per node} >> en Anglais).
+					%% la formule
+					
+					\item \textbf{Le nombre de bits par lien:}
+					représente l'espace mémoire nécessaire pour stocker un arc dans le cas d'un graphe orienté ou une arête dans le cas d'un graphe non orienté (bpe pour << \textit{bits per edge} >> en Anglais).
+					%%la formule 
+				\end{itemize}
+				
+				\item 	\subsubsection{Le taux de compression:}
+				Exprimée en pourcentage, cette métrique permet de mesurer la performance de la méthode de compression. Elle peut être exprimée de deux manières différentes:
+				
+				\begin{itemize}
+					\item \textbf{Le taux de compression:} Le rapport entre volume du graphe après compression et le volume initial du graphe.
+					\begin{center}
+				$
+				t = \frac{La\ taille\ du\ graphe\ finale}{La\ taille\ du\ graphe\ originale }
+				$
+				\end{center}
+					\item \textbf{Le gain d'espace: }Le gain d'espace représente la réduction de la taille du graphe compressé par rapport à la taille du graphe original.
+					
+					\begin{center}
+				$
+				G = 1 - \frac{La\ taille\ du\ graphe\ finale}{La\ taille\ du\ graphe\ originale }
+				$
+				\end{center}
+					
+					
+				\end{itemize}
+				%\subsubsection{L'erreur quadratique:}
+				\end{enumerate}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
