@@ -25,6 +25,18 @@
 \usepackage{algorithm}
 \usepackage{algorithmic}
 
+%%% francisation des algorithmes 
+\renewcommand{\algorithmicrequire} {\textbf{\textsc{Entrées:}}} \renewcommand{\algorithmicensure} {\textbf{\textsc{Sorties:}}} \renewcommand{\algorithmicwhile} {\textbf{tantque}} 
+\renewcommand{\algorithmicdo} {\textbf{faire}} 
+\renewcommand{\algorithmicendwhile}{\textbf{fin tantque}} \renewcommand{\algorithmicend} {\textbf{fin}} 
+\renewcommand{\algorithmicif} {\textbf{si}} 
+\renewcommand{\algorithmicendif} {\textbf{finsi}} 
+\renewcommand{\algorithmicelse} {\textbf{sinon}} 
+\renewcommand{\algorithmicthen} {\textbf{alors}} 
+\renewcommand{\algorithmicfor} {\textbf{pour}} 
+\renewcommand{\algorithmicforall} {\textbf{pour tout}}
+\renewcommand{\algorithmicdo} {\textbf{faire}} 
+\renewcommand{\algorithmicendfor} {\textbf{fin pour}} \renewcommand{\algorithmicloop} {\textbf{boucler}} \renewcommand{\algorithmicendloop} {\textbf{fin boucle}} \renewcommand{\algorithmicrepeat} {\textbf{répéter}} \renewcommand{\algorithmicuntil} {\textbf{jusqu'à}}
 
 \usepackage{setspace}
 \setstretch{1,15}
@@ -302,9 +314,111 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 		\input{./Chapitres/DDSM/ddsm.tex}
 
 	\section{$k^2$-GraCE : }
+	
+
+Dans cette section, nous présenterons les détails de notre premier Moteur baptisé $k2$-GraCE pour k2-trees Graph Compression Engine. Il consiste en un moteur de compression de graphes par les arbres k2-trees qui exploitent les propriétés de localité et de similarité dans les graphes du web. 
+
 		\subsection{Principe de fonctionnement :}
+		
+	Le moteur $k^2$-GraCE a été conçu pour permettre la compression de graphes statiques ou dynamiques et orientés ou non orientés. Il se base sur les travaux de Brisaboa et al. \citep{brisaboa2009k}. Il offre la possibilité de construire le compressé à partir de la matrice d'adjacence ou de la liste d'adjacence. Il permet aussi dans le cas des graphes dynamiques de réduire davantage la taille de l'arbre en le construisant n'ont pas à partir de la matrice d'adjacence initiale mais en calculant une matrice de différence entre les instants $t_i$. 
+	
+	
+$k^2$-GraCE est un moteur de compression sans perte de données. En effet, il construit en sortie un arbre k2-tree incluant toute information présente dans le graphe initial. Cette information est représentée sous forme de deux chaines binaires. Le processus de compression d'un graphe de donnée par le moteur $k^2$-GraCE passe par les étapes suivantes :
+\begin{enumerate}
+\item Lecture et structuration du graphe de donnée en entrée 
+\item Construction récursive de l'arbre k2-tree à partir de la matrice d'adjacence (resp. la liste d'adjacence) et la concaténation des différents niveaux dans une première chaine T, à l'exception du dernier niveau qui sera stocké dans une deuxième chaine L.
+
+\item Écriture du graphe compressé sur le fichier de sortie.
+\end{enumerate}
+
+Nous illustrons ces phases par la figure \ref{k2grace} qui donne une vue globale sur le principe de fonctionnement de ce moteur.
+
+Après avoir expliquer de manière générale le principe de fonctionnement du moteur $k^2$-GraCE, nous présenterons dans ce qui suit les détails de la phase de compression (construction de l'arbre). Nous allons tout d'abords commencer par présenter les notations et opérations de bases qui seront utilisées par la suite. Nous enchainerons par les différents algorithmes de construction selon le types de graphes en entrée.
+
+\begin{figure}[h]
+\includegraphics[scale=0.48]{./ressources/image/k2grace.jpg}
+\caption[Principe de fonctionnement du moteur $k^2$-GraCE]{Principe de fonctionnement du moteur $k^2$-GraCE.}
+			\label{k2grace}
+\end{figure}
+		
 		\subsection{Paramètre et notations :}
-		\subsection{Conception Modulaire :}
+				
+		\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|L{12cm}|}
+		\hline Paramètre & Signification \\ \hline\hline 
+		$G$ & Graphe de données \\ \hline
+		$M$ & Matrice d'adjacence du graphe G\\ \hline
+		$A$ & L'arbre $k^2$-tree \\\hline
+		$h$ & L'hauteur de l'arbre $k^2$-tree \\ \hline
+		$N$ & Nombre de nœuds dans le graphe \\ \hline
+		$k$ & Paramètre déterminant la largeur de l'arbre k2-tree\\ \hline
+		rank($T,i$) &  Fonction calculant le nombre de 1 existant dans le tableau binaire $T$ dans l'intervalle des indices [$1,i$] \\ \hline
+		\end{tabular}
+		\caption{Tableau des notations et paramètres du moteur $k^2$-GraCE.}	
+		\label{notk2grace}		
+	\end{table}
+	
+		\subsection{Conception :}
+		
+		Dans cette partie, nous détaillerons le processus de compression pour chaque types de graphe supporter par le moteur $k^2$-GraCE où nous allons aussi expliquer les différents algorithmes d'extraction de voisins. 
+		
+			\subsubsection{$k^2$-trees pour les graphes orientés}
+			
+			$k^2$-tree est une représentation compacte de la matrice d'adjacence qui exploite ses propriétés de dispersion et de clustering. Elle était destinée au départ pour les graphes du web et généraliser par la suite pour différents cas. La représentation est conçue pour compresser les grandes zones nulle de la matrices d'adjacence en les représentant avec un nombre réduit de bits. Deux alternatives existent pour construire l'arbre $k^2$-tree: utilisation de la matrice d'adjacence ou l'utilisation de la liste d'adjacence.
+			
+			Dans le premier cas, la matrice d'adjacence sera représenté par arbre ayant une hauteur h= $log_k(N)$ et où chaque nœud contient un seul bit de données: 1 pour les nœuds internes et 0 pour les feuilles, à l'exception du dernier niveau de l'arborescence, où tous les noeuds sont des feuilles et représentent des valeurs de bit de la matrice. Le premier niveau (numéroté 0) correspond à la racine; ses $k^2$ fils sont représentés au niveau 1. Chaque fils est un nœud et a donc la valeur 0 ou 1. Tous les nœuds internes de l'arbre (c'est-à-dire avec la valeur 1) ont exactement $k^2$ fils, alors que les feuilles (avec la valeur 0 ou à le dernier niveau d'arbre) n'ont pas de fils.
+			
+			 Conceptuellement, nous commençons à diviser la matrice d'adjacence en $k^2$ sous-matrices de même taille, soit k lignes et k colonnes de sous-matrices de taille $n^2$/ $k^2$. Chacune des sous matrices résultantes sera un fils du nœud racine et sa valeur sera 1 ssi dans les cellules de la sous-matrice, il y a au moins un 1. Un fils à 0 signifie que la sous-matrice est nulle et donc la décomposition de l'arbre se termine là; ainsi les 0 sont des feuilles dans l'arbre. Les fils d'un nœud sont classés dans l'arborescence à partir en commençant par les sous-matrices de gauche à droite et du haut vers le bas. Une fois que le niveau 1 de l'arbre, avec les fils de la racine, a été construit, la méthode est exécutée de manière récursive pour chaque fils de valeur 1, jusqu'à atteindre les sous-matrices pleines de 0 ou les cellules de la matrice d'adjacence d'origine. Au dernier niveau de l'arborescence, les bits des nœuds correspondent aux valeurs des cellules de la matrice. Pour représenter l'arbre de manière concise, deux structures seront utilisées :
+			\begin{itemize}
+			\item \textbf{T }: Un tableau qui stocke tous les bits du $k^2$-tree sauf ceux du dernier niveau. Les bits de l' arborescence $k^2$ sont placé après une traversée horizontale de l'arbre. Nous représenteront d'abord les $k^2$ valeurs binaires des enfants du nœud racine, puis les valeurs du deuxième niveau, etc.
+			
+			\item  \textbf{L} : Un tableau stockant le dernier niveau de l'arbre. Ainsi il représente la valeur de (certaines) cellules de la matrice d'adjacence du graphe initiale.
+			\end{itemize}
+			
+			L'algorithme \ref{alg:k2_tree} résume les différentes étapes de construction de l'arbre $k^2$-tree. Nous supposons que la matrice d'adjacence $M$, le nombre de fils $k$ ainsi que l'arbre $k^2$-tree $A$ sont des variables globales. Pour construire l'arbre à partie de la racine, nous l'invoquerons comme suit :  ConstructK2Tree(N,1,0,0). Après avoir construit l'arbre $A$ sous forme d'un tableau de niveau, nous devons devons construire les deux tableaux binaire qui représenterons l'arbre k2-tree selon les deux formules suivantes :
+			\begin{itemize}
+			 	\item T = $A_1: A_2:. . . :A_{h-1}$
+			 	\item L = $A_h$
+			\end{itemize}	
+
+Des versions itératives de l'algorithme peuvent être établies. Cependant, elles dégradent les performances car elles nécessitent soit l'utilisation de structures supplémentaires ou plus d'accès mémoire. Nous avons privilégié la version itératif car elle permet de construire l'arbre $k^2$-tree en un seul parcourt de la matrice d'adjacence $M$.
+					\begin{algorithm}[H]
+					\label{alg:k2_tree}
+					\caption{ConstructK2Tree}
+					\textbf{Entrée :}
+						\begin{itemize}[label=$\bullet$]
+							\item n : la taille de la sous-matrice
+							\item l : le niveau de l'arbre
+							\item p : l'indice ligne de début de la sous-matrice
+							\item q : l'indice colonne de début de la sous-matrice
+						\end{itemize}
+					\textbf{Sortie :} La valeur du nœud de la sous-matrice\\							\noindent\rule{\textwidth}{1pt}
+						
+						
+				\begin{algorithmic} [1]
+					\STATE C = $ \emptyset$
+					\FOR{$i = 1 ... k $} 
+						\FOR{$i = 1 ... k $} 
+							\IF {$l = log_k(N)$}
+								\STATE  C = C : M[p+i,q+j]
+							\ELSE
+								\STATE  C = C : ConstructK2Tree ( $n/k,l+1,p+i*(n/k), q+j*(n/k)$)
+							\ENDIF
+						\ENDFOR
+					\ENDFOR
+					\IF {$C\ est\ un\ vecteur\ nul$} 
+						\STATE Retourner 0
+					\ENDIF
+					\STATE A[l] = A[l] : C
+					\STATE Retourner 1
+				\end{algorithmic}
+			\end{algorithm}
+			
+			La deuxième alternative qui consiste en la construction de l'arbre à partir de la liste d'adjacence  
+			
+		
+			\subsubsection{$k^2$-trees pour les graphes non orientés}
 	
 	\section{P-GraCE :}
 		\subsection{Principe de fonctionnement :}

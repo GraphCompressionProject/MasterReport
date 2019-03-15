@@ -54,12 +54,14 @@
 \contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{53}{section*.14}
 \contentsline {section}{\numberline {3.3}$k^2$-GraCE : }{55}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{55}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{55}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Conception Modulaire :}{55}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}P-GraCE :}{55}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Principe de fonctionnement :}{55}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Param\IeC {\`e}tre et notations :}{55}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Conception Modulaire :}{55}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Conclusion}{55}{section.3.5}
-\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{56}{chapter.4}
-\contentsline {chapter}{\numberline {5}Test}{57}{chapter.5}
+\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{56}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Conception :}{56}{subsection.3.3.3}
+\contentsline {subsubsection}{$k^2$-trees pour les graphes orient\IeC {\'e}s}{56}{section*.15}
+\contentsline {subsubsection}{$k^2$-trees pour les graphes non orient\IeC {\'e}s}{58}{section*.16}
+\contentsline {section}{\numberline {3.4}P-GraCE :}{58}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Principe de fonctionnement :}{58}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Param\IeC {\`e}tre et notations :}{58}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Conception Modulaire :}{58}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Conclusion}{58}{section.3.5}
+\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{59}{chapter.4}
+\contentsline {chapter}{\numberline {5}Test}{60}{chapter.5}
