@@ -315,14 +315,15 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 \chapter{Conception}
 	\section{Introduction}
 	
-	La réalisation de l'étude bibliographique dans le précédent chapitre, nous a initier au domaine de compression en générale et nous a permis d'approfondir nos connaissance dans le domaines de compression des graphes. Nous avons pu voir en détails les caractéristiques de plusieurs méthodes de compression s'inscrivant dans les deux classes de méthodes de compression: celles basées sur l'extraction de motifs et celles basées sur les arbres $k^2$-tree. La vocation de ce travail est d'enrichir un projet existant en l'étendant avec deux moteurs de compression qui regroupent différentes stratégies des deux classes étudiées. La réalisation de ces deux moteurs permettra de comparer entre ces stratégies et d'avoir une idée plus claire sur leurs performances dans différents scénarios.
+	La réalisation de l'étude bibliographique dans le précédent chapitre, nous a initier au domaine de compression en générale et nous a permis d'approfondir nos connaissances dans le domaines de compression des graphes. Nous avons pu voir en détails les caractéristiques de plusieurs méthodes de compression s'inscrivant dans les deux classes de méthodes de compression: celles basées sur l'extraction de motifs et celles basées sur les arbres $k^2$-tree. La vocation de ce travail est d'enrichir un projet existant en l'étendant avec deux moteurs de compression qui regroupent différentes stratégies des deux classes étudiées. La réalisation de ces deux moteurs permettra de comparer entre ces stratégies et d'avoir une idée plus claire sur leurs performances dans différents scénarios.
+	
 	Dans ce chapitre, nous présenterons les détails de la conception des deux moteurs. Nous allons, dans un premier temps, présenter le principe de fonctionnement de nos deux moteurs tout en mettant l'accent sur les différents modules qui les constituent. Nous expliquerons juste après notre deuxième contribution qui consiste en une nouvelle  méthode de compression destinée aux graphes dynamique.
 	
 
 	\section{$k^2$-GraCE : }
 	
 
-Dans cette section, nous présenterons les détails de notre premier Moteur baptisé $k2$-GraCE pour k2-trees Graph Compression Engine. Il consiste en un moteur de compression de graphes par les arbres k2-trees qui exploitent les propriétés de localité et de similarité dans les graphes du web. 
+Dans cette section, nous présenterons les détails de notre premier Moteur baptisé $k2$-GraCE pour $k^2$-trees Graph Compression Engine. Il consiste en un moteur de compression de graphes par les arbres $k^2$-trees qui exploitent les propriétés de localité et de similarité dans les graphes du web. 
 
 		\subsection{Principe de fonctionnement :}
 		
@@ -384,7 +385,7 @@ Après avoir expliquer de manière générale le principe de fonctionnement du m
 			
 			\end{itemize}
 
-Nous notons que l'utilisation de ce module dans le processus de construction de l'arbre k2-tree n'est pas obligatoire. Cette phase ne figure pas dans l'algorithme de base. Nous voulons, à travers son intégration dans le moteur \gls{$k^2$-GraCE}, rassembler davantage les nœuds ayant des voisins commun et donc les zones homogènes dans la matrice d'adjacence (zones plaines de 0 ou zones plaines de 1).			
+Nous notons que l'utilisation de ce module dans le processus de construction de l'arbre $k^2$-tree n'est pas obligatoire. Cette phase ne figure pas dans l'algorithme de base. Nous voulons, à travers son intégration dans le moteur \gls{$k^2$-GraCE}, rassembler davantage les nœuds ayant des voisins commun et donc les zones homogènes dans la matrice d'adjacence (zones plaines de 0 ou zones plaines de 1).			
 		
 			\subsubsection{Construction de l'arbre $k^2$-tree}
 			

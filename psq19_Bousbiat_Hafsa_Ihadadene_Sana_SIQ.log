@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  21 MAR 2019 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  21 MAR 2019 20:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2249,19 +2249,19 @@ ss on input line 311.
 Chapitre 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 322.
+(hyperref)                removing `math shift' on input line 323.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 322.
+(hyperref)                removing `superscript' on input line 323.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 322.
+(hyperref)                removing `math shift' on input line 323.
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 332.
+ss on input line 331.
 
 [46
 
@@ -2269,11 +2269,11 @@ ss on input line 332.
 <./ressources/image/ograce.jpg, id=1246, 963.6pt x 380.17032pt>
 File: ./ressources/image/ograce.jpg Graphic file (type jpg)
 <use ./ressources/image/ograce.jpg>
-Package pdftex.def Info: ./ressources/image/ograce.jpg  used on input line 345.
+Package pdftex.def Info: ./ressources/image/ograce.jpg  used on input line 346.
 
 (pdftex.def)             Requested size: 462.52275pt x 182.47968pt.
 
-Overfull \hbox (7.27864pt too wide) in paragraph at lines 345--346
+Overfull \hbox (7.27864pt too wide) in paragraph at lines 346--347
 [][] 
  []
 
@@ -2281,11 +2281,11 @@ Overfull \hbox (7.27864pt too wide) in paragraph at lines 345--346
 <./ressources/image/k2_non.jpg, id=1278, 958.58125pt x 470.75874pt>
 File: ./ressources/image/k2_non.jpg Graphic file (type jpg)
 <use ./ressources/image/k2_non.jpg>
-Package pdftex.def Info: ./ressources/image/k2_non.jpg  used on input line 445.
+Package pdftex.def Info: ./ressources/image/k2_non.jpg  used on input line 446.
 
 (pdftex.def)             Requested size: 460.11378pt x 225.96162pt.
 
-Overfull \hbox (4.86967pt too wide) in paragraph at lines 445--446
+Overfull \hbox (4.86967pt too wide) in paragraph at lines 446--447
 [][] 
  []
 
@@ -2293,21 +2293,21 @@ Overfull \hbox (4.86967pt too wide) in paragraph at lines 445--446
 <./ressources/image/pgrace.jpg, id=1308, 963.6pt x 380.17032pt>
 File: ./ressources/image/pgrace.jpg Graphic file (type jpg)
 <use ./ressources/image/pgrace.jpg>
-Package pdftex.def Info: ./ressources/image/pgrace.jpg  used on input line 484.
+Package pdftex.def Info: ./ressources/image/pgrace.jpg  used on input line 485.
 
 (pdftex.def)             Requested size: 462.52275pt x 182.47968pt.
 
-Overfull \hbox (7.27864pt too wide) in paragraph at lines 484--485
+Overfull \hbox (7.27864pt too wide) in paragraph at lines 485--486
 [][] 
  []
 
 [52 <./ressources/image/pgrace.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
  []
 
 [53] [54]
-Overfull \hbox (17.15929pt too wide) in paragraph at lines 611--611
+Overfull \hbox (17.15929pt too wide) in paragraph at lines 612--612
 []\T1/txr/bx/n/17.28 Notre mé-thode : Dy-na-mic Dense Sub-graph Mi-ning (DDSM) 
 
  []
@@ -2322,7 +2322,7 @@ la-population-mondiale-est-connectee-a-internet-
 Chapitre 4.
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 617.
+ss on input line 618.
 
 [59
 
@@ -2330,11 +2330,11 @@ ss on input line 617.
 Chapitre 5.
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 626.
+ss on input line 627.
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 627.
+ss on input line 628.
 
 [60
 
@@ -2342,19 +2342,19 @@ ss on input line 627.
 Annexe A.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 631.
+(hyperref)                removing `math shift' on input line 632.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 631.
+(hyperref)                removing `superscript' on input line 632.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 631.
+(hyperref)                removing `math shift' on input line 632.
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 645.
+ss on input line 646.
 
 [61
 
@@ -2366,11 +2366,11 @@ ss on input line 80.
 [62
 
 ] [63] [64] [65]) [66]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 654.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 654.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 655.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 655.
  (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 654.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 654.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 655.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 655.
 Package rerunfilecheck Info: File `psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out'
  has not changed.
 (rerunfilecheck)             Checksum: 607FC9623A84390E6D4976ACD145E864;4104.
@@ -2378,7 +2378,7 @@ Package rerunfilecheck Info: File `psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out'
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 654.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
  ) 
 Here is how much of TeX's memory you used:
  42011 strings out of 492649
@@ -2401,8 +2401,8 @@ pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (75 pages, 208482
-8 bytes).
+Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (75 pages, 208487
+9 bytes).
 PDF statistics:
  1569 PDF objects out of 1728 (max. 8388607)
  1405 compressed objects within 15 object streams
