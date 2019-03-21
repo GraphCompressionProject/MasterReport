@@ -22,7 +22,9 @@
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM .}}{41}{figure.2.11}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM}}{41}{figure.2.12}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{47}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{51}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{52}{figure.3.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{56}{figure.3.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

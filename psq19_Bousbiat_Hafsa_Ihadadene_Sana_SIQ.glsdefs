@@ -448,3 +448,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{gcc}{}%
+{%
+\gls@defglossaryentry{gcc}%
+{%
+name={CCG},%
+sort={CCG},%
+type={acronym},%
+first={Composant Connect\IeC {\'e} G\IeC {\'e}ant\glsspace (CCG)},%
+firstplural={Composant Connect\IeC {\'e} G\IeC {\'e}ant\glsspace (CCG)},%
+text={CCG},%
+plural={CCG},%
+description={Composant Connecté Géant},%
+descriptionplural={Composant Connecté Géant\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Composant Connect\IeC {\'e} G\IeC {\'e}ant},%
+longplural={Composant Connect\IeC {\'e} G\IeC {\'e}ant},%
+short={CCG},%
+shortplural={CCG},%
+counter={page},%
+parent={},%
+%
+}%
+}%
