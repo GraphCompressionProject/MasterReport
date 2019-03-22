@@ -37,6 +37,7 @@
 \renewcommand{\algorithmicforall} {\textbf{pour tout}}
 \renewcommand{\algorithmicdo} {\textbf{faire}} 
 \renewcommand{\algorithmicendfor} {\textbf{fin pour}} \renewcommand{\algorithmicloop} {\textbf{boucler}} \renewcommand{\algorithmicendloop} {\textbf{fin boucle}} \renewcommand{\algorithmicrepeat} {\textbf{répéter}} \renewcommand{\algorithmicuntil} {\textbf{jusqu'à}}
+\renewcommand{\algorithmicreturn} {\textbf{Retourner}}
 
 \usepackage{setspace}
 \setstretch{1,15}
@@ -357,7 +358,9 @@ Après avoir expliquer de manière générale le principe de fonctionnement du m
 		\hline Paramètre & Signification \\ \hline\hline 
 		$G$ & Graphe de données \\ \hline
 		$M$ & Matrice d'adjacence du graphe G\\ \hline
+		$List$ & Liste d'adjacence du graphe G\\ \hline
 		$A$ & L'arbre $k^2$-tree \\\hline
+		$T$ & Le nombre de instants dans lesquels le graphe a été capturé \\\hline
 		$h$ & L'hauteur de l'arbre $k^2$-tree \\ \hline
 		$N$ & Nombre de nœuds dans le graphe \\ \hline
 		$k$ & Paramètre déterminant le nombre de fils dans l'arbre $k^2$-tree\\ \hline
@@ -397,13 +400,13 @@ Nous notons que l'utilisation de ce module dans le processus de construction de 
 			\item  \textbf{L} : Un tableau stockant le dernier niveau de l'arbre. Ainsi il représente la valeur de (ou certaines) cellules de la matrice d'adjacence du graphe initiale.
 			\end{itemize}
 			
-			L'algorithme \ref{alg:k2_tree} \citep{brisaboa2009k} résume les différentes étapes de construction de l'arbre $k^2$-tree dans le cas de la construction à partir de la matrice d'adjacence. Nous supposons que la matrice d'adjacence $M$, le nombre de fils $k$ ainsi que l'arbre $k^2$-tree $A$ sont des variables globales. Pour construire l'arbre à partie de la racine, elle sera invoquer comme suit :  ConstructK2Tree(N,1,0,0). Après avoir construit l'arbre $A$ sous forme d'un tableau de niveau, nous procèderons à la construction des deux structures selon les deux formules suivantes :
+			L'algorithme \ref{alg:k2_tree} résume les différentes étapes de construction de l'arbre $k^2$-tree dans le cas de la construction à partir de la liste d'adjacence. Nous dotons pour cela la liste d'adjacence de n curseurs, un par ligne, de sorte que chaque fois que nous devons accéder à $M_{pq}$, nous comparons le curseur actuel de la ligne $p$ à la valeur q. S'ils sont égaux, alors on aura $M_{pq} = 1$ et nous devons avancer le curseur vers le nœud suivant de la liste de la ligne p. Sinon, nous saurons que $M_{pq} = 0$. Nous supposons que la liste d'adjacence $List$, le nombre de fils $k$ ainsi que l'arbre $k^2$-tree $A$ sont des variables globales. Pour construire l'arbre à partie de la racine, elle sera invoquer comme suit :  ConstructK2Tree(N,1,0,0). Après avoir construit l'arbre $A$ sous forme d'un tableau de niveau, nous procèderons à la construction des deux structures selon les deux formules suivantes :
 			\begin{itemize}
 			 	\item T = $A_1: A_2:. . . :A_{h-1}$
 			 	\item L = $A_h$
 			\end{itemize}	
 
-Des versions itératives de l'algorithme peuvent être établies. Cependant, elles dégradent les performances car elles nécessitent soit l'utilisation de structures supplémentaires ou plus d'accès mémoire. Nous avons privilégié la version récursive car elle permet de construire l'arbre $k^2$-tree en un seul parcourt de la matrice d'adjacence $M$.
+Des versions itératives de l'algorithme peuvent être établies. Cependant, elles dégradent les performances car elles nécessitent soit l'utilisation de structures supplémentaires ou plus d'accès mémoire. Nous avons privilégié la version récursive car elle permet de construire l'arbre $k^2$-tree en un seul parcourt de la liste d'adjacence $List$.
 					\begin{algorithm}[H]
 					\label{alg:k2_tree}
 					\caption{ConstructK2Tree}
@@ -422,17 +425,22 @@ Des versions itératives de l'algorithme peuvent être établies. Cependant, ell
 					\FOR{$i = 1 ... k $} 
 						\FOR{$i = 1 ... k $} 
 							\IF {$l = log_k(N)$}
-								\STATE  C = C : M[p+i,q+j]
+								\IF { $List$[p+i].courrant() = q+j }
+									\STATE C = C : 1
+									\STATE $List$[p+i].avancer()
+								\ELSE
+									\STATE C = C : 0
+								\ENDIF
 							\ELSE
 								\STATE  C = C : ConstructK2Tree ( $n/k,l+1,p+i*(n/k), q+j*(n/k)$)
 							\ENDIF
 						\ENDFOR
 					\ENDFOR
 					\IF {$C\ est\ un\ vecteur\ nul$} 
-						\STATE Retourner 0
+						\RETURN 0
 					\ENDIF
 					\STATE A[l] = A[l] : C
-					\STATE Retourner 1
+					\RETURN 1
 				\end{algorithmic}
 			\end{algorithm}
 			
@@ -448,9 +456,71 @@ Des versions itératives de l'algorithme peuvent être établies. Cependant, ell
 	\label{k2_non}
 \end{figure}
 
-	Un autre type de graphe supporté par notre moteur sont les graphes dynamiques. Ces graphes sont représentés par un ensemble de graphes statiques chacun capturé à un instant $t_i$. De ce fait, l'algorithme de construction peut être facilement adapté avec chaque nœud dans l'arbre contenant, cette fois-ci, un vecteur de bits chacun faisant référence à un instant $t_i$. 
+	Un autre type de graphe supporté par notre moteur sont les graphes dynamiques. Ces graphes sont représentés par un ensemble de graphes statiques chacun capturé à un instant $t_i$. De ce fait, l'algorithme de construction peut être facilement adapté avec chaque nœud dans l'arbre contenant, cette fois-ci, un vecteur de bits chacun faisant référence à un instant $t_i$. Nous fournissons ci-après (algorithme \ref{alg:dynk2_tree}) l'algorithme de construction de l'arbre $k^2$-tree à partir de la matrice d'adjacence tridimensionnelle.
+	
 
-%\subsubsection{Algorithme Globale de compression}
+\begin{figure}[H]
+	\includegraphics[scale=0.48]{./ressources/image/dynk2diff.png}
+	\caption[Exemple d'arbre $k^2$-tree (k=2) pour la matrice de différence]{Exemple d'arbre $k^2$-tree (k=2) pour la matrice de différence.}
+	\label{k2_non}
+\end{figure}
+
+
+	
+	Dans le cas de ce type de graphe, $k^2$-GraCE offrent la possibilité de calculer une matrice différence à partir de la matrice initiale. Le but de cette fonctionnalité est de maximiser les zones nulles dans la matrices afin de réduire la taille de l'arbre. À t=0, on garde la même matrice bidimensionnelle du graphe initiale. Pour les instants restants (t > 0), nous comparons $M_{pq}$ à l'instant t avec $M_{pq}$ à l'instant t-1, si égalité alors la nouvelle matrice contiendra un 0 dans la cellule pq à l'instant t sinon elle contiendra un 0. La nouvelle matrice d'adjacence contiendra ainsi uniquement les changement qui occurrent entre les instants. L'inconvénient de cette fonctionnalité est qu'une reconstruction de la matrice initiale est nécessaire dans le cas d'interrogation du graphe. La figure xxx montre une matrice d'adjacence d'un graphe dynamique capturé dans trois instants différents avec sa matrice de différence et la représentation $k^2$-tree dans les deux cas.
+	
+					\begin{algorithm}[H]
+					\label{alg:dynk2_tree}
+					\caption{DynK2Tree}
+					\textbf{Entrée :}
+						\begin{itemize}[label=$\bullet$]
+							\item n : la taille de la sous-matrice
+							\item l : le niveau de l'arbre
+							\item p : l'indice ligne de début de la sous-matrice
+							\item q : l'indice colonne de début de la sous-matrice
+						\end{itemize}
+					\textbf{Sortie :} La valeur du nœud de la sous-matrice\\							\noindent\rule{\textwidth}{1pt}
+						
+						
+				\begin{algorithmic} [1]
+					\STATE C = $ \emptyset$
+					\FOR{$i = 1 ... k $} 
+						\FOR{$j = 1 ... k $} 
+							\IF {$l = log_k(N)$}
+								\FOR{$m = 1 ... T $}
+									\STATE C[m] = C[m] : M [p+i][q+j][m]
+								\ENDFOR
+							\ELSE
+								\STATE Ctmp =$\emptyset$
+								\STATE  Ctmp = DynK2Tree ( $n/k,l+1,p+i*(n/k), q+j*(n/k)$)
+								\FOR{$m = 1 ... taille(Ctmp) $}
+									\STATE C[m] = C[m] : Ctmp[m]
+									\STATE Creturn [m] = Creturn [m] ou Ctmp [m]
+								\ENDFOR
+							\ENDIF
+						\ENDFOR
+					\ENDFOR
+					\IF {$C\ est\ un\ vecteur\ nul$} 
+						\RETURN $0^{|T|}$ // retourner un vecteur nul de taille T.
+					\ENDIF
+					
+					
+					
+					\FOR{$i = 1 ... k*k $} 
+						\FOR{$j = 1 ... T $}
+							\IF{ $C[i]$ n'est pas un vecteur nul}
+								\STATE A[l] = A[l] : C [i][j]
+							\ENDIF
+						\ENDFOR
+					\ENDFOR
+	
+					 \RETURN Creturn
+					
+				\end{algorithmic}
+			\end{algorithm}
+			
+			% Ajouter un exemple de la matrice d'adjacence est montré le gain
+			% donner algorithme de difference et axpliquer ses inconvenient
 	
 	
 	

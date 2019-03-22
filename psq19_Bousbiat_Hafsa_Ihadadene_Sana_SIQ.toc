@@ -55,17 +55,17 @@
 \contentsline {subsection}{\numberline {3.2.3}Conception Modulaire:}{48}{subsection.3.2.3}
 \contentsline {subsubsection}{R\IeC {\'e}ordononcement des noeuds}{48}{section*.13}
 \contentsline {subsubsection}{Construction de l'arbre $k^2$-tree}{49}{section*.14}
-\contentsline {section}{\numberline {3.3}P-GraCE :}{51}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{51}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{52}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{52}{subsection.3.3.3}
-\contentsline {subsubsection}{Extraction des motifs :}{53}{section*.15}
-\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{55}{section*.16}
-\contentsline {subsubsection}{Traitement des motifs :}{55}{section*.17}
-\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{55}{section.3.4}
-\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{56}{section*.18}
-\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{57}{section*.19}
-\contentsline {section}{\numberline {3.5}Conclusion}{58}{section.3.5}
-\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{59}{chapter.4}
-\contentsline {chapter}{\numberline {5}Test}{60}{chapter.5}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{61}{appendix.A}
+\contentsline {section}{\numberline {3.3}P-GraCE :}{53}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{53}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{54}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{54}{subsection.3.3.3}
+\contentsline {subsubsection}{Extraction des motifs :}{54}{section*.15}
+\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{56}{section*.16}
+\contentsline {subsubsection}{Traitement des motifs :}{56}{section*.17}
+\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{56}{section.3.4}
+\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{57}{section*.18}
+\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{58}{section*.19}
+\contentsline {section}{\numberline {3.5}Conclusion}{59}{section.3.5}
+\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{60}{chapter.4}
+\contentsline {chapter}{\numberline {5}Test}{61}{chapter.5}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{62}{appendix.A}
