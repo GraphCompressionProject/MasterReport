@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  21 MAR 2019 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  22 MAR 2019 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2266,7 +2266,7 @@ ss on input line 331.
 [46
 
 ]
-<./ressources/image/ograce.jpg, id=1246, 963.6pt x 380.17032pt>
+<./ressources/image/ograce.jpg, id=1247, 963.6pt x 380.17032pt>
 File: ./ressources/image/ograce.jpg Graphic file (type jpg)
 <use ./ressources/image/ograce.jpg>
 Package pdftex.def Info: ./ressources/image/ograce.jpg  used on input line 346.
@@ -2278,7 +2278,7 @@ Overfull \hbox (7.27864pt too wide) in paragraph at lines 346--347
  []
 
 [47 <./ressources/image/ograce.jpg>] [48] [49]
-<./ressources/image/k2_non.jpg, id=1278, 958.58125pt x 470.75874pt>
+<./ressources/image/k2_non.jpg, id=1279, 958.58125pt x 470.75874pt>
 File: ./ressources/image/k2_non.jpg Graphic file (type jpg)
 <use ./ressources/image/k2_non.jpg>
 Package pdftex.def Info: ./ressources/image/k2_non.jpg  used on input line 446.
@@ -2290,7 +2290,7 @@ Overfull \hbox (4.86967pt too wide) in paragraph at lines 446--447
  []
 
 [50] [51 <./ressources/image/k2_non.jpg>]
-<./ressources/image/pgrace.jpg, id=1308, 963.6pt x 380.17032pt>
+<./ressources/image/pgrace.jpg, id=1309, 963.6pt x 380.17032pt>
 File: ./ressources/image/pgrace.jpg Graphic file (type jpg)
 <use ./ressources/image/pgrace.jpg>
 Package pdftex.def Info: ./ressources/image/pgrace.jpg  used on input line 485.
@@ -2401,11 +2401,11 @@ pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (75 pages, 208487
-9 bytes).
+Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (75 pages, 208493
+0 bytes).
 PDF statistics:
- 1569 PDF objects out of 1728 (max. 8388607)
- 1405 compressed objects within 15 object streams
+ 1570 PDF objects out of 1728 (max. 8388607)
+ 1406 compressed objects within 15 object streams
  359 named destinations out of 1000 (max. 500000)
  720 words of extra memory for PDF output out of 10000 (max. 10000000)
 
