@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  22 MAR 2019 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  23 MAR 2019 21:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1613,7 +1613,7 @@ ABD: EveryShipout initializing macros
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./ressources/image/ESI.png, id=267, 651.43375pt x 190.7125pt>
+<./ressources/image/ESI.png, id=331, 651.43375pt x 190.7125pt>
 File: ./ressources/image/ESI.png Graphic file (type png)
 <use ./ressources/image/ESI.png>
 Package pdftex.def Info: ./ressources/image/ESI.png  used on input line 10.
@@ -1738,11 +1738,11 @@ ss on input line 31.
 
 [4
 
-])
+] [5])
 \tf@toc=\write10
 \openout10 = `psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.toc'.
 
- [5] (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lof)
+ [6] (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lof)
 \tf@lof=\write11
 \openout11 = `psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lof'.
 
@@ -1751,7 +1751,7 @@ ss on input line 31.
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 127.
 
-[6
+[7
 
 ] (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lot)
 \tf@lot=\write12
@@ -1764,7 +1764,7 @@ ss on input line 127.
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 1.
 
-[7
+[8
 
 
 ])
@@ -1772,7 +1772,7 @@ ss on input line 1.
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 141.
 
-[8
+[9
 
 
 ]
@@ -1831,7 +1831,7 @@ ss on input line 9.
 [4
 
 ]
-<./ressources/image/graphNonOriente.png, id=556, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=640, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -1850,7 +1850,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5 <./ressources/image/graphNonOriente.png>])
 (./ChapitresPFE/TheorieDesGraphes/GrapheOrientee.tex
-<./ressources/image/RepDiGraphe.png, id=593, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=678, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
@@ -1871,26 +1871,26 @@ its \T1/txr/m/it/12 spokes\T1/txr/m/n/12 )([]Koutra
 
 ) (./ChapitresPFE/TheorieDesGraphes/GraphTypes.tex [8])
 (./ChapitresPFE/TheorieDesGraphes/structRep.tex
-<./ressources/image/graphAdjace.png, id=661, 361.35pt x 306.0847pt>
+<./ressources/image/graphAdjace.png, id=745, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  31.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=662, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=746, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
 e 38.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
  [9]
-<./ressources/image/graphIncid.png, id=679, 410.94705pt x 365.60118pt>
+<./ressources/image/graphIncid.png, id=764, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 74.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=680, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=765, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
@@ -1903,7 +1903,7 @@ File: ./ressources/image/graphAdjace.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  99.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=695, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=780, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
@@ -1922,7 +1922,7 @@ ss on input line 4.
 [13
 
 ]) (./ChapitresPFE/CompressionDesGraphes/TypeDeCompression.tex
-<./ressources/image/SansPerte.png, id=731, 2441.12pt x 321.2pt>
+<./ressources/image/SansPerte.png, id=815, 2441.12pt x 321.2pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 8
@@ -1933,7 +1933,7 @@ Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 8
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14]
-<./ressources/image/AvecPerte.png, id=740, 2445.135pt x 325.215pt>
+<./ressources/image/AvecPerte.png, id=824, 2445.135pt x 325.215pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
@@ -1963,7 +1963,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
  []
 
 [17]
-<./ressources/image/classif.png, id=801, 831.105pt x 537.50812pt>
+<./ressources/image/classif.png, id=886, 831.105pt x 537.50812pt>
 File: ./ressources/image/classif.png Graphic file (type png)
 <use ./ressources/image/classif.png>
 Package pdftex.def Info: ./ressources/image/classif.png  used on input line 32.
@@ -1998,7 +1998,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
  []
 
 [19 <./ressources/image/classif.png>]
-<./ressources/image/k2-trees.png, id=831, 702.2235pt x 285.4665pt>
+<./ressources/image/k2-trees.png, id=916, 702.2235pt x 285.4665pt>
 File: ./ressources/image/k2-trees.png Graphic file (type png)
 <use ./ressources/image/k2-trees.png>
 Package pdftex.def Info: ./ressources/image/k2-trees.png  used on input line 15
@@ -2020,13 +2020,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
  []
 
 [21]
-<./ressources/image/dk2-trees.png, id=870, 874.467pt x 200.54926pt>
+<./ressources/image/dk2-trees.png, id=955, 874.467pt x 200.54926pt>
 File: ./ressources/image/dk2-trees.png Graphic file (type png)
 <use ./ressources/image/dk2-trees.png>
 Package pdftex.def Info: ./ressources/image/dk2-trees.png  used on input line 5
 3.
 (pdftex.def)             Requested size: 380.00311pt x 99.99896pt.
-<./ressources/image/kn-trees.png, id=876, 443.256pt x 148.75575pt>
+<./ressources/image/kn-trees.png, id=961, 443.256pt x 148.75575pt>
 File: ./ressources/image/kn-trees.png Graphic file (type png)
 <use ./ressources/image/kn-trees.png>
 Package pdftex.def Info: ./ressources/image/kn-trees.png  used on input line 66
@@ -2039,7 +2039,7 @@ m/it/12 k[]$\T1/txr/m/n/12 -tress1 avec les quatre en-co-dages ([]de Ber-nardo
 Roca[],
  []
 
-<./ressources/image/k2-trees1.png, id=892, 874.467pt x 546.24075pt>
+<./ressources/image/k2-trees1.png, id=976, 874.467pt x 546.24075pt>
 File: ./ressources/image/k2-trees1.png Graphic file (type png)
 <use ./ressources/image/k2-trees1.png>
 Package pdftex.def Info: ./ressources/image/k2-trees1.png  used on input line 8
@@ -2056,7 +2056,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--108
  []
 
 [24 <./ressources/image/k2-trees1.png>]
-<./ressources/image/k2-treaps.png, id=923, 784.1295pt x 439.04025pt>
+<./ressources/image/k2-treaps.png, id=1008, 784.1295pt x 439.04025pt>
 File: ./ressources/image/k2-treaps.png Graphic file (type png)
 <use ./ressources/image/k2-treaps.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps.png  used on input line 1
@@ -2141,7 +2141,7 @@ Overfull \hbox (40.60617pt too wide) in paragraph at lines 1--244
  []
 
 [35] (./ChapitresPFE/ExtractionMotifs/intra_inter_mot_mat.tex
-<ressources/image/inter_intra.png, id=1096, 980.66376pt x 326.21875pt>
+<ressources/image/inter_intra.png, id=1180, 980.66376pt x 326.21875pt>
 File: ressources/image/inter_intra.png Graphic file (type png)
 <use ressources/image/inter_intra.png>
 Package pdftex.def Info: ressources/image/inter_intra.png  used on input line 6
@@ -2159,7 +2159,7 @@ ntra.png>] (./ChapitresPFE/ExtractionMotifs/SubDue.tex)
 (./ChapitresPFE/ExtractionMotifs/appRepAmel.tex)
 (./ChapitresPFE/ExtractionMotifs/k2-partitionned.tex)
 (./ChapitresPFE/ExtractionMotifs/gRepair.tex [38]
-<./ressources/image/grepair.png, id=1147, 881.2925pt x 464.73625pt>
+<./ressources/image/grepair.png, id=1232, 881.2925pt x 464.73625pt>
 File: ./ressources/image/grepair.png Graphic file (type png)
 <use ./ressources/image/grepair.png>
 Package pdftex.def Info: ./ressources/image/grepair.png  used on input line 4.
@@ -2170,7 +2170,7 @@ Package pdftex.def Info: ./ressources/image/grepair.png  used on input line 4.
 LaTeX Warning: Command \' invalid in math mode on input line 19.
 
 Missing character: There is no é in font txr!
-<./ressources/image/VNM_exemple.png, id=1164, 1300.86pt x 834.11626pt>
+<./ressources/image/VNM_exemple.png, id=1250, 1300.86pt x 834.11626pt>
 File: ./ressources/image/VNM_exemple.png Graphic file (type png)
 <use ./ressources/image/VNM_exemple.png>
 Package pdftex.def Info: ./ressources/image/VNM_exemple.png  used on input line
@@ -2184,7 +2184,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--8
 
  []
 
-<ressources/image/VNM2_exemple.png, id=1182, 1595.9625pt x 652.4375pt>
+<ressources/image/VNM2_exemple.png, id=1267, 1595.9625pt x 652.4375pt>
 File: ressources/image/VNM2_exemple.png Graphic file (type png)
 <use ressources/image/VNM2_exemple.png>
 Package pdftex.def Info: ressources/image/VNM2_exemple.png  used on input line 
@@ -2269,7 +2269,7 @@ ss on input line 332.
 [46
 
 ]
-<./ressources/image/ograce.jpg, id=1247, 963.6pt x 380.17032pt>
+<./ressources/image/ograce.jpg, id=1332, 963.6pt x 380.17032pt>
 File: ./ressources/image/ograce.jpg Graphic file (type jpg)
 <use ./ressources/image/ograce.jpg>
 Package pdftex.def Info: ./ressources/image/ograce.jpg  used on input line 347.
@@ -2281,7 +2281,7 @@ Overfull \hbox (7.27864pt too wide) in paragraph at lines 347--348
  []
 
 [47 <./ressources/image/ograce.jpg>] [48] [49]
-<./ressources/image/k2_non.jpg, id=1277, 958.58125pt x 470.75874pt>
+<./ressources/image/k2_non.jpg, id=1362, 958.58125pt x 470.75874pt>
 File: ./ressources/image/k2_non.jpg Graphic file (type jpg)
 <use ./ressources/image/k2_non.jpg>
 Package pdftex.def Info: ./ressources/image/k2_non.jpg  used on input line 454.
@@ -2293,7 +2293,7 @@ Overfull \hbox (4.86967pt too wide) in paragraph at lines 454--455
  []
 
 [50]
-<./ressources/image/dynk2diff.png, id=1305, 874.26625pt x 376.40625pt>
+<./ressources/image/dynk2diff.png, id=1389, 874.26625pt x 376.40625pt>
 File: ./ressources/image/dynk2diff.png Graphic file (type png)
 <use ./ressources/image/dynk2diff.png>
 Package pdftex.def Info: ./ressources/image/dynk2diff.png  used on input line 4
@@ -2301,7 +2301,7 @@ Package pdftex.def Info: ./ressources/image/dynk2diff.png  used on input line 4
 (pdftex.def)             Requested size: 419.64304pt x 180.67294pt.
  [51 <./ressources/image/k2_non.jpg> <./ressources/image/dynk2diff.png>]
 [52]
-<./ressources/image/pgrace.jpg, id=1348, 963.6pt x 380.17032pt>
+<./ressources/image/pgrace.jpg, id=1432, 963.6pt x 380.17032pt>
 File: ./ressources/image/pgrace.jpg Graphic file (type jpg)
 <use ./ressources/image/pgrace.jpg>
 Package pdftex.def Info: ./ressources/image/pgrace.jpg  used on input line 555.
@@ -2333,90 +2333,111 @@ la-population-mondiale-est-connectee-a-internet-
 Chapitre 4.
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 688.
+ss on input line 696.
 
 [60
 
 ]
 Chapitre 5.
 
-Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 697.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 700.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 700.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 700.
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 698.
+ss on input line 707.
 
 [61
+
+]
+Chapitre 6.
+
+Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
+ss on input line 716.
+
+
+Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
+ss on input line 717.
+
+[62
 
 ]
 Annexe A.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 702.
+(hyperref)                removing `math shift' on input line 721.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 702.
+(hyperref)                removing `superscript' on input line 721.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 702.
+(hyperref)                removing `math shift' on input line 721.
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 716.
+ss on input line 735.
 
-[62
+[63
 
 ] (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.bbl
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 80.
 
-[63
+[64
 
-] [64] [65] [66]) [67]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 725.
+] [65] [66] [67]) [68]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 744.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 744.
  (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 725.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 744.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 744.
 Package rerunfilecheck Info: File `psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out'
  has not changed.
-(rerunfilecheck)             Checksum: 607FC9623A84390E6D4976ACD145E864;4104.
+(rerunfilecheck)             Checksum: 5B2E05FCE7030AA4AF8F413CA90D6174;5218.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 725.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 744.
  ) 
 Here is how much of TeX's memory you used:
- 42053 strings out of 492649
- 822485 string characters out of 6129622
- 965776 words of memory out of 5000000
- 44646 multiletter control sequences out of 15000+600000
+ 42087 strings out of 492649
+ 822899 string characters out of 6129622
+ 965785 words of memory out of 5000000
+ 44662 multiletter control sequences out of 15000+600000
  646656 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,101p,10498b,976s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/txfonts/txex.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/txfonts/txsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfo
-nts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (76 pages, 210942
+exlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/public/txfonts/txex.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/txfonts/txsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfon
+ts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/txs
+yb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (78 pages, 211440
 2 bytes).
 PDF statistics:
- 1617 PDF objects out of 1728 (max. 8388607)
- 1450 compressed objects within 15 object streams
- 395 named destinations out of 1000 (max. 500000)
- 725 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1714 PDF objects out of 1728 (max. 8388607)
+ 1543 compressed objects within 16 object streams
+ 413 named destinations out of 1000 (max. 500000)
+ 853 words of extra memory for PDF output out of 10000 (max. 10000000)
 

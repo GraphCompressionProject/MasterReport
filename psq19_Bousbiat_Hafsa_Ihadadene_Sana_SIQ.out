@@ -52,5 +52,21 @@
 \BOOKMARK [1][-]{section.3.4}{Notre m\351thode: Dynamic Dense Subgraph Mining \(DDSM\)}{chapter.3}% 52
 \BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 53
 \BOOKMARK [0][-]{chapter.4}{Impl\351mentation}{part.2}% 54
-\BOOKMARK [0][-]{chapter.5}{Test}{part.2}% 55
-\BOOKMARK [0][-]{appendix.A}{Extraction de voisins dans un arbre k2-tree}{part.2}% 56
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 55
+\BOOKMARK [1][-]{section.4.2}{Architecture globale existante}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.3}{Donn\351es}{chapter.4}% 57
+\BOOKMARK [1][-]{section.4.4}{Traitement}{chapter.4}% 58
+\BOOKMARK [1][-]{section.4.5}{Pr\351sentation}{chapter.4}% 59
+\BOOKMARK [1][-]{section.4.6}{Environnement de d\351veloppement}{chapter.4}% 60
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{chapter.4}% 61
+\BOOKMARK [0][-]{chapter.5}{Test}{part.2}% 62
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.2}{Environnement de Test}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.3}{Pr\351sentation des graphes de test}{chapter.5}% 65
+\BOOKMARK [1][-]{section.5.4}{\311valuation du moteur k2-GraCE}{chapter.5}% 66
+\BOOKMARK [2][-]{subsection.5.4.1}{Analyse de l'impact du param\350tre k}{section.5.4}% 67
+\BOOKMARK [2][-]{subsection.5.4.2}{\311tude de l'effet de l'ordre}{section.5.4}% 68
+\BOOKMARK [1][-]{section.5.5}{\311valuation du moteur P-GraCE}{chapter.5}% 69
+\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 70
+\BOOKMARK [0][-]{chapter.6}{Conclusion G\351n\351rale}{part.2}% 71
+\BOOKMARK [0][-]{appendix.A}{Extraction de voisins dans un arbre k2-tree}{part.2}% 72

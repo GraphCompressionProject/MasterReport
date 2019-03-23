@@ -1,8 +1,8 @@
 \babel@toc {french}{}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Remerciement}{I}{Doc-Start}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }R\IeC {\'e}sum\IeC {\'e}}{II}{Doc-Start}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des figures}{VI}{chapter*.2}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des tableaux}{VII}{chapter*.3}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des figures}{VII}{chapter*.2}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des tableaux}{VIII}{chapter*.3}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction g\IeC {\'e}n\IeC {\'e}rale}{1}{chapter*.5}
 \contentsline {part}{I\hspace {1em}\IeC {\'E}tat de l'art}{3}{part.1}
 \contentsline {chapter}{\numberline {1} Th\IeC {\'e}orie des graphes}{4}{chapter.1}
@@ -67,5 +67,21 @@
 \contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{58}{section*.19}
 \contentsline {section}{\numberline {3.5}Conclusion}{59}{section.3.5}
 \contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{60}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{60}{section.4.1}
+\contentsline {section}{\numberline {4.2}Architecture globale existante}{60}{section.4.2}
+\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{60}{section.4.3}
+\contentsline {section}{\numberline {4.4}Traitement}{60}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{60}{section.4.5}
+\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{60}{section.4.6}
+\contentsline {section}{\numberline {4.7}Conclusion}{60}{section.4.7}
 \contentsline {chapter}{\numberline {5}Test}{61}{chapter.5}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{62}{appendix.A}
+\contentsline {section}{\numberline {5.1}Introduction}{61}{section.5.1}
+\contentsline {section}{\numberline {5.2}Environnement de Test}{61}{section.5.2}
+\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{61}{section.5.3}
+\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{61}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{61}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{61}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{61}{section.5.5}
+\contentsline {section}{\numberline {5.6}Conclusion}{61}{section.5.6}
+\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{62}{chapter.6}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{63}{appendix.A}
