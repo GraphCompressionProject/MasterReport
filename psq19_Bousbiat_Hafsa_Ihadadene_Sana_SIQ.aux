@@ -45,6 +45,7 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {1} Th\IeC {\'e}orie des graphes}{4}{chapter.1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Graphe non orient\IeC {\'e}}{4}{section.1.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}D\IeC {\'e}finitions et g\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{4}{subsection.1.1.1}}
 \citation{lopez2003cours}
@@ -138,6 +139,7 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Compression de graphes}{13}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Compression de donn\IeC {\'e}es :}{13}{section.2.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Compression appliqu\IeC {\'e}e aux graphes:}{14}{section.2.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Les types de compression:}{14}{subsection.2.2.1}}
@@ -234,7 +236,7 @@
 \newlabel{par:TimeCrunch}{{2.4.1}{34}{Compression basée vocabulaire}{equation.2.4.1}{}}
 \citation{liu2018reducing}
 \citation{liu2015empirical}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces TIMECRUNCH}}{35}{algorithm.1}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces TIMECRUNCH}}{35}{algocf.1}}
 \citation{asano2008efficient}
 \citation{asano2008efficient}
 \citation{shah2018graph}
@@ -250,9 +252,9 @@
 \citation{barbay2006adaptive}
 \citation{claude2011practical}
 \citation{maneth2015survey}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Approximate Re-pair}}{38}{algocf.2}}
+\newlabel{alg:re_pair}{{2}{38}{Les méthodes de compression basées sur l'agrégation de liens}{algocf.2}{}}
 \citation{maneth2018grammar}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Approximate Re-pair}}{38}{algorithm.2}}
-\newlabel{alg:re_pair}{{2}{38}{Les méthodes de compression basées sur l'agrégation de liens}{algorithm.2}{}}
 \citation{buehrer2008scalable}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{39}{figure.2.10}}
 \newlabel{gRepair}{{2.10}{39}{Exemple d'exécution de gRepair sur G}{figure.2.10}{}}
@@ -286,8 +288,10 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Conception}{46}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{46}{section.3.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}$k^2$-GraCE : }{46}{section.3.2}}
+\newlabel{k2}{{3.2}{46}{$k^2$-GraCE :}{section.3.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Principe de fonctionnement :}{46}{subsection.3.2.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{47}{figure.3.1}}
 \newlabel{k2grace}{{3.1}{47}{Principe de fonctionnement du moteur $k^2$-GraCE}{figure.3.1}{}}
@@ -296,16 +300,16 @@
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Tableau des notations et param\IeC {\`e}tres du moteur $k^2$-GraCE.}}{48}{table.3.1}}
 \newlabel{notk2grace}{{3.1}{48}{Tableau des notations et paramètres du moteur $k^2$-GraCE}{table.3.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Conception Modulaire:}{48}{subsection.3.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{R\IeC {\'e}ordononcement des noeuds}{48}{section*.13}}
-\@writefile{toc}{\contentsline {subsubsection}{Construction de l'arbre $k^2$-tree}{49}{section*.14}}
-\newlabel{alg:k2_tree}{{3.2.3}{50}{Construction de l'arbre $k^2$-tree}{section*.14}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces ConstructK2Tree}}{50}{algorithm.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{51}{figure.3.2}}
-\newlabel{k2_non}{{3.2}{51}{Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orienté}{figure.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{51}{figure.3.3}}
-\newlabel{k2_non}{{3.3}{51}{Exemple d'arbre $k^2$-tree (k=2) pour la matrice de différence}{figure.3.3}{}}
-\newlabel{alg:dynk2_tree}{{3.2.3}{52}{Construction de l'arbre $k^2$-tree}{figure.3.3}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces DynK2Tree}}{52}{algorithm.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Pr\IeC {\'e}-traitement du graphe de donn\IeC {\'e}es:}{48}{section*.13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{49}{figure.3.2}}
+\newlabel{k2_non}{{3.2}{49}{Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orienté}{figure.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{50}{figure.3.3}}
+\newlabel{mat_diff}{{3.3}{50}{Exemple d'arbre $k^2$-tree (k=2) pour la matrice de différence}{figure.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Construction de l'arbre $k^2$-tree}{50}{section*.14}}
+\newlabel{alg:k2_tree}{{3}{51}{Construction de l'arbre $k^2$-tree}{algocfline.3}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces ConstructK2Tree}}{51}{algocf.3}}
+\newlabel{alg:dynk2_tree}{{4}{52}{Construction de l'arbre $k^2$-tree}{algocfline.4}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces DynK2Tree}}{52}{algocf.4}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}P-GraCE :}{53}{section.3.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{53}{subsection.3.3.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{53}{figure.3.4}}
@@ -315,57 +319,71 @@
 \newlabel{notk2grace}{{3.2}{54}{Tableau des notations et paramètres du moteur $k^2$-GraCE}{table.3.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{54}{subsection.3.3.3}}
 \@writefile{toc}{\contentsline {subsubsection}{Extraction des motifs :}{54}{section*.15}}
-\newlabel{alg:beamSearch}{{1}{55}{Extraction des motifs :}{Item.41}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Beam-Search}}{55}{algorithm.5}}
+\newlabel{alg:beamSearch}{{5}{55}{Extraction des motifs :}{algocfline.5}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {5}{\ignorespaces Beam-Search}}{55}{algocf.5}}
+\newlabel{eq:Jacc}{{3.1}{56}{Extraction des motifs :}{equation.3.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{56}{figure.3.5}}
+\newlabel{jacc}{{3.5}{56}{Exemple de calcul de la matrice des signatures}{figure.3.5}{}}
+\newlabel{eq:prob}{{3.2}{56}{Extraction des motifs :}{equation.3.3.2}{}}
 \citation{koutra2015summarizing}
 \citation{liu2018reducing}
-\@writefile{toc}{\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{56}{section*.16}}
-\@writefile{toc}{\contentsline {subsubsection}{Traitement des motifs :}{56}{section*.17}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{56}{section.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{57}{section*.16}}
+\@writefile{toc}{\contentsline {subsubsection}{Traitement des motifs :}{57}{section*.17}}
 \citation{hernandez2014compressed}
 \citation{shah2015timecrunch}
-\citation{hernandez2014compressed}
-\@writefile{toc}{\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{57}{section*.18}}
-\citation{hernandez2014compressed}
-\citation{hernandez2014compressed}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{58}{section.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{58}{section*.18}}
 \citation{hernandez2014compressed}
 \citation{hernandez2014compressed}
-\@writefile{toc}{\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{58}{section*.19}}
-\newlabel{tab:signtmp}{{3.4}{58}{Principe général}{section*.19}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces \relax \fontsize  {10.95}{13.6}\selectfont  \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Les types de signatures temporelles et leurs repr\IeC {\'e}sentations, $t_{i}$ repr\IeC {\'e}sentent les timestamps et T repr\IeC {\'e}sente la p\IeC {\'e}riode.}}}{58}{table.3.3}}
 \citation{hernandez2014compressed}
-\newlabel{alg:DDSM}{{3.4}{59}{Principe général}{table.3.3}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {6}{\ignorespaces DDSM}}{59}{algorithm.6}}
-\newlabel{Pseudo Algorithme de la m\IeC {\'e}thode propos\IeC {\'e}e (DDSM)}{{6}{59}{Principe général}{algorithm.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Conclusion}{59}{section.3.5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{60}{chapter.4}}
+\citation{hernandez2014compressed}
+\@writefile{toc}{\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{59}{section*.19}}
+\newlabel{tab:signtmp}{{3.4}{59}{Principe général}{section*.19}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces \relax \fontsize  {10.95}{13.6}\selectfont  \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Les types de signatures temporelles et leurs repr\IeC {\'e}sentations, $t_{i}$ repr\IeC {\'e}sentent les timestamps et T repr\IeC {\'e}sente la p\IeC {\'e}riode.}}}{59}{table.3.3}}
+\citation{hernandez2014compressed}
+\citation{hernandez2014compressed}
+\newlabel{alg:DDSM}{{6}{60}{Principe général}{algocfline.6}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {6}{\ignorespaces DDSM}}{60}{algocf.6}}
+\newlabel{Pseudo Algorithme de la m\IeC {\'e}thode propos\IeC {\'e}e (DDSM)}{{6}{60}{Principe général}{algocf.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Conclusion}{60}{section.3.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{62}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{60}{section.4.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Architecture globale existante}{60}{section.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{60}{section.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Traitement}{60}{section.4.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{60}{section.4.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{60}{section.4.6}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusion}{60}{section.4.7}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Test}{61}{chapter.5}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{62}{section.4.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Architecture globale existante}{62}{section.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{62}{section.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Traitement}{62}{section.4.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{62}{section.4.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{62}{section.4.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusion}{62}{section.4.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Test}{63}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{61}{section.5.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Environnement de Test}{61}{section.5.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{61}{section.5.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{61}{section.5.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{61}{subsection.5.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{61}{subsection.5.4.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{61}{section.5.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Conclusion}{61}{section.5.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{62}{chapter.6}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Environnement de Test}{63}{section.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{63}{section.5.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{63}{section.5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{63}{subsection.5.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{63}{subsection.5.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{63}{section.5.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rents moteurs}{63}{section.5.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Conclusion}{63}{section.5.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{64}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{63}{appendix.A}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\citation{brisaboa2009k}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{65}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{k2_annexe}{{A}{63}{Extraction de voisins dans un arbre $k^2$-tree}{appendix.A}{}}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{k2_annexe}{{A}{65}{Extraction de voisins dans un arbre $k^2$-tree}{appendix.A}{}}
+\newlabel{alg:Direct}{{7}{65}{Extraction de voisins dans un arbre $k^2$-tree}{algocfline.7}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {7}{\ignorespaces Direct}}{65}{algocf.7}}
+\newlabel{alg:Inverse}{{8}{65}{Extraction de voisins dans un arbre $k^2$-tree}{algocfline.8}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {8}{\ignorespaces Inverse}}{65}{algocf.8}}
 \bibstyle{apalike}
 \bibdata{Bibliographie}
 \bibcite{IUTLyonInformatique}{{1}{2012}{{IUT}}{{}}}

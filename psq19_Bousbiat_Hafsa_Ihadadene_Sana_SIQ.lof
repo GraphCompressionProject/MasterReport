@@ -23,9 +23,10 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM}}{41}{figure.2.12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{47}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{51}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{51}{figure.3.3}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{49}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{50}{figure.3.3}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{53}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{56}{figure.3.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
