@@ -561,7 +561,7 @@ Des versions itératives de l'algorithme peuvent être établies. Cependant, ell
 
 \item Extraction et évaluation des motifs : Durant cette phase, une détection des motifs les plus denses ou les plus fréquents est réalisée. Leur évaluation dans cette phase permet de ne garder que les structures (motifs) susceptible de donner une meilleur compression.
 
-\item Traitement des motifs: Ce module permet d'encoder ou d'agréger, dans certains cas, les motifs déjà découverts dans le but de minimiser d'avantage la taille du graphe en sortie. Nous notons que l'utilisation de ce module n'est pas présente dans toutes les méthodes de ce moteur mais dans la plupart 
+\item Traitement des motifs: Ce module permet d'encoder ou d'agréger, dans certains cas, les motifs déjà découverts dans le but de minimiser d'avantage la taille du graphe en sortie. Dans d'autres cas, le module retourne une liste de structures sélectionnés parmi les motifs précédemment identifiés en utilisant des heuristiques dans le but de garder que les motifs importants du graphe. Nous notons que l'utilisation de ce module n'est pas présente dans toutes les méthodes de ce moteur mais dans la plupart 
 
 \item Écriture du graphe compressé sur le fichier de sortie.
 \end{enumerate}
@@ -654,15 +654,23 @@ Cette alternative sera employée pour le cas des graphes étiquetés. Nous fourn
 
 \item \textbf{Méthodes de clustering :}
 
-Plusieurs méthode de clustering existent dans la littérature. P-GraCE utilise une  méthode de clustering qui a été destiné pour compressé un graphe de données en entrée s'intitulant \textit{SlashBurn}. Cette technique parte de l'observation  que les graphes du monde réel sont facilement décomposables en supprimant leurs nœuds concentrateurs qui sont définies comme les neouds ayant un degré maximale dans le graphe G. 
+Plusieurs méthodes de clustering existent dans la littérature. P-GraCE utilise une  méthode de clustering qui a été destinée pour compresser un graphe de données en entrée s'intitulant \textit{SlashBurn}. Cette technique parte de l'observation  que les graphes du monde réel sont facilement décomposables en supprimant leurs nœuds concentrateurs qui sont définies comme les neouds ayant un degré maximale dans le graphe G.  
 
-Ce module de P-GraCE permet donc de réordonner les nœuds du graphe de tel sorte à avoir un plus petit nombre de blocs plus denses dans la matrice d'adjacence qui représente les motifs en sortie.  
+Ce module de P-GraCE permet donc de réordonner les nœuds du graphe de tel sorte à avoir un plus petit nombre de blocs plus denses dans la matrice d'adjacence qui représentent les motifs en sortie.  
 
-À chaque itération le nœud concentrateur est supprimé et  le graphe est décomposé en 
+À chaque itération le nœud concentrateur est supprimé et le graphe est décomposé en un nœud concentrateur (hub), un
 \newacronym{gcc}{CCG}{Composant Connecté Géant}
-\gls{gcc} et des rayons restants que nous définissons comme étant le composant connecté non géant connecté aux anciens \gls{gcc}. Le nœud concentrateur obtient ainsi le plus petit identifiant , les nœuds des rayons reçoivent les identifiants les plus élevés  dans l’ordre décroissant de la taille du composant connecté auquel ils appartiennent, et le nouveau \gls{gcc} prend les identifiants restants. Le même processus s'applique aux nœuds dans \gls{gcc}, de manière récursive.
+\gls{gcc} et des rayons restants que nous définissons comme étant le composant connecté non géant connecté aux anciens \gls{gcc}. Le nœud concentrateur obtient ainsi le plus petit identifiant , les nœuds des rayons (spokes) reçoivent les identifiants les plus élevés  dans l’ordre décroissant de la taille du composant connecté auquel ils appartiennent, et le nouveau \gls{gcc} prend les identifiants restants. Le même processus s'applique aux nœuds dans \gls{gcc}, de manière récursive.\\
 
-Nous illustrons le principe de fonctionnement de cette méthode de clustering sur le graphe de la figure xxx. Le nœud concentrateur (8) obtient le plus petit identifiant (1), les nœuds des rayons reçoivent les identifiants les plus élevés (9-16), et le \gls{gcc} prend les identifiants restants (2-8). La prochaine itération considère le nouveau \gls{gcc}.
+Nous illustrons le principe de fonctionnement de cette méthode de clustering sur le graphe de la figure \ref{Img:slashb}. Le nœud concentrateur (8) obtient le plus petit identifiant (1), les nœuds des rayons reçoivent les identifiants les plus élevés (9-16), et le \gls{gcc} prend les identifiants restants (2-8). La prochaine itération considère le nouveau \gls{gcc}.
+
+\begin{figure}[H]
+	\centering
+	\label{Img:slashb}
+	\includegraphics[scale=0.25]{ressources/image/slashburn.png}
+	\caption{Exemple d'application de l'algorithme SlashBurn}
+
+ \end{figure}
 
 
 
@@ -724,15 +732,12 @@ Comme nous l'avons déjà préciser P-GraCE utilise le beam-search pour le cas d
 		 
    
 		 
-		 Dans le cas de l'utilisation des méthodes de clustering, nous obtenons une liste des sous-structures les plus fréquentes que nous appelons modèle à ce stade, nous construirons l'approximation M de la matrice d'adjacence, telle que définie par les structures du modèle. Nous considérons simplement de manière itérative chaque structure s du modèle et complétons la connectivité des zones dans M en conséquence. Nous utiliserons les formules proposées dans \citep{koutra2015summarizing} (voir section \ref{vog_desc}). 
-		 
-		 
-		 
-		 %Concernant le cas des dernier cas, nous n'avons pas besoin d'avoir une évaluation car cela déjà inclus dans les formules des foncions de hachage.
+		  Dans le cas de l'utilisation des méthodes de clustering, nous obtenons une liste des structures les plus fréquentes. Pour chaque structure identifiée nous cherchons le motif qui la décrit le mieux en se basant sur un ensemble prédéfini de motifs (étoile, clique, noyau bipartie, semi clique, semi noyau bipartie). Afin de trouver le motif approximatif de la structure, nous utiliserons les formules proposées dans \citep{koutra2015summarizing} (voir section \ref{vog_desc}).
+		  
 		   
 		\subsubsection{Traitement des motifs :}
 		
-		Nous proposons pour traiter les motifs deux alternatives dans le moteur P-GraCE. La première consiste à faire une agrégation des nœuds du meilleur motif. Les trois étapes seront donc répétées jusqu'à ce que la taille du graphe en sortie ne peut plus être optimisée. La deuxième alternative consiste à considérer que la liste des sous-structures de l'étape 2 représentent le compressé du graphe de données. Nous offrons dans ce cas la possibilité d'utiliser le codage proposé dans \citep{liu2018reducing}. Il représente cette liste de motifs de manière concise tout en permettant les requêtes d'extraction de voisinage. 
+		Nous proposons pour traiter les motifs deux alternatives dans le moteur P-GraCE. La première consiste à faire une agrégation des nœuds du meilleur motif. Les trois étapes seront donc répétées jusqu'à ce que la taille du graphe en sortie ne peut plus être optimisée. La deuxième alternative consiste à considérer que la liste des sous-structures de l'étape 2 représentent le compressé du graphe de données. Nous offrons dans ce cas la possibilité d'utiliser le codage proposé dans \citep{liu2018reducing}. Il représente cette liste de motifs de manière concise tout en permettant les requêtes d'extraction de voisinage. Dans certains méthodes une matrice d'erreur est conservée avec la liste des structures pour une compression sans perte.
 		
 		
 		
@@ -865,9 +870,36 @@ Comme nous l'avons déjà expliqué dans la section \ref{k2} de la partie concep
 			
 \end{multicols}
 
+\chapter{Description des graphes de test}
+ \label{tableau des graphes de test}
+ \begin{table}[H]
+ \begin{tabular}{|C{5cm}|C{4.5cm}|C{4.5cm}|}
+		\hline
+		\multirow{2}{*}{Graphe de test} & \multicolumn{2}{c|}{Caractéristiques}  \\ \cline{2-3}
+				&  Nombre de nœuds & Nombre de liens  \\ \hline	 \hline	
+ 
+eu-2005 & 862 milles de nœuds & 19M de liens \\ \hline
+Cond-mat & 36 milles de nœuds & 171 milles de liens \\ \hline
+CommNet & \multicolumn{2}{c|}{taille : 225.9MB} \\ \hline
+SalesDay & 1 milles de nœuds & \\ \hline
+Movielens10M & 10 milles de nœuds & 10M de liens \\ \hline
+ASOregon &  13 milles nœuds & 37 milles liens \\ \hline
+ Enron &  80 milles nœuds& 288 milles liens \\ \hline
+ uk-2002 & 18 milles nœuds & 298 milles liens \\ \hline
+ graphe test de GCUPMT &  8 192 milles nœuds & \\ \hline
+ Composante chimique &  21 étiquettes & 422 transactions \\ \hline
+ NotreDame &  325 milles de nœuds & 1M de liens \\ \hline
 
 
+
+\end{tabular}
+									\caption{Graphes de test}									\label{comgen}
+
+ 								\end{table}
 \end{appendix}
+
+
+
 
 
 

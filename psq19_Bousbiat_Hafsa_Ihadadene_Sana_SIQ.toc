@@ -61,11 +61,11 @@
 \contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{54}{subsection.3.3.3}
 \contentsline {subsubsection}{Extraction des motifs :}{54}{section*.15}
 \contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{57}{section*.16}
-\contentsline {subsubsection}{Traitement des motifs :}{57}{section*.17}
+\contentsline {subsubsection}{Traitement des motifs :}{58}{section*.17}
 \contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{58}{section.3.4}
-\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{58}{section*.18}
+\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{59}{section*.18}
 \contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{59}{section*.19}
-\contentsline {section}{\numberline {3.5}Conclusion}{60}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusion}{61}{section.3.5}
 \contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{62}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{62}{section.4.1}
 \contentsline {section}{\numberline {4.2}Architecture globale existante}{62}{section.4.2}
@@ -86,3 +86,4 @@
 \contentsline {section}{\numberline {5.7}Conclusion}{63}{section.5.7}
 \contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{64}{chapter.6}
 \contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{65}{appendix.A}
+\contentsline {chapter}{\numberline {B}Description des graphes de test}{66}{appendix.B}
