@@ -295,17 +295,52 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 		À l'ère du Big Data, les informations sont générées rapidement et leur analyse est devenue un défi. Diverses méthodes ont été proposées pour accélérer l'analyse de ces données et en extraire les informations. En effet, la situation d'abondance d'information aujourd'hui a favorisé l'incapacité d'assimilation et de réemploi de l'information et a montré l'inadaptation des outils de gestion classiques. Une des solution les plus connus pour pallier à ces problèmes est la compression. Comme les graphes représentent la plupart des données du monde réel, les méthodes de compression des graphes ont été à la pointe de ces efforts.\\
 		
 		Nous nous sommes intéressées dans ce travail au domaine de compression des graphes, et plus particulièrement aux méthodes de compression par les k2-trees et les méthodes de compression par extraction de motifs qui sont des méthodes adaptées en générale pour les graphes du web et les graphes des réseaux sociaux. 
-		Nous avons présenté les différentes méthodes de compression existantes dans chacune des deux classes où nous essayer de mettre en relief les points fort de chacune. Nous avons ainsi établi une étude comparative entre elles en se basant sur leurs caractéristiques qui peuvent avoir une forte influence sur leur performance et oriente le choix de la méthode. 
+		Nous avons présenté les différentes méthodes de compression existantes dans chacune des deux classes où nous essayé de mettre en relief les points fort de chacune. Nous avons ainsi établi une étude comparative entre elles en se basant sur leurs caractéristiques qui peuvent avoir une forte influence sur leur performance et oriente le choix de la méthode. 
 		Nous avons également raffiné la classification des méthodes de compression des graphes proposée dans un travail de Master précédent. Nous nous sommes basées pour cela sur le principe de fonctionnement et les fondements théoriques de chacune en respect de la classification précédente.\\  
 	
 	Cette étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que : la compression temps réel et les temps de traitements sont encore présents. Ces défis constituent de nouvelles problématiques de recherche qui sont toujours ouvertes.\\
 	
-	Nous nous focaliserons par la suite à implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait nous pourrons établir une comparaison plus objective entre elles.
+	Comme perspective à ce travail, il serait intéressant d'implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait nous pourrons établir une comparaison plus objective entre elles.
 
 \pagestyle{plain}
 \newpage
+
+\begin{appendix}
+\chapter{Description des graphes de test}
+ \label{tableau des graphes de test}
+ \begin{table}[H]
+ \begin{tabular}{|C{5cm}|C{4.5cm}|C{4.5cm}|}
+		\hline
+		\multirow{2}{*}{Graphe de test} & \multicolumn{2}{c|}{Caractéristiques}  \\ \cline{2-3}
+				&  Nombre de nœuds & Nombre de liens  \\ \hline	 \hline	
+ 
+eu-2005 & 862 milles de nœuds & 19M de liens \\ \hline
+Cond-mat & 36 milles de nœuds & 171 milles de liens \\ \hline
+CommNet & \multicolumn{2}{c|}{taille : 225.9MB} \\ \hline
+SalesDay & 1 milles de nœuds & \\ \hline
+Movielens10M & 10 milles de nœuds & 10M de liens \\ \hline
+ASOregon &  13 milles nœuds & 37 milles liens \\ \hline
+ Enron &  80 milles nœuds& 288 milles liens \\ \hline
+ uk-2002 & 18 milles nœuds & 298 milles liens \\ \hline
+ graphe test de GCUPMT &  8 192 milles nœuds & \\ \hline
+ Composante chimique &  21 étiquettes & 422 transactions \\ \hline
+ NotreDame &  325 milles de nœuds & 1M de liens \\ \hline
+
+
+
+\end{tabular}
+									\caption{Graphes de test}									\label{comgen}
+
+ 								\end{table}
+\end{appendix}
+
+
+
+
 \bibliographystyle{apalike}
 \bibliography{Bibliographie}
+
+
 
 
 \end{document}

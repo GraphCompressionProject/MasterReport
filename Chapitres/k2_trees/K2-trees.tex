@@ -51,7 +51,7 @@ Chaque nœud interne de $T_{tree}$ contient trois(03) éléments : deux compteur
 La figure \ref{dk2-trees} présente une représentation d$k^2$-tree \citep{brisaboa2012compressed}: 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[height=100 pt, width=380 pt]{./ressources/image/dk2-trees.png} 
+\includegraphics[scale=0.7]{./ressources/image/dk2-trees.jpg} 
 \end{center}
 \caption{Exemple d'une représentation d$k^2$-tree}
 \label{dk2-trees}
@@ -73,13 +73,15 @@ La figure \ref{kn-trees} présente une représentation $k^3$-tree d'un graphe dy
 
 
 %\subsubsection{$K^2$-tress1 }
-La représentation de base des arbres k2-trees regroupe seulement les zones de zéros, puisqu'elle a été conçue au début pour les graphes du web qui possèdent une matrice d'adjacence extrêmement creuse. Dans \citep{de2014new}, Les auteurs proposent d'étendre cette représentation en regroupant les zones de "1" également. L'idée générale est d'arrêter la décomposition de la matrice d'adjacence quand une zone unie est trouvée, à savoir des zéros ou des uns. Pour distinguer entre les différents nœuds, une représentation quadtree est utilisée \citep{de1997computational}. Une couleur est attribuée à chaque nœud, blanc pour une zone de zéro, noir pour une zone de uns et gris pour les nœuds internes, i.e, les zones contenant des uns et des zéros. Pour le stockage des nœuds, les auteurs proposent quatre encodages présentés par la suite : 
+La représentation de base des arbres k2-trees regroupe seulement les zones de zéros, puisqu'elle a été conçue au début pour les graphes du web qui possèdent une matrice d'adjacence extrêmement creuse. Dans \citep{de2014new}, Les auteurs proposent d'étendre cette représentation en regroupant les zones de "1" également. L'idée générale est d'arrêter la décomposition de la matrice d'adjacence quand une zone unie est trouvée, à savoir des zéros ou des uns. Pour distinguer entre les différents nœuds, une représentation quadtree est utilisée \citep{de1997computational}. Une couleur est attribuée à chaque nœud, blanc pour une zone de zéro, noir pour une zone de uns et gris pour les nœuds internes, i.e, les zones contenant des uns et des zéros. Pour le stockage des nœuds, les auteurs proposent quatre encodages présentés dans ce qui suit : 
 
 \begin{enumerate}[label=$\bullet$]
 \item \textbf{ $k^2$-$trees1^{2-bits-naive}$ :} Dans cet encodage, deux bits sont utilisés pour représenter chaque type de nœud. L'attribution des bits n'est pas arbitraire, le premier bit du poids fort indique si le nœud est un nœud interne (0) ou une feuille (1), le deuxième détermine si les feuilles sont blanches (0) ou noires (1). Nous aurons donc : "10" pour les nœuds gris, "01" pour les nœuds noirs et "00" pour les nœuds blancs. Notant que les feuilles du dernier niveau sont représentées par un seul bit.
 Après le codage, le premier bit de chaque nœud sauf ceux du dernier niveau est stocké dans T, un autre tableau $T'$ est créé pour sauvegarder le deuxième bit, les nœuds du dernier niveau sont stockés dans L.
-\item \textbf{ $k^2$-$tree1^{2-bits}$ :} Le même principe de l'encodage précédant sauf que les nœuds gris sont représentés par un seul bit, toujours à "1", le tableau $T'$ va contenir dans ce cas la couleur des feuilles ce qui va réduire la taille de la structure.
+\item \textbf{ $k^2$-$tree1^{2-bits}$ :} Le même principe que l'encodage précédant sauf que les nœuds gris sont représentés par un seul bit, toujours à "1", le tableau $T'$ va contenir dans ce cas la couleur des feuilles ce qui va réduire la taille de la structure.
+
 \item \textbf{ $k^2$-$tree1^{DF}$ :} Cet encodage est similaire à $k^2$-$trees1^{2-bits}$, mais il utilise un seul bit pour les nœuds blancs et deux bits pour les nœuds noirs et gris, compte tenue de la fréquence des nœuds blancs dans les graphes du monde réel par rapport aux autres. Nous aurons donc : "0" pour les nœuds blancs, "10" pour les nœuds gris et "11" pour les nœuds noirs.
+
 \item \textbf{ $k^2$-$tree1^{5-bits}$ :} Le dernier encodage repose sur la représentation de base. Un nœud blanc est représenté par "0", un nœud noir ou gris par "1", exactement comme le $k^2$-tree d'origine. Pour identifier un nœud noir (zone de uns), il sera représenté par une combinaison impossible : $k^2$ fils de "0" sont ajoutés aux nœuds noirs pour les distinguer.
 \end{enumerate}
 
