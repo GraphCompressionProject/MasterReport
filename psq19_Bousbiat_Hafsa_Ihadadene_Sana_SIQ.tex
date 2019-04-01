@@ -685,28 +685,18 @@ SIM(S_1,S_2)=\frac{|S_1 \cap S_2|}{|S_1 \cup S_2|}
 \end{equation}
 
 
-L'objectif de cette méthode est de remplacer les listes d'adjacence des nœuds par des représentations beaucoup plus petites appelées « signatures ». La propriété importante de ces signatures est que leur comparaison permet d'estimer la similitude de Jaccard des listes d'adjacence sans avoir recours à les comparer deux à deux. Nous notons qu'il n'est pas possible que les signatures donnent la similitude exacte des ensembles qu'elles représentent, mais les estimations qu'elles fournissent sont proches et plus les signatures sont grandes, plus les estimations sont précises.
+L'objectif de cette méthode est de remplacer les listes d'adjacence des nœuds par des représentations beaucoup plus petites appelées « signatures ». La propriété importante de ces signatures est que leur comparaison permet d'estimer la similitude de Jaccard des listes d'adjacence sans avoir recours à les comparer deux à deux. 
 
-Avant d'expliquer comment il est possible de construire de petites signatures à partir des listes d'adjacence, il est utile de les visualiser en tant que matrice caractéristique. Les colonnes de cette matrice correspondent aux listes d'adjacence et les lignes correspondent aux nœuds. Nous rappelons que la matrice caractéristique est peu susceptible de contenir la façon dont les données sont stockées, mais elle est utile pour visualiser les données. 
+Avant d'expliquer comment il est possible de construire de petites signatures à partir des listes d'adjacence, il est utile de les visualiser en tant que matrice caractéristique. Les colonnes de cette matrice correspondent aux listes d'adjacence et les lignes correspondent aux nœuds. Nous rappelons que la matrice caractéristique est peu susceptible d'être la façon dont les données sont stockées, mais elle est utile pour visualiser les données (voir figure \ref{jacc}). 
 
- %Nous calculerons cette métrique en utilisant k-permutations, $\pi_1,\pi_2 ..., \pi_k $, qui permettrons de construire une matrice de signature mappant les sommets ayant des listes d'adjacence similaires vers la même valeur. Le tableau gauche de la figure \ref{jacc} montre une liste d'adjacence d'un graphe orienté ainsi que deux permutations aléatoires $h_1$, $h_2$. Tant dis que le tableau à droite de la même figure montre les signatures données par ces deux fonctions. Ces signatures représentent la valeur de $\pi_i$ de la première ligne à 1. La matrice des signatures montre bien que les nœuds 1 et 4 sont les plus similaires ce qui est justifié par leurs listes d'adjacence qui ne diffèrent que dans un seul élément.  
 
-\begin{figure}[H]
-\centering
-	\includegraphics[scale=0.48]{./ressources/image/jacc.png}
-	\caption[Exemple de calcul de la matrice des signatures.]{Exemple de calcul de la matrice des signatures.}
-	\label{jacc}
-\end{figure}
-
-%% Expliquer comment calculer la permutation
-
-L'utilisation des k-permutations se base sur le fait que :
+Dans un premier temps, k-permutations aléatoires des nœuds devront être choisies. L'utilisation des k-permutations se base sur le fait que :
 %% Ajouter demonstration en Annexe ou donner la source 
 \begin{equation} \label{eq:prob}
 P(\pi_i(S_1) = \pi_j(S_2)) = \frac{|S_1 \cap S_2|}{|S_1 \cup S_2|} = SIM(S_1,S_2)
 \end{equation}
-
-Pour avoir k-permutations, nous utiliserons une famille de fonctions de hachage indépendantes. La famille de fonction que nous visons utiliser est une famille polynômiale : $h_{a_0, ..., a_{k-1}}(x)= (\sum a_i x^i)\ mod\ N$. Ainsi, au lieu de choisir n permutations aléatoires de lignes, nous sélectionnons n fonctions de hachage choisies de manière aléatoire $h_1, h_2,. . . , h_k$ sur les lignes. Nous construisons la matrice de signature en considérant chaque ligne dans leur ordre donné. Soit $SIG (i, c)$ l'élément de la matrice de signature pour la $i^{ème}$ fonction de hachage et la colonne c. SIG (i, c) est initialisée à $\infty$ pour tout i et c. Nous traitons une ligne r en procédant comme suit:
+Cependant, le choix de ces permutations peut être prohibitive dans le cas des grands graphes.
+À la place des k-permutations, nous utiliserons donc une famille de fonctions de hachage indépendantes qui donnerons le même résultats. La famille de fonction que nous visons utiliser est une famille polynômiale : $h_{a_0, ..., a_{k-1}}(x)= (\sum a_i x^i)\ mod\ N$. Ainsi, au lieu de choisir n permutations aléatoires de lignes, nous sélectionnons n fonctions de hachage choisies de manière aléatoire $h_1, h_2,. . . , h_k$ sur les lignes. Nous construisons la matrice de signature en considérant chaque ligne dans leur ordre donné. Soit $SIG (i, c)$ l'élément de la matrice de signature pour la $i^{ème}$ fonction de hachage et la colonne c. SIG (i, c) est initialisée à $\infty$ pour tout i et c. Nous traitons une ligne r en procédant comme suit:
 \begin{enumerate}
 \item nous calculons $h_1 (r), h_2 (r), ..., h_k (r)$.
 \item Pour chaque colonne, nous procédons comme suit: 
@@ -718,6 +708,15 @@ Pour avoir k-permutations, nous utiliserons une famille de fonctions de hachage 
 
 
 \end{enumerate}
+
+Une fois les signatures sont construites, les nœuds ayant les même valeurs seront regroupés. Nous obtiendrons ainsi en sortie la liste des motifs les plus denses dans le graphe de données. Nous illustrons le principe de fonctionnement de cette stratégie sur un graphe G dans la figure \ref{jacc}. Le tableau gauche de la figure \ref{jacc} montre une matrice caractéristique des listes d'adjacence des différents nœuds du graphe G ainsi que deux permutations aléatoires $h_1$, $h_2$. Tant dis que le tableau à droite de la même figure montre les étapes de calcul des signatures en utilisant ces deux fonctions. La matrice des signatures finale montre bien que les nœuds 1 et 4 sont les plus similaires ce qui est justifié par leurs listes d'adjacence qui ne diffèrent que dans un seul élément.  
+
+\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.48]{./ressources/image/jacc.png}
+	\caption[Exemple de calcul de la matrice des signatures.]{Exemple de calcul de la matrice des signatures.}
+	\label{jacc}
+\end{figure}
 	
 		
 		\subsubsection{Évaluation des motifs :}
@@ -748,7 +747,7 @@ Comme nous l'avons déjà préciser P-GraCE utilise le beam-search pour le cas d
 
 Dans ce chapitre, nous avons expliqué la partie conceptuelle de nos deux moteurs: $k^2$-GraCE et P-GraCE, qui se représentent les deux classes qui intéressent notre recherche. Nous avons présenter leurs différents modules et fonctionnalités tout en clarifiant leurs paramètres ainsi que leurs principe de fonctionnement.
 
-	Dans le chapitres suivant, nous présenteront les choix d'implémentation que nous avons effectuer. Nous décrirons l'environnement de développement ainsi que l'architecture globale de notre projet. 
+	Dans le chapitres suivant, nous présenteront les choix d'implémentation que nous avons effectué. Nous décrirons l'environnement de développement ainsi que l'architecture globale de notre projet. 
 	
 	
 	

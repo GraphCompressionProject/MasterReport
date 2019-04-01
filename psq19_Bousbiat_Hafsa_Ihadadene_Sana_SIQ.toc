@@ -60,7 +60,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{54}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{54}{subsection.3.3.3}
 \contentsline {subsubsection}{Extraction des motifs :}{54}{section*.15}
-\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{57}{section*.16}
+\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{58}{section*.16}
 \contentsline {subsubsection}{Traitement des motifs :}{58}{section*.17}
 \contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{58}{section.3.4}
 \contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{59}{section*.18}
