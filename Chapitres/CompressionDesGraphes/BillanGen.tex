@@ -61,7 +61,25 @@ Nous avons présenté le principe de fonctionnement des méthodes relatif à cha
 									
 								\end{table}
 								
-								Malgré le nombre considérable de travaux dans
+				
+				
+				Après avoir comparer les caractéristiques des deux classes de méthodes de compression, nous sommes intéressées à comparer les résultats expérimentales obtenues dans leur différents travaux et utilisant les même graphes de test. À ce stade, notre but est d'établir une étude comparative plus approfondie sur des performances des deux classes. Les deux courbes de la figure \ref{comparaisonVo} présentent le nombre de bits par liens obtenues sur deux graphes de test uk-2002 et eu-2005 (Nous fournissons plus de détails sur ses deux graphes en annexe \ref{tableau_test}).
+				
+				D'après la figure, on constate que les deux courbes atteignent leur minimum dans le cas de la méthode DSM \citep{hernandez2014compressed} avec 2,11 (bpe) pour eu-2005 et 1,53 (bpe) pour uk-2002. Cette méthode donne ainsi le meilleur résultat dans les deux classes. 	
+				Nous remarquons aussi que les méthodes basées vocabulaire en utilisant les propriétés de la matrice d'adjacence et la méthode de compression VNM \citep{buehrer2008scalable} s'inscrivant dans les méthodes de compression basées agrégation des liens des motifs usant des méthodes de clustering des donnent des résultats presque équivalent aux deux méthodes de compression par les arbres $k^2$-trees: $k^2$-trees : Amélioration \citep{brisaboa2014compact} et Delta-$k^2$-trees  \citep{zhang2014delta}. D'autre part, la première méthode \citep{claude2010fast} des méthodes de compression par extraction de motifs  basées agrégation de liens des motifs en utilisant des règles de grammaire donne le même nombre de bits que l'algorithme de base k2-trees \citep{brisaboa2009k}. Tant dis que la deuxième méthode \citep{claude2010extended} de cette même classe améliore de manière significatif le résultat donnant ainsi de meilleurs performances.
+
+\begin{figure}[H]	
+				\centering						
+				\includegraphics[scale=0.38]{ressources/image/globale.png} 
+					\centering
+					\caption{Comparaison des performances des méthodes par extraction de motifs et les méthodes basées sur les arbres $k^2$-trees }
+					\label{comparaisonVo}
+				\end{figure}				
+				
+				
+				
+								
+								Nous avons aussi constaté que malgré le nombre considérable de travaux dans
 le domaine de la compression des graphes, il y a encore
 de nombreux problèmes ouverts importants sur le terrain. Nous mentionnons ci-dessous quelques un des plus remarquables.
  
