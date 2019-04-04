@@ -21,6 +21,7 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \providecommand \oddpage@label [2]{}
+\providecommand\tcolorbox@label[2]{}
 \providecommand\@newglossary[4]{}
 \@newglossary{main}{glg}{gls}{glo}
 \@newglossary{acronym}{alg}{acr}{acn}
@@ -224,7 +225,6 @@
 \citation{grossi2003high}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (2/2)}}{30}{figure.2.15}}
 \newlabel{k2-trees-att-relation}{{2.15}{30}{Exemple d'une la représentation Att$k^2$-tree (2/2)}{figure.2.15}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}des m\IeC {\'e}thodes de compression bas\IeC {\'e}e sur les $K^2$-trees }{30}{subsection.2.3.1}}
 \citation{brisaboa2014compact}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes bas\IeC {\'e}es sur les $k^2$-trees appliqu\IeC {\'e}es sur le graphe eu2005 selon le nombre de bits par liens}}{31}{figure.2.16}}
 \newlabel{eu2005-k2}{{2.16}{31}{Comparaison des performances des méthodes basées sur les $k^2$-trees appliquées sur le graphe eu2005 selon le nombre de bits par liens}{figure.2.16}{}}
@@ -345,60 +345,64 @@
 \bibcite{badr2013traitement}{{7}{2013}{{Badr}}{{}}}
 \bibcite{barbay2006adaptive}{{8}{2006}{{Barbay et~al.}}{{}}}
 \bibcite{blondel2008fast}{{9}{2008}{{Blondel et~al.}}{{}}}
-\bibcite{boldi2004webgraph}{{10}{2004}{{Boldi and Vigna}}{{}}}
-\bibcite{brisaboa2015efficient}{{11}{2015}{{Brisaboa et~al.}}{{}}}
-\bibcite{brisaboa2014k}{{12}{2014a}{{Brisaboa et~al.}}{{}}}
-\bibcite{brisaboa2012compressed}{{13}{2012}{{Brisaboa et~al.}}{{}}}
-\bibcite{brisaboa2009k}{{14}{2009}{{Brisaboa et~al.}}{{}}}
-\bibcite{brisaboa2013dacs}{{15}{2013}{{Brisaboa et~al.}}{{}}}
-\bibcite{brisaboa2014compact}{{16}{2014b}{{Brisaboa et~al.}}{{}}}
-\bibcite{buehrer2008scalable}{{17}{2008}{{Buehrer and Chellapilla}}{{}}}
-\bibcite{claude2011practical}{{18}{2011}{{Claude and Ladra}}{{}}}
-\bibcite{claude2010extended}{{19}{2010a}{{Claude and Navarro}}{{}}}
-\bibcite{claude2010fast}{{20}{2010b}{{Claude and Navarro}}{{}}}
-\bibcite{de1997computational}{{21}{1997}{{De~Berg et~al.}}{{}}}
-\bibcite{de2013compact}{{22}{2013}{{De~Bernardo et~al.}}{{}}}
-\bibcite{de2014new}{{23}{2014}{{de~Bernardo~Roca}}{{}}}
-\bibcite{fages2014exploitation}{{24}{2014}{{Fages}}{{}}}
-\bibcite{garcia2014interleaved}{{25}{2014}{{Garcia et~al.}}{{}}}
-\bibcite{grossi2003high}{{26}{2003}{{Grossi et~al.}}{{}}}
-\bibcite{guillaume2002web}{{27}{2002}{{Guillaume and Latapy}}{{}}}
-\bibcite{hennecart2012elements}{{28}{2012}{{Hennecart et~al.}}{{}}}
-\bibcite{hernandez2014compressed}{{29}{2014}{{Hern{\'a}ndez and Navarro}}{{}}}
-\bibcite{hespanha2004efficient}{{30}{2004}{{Hespanha}}{{}}}
-\bibcite{Pres}{{31}{2016}{{Jean-Charles~R{\'e}gin}}{{}}}
-\bibcite{kang2011beyond}{{32}{2011}{{Kang and Faloutsos}}{{}}}
-\bibcite{karypis2000multilevel}{{33}{2000}{{Karypis and Kumar}}{{}}}
-\bibcite{ketkar2005subdue}{{34}{2005}{{Ketkar et~al.}}{{}}}
-\bibcite{khan2014set}{{35}{2014}{{Khan et~al.}}{{}}}
-\bibcite{koutra2015summarizing}{{36}{2015}{{Koutra et~al.}}{{}}}
-\bibcite{lefevre2010grass}{{37}{2010}{{LeFevre and Terzi}}{{}}}
-\bibcite{lehman2010mathematics}{{38}{2010}{{Lehman et~al.}}{{}}}
-\bibcite{lelewer1987data}{{39}{1987}{{Lelewer and Hirschberg}}{{}}}
-\bibcite{lemmouchi2012etude}{{40}{2012}{{Lemmouchi}}{{}}}
-\bibcite{liu2018graph}{{41}{2018a}{{Liu et~al.}}{{}}}
-\bibcite{liu2018reducing}{{42}{2018b}{{Liu et~al.}}{{}}}
-\bibcite{liu2015empirical}{{43}{2015}{{Liu et~al.}}{{}}}
-\bibcite{lopez2003cours}{{44}{2003}{{Lopez}}{{}}}
-\bibcite{maneth2015survey}{{45}{2015}{{Maneth and Peternek}}{{}}}
-\bibcite{maneth2018grammar}{{46}{2018}{{Maneth and Peternek}}{{}}}
-\bibcite{martinez2012compression}{{47}{2012}{{Mart{\'\i }nez-Prieto et~al.}}{{}}}
-\bibcite{muller}{{48}{2012}{{M{\"u}ller}}{{}}}
-\bibcite{parlebas1972centralite}{{49}{1972}{{Parlebas}}{{}}}
-\bibcite{pellegrini2004protein}{{50}{2004}{{Pellegrini et~al.}}{{}}}
-\bibcite{bac}{{51}{2010}{{Rigo}}{{}}}
-\bibcite{rossi2018graphzip}{{52}{2018}{{Rossi and Zhou}}{{}}}
-\bibcite{DUT}{{53}{2014}{{Roux}}{{}}}
-\bibcite{mathieu}{{54}{2018}{{SABLIK}}{{}}}
-\bibcite{sethi2014data}{{55}{2014}{{Sethi et~al.}}{{}}}
-\bibcite{shah2015timecrunch}{{56}{2015}{{Shah et~al.}}{{}}}
-\bibcite{shah2018graph}{{57}{2018}{{Shah}}{{}}}
-\bibcite{shen2006visual}{{58}{2006}{{Shen et~al.}}{{}}}
-\bibcite{shi2015vegas}{{59}{2015}{{Shi et~al.}}{{}}}
-\bibcite{shi2012optimizing}{{60}{2012}{{Shi et~al.}}{{}}}
-\bibcite{uthayakumar2018survey}{{61}{2018}{{Uthayakumar et~al.}}{{}}}
-\bibcite{master2017}{{62}{2018}{{W.~GUERMAH}}{{}}}
-\bibcite{wang2019study}{{63}{2019}{{Wang et~al.}}{{}}}
-\bibcite{yang2013overlapping}{{64}{2013}{{Yang and Leskovec}}{{}}}
-\bibcite{zhang2014assg}{{65}{2014a}{{Zhang et~al.}}{{}}}
-\bibcite{zhang2014delta}{{66}{2014b}{{Zhang et~al.}}{{}}}
+\bibcite{boldi2011layered}{{10}{2011}{{Boldi et~al.}}{{}}}
+\bibcite{boldi2004webgraph}{{11}{2004}{{Boldi and Vigna}}{{}}}
+\bibcite{brisaboa2015efficient}{{12}{2015}{{Brisaboa et~al.}}{{}}}
+\bibcite{brisaboa2014k}{{13}{2014a}{{Brisaboa et~al.}}{{}}}
+\bibcite{brisaboa2012compressed}{{14}{2012}{{Brisaboa et~al.}}{{}}}
+\bibcite{brisaboa2009k}{{15}{2009}{{Brisaboa et~al.}}{{}}}
+\bibcite{brisaboa2013dacs}{{16}{2013}{{Brisaboa et~al.}}{{}}}
+\bibcite{brisaboa2014compact}{{17}{2014b}{{Brisaboa et~al.}}{{}}}
+\bibcite{buehrer2008scalable}{{18}{2008}{{Buehrer and Chellapilla}}{{}}}
+\bibcite{claude2011practical}{{19}{2011}{{Claude and Ladra}}{{}}}
+\bibcite{claude2010extended}{{20}{2010a}{{Claude and Navarro}}{{}}}
+\bibcite{claude2010fast}{{21}{2010b}{{Claude and Navarro}}{{}}}
+\bibcite{de1997computational}{{22}{1997}{{De~Berg et~al.}}{{}}}
+\bibcite{de2013compact}{{23}{2013}{{De~Bernardo et~al.}}{{}}}
+\bibcite{de2014new}{{24}{2014}{{de~Bernardo~Roca}}{{}}}
+\bibcite{dhulipala2016compressing}{{25}{2016}{{Dhulipala et~al.}}{{}}}
+\bibcite{fages2014exploitation}{{26}{2014}{{Fages}}{{}}}
+\bibcite{garcia2014interleaved}{{27}{2014}{{Garcia et~al.}}{{}}}
+\bibcite{grossi2003high}{{28}{2003}{{Grossi et~al.}}{{}}}
+\bibcite{guillaume2002web}{{29}{2002}{{Guillaume and Latapy}}{{}}}
+\bibcite{hennecart2012elements}{{30}{2012}{{Hennecart et~al.}}{{}}}
+\bibcite{hernandez2014compressed}{{31}{2014}{{Hern{\'a}ndez and Navarro}}{{}}}
+\bibcite{hespanha2004efficient}{{32}{2004}{{Hespanha}}{{}}}
+\bibcite{Pres}{{33}{2016}{{Jean-Charles~R{\'e}gin}}{{}}}
+\bibcite{kang2011beyond}{{34}{2011}{{Kang and Faloutsos}}{{}}}
+\bibcite{karypis2000multilevel}{{35}{2000}{{Karypis and Kumar}}{{}}}
+\bibcite{ketkar2005subdue}{{36}{2005}{{Ketkar et~al.}}{{}}}
+\bibcite{khan2014set}{{37}{2014}{{Khan et~al.}}{{}}}
+\bibcite{koutra2015summarizing}{{38}{2015}{{Koutra et~al.}}{{}}}
+\bibcite{lefevre2010grass}{{39}{2010}{{LeFevre and Terzi}}{{}}}
+\bibcite{lehman2010mathematics}{{40}{2010}{{Lehman et~al.}}{{}}}
+\bibcite{lelewer1987data}{{41}{1987}{{Lelewer and Hirschberg}}{{}}}
+\bibcite{lemmouchi2012etude}{{42}{2012}{{Lemmouchi}}{{}}}
+\bibcite{liu2018graph}{{43}{2018a}{{Liu et~al.}}{{}}}
+\bibcite{liu2018reducing}{{44}{2018b}{{Liu et~al.}}{{}}}
+\bibcite{liu2015empirical}{{45}{2015}{{Liu et~al.}}{{}}}
+\bibcite{lopez2003cours}{{46}{2003}{{Lopez}}{{}}}
+\bibcite{maneth2015survey}{{47}{2015}{{Maneth and Peternek}}{{}}}
+\bibcite{maneth2018grammar}{{48}{2018}{{Maneth and Peternek}}{{}}}
+\bibcite{martinez2012compression}{{49}{2012}{{Mart{\'\i }nez-Prieto et~al.}}{{}}}
+\bibcite{maserrat2012community}{{50}{2012}{{Maserrat and Pei}}{{}}}
+\bibcite{muller}{{51}{2012}{{M{\"u}ller}}{{}}}
+\bibcite{parlebas1972centralite}{{52}{1972}{{Parlebas}}{{}}}
+\bibcite{pellegrini2004protein}{{53}{2004}{{Pellegrini et~al.}}{{}}}
+\bibcite{bac}{{54}{2010}{{Rigo}}{{}}}
+\bibcite{rossi2018graphzip}{{55}{2018}{{Rossi and Zhou}}{{}}}
+\bibcite{DUT}{{56}{2014}{{Roux}}{{}}}
+\bibcite{mathieu}{{57}{2018}{{SABLIK}}{{}}}
+\bibcite{sethi2014data}{{58}{2014}{{Sethi et~al.}}{{}}}
+\bibcite{shah2015timecrunch}{{59}{2015}{{Shah et~al.}}{{}}}
+\bibcite{shah2018graph}{{60}{2018}{{Shah}}{{}}}
+\bibcite{shen2006visual}{{61}{2006}{{Shen et~al.}}{{}}}
+\bibcite{shi2015vegas}{{62}{2015}{{Shi et~al.}}{{}}}
+\bibcite{shi2012optimizing}{{63}{2012}{{Shi et~al.}}{{}}}
+\bibcite{uthayakumar2018survey}{{64}{2018}{{Uthayakumar et~al.}}{{}}}
+\bibcite{master2017}{{65}{2018}{{W.~GUERMAH}}{{}}}
+\bibcite{wang2019study}{{66}{2019}{{Wang et~al.}}{{}}}
+\bibcite{yang2013overlapping}{{67}{2013}{{Yang and Leskovec}}{{}}}
+\bibcite{yildirim2012grail}{{68}{2012}{{Y{\i }ld{\i }r{\i }m et~al.}}{{}}}
+\bibcite{zhang2014assg}{{69}{2014a}{{Zhang et~al.}}{{}}}
+\bibcite{zhang2014delta}{{70}{2014b}{{Zhang et~al.}}{{}}}
