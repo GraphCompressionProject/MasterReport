@@ -12,23 +12,25 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Compression sans perte.}}{13}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Compression avec perte.}}{13}{figure.2.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Classification propos\IeC {\'e}es des m\IeC {\'e}thodes de compression}}{17}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-tree}}{18}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-tree}}{20}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-tree}}{21}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-tree1 avec les quatre encodages}}{22}{figure.2.7}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation Delta-$k^2$-tree}}{23}{figure.2.8}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-treap d'un graphe pond\IeC {\'e}r\IeC {\'e}}}{24}{figure.2.9}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Structures de donn\IeC {\'e}es pour une repr\IeC {\'e}sentation $k^2$-treap}}{25}{figure.2.10}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation I$k^2$-tree}}{25}{figure.2.11}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation diff I$k^2$-tree}}{26}{figure.2.12}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemple d'un graphe \IeC {\'e}tiquet\IeC {\'e}, attribu\IeC {\'e}, orient\IeC {\'e} et multiple}}{27}{figure.2.13}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (1/2)}}{28}{figure.2.14}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (2/2)}}{29}{figure.2.15}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{39}{figure.2.16}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{42}{figure.2.17}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM .}}{44}{figure.2.18}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM}}{44}{figure.2.19}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation des liens des motifs}}{45}{figure.2.20}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes de compression bas\IeC {\'e}es vocabulaire}}{46}{figure.2.21}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes par extraction de motifs et les m\IeC {\'e}thodes bas\IeC {\'e}es sur les arbres $k^2$-trees }}{50}{figure.2.22}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-tree}}{19}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-tree}}{21}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-tree}}{22}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-tree1 avec les quatre encodages}}{23}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation Delta-$k^2$-tree}}{24}{figure.2.8}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-treap d'un graphe pond\IeC {\'e}r\IeC {\'e}}}{25}{figure.2.9}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Structures de donn\IeC {\'e}es pour une repr\IeC {\'e}sentation $k^2$-treap}}{26}{figure.2.10}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation I$k^2$-tree}}{26}{figure.2.11}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation diff I$k^2$-tree}}{27}{figure.2.12}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemple d'un graphe \IeC {\'e}tiquet\IeC {\'e}, attribu\IeC {\'e}, orient\IeC {\'e} et multiple}}{28}{figure.2.13}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (1/2)}}{29}{figure.2.14}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (2/2)}}{30}{figure.2.15}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes bas\IeC {\'e}es sur les $k^2$-trees appliqu\IeC {\'e}es sur le graphe eu2005 selon le nombre de bits par liens}}{31}{figure.2.16}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces comparaison entre les m\IeC {\'e}thodes bas\IeC {\'e}es sur les $k^2$-trees en fonction du taux de compression}}{32}{figure.2.17}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{42}{figure.2.18}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{45}{figure.2.19}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM .}}{47}{figure.2.20}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM}}{47}{figure.2.21}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation des liens des motifs}}{48}{figure.2.22}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes de compression bas\IeC {\'e}es vocabulaire}}{49}{figure.2.23}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes par extraction de motifs et les m\IeC {\'e}thodes bas\IeC {\'e}es sur les arbres $k^2$-trees }}{53}{figure.2.24}
 \addvspace {10\p@ }
