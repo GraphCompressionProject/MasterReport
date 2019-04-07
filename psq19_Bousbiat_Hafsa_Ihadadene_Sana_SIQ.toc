@@ -69,11 +69,15 @@
 \contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{62}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{62}{section.4.1}
 \contentsline {section}{\numberline {4.2}Architecture globale existante}{62}{section.4.2}
-\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{62}{section.4.3}
-\contentsline {section}{\numberline {4.4}Traitement}{62}{section.4.4}
-\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{62}{section.4.5}
-\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{62}{section.4.6}
-\contentsline {section}{\numberline {4.7}Conclusion}{62}{section.4.7}
+\contentsline {section}{\numberline {4.3}Architecture \IeC {\'e}tendue}{62}{section.4.3}
+\contentsline {section}{\numberline {4.4}Donn\IeC {\'e}es}{62}{section.4.4}
+\contentsline {section}{\numberline {4.5}Traitement}{62}{section.4.5}
+\contentsline {section}{\numberline {4.6}Pr\IeC {\'e}sentation}{62}{section.4.6}
+\contentsline {section}{\numberline {4.7}Environnement de d\IeC {\'e}veloppement}{62}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Langage de Programmation}{62}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Biblioth\IeC {\`e}que Snap}{62}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Biblioth\IeC {\`e}que Boost}{62}{subsection.4.7.3}
+\contentsline {section}{\numberline {4.8}Conclusion}{62}{section.4.8}
 \contentsline {chapter}{\numberline {5}Test}{63}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}
 \contentsline {section}{\numberline {5.2}Environnement de Test}{63}{section.5.2}

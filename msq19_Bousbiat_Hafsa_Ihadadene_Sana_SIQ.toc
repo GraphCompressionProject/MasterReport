@@ -39,7 +39,7 @@
 \contentsline {subsubsection}{Le taux de compression:}{14}{section*.10}
 \contentsline {subsection}{\numberline {2.2.3}Classification des m\IeC {\'e}thodes de compression:}{14}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Compression par les arbres $K^2$-Trees}{18}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression bas\IeC {\'e}e sur les $K^2$-trees }{30}{subsection.2.3.1}
+
 \contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{35}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{35}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e sur l'agr\IeC {\'e}gation des motifs}{43}{subsection.2.4.2}
