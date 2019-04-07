@@ -23,7 +23,7 @@ L(\textit{M}) = $L_{\mathbb{N}}$(|M|+1) + log $\left( \begin{array}{c}
 \end{center}
 
 Le premier terme représente le nombre de structures dans le modèle  %$L_{\mathbb{N}}$
-, le second terme encode le nombre de structures par type $x \in \Omega$ tant dis que le troisième terme permet  pour chaque structure $s \in \textit{M}$, d'encoder son type x(s) avec un code de préfixe optimal et d'encoder sa structure. Le codage des structures se fait selon leurs types :
+, le second terme encode le nombre de structures par type $x \in \Omega$ tant dis que le troisième terme permet pour chaque structure $s \in \textit{M}$, d'encoder son type x(s) avec un code de préfixe optimal et d'encoder sa structure. Le codage des structures se fait selon leurs types :
 %----------------------------------------------------------------
 %----------------------------------------------------------------
 %----------------------------------------------------------------
@@ -65,7 +65,7 @@ L(\textit{ch}) = $L_{\mathbb{N}}$(|\textit{ch}| - 1) + $\sum\limits_{i=0}^{|\tex
 %----------------------------------------------------------------
 %---------------------La matrice de l'erreur----------------------
 %----------------------------------------------------------------
-\textbf{Matrice d'erreur :} la matrice d'erreur E est encodée en deux parties $E^{+}$ et $E^{-}$. $E^{+}$  correspond à la partie de A que M modélise en rajoutant des liens non existants contrairement à $E^{-}$ qui représente les parties de A que M ne modélise pas. Notons que les quasi-cliques et les quasi-noyaux bipartie ne sont pas inclut dans la matrice d'erreur puisqu'ils sont encodés exactement. Le codage de $E^{+}$ et $E^{-}$ est similaire à celui des quasi-cliques, on a :
+\textbf{Matrice d'erreur :} la matrice d'erreur E est encodée en deux parties $E^{+}$ et $E^{-}$. $E^{+}$  correspond à la partie de A que M modélise en rajoutant des liens non existants contrairement à $E^{-}$ qui représente les parties de A que M ne modélise pas. Notons que les quasi-cliques et les quasi-noyaux bipartie ne sont pas inclut dans la matrice d'erreur puisqu'ils sont encodés avec exactitude. Le codage de $E^{+}$ et $E^{-}$ est similaire à celui des quasi-cliques, on a :
 \begin{center}
 L(${E}^{+}$) = log(|${E}^{+}$|) + ||${E}^{+}$||\textit{$l_{1}$} + ||${E}^{+}$||'\textit{$l_{0}$}\\
 L(${E}^{-}$) = log(|${E}^{-}$|) + ||${E}^{-}$||\textit{$l_{1}$} + ||${E}^{-}$||'\textit{$l_{0}$}\\
@@ -88,7 +88,7 @@ Pour la recherche du meilleur modèle $ \textit{M} \in \mathcal{M} $ , \gls{vog}
 \begin{itemize}[label=$\circ$]
 	\item si tous les sommets d'un sous graphe d'ordre n ont un degré égale à n-1, il s'agit alors d'une clique.
 	\item si tous les sommets ont un degré de 2 sauf deux sommets ayant le degré 1, le  sous-graphe est une chaine.
-	\item si les amplitudes de ses valeurs propres maximales et minimales sont égales, le sous-graphe est un noyau bipartie où les sommet de chaque nœuds sont identifiés à travers un parcours 
+	\item si les amplitudes de ses valeurs propres maximales et minimales sont égales, le sous-graphe est un noyau bipartie où les sommet de chaque ensemble du noyau sont identifiés à travers un parcours 
 	\newacronym{bfs}{BFS}{Breadth First Search}
 	\gls{bfs}\footnote{\gls{bfs} : est un algorithme de parcours en largeur.}	
 	 avec coloration des sommets.
