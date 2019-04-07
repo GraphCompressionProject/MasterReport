@@ -68,26 +68,26 @@
 \contentsline {section}{\numberline {3.5}Conclusion}{61}{section.3.5}
 \contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{62}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{62}{section.4.1}
-\contentsline {section}{\numberline {4.2}Architecture globale existante}{62}{section.4.2}
-\contentsline {section}{\numberline {4.3}Architecture \IeC {\'e}tendue}{62}{section.4.3}
-\contentsline {section}{\numberline {4.4}Donn\IeC {\'e}es}{62}{section.4.4}
-\contentsline {section}{\numberline {4.5}Traitement}{62}{section.4.5}
-\contentsline {section}{\numberline {4.6}Pr\IeC {\'e}sentation}{62}{section.4.6}
-\contentsline {section}{\numberline {4.7}Environnement de d\IeC {\'e}veloppement}{62}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Langage de Programmation}{62}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Biblioth\IeC {\`e}que Snap}{62}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Biblioth\IeC {\`e}que Boost}{62}{subsection.4.7.3}
-\contentsline {section}{\numberline {4.8}Conclusion}{62}{section.4.8}
-\contentsline {chapter}{\numberline {5}Test}{63}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}
-\contentsline {section}{\numberline {5.2}Environnement de Test}{63}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{63}{section.5.3}
-\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{63}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{63}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{63}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{63}{section.5.5}
-\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rents moteurs}{63}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion}{63}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{64}{chapter.6}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{65}{appendix.A}
-\contentsline {chapter}{\numberline {B}Description des graphes de test}{66}{appendix.B}
+\contentsline {section}{\numberline {4.2}Architecture globale}{62}{section.4.2}
+\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{63}{section.4.3}
+\contentsline {section}{\numberline {4.4}Traitement}{63}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{63}{section.4.5}
+\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{63}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Langage de Programmation}{63}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Biblioth\IeC {\`e}que Snap}{64}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Biblioth\IeC {\`e}que Boost}{64}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Biblioth\IeC {\`e}que Qt }{64}{subsection.4.6.4}
+\contentsline {section}{\numberline {4.7}Conclusion}{64}{section.4.7}
+\contentsline {chapter}{\numberline {5}Test}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}
+\contentsline {section}{\numberline {5.2}Environnement de Test}{65}{section.5.2}
+\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{65}{section.5.3}
+\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{65}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{65}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{65}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{65}{section.5.5}
+\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rents moteurs}{65}{section.5.6}
+\contentsline {section}{\numberline {5.7}Conclusion}{65}{section.5.7}
+\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{66}{chapter.6}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{67}{appendix.A}
+\contentsline {chapter}{\numberline {B}Description des graphes de test}{68}{appendix.B}

@@ -51,6 +51,9 @@
 \glossentry{rdf}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{16\delimN 17}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{snap}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{64}}}\glsgroupskip
 \glsgroupheading{V}\relax \glsresetentrylist %
 \glossentry{vnm}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{39\delimR 41}}}%

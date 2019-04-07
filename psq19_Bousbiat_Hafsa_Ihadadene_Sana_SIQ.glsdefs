@@ -478,3 +478,63 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{ide}{}%
+{%
+\gls@defglossaryentry{ide}%
+{%
+name={IDE},%
+sort={IDE},%
+type={acronym},%
+first={Integrated Developement Environement\glsspace (IDE)},%
+firstplural={Integrated Developement Environement\glsspace (IDE)},%
+text={IDE},%
+plural={IDE},%
+description={Integrated Developement Environement},%
+descriptionplural={Integrated Developement Environement\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Integrated Developement Environement},%
+longplural={Integrated Developement Environement},%
+short={IDE},%
+shortplural={IDE},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{snap}{}%
+{%
+\gls@defglossaryentry{snap}%
+{%
+name={SNAP},%
+sort={SNAP},%
+type={acronym},%
+first={Stanford Network Analysis Package\glsspace (SNAP)},%
+firstplural={Stanford Network Analysis Package\glsspace (SNAP)},%
+text={SNAP},%
+plural={SNAP},%
+description={Stanford Network Analysis Package},%
+descriptionplural={Stanford Network Analysis Package\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Stanford Network Analysis Package},%
+longplural={Stanford Network Analysis Package},%
+short={SNAP},%
+shortplural={SNAP},%
+counter={page},%
+parent={},%
+%
+}%
+}%
