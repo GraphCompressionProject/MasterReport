@@ -10,20 +10,20 @@ Warning--empty institution in Pres
 You've used 66 entries,
             1935 wiz_defined-function locations,
             821 strings with 14895 characters,
-and the built_in function-call counts, 28426 in all, are:
+and the built_in function-call counts, 28423 in all, are:
 = -- 2893
 > -- 1076
 < -- 56
 + -- 380
 - -- 358
-* -- 2237
+* -- 2235
 := -- 4725
 add.period$ -- 219
 call.type$ -- 66
-change.case$ -- 502
+change.case$ -- 503
 chr.to.int$ -- 62
 cite$ -- 70
-duplicate$ -- 1206
+duplicate$ -- 1205
 empty$ -- 2022
 format.name$ -- 455
 if$ -- 5796
@@ -39,7 +39,7 @@ quote$ -- 0
 skip$ -- 917
 stack$ -- 0
 substring$ -- 1973
-swap$ -- 272
+swap$ -- 271
 text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0

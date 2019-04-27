@@ -136,10 +136,10 @@ Il y a plusieurs solutions pour contrer le volume de données mais nous nous int
 
 La compression de graphes est un domaine dans lequel le graphe initial subit des transformations pour en obtenir une version plus réduite. Différentes techniques permettent cette compression, avec ou sans perte d'information, et génèrent de nouveaux graphes sur lesquels il est intéressant d'effectuer les différents traitements.\\ 
 
-Deux types de méthodes de compression de graphes se sont distinguées parmi tout les autres types de méthodes : les méthodes de compression en utilisant les k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitement. Nous présenterons dans ce travail une synthèse bibliographique sur les différentes méthodes de compression dérivant de ces deux grandes classes.	\\
+Deux types de méthodes de compression de graphes se sont distingués parmi tout les autres types de méthodes : les méthodes de compression en utilisant les k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitement. Nous présenterons dans ce travail une synthèse bibliographique sur les différentes méthodes de compression dérivant de ces deux grandes classes.	\\
 		
 			
-			 Nous avons hiérarchisé notre mémoire en trois grands chapitres. Le premier est une introduction au domaine de la théorie des graphes incluant ainsi les notions fondamentales de ce domaine, les types de graphes, leurs représentations structurelles et leurs domaines d'application. Dans le second chapitre, nous introduisons les définitions de base du domaine de compression de données appliqué aux graphes à savoir : les motivations, les types de compression et les métriques d'évaluation. Enfin, nous présenterons les classifications des méthodes existantes de compression de graphe ainsi que la classification que nous proposons. Nous mettrons l'accent après sur les deux classes de méthodes qui forment la problématique de notre sujet de Master : la compression par extraction de motifs et la compression par les k2-trees. Dans le troisième chapitre nous présenterons une nouvelle méthode de compression que nous proposons.
+			 Nous avons hiérarchisé notre mémoire en deux grands chapitres. Le premier est une introduction au domaine de la théorie des graphes incluant ainsi les notions fondamentales de ce domaine, les types de graphes, leurs représentations structurelles et leurs domaines d'application. Dans le second chapitre, nous introduisons les définitions de base du domaine de compression de données appliquée aux graphes à savoir : les motivations, les types de compression et les métriques d'évaluation. Enfin, nous présenterons les classifications des méthodes existantes de compression de graphe ainsi que la classification que nous proposons. Nous mettrons l'accent après sur les deux classes de méthodes qui forment la problématique de notre sujet de Master : la compression par extraction de motifs et la compression par les k2-trees. Nous conclurons par une synthèse où nous comparerons entre les méthodes des deux classes.
 	
 \pagestyle{fancy}
 \fancypagestyle{plain}{%
@@ -161,7 +161,7 @@ Deux types de méthodes de compression de graphes se sont distinguées parmi tou
 %---->chapitre 02 :« »
 	\chapter{Compression de graphes}
 	La puissance des processeurs, de nos jours, augmente plus vite que les capacités de stockage ce qui engendre un déséquilibre entre le volume des données qu’il est possible de
-traiter et de stocker. Dès lors, la réduction de la taille des données, plus formellement la compression de données, a été un domaine de recherche très active. 
+traiter et de stocker. Dès lors, la réduction de la taille des données, plus formellement la compression de données, a été un domaine de recherche très actif. 
 		
 		 Dans ce chapitre, nous allons
 ouvrir un champ de réflexion en introduisant tout d’abord le domaine de compression des données et son application dans la théorie des graphes. Puis dans un second
@@ -190,7 +190,7 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 				\input{./Chapitres/k2_trees/K2-trees.tex}
 				\input{./Chapitres/k2_trees/SynK2.tex}
 			\section{Compression par extraction de motifs}
-			 Les motifs fréquents sont des connaissances extraites sur des données. Leur but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils lui offrent ainsi une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante dans la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement %%%% verifier ce mot
+			 Les motifs fréquents sont des connaissances extraites des données. Leur but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils lui offrent ainsi une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante dans la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement %%%% verifier ce mot
 			 utilisée dans le domaine de compression des graphes vu qu'elle permet de ne garder que l'information utile et d'éliminer les redondances de manière efficace. En effet, nous trouvons plusieurs méthodes basées sur ce principe où nous pourrons clairement distinguer deux grandes classes : 
 			 (i) les méthodes de compression basées vocabulaire
 			 (ii) les méthodes de compression basées Agrégation.
@@ -292,13 +292,13 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 		
 		\normalsize
 		
-		À l'ère du Big Data, les informations sont générées rapidement et leur analyse est devenue un défi. Diverses méthodes ont été proposées pour accélérer l'analyse de ces données et en extraire les informations. En effet, la situation d'abondance d'information aujourd'hui a favorisé l'incapacité d'assimilation et de réemploi de l'information et a montré l'inadaptation des outils de gestion classiques. Une des solution les plus connus pour pallier à ces problèmes est la compression. Comme les graphes représentent la plupart des données du monde réel, les méthodes de compression des graphes ont été à la pointe de ces efforts.\\
+		À l'ère du Big Data, les informations sont générées rapidement et leur analyse est devenue un défi. Diverses méthodes ont été proposées pour accélérer l'analyse de ces données et en extraire les informations. En effet, la situation d'abondance d'information aujourd'hui a favorisé l'incapacité d'assimilation et de réemploi de l'information et a montré l'inadaptation des outils de gestion classiques. Une des solutions les plus connus pour pallier à ces problèmes est la compression. Comme les graphes représentent la plupart des données du monde réel, les méthodes de compression des graphes ont été à la pointe de ces efforts.\\
 		
 		Nous nous sommes intéressées dans ce travail au domaine de compression des graphes, et plus particulièrement aux méthodes de compression par les k2-trees et les méthodes de compression par extraction de motifs qui sont des méthodes adaptées en générale pour les graphes du web et les graphes des réseaux sociaux. 
-		Nous avons présenté les différentes méthodes de compression existantes dans chacune des deux classes où nous essayé de mettre en relief les points fort de chacune. Nous avons ainsi établi une étude comparative entre elles en se basant sur leurs caractéristiques qui peuvent avoir une forte influence sur leur performance et oriente le choix de la méthode. 
+		Nous avons présenté les différentes méthodes de compression existantes dans chacune des deux classes où nous avons essayé de mettre en relief les points forts de chacune. Nous avons ainsi établi une étude comparative entre elles en se basant sur leurs caractéristiques qui peuvent avoir une forte influence sur leur performance et oriente le choix de la méthode. 
 		Nous avons également raffiné la classification des méthodes de compression des graphes proposée dans un travail de Master précédent. Nous nous sommes basées pour cela sur le principe de fonctionnement et les fondements théoriques de chacune en respect de la classification précédente.\\  
 	
-	Cette étude nous a amené à constater que malgré le progrès existant dans ce domaine plusieurs défis, tel que : la compression temps réel et les temps de traitements sont encore présents. Ces défis constituent de nouvelles problématiques de recherche qui sont toujours ouvertes.\\
+	Cette étude nous a amenée à constater que malgré le progrès existant dans ce domaine plusieurs défis, tels que : la compression temps réel et les temps de traitements sont encore présents. Ces défis constituent de nouvelles problématiques de recherche qui sont toujours ouvertes.\\
 	
 	Comme perspective à ce travail, il serait intéressant d'implémenter ces méthodes et leurs variantes. Cette implémentation nous permettra de mieux comparer entre ces méthodes en employant le même jeux de données. De ce fait, nous pourrons établir une comparaison plus objective entre elles.
 
@@ -329,8 +329,8 @@ ASOregon &  13 milles nœuds & 37 milles liens \\ \hline
 
 
 \end{tabular}
-									\caption{Graphes de test}									\label{comgen}
-
+\caption{Graphes de test}			
+						\label{comgen}
  								\end{table}
 \end{appendix}
 
