@@ -4,25 +4,7 @@
 Nous avons présenté dans les parties précédentes les différentes méthodes de compression existantes basées sur la représentation $k^2$-trees, et expliqué le principe de fonctionnement de chaqu'une d'elles. Nous allons par la suit comparer entre ces méthodes et résumer nos recherches.
 
 Une présentation synthétique de notre étude est fournie dans le tableau \ref{K2-trees-table}. Chaque ligne du tableau représente une méthode, tandis que chaque colonne
-représente un aspect susceptible d’être utilisé dans la méthode (type de graphe, type de compression, structure en sortie). Nous constatons que toutes les méthodes de cette classe sont des méthodes de compression sans perte qui supportent les graphes orientés et non orientés, cependant nous remarquons une variation dans l'aspect temporelle, certains méthodes sont destinées aux graphes statiques comme $k^2$-trees de base et $k^2$-trees1, tandis que d'autres sont appliquées aux graphes dynamiques comme $k^n$-trees et d$k^2$-trees. Certains méthodes se distinguent aussi par le type de graphe comme $k^2$-treaps qui s'applique aux graphes pondérés et Att$k^2$-trees qui accepte les graphes étiquetés, attribués et multiples. Nous observons aussi que toutes les méthodes donnent en sortie une représentation succincte. le tableau résume aussi les résultats de l'application des méthodes sur des graphes de test. Les figures \ref{eu2005-k2} et \ref{k2-taux} sont des représentations visuelles des ces résultats.\\
-
-La figure \ref{eu2005-k2} représente les résultats obtenues par l'application des méthodes de compression basées sur les $k^2$-trees sur le graphe eu-2005 en tenant compte de l’ordre chronologique de leurs apparitions. Les résultats sont sous forme de nombre de bits par liens. Nous remarquons que la première méthode de base donne un résultat de compression de 5.2bpe, ce nombre a diminué avec l'apparition des améliorations et des nouvelles méthodes. Nous constatons alors une amélioration contenue de l'efficacité de ces méthodes de manière générale surtout avec les améliorations proposées par \citep{brisaboa2014compact} et Delta$k^2$-trees où le nombre de bits atteint approximativement 3.22 bits par liens.
-
- \begin{figure}[H]
-		\includegraphics[height=10.5cm, width=16cm]{./ressources/image/eu2005-k2.png}
-		\caption{Comparaison des performances des méthodes basées sur les $k^2$-trees appliquées sur le graphe eu2005 selon le nombre de bits par liens}
-		\label{eu2005-k2}
-	\end{figure}
-	
-A partir de la figure \ref{K2-trees-table} qui présente les résultats de l'application de différentes méthodes sur quatre graphes de test (CommNet, cond-mat, eu-2005, movilens10M) en fonction du taux de compression. Nous remarquons que entre $k^2$-trees et $k^2$-trees1, la méthode $k^2$-trees est nettement meilleure, cela s'explique par le fait que les graphes du web sont représentés par des matrices creuses et $k^2$-trees1 est mieux adaptée au matrices avec des zones de uns comme les matrices d'images par exemple.	Pour les graphes dynamiques, nous observons que $k^n$-trees donne de bons résultats par rapport à I$k^2$-trees mais avec une légère différence. Pour les graphes attribués, Att$k^2$-trees donne un très bon résultat avec un taux de compression de 93\%. 
-	\begin{figure}[H]
-		\includegraphics[height=9cm, width=18cm]{./ressources/image/k2-taux.png}
-		\caption{Comparaison entre les méthodes basées sur les $k^2$-trees en fonction du taux de compression}
-		\label{k2-taux}
-	\end{figure}
-	
-
-
+représente un aspect susceptible d’être utilisé dans la méthode (type de graphe, type de compression, structure en sortie). Nous constatons que toutes les méthodes de cette classe sont des méthodes de compression sans perte qui supportent les graphes orientés et non orientés, cependant nous remarquons une variation dans l'aspect temporelle, certains méthodes sont destinées aux graphes statiques comme $k^2$-trees de base et $k^2$-trees1, tandis que d'autres sont appliquées aux graphes dynamiques comme $k^n$-trees et d$k^2$-trees. Certains méthodes se distinguent aussi par le type de graphe comme $k^2$-treaps qui s'applique aux graphes pondérés et Att$k^2$-trees qui accepte les graphes étiquetés, attribués et multiples. Nous observons aussi que toutes les méthodes donnent en sortie une représentation succincte. Le tableau résume aussi les résultats de l'application des méthodes sur des graphes de test. 
     
  												
 														\begin{landscape}

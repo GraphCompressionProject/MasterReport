@@ -1,9 +1,9 @@
 \babel@toc {french}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Exemple de repr\IeC {\'e}sentation graphique d'un graphe non orient\IeC {\'e}}}{5}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Exemple de repr\IeC {\'e}sentation graphique d'un digraphe.}}{7}{figure.1.2}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Graphe orient\IeC {\'e} G}}{10}{figure.1.3}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Matrice d'adjacence du graphe G}}{10}{figure.1.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Exemple de repr\IeC {\'e}sentation graphique d'un digraphe.}}{6}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Graphe orient\IeC {\'e} G}}{9}{figure.1.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Matrice d'adjacence du graphe G}}{9}{figure.1.4}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Graphe orient\IeC {\'e} G}}{10}{figure.1.5}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Matrice d'incidence du graphe G}}{10}{figure.1.6}
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Graphe orient\IeC {\'e} G}}{11}{figure.1.7}
@@ -11,25 +11,33 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Compression sans perte.}}{15}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Compression avec perte.}}{15}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Classification propos\IeC {\'e}es des m\IeC {\'e}thodes de compression}}{19}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-tree}}{20}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-tree}}{22}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-tree}}{23}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-tree1 avec les quatre encodages}}{24}{figure.2.7}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-treap d'un graphe pond\IeC {\'e}r\IeC {\'e}}}{25}{figure.2.8}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{36}{figure.2.9}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{39}{figure.2.10}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM .}}{41}{figure.2.11}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM}}{41}{figure.2.12}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Classification des m\IeC {\'e}thodes de compression \citep {master2017}}}{18}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Classification propos\IeC {\'e}es des m\IeC {\'e}thodes de compression}}{20}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-tree}}{21}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-tree}}{23}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-tree}}{24}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-tree1 avec les quatre encodages}}{25}{figure.2.8}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation Delta-$k^2$-tree}}{26}{figure.2.9}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-treap d'un graphe pond\IeC {\'e}r\IeC {\'e}}}{27}{figure.2.10}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Structures de donn\IeC {\'e}es pour une repr\IeC {\'e}sentation $k^2$-treap}}{28}{figure.2.11}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation I$k^2$-tree}}{28}{figure.2.12}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation diff I$k^2$-tree}}{29}{figure.2.13}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Exemple d'un graphe \IeC {\'e}tiquet\IeC {\'e}, attribu\IeC {\'e}, orient\IeC {\'e} et multiple}}{30}{figure.2.14}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation Att$k^2$-tree (1/2)}}{31}{figure.2.15}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (2/2)}}{32}{figure.2.16}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{43}{figure.2.17}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{46}{figure.2.18}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM .}}{48}{figure.2.19}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM}}{48}{figure.2.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{47}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{49}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{50}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{53}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'application de l'algorithme SlashBurn}}{56}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{57}{figure.3.6}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{55}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{57}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{58}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{61}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'application de l'algorithme SlashBurn}}{64}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{65}{figure.3.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture globale de la solution}}{62}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture globale de la solution}}{70}{figure.4.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
