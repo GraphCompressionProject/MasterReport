@@ -3,13 +3,12 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux
 The style file: apalike.bst
 Database file #1: Bibliographie.bib
-Warning--I didn't find a database entry for "pieterse2010performance"
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
 Warning--empty author and editor in IUTLyonInformatique
 Warning--empty institution in Pres
 You've used 69 entries,
             1935 wiz_defined-function locations,
-            834 strings with 15646 characters,
+            833 strings with 15623 characters,
 and the built_in function-call counts, 29924 in all, are:
 = -- 3047
 > -- 1140
@@ -48,4 +47,4 @@ warning$ -- 3
 while$ -- 255
 width$ -- 0
 write$ -- 902
-(There were 4 warnings)
+(There were 3 warnings)

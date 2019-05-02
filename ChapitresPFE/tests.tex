@@ -1,0 +1,47 @@
+\chapter{Test}
+	\section{Introduction}
+Durant ce chapitre, nous exposerons les différents résultats de mesures de performances de nos deux moteurs dans différentes configuration. Nous précèderons cela par la présentation de l'environnement de test.
+	
+	
+	\section{Environnement de Test}
+	L'environnement de test compte parmi les éléments sur lesquels repose l'optimisation de tout système. C'est un environnement permettant de tester les différentes configurations et modules. Nous présenterons dans cette partie les caractéristiques matérielles et logicielles de l'environnement de test utilisé durant nos expériences. 
+	
+	\begin{itemize}[label=$\bullet$]
+		\item \textbf{Processeur :}
+		\item \textbf{RAM :}
+		\item \textbf{Cache :}
+		\item \textbf{Système d'exploitation :}
+	\end{itemize}
+	\section{Présentation des graphes de test}
+	
+	\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{3}{|l|}{Type de graphe}                                                      & Graphe          & Domaine                & Nb. noeuds & Nb. liens \\ \hline
+\multirow{11}{*}{\rotatebox[origin=c]{90}{ Statique } } & \multirow{7}{*}{\rotatebox[origin=c]{90}{ Orienté }} & \multirow{3}{*}{\rotatebox[origin=c]{90}{ Étiqueté}}     & ia-fb-msg       & réseaux d'interaction  & 1266       & 6451      \\ \cline{4-7} 
+                           &                              &                               & tech-routers-rf & réseaux de technologie & 2113       & 6632      \\ \cline{4-7} 
+                           &                              &                               & soc-hamsterster & réseaux sociaux        & 2426       & 16630     \\ \cline{3-7} 
+                           &                              & \multirow{4}{*}{\rotatebox[origin=c]{90}{ Non Étiqueté }} & wiki-Vote    & réseaux de vote       & 7115 & 103689   \\ \cline{4-7} 
+                           &                              &                               & soc-Slashdot   & réseaux sociaux  & 77360 & 905468   \\ \cline{4-7} 
+                           &                              &                               & soc-Epinions1      & réseaux sociaux    & 75879       & 508837    \\ \cline{4-7} 
+                           &                              &                               & Amazon0302      & réseaux de commerce    & 262111     & 1234877   \\ \cline{2-7} 
+                           & \multicolumn{2}{l|}{\multirow{4}{*}{\rotatebox[origin=c]{90}{ Non Orienté }}}                & caida           & réseaux informatiques &			26475	 & 53381              \\ \cline{4-7} 
+                           & \multicolumn{2}{l|}{}                                        &         California & 	Infrastructure	&		1,965,206 &	2,766,607     \\ \cline{4-7} 
+                           & \multicolumn{2}{l|}{}                                        &           DBLP coauthorship	& Co-authorship			&317,08&	1,049,866     \\ \cline{4-7} 
+                           & \multicolumn{2}{l|}{}                                        &             Brightlike &	Social Network		&	58,228 & 	214078   \\ \hline
+\multirow{3}{*}{\rotatebox[origin=c]{90}{ Dynamique } } & \multicolumn{2}{l|}{\multirow{3}{*}{\rotatebox[origin=c]{90}{ Orienté }}}                &     FB-FORUM            &                       réseaux sociaux                  &      899      &   33700        \\ \cline{4-7} 
+                           & \multicolumn{2}{l|}{}                                        &      fb-messages         &    réseaux sociaux     &    11900   &     59800    \\ \cline{4-7} 
+                           & \multicolumn{2}{l|}{}                                        &      ia-enron-employees          &    réseaux sociaux               &      150      &         168.5 \\ \hline
+\end{tabular}
+\end{table}
+	
+	
+	\section{Évaluation du moteur $k^2$-GraCE}
+			\subsection{Analyse de l'impact du paramètre k}
+			\subsection{Étude de l'effet de l'ordre}
+			
+	\section{Évaluation du moteur P-GraCE}
+	
+	\section{Comparaison entre les différents moteurs}
+	
+	\section{Conclusion}

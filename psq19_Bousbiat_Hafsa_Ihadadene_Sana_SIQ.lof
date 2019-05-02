@@ -37,5 +37,13 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'application de l'algorithme SlashBurn}}{64}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{67}{figure.3.6}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture du backend}}{72}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architecture globale de la solution web}}{73}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Structure d'un fichier de graphe statique}}{73}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure d'un fichier de graphe dynamique}}{74}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Structure d'un fichier de graphe \IeC {\'e}tiquet\IeC {\'e}}}{74}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sch\IeC {\'e}ma globale du fonctionnement des deux moteurs}}{76}{figure.4.6}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

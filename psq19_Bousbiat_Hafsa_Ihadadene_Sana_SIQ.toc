@@ -68,6 +68,29 @@
 \contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{69}{section*.19}
 \contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{69}{section*.20}
 \contentsline {section}{\numberline {3.5}Conclusion}{71}{section.3.5}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{72}{appendix.A}
-\contentsline {chapter}{\numberline {B}Description des graphes de test}{73}{appendix.B}
-\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{74}{appendix.C}
+\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{72}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{72}{section.4.1}
+\contentsline {section}{\numberline {4.2}Architecture globale}{72}{section.4.2}
+\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{73}{section.4.3}
+\contentsline {section}{\numberline {4.4}Traitement}{75}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Les structures utilis\IeC {\'e}es }{75}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Les m\IeC {\'e}thodes et fonctions }{75}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{76}{section.4.5}
+\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{77}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Langage de Programmation}{77}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Biblioth\IeC {\`e}que Snap}{77}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Biblioth\IeC {\`e}que Boost}{77}{subsection.4.6.3}
+\contentsline {section}{\numberline {4.7}Conclusion}{78}{section.4.7}
+\contentsline {chapter}{\numberline {5}Test}{79}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{79}{section.5.1}
+\contentsline {section}{\numberline {5.2}Environnement de Test}{79}{section.5.2}
+\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{80}{section.5.3}
+\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{80}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{80}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{80}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{80}{section.5.5}
+\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rents moteurs}{80}{section.5.6}
+\contentsline {section}{\numberline {5.7}Conclusion}{80}{section.5.7}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{81}{appendix.A}
+\contentsline {chapter}{\numberline {B}Description des graphes de test}{82}{appendix.B}
+\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{83}{appendix.C}
