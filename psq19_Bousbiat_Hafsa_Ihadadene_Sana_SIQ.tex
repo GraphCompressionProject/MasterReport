@@ -653,7 +653,9 @@ Cette alternative sera employée pour le cas des graphes étiquetés. Nous fourn
 
 \item \textbf{Méthodes de clustering :}
 
-Plusieurs méthodes de clustering existent dans la littérature. P-GraCE utilise une  méthode de clustering qui a été destinée pour compresser un graphe de données en entrée s'intitulant \textit{SlashBurn}. Cette technique parte de l'observation  que les graphes du monde réel sont facilement décomposables en supprimant leurs nœuds concentrateurs qui sont définies comme les neouds ayant un degré maximale dans le graphe G.  
+Plusieurs méthodes de clustering existent dans la littérature. P-GraCE utilise un ensemble de  méthodes de clustering destinées pour compresser un graphe de données en entrée. nous les détaillons dans ce qui suit. 
+
+\textbf{\textit{SlashBurn}} : Cette technique parte de l'observation  que les graphes du monde réel sont facilement décomposables en supprimant leurs nœuds concentrateurs qui sont définies comme les neouds ayant un degré maximale dans le graphe G.  
 
 Ce module de P-GraCE permet donc de réordonner les nœuds du graphe de tel sorte à avoir un plus petit nombre de blocs plus denses dans la matrice d'adjacence qui représentent les motifs en sortie.  
 
@@ -661,7 +663,7 @@ Ce module de P-GraCE permet donc de réordonner les nœuds du graphe de tel sort
 \newacronym{gcc}{CCG}{Composant Connecté Géant}
 \gls{gcc} et des rayons restants que nous définissons comme étant le composant connecté non géant connecté aux anciens \gls{gcc}. Le nœud concentrateur obtient ainsi le plus petit identifiant , les nœuds des rayons (spokes) reçoivent les identifiants les plus élevés  dans l’ordre décroissant de la taille du composant connecté auquel ils appartiennent, et le nouveau \gls{gcc} prend les identifiants restants. Le même processus s'applique aux nœuds dans \gls{gcc}, de manière récursive.\\
 
-Nous illustrons le principe de fonctionnement de cette méthode de clustering sur le graphe de la figure \ref{Img:slashb}. Le nœud concentrateur (8) obtient le plus petit identifiant (1), les nœuds des rayons reçoivent les identifiants les plus élevés (9-16), et le \gls{gcc} prend les identifiants restants (2-8). La prochaine itération considère le nouveau \gls{gcc}.
+Nous illustrons le principe de fonctionnement de cette méthode de clustering sur le graphe de la figure \ref{Img:slashb}. Le nœud concentrateur (8) obtient le plus petit identifiant (1), les nœuds des rayons reçoivent les identifiants les plus élevés (9-16), et le \gls{gcc} prend les identifiants restants (2-8). La prochaine itération considère le nouveau \gls{gcc}. L'algorithme est en annexe \ref{alg:SlashBurn}.
 
 \begin{figure}[H]
 	\centering
@@ -671,9 +673,48 @@ Nous illustrons le principe de fonctionnement de cette méthode de clustering su
 
  \end{figure}
 
+\textbf{\textit{KCBC}} : Cette technique se base sur le principe de dégénérescence \footnote{: La dégénérescence d’un graphe G est le plus petit nombre k de
+ telle sorte que chaque sous-graphe $S \in G$ contient un sommet de degré au plus k}. Soit G un graphe non orienté, nous notons par $\Delta$(G) le degré maximal des nœuds de G. Un k-core de G est un sous graphe H de taille maximale tel que $\Delta(H) \ge k$ avec k entier positif.//
+Pour décomposer le graphe, la méthode passe par quatre étapes : D'abord, le degré k de chaque nœud du graphe est calculé. Ensuite, pour chaque degré k allant du plus grand au plus petit le graphe est décomposé en supprimant tous les nœuds dont le degré est inférieure à k, l'opération s'arrête si la décomposition donne un ensemble non vide et le k est choisit comme $k_{max}$ sinon elle se termine quand $k_{max}$=1. Après la décomposition, chaque composant est identifié comme étant une structure. Enfin, les arêtes entre les structures précédemment identifiées sont supprimées. L'algorithme de la méthode est donné en Annexe (\ref{alg:KCBC})\\
 
 
+\textbf{\textit{Louvain}} : C'est un algorithme glouton hiérarchique d'extraction de communauté applicable à de grands graphes. La méthode permet de partitionner un graph en s'appuyant sur la principe de modularité. La modularité est une métrique comprise entre -1 et 1 qui mesure la densité des arêtes a l'intérieure d'un sous graphe comparée a celle des arêtes reliant ce dernier au autres sous-graphes, par suit, l'optimisation de la modularité conduit à un meilleur partitionnement. Pour un graphe pondéré, la modularité est donnée par :    
 
+\begin{equation} \label{eq:lovain}
+\textit{Q} = \frac{1}{2m} \sum_{ij}[A_{ij} - \frac{{k}_{i}{k}_{j}}{2m}]  \delta({c}_{i},{c}_{j})
+\end{equation}
+
+où :
+\begin{itemize}
+\item $A_{ij}$ est le poids de l'arréte entre le nœud i et le nœud j.
+\item ${k}_{i},{k}_{j}$ sont poids des arêtes liées aux nœuds  i et  j respectivement.
+\item $2m$ est la somme des poids des arêtes du graphe. 
+\item ${c}_{i}, {c}_{j}$ sont les communautés des nœuds.
+\item $\delta$ est une simple fonction de Dirac \footnote{Une fonction de deux variables qui est égale à 1 si celles-ci sont égales, et 0 sinon. Elle est symbolisé par la lettre $\delta$ (delta minuscule) de l'alphabet grec.}.
+\end{itemize}
+
+Pour maximiser la modularité, Louvain applique deux phases d'une manière itérative : Dans la première phase, les nœuds sont affectés dans des petits communautés où chaque nœud représente une communauté. Ensuite, pour chaque nœud i, nous calculons la différence de modularité $\Delta\textit{Q}$ obtenue après le déplacement de i de sa propre communauté vers les communautés de chacun de ses voisins j. Une fois les différences calculées, i est placé dans la communauté qui maximise sa modularité  . Si aucune augmentation n'est possible, i reste dans sa communauté d'origine. L'opération est répétée sur chaque nœud de façon itérative jusqu'à ce qu'aucune amélioration n'est possible.
+Dans la seconde phase, les nœuds de chaque communauté sont regroupés dans un seul nœud et un nouveau graphe est construit. Les arêtes entre les nœuds dans la communauté sont représentés par des boucles sur la communauté et les arêtes de la communauté vers une autre sont représentés par une seule arête pondérée. Une fois cette phase terminée la premier phase est appliquée à nouveau sur le graphe. Pour exploiter cette méthode dans notre travail, on considère les nœuds regroupés obtenue a la fin comme étant des structures. L'algorithme de la méthode est donné en annexe \ref{alg:Lovain} .\\
+
+\textbf{\textit{Spectral}} : Cette méthode utilise les résultats d'algèbre linéaire afin de trouver une partition du graphe. L'approche général consiste à utiliser une méthode de classification standard (généralement k-means) sur  les premiers vecteurs propres (vecteurs de Fiedler) de la matrice Laplaciènne du graphe. La matrice Laplaciènne est définit comme suit : 
+\[{M}_{Lap} :=
+			\left\{
+			\begin{array}{r c l}
+			\sum_{k=1}^n poids(i,k)   & si & i=j \\
+			-poids(i,j) & sinon
+			\end{array}
+			\right.
+			\]
+			\\
+Chaque vecteur de Fiedler permet d’obtenir une partition du graphe en
+deux parties. Pour partitionner le graphe, nous devons minimiser le coût de coupe de la bissection, cela revient à trouver un vecteur $x \in \{-1,1\}^n $ qui minimise $x^T M_{Lap}x$. Cela consiste a résoudre le système linéaire $M_{Lap}x = \lambda x$.
+
+L'algorithme prend comme entrée la matrice d'adjacence que nous notons A, une autre matrice diagonal notée D est crée tel que :    
+D : \[{d}_{i} := \sum_{(v_i,v_j) \in E_m} e(v_i,v_j)
+			\]
+			\\
+L'algorithme calcule ensuite le deuxième plus petit vecteur propre \textit{y} de la matrice Laplacienne Q = D - A. Ce vecteur propre (vecteur de Fiedler) contient une valeur pour chaque nœud du graphe, a partir de cette valeur le nœud est affecté a l'une des deux partition. soit r la médian pondérée des valeurs de \textit{y}. Chaque valeur $y_j$ du vecteur propre est comparée à r et le nœud est affecté à une partition selon le résultat de la comparaison.\\
+	
 
 \item \textbf{Fonctions de hachage :}
 
@@ -750,7 +791,7 @@ Dans ce chapitre, nous avons expliqué la partie conceptuelle de nos deux moteur
 	
 	
 	
-	
+\iffalse	
 	
 \chapter{Implémentation}
 	\section{Introduction}
@@ -849,7 +890,7 @@ Nous évaluerons dans le chapitre suivant les différentes méthodes de nos deux
 
 \chapter{Conclusion Générale}
 
-
+\fi
 
 
 
@@ -976,11 +1017,137 @@ ASOregon &  13 milles nœuds & 37 milles liens \\ \hline
 \newpage
 
 
+\chapter{Algorithmes des méthodes de clustering}
+
+\label{SlashBurn}
+
+\begin{algorithm}[H]
+					\label{alg:SlashBurn}
+					\caption{SlashBurn}
+					\textbf{Entrée :}
+						\begin{itemize}[label=$\bullet$]
+							\item G(V,E) : Graphe non orienté 
+							\item n : nombre de nœuds dans le graphe 
+							
+						\end{itemize}
+					\textbf{Sortie :} ensemble de structures\\							\noindent\rule{\textwidth}{1pt}
+						
+						
+				\begin{algorithmic} [1]
+				 \STATE 
+				 \STATE D = [] //tableau de degré
+				 \STATE GCC : un graph				 				 \FOR{ i=0 .. n-1}
+				 \STATE D[i] = \textbf{Degré}(i)
+				 \ENDFOR
+				 
+					\STATE hub = \{ i | max(D[i])\}
+					
+					\STATE spokes = \{ i | min(D[i])\} //nœuds isolés 
+					\STATE GCC = G(V) - \{$e_{hub}$\} - \{$e_{spokes}$\}
+					
+					
+				
+				\STATE SlashBurn(GCC, Taille du GCC)  
+				\end{algorithmic}
+			\end{algorithm}
+
+\newpage
+
+\label{KCBC}
+
+
+\begin{algorithm}[H]
+					\label{alg:KCBC}
+					\caption{KCBC}
+					\textbf{Entrée :}
+						\begin{itemize}[label=$\bullet$]
+							\item G : Graphe non orienté
+							\item n : nombre de nœuds dans le graphe 
+							
+						\end{itemize}
+					\textbf{Sortie :} ensemble de structures\\							\noindent\rule{\textwidth}{1pt}
+						
+						
+				\begin{algorithmic} [1]
+				\STATE Degré = 	\lbrack \rbrack
+				\STATE F = G
+				\STATE stop = VRAI
+				\STATE structure = \{\}
+				\STATE //étape 1 : Calculer le degré de chaque nœud
+					\FOR{ i =0 ... n-1}
+					  \STATE Degré \lbrack i \rbrack = $\textbf{Deg}_G$(i)
+					  \ENDFOR
+					  \STATE $k_{max}$ = k
+						\WHILE { $k_{max}$ > 1 and and stop = VRAI }
+						\STATE //étape 2 : Décomposition du graphe avec $k_{max}$
+						\STATE F = G
+						\FOR{ x =0 ... n-1}
+							\IF { $\textbf{DEG}_F$(x) < $k_{max}$}
+							\STATE $\textbf{Supprimer}_F$(x) 
+							\ENDIF
+							
+						\ENDFOR
+						
+						\IF { F = {} }
+							\STATE stop = FAUX
+						
+					\ELSE
+						\STATE $k_{max}$ = $k_{max}$ - 1
+					\ENDIF
+					\ENDWHILE 
+					
+					
+					\STATE //étape 3 : Identification des structures 
+					
+					\STATE structure = structure $\cup$ \{ composants connexes $ \in $ F \}
+					 
+					 \STATE //étape 4 : Suppression des arêtes entre structures
+					 \FOR{ $struct_i$, $struct_j$ $\in$ structure } 
+					 \STATE $\textbf{supprimerArête}_F$($struct_i \cap struct_j$)   
+					 \ENDFOR
+				\end{algorithmic}
+			\end{algorithm}
+
+\newpage
+\label{Louvain}
+
+
+\begin{algorithm}[H]
+					\label{alg:Lovain}
+					\caption{Louvain}
+					\textbf{Entrée :}
+						\begin{itemize}[label=$\bullet$]
+							\item G(V,E) : Graphe non orienté pondéré
+							\item n : nombre de nœuds dans le graphe 
+							
+						\end{itemize}
+					\textbf{Sortie :} ensemble de structures\\							\noindent\rule{\textwidth}{1pt}
+						
+						
+				\begin{algorithmic} [1]
+				 \STATE //Phase 1
+				 \STATE $C$ = \{\{$v_i$ \} | $v_i \in G(V)$ \}
+				 \REPEAT
+				 \FOR{ $v_i \in C_x$ and $v_j \in C_y$ and $(v_i,v_j) \in G(E)$}
+					\STATE H = \{ $\Delta Q_i(C_x,C_y)$ | $C_x,C_y \in C$ \}
+					\IF{\textit{max}$\Delta Q_i(C_x,C_y)$ > 0}
+					\STATE $C_y$ = $C_y \cup \{v_i\}$
+					\STATE $C_x$ = $C_x$ - \{$v_i$\}
+					 \ENDIF
+					  \ENDFOR
+					  \STATE //Phase 2
+					 \STATE V' = \{ $C_x$ | $C_x \in C$ \}
+					  \STATE E' = \{ $\sum \frac{(v_i,v_j)}{1}$ | $v_i \in C_x$ | $v_j \in C_y$ | $e_{i,j} \in G(E)$ \}
+					 \STATE G = G'(V',E')
+					  \UNTIL{aucune amélioration possible}
+				\STATE ensemble de structures = \{ $v_i$ | $v_i \in G$ \} 	   
+				\end{algorithmic}
+			\end{algorithm}
+
 
 
 \bibliographystyle{apalike}
 \bibliography{Bibliographie}
-
 
 \end{document}
 

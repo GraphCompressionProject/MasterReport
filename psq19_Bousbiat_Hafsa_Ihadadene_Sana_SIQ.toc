@@ -62,34 +62,12 @@
 \contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{62}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{62}{subsection.3.3.3}
 \contentsline {subsubsection}{Extraction des motifs :}{62}{section*.16}
-\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{65}{section*.17}
-\contentsline {subsubsection}{Traitement des motifs :}{66}{section*.18}
-\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{66}{section.3.4}
-\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{67}{section*.19}
-\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{67}{section*.20}
-\contentsline {section}{\numberline {3.5}Conclusion}{69}{section.3.5}
-\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{70}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{70}{section.4.1}
-\contentsline {section}{\numberline {4.2}Architecture globale}{70}{section.4.2}
-\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{71}{section.4.3}
-\contentsline {section}{\numberline {4.4}Traitement}{71}{section.4.4}
-\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{71}{section.4.5}
-\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{71}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Langage de Programmation}{71}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Biblioth\IeC {\`e}que Snap}{72}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Biblioth\IeC {\`e}que Boost}{72}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Biblioth\IeC {\`e}que Qt }{72}{subsection.4.6.4}
-\contentsline {section}{\numberline {4.7}Conclusion}{72}{section.4.7}
-\contentsline {chapter}{\numberline {5}Test}{73}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{73}{section.5.1}
-\contentsline {section}{\numberline {5.2}Environnement de Test}{73}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{73}{section.5.3}
-\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{73}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{73}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{73}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{73}{section.5.5}
-\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rents moteurs}{73}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion}{73}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{74}{chapter.6}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{75}{appendix.A}
-\contentsline {chapter}{\numberline {B}Description des graphes de test}{76}{appendix.B}
+\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{67}{section*.17}
+\contentsline {subsubsection}{Traitement des motifs :}{68}{section*.18}
+\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{68}{section.3.4}
+\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{69}{section*.19}
+\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{69}{section*.20}
+\contentsline {section}{\numberline {3.5}Conclusion}{71}{section.3.5}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{72}{appendix.A}
+\contentsline {chapter}{\numberline {B}Description des graphes de test}{73}{appendix.B}
+\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{74}{appendix.C}
