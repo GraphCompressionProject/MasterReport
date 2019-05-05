@@ -25,7 +25,7 @@
 
  \end{figure}
 	
-	Dans le but de faciliter l'exploitation et l'utilisation de notre solution, nous proposons une application web qui permettra  d'accéder au différentes fonctionnalités offertes. Cette proposition se base sur le fait que les performances des machines ordinaires s'avèrent limiter pour l'exécution des algorithmes de compression dans le cas des grands graphes. L'utilisation d'un serveur web performant nous semble la solution la plus adéquate. La figure \ref{Img:archglob2} montre l'architecture globale de la solution.   	
+	Dans le but de faciliter l'exploitation et l'utilisation de notre solution, nous proposons une application web qui permettra  d'accéder aux différentes fonctionnalités offertes. Cette proposition se base sur le fait que les performances des machines ordinaires s'avèrent limiter pour l'exécution des algorithmes de compression dans le cas des grands graphes. L'utilisation d'un serveur web performant nous semble la solution la plus adéquate. La figure \ref{Img:archglob2} montre l'architecture globale de la solution.   	
 	
 \begin{figure}[H]
 	\centering
@@ -34,7 +34,7 @@
 	\caption{Architecture globale de la solution web}
  \end{figure}
  
- Dans ce qui suit, nous détaillerons uniquement les couches de l'architecture du backend ainsi que les bibliothèques qui les constituent. Les détails des autres couches de l'architecture globale ne seront pas présenter car elles n'influence en aucun cas sur les résultats de compression. Elle permettent uniquement d'offrir une interface ergonomique et une exécution distante tirant profit des performances du serveur utilisé.
+ Dans ce qui suit, nous détaillerons uniquement les couches de l'architecture du backend ainsi que les bibliothèques qui les constituent. Les détails des autres couches de l'architecture globale ne seront pas présenter car elles n'influence en aucun cas sur les résultats de compression. Elle permettent uniquement d'offrir une interface ergonomique et une exécution distante tirant profit de la force de calcul du serveur utilisé.
 	
 	\section{Données}
 	Les données manipulées par les moteurs de compression sont tous sous format de fichiers textes. La structure de ses fichiers diffère selon le type de graphe en entrée. Comme nous l'avons déjà implicitement mentionnées, l'implémentation proposée prend en charge les types de graphes suivants : graphe dynamique orienté, graphe statique (orienté et non orienté) et finalement graphe étiqueté. Nous présenterons dans ce qui suit leurs structures:
@@ -68,7 +68,7 @@ Les liens dans un graphe dynamique sont représentés par trois composantes (u,v
 	\caption{Structure d'un fichier de graphe étiqueté}
  \end{figure}
 
-Le fichier de données d'un graphe étiqueté est composé de deux types de lignes: les lignes commençant avec un "$v$" représentent les identifiants des sommets suivis de leurs étiquettes et les lignes commençant avec un "$e$" représentent les identifiants des liens suivis de leurs étiquettes.
+Le fichier de données d'un graphe étiqueté est composé de deux types de lignes: les lignes commençant avec un "$v$" représentent les identifiants des sommets suivis de leurs étiquettes et les lignes commençant avec un "$e$" représentent les sommets source et destination des liens suivis de leurs étiquettes.
 	
 	\end{itemize}
 	
@@ -78,7 +78,7 @@ Le fichier de données d'un graphe étiqueté est composé de deux types de lign
 
 Dans cette section, nous détaillerons les principales structures utilisées pour représenter les graphes en mémoire ainsi que les fonctions et méthodes décrivant les interfaces de nos deux moteurs compression. 
 \subsection{Les structures utilisées }
-Nous nous intéressons dans notre projet à trouver un bon compromis entre les performances de la compression (taux de compression et le nombre de bits par lien) et le temps d'exécution. Pour cela nous avons essayer de choisir des implémentations de structures de données qui répondent à cette contrainte.
+Nous nous intéressons dans notre projet à trouver un bon compromis entre les performances de la compression (taux de compression et le nombre de bits par nœuds) et le temps d'exécution. Pour cela nous avons essayer de choisir des implémentations de structures de données qui répondent à cette contrainte.
 
 \begin{enumerate}[label=(\alph*)]
 \item \textbf{TNGraph :}
@@ -108,7 +108,7 @@ La dernière structure sont les graphes dynamiques orientés qui sont représent
 	
 	\begin{enumerate}[label=(\alph*)]
 		\item \textbf{LoadGraph :} Cette fonction permet de charger le graphe de données en mémoire à partir d'un fichier texte. Elle prend en paramètres le fichier de données ainsi que le type de graphe dans le cas du moteur P-GraCE. Tant dis que dans le cas du moteur $k^2$-GraCE, elle prend en paramètres le fichier de données, le type de graphe ainsi que le type représentation à utiliser pour compresser le graphe.
-		\item \textbf{CompressK2 :} Cette fonction consiste en le processus de compression du graphe en utilisant les arbres $k^2$-trees. Elle reçois en entrée le graphe de données et son type et donne en sortie les deux listes T et L représentant l'arbre $k^2$-trees.
+		\item \textbf{CompressK2 :} Cette fonction consiste en le processus de compression du graphe en utilisant les arbres $k^2$-trees. Elle reçoit en entrée le graphe de données et son type et donne en sortie les deux listes T et L représentant l'arbre $k^2$-trees.
 		
 		\item \textbf{CompressPattern :} Cette fonction permet de compresser le graphe de données en utilisant ses sous-structures les plus importantes. Elle prend en paramètres le graphe de données ainsi que le choix de la méthode d'extraction de motifs à utiliser dans le processus de compression.
 		
@@ -157,6 +157,6 @@ Nous l'avons utilisées dans notre projet pour l'implémentation des arbres $k^2
 
 	\section{Conclusion}
 	
-Durant ce chapitre, nous avons présenté notre implémentation où nous avons essayer d'utiliser différentes bibliothèques permettant d'avoir de meilleurs performances. L'indépendance des différentes couches de l'architecture existantes nous ont faciliter la tache d'implémentation. Nous avons ainsi essayer de respecter cette indépendance afin de faciliter tout autre contribution future dans le projet. 
+Durant ce chapitre, nous avons présenté notre implémentation où nous avons essayer d'utiliser différentes bibliothèques permettant d'avoir de meilleurs performances. L'indépendance des différentes couches de l'architecture existantes nous a facilité la tache d'implémentation. Nous avons ainsi essayé de respecter cette indépendance afin de faciliter tout autre contribution future dans le projet. 
 
-Nous évaluerons dans le chapitre suivant les différentes méthodes de nos deux moteurs en vue de l'obtention d'une étude comparative plus objective et plus clair.
+Nous évaluerons dans le chapitre suivant les différentes méthodes de nos deux moteurs en vue de l'obtention d'une étude comparative plus objective et plus clair des leurs performances.

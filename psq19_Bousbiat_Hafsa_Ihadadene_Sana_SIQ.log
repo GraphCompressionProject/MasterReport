@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  2 MAY 2019 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  5 MAY 2019 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1681,12 +1681,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
@@ -1696,14 +1696,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 27.
+ss on input line 30.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 \newpage
+l.30 \newpage
               [1
 
 ]) (./abstract_psq.tex
@@ -2761,7 +2766,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1061.
 Here is how much of TeX's memory you used:
  43503 strings out of 492649
  846842 string characters out of 6129622
- 1002834 words of memory out of 5000000
+ 1002564 words of memory out of 5000000
  45898 multiletter control sequences out of 15000+600000
  647834 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2780,8 +2785,8 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2018/texmf-
 dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (101 pages, 33996
-94 bytes).
+Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (101 pages, 34001
+75 bytes).
 PDF statistics:
  2111 PDF objects out of 2487 (max. 8388607)
  1888 compressed objects within 19 object streams
