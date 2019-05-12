@@ -27,7 +27,15 @@ Nous allons dans cette partie proposer une nouvelle méthode \gls{ddsm} basée s
 			%Pour mieux expliquer notre méthode nous allons tout d'abord commencer par décrire les structures que nous allons utiliser. Nous enchainons par la suite  avec le pseudo algorithme détaillant les étapes essentielles de notre méthode et nous conclurons en expliquant comment les algorithmes proposés dans \citep{hernandez2014compressed} de manipulation des graphes peuvent être généralisés dans notre cas.
 			%\subsection{Description conceptuelle}
 			
-			La codification du graphe en sortie doit respecter les contraintes du problème tout en réduisant un maximum d'espace mémoire. Pour cela, Nous proposons d'étendre la codification proposée dans \citep{hernandez2014compressed} pour le cas des graphes dynamiques en rajoutant une information temporelle. 
+			La codification du graphe en sortie doit respecter les contraintes du problème tout en réduisant un maximum d'espace mémoire. Pour cela, Nous proposons d'étendre la codification proposée dans \citep{hernandez2014compressed} pour le cas des graphes dynamiques en rajoutant une information temporelle. La figure \ref{ddsm_exem} montre un exemple de la structure donnée utilisée où la quatrième information représente le descripteur temporel de la sous-structure.
+			
+			
+			\begin{figure}[H]
+\centering
+	\includegraphics[scale=0.6]{./ressources/image/ddsm_exem.png}
+	\caption[Structure de données utilisée]{Structure de données utilisée}
+	\label{ddsm_exem}
+	\end{figure}
 			
 			Une fois les sous-structures identifiées, Hernandez et al. \citep{hernandez2014compressed} proposent de représenter chacune d'elles avec trois composantes: la première contenant les sommets ayant uniquement des arêtes sortantes, la deuxième contenant les sommets ayant des arêtes entrantes et sortantes et la troisième contenant les sommets ayant uniquement des arêtes entrantes. Pour pouvoir identifier les différentes composantes, ils associent un vecteur binaire à cette représentation marquant par un 1 le début de chacune des trois composantes (voir figure \ref{SDM}).
 			

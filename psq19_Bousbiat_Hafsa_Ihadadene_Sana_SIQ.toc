@@ -67,7 +67,7 @@
 \contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{69}{section.3.4}
 \contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{69}{section*.19}
 \contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{70}{section*.20}
-\contentsline {section}{\numberline {3.5}Conclusion}{72}{section.3.5}
+\contentsline {section}{\numberline {3.5}Conclusion}{73}{section.3.5}
 \contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{74}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{74}{section.4.1}
 \contentsline {section}{\numberline {4.2}Architecture globale}{74}{section.4.2}

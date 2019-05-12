@@ -36,7 +36,8 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{61}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'application de l'algorithme SlashBurn}}{64}{figure.3.5}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{67}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Les diff\IeC {\'e}rentes phases de DDSM}}{72}{figure.3.7}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Structure de donn\IeC {\'e}es utilis\IeC {\'e}e}}{70}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Les diff\IeC {\'e}rentes phases de DDSM}}{72}{figure.3.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture du backend}}{74}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Architecture globale de la solution web}}{75}{figure.4.2}
