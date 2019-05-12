@@ -76,9 +76,9 @@ Le fichier de données d'un graphe étiqueté est composé de deux types de lign
 	
 	\section{Traitement}
 
-Dans cette section, nous détaillerons les principales structures utilisées pour représenter les graphes en mémoire ainsi que les fonctions et méthodes décrivant les interfaces de nos deux moteurs compression. 
+Dans cette section, nous détaillerons les principales structures utilisées pour représenter les graphes en mémoire ainsi que les fonctions et méthodes décrivant les interfaces de nos deux moteurs  de compression. 
 \subsection{Les structures utilisées }
-Nous nous intéressons dans notre projet à trouver un bon compromis entre les performances de la compression (taux de compression et le nombre de bits par nœuds) et le temps d'exécution. Pour cela nous avons essayer de choisir des implémentations de structures de données qui répondent à cette contrainte.
+Nous nous intéressons dans notre projet à trouver un bon compromis entre les performances de la compression (taux de compression et le nombre de bits par nœud) et le temps d'exécution. Pour cela nous avons essayé de choisir des implémentations de structures de données qui répondent à cette contrainte.
 
 \begin{enumerate}[label=(\alph*)]
 \item \textbf{TNGraph :}
@@ -88,7 +88,7 @@ Cette structure est l'une des structures les plus performantes offertes par la b
 Cette structure est aussi une des structures de la bibliothèque \gls{snap}. Elle représente un graphe non orienté et offre les mêmes avantages que la structure précédente. 
 
 \item\textbf{std::vector<Boost::dynamicbitset<> > :}
- Nous avons adopté cette structure pour représenter la matrice d'adjacence en mémoire. Les lignes de la matrice d'adjacence sont représentées par un vecteur de bits de la bibliothèque Boost donnant un accès rapide parmi toutes les implémentation disponibles  \citep{pieterse2010performance}. Les tableaux de lignes seront stockés dans un tableau dynamique de la bibliothèque standard du langage c++ permettant d'exploiter la localité du cache vu que ses éléments sont stockés de façon contigüe en mémoire.
+ Nous avons adopté cette structure pour représenter la matrice d'adjacence en mémoire. Les lignes de la matrice d'adjacence sont représentées par un vecteur de bits de la bibliothèque Boost donnant un accès rapide parmi toutes les implémentations disponibles  \citep{pieterse2010performance}. Les tableaux de lignes seront stockés dans un tableau de la bibliothèque standard du langage c++ permettant d'exploiter la localité du cache vu que ses éléments sont stockés de façon contigüe en mémoire.
  
 \item\textbf{std::vector<std::pair<std::vector<unsigned int>,unsigned int> >:}
 Cette structure représente la liste d'adjacence d'un graphe. Comme nous l'avons déjà expliquer nous dotons chacune des listes par un pointeurs indiquant la position du dernier élément visité. Les paires ( listes, pointeurs ) seront stockées dans un tableau indexé par les identifiants des nœuds du graphes ( 0...N ).
@@ -129,14 +129,14 @@ La dernière structure sont les graphes dynamiques orientés qui sont représent
 	
 	\section{Présentation}
 	
-	La couche présentation est responsable de donner accès à toutes les fonctionnalités offertes par notre solution, entre autres le choix des paramètres pour différentes méthodes, ainsi que de visualiser les résultats. En plus du fichier de sortie, elle fournit les différentes mesures de performances. Elle offre ainsi aux chercheurs la possibilité de comparer les performances de différents méthodes sur un même graphe. 
+	La couche présentation est responsable de donner accès à toutes les fonctionnalités offertes par notre solution, entre autre le choix des paramètres pour différentes méthodes, ainsi que de visualiser les résultats. En plus du fichier de sortie, elle fournit les différentes mesures de performances. Elle offre ainsi aux chercheurs la possibilité de comparer les performances de différentes méthodes sur un même graphe. 
 	
 	\section{Environnement de développement}
 		
 		Le choix des outils de développement dans tout projet informatique est très important vue leur fort impact sur les performances du produit finale. Comme notre solution fait partie d'un projet de recherche, il faut aussi prendre en compte la flexibilité et la capacité de la solution à s'interfacer avec d'autre outils dans des systèmes qui peuvent être hétérogènes. 
 		
 		\subsection{Langage de Programmation}
-		Nous avons adopté le langage de programmation avec lequel la    première version de notre solution a été développée: le C++. En effet, le langage C++ est un langage très performants pour les calculs lourds. Il permet d'avoir des exécutions très rapides, ce qui en fait un langage de choix pour les applications critiques qui ont besoin de performances. Il permet aussi d'avoir un code portable : un même code source peut être facilement transformé en exécutable sous Windows, Mac OS ou Linux. Un autre aspect du langage c++ est sa richesse de bibliothèques optimisées pour le traitement et le stockage des grands graphes en mémoire. 
+		Nous avons adopté le langage de programmation avec lequel la    première version de notre solution a été développée: le C++. En effet, le langage C++ est un langage très performant pour les calculs lourds. Il permet d'avoir des exécutions très rapides, ce qui en fait un langage de choix pour les applications critiques qui ont besoin de performances. Il permet aussi d'avoir un code portable : un même code source peut être facilement transformé en exécutable sous Windows, Mac OS ou Linux. Un autre aspect du langage c++ est sa richesse de bibliothèques optimisées pour le traitement et le stockage des grands graphes en mémoire. 
 		
 		Nous avons choisi Visual Studio 2015 comme environnement de développement (IDE). Notre choix a été influencé par le fait que Visual Studio s'ouvre à toutes les tendances du moment et permet facilement de travailler en équipe sur le même projet.
 		
@@ -144,7 +144,7 @@ La dernière structure sont les graphes dynamiques orientés qui sont représent
 		\subsection{Bibliothèque Snap}
 		\label{snaplib}
 			
-		Afin de faciliter la manipulation des graphes et d'améliorer les performances de notre solution, nous avons offert la possibilité d'exécuter les différents algorithmes de compression en utilisant une des plus performantes bibliothèque de manipulation de graphes en c++ : SNAP.
+		Afin de faciliter la manipulation des graphes et d'améliorer les performances de notre solution, nous avons offert la possibilité d'exécuter les différents algorithmes de compression en utilisant une des plus performantes bibliothèques de manipulation de graphes en c++ : SNAP.
 		\gls{snap} est une bibliothèque d'analyse et d'exploration de graphes à usage général qui s'adapte facilement à des graphes massives. Elle présente aussi l'avantage d'être  efficace et facilement extensible. Elle prend naturellement en charge les graphes riches avec des types de données complexes associés aux nœuds et aux arêtes. 
 		
 		\subsection{Bibliothèque Boost}
@@ -157,6 +157,6 @@ Nous l'avons utilisées dans notre projet pour l'implémentation des arbres $k^2
 
 	\section{Conclusion}
 	
-Durant ce chapitre, nous avons présenté notre implémentation où nous avons essayer d'utiliser différentes bibliothèques permettant d'avoir de meilleurs performances. L'indépendance des différentes couches de l'architecture existantes nous a facilité la tache d'implémentation. Nous avons ainsi essayé de respecter cette indépendance afin de faciliter tout autre contribution future dans le projet. 
+Durant ce chapitre, nous avons présenté notre implémentation où nous avons essayer d'utiliser différentes bibliothèques permettant d'avoir de meilleurs performances. L'indépendance des différentes couches de l'architecture existante nous a facilité la tache d'implémentation. Nous avons ainsi essayé de respecter cette indépendance afin de faciliter tout autre contribution future dans le projet. 
 
-Nous évaluerons dans le chapitre suivant les différentes méthodes de nos deux moteurs en vue de l'obtention d'une étude comparative plus objective et plus clair des leurs performances.
+Nous évaluerons dans le chapitre suivant les différentes méthodes de nos deux moteurs en vue de l'obtention d'une étude comparative plus objective et plus claire des leurs performances.

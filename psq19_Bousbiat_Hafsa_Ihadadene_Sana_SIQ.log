@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  5 MAY 2019 13:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  12 MAY 2019 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1877,7 +1877,7 @@ ss on input line 18.
 [4
 
 ]
-<./ressources/image/graphNonOriente.png, id=730, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=732, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -1896,7 +1896,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5 <./ressources/image/graphNonOriente.png>])
 (./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
-<./ressources/image/RepDiGraphe.png, id=766, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=768, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
@@ -1913,26 +1913,26 @@ its \T1/txr/m/it/12 spokes\T1/txr/m/n/12 )([]Koutra
  []
 
 ) (./Chapitres/TheorieDesGraphes/structRep.tex [8]
-<./ressources/image/graphAdjace.png, id=835, 361.35pt x 306.0847pt>
+<./ressources/image/graphAdjace.png, id=837, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  31.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=836, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=838, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
 e 38.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
  [9 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>]
-<./ressources/image/graphIncid.png, id=854, 410.94705pt x 365.60118pt>
+<./ressources/image/graphIncid.png, id=856, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 74.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=855, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=857, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
@@ -1943,7 +1943,7 @@ File: ./ressources/image/graphAdjace.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  99.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=862, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=864, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
@@ -1963,7 +1963,7 @@ ss on input line 4.
 [13
 
 ]) (./ChapitresPFE/CompressionDesGraphes/TypeDeCompression.tex
-<./ressources/image/SansPerte.png, id=904, 2441.12pt x 321.2pt>
+<./ressources/image/SansPerte.png, id=906, 2441.12pt x 321.2pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 8
@@ -1974,7 +1974,7 @@ Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 8
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14]
-<./ressources/image/AvecPerte.png, id=914, 2445.135pt x 325.215pt>
+<./ressources/image/AvecPerte.png, id=916, 2445.135pt x 325.215pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
@@ -2003,7 +2003,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<./ressources/image/xx.jpg, id=974, 677.53125pt x 380.92313pt>
+<./ressources/image/xx.jpg, id=976, 677.53125pt x 380.92313pt>
 File: ./ressources/image/xx.jpg Graphic file (type jpg)
 <use ./ressources/image/xx.jpg>
 Package pdftex.def Info: ./ressources/image/xx.jpg  used on input line 17.
@@ -2014,7 +2014,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--20
  []
 
 [17] [18 <./ressources/image/xx.jpg>]
-<./ressources/image/Classification.png, id=1001, 818.45775pt x 532.53957pt>
+<./ressources/image/Classification.png, id=1003, 818.45775pt x 532.53957pt>
 File: ./ressources/image/Classification.png Graphic file (type png)
 <use ./ressources/image/Classification.png>
 Package pdftex.def Info: ./ressources/image/Classification.png  used on input l
@@ -2044,7 +2044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
  []
 
 [20 <./ressources/image/Classification.png>]
-<./ressources/image/k2-trees.png, id=1033, 702.2235pt x 285.4665pt>
+<./ressources/image/k2-trees.png, id=1035, 702.2235pt x 285.4665pt>
 File: ./ressources/image/k2-trees.png Graphic file (type png)
 <use ./ressources/image/k2-trees.png>
 Package pdftex.def Info: ./ressources/image/k2-trees.png  used on input line 15
@@ -2076,14 +2076,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--43
  []
 
 [22]
-<./ressources/image/dk2-trees.jpg, id=1071, 461.3235pt x 399.29175pt>
+<./ressources/image/dk2-trees.jpg, id=1073, 461.3235pt x 399.29175pt>
 File: ./ressources/image/dk2-trees.jpg Graphic file (type jpg)
 <use ./ressources/image/dk2-trees.jpg>
 Package pdftex.def Info: ./ressources/image/dk2-trees.jpg  used on input line 5
 4.
 (pdftex.def)             Requested size: 322.92424pt x 279.50232pt.
  [23 <./ressources/image/dk2-trees.jpg>]
-<./ressources/image/kn-trees.png, id=1082, 443.256pt x 148.75575pt>
+<./ressources/image/kn-trees.png, id=1084, 443.256pt x 148.75575pt>
 File: ./ressources/image/kn-trees.png Graphic file (type png)
 <use ./ressources/image/kn-trees.png>
 Package pdftex.def Info: ./ressources/image/kn-trees.png  used on input line 67
@@ -2096,7 +2096,7 @@ m/it/12 k[]$\T1/txr/m/n/12 -tress1 avec les quatre en-co-dages ([]de Ber-nardo
 Roca[],
  []
 
-<./ressources/image/k2-trees1.png, id=1098, 874.467pt x 546.24075pt>
+<./ressources/image/k2-trees1.png, id=1100, 874.467pt x 546.24075pt>
 File: ./ressources/image/k2-trees1.png Graphic file (type png)
 <use ./ressources/image/k2-trees1.png>
 Package pdftex.def Info: ./ressources/image/k2-trees1.png  used on input line 9
@@ -2113,27 +2113,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--113
  []
 
 [25 <./ressources/image/k2-trees1.png>]
-<./ressources/image/k2-trees-delta.png, id=1113, 781.11826pt x 376.40625pt>
+<./ressources/image/k2-trees-delta.png, id=1115, 781.11826pt x 376.40625pt>
 File: ./ressources/image/k2-trees-delta.png Graphic file (type png)
 <use ./ressources/image/k2-trees-delta.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-delta.png  used on input l
 ine 123.
 (pdftex.def)             Requested size: 380.00995pt x 150.0027pt.
-<./ressources/image/k2-treaps.png, id=1125, 784.1295pt x 439.04025pt>
+<./ressources/image/k2-treaps.png, id=1127, 784.1295pt x 439.04025pt>
 File: ./ressources/image/k2-treaps.png Graphic file (type png)
 <use ./ressources/image/k2-treaps.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps.png  used on input line 1
 38.
 (pdftex.def)             Requested size: 379.99127pt x 199.9981pt.
  [26 <./ressources/image/k2-trees-delta.png>]
-<./ressources/image/k2-treaps-structure.png, id=1140, 943.1235pt x 415.5525pt>
+<./ressources/image/k2-treaps-structure.png, id=1142, 943.1235pt x 415.5525pt>
 File: ./ressources/image/k2-treaps-structure.png Graphic file (type png)
 <use ./ressources/image/k2-treaps-structure.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps-structure.png  used on in
 put line 156.
 (pdftex.def)             Requested size: 380.00577pt x 200.00189pt.
  [27 <./ressources/image/k2-treaps.png>]
-<./ressources/image/Ik2-trees.png, id=1152, 493.24275pt x 345.08925pt>
+<./ressources/image/Ik2-trees.png, id=1154, 493.24275pt x 345.08925pt>
 File: ./ressources/image/Ik2-trees.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees.png  used on input line 1
@@ -2141,13 +2141,13 @@ Package pdftex.def Info: ./ressources/image/Ik2-trees.png  used on input line 1
 (pdftex.def)             Requested size: 271.28435pt x 189.79967pt.
  [28 <./ressources/image/k2-treaps-structure.png> <./ressources/image/Ik2-trees
 .png>]
-<./ressources/image/Ik2-trees-diff.png, id=1166, 451.08525pt x 431.211pt>
+<./ressources/image/Ik2-trees-diff.png, id=1168, 451.08525pt x 431.211pt>
 File: ./ressources/image/Ik2-trees-diff.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees-diff.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees-diff.png  used on input l
 ine 180.
 (pdftex.def)             Requested size: 360.8687pt x 344.96927pt.
-<./ressources/image/k2-trees-att-graphe.png, id=1172, 490.2315pt x 413.1435pt>
+<./ressources/image/k2-trees-att-graphe.png, id=1174, 490.2315pt x 413.1435pt>
 File: ./ressources/image/k2-trees-att-graphe.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-graphe.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-att-graphe.png  used on in
@@ -2155,14 +2155,14 @@ put line 192.
 (pdftex.def)             Requested size: 280.00336pt x 199.9961pt.
  [29 <./ressources/image/Ik2-trees-diff.png>] [30 <./ressources/image/k2-trees-
 att-graphe.png>]
-<./ressources/image/k2-trees-att-schema.png, id=1189, 369.17924pt x 485.4135pt>
+<./ressources/image/k2-trees-att-schema.png, id=1191, 369.17924pt x 485.4135pt>
 
 File: ./ressources/image/k2-trees-att-schema.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-schema.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-att-schema.png  used on in
 put line 214.
 (pdftex.def)             Requested size: 258.4237pt x 339.78712pt.
-<./ressources/image/k2-trees-att-relation.png, id=1194, 555.2745pt x 334.24875p
+<./ressources/image/k2-trees-att-relation.png, id=1196, 555.2745pt x 334.24875p
 t>
 File: ./ressources/image/k2-trees-att-relation.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-relation.png>
@@ -2250,7 +2250,7 @@ Overfull \hbox (40.60617pt too wide) in paragraph at lines 1--247
  []
 
 [42] (./ChapitresPFE/ExtractionMotifs/intra_inter_mot_mat.tex
-<ressources/image/inter_intra.png, id=1365, 980.66376pt x 326.21875pt>
+<ressources/image/inter_intra.png, id=1367, 980.66376pt x 326.21875pt>
 File: ressources/image/inter_intra.png Graphic file (type png)
 <use ressources/image/inter_intra.png>
 Package pdftex.def Info: ressources/image/inter_intra.png  used on input line 7
@@ -2276,23 +2276,20 @@ Overfull \hbox (17.62482pt too wide) detected at line 13
 ) (./ChapitresPFE/ExtractionMotifs/appRepAmel.tex)
 (./ChapitresPFE/ExtractionMotifs/k2-partitionned.tex) [45]
 (./ChapitresPFE/ExtractionMotifs/gRepair.tex
-<./ressources/image/grepair.png, id=1421, 881.2925pt x 464.73625pt>
+<./ressources/image/grepair.png, id=1423, 881.2925pt x 464.73625pt>
 File: ./ressources/image/grepair.png Graphic file (type png)
 <use ./ressources/image/grepair.png>
 Package pdftex.def Info: ./ressources/image/grepair.png  used on input line 5.
 (pdftex.def)             Requested size: 440.64517pt x 232.36755pt.
 )
 (./ChapitresPFE/ExtractionMotifs/VNM.tex [46 <./ressources/image/grepair.png>]
-
-LaTeX Warning: Command \' invalid in math mode on input line 19.
-
-Missing character: There is no é in font txr!
 <./ressources/image/VNM_exemple.png, id=1438, 1300.86pt x 834.11626pt>
 File: ./ressources/image/VNM_exemple.png Graphic file (type png)
 <use ./ressources/image/VNM_exemple.png>
 Package pdftex.def Info: ./ressources/image/VNM_exemple.png  used on input line
- 40.
+ 35.
 (pdftex.def)             Requested size: 390.26102pt x 250.2368pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2301,7 +2298,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--8
 
  []
 
-<ressources/image/VNM2_exemple.png, id=1455, 2229.32875pt x 652.4375pt>
+<ressources/image/VNM2_exemple.png, id=1454, 2229.32875pt x 652.4375pt>
 File: ressources/image/VNM2_exemple.png Graphic file (type png)
 <use ressources/image/VNM2_exemple.png>
 Package pdftex.def Info: ressources/image/VNM2_exemple.png  used on input line 
@@ -2406,7 +2403,7 @@ ss on input line 337.
 [54
 
 ]
-<./ressources/image/ograce.jpg, id=1529, 963.6pt x 380.17032pt>
+<./ressources/image/ograce.jpg, id=1528, 963.6pt x 380.17032pt>
 File: ./ressources/image/ograce.jpg Graphic file (type jpg)
 <use ./ressources/image/ograce.jpg>
 Package pdftex.def Info: ./ressources/image/ograce.jpg  used on input line 350.
@@ -2418,13 +2415,13 @@ Overfull \hbox (7.27864pt too wide) in paragraph at lines 350--351
  []
 
 [55 <./ressources/image/ograce.jpg>] [56]
-<./ressources/image/k2_non.jpg, id=1552, 958.58125pt x 470.75874pt>
+<./ressources/image/k2_non.jpg, id=1551, 958.58125pt x 470.75874pt>
 File: ./ressources/image/k2_non.jpg Graphic file (type jpg)
 <use ./ressources/image/k2_non.jpg>
 Package pdftex.def Info: ./ressources/image/k2_non.jpg  used on input line 405.
 
 (pdftex.def)             Requested size: 383.4257pt x 188.30016pt.
-<./ressources/image/dynk2diff.png, id=1554, 874.26625pt x 376.40625pt>
+<./ressources/image/dynk2diff.png, id=1553, 874.26625pt x 376.40625pt>
 File: ./ressources/image/dynk2diff.png Graphic file (type png)
 <use ./ressources/image/dynk2diff.png>
 Package pdftex.def Info: ./ressources/image/dynk2diff.png  used on input line 4
@@ -2462,7 +2459,7 @@ Overfull \hbox (17.62482pt too wide) detected at line 541
  []
 
 [60]
-<./ressources/image/pgrace.jpg, id=1622, 963.6pt x 380.17032pt>
+<./ressources/image/pgrace.jpg, id=1621, 963.6pt x 380.17032pt>
 File: ./ressources/image/pgrace.jpg Graphic file (type jpg)
 <use ./ressources/image/pgrace.jpg>
 Package pdftex.def Info: ./ressources/image/pgrace.jpg  used on input line 573.
@@ -2494,7 +2491,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 662--665
  []
 
 [63]
-<ressources/image/slashburn.png, id=1666, 1228.59pt x 551.23589pt>
+<ressources/image/slashburn.png, id=1665, 1228.59pt x 551.23589pt>
 File: ressources/image/slashburn.png Graphic file (type png)
 <use ressources/image/slashburn.png>
 Package pdftex.def Info: ressources/image/slashburn.png  used on input line 671
@@ -2521,13 +2518,18 @@ LaTeX Warning: Command \` invalid in math mode on input line 739.
 
 Missing character: There is no è in font txr!
 [66]
-<./ressources/image/jacc.png, id=1698, 647.41875pt x 502.87875pt>
+<./ressources/image/jacc.png, id=1697, 647.41875pt x 502.87875pt>
 File: ./ressources/image/jacc.png Graphic file (type png)
 <use ./ressources/image/jacc.png>
 Package pdftex.def Info: ./ressources/image/jacc.png  used on input line 756.
 (pdftex.def)             Requested size: 310.75746pt x 241.37906pt.
  [67 <./ressources/image/jacc.png>]
-Overfull \hbox (17.15929pt too wide) in paragraph at lines 783--783
+
+LaTeX Warning: Command \' invalid in math mode on input line 792.
+
+Missing character: There is no é in font txr!
+
+Overfull \hbox (17.15929pt too wide) in paragraph at lines 808--808
 []\T1/txr/bx/n/17.28 Notre mé-thode : Dy-na-mic Dense Sub-graph Mi-ning (DDSM) 
 
  []
@@ -2538,18 +2540,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 la-population-mondiale-est-connectee-a-internet-
  []
 
-[68]
+[68] [69] [70]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `alg:labeltemp' on page 71 undefined on input line 63.
 
-[69]
-Overfull \hbox (17.62482pt too wide) detected at line 76
+
+
+Overfull \hbox (35.62482pt too wide) in paragraph at lines 74--75
+[]  
+ []
+
+
+Overfull \hbox (17.62482pt too wide) detected at line 95
 [][] 
  []
 
-[70]) (./ChapitresPFE/implementation.tex [71]
+<./ressources/image/DDSM_scheme.png, id=1761, 1229.59375pt x 744.7825pt>
+File: ./ressources/image/DDSM_scheme.png Graphic file (type png)
+<use ./ressources/image/DDSM_scheme.png>
+Package pdftex.def Info: ./ressources/image/DDSM_scheme.png  used on input line
+ 101.
+(pdftex.def)             Requested size: 491.8288pt x 297.90771pt.
+
+Overfull \hbox (36.58469pt too wide) in paragraph at lines 101--102
+[][] 
+ []
+
+[71]
+Overfull \hbox (17.62482pt too wide) detected at line 121
+[][] 
+ []
+
+) [72 <./ressources/image/DDSM_scheme.png>] (./ChapitresPFE/implementation.tex
+[73]
 Chapitre 4.
-<ressources/image/ArchGlob.jpg, id=1762, 1245.65375pt x 297.11pt>
+<ressources/image/ArchGlob.jpg, id=1799, 1245.65375pt x 297.11pt>
 File: ressources/image/ArchGlob.jpg Graphic file (type jpg)
 <use ressources/image/ArchGlob.jpg>
 Package pdftex.def Info: ressources/image/ArchGlob.jpg  used on input line 23.
@@ -2558,55 +2583,55 @@ Package pdftex.def Info: ressources/image/ArchGlob.jpg  used on input line 23.
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 29.
 
-[72
+[74
 
  <./ressources/image/ArchGlob.jpg>]
-<ressources/image/ArchGlob2.jpg, id=1771, 1245.65375pt x 297.11pt>
+<ressources/image/ArchGlob2.jpg, id=1809, 1245.65375pt x 297.11pt>
 File: ressources/image/ArchGlob2.jpg Graphic file (type jpg)
 <use ressources/image/ArchGlob2.jpg>
 Package pdftex.def Info: ressources/image/ArchGlob2.jpg  used on input line 33.
 
 (pdftex.def)             Requested size: 435.98535pt x 103.99005pt.
-<ressources/image/statiqugr.png, id=1772, 631.35875pt x 244.915pt>
+<ressources/image/statiqugr.png, id=1810, 631.35875pt x 244.915pt>
 File: ressources/image/statiqugr.png Graphic file (type png)
 <use ressources/image/statiqugr.png>
 Package pdftex.def Info: ressources/image/statiqugr.png  used on input line 48.
 
 (pdftex.def)             Requested size: 410.37833pt x 159.19284pt.
- [73 <./ressources/image/ArchGlob2.jpg> <./ressources/image/statiqugr.png>]
-<ressources/image/dynamiqgr.png, id=1778, 434.62375pt x 235.88126pt>
+ [75 <./ressources/image/ArchGlob2.jpg> <./ressources/image/statiqugr.png>]
+<ressources/image/dynamiqgr.png, id=1816, 434.62375pt x 235.88126pt>
 File: ressources/image/dynamiqgr.png Graphic file (type png)
 <use ressources/image/dynamiqgr.png>
 Package pdftex.def Info: ressources/image/dynamiqgr.png  used on input line 58.
 
 (pdftex.def)             Requested size: 304.23454pt x 165.11575pt.
-<ressources/image/etiquegr.png, id=1779, 290.08376pt x 260.975pt>
+<ressources/image/etiquegr.png, id=1817, 290.08376pt x 260.975pt>
 File: ressources/image/etiquegr.png Graphic file (type png)
 <use ressources/image/etiquegr.png>
 Package pdftex.def Info: ressources/image/etiquegr.png  used on input line 67.
 (pdftex.def)             Requested size: 174.05159pt x 156.5862pt.
- [74 <./ressources/image/dynamiqgr.png> <./ressources/image/etiquegr.png>]
+ [76 <./ressources/image/dynamiqgr.png> <./ressources/image/etiquegr.png>]
 
-Package natbib Warning: Citation `pieterse2010performance' on page 75 undefined
+Package natbib Warning: Citation `pieterse2010performance' on page 77 undefined
  on input line 91.
 
-[75]
-<ressources/image/funct.png, id=1801, 861.2175pt x 607.26875pt>
+[77]
+<ressources/image/funct.png, id=1837, 861.2175pt x 607.26875pt>
 File: ressources/image/funct.png Graphic file (type png)
 <use ressources/image/funct.png>
 Package pdftex.def Info: ressources/image/funct.png  used on input line 124.
 (pdftex.def)             Requested size: 430.6077pt x 303.63364pt.
- [76 <./ressources/image/funct.png>]
+ [78 <./ressources/image/funct.png>]
 Overfull \hbox (1.26567pt too wide) in paragraph at lines 153--154
 \T1/txr/m/n/12 pseudo-aléatoires, le mul-ti-threa-ding, les ex-pres-sions ré-gu
 -lières et les tests uni-taires. Elle contient
  []
 
 
-Package natbib Warning: Citation `pieterse2010performance' on page 77 undefined
+Package natbib Warning: Citation `pieterse2010performance' on page 79 undefined
  on input line 155.
 
-[77]) (./ChapitresPFE/tests.tex [78]
+[79]) (./ChapitresPFE/tests.tex [80]
 Chapitre 5.
 
 Overfull \vbox (11.66006pt too high) detected at line 24
@@ -2624,7 +2649,7 @@ Overfull \vbox (18.49205pt too high) detected at line 32
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 37.
 
-[79
+[81
 
 ]
 
@@ -2642,100 +2667,100 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 )
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 809.
+ss on input line 834.
 
-[80]
+[82]
 Annexe A.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 815.
+(hyperref)                removing `superscript' on input line 840.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 815.
+(hyperref)                removing `math shift' on input line 840.
 
 
-Overfull \hbox (35.62482pt too wide) in paragraph at lines 835--836
+Overfull \hbox (35.62482pt too wide) in paragraph at lines 860--861
 []  
  []
 
 
-Overfull \hbox (17.62482pt too wide) detected at line 854
+Overfull \hbox (17.62482pt too wide) detected at line 879
 [][] 
  []
 
 
-Overfull \hbox (35.62482pt too wide) in paragraph at lines 870--871
+Overfull \hbox (35.62482pt too wide) in paragraph at lines 895--896
 []  
  []
 
 
-Overfull \hbox (17.62482pt too wide) detected at line 889
+Overfull \hbox (17.62482pt too wide) detected at line 914
 [][] 
  []
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 893.
+ss on input line 918.
 
-[81
+[83
 
 ]
 Annexe B.
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 926.
+ss on input line 951.
 
-[82
+[84
 
 ]
 Annexe C.
 
-Overfull \hbox (35.62482pt too wide) in paragraph at lines 942--943
+Overfull \hbox (35.62482pt too wide) in paragraph at lines 967--968
 []  
  []
 
 
-Overfull \hbox (17.62482pt too wide) detected at line 961
+Overfull \hbox (17.62482pt too wide) detected at line 986
 [][] 
  []
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 963.
+ss on input line 988.
 
-[83
+[85
 
 ]
-Overfull \hbox (35.62482pt too wide) in paragraph at lines 977--978
+Overfull \hbox (35.62482pt too wide) in paragraph at lines 1002--1003
 []  
  []
 
 
-Overfull \hbox (17.62482pt too wide) detected at line 1018
+Overfull \hbox (17.62482pt too wide) detected at line 1043
 [][] 
  []
 
-[84]
-Overfull \hbox (35.62482pt too wide) in paragraph at lines 1033--1034
+[86]
+Overfull \hbox (35.62482pt too wide) in paragraph at lines 1058--1059
 []  
  []
 
 
-Overfull \hbox (17.62482pt too wide) detected at line 1054
+Overfull \hbox (17.62482pt too wide) detected at line 1079
 [][] 
  []
 
-(./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.bbl [85]
+(./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.bbl [87]
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 82.
 
-[86
+[88
 
 ]
 Underfull \hbox (badness 2922) in paragraph at lines 146--150
@@ -2743,31 +2768,34 @@ Underfull \hbox (badness 2922) in paragraph at lines 146--150
 tion.  \T1/txr/m/it/12 arXiv pre-print
  []
 
-[87] [88] [89])
+[89] [90] [91])
 
 Package natbib Warning: There were undefined citations.
 
-[90]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1061.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1061.
+[92]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1086.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1086.
  (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1061.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1061.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1086.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1086.
 
 Package rerunfilecheck Info: File `psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out'
  has not changed.
 (rerunfilecheck)             Checksum: E148A7858A51B64C5197019E4367E475;5903.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1061.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1086.
  ) 
 Here is how much of TeX's memory you used:
- 43503 strings out of 492649
- 846842 string characters out of 6129622
- 1002564 words of memory out of 5000000
- 45898 multiletter control sequences out of 15000+600000
+ 43537 strings out of 492649
+ 847348 string characters out of 6129622
+ 1002630 words of memory out of 5000000
+ 45905 multiletter control sequences out of 15000+600000
  647834 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,101p,10498b,1009s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2785,11 +2813,11 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2018/texmf-
 dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (101 pages, 34001
-75 bytes).
+Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (103 pages, 35818
+43 bytes).
 PDF statistics:
- 2111 PDF objects out of 2487 (max. 8388607)
- 1888 compressed objects within 19 object streams
- 563 named destinations out of 1000 (max. 500000)
- 997 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2155 PDF objects out of 2487 (max. 8388607)
+ 1927 compressed objects within 20 object streams
+ 589 named destinations out of 1000 (max. 500000)
+ 1002 words of extra memory for PDF output out of 10000 (max. 10000000)
 

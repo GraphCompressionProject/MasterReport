@@ -716,7 +716,7 @@ D : \[{d}_{i} := \sum_{(v_i,v_j) \in E_m} e(v_i,v_j)
 L'algorithme calcule ensuite le deuxième plus petit vecteur propre \textit{y} de la matrice Laplacienne Q = D - A. Ce vecteur propre (vecteur de Fiedler) contient une valeur pour chaque nœud du graphe, a partir de cette valeur le nœud est affecté a l'une des deux partition. soit r la médian pondérée des valeurs de \textit{y}. Chaque valeur $y_j$ du vecteur propre est comparée à r et le nœud est affecté à une partition selon le résultat de la comparaison.\\
 	
 
-\item \textbf{Fonctions de hachage :}
+\item \textbf{Le MinHash:}
 
 Dans cette alternative, nous allons partitionner le graphe en des motifs denses dont les nœuds sont fortement connectés. Nous utiliserons pour cela une approximation de \textit{la similarité de Jaccard} qui est une métrique permettant de mesurer la similarité entre deux ensembles $S_1$ et $S_2$ (voir formule \ref{eq:Jacc}). 
 
@@ -746,11 +746,8 @@ P(\pi_i(S_1) = \pi_j(S_2)) = \frac{|S_1 \cap S_2|}{|S_1 \cup S_2|} = SIM(S_1,S_2
 	\end{itemize}
 \end{enumerate}
 
-\item \textbf{Extraction de Motifs de la matrice d'adjacence:}
 
-La dernière méthode d'extraction de motifs offerte par le moteur P-GraCE se base sur les blocs les plus fréquents dans la matrice d'adjacence. 
 
-\end{enumerate}
 
 Une fois les signatures sont construites, les nœuds ayant les mêmes valeurs seront regroupés. Nous obtiendrons ainsi en sortie la liste des motifs contenant les nœuds ayant un voisinage similaire dans le graphe de données. Nous illustrons le principe de fonctionnement de cette stratégie sur un graphe G dans la figure \ref{jacc}. Le tableau gauche de la figure \ref{jacc} montre une matrice caractéristique des listes d'adjacence des différents nœuds du graphe G ainsi que deux permutations aléatoires $h_1$, $h_2$. Tant dis que le tableau à droite de la même figure montre les étapes de calcul des signatures en utilisant ces deux fonctions. La matrice finale des signatures montre bien que les nœuds 1 et 4 sont les plus similaires ce qui est justifié par leurs listes d'adjacence qui ne diffèrent que dans un seul élément.  
 
@@ -760,22 +757,47 @@ Une fois les signatures sont construites, les nœuds ayant les mêmes valeurs se
 	\caption[Exemple de calcul de la matrice des signatures.]{Exemple de calcul de la matrice des signatures.}
 	\label{jacc}
 \end{figure}
+
+\item \textbf{Extraction de Motifs de la matrice d'adjacence:}
+
+La dernière méthode d'extraction de motifs offerte par le moteur P-GraCE se base sur les blocs les plus fréquents dans la matrice d'adjacence. Cette méthode est destinée aux graphes ayant une matrice d'adjacence contenant de larges zones nulles. L'ensemble des motifs à découvrir est prédéfinies aux départ et consiste en trois types de motifs qui sont paramétrés par la taille du motifs :
+	\begin{enumerate}[label=(\alph*)]
+		\item \textbf{Type 01 :} Ce premier ensemble de motifs consiste en les vecteurs ayant uniquement deux '1' ,le premier dans le bit de poids fort et un autre dans l'une des position restante, et le vecteur nul. Pour une taille de motifs $2^n$ bits, nous obtenons un ensemble de taille $2^n$.
+		\item \textbf{Type 02 :} Le deuxième ensemble de motifs consiste en les vecteurs ayant uniquement un seul '1'. La taille de cet ensemble est de $2^n$ motifs pour des motifs de taille $2^n$ bits.
+		\item \textbf{Type 03 :}  Ce dernier ensemble de motifs consiste en l'union des deux ensembles précédents. Dans le cas de cet ensemble, nous obtenons une taille de $2^{n+1}$ motifs pour une taille de motifs de $2^n$.
+	\end{enumerate}	
+
+Chaque ligne de la matrice d'adjacence est donc divisé en plusieurs blocs ayant la même taille que les motifs. Ces blocs seront comparés avec les motifs selon le type choisies et dans le cas de correspondance ils seront remplacés par l'identifiant du motif (0...n-1) qui est de taille n pour des motifs de taille $2^n$.
+
+
 	
+\end{enumerate}
 		
 		\subsubsection{Évaluation des motifs :}
 		
 		 Dans cette deuxième phase, P-GraCE cherche à obtenir la meilleur compression en filtrant les sous-structures et ne gardant que celles qui offrent un bon \gls{mdl}. 
 		 
-Comme nous l'avons déjà préciser P-GraCE utilise le beam-search pour le cas des graphes  étiquetés. Il est fondamentalement guidé par le principe \gls{mdl}. L'évaluation heuristique effectuée suppose que la meilleure sous-structure est celle qui minimise le \gls{mdl} du graphe en entrée lorsqu'il est compressé par cette sous-structure. Notons la longueur de description de S par DL (S), la longueur de description du graphe d'entrée G  par DL (G) et la longueur de description du graphe après compression par DL (G | S). L'heuristique est alors rien d'autre que le taux de compression et peut être définie ainsi :
+		 \begin{enumerate}
+		 \item Comme nous l'avons déjà préciser P-GraCE utilise le beam-search pour le cas des graphes  étiquetés. Il est fondamentalement guidé par le principe \gls{mdl}. L'évaluation heuristique effectuée suppose que la meilleure sous-structure est celle qui minimise le \gls{mdl} du graphe en entrée lorsqu'il est compressé par cette sous-structure. Notons la longueur de description de S par DL (S), la longueur de description du graphe d'entrée G  par DL (G) et la longueur de description du graphe après compression par DL (G | S). L'heuristique est alors rien d'autre que le taux de compression et peut être définie ainsi :
 		 
 		\begin{center}
 		compression = $\frac{DL(S)+DL(G|S)} {DL(G)}$
 		\end{center}
+		
+		\item  Dans le cas de l'utilisation des méthodes de clustering, nous obtenons une liste des structures les plus fréquentes. Pour chaque structure identifiée nous cherchons le motif qui la décrit le mieux en se basant sur un ensemble prédéfini de motifs (étoile, clique, noyau bipartie, semi clique, semi noyau bipartie). Afin de trouver le motif approximatif de la structure, nous utiliserons les formules proposées dans \citep{koutra2015summarizing} (voir section \ref{vog_desc}).
+		
+		\item Dans le cas de l'utilisation des fonctions de hachage, nous utilisons le gain apporté par la compression des motifs comme métrique d'évaluation. Nous utilisons pour cela la même formule proposée dans \citep{buehrer2008scalable}. En effet, les qualité de compression d'un motif est calculé en fonction de sa fréquence dans la liste d'adjacence, et de sa taille qui est le nombre de liens qu'il contient (Formule \ref{eqcompperf}).
+				%%% Formule
+				\begin{equation}
+				Compression(P)=(P.fréquence-1)(P.taille-1)-1
+				\label{eqcompperf}
+				\end{equation}
+				
+		\item Dans le cas de l'extraction de motifs à partir de la matrice d'adjacence aucune évaluation n'est nécessaire car tout les motifs offrent le même gain d'espace mémoire.
 		 
-   
+		
+		 \end{enumerate}
 		 
-		  Dans le cas de l'utilisation des méthodes de clustering, nous obtenons une liste des structures les plus fréquentes. Pour chaque structure identifiée nous cherchons le motif qui la décrit le mieux en se basant sur un ensemble prédéfini de motifs (étoile, clique, noyau bipartie, semi clique, semi noyau bipartie). Afin de trouver le motif approximatif de la structure, nous utiliserons les formules proposées dans \citep{koutra2015summarizing} (voir section \ref{vog_desc}).
-		  
 		   
 		\subsubsection{Traitement des motifs :}
 		
