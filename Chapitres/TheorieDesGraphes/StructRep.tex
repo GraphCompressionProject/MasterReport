@@ -7,7 +7,7 @@ Soit un graphe G(V , E) d'ordre n et de taille m dont les sommets $\textit{v}_{1
 		
 			\subsection{Matrice d'adjacence}
 			
-				La matrice d’adjacence de G est une matrice booléenne 					carrée d’ordre n : ${({m}_{ij})}_{(i,j) \in {[0;n]}^{2}}$,  dont les 					lignes (i) et les colonnes (j)  représentent les sommets de G. Les entrées (ij) prennent une valeur de "1" s’il existe un 				arc (une arête dans le cas d'un graphe non orienté) allant du 			sommet i au sommet j et un "0" sinon, i.e, \citep{lehman2010mathematics} \citep{mathieu} \citep{IUTLyonInformatique} :
+				La matrice d’adjacence de G est une matrice booléenne 					carrée d’ordre n : ${({m}_{ij})}_{(i,j) \in {[0;n]}^{2}}$,  dont les 					lignes (i) et les colonnes (j)  représentent les identifiants des sommets de G. Les entrées (ij) prennent une valeur de "1" s’il existe un 				arc (une arête dans le cas d'un graphe non orienté) allant du 			sommet i au sommet j et un "0" sinon, i.e, \citep{lehman2010mathematics} \citep{mathieu} \citep{IUTLyonInformatique} :
 			\[{m}_{ij} :=
 			\left\{
 			\begin{array}{r c l}
@@ -44,7 +44,7 @@ Soit un graphe G(V , E) d'ordre n et de taille m dont les sommets $\textit{v}_{1
 
 \textbf{Place occupée en mémoire :} ${n}^{2}$ pour un graphe d'ordre $|n|$ \citep{lopez2003cours}.			
 			\subsection{Matrice d'incidence}
-			La matrice d'incidence d'un graphe orienté  G est une matrice de taille $n \times m$  dont les lignes représentent les sommets (i $\in$ V) et les colonnes représentent les arcs (j $\in$ E) et dont les coefficients (${m}_{ij}$) sont dans \{-1, 0, 1\}, tel que \citep{hennecart2012elements} \citep{mathieu} :
+			La matrice d'incidence d'un graphe orienté  G est une matrice de taille $n \times m$  dont les lignes représentent les identifiants des sommets (i $\in$ V) et les colonnes représentent les identifiants des arcs (j $\in$ E) et dont les coefficients (${m}_{ij}$) sont dans \{-1, 0, 1\}, tel que \citep{hennecart2012elements} \citep{mathieu} :
 			\[{m}_{ij} :=
 			\left\{
 			\begin{array}{r c l}

@@ -1,8 +1,50 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux
 The style file: apalike.bst
 Database file #1: Bibliographie.bib
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
 Warning--empty author and editor in IUTLyonInformatique
 Warning--empty institution in Pres
-
+You've used 70 entries,
+            1935 wiz_defined-function locations,
+            840 strings with 15787 characters,
+and the built_in function-call counts, 30401 in all, are:
+= -- 3094
+> -- 1163
+< -- 59
++ -- 410
+- -- 388
+* -- 2395
+:= -- 5047
+add.period$ -- 233
+call.type$ -- 70
+change.case$ -- 538
+chr.to.int$ -- 66
+cite$ -- 74
+duplicate$ -- 1286
+empty$ -- 2156
+format.name$ -- 491
+if$ -- 6203
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 61
+newline$ -- 349
+num.names$ -- 207
+pop$ -- 559
+preamble$ -- 1
+purify$ -- 544
+quote$ -- 0
+skip$ -- 980
+stack$ -- 0
+substring$ -- 2110
+swap$ -- 293
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 414
+warning$ -- 3
+while$ -- 259
+width$ -- 0
+write$ -- 915
 (There were 3 warnings)
