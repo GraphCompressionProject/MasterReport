@@ -1,5 +1,9 @@
 % makeindex style file created by the glossaries package
+<<<<<<< HEAD
 % for document 'psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ' on 2019-5-16
+=======
+% for document 'psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ' on 2019-5-20
+>>>>>>> b658180adc12066f95b314fcf99195b356c274dc
 actual '?'
 encap '|'
 level '!'
