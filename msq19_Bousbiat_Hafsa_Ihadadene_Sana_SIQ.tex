@@ -17,6 +17,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+
+
+
 %--------- pour le style de la page ----------
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 
@@ -82,7 +85,7 @@
  
 % Generate the glossary
 \makeglossaries
-
+\usepackage{pdfpages} 
 \begin{document}
 
 %Page de garde (page de titre)							Obligatoire
@@ -92,9 +95,11 @@
 %Remerciements											Obligatoire
 \input{./Remerciement.tex}
 
+
 %Résumé												Obligatoire
 \input{./abstract.tex}
 
+ \includepdf[page=-]{absract_ar}
 %Sommaire (Table des matières)							Obligatoire
 \pagestyle{plain}
 \tableofcontents

@@ -3,49 +3,54 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux
 The style file: apalike.bst
 Database file #1: Bibliographie.bib
-Warning--I didn't find a database entry for "pieterse2010performance"
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
+Warning--to sort, need author or key in subd
+Warning--to sort, need author or key in caida
+Warning--to sort, need author or key in br
+Warning--empty author in subd
 Warning--empty author and editor in IUTLyonInformatique
+Warning--empty author in br
+Warning--empty author in caida
 Warning--empty institution in Pres
-You've used 69 entries,
+You've used 76 entries,
             1935 wiz_defined-function locations,
-            834 strings with 15646 characters,
-and the built_in function-call counts, 29924 in all, are:
-= -- 3047
-> -- 1140
-< -- 59
-+ -- 400
-- -- 380
-* -- 2351
-:= -- 4965
-add.period$ -- 230
-call.type$ -- 69
-change.case$ -- 529
-chr.to.int$ -- 65
-cite$ -- 73
-duplicate$ -- 1272
-empty$ -- 2125
-format.name$ -- 482
-if$ -- 6113
-int.to.chr$ -- 5
+            858 strings with 16371 characters,
+and the built_in function-call counts, 32278 in all, are:
+= -- 3272
+> -- 1202
+< -- 63
++ -- 425
+- -- 400
+* -- 2527
+:= -- 5335
+add.period$ -- 252
+call.type$ -- 76
+change.case$ -- 574
+chr.to.int$ -- 71
+cite$ -- 89
+duplicate$ -- 1399
+empty$ -- 2336
+format.name$ -- 512
+if$ -- 6602
+int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 60
-newline$ -- 344
-num.names$ -- 204
-pop$ -- 552
+missing$ -- 66
+newline$ -- 379
+num.names$ -- 216
+pop$ -- 623
 preamble$ -- 1
-purify$ -- 535
+purify$ -- 580
 quote$ -- 0
-skip$ -- 970
+skip$ -- 1038
 stack$ -- 0
-substring$ -- 2065
-swap$ -- 292
-text.length$ -- 28
+substring$ -- 2188
+swap$ -- 307
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 408
-warning$ -- 3
-while$ -- 255
+type$ -- 450
+warning$ -- 9
+while$ -- 266
 width$ -- 0
-write$ -- 902
-(There were 4 warnings)
+write$ -- 985
+(There were 9 warnings)

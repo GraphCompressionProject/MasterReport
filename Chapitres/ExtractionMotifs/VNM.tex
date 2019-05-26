@@ -13,18 +13,18 @@
 				et elle est parcourue colonne par colonne en regroupant les lignes ayant la même valeur. Lorsque le nombre total de lignes chute au-dessous d'un seuil ou que le bord de la matrice de hachage est atteint, les identifiants des sommets associés aux lignes sont renvoyés au processus d'extraction (Phase 02). 
 					
 					\item \textbf{Phase d'Extraction de Motifs :}				Le but de cette étape est de localiser des sous-ensembles communs de liens sortants dans les sommets donnés. 
-				Ainsi les ensembles plus grands et fréquents présentent un intérêt, car ils peuvent représenter des motifs plus pertinents et une meilleure compression. En effet, les performances de compression d'un motif sont calculés en fonction de sa fréquence dans la liste d'adjacence, et de sa taille qui est le nombre de liens qu'il contient (Formule \ref{eqcompperf}).
+				Ainsi les ensembles plus grands et fréquents présentent un intérêt, car ils peuvent représenter des motifs plus pertinents et une meilleure compression. En effet, les performances de compression d'un motif sont calculés en fonction de sa fréquence dans la liste d'adjacence, et de sa taille qui est le nombre de liens qu'il contient (Formule \ref{eq:eqcompperf}).
 				%%% Formule
 				\begin{equation}
 				Compression(P)=(P.fréquence-1)(P.taille-1)-1
-				\label{eqcompperf}
+				\label{eq:eqcompperf}
 				\end{equation}
 				Afin d'extraire ces motifs, \gls{vnm}  utilise une heuristique gloutonne. Cette heuristique procède comme suit :
 				\begin{enumerate}
 				\item Extraire un histogramme des identifiants de liaison sortante à partir de la liste d'adjacence des sommets données.
 				\item Les listes sont réorganisées dans l'ordre décroissant des fréquences des liens sortants en éliminant ceux qui apparaissent une seul fois uniquement.
 				\item Chaque lien sortant est ajouté à un arbre de préfixes avec l'ensemble trié de ces extrémités initiales selon leurs identifiants. 
-				\item L'arbre est par la suite parcouru afin d'identifier les motifs qui maximisent la formule de performance de la compression (Formule \ref{eqcompperf}). Ces motifs sont ensuite convertis en nœuds virtuels et les identificateurs de sommets de leurs listes sont remplacés par les ids des nœuds virtuels dans la liste d'adjacence.
+				\item L'arbre est par la suite parcouru afin d'identifier les motifs qui maximisent la formule de performance de la compression (Formule \ref{eq:eqcompperf}). Ces motifs sont ensuite convertis en nœuds virtuels et les identificateurs de sommets de leurs listes sont remplacés par les ids des nœuds virtuels dans la liste d'adjacence.
 				\end{enumerate}
 				 
 				\end{enumerate}
@@ -38,6 +38,6 @@
 			\begin{figure}[!h]
 			\centering
 			\includegraphics[scale=0.4,center]{./ressources/image/VNM_exemple.png}
-			\caption[Exemple d'exécution de VNM .]{Exemple d'exécution de VNM.}
+			\caption[Exemple d'exécution de VNM .]{Exemple d'exécution de VNM \citep{buehrer2008scalable}.}
 			\label{VNM_exemple}
 	\end{figure}

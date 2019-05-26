@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  16 MAY 2019 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  26 MAY 2019 02:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -541,7 +541,7 @@ s
 )
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 35.
+less on input line 38.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -1431,87 +1431,118 @@ Package: glossary-tree 2018/04/07 v4.37 (NLCT)
 \openout7 = `msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.glo'.
 
 Package glossaries Info: Writing glossary file msq19_Bousbiat_Hafsa_Ihadadene_S
-ana_SIQ.glo on input line 84.
+ana_SIQ.glo on input line 87.
 \glo@acronym@file=\write8
 \openout8 = `msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.acn'.
 
 Package glossaries Info: Writing glossary file msq19_Bousbiat_Hafsa_Ihadadene_S
-ana_SIQ.acn on input line 84.
- (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux
+ana_SIQ.acn on input line 87.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count366
+\calc@Bcount=\count367
+\calc@Adimen=\dimen310
+\calc@Bdimen=\dimen311
+\calc@Askip=\skip98
+\calc@Bskip=\skip99
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count368
+\calc@Cskip=\skip100
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\AM@pagewidth=\dimen312
+\AM@pageheight=\dimen313
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box106
+\AM@global@opts=\toks63
+\AM@toc@title=\toks64
+\c@AM@survey=\count369
+\AM@templatesizebox=\box107
+)
+(./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux
 
 LaTeX Warning: Label `comgen' multiply defined.
 
 )
 \openout1 = `msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 86.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 89.
 
  (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 86.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 86.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 89.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 89.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 86.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 86.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 89.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 89.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 86.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 86.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 89.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 89.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 86.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 89.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
 )
-LaTeX Info: Redefining \degres on input line 86.
-LaTeX Info: Redefining \dots on input line 86.
+LaTeX Info: Redefining \degres on input line 89.
+LaTeX Info: Redefining \dots on input line 89.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 86.
+(french.ldf)                BEFORE babel/french; reported on input line 89.
 
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 86.
+(french.ldf)             reported on input line 89.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 86.
-LaTeX Info: Redefining \up on input line 86.
+(french.ldf)             reported on input line 89.
+LaTeX Info: Redefining \up on input line 89.
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count366
-\scratchdimen=\dimen310
-\scratchbox=\box106
-\nofMPsegments=\count367
-\nofMParguments=\count368
-\everyMPshowfont=\toks63
-\MPscratchCnt=\count369
-\MPscratchDim=\dimen311
-\MPnumerator=\count370
-\makeMPintoPDFobject=\count371
-\everyMPtoPDFconversion=\toks64
+\scratchcounter=\count370
+\scratchdimen=\dimen314
+\scratchbox=\box108
+\nofMPsegments=\count371
+\nofMParguments=\count372
+\everyMPshowfont=\toks65
+\MPscratchCnt=\count373
+\MPscratchDim=\dimen315
+\MPnumerator=\count374
+\makeMPintoPDFobject=\count375
+\everyMPtoPDFconversion=\toks66
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1547,19 +1578,19 @@ LaTeX Info: Redefining \up on input line 86.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box107
-Package hyperref Info: Link coloring OFF on input line 86.
+\AtBeginShipoutBox=\box109
+Package hyperref Info: Link coloring OFF on input line 89.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count372
+\c@section@level=\count376
 )
-LaTeX Info: Redefining \ref on input line 86.
-LaTeX Info: Redefining \pageref on input line 86.
-LaTeX Info: Redefining \nameref on input line 86.
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
 
 (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out)
 (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out)
@@ -1568,9 +1599,14 @@ LaTeX Info: Redefining \nameref on input line 86.
 
 
 ABD: EveryShipout initializing macros
-\c@lstlisting=\count373
+\c@lstlisting=\count377
 
-(./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.glsdefs) (./title.tex
+(./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.glsdefs)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(./title.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1705,32 +1741,68 @@ ss on input line 36.
 
 [3])
 
+Package pdfpages Warning: Option `page' is unknow to \includepdf.
+(pdfpages)                Did you mean `pages'? (Note the `s'!)
+(pdfpages)                OK, I'll proceed as if it were `pages'.
+
+<absract_ar.pdf, id=231, 597.50829pt x 845.0471pt>
+File: absract_ar.pdf Graphic file (type pdf)
+<use absract_ar.pdf>
+Package pdftex.def Info: absract_ar.pdf  used on input line 102.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: absract_ar.pdf Graphic file (type pdf)
+<use absract_ar.pdf>
+Package pdftex.def Info: absract_ar.pdf  used on input line 102.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<absract_ar.pdf, id=234, page=1, 597.50829pt x 845.0471pt>
+File: absract_ar.pdf Graphic file (type pdf)
+<use absract_ar.pdf, page 1>
+Package pdftex.def Info: absract_ar.pdf , page1 used on input line 102.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: absract_ar.pdf Graphic file (type pdf)
+<use absract_ar.pdf, page 1>
+Package pdftex.def Info: absract_ar.pdf , page1 used on input line 102.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: absract_ar.pdf Graphic file (type pdf)
+<use absract_ar.pdf, page 1>
+Package pdftex.def Info: absract_ar.pdf , page1 used on input line 102.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: absract_ar.pdf Graphic file (type pdf)
+<use absract_ar.pdf, page 1>
+Package pdftex.def Info: absract_ar.pdf , page1 used on input line 102.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: absract_ar.pdf Graphic file (type pdf)
+<use absract_ar.pdf, page 1>
+Package pdftex.def Info: absract_ar.pdf , page1 used on input line 102.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[4 <./absract_ar.pdf>]
+
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 99.
+ss on input line 104.
 
 (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.toc
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 30.
 
-[4
+[5
 
 ])
 \tf@toc=\write10
 \openout10 = `msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.toc'.
 
- [5] (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lof
-
-Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 35.
-
-[6
-
-])
+ [6] (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lof)
 \tf@lof=\write11
 \openout11 = `msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lof'.
 
- [7] (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lot)
+
+
+Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
+ss on input line 113.
+
+[7
+
+] [8] (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lot)
 \tf@lot=\write12
 \openout12 = `msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.lot'.
 
@@ -1741,40 +1813,40 @@ ss on input line 35.
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 1.
 
-[8
+[9
 
 
 ])
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 122.
+ss on input line 127.
 
-[9
+[10
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 130--134
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 156.
+ss on input line 161.
 
 [1
 
@@ -1792,7 +1864,7 @@ ss on input line 18.
 [2
 
 ]
-<./ressources/image/graphNonOriente.png, id=472, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=490, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -1811,43 +1883,70 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3 <./ressources/image/graphNonOriente.png>])
 (./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
-<./ressources/image/RepDiGraphe.png, id=510, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=527, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
  38.
 (pdftex.def)             Requested size: 180.6672pt x 119.69202pt.
- [4 <./ressources/image/RepDiGraphe.png>]) (./Chapitres/TheorieDesGraphes/Conne
-xite.tex)
-(./Chapitres/TheorieDesGraphes/GraphTypes.tex [5])
-(./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./ressources/image/RepDiGraphe.png>])
+(./Chapitres/TheorieDesGraphes/Connexite.tex)
+(./Chapitres/TheorieDesGraphes/GraphTypes.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]) (./Chapitres/TheorieDesGraphes/PartialAndSubGraph.tex
 Overfull \hbox (1.6666pt too wide) in paragraph at lines 28--30
 \T1/txr/m/n/12 som-met cen-tral (dit \T1/txr/m/it/12 hub\T1/txr/m/n/12 ) uni-qu
 e-ment et $\OML/txmi/m/it/12 V[]$ \T1/txr/m/n/12 contient le reste des n÷uds (d
 its \T1/txr/m/it/12 spokes\T1/txr/m/n/12 )([]Koutra
  []
 
-) (./Chapitres/TheorieDesGraphes/structRep.tex [6]
-<./ressources/image/graphAdjace.png, id=577, 361.35pt x 306.0847pt>
+) (./Chapitres/TheorieDesGraphes/structRep.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+<./ressources/image/graphAdjace.png, id=594, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  31.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=578, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=595, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
 e 38.
 (pdftex.def)             Requested size: 140.00632pt x 110.0064pt.
- [7 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>]
-<./ressources/image/graphIncid.png, id=596, 410.94705pt x 365.60118pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>]
+<./ressources/image/graphIncid.png, id=614, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 74.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=597, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=615, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
@@ -1858,16 +1957,35 @@ File: ./ressources/image/graphAdjace.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  99.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=604, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=622, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
  106.
 (pdftex.def)             Requested size: 139.9951pt x 109.9996pt.
- [8 <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>])
 
-(./Chapitres/TheorieDesGraphes/ApplicationDomain.tex) [9 <./ressources/image/li
-steAdjace.png>]) [10]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./ressources/image/graphIncid.png> <./ressources/image/matriceIncid.png>])
+(./Chapitres/TheorieDesGraphes/ApplicationDomain.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9 <./ressources/image/listeAdjace.png>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
 Chapitre 2.
 (./Chapitres/CompressionDesGraphes/datacompression.tex)
 (./Chapitres/CompressionDesGraphes/CompressionAppliquee.tex
@@ -1878,7 +1996,7 @@ ss on input line 4.
 [11
 
 ]) (./Chapitres/CompressionDesGraphes/TypeDeCompression.tex
-<./ressources/image/SansPerte.png, id=647, 793.96625pt x 118.4425pt>
+<./ressources/image/SansPerte.png, id=664, 793.96625pt x 118.4425pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 8
@@ -1888,15 +2006,27 @@ Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 8
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [12]
-<./ressources/image/AvecPerte.png, id=656, 768.8725pt x 118.4425pt>
+<./ressources/image/AvecPerte.png, id=673, 768.8725pt x 118.4425pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
 8.
 (pdftex.def)             Requested size: 422.88118pt x 65.14357pt.
-) (./Chapitres/CompressionDesGraphes/MOE.tex [13 <./ressources/image/SansPerte.
-png> <./ressources/image/AvecPerte.png>])
+) (./Chapitres/CompressionDesGraphes/MOE.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./ressources/image/SansPerte.png> <./ressources/image/AvecPerte.png>])
 (./Chapitres/CompressionDesGraphes/classification.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
@@ -1916,12 +2046,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [14]
 Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<./ressources/image/xx.jpg, id=718, 677.53125pt x 380.92313pt>
+<./ressources/image/xx.jpg, id=736, 677.53125pt x 380.92313pt>
 File: ./ressources/image/xx.jpg Graphic file (type jpg)
 <use ./ressources/image/xx.jpg>
 Package pdftex.def Info: ./ressources/image/xx.jpg  used on input line 17.
@@ -1931,8 +2067,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--20
 
  []
 
-[15] [16] [17 <./ressources/image/xx.jpg>]
-<./ressources/image/Classification.png, id=753, 818.45775pt x 532.53957pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17 <./ressources/image/xx.jpg>]
+<./ressources/image/Classification.png, id=770, 818.45775pt x 532.53957pt>
 File: ./ressources/image/Classification.png Graphic file (type png)
 <use ./ressources/image/Classification.png>
 Package pdftex.def Info: ./ressources/image/Classification.png  used on input l
@@ -1946,32 +2102,44 @@ Overfull \hbox (35.83432pt too wide) in paragraph at lines 44--45
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `math shift' on input line 194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 189.
+(hyperref)                removing `superscript' on input line 194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 189.
+(hyperref)                removing `math shift' on input line 194.
 
 (./Chapitres/k2_trees/K2-trees.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [18 <./ressources/image/Classification.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-<./ressources/image/k2-trees.png, id=772, 702.2235pt x 285.4665pt>
+<./ressources/image/k2-trees.png, id=789, 702.2235pt x 285.4665pt>
 File: ./ressources/image/k2-trees.png Graphic file (type png)
 <use ./ressources/image/k2-trees.png>
 Package pdftex.def Info: ./ressources/image/k2-trees.png  used on input line 15
 .
 (pdftex.def)             Requested size: 450.00012pt x 200.00812pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [19]
 Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
@@ -1992,37 +2160,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [20 <./ressources/image/k2-trees.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--43
 
  []
 
-<./ressources/image/dk2-trees.jpg, id=808, 461.3235pt x 399.29175pt>
+<./ressources/image/dk2-trees.jpg, id=826, 461.3235pt x 399.29175pt>
 File: ./ressources/image/dk2-trees.jpg Graphic file (type jpg)
 <use ./ressources/image/dk2-trees.jpg>
 Package pdftex.def Info: ./ressources/image/dk2-trees.jpg  used on input line 5
 4.
 (pdftex.def)             Requested size: 322.92424pt x 279.50232pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [21]
-<./ressources/image/kn-trees.png, id=826, 443.256pt x 148.75575pt>
+<./ressources/image/kn-trees.png, id=843, 443.256pt x 148.75575pt>
 File: ./ressources/image/kn-trees.png Graphic file (type png)
 <use ./ressources/image/kn-trees.png>
 Package pdftex.def Info: ./ressources/image/kn-trees.png  used on input line 67
 .
 (pdftex.def)             Requested size: 380.00235pt x 100.00175pt.
- [22 <./ressources/image/dk2-trees.jpg>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./ressources/image/dk2-trees.jpg>]
 Overfull \hbox (10.84474pt too wide) in paragraph at lines 89--90
 []\T1/txr/m/n/12 La fi-gure []2.8[] illustre une re-pré-sen-ta-tion $\OML/txmi/
 m/it/12 k[]$\T1/txr/m/n/12 -tress1 avec les quatre en-co-dages ([]de Ber-nardo 
 Roca[],
  []
 
-<./ressources/image/k2-trees1.png, id=839, 874.467pt x 546.24075pt>
+<./ressources/image/k2-trees1.png, id=856, 874.467pt x 546.24075pt>
 File: ./ressources/image/k2-trees1.png Graphic file (type png)
 <use ./ressources/image/k2-trees1.png>
 Package pdftex.def Info: ./ressources/image/k2-trees1.png  used on input line 9
 4.
 (pdftex.def)             Requested size: 450.00194pt x 300.00826pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [23 <./ressources/image/kn-trees.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
@@ -2033,76 +2226,129 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--113
 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [24 <./ressources/image/k2-trees1.png>]
-<./ressources/image/k2-trees-delta.png, id=861, 781.11826pt x 376.40625pt>
+<./ressources/image/k2-trees-delta.png, id=878, 781.11826pt x 376.40625pt>
 File: ./ressources/image/k2-trees-delta.png Graphic file (type png)
 <use ./ressources/image/k2-trees-delta.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-delta.png  used on input l
 ine 123.
 (pdftex.def)             Requested size: 380.00995pt x 150.0027pt.
-<./ressources/image/k2-treaps.png, id=873, 784.1295pt x 439.04025pt>
+<./ressources/image/k2-treaps.png, id=890, 784.1295pt x 439.04025pt>
 File: ./ressources/image/k2-treaps.png Graphic file (type png)
 <use ./ressources/image/k2-treaps.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps.png  used on input line 1
 38.
 (pdftex.def)             Requested size: 379.99127pt x 199.9981pt.
- [25 <./ressources/image/k2-trees-delta.png>]
-<./ressources/image/k2-treaps-structure.png, id=888, 943.1235pt x 415.5525pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./ressources/image/k2-trees-delta.png>]
+<./ressources/image/k2-treaps-structure.png, id=905, 943.1235pt x 415.5525pt>
 File: ./ressources/image/k2-treaps-structure.png Graphic file (type png)
 <use ./ressources/image/k2-treaps-structure.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps-structure.png  used on in
 put line 156.
 (pdftex.def)             Requested size: 380.00577pt x 200.00189pt.
- [26 <./ressources/image/k2-treaps.png>]
-<./ressources/image/Ik2-trees.png, id=899, 493.24275pt x 345.08925pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./ressources/image/k2-treaps.png>]
+<./ressources/image/Ik2-trees.png, id=917, 493.24275pt x 345.08925pt>
 File: ./ressources/image/Ik2-trees.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees.png  used on input line 1
 68.
 (pdftex.def)             Requested size: 271.28435pt x 189.79967pt.
- [27 <./ressources/image/k2-treaps-structure.png> <./ressources/image/Ik2-trees
-.png>]
-<./ressources/image/Ik2-trees-diff.png, id=914, 451.08525pt x 431.211pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27 <./ressources/image/k2-treaps-structure.png> <./ressources/image/Ik2-trees.
+png>]
+<./ressources/image/Ik2-trees-diff.png, id=931, 451.08525pt x 431.211pt>
 File: ./ressources/image/Ik2-trees-diff.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees-diff.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees-diff.png  used on input l
 ine 180.
 (pdftex.def)             Requested size: 360.8687pt x 344.96927pt.
-<./ressources/image/k2-trees-att-graphe.png, id=920, 490.2315pt x 413.1435pt>
+<./ressources/image/k2-trees-att-graphe.png, id=937, 490.2315pt x 413.1435pt>
 File: ./ressources/image/k2-trees-att-graphe.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-graphe.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-att-graphe.png  used on in
 put line 192.
 (pdftex.def)             Requested size: 280.00336pt x 199.9961pt.
- [28 <./ressources/image/Ik2-trees-diff.png>] [29 <./ressources/image/k2-trees-
-att-graphe.png>]
-<./ressources/image/k2-trees-att-schema.png, id=937, 369.17924pt x 485.4135pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./ressources/image/Ik2-trees-diff.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29 <./ressources/image/k2-trees-att-graphe.png>]
+<./ressources/image/k2-trees-att-schema.png, id=954, 369.17924pt x 485.4135pt>
 File: ./ressources/image/k2-trees-att-schema.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-schema.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-att-schema.png  used on in
 put line 214.
 (pdftex.def)             Requested size: 258.4237pt x 339.78712pt.
-<./ressources/image/k2-trees-att-relation.png, id=942, 555.2745pt x 334.24875pt
+<./ressources/image/k2-trees-att-relation.png, id=959, 555.2745pt x 334.24875pt
 >
 File: ./ressources/image/k2-trees-att-relation.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-relation.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-att-relation.png  used on 
 input line 230.
 (pdftex.def)             Requested size: 280.00894pt x 200.00507pt.
- [30 <./ressources/image/k2-trees-att-schema.png>]) (./Chapitres/k2_trees/SynK2
-.tex
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30 <./ressources/image/k2-trees-att-schema.png>])
+(./Chapitres/k2_trees/SynK2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [31 <./ressources/image/k2-trees-att-relation.png>]
-<./ressources/image/eu2005-k2.png, id=968, 445.06274pt x 390.86024pt>
+<./ressources/image/eu2005-k2.png, id=985, 445.06274pt x 390.86024pt>
 File: ./ressources/image/eu2005-k2.png Graphic file (type png)
 <use ./ressources/image/eu2005-k2.png>
 Package pdftex.def Info: ./ressources/image/eu2005-k2.png  used on input line 1
 2.
 (pdftex.def)             Requested size: 455.26866pt x 298.76257pt.
-<./ressources/image/k2-taux.png, id=970, 749.80125pt x 269.20575pt>
+<./ressources/image/k2-taux.png, id=987, 749.80125pt x 269.20575pt>
 File: ./ressources/image/k2-taux.png Graphic file (type png)
 <use ./ressources/image/k2-taux.png>
 Package pdftex.def Info: ./ressources/image/k2-taux.png  used on input line 19.
@@ -2113,13 +2359,32 @@ Overfull \hbox (56.93652pt too wide) in paragraph at lines 19--20
 [][] 
  []
 
-[32 <./ressources/image/eu2005-k2.png>] [33 <./ressources/image/k2-taux.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32 <./ressources/image/eu2005-k2.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./ressources/image/k2-taux.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
 LaTeX Warning: Float too large for page by 4.09364pt on input line 111.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [34]
 Overfull \hbox (4.47682pt too wide) in paragraph at lines 164--165
@@ -2144,7 +2409,20 @@ Overfull \hbox (4.28482pt too wide) in paragraph at lines 211--212
 
 LaTeX Warning: Float too large for page by 18.44156pt on input line 223.
 
-[35]) (./Chapitres/ExtractionMotifs/EM.tex [36
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]) (./Chapitres/ExtractionMotifs/EM.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36
 
 
 
@@ -2173,25 +2451,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--34
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [37]) (./Chapitres/ExtractionMotifs/VOG.tex
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 32.
 
-[38] [39]) (./Chapitres/ExtractionMotifs/VOG_Overlapp.tex [40])
-(./Chapitres/ExtractionMotifs/TimeCrunch.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]) (./Chapitres/ExtractionMotifs/VOG_Overlapp.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]) (./Chapitres/ExtractionMotifs/TimeCrunch.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 28.
- [41])
-(./Chapitres/ExtractionMotifs/CanDense.tex)
-Overfull \hbox (40.60617pt too wide) in paragraph at lines 1--215
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]) (./Chapitres/ExtractionMotifs/CanDense.tex)
+Overfull \hbox (40.60617pt too wide) in paragraph at lines 1--220
 []\T1/txr/m/n/12 Une der-nière va-riante,  s'in-ti-tu-lant [][]CONdi-tio-nal Di
 -ver-si-fied Net-work Sum-ma-ri-za-tion (CONDENSE)[],
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [42] (./Chapitres/ExtractionMotifs/intra_inter_mot_mat.tex
-<ressources/image/inter_intra.png, id=1125, 980.66376pt x 326.21875pt>
+<ressources/image/inter_intra.png, id=1142, 980.66376pt x 326.21875pt>
 File: ressources/image/inter_intra.png Graphic file (type png)
 <use ressources/image/inter_intra.png>
 Package pdftex.def Info: ressources/image/inter_intra.png  used on input line 7
@@ -2202,29 +2517,56 @@ Overfull \hbox (35.08656pt too wide) in paragraph at lines 7--8
 [][] 
  []
 
-) (./Chapitres/ExtractionMotifs/mot_mat.tex) [43 <./ressources/image/inter_intr
-a.png>] (./Chapitres/ExtractionMotifs/SubDue.tex)
+) (./Chapitres/ExtractionMotifs/mot_mat.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./ressources/image/inter_intra.png>]
+(./Chapitres/ExtractionMotifs/SubDue.tex)
 (./Chapitres/ExtractionMotifs/GraphZip.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
 
-) [44] (./Chapitres/ExtractionMotifs/appRep.tex)
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44] (./Chapitres/ExtractionMotifs/appRep.tex)
 (./Chapitres/ExtractionMotifs/appRepAmel.tex)
-(./Chapitres/ExtractionMotifs/k2-partitionned.tex) [45]
-(./Chapitres/ExtractionMotifs/gRepair.tex
-<./ressources/image/grepair.png, id=1179, 639.38875pt x 664.4825pt>
+(./Chapitres/ExtractionMotifs/k2-partitionned.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45] (./Chapitres/ExtractionMotifs/gRepair.tex
+<./ressources/image/grepair.png, id=1197, 639.38875pt x 664.4825pt>
 File: ./ressources/image/grepair.png Graphic file (type png)
 <use ./ressources/image/grepair.png>
 Package pdftex.def Info: ./ressources/image/grepair.png  used on input line 5.
 (pdftex.def)             Requested size: 319.69359pt x 332.24043pt.
 )
-(./Chapitres/ExtractionMotifs/VNM.tex [46 <./ressources/image/grepair.png>]
+(./Chapitres/ExtractionMotifs/VNM.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./ressources/image/grepair.png>]
 
 LaTeX Warning: Command \' invalid in math mode on input line 19.
 
 Missing character: There is no é in font txr!
-<./ressources/image/VNM_exemple.png, id=1196, 1300.86pt x 977.6525pt>
+<./ressources/image/VNM_exemple.png, id=1215, 1300.86pt x 977.6525pt>
 File: ./ressources/image/VNM_exemple.png Graphic file (type png)
 <use ./ressources/image/VNM_exemple.png>
 Package pdftex.def Info: ./ressources/image/VNM_exemple.png  used on input line
@@ -2233,12 +2575,19 @@ Package pdftex.def Info: ./ressources/image/VNM_exemple.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./Chapitres/ExtractionMotifs/DSM.tex [47]
+) (./Chapitres/ExtractionMotifs/DSM.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 2--8
 
  []
 
-<ressources/image/VNM2_exemple.png, id=1213, 2229.32875pt x 652.4375pt>
+<ressources/image/VNM2_exemple.png, id=1234, 2229.32875pt x 652.4375pt>
 File: ressources/image/VNM2_exemple.png Graphic file (type png)
 <use ressources/image/VNM2_exemple.png>
 Package pdftex.def Info: ressources/image/VNM2_exemple.png  used on input line 
@@ -2252,33 +2601,39 @@ Overfull \hbox (57.49072pt too wide) in paragraph at lines 12--13
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./Chapitres/ExtractionMotifs/SynGen.tex [48 <./ressources/image/VNM_exemple.
-png>]
-<ressources/image/edge.png, id=1225, 772.8875pt x 544.0325pt>
-File: ressources/image/edge.png Graphic file (type png)
-<use ressources/image/edge.png>
-Package pdftex.def Info: ressources/image/edge.png  used on input line 10.
-(pdftex.def)             Requested size: 386.4428pt x 272.01558pt.
- [49 <./ressources/image/VNM2_exemple.png>]
-<ressources/image/vocabulary.png, id=1232, 1155.31625pt x 574.145pt>
-File: ressources/image/vocabulary.png Graphic file (type png)
-<use ressources/image/vocabulary.png>
-Package pdftex.def Info: ressources/image/vocabulary.png  used on input line 20
-.
-(pdftex.def)             Requested size: 450.57153pt x 223.91565pt.
- [50 <./ressources/image/edge.png> <./ressources/image/vocabulary.png>]
-Overfull \vbox (8.75002pt too high) detected at line 50
+) (./Chapitres/ExtractionMotifs/SynGen.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./ressources/image/VNM_exemple.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <./ressources/image/VNM2_exemple.png>]
+Overfull \vbox (8.75002pt too high) detected at line 32
  []
 
 
-Overfull \vbox (14.50003pt too high) detected at line 69
+Overfull \vbox (14.50003pt too high) detected at line 51
  []
 
 
-Overfull \vbox (12.43002pt too high) detected at line 79
+Overfull \vbox (12.43002pt too high) detected at line 61
  []
 
-[51]) (./Chapitres/CompressionDesGraphes/BillanGen.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]) (./Chapitres/CompressionDesGraphes/BillanGen.tex
 Underfull \hbox (badness 7704) in paragraph at lines 29--30
 []|\T1/txr/m/n/12 exploitation des mo-
  []
@@ -2328,54 +2683,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-[52
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51
 
 
-] [53]
-<ressources/image/globale.png, id=1305, 1308.89pt x 430.60875pt>
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
+<ressources/image/globale.png, id=1330, 1308.89pt x 430.60875pt>
 File: ressources/image/globale.png Graphic file (type png)
 <use ressources/image/globale.png>
-Package pdftex.def Info: ressources/image/globale.png  used on input line 73.
-(pdftex.def)             Requested size: 497.38338pt x 163.63301pt.
+Package pdftex.def Info: ressources/image/globale.png  used on input line 93.
+(pdftex.def)             Requested size: 719.89174pt x 236.83553pt.
 
-Overfull \hbox (42.13927pt too wide) in paragraph at lines 73--75
+Overfull \hbox (17.10866pt too wide) in paragraph at lines 93--95
  [][] 
  []
 
-[54 <./ressources/image/globale.png>]) [55]
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54
+
+ <./ressources/image/globale.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
 
  []
 
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
-ss on input line 305.
+ss on input line 310.
 
-[56]
+[55
+
+]
 Annexe A.
 (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.bbl
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 1.
 
-[57
+[56
 
 ]
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 82.
 
-[58
+[57
 
 ]
 Underfull \hbox (badness 2922) in paragraph at lines 146--150
@@ -2383,46 +2768,48 @@ Underfull \hbox (badness 2922) in paragraph at lines 146--150
 tion.  \T1/txr/m/it/12 arXiv pre-print
  []
 
-[59] [60] [61]) [62]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
+[58] [59] [60]) [61]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
  (./msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
 Package rerunfilecheck Info: File `msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out'
  has not changed.
-(rerunfilecheck)             Checksum: A2D63218AA53BC6B5ABC64672A7711BA;3191.
+(rerunfilecheck)             Checksum: 8C28CFF9F0EA72624AEC533DF29818AD;3191.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 346.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
  ) 
 Here is how much of TeX's memory you used:
- 41749 strings out of 492649
- 818887 string characters out of 6129622
- 963528 words of memory out of 5000000
- 44439 multiletter control sequences out of 15000+600000
+ 42406 strings out of 492649
+ 829489 string characters out of 6129622
+ 976323 words of memory out of 5000000
+ 45082 multiletter control sequences out of 15000+600000
  627837 words of font info for 169 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,14n,101p,10498b,976s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,18n,101p,10498b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/txfonts/txex.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/txfonts/txsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfo
-nts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (72 pages, 296560
-7 bytes).
+exlive/2018/texmf-dist/fonts/type1/arabi/arabeyes/ae_almateen.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/arabi/arabeyes/ae_almohanad_bold.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/txfonts/txsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/txfonts/txsya.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/txfonts/txsyb.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/u
+tmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on msq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (72 pages, 287079
+8 bytes).
 PDF statistics:
- 1463 PDF objects out of 1728 (max. 8388607)
- 1283 compressed objects within 13 object streams
- 306 named destinations out of 1000 (max. 500000)
- 658 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1477 PDF objects out of 1728 (max. 8388607)
+ 1295 compressed objects within 13 object streams
+ 304 named destinations out of 1000 (max. 500000)
+ 668 words of extra memory for PDF output out of 10000 (max. 10000000)
 

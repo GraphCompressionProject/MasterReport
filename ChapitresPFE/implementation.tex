@@ -19,19 +19,20 @@
 	
 \begin{figure}[H]
 	\centering
-	\label{Img:archglob}
+	
 	\includegraphics[scale=0.35]{ressources/image/ArchGlob.jpg}
 	\caption{Architecture du backend}
-
+	\label{Img:archglob}
  \end{figure}
 	
 	Dans le but de faciliter l'exploitation et l'utilisation de notre solution, nous proposons une application web qui permettra  d'accéder aux différentes fonctionnalités offertes. Cette proposition se base sur le fait que les performances des machines ordinaires s'avèrent limiter pour l'exécution des algorithmes de compression dans le cas des grands graphes. L'utilisation d'un serveur web performant nous semble la solution la plus adéquate. La figure \ref{Img:archglob2} montre l'architecture globale de la solution.   	
 	
 \begin{figure}[H]
 	\centering
-	\label{Img:archglob2}
+	
 	\includegraphics[scale=0.35]{ressources/image/ArchGlob2.jpg}
 	\caption{Architecture globale de la solution web}
+	\label{Img:archglob2}
  \end{figure}
  
  Dans ce qui suit, nous détaillerons uniquement les couches de l'architecture du backend ainsi que les bibliothèques qui les constituent. Les détails des autres couches de l'architecture globale ne seront pas présenter car elles n'influence en aucun cas sur les résultats de compression. Elle permettent uniquement d'offrir une interface ergonomique et une exécution distante tirant profit de la force de calcul du serveur utilisé.
@@ -44,9 +45,10 @@
 	
 	\begin{figure}[H]
 	\centering
-	\label{Img:statiqugr}
+	
 	\includegraphics[scale=0.65]{ressources/image/statiqugr.png}
 	\caption{Structure d'un fichier de graphe statique}
+	\label{Img:statiqugr}
  \end{figure}
 	
 	Le fichier représentant un graphe statique est composé de plusieurs lignes chacune faisant référence à un des liens du graphe de données. Elles incluent l'identifiant de la source suivi de  l'identifiant de la destination. Les lignes dont le premier caractère est un "\#" sont ignorées.
@@ -54,18 +56,20 @@
 	
 	\begin{figure}[H]
 	
-	\label{Img:dynamiqgr}
+	
 	\includegraphics[scale=0.7]{ressources/image/dynamiqgr.png}
 	\caption{Structure d'un fichier de graphe dynamique}
+	\label{Img:dynamiqgr}
  \end{figure}
 Les liens dans un graphe dynamique sont représentés par trois composantes (u,v,t)	signifiant qu'un lien entre les nœuds u et v est apparu à l'instant t. Chaque lien représente une ligne dans le fichier de données.
 	
 	\item \textbf{Graphe étiqueté:} 
 	\begin{figure}[H]
 	
-	\label{Img:etiqGr}
+	
 	\includegraphics[scale=0.6]{ressources/image/etiquegr.png}
 	\caption{Structure d'un fichier de graphe étiqueté}
+	\label{Img:etiqGr}
  \end{figure}
 
 Le fichier de données d'un graphe étiqueté est composé de deux types de lignes: les lignes commençant avec un "$v$" représentent les identifiants des sommets suivis de leurs étiquettes et les lignes commençant avec un "$e$" représentent les sommets source et destination des liens suivis de leurs étiquettes.
@@ -120,10 +124,11 @@ La dernière structure sont les graphes dynamiques orientés qui sont représent
 	
 	\begin{figure}[H]
 	
-	\label{Img:functMethod}
+	
 	\includegraphics[scale=0.5]{ressources/image/funct.png}
 	\centering
 	\caption{Schéma globale du fonctionnement des deux moteurs}
+	\label{Img:functMethod}
  \end{figure}
 	
 	

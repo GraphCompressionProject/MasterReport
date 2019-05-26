@@ -1,0 +1,9 @@
+\babel@toc {arabic}{}
+\select@language {arabic}
+\select@language {arabic}
+\contentsline {chapter}{\numberline {1}\@arabic@R {\IeC {\ayn }\IeC {\lam }\IeC {\waw }\IeC {\meem } \IeC {\alef }\IeC {\lam }\IeC {\Haa }\IeC {\alef }\IeC {\seen }\IeC {\waw }\IeC {\baa }}}{\if@rlmain \I {2}\else \textLR {2}\fi }
+\select@language {arabic}
+\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }\@arabic@R {\IeC {\taa }\IeC {\alef }\IeC {\ra }\IeC {\ya }\IeC {\kha }}}{\if@rlmain \I {2}\else \textLR {2}\fi }
+\babel@toc {arabic}{}
+\babel@toc {arabic}{}
+\select@language {arabic}

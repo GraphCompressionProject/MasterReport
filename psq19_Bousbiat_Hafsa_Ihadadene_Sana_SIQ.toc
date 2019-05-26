@@ -1,8 +1,8 @@
 \babel@toc {french}{}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Remerciement}{I}{figure.caption.1}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }R\IeC {\'e}sum\IeC {\'e}}{II}{figure.caption.1}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des figures}{VIII}{chapter*.3}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des tableaux}{IX}{chapter*.4}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des figures}{IX}{chapter*.3}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Liste des tableaux}{X}{chapter*.4}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction g\IeC {\'e}n\IeC {\'e}rale}{1}{chapter*.6}
 \contentsline {part}{I\hspace {1em}\IeC {\'E}tat de l'art}{3}{part.1}
 \contentsline {chapter}{\numberline {1} Th\IeC {\'e}orie des graphes}{4}{chapter.1}
@@ -35,69 +35,8 @@
 \contentsline {subsubsection}{Compression Sans Perte:}{14}{section*.12}
 \contentsline {subsubsection}{Compression Avec Perte:}{15}{section*.14}
 \contentsline {subsection}{\numberline {2.2.2}Les m\IeC {\'e}triques d'\IeC {\'e}valuation des algorithmes de compression:}{15}{subsection.2.2.2}
-<<<<<<< HEAD
-\contentsline {subsubsection}{Le temps de compression:}{15}{section*.8}
-\contentsline {subsubsection}{Le ratio de compression:}{15}{section*.9}
-\contentsline {subsubsection}{Le taux de compression:}{16}{section*.10}
-\contentsline {subsection}{\numberline {2.2.3}Classification des m\IeC {\'e}thodes de compression:}{16}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Compression par les arbres $K^2$-Trees}{21}{section.2.3}
-\contentsline {subsubsection}{Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression bas\IeC {\'e}e sur les $K^2$-trees }{33}{section*.11}
-\contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{38}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{38}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e sur l'agr\IeC {\'e}gation des motifs}{46}{subsection.2.4.2}
-\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es l'agr\IeC {\'e}gation de n\IeC {\oe }uds}{46}{section*.12}
-\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation de liens}{46}{section*.13}
-\contentsline {subsection}{\numberline {2.4.3}Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs }{51}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{54}{section.2.5}
-\contentsline {part}{II\hspace {1em}Contribution}{58}{part.2}
-\contentsline {chapter}{\numberline {3}Conception}{59}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{59}{section.3.1}
-\contentsline {section}{\numberline {3.2}$k^2$-GraCE : }{59}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Principe de fonctionnement :}{59}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Param\IeC {\`e}tre et notations :}{61}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Conception Modulaire:}{61}{subsection.3.2.3}
-\contentsline {subsubsection}{Pr\IeC {\'e}-traitement du graphe de donn\IeC {\'e}es:}{61}{section*.14}
-\contentsline {subsubsection}{Construction de l'arbre $k^2$-tree}{63}{section*.15}
-\contentsline {section}{\numberline {3.3}P-GraCE :}{66}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{66}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{67}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{67}{subsection.3.3.3}
-\contentsline {subsubsection}{Extraction des motifs :}{67}{section*.16}
-\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{73}{section*.17}
-\contentsline {subsubsection}{Traitement des motifs :}{73}{section*.18}
-\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{74}{section.3.4}
-\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{74}{section*.19}
-\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{75}{section*.20}
-\contentsline {section}{\numberline {3.5}Conclusion}{76}{section.3.5}
-\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{78}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{78}{section.4.1}
-\contentsline {section}{\numberline {4.2}Architecture globale}{78}{section.4.2}
-\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{79}{section.4.3}
-\contentsline {section}{\numberline {4.4}Traitement}{81}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Les structures utilis\IeC {\'e}es }{81}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Les m\IeC {\'e}thodes et fonctions }{81}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{82}{section.4.5}
-\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{83}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Langage de Programmation}{83}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Biblioth\IeC {\`e}que Snap}{83}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Biblioth\IeC {\`e}que Boost}{83}{subsection.4.6.3}
-\contentsline {section}{\numberline {4.7}Conclusion}{84}{section.4.7}
-\contentsline {chapter}{\numberline {5}Test}{85}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{85}{section.5.1}
-\contentsline {section}{\numberline {5.2}Environnement de Test}{85}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{86}{section.5.3}
-\contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{86}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{86}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de l'ordre}{86}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{86}{section.5.5}
-\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rents moteurs}{86}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion}{86}{section.5.7}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{87}{appendix.A}
-\contentsline {chapter}{\numberline {B}Description des graphes de test}{88}{appendix.B}
-\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{89}{appendix.C}
-=======
 \contentsline {subsubsection}{Le temps de compression:}{15}{section*.16}
-\contentsline {subsubsection}{Le ratio de compression }{15}{section*.17}
+\contentsline {subsubsection}{Le ratio de compression:}{15}{section*.17}
 \contentsline {subsubsection}{Le taux de compression:}{16}{section*.18}
 \contentsline {subsection}{\numberline {2.2.3}Classification des m\IeC {\'e}thodes de compression:}{16}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Compression par les arbres $K^2$-Trees}{20}{section.2.3}
@@ -107,54 +46,59 @@
 \contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e sur l'agr\IeC {\'e}gation des motifs}{44}{subsection.2.4.2}
 \contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es l'agr\IeC {\'e}gation de n\IeC {\oe }uds}{44}{section*.39}
 \contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation de liens}{44}{section*.40}
-\contentsline {subsection}{\numberline {2.4.3}Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs }{49}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{51}{section.2.5}
-\contentsline {part}{II\hspace {1em}Contribution}{53}{part.2}
-\contentsline {chapter}{\numberline {3}Conception}{54}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{54}{section.3.1}
-\contentsline {section}{\numberline {3.2}$k^2$-GraCE : }{54}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Principe de fonctionnement :}{54}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Param\IeC {\`e}tre et notations :}{56}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Conception Modulaire:}{56}{subsection.3.2.3}
-\contentsline {subsubsection}{Pr\IeC {\'e}-traitement du graphe de donn\IeC {\'e}es:}{56}{section*.49}
-\contentsline {subsubsection}{Construction de l'arbre $k^2$-tree}{58}{section*.52}
-\contentsline {section}{\numberline {3.3}P-GraCE :}{61}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{61}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{62}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{62}{subsection.3.3.3}
-\contentsline {subsubsection}{Extraction des motifs :}{62}{section*.55}
-\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{68}{section*.58}
-\contentsline {subsubsection}{Traitement des motifs :}{68}{section*.59}
-\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{69}{section.3.4}
-\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{70}{section*.60}
-\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{70}{section*.61}
-\contentsline {section}{\numberline {3.5}Conclusion}{73}{section.3.5}
-\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{74}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{74}{section.4.1}
-\contentsline {section}{\numberline {4.2}Architecture globale}{74}{section.4.2}
-\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{75}{section.4.3}
-\contentsline {section}{\numberline {4.4}Traitement}{77}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Les structures utilis\IeC {\'e}es }{77}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Les m\IeC {\'e}thodes et fonctions }{77}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{78}{section.4.5}
-\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{79}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Langage de Programmation}{79}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Biblioth\IeC {\`e}que Snap}{79}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Biblioth\IeC {\`e}que Boost}{79}{subsection.4.6.3}
-\contentsline {section}{\numberline {4.7}Conclusion}{80}{section.4.7}
-\contentsline {chapter}{\numberline {5}Test}{81}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{81}{section.5.1}
-\contentsline {section}{\numberline {5.2}Environnement de Test}{81}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{81}{section.5.3}
+\contentsline {subsection}{\numberline {2.4.3}Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs }{48}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Conclusion}{50}{section.2.5}
+\contentsline {part}{II\hspace {1em}Contribution}{52}{part.2}
+\contentsline {chapter}{\numberline {3}Conception}{53}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{53}{section.3.1}
+\contentsline {section}{\numberline {3.2}$k^2$-GraCE : }{53}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Principe de fonctionnement :}{53}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Param\IeC {\`e}tre et notations :}{55}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Conception Modulaire:}{55}{subsection.3.2.3}
+\contentsline {subsubsection}{Pr\IeC {\'e}-traitement du graphe de donn\IeC {\'e}es:}{55}{section*.48}
+\contentsline {subsubsection}{Construction de l'arbre $k^2$-tree}{57}{section*.51}
+\contentsline {section}{\numberline {3.3}P-GraCE :}{60}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Principe de fonctionnement :}{60}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Param\IeC {\`e}tre et notations :}{61}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Conception modulaire :}{61}{subsection.3.3.3}
+\contentsline {subsubsection}{Extraction des motifs :}{61}{section*.54}
+\contentsline {subsubsection}{\IeC {\'E}valuation des motifs :}{67}{section*.57}
+\contentsline {subsubsection}{Traitement des motifs :}{67}{section*.58}
+\contentsline {section}{\numberline {3.4}Notre m\IeC {\'e}thode: Dynamic Dense Subgraph Mining (DDSM)}{68}{section.3.4}
+\contentsline {subsubsection}{Formulation du probl\IeC {\`e}me}{69}{section*.59}
+\contentsline {subsubsection}{Principe g\IeC {\'e}n\IeC {\'e}ral}{69}{section*.60}
+\contentsline {section}{\numberline {3.5}Conclusion}{72}{section.3.5}
+\contentsline {chapter}{\numberline {4}Impl\IeC {\'e}mentation}{73}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{73}{section.4.1}
+\contentsline {section}{\numberline {4.2}Architecture globale}{73}{section.4.2}
+\contentsline {section}{\numberline {4.3}Donn\IeC {\'e}es}{74}{section.4.3}
+\contentsline {section}{\numberline {4.4}Traitement}{76}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Les structures utilis\IeC {\'e}es }{76}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Les m\IeC {\'e}thodes et fonctions }{76}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Pr\IeC {\'e}sentation}{77}{section.4.5}
+\contentsline {section}{\numberline {4.6}Environnement de d\IeC {\'e}veloppement}{78}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Langage de Programmation}{78}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Biblioth\IeC {\`e}que Snap}{78}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Biblioth\IeC {\`e}que Boost}{78}{subsection.4.6.3}
+\contentsline {section}{\numberline {4.7}Conclusion}{79}{section.4.7}
+\contentsline {chapter}{\numberline {5}Test}{80}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{80}{section.5.1}
+\contentsline {section}{\numberline {5.2}Environnement de Test}{80}{section.5.2}
+\contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{80}{section.5.3}
 \contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{82}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Analyse de l'impact du param\IeC {\`e}tre k}{83}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}\IeC {\'E}tude de l'effet de la repr\IeC {\'e}sentation du graphe en entr\IeC {\'e}e}{85}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}\IeC {\'E}tude de l'effet de l'ordre}{86}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}\IeC {\'E}tude de l'effet du pr\IeC {\'e}-traitement appliqu\IeC {\'e} sur les graphes statique }{86}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{87}{section.5.5}
-\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rents moteurs}{87}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion}{87}{section.5.7}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{88}{appendix.A}
-\contentsline {chapter}{\numberline {B}Description des graphes de test}{89}{appendix.B}
-\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{90}{appendix.C}
->>>>>>> b658180adc12066f95b314fcf99195b356c274dc
+\contentsline {subsection}{\numberline {5.4.1}\IeC {\'E}tude de l'effet de la repr\IeC {\'e}sentation du graphe en entr\IeC {\'e}e}{83}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Analyse de l'impact du param\IeC {\`e}tre k}{83}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}\IeC {\'E}tude de l'apport de la phase de pr\IeC {\'e}-traitement }{86}{subsection.5.4.3}
+\contentsline {subsubsection}{\IeC {\'E}tude de l'effet de l'ordre}{87}{section*.76}
+\contentsline {subsubsection}{\IeC {\'E}tude de l'effet de l'utilisation de la partie sup\IeC {\'e}rieure uniquement de la matrice d'adjacence}{87}{section*.78}
+\contentsline {subsubsection}{\IeC {\'E}tude de l'effet de l'utilisation d'une matrice de diff\IeC {\'e}rence}{89}{section*.81}
+\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{89}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}\IeC {\'E}tude de l'influence du type et de la taille des motifs dans les m\IeC {\'e}thodes bas\IeC {\'e}es sur la matrice d'adjacence :}{89}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}\IeC {\'E}valuation de l'algorithme du beam-search :}{90}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}\IeC {\'E}valuation de la m\IeC {\'e}thode DDSM :}{91}{subsection.5.5.3}
+\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rentes m\IeC {\'e}thodes:}{92}{section.5.6}
+\contentsline {section}{\numberline {5.7}Conclusion}{92}{section.5.7}
+\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{94}{chapter.6}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{95}{appendix.A}
+\contentsline {chapter}{\numberline {B}Description des graphes de test}{96}{appendix.B}
+\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{97}{appendix.C}

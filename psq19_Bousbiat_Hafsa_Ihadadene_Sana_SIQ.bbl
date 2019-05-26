@@ -1,9 +1,24 @@
 \begin{thebibliography}{}
 
+\bibitem[sub, 2011]{subd}
+ (2011).
+\newblock Graph based knowledge discovery.
+\newblock In {\em Subdue}.
+
 \bibitem[IUT, 2012]{IUTLyonInformatique}
  (2012).
 \newblock {\em Quelques rappels sur la th{\'e}orie des graphes}.
 \newblock IUT Lyon Informatique.
+
+\bibitem[br, 2017]{br}
+ (April 2017).
+\newblock Brightkite network dataset.
+\newblock In {\em KONECT}.
+
+\bibitem[cai, 2017]{caida}
+ (April 2017).
+\newblock Caida network dataset.
+\newblock In {\em KONECT}.
 
 \bibitem[Alvarez-Garcia et~al., 2017]{alvarez2017succinct}
 Alvarez-Garcia, S., de~Bernardo, G., Brisaboa, N.~R., and Navarro, G. (2017).
@@ -243,6 +258,11 @@ Lemmouchi, S. (2012).
 \newblock {\em Etude de la robustesse des graphes sociaux {\'e}mergents}.
 \newblock PhD thesis, Universit{\'e} Claude Bernard-Lyon I.
 
+\bibitem[Leskovec and Krevl, 2014]{snapnets}
+Leskovec, J. and Krevl, A. (2014).
+\newblock {SNAP Datasets}: {Stanford} large network dataset collection.
+\newblock \url{http://snap.stanford.edu/data}.
+
 \bibitem[Liu et~al., 2018a]{liu2018graph}
 Liu, Y., Safavi, T., Dighe, A., and Koutra, D. (2018a).
 \newblock Graph summarization methods and applications: A survey.
@@ -300,11 +320,31 @@ Pellegrini, M., Haynor, D., and Johnson, J.~M. (2004).
 \newblock Protein interaction networks.
 \newblock {\em Expert review of proteomics}, 1(2):239--249.
 
+\bibitem[Pieterse et~al., 2010]{pieterse2010performance}
+Pieterse, V., Kourie, D.~G., Cleophas, L., and Watson, B.~W. (2010).
+\newblock Performance of c++ bit-vector implementations.
+\newblock In {\em Proceedings of the 2010 Annual Research Conference of the
+  South African Institute of Computer Scientists and Information
+  Technologists}, pages 242--250. ACM.
+
 \bibitem[Rigo, 2010]{bac}
 Rigo, M. (2010).
 \newblock {\em Th{\'e}orie des graphesorie des graphes}.
 \newblock Universit{\'e} de li{\`e}ge, Facult{\'e} des sciences D{\'e}partement
   de math{\'e}matiques.
+
+\bibitem[Rossi and Ahmed, 2015a]{rep1}
+Rossi, R.~A. and Ahmed, N.~K. (2015a).
+\newblock The network data repository with interactive graph analytics and
+  visualization.
+\newblock In {\em AAAI}.
+
+\bibitem[Rossi and Ahmed, 2015b]{caNetScience}
+Rossi, R.~A. and Ahmed, N.~K. (2015b).
+\newblock The network data repository with interactive graph analytics and
+  visualization.
+\newblock In {\em Proceedings of the Twenty-Ninth AAAI Conference on Artificial
+  Intelligence}.
 
 \bibitem[Rossi and Zhou, 2018]{rossi2018graphzip}
 Rossi, R.~A. and Zhou, R. (2018).

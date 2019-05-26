@@ -38,7 +38,7 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Compression bas\351e vocabulaire}{section.2.4}% 38
 \BOOKMARK [2][-]{subsection.2.4.2}{Compression bas\351e sur l'agr\351gation des motifs}{section.2.4}% 39
 \BOOKMARK [2][-]{subsection.2.4.3}{Synth\350se des m\351thodes de compression par extraction de motifs }{section.2.4}% 40
-\BOOKMARK [1][-]{section.2.5}{Bilan g\351n\351ral}{chapter.2}% 41
+\BOOKMARK [1][-]{section.2.5}{Conclusion}{chapter.2}% 41
 \BOOKMARK [-1][-]{part.2}{II Contribution}{}% 42
 \BOOKMARK [0][-]{chapter.3}{Conception}{part.2}% 43
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 44
@@ -70,13 +70,16 @@
 \BOOKMARK [1][-]{section.5.2}{Environnement de Test}{chapter.5}% 70
 \BOOKMARK [1][-]{section.5.3}{Pr\351sentation des graphes de test}{chapter.5}% 71
 \BOOKMARK [1][-]{section.5.4}{\311valuation du moteur k2-GraCE}{chapter.5}% 72
-\BOOKMARK [2][-]{subsection.5.4.1}{Analyse de l'impact du param\350tre k}{section.5.4}% 73
-\BOOKMARK [2][-]{subsection.5.4.2}{\311tude de l'effet de la repr\351sentation du graphe en entr\351e}{section.5.4}% 74
-\BOOKMARK [2][-]{subsection.5.4.3}{\311tude de l'effet de l'ordre}{section.5.4}% 75
-\BOOKMARK [2][-]{subsection.5.4.4}{\311tude de l'effet du pr\351-traitement appliqu\351 sur les graphes statique }{section.5.4}% 76
-\BOOKMARK [1][-]{section.5.5}{\311valuation du moteur P-GraCE}{chapter.5}% 77
-\BOOKMARK [1][-]{section.5.6}{Comparaison entre les diff\351rents moteurs}{chapter.5}% 78
-\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 79
-\BOOKMARK [0][-]{appendix.A}{Extraction de voisins dans un arbre k2-tree}{part.2}% 80
-\BOOKMARK [0][-]{appendix.B}{Description des graphes de test}{part.2}% 81
-\BOOKMARK [0][-]{appendix.C}{Algorithmes des m\351thodes de clustering}{part.2}% 82
+\BOOKMARK [2][-]{subsection.5.4.1}{\311tude de l'effet de la repr\351sentation du graphe en entr\351e}{section.5.4}% 73
+\BOOKMARK [2][-]{subsection.5.4.2}{Analyse de l'impact du param\350tre k}{section.5.4}% 74
+\BOOKMARK [2][-]{subsection.5.4.3}{\311tude de l'apport de la phase de pr\351-traitement }{section.5.4}% 75
+\BOOKMARK [1][-]{section.5.5}{\311valuation du moteur P-GraCE}{chapter.5}% 76
+\BOOKMARK [2][-]{subsection.5.5.1}{\311tude de l'influence du type et de la taille des motifs dans les m\351thodes bas\351es sur la matrice d'adjacence :}{section.5.5}% 77
+\BOOKMARK [2][-]{subsection.5.5.2}{\311valuation de l'algorithme du beam-search :}{section.5.5}% 78
+\BOOKMARK [2][-]{subsection.5.5.3}{\311valuation de la m\351thode DDSM :}{section.5.5}% 79
+\BOOKMARK [1][-]{section.5.6}{Comparaison entre les diff\351rentes m\351thodes:}{chapter.5}% 80
+\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 81
+\BOOKMARK [0][-]{chapter.6}{Conclusion G\351n\351rale}{part.2}% 82
+\BOOKMARK [0][-]{appendix.A}{Extraction de voisins dans un arbre k2-tree}{part.2}% 83
+\BOOKMARK [0][-]{appendix.B}{Description des graphes de test}{part.2}% 84
+\BOOKMARK [0][-]{appendix.C}{Algorithmes des m\351thodes de clustering}{part.2}% 85
