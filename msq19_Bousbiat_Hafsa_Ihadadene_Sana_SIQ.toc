@@ -42,10 +42,10 @@
 \contentsline {subsubsection}{Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression bas\IeC {\'e}e sur les $K^2$-trees }{31}{section*.11}
 \contentsline {section}{\numberline {2.4}Compression par extraction de motifs}{36}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Compression bas\IeC {\'e}e vocabulaire}{36}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e sur l'agr\IeC {\'e}gation des motifs}{44}{subsection.2.4.2}
-\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es l'agr\IeC {\'e}gation de n\IeC {\oe }uds}{44}{section*.12}
-\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation de liens}{44}{section*.13}
-\contentsline {subsection}{\numberline {2.4.3}Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs }{49}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{51}{section.2.5}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{55}{figure.2.23}
-\contentsline {chapter}{\numberline {A}Description des graphes de test}{56}{appendix.A}
+\contentsline {subsection}{\numberline {2.4.2}Compression bas\IeC {\'e}e sur l'agr\IeC {\'e}gation des motifs}{45}{subsection.2.4.2}
+\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es l'agr\IeC {\'e}gation de n\IeC {\oe }uds}{45}{section*.12}
+\contentsline {subsubsection}{Les m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation de liens}{45}{section*.13}
+\contentsline {subsection}{\numberline {2.4.3}Synth\IeC {\`e}se des m\IeC {\'e}thodes de compression par extraction de motifs }{50}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Bilan g\IeC {\'e}n\IeC {\'e}ral}{53}{section.2.5}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{57}{figure.2.25}
+\contentsline {chapter}{\numberline {A}Description des graphes de test}{58}{appendix.A}

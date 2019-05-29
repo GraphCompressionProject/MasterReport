@@ -27,9 +27,11 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (2/2)}}{31}{figure.2.16}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes bas\IeC {\'e}es sur les $k^2$-trees appliqu\IeC {\'e}es sur le graphe eu2005 selon le nombre de bits par liens}}{32}{figure.2.17}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes bas\IeC {\'e}es sur les $k^2$-trees en fonction du taux de compression}}{33}{figure.2.18}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{43}{figure.2.19}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{46}{figure.2.20}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM .}}{48}{figure.2.21}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM \citep {hernandez2014compressed}.}}{49}{figure.2.22}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes par extraction de motifs et les m\IeC {\'e}thodes bas\IeC {\'e}es sur les arbres $k^2$-trees }}{54}{figure.2.23}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}}}{44}{figure.2.19}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{47}{figure.2.20}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Exemple d'ex\IeC {\'e}cution de VNM .}}{49}{figure.2.21}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM \citep {hernandez2014compressed}.}}{50}{figure.2.22}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes de compression bas\IeC {\'e}es sur l'agr\IeC {\'e}gation des liens des motifs}}{51}{figure.2.23}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes de compression bas\IeC {\'e}es vocabulaire}}{51}{figure.2.24}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Comparaison des performances des m\IeC {\'e}thodes par extraction de motifs et les m\IeC {\'e}thodes bas\IeC {\'e}es sur les arbres $k^2$-trees }}{56}{figure.2.25}
 \addvspace {10\p@ }

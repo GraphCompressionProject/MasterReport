@@ -86,16 +86,16 @@ Après le codage, le premier bit de chaque nœud sauf ceux du dernier niveau est
 \end{enumerate}
 
 
-La figure \ref{k2-trees1-exemple} illustre une représentation $k^2$-tress1 avec les quatre encodages \citep{de2014new} : 
+%La figure \ref{k2-trees1-exemple} illustre une représentation $k^2$-tress1 avec les quatre encodages \citep{de2014new} : 
 
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[height=300 pt, width=450 pt]{./ressources/image/k2-trees1.png} 
-\end{center}
-\caption{Exemple d'une représentation $k^2$-tree1 avec les quatre encodages}
-\label{k2-trees1-exemple}
-\end{figure}
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[height=300 pt, width=450 pt]{./ressources/image/k2-trees1.png} 
+%\end{center}
+%\caption{Exemple d'une représentation $k^2$-tree1 avec les quatre encodages}
+%\label{k2-trees1-exemple}
+%\end{figure}
 
 
 %\subsubsection{Delta-$K^2$-tress }
@@ -149,15 +149,15 @@ Trois structures de données sont utilisées pour sauvegarder les coordonnées e
 \item \textit{L'arbre :} La structure de l'arbre $k^2$-treap est sauvegardée avec un arbre $k^2$-tree, les nœuds contenant des valeurs dans $k^2$-treap sont représentés par des uns et les nœuds vides par des zéros. Pour le stockage de l'arbre, un seul tableau T est utilisé. 
 \end{itemize}
 
-La figure \ref{k2-treaps-structure} représente les structures de données utilisées pour le stockage de l'arbre de la figure \ref{k2-treaps} précédente \citep{badr2013traitement} :
+%La figure \ref{k2-treaps-structure} représente les structures de données utilisées pour le stockage de l'arbre de la figure \ref{k2-treaps} précédente \citep{badr2013traitement} :
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[height=200 pt, width=380 pt]{./ressources/image/k2-treaps-structure.png} 
-\end{center}
-\caption{Structures de données pour une représentation $k^2$-treap}
-\label{k2-treaps-structure}
-\end{figure}
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[height=200 pt, width=380 pt]{./ressources/image/k2-treaps-structure.png} 
+%\end{center}
+%\caption{Structures de données pour une représentation $k^2$-treap}
+%\label{k2-treaps-structure}
+%\end{figure}
 
 %\subsubsection{I$k^2$-trees}
 Garcia et al. \citep{garcia2014interleaved} proposent I$k^2$-tree pour Interleaved $k^2$-tree. Elle est appliquée sur les bases de données RDF ainsi que sur les graphes dynamiques. Dans les graphes dynamiques, les deux premières dimensions correspondent aux nœuds source et destination et la troisième dimension reflète le temps. Le graphe est donc défini par |T| matrices d'adjacence prisent à des instants $t_k$ différents. I$k^2$-tree représente les matrices simultanément. Chaque matrice est représentée par un arbre $k^2$-tree et ils sont par la suite regroupés dans un seul arbre. Chaque nœud de l'arbre obtenu représente une sous-matrice comme dans l'algorithme de base, sauf qu'au lieu d'utiliser un seul bit, I$k^2$-tree utilise 1 à |T| bits pour représenter le nœud. Le nœud racine contient |T| bits. Le nombre de bits de chaque fils dépend du nombre de uns de son parent. L'arbre finale est toujours stocké avec deux tableaux : T et L.
@@ -185,15 +185,15 @@ La figure \ref{Ik2-trees-diff} montre un exemple d'une représentation diffI$k^2
 
 %\subsubsection{Att $K^2$-trees }
 Dans \citep{alvarez2018compact}, les auteurs étendent la représentation $k^2$-tree pour les bases de données orientées graphes. Ces graphes sont étiquetés, attribués, orientés et ont des arêtes multiples. Ils présentent le graphe sous forme d'une nouvelle structure intitulée Att$k^2$-tree pour Attributed $k^2$-trees.
-La figure \ref{k2-trees-att-graphe} montre un exemple de graphe pris en compte par Att$K^2$-tree \citep{alvarez2018compact}.
+%La figure \ref{k2-trees-att-graphe} montre un exemple de graphe pris en compte par Att$K^2$-tree \citep{alvarez2018compact}.
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[height=200 pt, width=280 pt]{./ressources/image/k2-trees-att-graphe.png} 
-\end{center}
-\caption{Exemple d'un graphe étiqueté, attribué, orienté et multiple}
-\label{k2-trees-att-graphe}
-\end{figure}
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[height=200 pt, width=280 pt]{./ressources/image/k2-trees-att-graphe.png} 
+%\end{center}
+%\caption{Exemple d'un graphe étiqueté, attribué, orienté et multiple}
+%\label{k2-trees-att-graphe}
+%\end{figure}
 
 \textbf{Structures de données :} La représentation obtenue par la compression est composée d'un ensemble d'arbres $k^2$-tree et d'autres structures supplémentaires. Le graphe est représenté par trois composantes: un schéma de données, les données incluses dans les nœuds et les liens et finalement la relation entre les éléments du graphe. Chaque composant est présenté dans ce qui suit :
 \begin{itemize}
@@ -208,14 +208,14 @@ Le schéma est le point de départ de la représentation, il permet d'obtenir l'
 \item[Attributs rares :] Ce sont les attributs qui prennent généralement des valeurs différentes à chaque apparition, ils sont stockés dans des listes et indexés avec l'identifiant de l'élément.
 \item[Attributs fréquents :] Ce type d'attributs est sauvegardé dans deux matrices, une pour les attributs des nœuds et l'autre pour les attributs des liens. Les matrices sont stockées sous forme d'arbres $k^2$-trees.
 \end{description}
-La figure \ref{k2-trees-att-schema} illustre les deux composants schéma et données de la représentation Att$k^2$-trees  de la figure \ref{k2-trees-att-graphe} \citep{alvarez2018compact}:
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.7]{./ressources/image/k2-trees-att-schema.png} 
-\end{center}
-\caption{Exemple d'une représentation Att$k^2$-tree (1/2)}
-\label{k2-trees-att-schema}
-\end{figure}
+%La figure \ref{k2-trees-att-schema} illustre les deux composants schéma et données de la représentation Att$k^2$-trees  de la figure \ref{k2-trees-att-graphe} \citep{alvarez2018compact}:
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[scale=0.7]{./ressources/image/k2-trees-att-schema.png} 
+%\end{center}
+%\caption{Exemple d'une représentation Att$k^2$-tree (1/2)}
+%\label{k2-trees-att-schema}
+%\end{figure}
 
 
 \item \textit{Relations :} C'est le dernier composant de Att$k^2$-tree, il stocke les relations entre les nœuds et les arêtes du graphe en utilisant un arbre $k^2$-tree et d'autres structures pour sauvegarder les identifiants des arêtes ainsi que les arêtes multiples. Les structures supplémentaires sont les suivantes :
@@ -229,7 +229,7 @@ La figure \ref{k2-trees-att-relation} donne la représentation Att$k^2$-tree des
 \begin{center}
 \includegraphics[height=200 pt, width=280 pt]{./ressources/image/k2-trees-att-relation.png} 
 \end{center}
-\caption{Exemple d'une la représentation Att$k^2$-tree (2/2)}
+\caption{Exemple d'une la représentation Att$k^2$-tree }
 \label{k2-trees-att-relation}
 \end{figure} 
 \end{itemize}

@@ -85,10 +85,10 @@ Nous allons dans cette partie proposer une nouvelle méthode \gls{ddsm} basée s
 						\IF {|timeseries| = 1} 
 							\STATE return 'o' \COMMENT{OneShot}
 						\ELSE
-							\IF{$t_{i+1} -T_i$ =1 $\forall t_i \in $ timeseries}
+							\IF{$t_{i+1} -t_i$ =1 $\forall t_i \in $ timeseries}
 								\STATE return 'r' : timeseries[0] :timeseries[size-1] \COMMENT{Ranged}
 							\ELSE
-								\IF {{$t_{i+1} -T_i$ = Constante $\forall t_i \in $ timeseries}}
+								\IF {{$t_{i+1} -t_i$ = Constante $\forall t_i \in $ timeseries}}
 									\STATE retourner 'p' : timeseries[1] - timeseries [0] \COMMENT{periodic}
 								\ELSE
 									\STATE return 'f':timeseries[0]:...:timeseries[size-1] \COMMENT{flickering}

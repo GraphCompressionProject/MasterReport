@@ -16,55 +16,54 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Exemple de repr\IeC {\'e}sentation $k^2$-tree\relax }}{21}{figure.caption.21}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation d$k^2$-tree\relax }}{23}{figure.caption.22}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^3$-tree\relax }}{24}{figure.caption.23}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-tree1 avec les quatre encodages\relax }}{25}{figure.caption.24}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation Delta-$k^2$-tree\relax }}{26}{figure.caption.25}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-treap d'un graphe pond\IeC {\'e}r\IeC {\'e}\relax }}{27}{figure.caption.26}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Structures de donn\IeC {\'e}es pour une repr\IeC {\'e}sentation $k^2$-treap\relax }}{28}{figure.caption.27}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation I$k^2$-tree\relax }}{28}{figure.caption.28}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation diff I$k^2$-tree\relax }}{29}{figure.caption.29}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Exemple d'un graphe \IeC {\'e}tiquet\IeC {\'e}, attribu\IeC {\'e}, orient\IeC {\'e} et multiple\relax }}{30}{figure.caption.30}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation Att$k^2$-tree (1/2)\relax }}{31}{figure.caption.31}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree (2/2)\relax }}{32}{figure.caption.32}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}\relax }}{43}{figure.caption.38}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{46}{figure.caption.42}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM\relax }}{48}{figure.caption.43}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation Delta-$k^2$-tree\relax }}{26}{figure.caption.24}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation $k^2$-treap d'un graphe pond\IeC {\'e}r\IeC {\'e}\relax }}{27}{figure.caption.25}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation I$k^2$-tree\relax }}{28}{figure.caption.26}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Exemple d'une repr\IeC {\'e}sentation diff I$k^2$-tree\relax }}{29}{figure.caption.27}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Exemple d'une la repr\IeC {\'e}sentation Att$k^2$-tree \relax }}{30}{figure.caption.28}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Exemple illustrant le principe de fonctionnement \citep {asano2008efficient}\relax }}{41}{figure.caption.34}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Exemple d'ex\IeC {\'e}cution de gRepair sur G.}}{44}{figure.caption.38}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Exemple d'ex\IeC {\'e}cution de DSM\relax }}{46}{figure.caption.39}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{54}{figure.caption.46}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{56}{figure.caption.49}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{57}{figure.caption.50}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{60}{figure.caption.52}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple d'application de l'algorithme SlashBurn\relax }}{63}{figure.caption.55}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{66}{figure.caption.56}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Les diff\IeC {\'e}rentes phases de DDSM}}{72}{figure.caption.63}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Principe de fonctionnement du moteur $k^2$-GraCE}}{52}{figure.caption.42}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour un graphe non orient\IeC {\'e}.}}{54}{figure.caption.45}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Exemple d'arbre $k^2$-tree (k=2) pour la matrice de diff\IeC {\'e}rence}}{55}{figure.caption.46}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Vue globale sur le fonctionnement du moteur \gls {P-GraCE}.}}{59}{figure.caption.48}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple de Graphe \IeC {\'E}tiquet\IeC {\'e}\relax }}{61}{figure.caption.51}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Arbre de recherche (k= $ {\infty } $ , limit = $ {\infty } $)\relax }}{62}{figure.caption.52}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces R\IeC {\'e}sultat de l'ex\IeC {\'e}cution de l'algorithme du beam-search\relax }}{62}{figure.caption.53}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Exemple d'application de l'algorithme SlashBurn\relax }}{63}{figure.caption.54}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{66}{figure.caption.55}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Les diff\IeC {\'e}rentes phases de DDSM}}{72}{figure.caption.62}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture du backend\relax }}{73}{figure.caption.64}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Architecture globale de la solution web\relax }}{74}{figure.caption.65}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Structure d'un fichier de graphe statique\relax }}{74}{figure.caption.66}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure d'un fichier de graphe dynamique\relax }}{75}{figure.caption.67}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Structure d'un fichier de graphe \IeC {\'e}tiquet\IeC {\'e}\relax }}{75}{figure.caption.68}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Sch\IeC {\'e}ma globale du fonctionnement des deux moteurs\relax }}{77}{figure.caption.69}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture du backend\relax }}{73}{figure.caption.63}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architecture globale de la solution web\relax }}{74}{figure.caption.64}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Structure d'un fichier de graphe statique\relax }}{74}{figure.caption.65}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure d'un fichier de graphe dynamique\relax }}{75}{figure.caption.66}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Structure d'un fichier de graphe \IeC {\'e}tiquet\IeC {\'e}\relax }}{75}{figure.caption.67}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sch\IeC {\'e}ma globale du fonctionnement des deux moteurs\relax }}{77}{figure.caption.68}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces R\IeC {\'e}sultats de tests du moteur $K^2$-Grace selon les diff\IeC {\'e}rents types de repr\IeC {\'e}sentations du graphe en entr\IeC {\'e}e.\relax }}{83}{figure.caption.71}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces R\IeC {\'e}sultats de tests du moteur $K^2$-Grace selon les diff\IeC {\'e}rents types de repr\IeC {\'e}sentations du graphe en entr\IeC {\'e}e.\relax }}{83}{figure.caption.70}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Bio. }}}{83}{subfigure.1.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {web-edu. }}}{83}{subfigure.1.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {web-polblogs. }}}{83}{subfigure.1.3}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Ratio de compression du moteur $K^2$-Grace en fonction du param\IeC {\`e}tre K (cas statique)\relax }}{84}{figure.caption.72}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }uds en fonction du param\IeC {\`e}tre K\relax }}{84}{figure.caption.73}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Ratio de compression du moteur en fonction du param\IeC {\`e}tre K (cas dynamique)\relax }}{85}{figure.caption.74}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Temps de compression en fonction de K\relax }}{86}{figure.caption.75}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace :Ratio de compression selon l'ordre des n\IeC {\oe }uds\relax }}{87}{figure.caption.77}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace avec/sans pr\IeC {\'e}-traitement\relax }}{88}{figure.caption.79}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Gain de compression de $K^2$-Grace avec le pr\IeC {\'e}-traitement\relax }}{88}{figure.caption.80}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Ratio de IK2/ Ratio de DIK2\relax }}{89}{figure.caption.82}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Le ratio de compression en fonction de la taille du motif.\relax }}{90}{figure.caption.83}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Ratio de compression du moteur $K^2$-Grace en fonction du param\IeC {\`e}tre K (cas statique)\relax }}{84}{figure.caption.71}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }uds en fonction du param\IeC {\`e}tre K\relax }}{84}{figure.caption.72}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Ratio de compression du moteur en fonction du param\IeC {\`e}tre K (cas dynamique)\relax }}{85}{figure.caption.73}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Temps de compression en fonction de K\relax }}{86}{figure.caption.74}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace :Ratio de compression selon l'ordre des n\IeC {\oe }uds\relax }}{87}{figure.caption.76}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace avec/sans pr\IeC {\'e}-traitement\relax }}{88}{figure.caption.78}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Gain de compression de $K^2$-Grace avec le pr\IeC {\'e}-traitement\relax }}{88}{figure.caption.79}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Ratio de IK2/ Ratio de DIK2\relax }}{89}{figure.caption.81}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Le ratio de compression en fonction de la taille du motif.\relax }}{90}{figure.caption.82}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Motif type 1. }}}{90}{subfigure.10.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Motif type 2. }}}{90}{subfigure.10.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Motif type 3. }}}{90}{subfigure.10.3}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces R\IeC {\'e}sultats des tests du beam-search.\relax }}{91}{figure.caption.84}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces R\IeC {\'e}sultats des tests du beam-search.\relax }}{91}{figure.caption.83}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ratio de compression. }}}{91}{subfigure.11.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Temps d'\IeC {\'e}x\IeC {\'e}cution. }}}{91}{subfigure.11.2}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces R\IeC {\'e}sultats de la m\IeC {\'e}thode DDSM\relax }}{91}{figure.caption.85}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces R\IeC {\'e}sultats des tests de la m\IeC {\'e}thode DDSM.\relax }}{92}{figure.caption.86}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces R\IeC {\'e}sultats de la m\IeC {\'e}thode DDSM\relax }}{91}{figure.caption.84}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces R\IeC {\'e}sultats des tests de la m\IeC {\'e}thode DDSM.\relax }}{92}{figure.caption.85}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ratio de compression. }}}{92}{subfigure.13.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Temps d'\IeC {\'e}x\IeC {\'e}cution. }}}{92}{subfigure.13.2}
 \addvspace {10\p@ }

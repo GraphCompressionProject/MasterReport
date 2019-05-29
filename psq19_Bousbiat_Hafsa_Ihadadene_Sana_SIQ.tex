@@ -163,11 +163,11 @@
 Cependant, deux types de méthodes de compression de graphes se sont distinguées parmi tout les autres types de méthodes : les méthodes de compression en utilisant les arbres k2-trees et les méthodes de compression par extraction de motifs. En effet, elles permettent de trouver dans la majorité des cas un bon compromis entre l'espace mémoire et les temps de traitement. Ces deux classe de méthodes feront l'objet de notre étude.\\
 		
 			Notre première contribution  portera sur la conception, l'implémentation et l'évaluation de 	deux moteurs de compression, 
-		\newacronym{$k^2$-GraCE}{$k^2$-GraCE}{$k^2$-trees Graph Compression engine}	
-		\newacronym{P-GraCE}{P-GraCE}{Pattern Graph Compression engine}			
+		\newacronym{$k^2$-GraCE}{$k^2$-GraCE}{$k^2$-trees Graph Compression engine (Moteur de compression des graphes par les arbres $k^2$-trees )}	
+		\newacronym{P-GraCE}{P-GraCE}{Pattern Graph Compression engine (Moteur de compression des graphes par extraction de motifs)}			
 			\gls{$k^2$-GraCE} 
 			 et \gls{P-GraCE}, chacun englobant les méthodes relatif à une classe. Nous visons à travers cela à comparer entre les performances des méthodes s'intégrant dans ces deux classes. Notre deuxième contribution consiste en la proposition d'une nouvelle méthode de compression pour les graphes dynamiques, s'intitulant 
-			 \newacronym{ddsm}{DDSM}{Dynamic Dense Subgraph Mining}
+			 \newacronym{ddsm}{DDSM}{Dynamic Dense Subgraph Mining (Compression de graphe sous-graphes denses dynamiques) }
 			 \gls{ddsm}. \\
 			
 			
@@ -184,7 +184,7 @@ Cependant, deux types de méthodes de compression de graphes se sont distinguée
 \lhead{\textbf{Chapitre \thechapter}}
 \fancyhead[R]{\rightmark}
 
-\part{État de l'art}
+\part{Synthèse bibliographique}
 %---->chapitre 01 :« cadrage du projet »
 	\chapter{ Théorie des graphes}
 	%%Ajouter une petite introduction pour ce chapitre
@@ -420,6 +420,40 @@ Durant cette première phase, le moteur $k^2$-GraCE utilise des stratégies qui 
 	\label{mat_diff}
 \end{figure}
 
+Nous fournissons ci-après l'algorithme de construction de la matrice de différence :
+
+	\begin{algorithm}[H]
+					
+					\caption{ConstructDiffMatrice}
+					\label{alg:diffMat}
+					\textbf{Entrée :}
+						\begin{itemize}[label=$\bullet$]
+							\item M[][][] : la matrice d'adjacence
+						\end{itemize}
+					\textbf{Sortie :} La matrice de Différence\\							\noindent\rule{\textwidth}{1pt}
+						
+						
+				\begin{algorithmic} [1]
+					\STATE MatriceDiff[][][]
+					\STATE MatriceDiff[1,:,:] = M[1,:,:]
+					\FOR{$i = 2 ... T $} 
+						\FOR{$j = 1 ... N $} 
+							\FOR{$k = 1 ... N $} 
+								\IF {M[i][j][k] == M[i-1][j][k]}
+									\STATE MatriceDiff[i][j][k] = 0
+								\ELSE
+									\STATE MatriceDiff[i][j][k] = 1
+								\ENDIF
+							\ENDFOR
+							
+						\ENDFOR
+					\ENDFOR
+				
+					\RETURN MatriceDiff
+				\end{algorithmic}
+			\end{algorithm}
+
+
 Nous notons que l'utilisation de ce module dans le processus de construction de l'arbre $k^2$-tree n'est pas obligatoire. Cette phase ne figure pas dans l'algorithme de base. Nous voulons, à travers son intégration dans le moteur \gls{$k^2$-GraCE}, rassembler davantage les nœuds ayant des voisins communs et donc les zones homogènes dans la matrice d'adjacence (zones plaines de 0 ou zones plaines de 1) ou augmenter le nombre de cellules nulles dans la matrice d'adjacence.
 		
 			\subsubsection{Construction de l'arbre $k^2$-tree}
@@ -641,7 +675,7 @@ Cette alternative sera employée pour le cas des graphes étiquetés. Nous fourn
 						\STATE nouvelC = nouvelC $\cup$ \{ les k meilleur sous-structures de nouvelStruct \}
 					\ENDFOR
 					\STATE limit = limit -1
-					\IF {$h$( meilleur sous-structure de C) <= $h$($meilleurStruct$)  }
+					\IF {$h$( meilleur sous-structure de C) >= $h$($meilleurStruct$)  }
 					
 					\STATE $meilleurStruct$  = meilleur sous-structure de C
 					\ENDIF
@@ -650,7 +684,37 @@ Cette alternative sera employée pour le cas des graphes étiquetés. Nous fourn
 					
 				\end{algorithmic}
 			\end{algorithm}
+			
+Afin de mieux illustrer le fonctionnement de cet algorithme, nous proposons l'exemple du graphe de la figure \ref{beam}. Nous considérons dans cet exemple qu'un sommet est représenté sur 8 bits, un lien est représenté sur 8 bits et que chaque pointeur est représenté sur 4 bits.
 
+
+\begin{figure}[H]
+	\centering
+	
+	\includegraphics[scale=0.5]{ressources/image/beam_search.png}
+	\caption{Exemple de Graphe Étiqueté}
+	\label{beam}
+ \end{figure}
+ 
+ Au départ chaque nœud est considéré comme une sous-structure, nous obtenons donc quartes sous structures:  A, B, C et X. Par la suite, chacune des sous structures  est étendues par un sommet et une arête tout en estimant le gain obtenu par chaque extension. Le sommet C  ne peut être étendu car il possède  uniquement des arêtes entrantes. Nous obtenons donc encore quatre sous structures : A-B, A-C, B-C et X-C. Les trois premières sous-structures donnent le même gain de 24 bits. Tant dis que la quatrième donne une configuration non permise à cause des chevauchement entre ses instances qui possèdent le nœud x  en commun. Uniquement la sous-structure A-B peut être étendue dans le prochain niveau. Cette dernière étape donne ainsi le motif A-B-C apportant un gain de 64 bits et qui est considéré comme la meilleur sous-structure.  
+ 
+ \begin{figure}[H]
+	\centering
+	
+	\includegraphics[scale=0.5]{ressources/image/beam_tree.png}
+	\caption{Arbre de recherche (k= $ {\infty} $ , limit = $ {\infty} $)}
+	\label{beam_tree}
+ \end{figure}
+ 
+Les nœuds du meilleur motif seront agrégés en un seul nœud. La figure \ref{beam_res} donne le résultat finale.  
+ 
+  \begin{figure}[H]
+	\centering
+	
+	\includegraphics[scale=0.5]{ressources/image/beam_result.png}
+	\caption{Résultat de l'exécution de l'algorithme du beam-search}
+	\label{beam_res}
+ \end{figure}
 
 
 \item \textbf{Méthodes de clustering :}
@@ -688,7 +752,7 @@ Pour décomposer le graphe, la méthode passe par quatre étapes : D'abord, le d
 
 où :
 \begin{itemize}
-\item $A_{ij}$ est le poids de l'arréte entre le nœud i et le nœud j.
+\item $A_{ij}$ est le poids de l'arrête entre le nœud i et le nœud j.
 \item ${k}_{i},{k}_{j}$ sont poids des arêtes liées aux nœuds  i et  j respectivement.
 \item $2m$ est la somme des poids des arêtes du graphe. 
 \item ${c}_{i}, {c}_{j}$ sont les communautés des nœuds.
@@ -765,8 +829,11 @@ Une fois les signatures sont construites, les nœuds ayant les mêmes valeurs se
 La dernière méthode d'extraction de motifs offerte par le moteur P-GraCE se base sur les blocs les plus fréquents dans la matrice d'adjacence. Cette méthode est destinée aux graphes ayant une matrice d'adjacence contenant de larges zones nulles. L'ensemble des motifs à découvrir est prédéfinies aux départ et consiste en trois types de motifs qui sont paramétrés par la taille du motifs :
 	\begin{enumerate}[label=(\alph*)]
 		\item \textbf{Type 01 :} Ce premier ensemble de motifs consiste en les vecteurs ayant uniquement deux '1' ,le premier dans le bit de poids fort et un autre dans l'une des position restante, et le vecteur nul. Pour une taille de motifs $2^n$ bits, nous obtenons un ensemble de taille $2^n$.
+		
+		
+		
 		\item \textbf{Type 02 :} Le deuxième ensemble de motifs consiste en les vecteurs ayant uniquement un seul '1'. La taille de cet ensemble est de $2^n$ motifs pour des motifs de taille $2^n$ bits.
-		\item \textbf{Type 03 :}  Ce dernier ensemble de motifs consiste en l'union des deux ensembles précédents. Dans le cas de cet ensemble, nous obtenons une taille de $2^{n+1}$ motifs pour une taille de motifs de $2^n$.
+		\item \textbf{Type 03 :}  Ce dernier ensemble de motifs consiste en l'union des deux ensembles précédents. Dans le cas de cet ensemble, nous obtenons $2^{n+1}$ motifs pour une taille de motifs de $2^n$.
 	\end{enumerate}	
 
 Chaque ligne de la matrice d'adjacence est donc divisé en plusieurs blocs ayant la même taille que les motifs. Ces blocs seront comparés avec les motifs selon le type choisies et dans le cas de correspondance ils seront remplacés par l'identifiant du motif (0...n-1) qui est de taille n pour des motifs de taille $2^n$.
@@ -783,7 +850,7 @@ Chaque ligne de la matrice d'adjacence est donc divisé en plusieurs blocs ayant
 		 \item Comme nous l'avons déjà préciser P-GraCE utilise le beam-search pour le cas des graphes  étiquetés. Il est fondamentalement guidé par le principe \gls{mdl}. L'évaluation heuristique effectuée suppose que la meilleure sous-structure est celle qui minimise le \gls{mdl} du graphe en entrée lorsqu'il est compressé par cette sous-structure. Notons la longueur de description de S par DL (S), la longueur de description du graphe d'entrée G  par DL (G) et la longueur de description du graphe après compression par DL (G | S). L'heuristique est alors rien d'autre que le taux de compression et peut être définie ainsi :
 		 
 		\begin{center}
-		compression = $\frac{DL(S)+DL(G|S)} {DL(G)}$
+		compression = $\frac{DL(G)}{DL(S)+DL(G|S)} $
 		\end{center}
 		
 		\item  Dans le cas de l'utilisation des méthodes de clustering, nous obtenons une liste des structures les plus fréquentes. Pour chaque structure identifiée nous cherchons le motif qui la décrit le mieux en se basant sur un ensemble prédéfini de motifs (étoile, clique, noyau bipartie, semi clique, semi noyau bipartie). Afin de trouver le motif approximatif de la structure, nous utiliserons les formules proposées dans \citep{koutra2015summarizing} (voir section \ref{vog_desc}).
