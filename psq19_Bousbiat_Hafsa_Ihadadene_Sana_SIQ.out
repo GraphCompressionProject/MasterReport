@@ -78,8 +78,11 @@
 \BOOKMARK [2][-]{subsection.5.5.2}{\311valuation de l'algorithme du beam-search :}{section.5.5}% 78
 \BOOKMARK [2][-]{subsection.5.5.3}{\311valuation de la m\351thode DDSM :}{section.5.5}% 79
 \BOOKMARK [1][-]{section.5.6}{Comparaison entre les diff\351rentes m\351thodes:}{chapter.5}% 80
-\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 81
-\BOOKMARK [0][-]{chapter.6}{Conclusion G\351n\351rale}{part.2}% 82
-\BOOKMARK [0][-]{appendix.A}{Extraction de voisins dans un arbre k2-tree}{part.2}% 83
-\BOOKMARK [0][-]{appendix.B}{Description des graphes de test}{part.2}% 84
-\BOOKMARK [0][-]{appendix.C}{Algorithmes des m\351thodes de clustering}{part.2}% 85
+\BOOKMARK [2][-]{subsection.5.6.1}{Graphes orient\351s statiques :}{section.5.6}% 81
+\BOOKMARK [2][-]{subsection.5.6.2}{Graphes non orient\351s statiques :}{section.5.6}% 82
+\BOOKMARK [2][-]{subsection.5.6.3}{Graphes dynamiques :}{section.5.6}% 83
+\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 84
+\BOOKMARK [0][-]{chapter.6}{Conclusion G\351n\351rale}{part.2}% 85
+\BOOKMARK [0][-]{appendix.A}{Extraction de voisins dans un arbre k2-tree}{part.2}% 86
+\BOOKMARK [0][-]{appendix.B}{Description des graphes de test}{part.2}% 87
+\BOOKMARK [0][-]{appendix.C}{Algorithmes des m\351thodes de clustering}{part.2}% 88

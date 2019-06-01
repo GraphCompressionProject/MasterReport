@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  29 MAY 2019 08:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.19)  1 JUN 2019 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1562,6 +1562,9 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 LaTeX Warning: Label `notk2grace' multiply defined.
 
 
+LaTeX Warning: Label `fig:comp-dyn' multiply defined.
+
+
 LaTeX Warning: Label `comgen' multiply defined.
 
 )
@@ -1736,7 +1739,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./ressources/image/ESI.png, id=383, 651.43375pt x 190.7125pt>
+<./ressources/image/ESI.png, id=395, 651.43375pt x 190.7125pt>
 File: ./ressources/image/ESI.png Graphic file (type png)
 <use ./ressources/image/ESI.png>
 Package pdftex.def Info: ./ressources/image/ESI.png  used on input line 10.
@@ -1837,7 +1840,7 @@ Package pdfpages Warning: Option `page' is unknow to \includepdf.
 (pdfpages)                Did you mean `pages'? (Note the `s'!)
 (pdfpages)                OK, I'll proceed as if it were `pages'.
 
-<psq_absract_ar.pdf, id=404, 597.50829pt x 845.0471pt>
+<psq_absract_ar.pdf, id=417, 597.50829pt x 845.0471pt>
 File: psq_absract_ar.pdf Graphic file (type pdf)
 <use psq_absract_ar.pdf>
 Package pdftex.def Info: psq_absract_ar.pdf  used on input line 120.
@@ -1846,7 +1849,7 @@ File: psq_absract_ar.pdf Graphic file (type pdf)
 <use psq_absract_ar.pdf>
 Package pdftex.def Info: psq_absract_ar.pdf  used on input line 120.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<psq_absract_ar.pdf, id=407, page=1, 597.50829pt x 845.0471pt>
+<psq_absract_ar.pdf, id=420, page=1, 597.50829pt x 845.0471pt>
 File: psq_absract_ar.pdf Graphic file (type pdf)
 <use psq_absract_ar.pdf, page 1>
 Package pdftex.def Info: psq_absract_ar.pdf , page1 used on input line 120.
@@ -1997,7 +2000,7 @@ ss on input line 18.
 [4
 
 ]
-<./ressources/image/graphNonOriente.png, id=807, 328.75764pt x 333.00882pt>
+<./ressources/image/graphNonOriente.png, id=830, 328.75764pt x 333.00882pt>
 File: ./ressources/image/graphNonOriente.png Graphic file (type png)
 <use ./ressources/image/graphNonOriente.png>
 Package pdftex.def Info: ./ressources/image/graphNonOriente.png  used on input 
@@ -2016,7 +2019,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5 <./ressources/image/graphNonOriente.png>])
 (./Chapitres/TheorieDesGraphes/GrapheOrientee.tex
-<./ressources/image/RepDiGraphe.png, id=844, 1204.5pt x 797.98125pt>
+<./ressources/image/RepDiGraphe.png, id=867, 1204.5pt x 797.98125pt>
 File: ./ressources/image/RepDiGraphe.png Graphic file (type png)
 <use ./ressources/image/RepDiGraphe.png>
 Package pdftex.def Info: ./ressources/image/RepDiGraphe.png  used on input line
@@ -2053,13 +2056,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-<./ressources/image/graphAdjace.png, id=912, 361.35pt x 306.0847pt>
+<./ressources/image/graphAdjace.png, id=935, 361.35pt x 306.0847pt>
 File: ./ressources/image/graphAdjace.png Graphic file (type png)
 <use ./ressources/image/graphAdjace.png>
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  31.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/matriceAdjac.png, id=913, 143.3355pt x 72.87225pt>
+<./ressources/image/matriceAdjac.png, id=936, 143.3355pt x 72.87225pt>
 File: ./ressources/image/matriceAdjac.png Graphic file (type png)
 <use ./ressources/image/matriceAdjac.png>
 Package pdftex.def Info: ./ressources/image/matriceAdjac.png  used on input lin
@@ -2073,13 +2076,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9 <./ressources/image/graphAdjace.png> <./ressources/image/matriceAdjac.png>]
-<./ressources/image/graphIncid.png, id=931, 410.94705pt x 365.60118pt>
+<./ressources/image/graphIncid.png, id=955, 410.94705pt x 365.60118pt>
 File: ./ressources/image/graphIncid.png Graphic file (type png)
 <use ./ressources/image/graphIncid.png>
 Package pdftex.def Info: ./ressources/image/graphIncid.png  used on input line 
 74.
 (pdftex.def)             Requested size: 109.99779pt x 99.99672pt.
-<./ressources/image/matriceIncid.png, id=932, 192.11775pt x 101.178pt>
+<./ressources/image/matriceIncid.png, id=956, 192.11775pt x 101.178pt>
 File: ./ressources/image/matriceIncid.png Graphic file (type png)
 <use ./ressources/image/matriceIncid.png>
 Package pdftex.def Info: ./ressources/image/matriceIncid.png  used on input lin
@@ -2090,7 +2093,7 @@ File: ./ressources/image/graphAdjace.png Graphic file (type png)
 Package pdftex.def Info: ./ressources/image/graphAdjace.png  used on input line
  99.
 (pdftex.def)             Requested size: 109.9993pt x 99.99944pt.
-<./ressources/image/listeAdjace.png, id=939, 362.76706pt x 294.74823pt>
+<./ressources/image/listeAdjace.png, id=963, 362.76706pt x 294.74823pt>
 File: ./ressources/image/listeAdjace.png Graphic file (type png)
 <use ./ressources/image/listeAdjace.png>
 Package pdftex.def Info: ./ressources/image/listeAdjace.png  used on input line
@@ -2129,7 +2132,7 @@ ss on input line 4.
 [13
 
 ]) (./ChapitresPFE/CompressionDesGraphes/TypeDeCompression.tex
-<./ressources/image/SansPerte.png, id=982, 793.96625pt x 118.4425pt>
+<./ressources/image/SansPerte.png, id=1005, 793.96625pt x 118.4425pt>
 File: ./ressources/image/SansPerte.png Graphic file (type png)
 <use ./ressources/image/SansPerte.png>
 Package pdftex.def Info: ./ressources/image/SansPerte.png  used on input line 8
@@ -2146,7 +2149,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-<./ressources/image/AvecPerte.png, id=991, 768.8725pt x 118.4425pt>
+<./ressources/image/AvecPerte.png, id=1014, 768.8725pt x 118.4425pt>
 File: ./ressources/image/AvecPerte.png Graphic file (type png)
 <use ./ressources/image/AvecPerte.png>
 Package pdftex.def Info: ./ressources/image/AvecPerte.png  used on input line 1
@@ -2187,7 +2190,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<./ressources/image/xx.jpg, id=1053, 677.53125pt x 380.92313pt>
+<./ressources/image/xx.jpg, id=1076, 677.53125pt x 380.92313pt>
 File: ./ressources/image/xx.jpg Graphic file (type jpg)
 <use ./ressources/image/xx.jpg>
 Package pdftex.def Info: ./ressources/image/xx.jpg  used on input line 17.
@@ -2211,7 +2214,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18 <./ressources/image/xx.jpg>]
-<./ressources/image/Classification.png, id=1083, 818.45775pt x 532.53957pt>
+<./ressources/image/Classification.png, id=1106, 818.45775pt x 532.53957pt>
 File: ./ressources/image/Classification.png Graphic file (type png)
 <use ./ressources/image/Classification.png>
 Package pdftex.def Info: ./ressources/image/Classification.png  used on input l
@@ -2258,7 +2261,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20 <./ressources/image/Classification.png>]
-<./ressources/image/k2-trees.png, id=1113, 702.2235pt x 285.4665pt>
+<./ressources/image/k2-trees.png, id=1136, 702.2235pt x 285.4665pt>
 File: ./ressources/image/k2-trees.png Graphic file (type png)
 <use ./ressources/image/k2-trees.png>
 Package pdftex.def Info: ./ressources/image/k2-trees.png  used on input line 15
@@ -2302,7 +2305,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-<./ressources/image/dk2-trees.jpg, id=1151, 461.3235pt x 399.29175pt>
+<./ressources/image/dk2-trees.jpg, id=1174, 461.3235pt x 399.29175pt>
 File: ./ressources/image/dk2-trees.jpg Graphic file (type jpg)
 <use ./ressources/image/dk2-trees.jpg>
 Package pdftex.def Info: ./ressources/image/dk2-trees.jpg  used on input line 5
@@ -2316,7 +2319,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <./ressources/image/dk2-trees.jpg>]
-<./ressources/image/kn-trees.png, id=1162, 443.256pt x 148.75575pt>
+<./ressources/image/kn-trees.png, id=1186, 443.256pt x 148.75575pt>
 File: ./ressources/image/kn-trees.png Graphic file (type png)
 <use ./ressources/image/kn-trees.png>
 Package pdftex.def Info: ./ressources/image/kn-trees.png  used on input line 67
@@ -2339,7 +2342,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--113
 
  []
 
-<./ressources/image/k2-trees-delta.png, id=1181, 781.11826pt x 376.40625pt>
+<./ressources/image/k2-trees-delta.png, id=1204, 781.11826pt x 376.40625pt>
 File: ./ressources/image/k2-trees-delta.png Graphic file (type png)
 <use ./ressources/image/k2-trees-delta.png>
 Package pdftex.def Info: ./ressources/image/k2-trees-delta.png  used on input l
@@ -2352,7 +2355,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
-<./ressources/image/k2-treaps.png, id=1202, 784.1295pt x 439.04025pt>
+<./ressources/image/k2-treaps.png, id=1225, 784.1295pt x 439.04025pt>
 File: ./ressources/image/k2-treaps.png Graphic file (type png)
 <use ./ressources/image/k2-treaps.png>
 Package pdftex.def Info: ./ressources/image/k2-treaps.png  used on input line 1
@@ -2366,7 +2369,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26 <./ressources/image/k2-trees-delta.png>]
-<./ressources/image/Ik2-trees.png, id=1217, 493.24275pt x 345.08925pt>
+<./ressources/image/Ik2-trees.png, id=1240, 493.24275pt x 345.08925pt>
 File: ./ressources/image/Ik2-trees.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees.png  used on input line 1
@@ -2380,7 +2383,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27 <./ressources/image/k2-treaps.png>]
-<./ressources/image/Ik2-trees-diff.png, id=1230, 451.08525pt x 431.211pt>
+<./ressources/image/Ik2-trees-diff.png, id=1253, 451.08525pt x 431.211pt>
 File: ./ressources/image/Ik2-trees-diff.png Graphic file (type png)
 <use ./ressources/image/Ik2-trees-diff.png>
 Package pdftex.def Info: ./ressources/image/Ik2-trees-diff.png  used on input l
@@ -2405,7 +2408,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: Reference `k2-trees-att-graphe' on page 30 undefined on input li
 ne 227.
 
-<./ressources/image/k2-trees-att-relation.png, id=1248, 555.2745pt x 334.24875p
+<./ressources/image/k2-trees-att-relation.png, id=1271, 555.2745pt x 334.24875p
 t>
 File: ./ressources/image/k2-trees-att-relation.png Graphic file (type png)
 <use ./ressources/image/k2-trees-att-relation.png>
@@ -2565,7 +2568,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [40] (./ChapitresPFE/ExtractionMotifs/intra_inter_mot_mat.tex
-<ressources/image/inter_intra.png, id=1416, 980.66376pt x 326.21875pt>
+<ressources/image/inter_intra.png, id=1439, 980.66376pt x 326.21875pt>
 File: ressources/image/inter_intra.png Graphic file (type png)
 <use ressources/image/inter_intra.png>
 Package pdftex.def Info: ressources/image/inter_intra.png  used on input line 7
@@ -2611,7 +2614,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [43] (./ChapitresPFE/ExtractionMotifs/gRepair.tex
-<./ressources/image/grepair.png, id=1474, 639.38875pt x 664.4825pt>
+<./ressources/image/grepair.png, id=1497, 639.38875pt x 664.4825pt>
 File: ./ressources/image/grepair.png Graphic file (type png)
 <use ./ressources/image/grepair.png>
 Package pdftex.def Info: ./ressources/image/grepair.png  used on input line 5.
@@ -2641,7 +2644,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--8
 
  []
 
-<ressources/image/VNM2_exemple.png, id=1505, 2229.32875pt x 652.4375pt>
+<ressources/image/VNM2_exemple.png, id=1528, 2229.32875pt x 652.4375pt>
 File: ressources/image/VNM2_exemple.png Graphic file (type png)
 <use ressources/image/VNM2_exemple.png>
 Package pdftex.def Info: ressources/image/VNM2_exemple.png  used on input line 
@@ -2771,7 +2774,7 @@ ss on input line 338.
 [51
 
 ]
-<./ressources/image/ograce.jpg, id=1574, 963.6pt x 380.17032pt>
+<./ressources/image/ograce.jpg, id=1597, 963.6pt x 380.17032pt>
 File: ./ressources/image/ograce.jpg Graphic file (type jpg)
 <use ./ressources/image/ograce.jpg>
 Package pdftex.def Info: ./ressources/image/ograce.jpg  used on input line 351.
@@ -2796,13 +2799,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [53]
-<./ressources/image/k2_non.jpg, id=1596, 958.58125pt x 470.75874pt>
+<./ressources/image/k2_non.jpg, id=1619, 958.58125pt x 470.75874pt>
 File: ./ressources/image/k2_non.jpg Graphic file (type jpg)
 <use ./ressources/image/k2_non.jpg>
 Package pdftex.def Info: ./ressources/image/k2_non.jpg  used on input line 407.
 
 (pdftex.def)             Requested size: 383.4257pt x 188.30016pt.
-<./ressources/image/dynk2diff.png, id=1598, 874.26625pt x 376.40625pt>
+<./ressources/image/dynk2diff.png, id=1621, 874.26625pt x 376.40625pt>
 File: ./ressources/image/dynk2diff.png Graphic file (type png)
 <use ./ressources/image/dynk2diff.png>
 Package pdftex.def Info: ./ressources/image/dynk2diff.png  used on input line 4
@@ -2881,7 +2884,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [58]
-<./ressources/image/pgrace.jpg, id=1683, 963.6pt x 380.17032pt>
+<./ressources/image/pgrace.jpg, id=1706, 963.6pt x 380.17032pt>
 File: ./ressources/image/pgrace.jpg Graphic file (type jpg)
 <use ./ressources/image/pgrace.jpg>
 Package pdftex.def Info: ./ressources/image/pgrace.jpg  used on input line 609.
@@ -2920,7 +2923,7 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 655--686
 $[]$ 
  []
 
-<ressources/image/beam_search.png, id=1700, 409.53pt x 384.43625pt>
+<ressources/image/beam_search.png, id=1723, 409.53pt x 384.43625pt>
 File: ressources/image/beam_search.png Graphic file (type png)
 <use ressources/image/beam_search.png>
 Package pdftex.def Info: ressources/image/beam_search.png  used on input line 6
@@ -2933,13 +2936,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [61 <./ressources/image/beam_search.png>]
-<ressources/image/beam_tree.png, id=1723, 839.135pt x 393.47pt>
+<ressources/image/beam_tree.png, id=1746, 839.135pt x 393.47pt>
 File: ressources/image/beam_tree.png Graphic file (type png)
 <use ressources/image/beam_tree.png>
 Package pdftex.def Info: ressources/image/beam_tree.png  used on input line 704
 .
 (pdftex.def)             Requested size: 419.56647pt x 196.73451pt.
-<ressources/image/beam_result.png, id=1725, 509.905pt x 285.065pt>
+<ressources/image/beam_result.png, id=1748, 509.905pt x 285.065pt>
 File: ressources/image/beam_result.png Graphic file (type png)
 <use ressources/image/beam_result.png>
 Package pdftex.def Info: ressources/image/beam_result.png  used on input line 7
@@ -2957,7 +2960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 728--731
 
  []
 
-<ressources/image/slashburn.png, id=1741, 1228.59pt x 551.23589pt>
+<ressources/image/slashburn.png, id=1764, 1228.59pt x 551.23589pt>
 File: ressources/image/slashburn.png Graphic file (type png)
 <use ressources/image/slashburn.png>
 Package pdftex.def Info: ressources/image/slashburn.png  used on input line 737
@@ -3001,7 +3004,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: Command \` invalid in math mode on input line 805.
 
 Missing character: There is no è in font txr!
-<./ressources/image/jacc.png, id=1770, 647.41875pt x 502.87875pt>
+<./ressources/image/jacc.png, id=1793, 647.41875pt x 502.87875pt>
 File: ./ressources/image/jacc.png Graphic file (type png)
 <use ./ressources/image/jacc.png>
 Package pdftex.def Info: ./ressources/image/jacc.png  used on input line 822.
@@ -3075,7 +3078,7 @@ Overfull \hbox (17.62482pt too wide) detected at line 124
 [][] 
  []
 
-<./ressources/image/ddsm_scheme.png, id=1848, 1229.59375pt x 744.7825pt>
+<./ressources/image/ddsm_scheme.png, id=1871, 1229.59375pt x 744.7825pt>
 File: ./ressources/image/ddsm_scheme.png Graphic file (type png)
 <use ./ressources/image/ddsm_scheme.png>
 Package pdftex.def Info: ./ressources/image/ddsm_scheme.png  used on input line
@@ -3101,7 +3104,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [72 <./ressources/image/ddsm_scheme.png>]
 Chapitre 4.
-<ressources/image/ArchGlob.jpg, id=1878, 1245.65375pt x 297.11pt>
+<ressources/image/ArchGlob.jpg, id=1901, 1245.65375pt x 297.11pt>
 File: ressources/image/ArchGlob.jpg Graphic file (type jpg)
 <use ressources/image/ArchGlob.jpg>
 Package pdftex.def Info: ressources/image/ArchGlob.jpg  used on input line 23.
@@ -3113,13 +3116,13 @@ ss on input line 29.
 [73
 
  <./ressources/image/ArchGlob.jpg>]
-<ressources/image/ArchGlob2.jpg, id=1888, 1245.65375pt x 297.11pt>
+<ressources/image/ArchGlob2.jpg, id=1911, 1245.65375pt x 297.11pt>
 File: ressources/image/ArchGlob2.jpg Graphic file (type jpg)
 <use ressources/image/ArchGlob2.jpg>
 Package pdftex.def Info: ressources/image/ArchGlob2.jpg  used on input line 33.
 
 (pdftex.def)             Requested size: 435.98535pt x 103.99005pt.
-<ressources/image/statiqugr.png, id=1889, 631.35875pt x 244.915pt>
+<ressources/image/statiqugr.png, id=1912, 631.35875pt x 244.915pt>
 File: ressources/image/statiqugr.png Graphic file (type png)
 <use ressources/image/statiqugr.png>
 Package pdftex.def Info: ressources/image/statiqugr.png  used on input line 49.
@@ -3133,13 +3136,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [74 <./ressources/image/ArchGlob2.jpg> <./ressources/image/statiqugr.png>]
-<ressources/image/dynamiqgr.png, id=1895, 434.62375pt x 235.88126pt>
+<ressources/image/dynamiqgr.png, id=1918, 434.62375pt x 235.88126pt>
 File: ressources/image/dynamiqgr.png Graphic file (type png)
 <use ressources/image/dynamiqgr.png>
 Package pdftex.def Info: ressources/image/dynamiqgr.png  used on input line 60.
 
 (pdftex.def)             Requested size: 304.23454pt x 165.11575pt.
-<ressources/image/etiquegr.png, id=1896, 290.08376pt x 260.975pt>
+<ressources/image/etiquegr.png, id=1919, 290.08376pt x 260.975pt>
 File: ressources/image/etiquegr.png Graphic file (type png)
 <use ressources/image/etiquegr.png>
 Package pdftex.def Info: ressources/image/etiquegr.png  used on input line 70.
@@ -3159,7 +3162,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [76]
-<ressources/image/funct.png, id=1919, 861.2175pt x 607.26875pt>
+<ressources/image/funct.png, id=1942, 861.2175pt x 607.26875pt>
 File: ressources/image/funct.png Graphic file (type png)
 <use ressources/image/funct.png>
 Package pdftex.def Info: ressources/image/funct.png  used on input line 128.
@@ -3230,24 +3233,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 72.
 
-<ressources/image/Tests/rep-bio.png, id=1988, 389.65575pt x 242.70676pt>
-File: ressources/image/Tests/rep-bio.png Graphic file (type png)
-<use ressources/image/Tests/rep-bio.png>
-Package pdftex.def Info: ressources/image/Tests/rep-bio.png  used on input line
- 81.
-(pdftex.def)             Requested size: 199.16928pt x 124.06026pt.
-<ressources/image/Tests/rep-web-edu.png, id=1989, 367.97475pt x 235.47975pt>
-File: ressources/image/Tests/rep-web-edu.png Graphic file (type png)
-<use ressources/image/Tests/rep-web-edu.png>
-Package pdftex.def Info: ressources/image/Tests/rep-web-edu.png  used on input 
-line 83.
-(pdftex.def)             Requested size: 213.39566pt x 136.56038pt.
-<ressources/image/Tests/rep-web-polblogs.png, id=1990, 393.8715pt x 257.763pt>
-File: ressources/image/Tests/rep-web-polblogs.png Graphic file (type png)
-<use ressources/image/Tests/rep-web-polblogs.png>
-Package pdftex.def Info: ressources/image/Tests/rep-web-polblogs.png  used on i
-nput line 85.
-(pdftex.def)             Requested size: 199.16928pt x 130.34431pt.
+<ressources/image/Tests/tst.png, id=2011, 1218.5525pt x 889.3225pt>
+File: ressources/image/Tests/tst.png Graphic file (type png)
+<use ressources/image/Tests/tst.png>
+Package pdftex.def Info: ressources/image/Tests/tst.png  used on input line 87.
+
+(pdftex.def)             Requested size: 487.41237pt x 355.72269pt.
+
+Overfull \hbox (32.16826pt too wide) in paragraph at lines 87--88
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
@@ -3261,71 +3257,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83 <./ressources/image/Tests/rep-bio.png> <./ressources/image/Tests/rep-web-ed
-u.png> <./ressources/image/Tests/rep-web-polblogs.png>]
-<ressources/image/Tests/K2-paraK-Ratio.png, id=2010, 431.211pt x 258.9675pt>
+[83 <./ressources/image/Tests/tst.png>]
+<ressources/image/Tests/K2-paraK-Ratio.png, id=2024, 504.88625pt x 359.3425pt>
 File: ressources/image/Tests/K2-paraK-Ratio.png Graphic file (type png)
 <use ressources/image/Tests/K2-paraK-Ratio.png>
 Package pdftex.def Info: ressources/image/Tests/K2-paraK-Ratio.png  used on inp
-ut line 102.
-(pdftex.def)             Requested size: 388.08632pt x 233.06857pt.
-<ressources/image/Tests/K2-paraK-NBbits.png, id=2011, 424.58624pt x 257.763pt>
+ut line 104.
+(pdftex.def)             Requested size: 403.90953pt x 287.47438pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[84 <./ressources/image/Tests/K2-paraK-Ratio.png>]
+<ressources/image/Tests/K2-paraK-NBbits.png, id=2032, 533.995pt x 382.42876pt>
 File: ressources/image/Tests/K2-paraK-NBbits.png Graphic file (type png)
 <use ressources/image/Tests/K2-paraK-NBbits.png>
 Package pdftex.def Info: ressources/image/Tests/K2-paraK-NBbits.png  used on in
-put line 110.
-(pdftex.def)             Requested size: 382.12408pt x 231.98456pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[84 <./ressources/image/Tests/K2-paraK-Ratio.png> <./ressources/image/Tests/K2-
-paraK-NBbits.png>]
-<ressources/image/ratioik2.png, id=2020, 948.54375pt x 551.05875pt>
+put line 114.
+(pdftex.def)             Requested size: 427.19658pt x 305.9434pt.
+<ressources/image/ratioik2.png, id=2034, 1287.81125pt x 384.43625pt>
 File: ressources/image/ratioik2.png Graphic file (type png)
 <use ressources/image/ratioik2.png>
-Package pdftex.def Info: ressources/image/ratioik2.png  used on input line 123.
+Package pdftex.def Info: ressources/image/ratioik2.png  used on input line 126.
 
-(pdftex.def)             Requested size: 379.41077pt x 220.41959pt.
-<ressources/image/Tests/K2-Texec.png, id=2022, 439.6425pt x 416.15475pt>
-File: ressources/image/Tests/K2-Texec.png Graphic file (type png)
-<use ressources/image/Tests/K2-Texec.png>
-Package pdftex.def Info: ressources/image/Tests/K2-Texec.png  used on input lin
-e 134.
-(pdftex.def)             Requested size: 395.67459pt x 374.53581pt.
+(pdftex.def)             Requested size: 489.37337pt x 146.08728pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[85 <./ressources/image/ratioik2.png>]
-<ressources/image/Tests/k2-ordre.png, id=2029, 870.25125pt x 543.02875pt>
-File: ressources/image/Tests/k2-ordre.png Graphic file (type png)
-<use ressources/image/Tests/k2-ordre.png>
-Package pdftex.def Info: ressources/image/Tests/k2-ordre.png  used on input lin
-e 151.
-(pdftex.def)             Requested size: 435.12456pt x 271.5137pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[86 <./ressources/image/Tests/K2-Texec.png>]
-<ressources/image/Tests/tab-pret.png, id=2039, 498.663pt x 126.4725pt>
-File: ressources/image/Tests/tab-pret.png Graphic file (type png)
-<use ressources/image/Tests/tab-pret.png>
-Package pdftex.def Info: ressources/image/Tests/tab-pret.png  used on input lin
-e 167.
-(pdftex.def)             Requested size: 498.66177pt x 126.47218pt.
-
-Overfull \hbox (43.41766pt too wide) in paragraph at lines 167--168
+Overfull \hbox (34.12926pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
@@ -3335,43 +3295,88 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[85 <./ressources/image/Tests/K2-paraK-NBbits.png> <./ressources/image/ratioik2
+.png>]
+<ressources/image/Tests/K2-Texec.png, id=2042, 690.58pt x 627.34375pt>
+File: ressources/image/Tests/K2-Texec.png Graphic file (type png)
+<use ressources/image/Tests/K2-Texec.png>
+Package pdftex.def Info: ressources/image/Tests/K2-Texec.png  used on input lin
+e 138.
+(pdftex.def)             Requested size: 414.3512pt x 376.40915pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[86 <./ressources/image/Tests/K2-Texec.png>]
+<ressources/image/Tests/k2-ordre.png, id=2049, 668.4975pt x 486.81876pt>
+File: ressources/image/Tests/k2-ordre.png Graphic file (type png)
+<use ressources/image/Tests/k2-ordre.png>
+Package pdftex.def Info: ressources/image/Tests/k2-ordre.png  used on input lin
+e 155.
+(pdftex.def)             Requested size: 434.51822pt x 316.42844pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [87 <./ressources/image/Tests/k2-ordre.png>]
-<ressources/image/Tests/gain.png, id=2045, 401.70074pt x 215.00325pt>
+<ressources/image/Tests/tab-pret.png, id=2061, 498.663pt x 126.4725pt>
+File: ressources/image/Tests/tab-pret.png Graphic file (type png)
+<use ressources/image/Tests/tab-pret.png>
+Package pdftex.def Info: ressources/image/Tests/tab-pret.png  used on input lin
+e 171.
+(pdftex.def)             Requested size: 448.79254pt x 113.82419pt.
+<ressources/image/Tests/gain.png, id=2063, 719.68875pt x 383.4325pt>
 File: ressources/image/Tests/gain.png Graphic file (type png)
 <use ressources/image/Tests/gain.png>
-Package pdftex.def Info: ressources/image/Tests/gain.png  used on input line 17
-5.
-(pdftex.def)             Requested size: 401.69975pt x 215.00272pt.
-<ressources/image/perteIk2.png, id=2047, 508.90125pt x 344.28625pt>
+Package pdftex.def Info: ressources/image/Tests/gain.png  used on input line 18
+2.
+(pdftex.def)             Requested size: 359.84349pt x 191.71577pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[88 <./ressources/image/Tests/tab-pret.png>]
+<ressources/image/ik2.png, id=2070, 974.64125pt x 567.11874pt>
+File: ressources/image/ik2.png Graphic file (type png)
+<use ressources/image/ik2.png>
+Package pdftex.def Info: ressources/image/ik2.png  used on input line 196.
+(pdftex.def)             Requested size: 467.82248pt x 272.2139pt.
+
+Overfull \hbox (12.57837pt too wide) in paragraph at lines 196--197
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[89 <./ressources/image/Tests/gain.png> <./ressources/image/ik2.png>]
+<ressources/image/perteIk2.png, id=2079, 574.145pt x 393.47pt>
 File: ressources/image/perteIk2.png Graphic file (type png)
 <use ressources/image/perteIk2.png>
-Package pdftex.def Info: ressources/image/perteIk2.png  used on input line 189.
+Package pdftex.def Info: ressources/image/perteIk2.png  used on input line 207.
 
-(pdftex.def)             Requested size: 254.45pt x 172.1427pt.
+(pdftex.def)             Requested size: 287.0718pt x 196.73451pt.
+<ressources/image/m12.png, id=2081, 855.195pt x 542.025pt>
+File: ressources/image/m12.png Graphic file (type png)
+<use ressources/image/m12.png>
+Package pdftex.def Info: ressources/image/m12.png  used on input line 227.
+(pdftex.def)             Requested size: 470.35872pt x 298.11467pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[88 <./ressources/image/Tests/tab-pret.png> <./ressources/image/Tests/gain.png>
-]
-<ressources/image/m3.png, id=2057, 547.04375pt x 350.30875pt>
-File: ressources/image/m3.png Graphic file (type png)
-<use ressources/image/m3.png>
-Package pdftex.def Info: ressources/image/m3.png  used on input line 209.
-(pdftex.def)             Requested size: 199.16928pt x 127.54358pt.
-<ressources/image/m1.png, id=2058, 483.8075pt x 307.1475pt>
-File: ressources/image/m1.png Graphic file (type png)
-<use ressources/image/m1.png>
-Package pdftex.def Info: ressources/image/m1.png  used on input line 211.
-(pdftex.def)             Requested size: 213.39566pt x 135.47337pt.
-<ressources/image/m2.png, id=2059, 548.0475pt x 273.02pt>
-File: ressources/image/m2.png Graphic file (type png)
-<use ressources/image/m2.png>
-Package pdftex.def Info: ressources/image/m2.png  used on input line 213.
-(pdftex.def)             Requested size: 199.16928pt x 99.22029pt.
+Overfull \hbox (15.11461pt too wide) in paragraph at lines 227--228
+ [] 
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3379,71 +3384,105 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[89 <./ressources/image/perteIk2.png>]
-<ressources/image/ratioBeam.png, id=2066, 587.19376pt x 313.17pt>
-File: ressources/image/ratioBeam.png Graphic file (type png)
-<use ressources/image/ratioBeam.png>
-Package pdftex.def Info: ressources/image/ratioBeam.png  used on input line 234
-.
-(pdftex.def)             Requested size: 199.16928pt x 106.22311pt.
-<ressources/image/tmpBeam.png, id=2067, 594.22pt x 324.21124pt>
-File: ressources/image/tmpBeam.png Graphic file (type png)
-<use ressources/image/tmpBeam.png>
-Package pdftex.def Info: ressources/image/tmpBeam.png  used on input line 236.
-(pdftex.def)             Requested size: 213.39566pt x 116.42902pt.
-
+[90 <./ressources/image/perteIk2.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[90 <./ressources/image/m3.png> <./ressources/image/m1.png> <./ressources/image
-/m2.png>]
-<ressources/image/grDDSM.png, id=2079, 1215.54124pt x 250.9375pt>
+[91 <./ressources/image/m12.png>]
+<ressources/image/beam.png, id=2093, 1279.78125pt x 359.3425pt>
+File: ressources/image/beam.png Graphic file (type png)
+<use ressources/image/beam.png>
+Package pdftex.def Info: ressources/image/beam.png  used on input line 250.
+(pdftex.def)             Requested size: 473.51166pt x 132.95464pt.
+
+Overfull \hbox (18.26755pt too wide) in paragraph at lines 250--251
+[][] 
+ []
+
+<ressources/image/grDDSM.png, id=2095, 1215.54124pt x 250.9375pt>
 File: ressources/image/grDDSM.png Graphic file (type png)
 <use ressources/image/grDDSM.png>
-Package pdftex.def Info: ressources/image/grDDSM.png  used on input line 253.
+Package pdftex.def Info: ressources/image/grDDSM.png  used on input line 267.
 (pdftex.def)             Requested size: 486.20789pt x 100.37321pt.
 
-Overfull \hbox (30.96378pt too wide) in paragraph at lines 253--255
+Overfull \hbox (30.96378pt too wide) in paragraph at lines 267--269
 [][]
  []
 
-<ressources/image/ratioDDSM.png, id=2080, 572.1375pt x 300.12125pt>
-File: ressources/image/ratioDDSM.png Graphic file (type png)
-<use ressources/image/ratioDDSM.png>
-Package pdftex.def Info: ressources/image/ratioDDSM.png  used on input line 260
-.
-(pdftex.def)             Requested size: 199.16928pt x 104.47615pt.
-<ressources/image/tmpDDSM.png, id=2081, 610.28pt x 305.14pt>
-File: ressources/image/tmpDDSM.png Graphic file (type png)
-<use ressources/image/tmpDDSM.png>
-Package pdftex.def Info: ressources/image/tmpDDSM.png  used on input line 262.
-(pdftex.def)             Requested size: 213.39566pt x 106.69815pt.
+<ressources/image/DDSM.png, id=2096, 1040.88875pt x 326.21875pt>
+File: ressources/image/DDSM.png Graphic file (type png)
+<use ressources/image/DDSM.png>
+Package pdftex.def Info: ressources/image/DDSM.png  used on input line 273.
+(pdftex.def)             Requested size: 468.39561pt x 146.79707pt.
+
+Overfull \hbox (13.1515pt too wide) in paragraph at lines 273--274
+ [] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[91 <./ressources/image/ratioBeam.png> <./ressources/image/tmpBeam.png> <./ress
-ources/image/grDDSM.png>]
+[92 <./ressources/image/beam.png> <./ressources/image/grDDSM.png>]
+<ressources/image/statDDSM.png, id=2102, 1249.66875pt x 373.395pt>
+File: ressources/image/statDDSM.png Graphic file (type png)
+<use ressources/image/statDDSM.png>
+Package pdftex.def Info: ressources/image/statDDSM.png  used on input line 285.
+
+(pdftex.def)             Requested size: 474.87906pt x 141.89157pt.
+
+Overfull \hbox (19.63495pt too wide) in paragraph at lines 285--286
+[][] 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[92 <./ressources/image/ratioDDSM.png> <./ressources/image/tmpDDSM.png>])
-(./ChapitresPFE/ConclusionGen.tex
+[93 <./ressources/image/DDSM.png> <./ressources/image/statDDSM.png>]
+<ressources/image/compNon.png, id=2110, 1102.1175pt x 356.33125pt>
+File: ressources/image/compNon.png Graphic file (type png)
+<use ressources/image/compNon.png>
+Package pdftex.def Info: ressources/image/compNon.png  used on input line 304.
+(pdftex.def)             Requested size: 440.83919pt x 142.52997pt.
+<ressources/image/dynComp.png, id=2112, 1154.3125pt x 295.1025pt>
+File: ressources/image/dynComp.png Graphic file (type png)
+<use ressources/image/dynComp.png>
+Package pdftex.def Info: ressources/image/dynComp.png  used on input line 322.
+(pdftex.def)             Requested size: 461.71683pt x 118.0389pt.
+
+Overfull \hbox (6.47272pt too wide) in paragraph at lines 322--323
+ [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[94 <./ressources/image/compNon.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[93]
+[95 <./ressources/image/dynComp.png>]) (./ChapitresPFE/ConclusionGen.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[96]
 Chapitre 6.
 )
 
@@ -3454,7 +3493,7 @@ ss on input line 903.
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 904.
 
-[94
+[97
 
 ]
 Annexe A.
@@ -3494,7 +3533,7 @@ Overfull \hbox (17.62482pt too wide) detected at line 983
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 987.
 
-[95
+[98
 
 ]
 Annexe B.
@@ -3502,7 +3541,7 @@ Annexe B.
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 1020.
 
-[96
+[99
 
 ]
 Annexe C.
@@ -3520,7 +3559,7 @@ Overfull \hbox (17.62482pt too wide) detected at line 1055
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 1057.
 
-[97
+[100
 
 ]
 Overfull \hbox (35.62482pt too wide) in paragraph at lines 1071--1072
@@ -3532,7 +3571,7 @@ Overfull \hbox (17.62482pt too wide) detected at line 1112
 [][] 
  []
 
-[98]
+[101]
 Overfull \hbox (35.62482pt too wide) in paragraph at lines 1127--1128
 []  
  []
@@ -3542,12 +3581,12 @@ Overfull \hbox (17.62482pt too wide) detected at line 1148
 [][] 
  []
 
-(./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.bbl [99]
+(./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.bbl [102]
 
 Package Fancyhdr Warning: \fancyhf's `E' option without twoside option is usele
 ss on input line 85.
 
-[100
+[103
 
 ]
 Underfull \hbox (badness 2922) in paragraph at lines 161--165
@@ -3555,13 +3594,13 @@ Underfull \hbox (badness 2922) in paragraph at lines 161--165
 tion.  \T1/txr/m/it/12 arXiv pre-print
  []
 
-[101] [102]
+[104] [105]
 LaTeX Font Info:    Try loading font information for T1+txtt on input line 264.
 
  (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-[103] [104]) [105]
+[106] [107]) [108]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1155.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1155.
  (./psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.aux)
@@ -3570,7 +3609,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1155.
 
 Package rerunfilecheck Info: File `psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.out'
  has not changed.
-(rerunfilecheck)             Checksum: 70CA2760AAA2914CC1474827AF6DDF43;6499.
+(rerunfilecheck)             Checksum: 5FA2F40679D8B8D16023D46E81C9856D;6747.
 
 
 LaTeX Warning: There were undefined references.
@@ -3581,10 +3620,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1155.
  ) 
 Here is how much of TeX's memory you used:
- 45647 strings out of 492649
- 885148 string characters out of 6129622
- 1043883 words of memory out of 5000000
- 47894 multiletter control sequences out of 15000+600000
+ 45621 strings out of 492649
+ 884485 string characters out of 6129622
+ 1043291 words of memory out of 5000000
+ 47870 multiletter control sequences out of 15000+600000
  648156 words of font info for 215 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,18n,101p,10498b,1052s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3605,11 +3644,11 @@ sr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/texlive/2018/texmf-
 dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (117 pages, 31128
-18 bytes).
+Output written on psq19_Bousbiat_Hafsa_Ihadadene_Sana_SIQ.pdf (120 pages, 33857
+65 bytes).
 PDF statistics:
- 2423 PDF objects out of 2487 (max. 8388607)
- 2135 compressed objects within 22 object streams
+ 2447 PDF objects out of 2487 (max. 8388607)
+ 2159 compressed objects within 22 object streams
  654 named destinations out of 1000 (max. 500000)
- 1147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

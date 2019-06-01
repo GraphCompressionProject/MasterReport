@@ -87,18 +87,21 @@
 \contentsline {section}{\numberline {5.3}Pr\IeC {\'e}sentation des graphes de test}{80}{section.5.3}
 \contentsline {section}{\numberline {5.4}\IeC {\'E}valuation du moteur $k^2$-GraCE}{82}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}\IeC {\'E}tude de l'effet de la repr\IeC {\'e}sentation du graphe en entr\IeC {\'e}e}{83}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Analyse de l'impact du param\IeC {\`e}tre k}{83}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}\IeC {\'E}tude de l'apport de la phase de pr\IeC {\'e}-traitement }{86}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.2}Analyse de l'impact du param\IeC {\`e}tre k}{84}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}\IeC {\'E}tude de l'apport de la phase de pr\IeC {\'e}-traitement }{87}{subsection.5.4.3}
 \contentsline {subsubsection}{\IeC {\'E}tude de l'effet de l'ordre}{87}{section*.75}
-\contentsline {subsubsection}{\IeC {\'E}tude de l'effet de l'utilisation de la partie sup\IeC {\'e}rieure uniquement de la matrice d'adjacence}{87}{section*.77}
+\contentsline {subsubsection}{\IeC {\'E}tude de l'effet de l'utilisation de la partie sup\IeC {\'e}rieure uniquement de la matrice d'adjacence}{88}{section*.77}
 \contentsline {subsubsection}{\IeC {\'E}tude de l'effet de l'utilisation d'une matrice de diff\IeC {\'e}rence}{89}{section*.80}
-\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{89}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}\IeC {\'E}tude de l'influence du type et de la taille des motifs dans les m\IeC {\'e}thodes bas\IeC {\'e}es sur la matrice d'adjacence :}{89}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}\IeC {\'E}valuation de l'algorithme du beam-search :}{90}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}\IeC {\'E}valuation de la m\IeC {\'e}thode DDSM :}{91}{subsection.5.5.3}
-\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rentes m\IeC {\'e}thodes:}{92}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion}{92}{section.5.7}
-\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{94}{chapter.6}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{95}{appendix.A}
-\contentsline {chapter}{\numberline {B}Description des graphes de test}{96}{appendix.B}
-\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{97}{appendix.C}
+\contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{90}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}\IeC {\'E}tude de l'influence du type et de la taille des motifs dans les m\IeC {\'e}thodes bas\IeC {\'e}es sur la matrice d'adjacence :}{91}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}\IeC {\'E}valuation de l'algorithme du beam-search :}{92}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}\IeC {\'E}valuation de la m\IeC {\'e}thode DDSM :}{92}{subsection.5.5.3}
+\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rentes m\IeC {\'e}thodes:}{94}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Graphes orient\IeC {\'e}s statiques :}{94}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Graphes non orient\IeC {\'e}s statiques :}{94}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Graphes dynamiques :}{94}{subsection.5.6.3}
+\contentsline {section}{\numberline {5.7}Conclusion}{95}{section.5.7}
+\contentsline {chapter}{\numberline {6}Conclusion G\IeC {\'e}n\IeC {\'e}rale}{97}{chapter.6}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{98}{appendix.A}
+\contentsline {chapter}{\numberline {B}Description des graphes de test}{99}{appendix.B}
+\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{100}{appendix.C}
