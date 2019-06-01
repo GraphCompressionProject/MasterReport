@@ -740,11 +740,11 @@ Nous illustrons le principe de fonctionnement de cette méthode de clustering su
  \end{figure}
 
 \textbf{\textit{KCBC}} : Cette technique se base sur le principe de dégénérescence \footnote{: La dégénérescence d’un graphe G est le plus petit nombre k de
- telle sorte que chaque sous-graphe $S \in G$ contient un sommet de degré au plus k}. Soit G un graphe non orienté, nous notons par $\Delta$(G) le degré maximal des nœuds de G. Un k-core de G est un sous graphe H de taille maximale tel que $\Delta(H) \ge k$ avec k entier positif.\\
+ telle sorte que chaque sous-graphe $S \in G$ contient un sommet de degré au plus k}. Soit G un graphe non orienté, nous notons par $\Delta$(G) le degré maximal des nœuds de G. Un k-core de G est un sous graphe H de taille maximale tel que $\Delta(H) \le k$ avec k entier positif.\\
 Pour décomposer le graphe, la méthode passe par quatre étapes : D'abord, le degré k de chaque nœud du graphe est calculé. Ensuite, pour chaque degré k allant du plus grand au plus petit le graphe est décomposé en supprimant tous les nœuds dont le degré est inférieure à k, l'opération s'arrête si la décomposition donne un ensemble non vide et le k est choisit comme $k_{max}$ sinon elle se termine quand $k_{max}$=1. Après la décomposition, chaque composant est identifié comme étant une structure. Enfin, les arêtes entre les structures précédemment identifiées sont supprimées. L'algorithme de la méthode est donné en Annexe (\ref{alg:KCBC})\\
 
 
-\textbf{\textit{Louvain}} : C'est un algorithme glouton hiérarchique d'extraction de communauté applicable à de grands graphes. La méthode permet de partitionner un graph en s'appuyant sur la principe de modularité. La modularité est une métrique comprise entre -1 et 1 qui mesure la densité des arêtes a l'intérieure d'un sous graphe comparée a celle des arêtes reliant ce dernier au autres sous-graphes, par suit, l'optimisation de la modularité conduit à un meilleur partitionnement. Pour un graphe pondéré, la modularité est donnée par :    
+\textbf{\textit{Louvain}} : C'est un algorithme glouton hiérarchique d'extraction de communauté applicable à de grands graphes. La méthode permet de partitionner un graph en s'appuyant sur la principe de modularité. La modularité est une métrique comprise entre -1 et 1 qui mesure la densité des arêtes à l'intérieure d'un sous graphe comparée a celle des arêtes reliant ce dernier au autres sous-graphes, par suit, l'optimisation de la modularité conduit à un meilleur partitionnement. Pour un graphe pondéré, la modularité est donnée par :    
 
 \begin{equation} \label{eq:lovain}
 \textit{Q} = \frac{1}{2m} \sum_{ij}[A_{ij} - \frac{{k}_{i}{k}_{j}}{2m}]  \delta({c}_{i},{c}_{j})
@@ -781,6 +781,8 @@ D : \[{d}_{i} := \sum_{(v_i,v_j) \in E_m} e(v_i,v_j)
 			\\
 L'algorithme calcule ensuite le deuxième plus petit vecteur propre \textit{y} de la matrice Laplacienne Q = D - A. Ce vecteur propre (vecteur de Fiedler) contient une valeur pour chaque nœud du graphe, a partir de cette valeur le nœud est affecté a l'une des deux partition. soit r la médian pondérée des valeurs de \textit{y}. Chaque valeur $y_j$ du vecteur propre est comparée à r et le nœud est affecté à une partition selon le résultat de la comparaison.\\
 	
+
+
 
 \item \textbf{Le MinHash:}
 
@@ -870,7 +872,86 @@ Chaque ligne de la matrice d'adjacence est donc divisé en plusieurs blocs ayant
 		   
 		\subsubsection{Traitement des motifs :}
 		
-		Nous proposons pour traiter les motifs deux alternatives dans le moteur P-GraCE. La première consiste à faire une agrégation des nœuds du meilleur motif. Les trois étapes seront donc répétées jusqu'à ce que la taille du graphe en sortie ne peut plus être optimisée. La deuxième alternative consiste à considérer que la liste des sous-structures de l'étape 2 représentent le compressé du graphe de données. Nous offrons dans ce cas la possibilité d'utiliser le codage proposé dans \citep{liu2018reducing}. Il représente cette liste de motifs de manière concise tout en permettant les requêtes d'extraction de voisinage. Dans certaines méthodes une matrice d'erreur est conservée avec la liste des structures pour une compression sans perte.
+		Nous proposons pour traiter les motifs dans le moteur P-GraCE plusieurs alternatives, cela dépend de la méthode utilisé.
+La première consiste à faire une agrégation des nœuds du meilleur motif. Les trois étapes seront donc répétées jusqu'à ce que la taille du graphe en sortie ne peut plus être optimisée. Elle est appliqué dans le cas de l'approche beam-search.
+ La deuxième alternative consiste à considérer un ensemble de la liste des sous-structures de l'étape 2 représentent le compressé du graphe de données. Nous effectuons une sélection à partir de l'ensemble des structures initiales pour obtenir un modelé (ensemble de structure) avec un MDL optimal. Dans ce cas de figure la sélection diffère selon l'abord.
+Dans le cas de l'approche basée sur les méthodes de clustering, la sélection se fait à travers plusieurs algorithmes. Nous présentons ci dessous les méthodes que nous avons appliqué durant cette phase.
+\begin{itemize}
+\item Top10 : Cette méthode commence par ordonner les sous structures selon le gain de codage local apportée par chaqu'une. Le gain de codage local est définit par L(g,$\emptyset$) - L(g,$\omega$) où L(g,$\emptyset$) représente le codage de g (g est le sous graphe contenant la structure) en tant qu'erreur, c'est à dire un modèle vide et L(g,$\omega$) est le cout de codage de g avec la structure $\omega$. Elle sélectionne ensuite les k meilleurs structures ayant un gain local élevé. 
+
+\item Greedy'nForget : Au lieu de prendre en compte tout les combinaisons possibles des structures, l'heuristique GNF considère les structures par ordre décroissant selon leur gain d'encodage local. Elle parcourt structure par structure et inclut dans le modèle celle qui réduit le MDL. L'algorithme de GNF est présenté dans ce qui suit (\ref{alg:GNF})   
+
+\end{itemize}
+
+\begin{algorithm}[H]
+\label{alg:GNF}
+	\caption{Geedy'nForget}
+		\textbf{Entrée :}
+		\begin{itemize}[label=$\bullet$]
+			\item $\mathcal{C}$ : Listes des structure évaluées.
+							
+							
+			\end{itemize}
+	\textbf{Sortie :} ensemble de structures sélectionnées $\mathcal{M}$\\							\noindent\rule{\textwidth}{1pt}
+								
+	\begin{algorithmic} [1]
+	 \STATE MDL-optimal = MDL(G,$\emptyset$)
+\STATE Ordonner($\mathcal{C}$,"descendant") 
+	\FOR{ $s \in \mathcal{C}$ }
+	\STATE $\mathcal{M} = \mathcal{M} \cup {s}$ 
+		\IF{ MDL(G,$\mathcal{M}$) <  MDL-optimal}
+			\STATE MDL-optimal = MDL(G,$\mathcal{M}$)
+		\ELSE 
+			\STATE $\mathcal{M}$ = $\mathcal{M} \setminus {s}$  //Enlever la structure de l'ensemble
+		\ENDIF
+	\ENDFOR   
+	\end{algorithmic}
+		\end{algorithm}
+
+\begin{itemize}
+\item STEP : Cette méthode parcourt de manière itérative toutes les structures évaluées précédemment dans un ordre quelconque et choisit la structure qui réduit le plus le MDL du modèle courant pour l'ajouter au modèle jusqu'à ce qu'aucune structure n'améliore le cout. Nous présentons l'algorithme détaillé ci-dessous :
+
+
+\end{itemize}
+
+\begin{algorithm}[H]
+\label{alg:STEP}
+	\caption{STEP}
+		\textbf{Entrée :}
+		\begin{itemize}[label=$\bullet$]
+			\item $\mathcal{C}$ : Listes des structure évaluées.
+							
+							
+			\end{itemize}
+	\textbf{Sortie :} ensemble de structures sélectionnées $\mathcal{M}$\\							\noindent\rule{\textwidth}{1pt}
+								
+	\begin{algorithmic} [1]
+	\STATE Best-Structure = -1
+	 \STATE MDL-optimal = MDL(G,$\emptyset$)
+	\WHILE{$\mathcal{C}$ != $\emptyset$}
+	\FOR{ $s \in \mathcal{C}$ }
+	\STATE $\mathcal{M} = \mathcal{M} \cup {s}$ 
+		\IF{ MDL(G,$\mathcal{M}$) <  MDL-optimal}
+			\STATE MDL-optimal = MDL(G,$\mathcal{M}$)
+			\STATE Best-structure = s
+		\ENDIF
+		\STATE $\mathcal{M}$ = $\mathcal{M} \setminus {s}$  //Enlever la structure de l'ensemble
+	\ENDFOR
+	\IF{Best-Structure != -1}
+	   \STATE $\mathcal{M} = \mathcal{M} \cup {Best-structure}$ 
+	   \STATE Best-Structure = -1
+	   \ELSE 
+	   \STATE STOP
+	  \ENDIF
+		\STATE $\mathcal{C}$ = $\mathcal{C} \setminus {s}$
+	\ENDWHILE
+	\end{algorithmic}
+		\end{algorithm}
+		
+\begin{itemize}
+\item Pour la méthode du minhashing, nous offrons  la possibilité d'utiliser le codage proposé dans \citep{liu2018reducing}. Il représente cette liste de motifs de manière concise tout en permettant les requêtes d'extraction de voisinage. Dans certaines méthodes une matrice d'erreur est conservée avec la liste des structures pour une compression sans perte.
+\end{itemize}
+
 		
 		
 		
