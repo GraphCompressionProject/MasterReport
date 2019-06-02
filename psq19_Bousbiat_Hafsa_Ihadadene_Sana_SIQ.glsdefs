@@ -478,6 +478,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{gnf}{}%
+{%
+\gls@defglossaryentry{gnf}%
+{%
+name={GNF},%
+sort={GNF},%
+type={acronym},%
+first={Greedy'nForget\glsspace (GNF)},%
+firstplural={Greedy'nForget\glsspace (GNF)},%
+text={GNF},%
+plural={GNF},%
+description={Greedy'nForget},%
+descriptionplural={Greedy'nForget\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Greedy'nForget},%
+longplural={Greedy'nForget},%
+short={GNF},%
+shortplural={GNF},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{snap}{}%
 {%
 \gls@defglossaryentry{snap}%

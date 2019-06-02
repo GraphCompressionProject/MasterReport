@@ -37,12 +37,6 @@ Aragon, C.~R. and Seidel, R.~G. (1989).
 \newblock In {\em Foundations of Computer Science, 1989., 30th Annual Symposium
   on}, pages 540--545. IEEE.
 
-\bibitem[Araujo et~al., 2014]{araujo2014beyond}
-Araujo, M., G{\"u}nnemann, S., Mateos, G., and Faloutsos, C. (2014).
-\newblock Beyond blocks: Hyperbolic community detection.
-\newblock In {\em Joint European Conference on Machine Learning and Knowledge
-  Discovery in Databases}, pages 50--65. Springer.
-
 \bibitem[Asano et~al., 2008]{asano2008efficient}
 Asano, Y., Miyawaki, Y., and Nishizeki, T. (2008).
 \newblock Efficient compression of web graphs.
@@ -62,12 +56,6 @@ Barbay, J., Golynski, A., Munro, J.~I., and Rao, S.~S. (2006).
   tree-structured documents.
 \newblock In {\em Annual Symposium on Combinatorial Pattern Matching}, pages
   24--35. Springer.
-
-\bibitem[Blondel et~al., 2008]{blondel2008fast}
-Blondel, V.~D., Guillaume, J.-L., Lambiotte, R., and Lefebvre, E. (2008).
-\newblock Fast unfolding of communities in large networks.
-\newblock {\em Journal of statistical mechanics: theory and experiment},
-  2008(10):P10008.
 
 \bibitem[Boldi et~al., 2011]{boldi2011layered}
 Boldi, P., Rosa, M., Santini, M., and Vigna, S. (2011).
@@ -197,27 +185,10 @@ Hern{\'a}ndez, C. and Navarro, G. (2014).
 \newblock Compressed representations for web and social graphs.
 \newblock {\em Knowledge and information systems}, 40(2):279--313.
 
-\bibitem[Hespanha, 2004]{hespanha2004efficient}
-Hespanha, J.~P. (2004).
-\newblock An efficient matlab algorithm for graph partitioning.
-\newblock {\em Santa Barbara, CA, USA: University of California}.
-
 \bibitem[Jean-Charles~R{\'e}gin, 2016]{Pres}
 Jean-Charles~R{\'e}gin, A.~M. (2016).
 \newblock Th{\'e}orie des graphes.
 \newblock Technical report.
-
-\bibitem[Kang and Faloutsos, 2011]{kang2011beyond}
-Kang, U. and Faloutsos, C. (2011).
-\newblock Beyond'caveman communities': Hubs and spokes for graph compression
-  and mining.
-\newblock In {\em Data Mining (ICDM), 2011 IEEE 11th International Conference
-  on}, pages 300--309. IEEE.
-
-\bibitem[Karypis and Kumar, 2000]{karypis2000multilevel}
-Karypis, G. and Kumar, V. (2000).
-\newblock Multilevel k-way hypergraph partitioning.
-\newblock {\em VLSI design}, 11(3):285--300.
 
 \bibitem[Ketkar et~al., 2005]{ketkar2005subdue}
 Ketkar, N.~S., Holder, L.~B., and Cook, D.~J. (2005).
@@ -406,13 +377,6 @@ Uthayakumar, J., Vengattaraman, T., and Dhavachelvan, P. (2018).
 W.~GUERMAH, T.~B. (2018).
 \newblock Compression de graphes : {\'e}tude et classification.
 \newblock Master's thesis, Esi.
-
-\bibitem[Yang and Leskovec, 2013]{yang2013overlapping}
-Yang, J. and Leskovec, J. (2013).
-\newblock Overlapping community detection at scale: a nonnegative matrix
-  factorization approach.
-\newblock In {\em Proceedings of the sixth ACM international conference on Web
-  search and data mining}, pages 587--596. ACM.
 
 \bibitem[Y{\i}ld{\i}r{\i}m et~al., 2012]{yildirim2012grail}
 Y{\i}ld{\i}r{\i}m, H., Chaoji, V., and Zaki, M.~J. (2012).

@@ -6,7 +6,7 @@
 	
 	\section{Architecture globale}
 	
-	L'architecture existante est une architecture en pipeline de 3-tiers. Nous utiliserons cette architecture pour le backend de la solution. Elle se compose de trois couches logicielles que nous avons enrichies avec nos deux moteurs. Nous les présenterons ci-dessous:
+	L'architecture existante est une architecture en pipeline de 3-tiers. Nous utiliserons aborderons cette même architecture. Elle se compose de trois couches logicielles que nous avons enrichies avec nos deux moteurs. Nous les présenterons ci-dessous:
 	
 	\begin{enumerate}
 	\item \textbf{La couche données ou persistance :} cette couche est responsable de la gestion des données en entrée et les fonctions d'accès et de stockage. Les données en entrées ainsi que les résultats de compression sont sous forme de fichiers.
@@ -21,21 +21,21 @@
 	\centering
 	
 	\includegraphics[scale=0.35]{ressources/image/ArchGlob.jpg}
-	\caption{Architecture du backend}
+	\caption{Architecture du globale}
 	\label{Img:archglob}
  \end{figure}
 	
-	Dans le but de faciliter l'exploitation et l'utilisation de notre solution, nous proposons une application web qui permettra  d'accéder aux différentes fonctionnalités offertes. Cette proposition se base sur le fait que les performances des machines ordinaires s'avèrent limiter pour l'exécution des algorithmes de compression dans le cas des grands graphes. L'utilisation d'un serveur web performant nous semble la solution la plus adéquate. La figure \ref{Img:archglob2} montre l'architecture globale de la solution.   	
+%	Dans le but de faciliter l'exploitation et l'utilisation de notre solution, nous proposons une application web qui permettra  d'accéder aux différentes fonctionnalités offertes. Cette proposition se base sur le fait que les performances des machines ordinaires s'avèrent limiter pour l'exécution des algorithmes de compression dans le cas des grands graphes. L'utilisation d'un serveur web performant nous semble la solution la plus adéquate. La figure \ref{Img:archglob2} montre l'architecture globale de la solution.   	
 	
-\begin{figure}[H]
-	\centering
-	
-	\includegraphics[scale=0.35]{ressources/image/ArchGlob2.jpg}
-	\caption{Architecture globale de la solution web}
-	\label{Img:archglob2}
- \end{figure}
+%\begin{figure}[H]
+%	\centering
+%	
+%	\includegraphics[scale=0.35]{ressources/image/ArchGlob2.jpg}
+%	\caption{Architecture globale de la solution web}
+%	\label{Img:archglob2}
+% \end{figure}
  
- Dans ce qui suit, nous détaillerons uniquement les couches de l'architecture du backend ainsi que les bibliothèques qui les constituent. Les détails des autres couches de l'architecture globale ne seront pas présenter car elles n'influence en aucun cas sur les résultats de compression. Elle permettent uniquement d'offrir une interface ergonomique et une exécution distante tirant profit de la force de calcul du serveur utilisé.
+% Dans ce qui suit, nous détaillerons uniquement les couches de l'architecture du backend ainsi que les bibliothèques qui les constituent. Les détails des autres couches de l'architecture globale ne seront pas présenter car elles n'influence en aucun cas sur les résultats de compression. Elle permettent uniquement d'offrir une interface ergonomique et une exécution distante tirant profit de la force de calcul du serveur utilisé.
 	
 	\section{Données}
 	Les données manipulées par les moteurs de compression sont tous sous format de fichiers textes. La structure de ses fichiers diffère selon le type de graphe en entrée. Comme nous l'avons déjà implicitement mentionnées, l'implémentation proposée prend en charge les types de graphes suivants : graphe dynamique orienté, graphe statique (orienté et non orienté) et finalement graphe étiqueté. Nous présenterons dans ce qui suit leurs structures:

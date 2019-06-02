@@ -12,45 +12,45 @@ Warning--empty author and editor in IUTLyonInformatique
 Warning--empty author in br
 Warning--empty author in caida
 Warning--empty institution in Pres
-You've used 76 entries,
+You've used 70 entries,
             1935 wiz_defined-function locations,
-            858 strings with 16371 characters,
-and the built_in function-call counts, 32278 in all, are:
-= -- 3272
-> -- 1202
-< -- 63
-+ -- 425
-- -- 400
-* -- 2527
-:= -- 5335
-add.period$ -- 252
-call.type$ -- 76
-change.case$ -- 574
-chr.to.int$ -- 71
-cite$ -- 89
-duplicate$ -- 1399
-empty$ -- 2336
-format.name$ -- 512
-if$ -- 6602
+            826 strings with 15241 characters,
+and the built_in function-call counts, 29548 in all, are:
+= -- 2989
+> -- 1110
+< -- 56
++ -- 393
+- -- 370
+* -- 2316
+:= -- 4897
+add.period$ -- 231
+call.type$ -- 70
+change.case$ -- 529
+chr.to.int$ -- 65
+cite$ -- 83
+duplicate$ -- 1279
+empty$ -- 2134
+format.name$ -- 470
+if$ -- 6031
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 66
-newline$ -- 379
-num.names$ -- 216
-pop$ -- 623
+missing$ -- 60
+newline$ -- 349
+num.names$ -- 198
+pop$ -- 577
 preamble$ -- 1
-purify$ -- 580
+purify$ -- 535
 quote$ -- 0
-skip$ -- 1038
+skip$ -- 944
 stack$ -- 0
-substring$ -- 2188
-swap$ -- 307
-text.length$ -- 29
+substring$ -- 1983
+swap$ -- 276
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 414
 warning$ -- 9
-while$ -- 266
+while$ -- 242
 width$ -- 0
-write$ -- 985
+write$ -- 905
 (There were 9 warnings)

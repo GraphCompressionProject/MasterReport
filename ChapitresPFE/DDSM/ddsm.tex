@@ -6,14 +6,14 @@ Nous nous sommes aussi intéressées dans ce travail à un autre enjeu important
 
 %Quoiqu'il existe de nombreuses techniques de compression efficaces adaptées au contexte statique, rares sont ceux qui proposent une contrepartie dynamique, ce qui nous amène à s'intéresser particulièrement à ce type de graphes toujours en cours d'évolution. 
 
-Nous allons dans cette partie proposer une nouvelle méthode \gls{ddsm} basée sur deux approches existantes que nous avons étudié dans notre état de l'art. Notre but principal est de développer une technique de compression compétitive pour les graphes des réseaux sociaux dans un contexte dynamique en se basant sur l'extraction de motifs. Pour accomplir ce travail nous nous sommes appuyés sur ces deux méthodes :
+Nous allons dans cette partie proposer une nouvelle méthode \gls{ddsm} basée sur deux approches existantes. Notre but principal est de développer une technique de compression compétitive pour les graphes des réseaux d'interactions dans un contexte dynamique en se basant sur l'extraction de motifs. Pour accomplir ce travail nous nous sommes appuyés sur les deux méthodes suivantes:
 \begin{itemize}
-\item Exploiter la structure de données compressée proposée dans \gls{dsm} \citep{hernandez2014compressed} qui permet de représenter les sous-graphes denses comme les cliques, les quasi-cliques, noyaux bipartis. Nous avons opté pour cette structure car en l'appliquant sur les réseaux sociaux, elle donne de bons résultats en matière d'espace et de temps de requêtes.  
+\item Exploiter la structure de données proposée dans \gls{dsm} \citep{hernandez2014compressed} qui permet de représenter les sous-graphes denses comme les cliques, les quasi-cliques, noyaux bipartis. Nous avons opté pour cette structure car  elle donne de bons résultats en matière d'espace et de temps de requêtes.  
 \item Adopter les signatures temporelles utilisées dans TimeCrunch \citep{shah2015timecrunch} pour décrire le comportement des sous-graphes dans le temps. Nous avons utilisé ces signatures car elles englobent tous les types de comportements temporels d'un motif dans un graphe dynamique.
 \end{itemize}	
 %Nous allons dans cette partie présenter notre méthode théoriquement : principe général, structure utilisée et un pseudo code.	
 		
-		\subsubsection{Formulation du problème}
+		\subsection{Formulation du problème}
 		Dans cette section, nous allons définir le problème de base auquel notre méthode convient tout en définissant le cadre dans lequel elle peut être appliquée. 
 		
 		Nous considérons les graphes orientés dynamiques $\displaystyle{G=\bigcup_{t_{i}}G_{t_{i}}(V,E_{t_{i}})}\ \ 1 \preceq i \preceq t$ où $G_{t_{i}}$ = G a l'instant $t_{i}$ et un ensemble de signatures temporelles. En d'autre termes, nous considérons des captures du graphe à des instants différents $t_{i}$ et un ensemble de descripteurs de comportement temporel des sous-graphes des différents $G_{t_{i}}$. Le problème peut ainsi être formulé:
@@ -21,7 +21,7 @@ Nous allons dans cette partie proposer une nouvelle méthode \gls{ddsm} basée s
 			\textit{\textbf{Problème:}
 		Trouver, à partir d'un graphe dynamique G et un lexique de signatures temporelles, la plus petite description du graphe initial en termes de ses sous structures les plus denses et leur comportement temporel, en offrant la possibilité de manipuler le graphe, d'extraire les voisins directs d'un nœud à un instant donné et d'extraire les sous-graphes au besoin. }
 
-		\subsubsection{Principe général}
+		\subsection{Principe général}
 			Notre méthode s'intitule DDSM pour \textit{Dynamic Dense Substructure Mining}. Elle représente une généralisation du travail de Hernandez et Navarro \citep{hernandez2014compressed} pour le cas des graphes dynamiques qui sont de nos jours omniprésents.
 			
 			%Pour mieux expliquer notre méthode nous allons tout d'abord commencer par décrire les structures que nous allons utiliser. Nous enchainons par la suite  avec le pseudo algorithme détaillant les étapes essentielles de notre méthode et nous conclurons en expliquant comment les algorithmes proposés dans \citep{hernandez2014compressed} de manipulation des graphes peuvent être généralisés dans notre cas.
@@ -62,7 +62,7 @@ Nous allons dans cette partie proposer une nouvelle méthode \gls{ddsm} basée s
 			 Nous visons à travers la méthode que nous proposons d'exprimer le graphe en entrée avec ses sous-structures les plus denses et leur comportement temporel réduisant ainsi sa taille et offrant la possibilité d'effectuer les traitements dans un temps meilleur. Nous avons structuré notre algorithme sous forme de trois (03) étapes essentielles, chacune servant d'entrée pour l'étape suivante.
 			 
 			 En premier lieu, nous appliquons la découverte des sous-graphes les plus denses. Pour effectuer cela de manière efficace, nous suggérons d'utiliser l'approche proposée dans \citep{hernandez2014compressed} parallèlement sur chaque capture $G_{t_{i}}$ de G. Nous allons donc considérer les listes d'adjacences pour chaque $G_{t_{i}}$ où des fonctions de hachage sont calculées pour chaque sommet. Une arborescence est ensuite construite pour chaque ensemble de sommets ayant les même valeurs de hachages et qui permettra d'extraire les sous-structures denses du graphe à travers un parcours de la racine vers les feuilles. 
-			 Dans une deuxième phase, nous effectuons une comparaison entre les sous-structures. Nous utilisons pour cela le principe du MinHashing encore une fois pour grouper les sous-structures de différents timestamps ayant un nombre élevé de nœuds en commun. Une fois nous associer à chaque sous-structure ses différents timestamps, ces derniers seront à leur tour compressés en utilisant des descripteurs de comportement temporel précédemment décrits. L'algorithme \ref{alg:getTemporalSignature} représente l'algorithme de compression de l'ensemble des timestamps d'une structure.\\
+			 Dans une deuxième phase, nous effectuons une comparaison entre les sous-structures. Nous utilisons pour cela le principe du MinHashing encore une fois pour grouper les sous-structures de différents timestamps ayant un nombre élevé de nœuds en commun. Une fois nous avons associé à chaque sous-structure ses différents timestamps, ces derniers seront à leur tour compressés en utilisant des descripteurs de comportement temporel précédemment décrits. L'algorithme \ref{alg:getTemporalSignature} représente l'algorithme de compression de l'ensemble des timestamps d'une structure.\\
 			 
 			 
 			 	\begin{algorithm}[H]
@@ -103,7 +103,7 @@ Nous allons dans cette partie proposer une nouvelle méthode \gls{ddsm} basée s
 			 
 			 \vskip 0.1in
 			 
-			 Une dernière phase consiste en la codification du graphe en utilisant le codage proposé dans la section précédente pour chaque sous-structure de la phase (02). Nous concaténons par la suite ces représentations pour obtenir une seule représentation concise du graphe initial en termes de ses structures les plus denses. Nous schématisant ces différentes étapes dans la figure \ref{ddsmScheme}.
+			 Une dernière phase consiste en la codification du graphe en utilisant le codage proposé dans \citep{hernandez2014compressed} pour chaque sous-structure de la phase (02). Nous concaténons par la suite ces représentations pour obtenir une seule représentation concise du graphe initial en termes de ses structures les plus denses. Nous schématisant ces différentes étapes dans la figure \ref{ddsmScheme}.
 			 
 			 
 
