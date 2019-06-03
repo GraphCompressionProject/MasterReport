@@ -51,13 +51,17 @@
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Gain de compression de $K^2$-Grace avec le pr\IeC {\'e}-traitement\relax }}{88}{figure.caption.59}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace avec/sans pr\IeC {\'e}-traitement (cas dynamique)\relax }}{88}{figure.caption.60}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Ratio de avec pr\IeC {\'e}-traitement/ Ratio de sans pr\IeC {\'e}-traitement\relax }}{89}{figure.caption.61}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Le ratio de compression en fonction de la taille du motif.\relax }}{90}{figure.caption.62}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces R\IeC {\'e}sultats des tests du beam-search.\relax }}{91}{figure.caption.63}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces R\IeC {\'e}sultats de la m\IeC {\'e}thode DDSM\relax }}{91}{figure.caption.64}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces R\IeC {\'e}sultats des tests de la m\IeC {\'e}thode DDSM.\relax }}{92}{figure.caption.65}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Statistique des diff\IeC {\'e}rentes types de sous-structures d\IeC {\'e}couvertes\relax }}{92}{figure.caption.66}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes statiques orient\IeC {\'e}s.\relax }}{93}{figure.caption.67}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes dynamiques.\relax }}{94}{figure.caption.68}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces R\IeC {\'e}sultats des tests du beam-search.\relax }}{90}{figure.caption.62}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces R\IeC {\'e}sultats des tests de l'influence du nombre de structure s\IeC {\'e}lectionn\IeC {\'e}es.\relax }}{91}{figure.caption.63}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces R\IeC {\'e}sultats des tests de l'influence de la m\IeC {\'e}thode de s\IeC {\'e}lection.\relax }}{92}{figure.caption.64}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces R\IeC {\'e}sultats des tests de l'influence de la m\IeC {\'e}thode de clustering .\relax }}{93}{figure.caption.65}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Le ratio de compression en fonction de la taille du motif.\relax }}{94}{figure.caption.66}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces R\IeC {\'e}sultats de la m\IeC {\'e}thode DDSM\relax }}{95}{figure.caption.67}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces R\IeC {\'e}sultats des tests de la m\IeC {\'e}thode DDSM.\relax }}{95}{figure.caption.68}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Statistique des diff\IeC {\'e}rentes types de sous-structures d\IeC {\'e}couvertes\relax }}{95}{figure.caption.69}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes statiques orient\IeC {\'e}s.\relax }}{96}{figure.caption.70}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes statiques non orient\IeC {\'e}s.\relax }}{97}{figure.caption.71}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Comparaison entre les m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes dynamiques.\relax }}{98}{figure.caption.72}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

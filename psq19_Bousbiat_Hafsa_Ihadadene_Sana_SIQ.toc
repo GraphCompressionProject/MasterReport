@@ -93,15 +93,19 @@
 \contentsline {subsubsection}{\numberline {5.4.3.2}\IeC {\'E}tude de l'effet de l'utilisation de la partie sup\IeC {\'e}rieure uniquement de la matrice d'adjacence}{87}{subsubsection.5.4.3.2}
 \contentsline {subsubsection}{\numberline {5.4.3.3}\IeC {\'E}tude de l'effet de l'utilisation d'une matrice de diff\IeC {\'e}rence}{88}{subsubsection.5.4.3.3}
 \contentsline {section}{\numberline {5.5}\IeC {\'E}valuation du moteur P-GraCE}{89}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}\IeC {\'E}tude de l'influence du type et de la taille des motifs dans les m\IeC {\'e}thodes bas\IeC {\'e}es sur la matrice d'adjacence :}{90}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}\IeC {\'E}valuation de l'algorithme du beam-search :}{91}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}\IeC {\'E}valuation de la m\IeC {\'e}thode DDSM :}{91}{subsection.5.5.3}
-\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rentes m\IeC {\'e}thodes:}{93}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Graphes orient\IeC {\'e}s statiques :}{93}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Graphes non orient\IeC {\'e}s statiques :}{93}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Graphes dynamiques :}{93}{subsection.5.6.3}
-\contentsline {section}{\numberline {5.7}Conclusion}{94}{section.5.7}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction g\IeC {\'e}n\IeC {\'e}rale}{96}{section.5.7}
-\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{98}{appendix.A}
-\contentsline {chapter}{\numberline {B}Description des graphes de test}{99}{appendix.B}
-\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{100}{appendix.C}
+\contentsline {subsection}{\numberline {5.5.1}\IeC {\'E}valuation de l'algorithme du beam-search :}{89}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}\IeC {\'E}valuation des techniques bas\IeC {\'e}es sur les m\IeC {\'e}thodes de clustering :}{90}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}\IeC {\'E}tude de l'influence du nombre de structure s\IeC {\'e}lectionn\IeC {\'e}es :}{91}{subsubsection.5.5.2.1}
+\contentsline {subsubsection}{\numberline {5.5.2.2}\IeC {\'E}tude de l'influence de la m\IeC {\'e}thode de s\IeC {\'e}lection :}{92}{subsubsection.5.5.2.2}
+\contentsline {subsubsection}{\numberline {5.5.2.3}\IeC {\'E}tude de l'influence de la m\IeC {\'e}thode de clustering :}{93}{subsubsection.5.5.2.3}
+\contentsline {subsection}{\numberline {5.5.3}\IeC {\'E}tude de l'influence du type et de la taille des motifs dans les m\IeC {\'e}thodes bas\IeC {\'e}es sur la matrice d'adjacence :}{93}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}\IeC {\'E}valuation de la m\IeC {\'e}thode DDSM :}{94}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rentes m\IeC {\'e}thodes:}{96}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Graphes orient\IeC {\'e}s statiques :}{96}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Graphes non orient\IeC {\'e}s statiques :}{97}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Graphes dynamiques :}{98}{subsection.5.6.3}
+\contentsline {section}{\numberline {5.7}Synth\IeC {\`e}se des tests}{98}{section.5.7}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Introduction g\IeC {\'e}n\IeC {\'e}rale}{100}{section.5.7}
+\contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{102}{appendix.A}
+\contentsline {chapter}{\numberline {B}Description des graphes de test}{103}{appendix.B}
+\contentsline {chapter}{\numberline {C}Algorithmes des m\IeC {\'e}thodes de clustering}{104}{appendix.C}
