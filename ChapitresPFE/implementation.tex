@@ -1,17 +1,17 @@
 \chapter{Implémentation}
 	\section{Introduction}
 	
-	Notre projet s'intègrent dans un projet de recherche scientifique. De ce fait, une implémentation efficace et optimisée de notre conception est nécessaire. Nous commencerons ce chapitre par présenter l'architecture existante et comment nous l'avons étendue avec nos deux moteurs tout en détaillant les différentes couches de cette architecture. Nous conclurons par présenter l'environnement de développement.
+	Notre projet s'intègre dans un projet de recherche scientifique. De ce fait, une implémentation efficace et optimisée de notre conception est nécessaire. Nous commencerons ce chapitre par présenter l'architecture existante et comment nous l'avons étendue avec nos deux moteurs tout en détaillant les différentes couches de cette architecture. Nous conclurons par présenter l'environnement de développement.
 	
 	
 	\section{Architecture globale}
 	
-	L'architecture existante est une architecture en pipeline de 3-tiers. Nous utiliserons aborderons cette même architecture. Elle se compose de trois couches logicielles que nous avons enrichies avec nos deux moteurs. Nous les présenterons ci-dessous:
+	L'architecture existante est une architecture en pipeline de 3-tiers. Nous  adopterons cette même architecture. Elle se compose de trois couches logicielles que nous avons enrichies avec nos deux moteurs. Nous les présenterons ci-dessous:
 	
 	\begin{enumerate}
-	\item \textbf{La couche données ou persistance :} cette couche est responsable de la gestion des données en entrée et les fonctions d'accès et de stockage. Les données en entrées ainsi que les résultats de compression sont sous forme de fichiers.
+	\item \textbf{La couche données ou persistance :} cette couche est responsable de la gestion des données en entrée et les fonctions d'accès et de stockage. Les données en entrée ainsi que les résultats de compression sont sous forme de fichiers.
 	
-	\item \textbf{La couche traitement :} c'est le noyau des moteur de compression de notre projet. Elle inclue tout les algorithmes de compression et de manipulation des graphes. 
+	\item \textbf{La couche traitement :} c'est le noyau des moteurs de compression de notre projet. Elle inclue tout les algorithmes de compression et de manipulation des graphes. 
 	
 	\item \textbf{La couche présentation :}  Deux types de résultats (fichiers) sont produits : le premier est le graphe compressé, le deuxième représente le fichier log des performances. 
 	\end{enumerate}
@@ -38,7 +38,7 @@
 % Dans ce qui suit, nous détaillerons uniquement les couches de l'architecture du backend ainsi que les bibliothèques qui les constituent. Les détails des autres couches de l'architecture globale ne seront pas présenter car elles n'influence en aucun cas sur les résultats de compression. Elle permettent uniquement d'offrir une interface ergonomique et une exécution distante tirant profit de la force de calcul du serveur utilisé.
 	
 	\section{Données}
-	Les données manipulées par les moteurs de compression sont tous sous format de fichiers textes. La structure de ses fichiers diffère selon le type de graphe en entrée. Comme nous l'avons déjà implicitement mentionnées, l'implémentation proposée prend en charge les types de graphes suivants : graphe dynamique orienté, graphe statique (orienté et non orienté) et finalement graphe étiqueté. Nous présenterons dans ce qui suit leurs structures:
+	Les données manipulées par les moteurs de compression sont tous sous format de fichiers texte. La structure de ces fichiers diffère selon le type du graphe en entrée. Comme nous l'avons déjà implicitement mentionné, l'implémentation proposée prend en charge les types de graphes suivants : graphe dynamique orienté, graphe statique (orienté et non orienté) et finalement graphe étiqueté. Nous présenterons dans ce qui suit leurs structures:
 	
 	\begin{itemize}[label=$\bullet$]
 	\item \textbf{Graphe statique:}
@@ -61,7 +61,7 @@
 	\caption{Structure d'un fichier de graphe dynamique}
 	\label{Img:dynamiqgr}
  \end{figure}
-Les liens dans un graphe dynamique sont représentés par trois composantes (u,v,t)	signifiant qu'un lien entre les nœuds u et v est apparu à l'instant t. Chaque lien représente une ligne dans le fichier de données.
+Les liens dans un graphe dynamique sont représentés par trois composantes (u,v,t)	signifiant qu'un lien entre les nœuds u et v appartient à la capture de l'instant t. Chaque lien représente une ligne dans le fichier de données.
 	
 	\item \textbf{Graphe étiqueté:} 
 	\begin{figure}[H]
@@ -86,21 +86,21 @@ Nous nous intéressons dans notre projet à trouver un bon compromis entre les p
 
 \begin{enumerate}[label=(\alph*)]
 \item \textbf{TNGraph :}
-Cette structure est l'une des structures les plus performantes offertes par la bibliothèque \newacronym{snap}{SNAP}{Stanford Network Analysis Package}	 \gls{snap} (voir section \ref{snaplib}). Elle représente un graphe orienté et est implémenté à l'aide de fonctions de hachages offrant ainsi un temps d'accès très rapide. Elle offre aussi une panoplies d'opérations facilitant la manipulation du graphe de données.
+Cette structure est l'une des structures les plus performantes offertes par la bibliothèque \newacronym{snap}{SNAP}{Stanford Network Analysis Package}	 \gls{snap} (voir section \ref{snaplib}). Elle représente un graphe orienté et est implémenté à l'aide de fonctions de hachage offrant ainsi un temps d'accès très rapide. Elle offre aussi une panoplie d'opérations facilitant la manipulation du graphe de données.
 
 \item\textbf{TUNGraph :}
 Cette structure est aussi une des structures de la bibliothèque \gls{snap}. Elle représente un graphe non orienté et offre les mêmes avantages que la structure précédente. 
 
 \item\textbf{std::vector<Boost::dynamicbitset<> > :}
- Nous avons adopté cette structure pour représenter la matrice d'adjacence en mémoire. Les lignes de la matrice d'adjacence sont représentées par un vecteur de bits de la bibliothèque Boost donnant un accès rapide parmi toutes les implémentations disponibles  \citep{pieterse2010performance}. Les tableaux de lignes seront stockés dans un tableau de la bibliothèque standard du langage c++ permettant d'exploiter la localité du cache vu que ses éléments sont stockés de façon contigüe en mémoire.
+ Nous avons adopté cette structure pour représenter la matrice d'adjacence en mémoire. Les lignes de la matrice d'adjacence sont représentées par un vecteur de bits de la bibliothèque Boost donnant un accès rapide comparé aux implémentations disponibles  \citep{pieterse2010performance}. Les tableaux de lignes seront stockés dans un tableau de la bibliothèque standard du langage c++ permettant d'exploiter la localité du cache. %vu que ses éléments sont stockés de façon contigüe en mémoire.
  
 \item\textbf{std::vector<std::pair<std::vector<unsigned int>,unsigned int> >:}
-Cette structure représente la liste d'adjacence d'un graphe. Comme nous l'avons déjà expliquer nous dotons chacune des listes par un pointeurs indiquant la position du dernier élément visité. Les paires ( listes, pointeurs ) seront stockées dans un tableau indexé par les identifiants des nœuds du graphes ( 0...N ).
+Cette structure représente la liste d'adjacence d'un graphe. Comme nous l'avons déjà expliqué nous dotons chacune des listes par un pointeur indiquant la position du dernier élément visité. Les paires ( listes, pointeurs ) seront stockées dans un tableau indexé par les identifiants des nœuds du graphe ( 0...N ).
 
 \item\textbf{LabeledGraph :} Pour les graphes étiquetés, nous proposons d'utiliser notre propre structure intitulée << \textit{LabeledGraph} >>.
 
 \item \textbf{std::map<unsigned int,TNGraph> :}
-La dernière structure sont les graphes dynamiques orientés qui sont représentés par les paires ($t_i$ , $G_i$) où $G_i$ représente une capture du graphe de données à l'instant $t_i$.
+La dernière structure modélise les graphes dynamiques orientés qui sont représentés par les paires ($t_i$ , $G_i$) où $G_i$ représente une capture du graphe de données à l'instant $t_i$.
 
 
 \end{enumerate}
@@ -108,13 +108,14 @@ La dernière structure sont les graphes dynamiques orientés qui sont représent
 
 
 \subsection{Les méthodes et fonctions }
-	Nous présenterons ci-dessous les principales fonctions et méthodes décrivant le schéma globale de fonctionnement de nos deux moteurs.
+	Nous présenterons ci-dessous les principales fonctions et méthodes décrivant le schéma global de fonctionnement de nos deux moteurs.
 	
 	\begin{enumerate}[label=(\alph*)]
-		\item \textbf{LoadGraph :} Cette fonction permet de charger le graphe de données en mémoire à partir d'un fichier texte. Elle prend en paramètres le fichier de données ainsi que le type de graphe dans le cas du moteur P-GraCE. Tant dis que dans le cas du moteur $k^2$-GraCE, elle prend en paramètres le fichier de données, le type de graphe ainsi que le type représentation à utiliser pour compresser le graphe.
+		\item \textbf{LoadGraph :} Cette fonction permet de charger le graphe de données en mémoire à partir d'un fichier texte. Elle prend en paramètres le fichier de données ainsi que le type de graphe dans le cas du moteur P-GraCE. Dans le cas du moteur $k^2$-GraCE, elle prend en paramètres le fichier de données, le type de graphe, le type représentation à utiliser pour compresser le graphe ainsi que le choix d'activer ou non le module de pré-traitement.
+		
 		\item \textbf{CompressK2 :} Cette fonction consiste en le processus de compression du graphe en utilisant les arbres $k^2$-trees. Elle reçoit en entrée le graphe de données et son type et donne en sortie les deux listes T et L représentant l'arbre $k^2$-trees.
 		
-		\item \textbf{CompressPattern :} Cette fonction permet de compresser le graphe de données en utilisant ses sous-structures les plus importantes. Elle prend en paramètres le graphe de données ainsi que le choix de la méthode d'extraction de motifs à utiliser dans le processus de compression.
+		\item \textbf{CompressPattern :} Cette fonction permet de compresser le graphe de données en utilisant ses sous-structures les plus importantes. Elle prend en paramètres le graphe de données ainsi que le choix de l'approche de compression à utiliser et ses paramètres.
 		
 		\item \textbf{SaveCompressed :}  Cette fonction effectue la sauvegarde du résultat de compression dans un fichier texte.
 		
@@ -138,10 +139,10 @@ La dernière structure sont les graphes dynamiques orientés qui sont représent
 	
 	\section{Environnement de développement}
 		
-		Le choix des outils de développement dans tout projet informatique est très important vue leur fort impact sur les performances du produit finale. Comme notre solution fait partie d'un projet de recherche, il faut aussi prendre en compte la flexibilité et la capacité de la solution à s'interfacer avec d'autre outils dans des systèmes qui peuvent être hétérogènes. 
+		Le choix des outils de développement dans tout projet informatique est très important vu leur fort impact sur les performances du produit final. Comme notre solution fait partie d'un projet de recherche, il faut aussi prendre en compte la flexibilité et la capacité de la solution à s'interfacer avec d'autre outils dans des systèmes qui peuvent être hétérogènes. 
 		
 		\subsection{Langage de Programmation}
-		Nous avons adopté le langage de programmation avec lequel la    première version de notre solution a été développée: le C++. En effet, le langage C++ est un langage très performant pour les calculs lourds. Il permet d'avoir des exécutions très rapides, ce qui en fait un langage de choix pour les applications critiques qui ont besoin de performances. Il permet aussi d'avoir un code portable : un même code source peut être facilement transformé en exécutable sous Windows, Mac OS ou Linux. Un autre aspect du langage c++ est sa richesse de bibliothèques optimisées pour le traitement et le stockage des grands graphes en mémoire. 
+		Nous avons adopté le langage de programmation avec lequel la    première version de notre solution a été développée: le C++. En effet, il représente un langage très performant pour les calculs lourds. Il permet d'avoir des exécutions très rapides, ce qui en fait un langage de choix pour les applications critiques qui ont besoin de performances. Il permet aussi d'avoir un code portable : un même code source peut être facilement transformé en exécutable sous Windows, Mac OS ou Linux. Un autre aspect du langage c++ est sa richesse de bibliothèques optimisées pour le traitement et le stockage des grands graphes en mémoire. 
 		
 		Nous avons choisi Visual Studio 2015 comme environnement de développement (IDE). Notre choix a été influencé par le fait que Visual Studio s'ouvre à toutes les tendances du moment et permet facilement de travailler en équipe sur le même projet.
 		
@@ -150,18 +151,18 @@ La dernière structure sont les graphes dynamiques orientés qui sont représent
 		\label{snaplib}
 			
 		Afin de faciliter la manipulation des graphes et d'améliorer les performances de notre solution, nous avons offert la possibilité d'exécuter les différents algorithmes de compression en utilisant une des plus performantes bibliothèques de manipulation de graphes en c++ : SNAP.
-		\gls{snap} est une bibliothèque d'analyse et d'exploration de graphes à usage général qui s'adapte facilement à des graphes massives. Elle présente aussi l'avantage d'être  efficace et facilement extensible. Elle prend naturellement en charge les graphes riches avec des types de données complexes associés aux nœuds et aux arêtes. 
+		\gls{snap} est une bibliothèque d'analyse et d'exploration de graphes à usage général qui s'adapte facilement à des graphes massifs. Elle présente aussi l'avantage d'être  efficace et facilement extensible. 
 		
 		\subsection{Bibliothèque Boost}
 		
 
 Boost est un ensemble de bibliothèques pour le langage de programmation C ++ qui prend en charge des tâches et des structures telles que l'algèbre linéaire, la génération de nombres pseudo-aléatoires, le multithreading, les expressions régulières et les tests unitaires. Elle contient plus de quatre vingt bibliothèques individuelles.
 
-Nous l'avons utilisées dans notre projet pour l'implémentation des arbres $k^2$-trees. En effet, elle contient une implémentation des tableaux de bits en c++ qui donnent un temps d'exécution optimal parmi toutes les autres implémentations existantes \citep{pieterse2010performance}.  
+Nous l'avons utilisée dans notre projet pour l'implémentation des arbres $k^2$-trees. En effet, elle contient une implémentation des tableaux de bits en c++ qui donne un temps d'exécution optimal comparé aux autres implémentations existantes \citep{pieterse2010performance}.  
 
 
 	\section{Conclusion}
 	
-Durant ce chapitre, nous avons présenté notre implémentation où nous avons essayer d'utiliser différentes bibliothèques permettant d'avoir de meilleurs performances. L'indépendance des différentes couches de l'architecture existante nous a facilité la tache d'implémentation. Nous avons ainsi essayé de respecter cette indépendance afin de faciliter tout autre contribution future dans le projet. 
+Durant ce chapitre, nous avons présenté notre implémentation où nous avons essayé d'utiliser différentes bibliothèques permettant d'avoir les meilleurs performances. L'indépendance des différentes couches de l'architecture existante nous a facilité la tache d'implémentation. Nous avons ainsi essayé de respecter cette indépendance afin de faciliter tout autre contribution future dans le projet. 
 
-Nous évaluerons dans le chapitre suivant les différentes méthodes de nos deux moteurs en vue de l'obtention d'une étude comparative plus objective et plus claire des leurs performances.
+Nous évaluerons dans le chapitre suivant les différentes méthodes de nos deux moteurs en vue de l'obtention d'une étude comparative plus objective et plus claire de leur performance.

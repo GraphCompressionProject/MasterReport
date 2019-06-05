@@ -32,27 +32,27 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Exemple de Graphe \IeC {\'E}tiquet\IeC {\'e}\relax }}{60}{figure.caption.39}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Arbre de recherche (k= $ {\infty } $ , limit = $ {\infty } $)\relax }}{61}{figure.caption.40}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Exemple d'application de l'algorithme SlashBurn\relax }}{62}{figure.caption.41}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{65}{figure.caption.42}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Les diff\IeC {\'e}rentes phases de DDSM}}{72}{figure.caption.45}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Exemple de calcul de la matrice des signatures.}}{64}{figure.caption.42}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Les diff\IeC {\'e}rentes phases de DDSM}}{71}{figure.caption.45}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture du globale\relax }}{73}{figure.caption.46}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Structure d'un fichier de graphe statique\relax }}{74}{figure.caption.47}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Structure d'un fichier de graphe dynamique\relax }}{74}{figure.caption.48}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure d'un fichier de graphe \IeC {\'e}tiquet\IeC {\'e}\relax }}{75}{figure.caption.49}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sch\IeC {\'e}ma globale du fonctionnement des deux moteurs\relax }}{77}{figure.caption.50}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architecture du globale\relax }}{72}{figure.caption.46}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Structure d'un fichier de graphe statique\relax }}{73}{figure.caption.47}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Structure d'un fichier de graphe dynamique\relax }}{73}{figure.caption.48}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Structure d'un fichier de graphe \IeC {\'e}tiquet\IeC {\'e}\relax }}{74}{figure.caption.49}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sch\IeC {\'e}ma globale du fonctionnement des deux moteurs\relax }}{76}{figure.caption.50}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces R\IeC {\'e}sultats de tests du moteur $K^2$-Grace selon les diff\IeC {\'e}rents types de repr\IeC {\'e}sentations du graphe en entr\IeC {\'e}e.\relax }}{82}{figure.caption.52}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Ratio de compression du moteur $K^2$-Grace en fonction du param\IeC {\`e}tre K (cas statique)\relax }}{83}{figure.caption.53}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }uds en fonction du param\IeC {\`e}tre K\relax }}{84}{figure.caption.54}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces R\IeC {\'e}sultats de tests du moteur $K^2$-Grace selon les diff\IeC {\'e}rents types de repr\IeC {\'e}sentations du graphe en entr\IeC {\'e}e.\relax }}{81}{figure.caption.52}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Ratio de compression du moteur $K^2$-Grace en fonction du param\IeC {\`e}tre K (cas statique)\relax }}{82}{figure.caption.53}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }uds en fonction du param\IeC {\`e}tre K\relax }}{83}{figure.caption.54}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }uds et Ratio de compression du moteur en fonction du param\IeC {\`e}tre K (cas dynamique)\relax }}{84}{figure.caption.55}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Temps de compression en fonction de K\relax }}{85}{figure.caption.56}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace :Ratio de compression selon l'ordre des n\IeC {\oe }uds\relax }}{86}{figure.caption.57}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace avec/sans pr\IeC {\'e}-traitement (cas non orient\IeC {\'e})\relax }}{87}{figure.caption.58}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Gain de compression de $K^2$-Grace avec le pr\IeC {\'e}-traitement\relax }}{88}{figure.caption.59}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Gain de compression de $K^2$-Grace avec le pr\IeC {\'e}-traitement\relax }}{87}{figure.caption.59}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace avec/sans pr\IeC {\'e}-traitement (cas dynamique)\relax }}{88}{figure.caption.60}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Ratio de avec pr\IeC {\'e}-traitement/ Ratio de sans pr\IeC {\'e}-traitement\relax }}{89}{figure.caption.61}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces R\IeC {\'e}sultats des tests du beam-search.\relax }}{90}{figure.caption.62}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces R\IeC {\'e}sultats des tests de l'influence du nombre de structure s\IeC {\'e}lectionn\IeC {\'e}es.\relax }}{91}{figure.caption.63}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces R\IeC {\'e}sultats des tests de l'influence du nombre de structures s\IeC {\'e}lectionn\IeC {\'e}es.\relax }}{91}{figure.caption.63}
 \contentsline {figure}{\numberline {5.13}{\ignorespaces R\IeC {\'e}sultats des tests de l'influence de la m\IeC {\'e}thode de s\IeC {\'e}lection.\relax }}{92}{figure.caption.64}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces R\IeC {\'e}sultats des tests de l'influence de la m\IeC {\'e}thode de clustering .\relax }}{93}{figure.caption.65}
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Le ratio de compression en fonction de la taille du motif.\relax }}{94}{figure.caption.66}

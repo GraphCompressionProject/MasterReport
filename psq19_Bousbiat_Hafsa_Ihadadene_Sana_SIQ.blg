@@ -6,51 +6,49 @@ Database file #1: Bibliographie.bib
 Warning--to sort, need author, editor, or key in IUTLyonInformatique
 Warning--to sort, need author or key in subd
 Warning--to sort, need author or key in caida
-Warning--to sort, need author or key in br
 Warning--empty author in subd
 Warning--empty author and editor in IUTLyonInformatique
-Warning--empty author in br
 Warning--empty author in caida
 Warning--empty institution in Pres
-You've used 70 entries,
+You've used 69 entries,
             1935 wiz_defined-function locations,
-            826 strings with 15241 characters,
-and the built_in function-call counts, 29548 in all, are:
-= -- 2989
+            824 strings with 15213 characters,
+and the built_in function-call counts, 29286 in all, are:
+= -- 2966
 > -- 1110
 < -- 56
 + -- 393
 - -- 370
-* -- 2316
-:= -- 4897
-add.period$ -- 231
-call.type$ -- 70
-change.case$ -- 529
-chr.to.int$ -- 65
-cite$ -- 83
-duplicate$ -- 1279
-empty$ -- 2134
+* -- 2295
+:= -- 4861
+add.period$ -- 228
+call.type$ -- 69
+change.case$ -- 524
+chr.to.int$ -- 64
+cite$ -- 79
+duplicate$ -- 1261
+empty$ -- 2102
 format.name$ -- 470
-if$ -- 6031
+if$ -- 5975
 int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 60
-newline$ -- 349
+missing$ -- 59
+newline$ -- 344
 num.names$ -- 198
-pop$ -- 577
+pop$ -- 566
 preamble$ -- 1
-purify$ -- 535
+purify$ -- 530
 quote$ -- 0
-skip$ -- 944
+skip$ -- 937
 stack$ -- 0
-substring$ -- 1983
-swap$ -- 276
+substring$ -- 1970
+swap$ -- 275
 text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 414
-warning$ -- 9
+type$ -- 408
+warning$ -- 7
 while$ -- 242
 width$ -- 0
-write$ -- 905
-(There were 9 warnings)
+write$ -- 894
+(There were 7 warnings)

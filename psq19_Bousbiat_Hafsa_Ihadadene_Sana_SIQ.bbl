@@ -10,11 +10,6 @@
 \newblock {\em Quelques rappels sur la th{\'e}orie des graphes}.
 \newblock IUT Lyon Informatique.
 
-\bibitem[br, 2017]{br}
- (April 2017).
-\newblock Brightkite network dataset.
-\newblock In {\em KONECT}.
-
 \bibitem[cai, 2017]{caida}
  (April 2017).
 \newblock Caida network dataset.
@@ -304,18 +299,18 @@ Rigo, M. (2010).
 \newblock Universit{\'e} de li{\`e}ge, Facult{\'e} des sciences D{\'e}partement
   de math{\'e}matiques.
 
-\bibitem[Rossi and Ahmed, 2015a]{rep1}
+\bibitem[Rossi and Ahmed, 2015a]{caNetScience}
 Rossi, R.~A. and Ahmed, N.~K. (2015a).
-\newblock The network data repository with interactive graph analytics and
-  visualization.
-\newblock In {\em AAAI}.
-
-\bibitem[Rossi and Ahmed, 2015b]{caNetScience}
-Rossi, R.~A. and Ahmed, N.~K. (2015b).
 \newblock The network data repository with interactive graph analytics and
   visualization.
 \newblock In {\em Proceedings of the Twenty-Ninth AAAI Conference on Artificial
   Intelligence}.
+
+\bibitem[Rossi and Ahmed, 2015b]{rep1}
+Rossi, R.~A. and Ahmed, N.~K. (2015b).
+\newblock The network data repository with interactive graph analytics and
+  visualization.
+\newblock In {\em AAAI}.
 
 \bibitem[Rossi and Zhou, 2018]{rossi2018graphzip}
 Rossi, R.~A. and Zhou, R. (2018).

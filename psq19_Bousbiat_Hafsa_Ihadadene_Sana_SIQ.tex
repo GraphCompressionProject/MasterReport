@@ -226,9 +226,9 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 			 Les motifs fréquents sont des connaissances extraites sur des données. Leur but est de fournir à l'utilisateur des informations non triviales, implicites, présumées non connues. Ils lui offrent ainsi une meilleure appréhension des données. Dès lors, l'extraction de motifs fréquents est  devenue une tâche importante dans la fouille de données et un thème très étudié par la communauté. Elle a aussi été vastement %%%% verifier ce mot
 			 utilisée dans le domaine de compression des graphes vu qu'elle permet de ne garder que l'information utile et d'éliminer les redondances de manière efficace. En effet, nous trouvons plusieurs méthodes basées sur ce principe où nous pourrons clairement distinguer deux grandes classes : 
 			 (i) les méthodes de compression basées vocabulaire
-			 (ii) les méthodes de compression basées Agrégation.
+			 (ii) les méthodes de compression basées agrégation.
 			 
-				Dans cette section, nous allons expliquer le principe de base de chaque classe où nous allons subdiviser chacune en plusieurs sous-classes en se basant sur ce dernier. 
+				Dans cette section, nous allons expliquer le principe de base de chaque classe et nous allons subdiviser chacune en plusieurs sous-classes en se basant sur ce dernier. 
 				%%% a revoir le dernier paragraphe
 			 
 				\subsection{Compression basée vocabulaire}
@@ -321,15 +321,15 @@ temps, nous allons présenter une étude bibliographique sur les méthodes de co
 \chapter{Conception}
 	\section{Introduction}
 	
-	La réalisation de l'étude bibliographique dans le précédent chapitre, nous a initié au domaine de compression en générale et nous a permis d'approfondir nos connaissances dans le domaine de compression des graphes. Nous avons pu voir en détails les caractéristiques de plusieurs méthodes de compression s'inscrivant dans les deux classes de méthodes de compression: celles basées sur l'extraction de motifs et celles basées sur les arbres $k^2$-trees. La vocation de ce travail est d'enrichir un projet existant en l'étendant avec deux moteurs de compression qui regroupent différentes stratégies des deux classes étudiées. La réalisation de ces deux moteurs permettra de comparer entre ces stratégies et d'avoir une idée plus claire sur leurs performances dans différents scénarios.
+	La réalisation de l'étude bibliographique dans le précédent chapitre, nous a initié au domaine de compression en général, et nous a permis d'approfondir nos connaissances dans le domaine de compression des graphes. Nous avons pu voir en détails les caractéristiques de plusieurs méthodes de compression s'inscrivant dans les deux classes de méthodes de compression: celles basées sur l'extraction de motifs et celles basées sur les arbres $k^2$-trees. La vocation de ce travail est d'enrichir un projet existant en l'étendant avec deux moteurs de compression qui regroupent différentes stratégies des deux classes étudiées. La réalisation de ces deux moteurs permettra de comparer entre ces stratégies et d'avoir une idée plus claire sur leurs performances dans différents scénarios.
 	
-	Dans ce chapitre, nous présenterons les détails de la conception des deux moteurs. Nous allons, dans un premier temps, présenter leurs principes de fonctionnement tout en mettant l'accent sur les différents modules qui les constituent. Nous expliquerons juste après notre deuxième contribution qui consiste en une nouvelle  méthode de compression destinée aux graphes dynamiques.
+	Dans ce chapitre, nous présenterons les détails de la conception des deux moteurs. Nous allons, dans un premier temps, présenter leur principe de fonctionnement tout en mettant l'accent sur les différents modules qui les constituent. Nous expliquerons juste après notre deuxième contribution qui consiste en une nouvelle  méthode de compression destinée aux graphes dynamiques.
 	
 
 	\section{$k^2$-GraCE : }
 	\label{k2}
 
-Dans cette section, nous présenterons  notre premier moteur baptisé $k2$-GraCE pour $k^2$-trees Graph Compression Engine. Il consiste en un moteur de compression de graphes par les arbres $k^2$-trees qui exploitent les propriétés de localité et de similarité dans les graphes du web. 
+Dans cette section, nous présenterons  notre premier moteur baptisé \gls{$k^2$-GraCE}. Il consiste en un moteur de compression des graphes par les arbres $k^2$-trees qui exploitent les propriétés de localité et de similarité dans les graphes du web. 
 
 		\subsection{Principe de fonctionnement :}
 		
@@ -379,7 +379,7 @@ Après avoir expliquer de manière générale le principe de fonctionnement du m
 		\subsection{Conception Modulaire:}
 		
 		Dans cette partie, nous détaillerons chaque phase du moteur $k^2$-GraCE. Nous commencerons par présenter les différentes techniques de pré-traitement 
-		que nous voulons utiliser avec notre moteur. Nous expliquerons par la suite le processus de compression pour chaque type de graphe supporté par le moteur $k^2$-GraCE et nous allons aussi fournir les différents algorithmes d'extraction de voisins en Annexe \ref{k2_annexe}. 
+		que nous voulons utiliser avec notre moteur. Nous expliquerons par la suite le processus de compression pour chaque type de graphe supporté par le moteur $k^2$-GraCE. %et nous allons aussi fournir les différents algorithmes d'extraction de voisins en Annexe \ref{k2_annexe}. 
 		
 			\subsubsection{Pré-traitement du graphe de données:}
 Durant cette première phase, le moteur $k^2$-GraCE utilise des stratégies qui permettrons d'aboutir à une meilleur compression. Il offre une alternative pour chaque type de graphe qu'il supporte. 		
@@ -387,7 +387,7 @@ Durant cette première phase, le moteur $k^2$-GraCE utilise des stratégies qui 
 			
 			Dans le cas des graphes statiques orientés, $k^2$-GraCE offre la possibilité de ré-ordonnoncer les nœuds du graphe de données G.
 			% Nous expliquerons  dans ce qui suit les différents algorithmes de ré-ordonnancement qui peuvent être utiliser dans notre moteur. 
-			Comme notre travail est une suite d'un travail d'étudiants de l'année précédente \citep{master2017}, ce module a été déjà conçu et implémenté. Nous rappellerons uniquement dans cette section le principe de base de chaque méthode. 
+			Comme notre travail est une suite d'un travail d'étudiants de l'année précédente \citep{master2017}, cette phase a été déjà conçue et implémentée. Nous rappellerons uniquement dans cette section le principe de base de chaque méthode. 
 			
 			\begin{itemize}[label=$\bullet$]
 \item\textbf{Ordre Lexicographique :} Les nœuds sont ordonnés selon leurs listes de successeurs. Les listes de successeurs seront donc triées selon un ordre croissant des identifiants et par la suite ordonnées.
@@ -412,7 +412,7 @@ Durant cette première phase, le moteur $k^2$-GraCE utilise des stratégies qui 
 
 
 	
-	$k^2$-GraCE supporte aussi les graphes dynamiques. Dans le cas de ce type de graphe, il offre la possibilité de calculer une matrice différence à partir de la matrice initiale. Le but de cette fonctionnalité est de maximiser les zones nulles dans la matrice afin de réduire la taille de l'arbre. À t=0, on garde la même matrice bidimensionnelle du graphe initial. Pour les instants restants (t > 0), nous comparons $M_{pq}$ à l'instant t avec $M_{pq}$ à l'instant t-1, si égalité alors la nouvelle matrice contiendra un 0 dans la cellule pq à l'instant t sinon elle contiendra un 1. La nouvelle matrice d'adjacence contiendra ainsi uniquement les changements qui occurrent entre les instants. La figure \ref{mat_diff} montre une matrice d'adjacence d'un graphe dynamique capturé dans trois instants différents avec sa matrice de différence et la représentation $k^2$-tree dans les deux cas.
+	$k^2$-GraCE supporte aussi les graphes dynamiques. Dans le cas de ce type de graphe, il offre la possibilité de calculer une matrice différence à partir de la matrice initiale. Le but de cette fonctionnalité est de maximiser les zones nulles dans la matrice afin de réduire la taille de l'arbre. À \textit{t}=0, on garde la même matrice bidimensionnelle du graphe initial. Pour les instants restants (\textit{t} > 0), nous comparons $M_{pq}$ à l'instant t avec $M_{pq}$ à l'instant \textit{t-1}, si égalité alors la nouvelle matrice contiendra un 0 dans la cellule \textit{pq} à l'instant \textit{t} sinon elle contiendra un 1. La nouvelle matrice d'adjacence contiendra ainsi uniquement les changements qui occurrent entre les instants. La figure \ref{mat_diff} montre une matrice d'adjacence d'un graphe dynamique capturée dans trois instants différents avec sa matrice de différence et la représentation $k^2$-tree dans les deux cas.
 
 \begin{figure}[H]
 \centering
@@ -421,7 +421,7 @@ Durant cette première phase, le moteur $k^2$-GraCE utilise des stratégies qui 
 	\label{mat_diff}
 \end{figure}
 
-L'inconvénient de cette fonctionnalité est qu'une reconstruction de la matrice initiale est nécessaire dans le cas d'interrogation du graphe. Un autre inconvénient de cette technique est qu'elle dégrade les performances dans le cas où les différentes captures ne se possèdent pas des nœuds en commun. Dans le cas de disparition de liens par exemple nous obtiendrons des zéros (0) qui vont être remplacer par des uns (1) engendrant ainsi une matrice plus dense. Le gain apporté par cette technique est fortement dépendant des caractéristiques du graphe. 
+L'inconvénient de cette fonctionnalité réside dans le fait qu'une reconstruction de la matrice initiale est nécessaire dans le cas d'interrogation du graphe. Un autre inconvénient de cette technique est qu'elle dégrade les performances dans le cas où les différentes captures ne possèdent pas des arêtes en commun. Dans le cas de disparition de liens par exemple nous obtiendrons des zéros (0) qui vont être remplacés par des uns (1) engendrant ainsi une matrice plus dense. Le gain apporté par cette technique est fortement dépendant des caractéristiques du graphe. 
 Nous fournissons ci-après l'algorithme de construction de la matrice de différence :\\
 
 	\begin{algorithm}[H]
@@ -460,15 +460,17 @@ Nous notons que l'utilisation de ce module dans le processus de construction de 
 		
 			\subsubsection{Construction de l'arbre $k^2$-tree}
 			
-			$k^2$-tree est une représentation compacte de la matrice d'adjacence qui exploite ses propriétés de dispersion et de clustering. Elle était destinée au départ pour les graphes du web et généralisée par la suite pour différents cas. La représentation est conçue pour compresser les grandes zones nulles de la matrice d'adjacence en les représentant avec un nombre réduit de bits. Plusieurs alternatives existent pour construire l'arbre $k^2$-tree: utilisation de la matrice d'adjacence, l'utilisation de la liste d'adjacence ou l'utilisation du graphe directement. Dans tous les cas, on obtiendra une représentation sous forme d'un arbre ayant une hauteur h= $log_k(N)$ où chaque nœud possède $k^2$ fils. 
+			$k^2$-tree est une représentation compacte de la matrice d'adjacence qui exploite ses propriétés de similarité et de localité. Elle était destinée au départ pour les graphes du web et généralisée par la suite pour différents cas. La représentation est conçue pour compresser les grandes zones nulles de la matrice d'adjacence en les représentant avec un nombre réduit de bits. Plusieurs alternatives existent pour construire l'arbre $k^2$-tree: l'utilisation de la matrice d'adjacence, l'utilisation de la liste d'adjacence ou l'utilisation du graphe directement. Dans tous les cas, nous obtenons une représentation sous forme d'un arbre ayant une hauteur h= $log_k(N)$ où chaque nœud possède $k^2$ fils. 
 			  Pour représenter l'arbre de manière concise, deux structures seront utilisées :
 			\begin{itemize}
-			\item \textbf{T }: Un tableau qui stocke tous les bits du $k^2$-tree sauf ceux du dernier niveau. Les bits de l' arbre $k^2$-tree sont placés après une traversée horizontale de l'arbre. $k^2$-GraCE représente d'abord les $k^2$ valeurs binaires des fils du nœud racine, puis les valeurs du deuxième niveau, ...etc.
+			\item \textbf{T }: Un tableau qui stocke tous les bits du $k^2$-tree sauf ceux du dernier niveau. Les bits de l'arbre $k^2$-tree sont placés après une traversée horizontale de l'arbre. $k^2$-GraCE représente d'abord les $k^2$ valeurs binaires des fils du nœud racine, puis les valeurs du deuxième niveau, ...etc.
 			
-			\item  \textbf{L} : Un tableau stockant le dernier niveau de l'arbre. Ainsi, il représente la valeur des (ou de certaines) cellules de la matrice d'adjacence du graphe initiale.
+			\item  \textbf{L} : Un tableau stockant le dernier niveau de l'arbre. Ainsi, il représente la valeur des (ou de certaines) cellules de la matrice d'adjacence du graphe initial.
 			\end{itemize}
 			
-			L'algorithme \ref{alg:k2_tree} résume les différentes étapes de construction de l'arbre $k^2$-tree dans le cas de la construction à partir de la liste d'adjacence. Nous dotons pour cela la liste d'adjacence de n curseurs, un par ligne, de sorte que chaque fois que nous devons accéder à $M_{pq}$, nous comparons le curseur actuel de la ligne $p$ à la valeur q. S'ils sont égaux, alors on aura $M_{pq} = 1$ et nous devons avancer le curseur vers le nœud suivant de la liste de la ligne p. Sinon, nous saurons que $M_{pq} = 0$. Nous supposons que la liste d'adjacence $List$, le nombre de fils $k$ ainsi que l'arbre $k^2$-tree $A$ sont des variables globales. Pour construire l'arbre à partir de la racine, elle sera invoquée comme suit :  ConstructK2Tree(N,1,0,0). Après avoir construit l'arbre $A$ sous forme d'un tableau de niveau, nous procèderons à la construction des deux structures selon les deux formules suivantes :
+			L'algorithme \ref{alg:k2_tree} résume les différentes étapes de construction de l'arbre $k^2$-tree dans le cas de la construction à partir de la liste d'adjacence. Nous dotons pour cela la liste d'adjacence de \textit{n} curseurs, un par ligne, de sorte que chaque fois que nous devons accéder à $M_{pq}$, nous comparons le curseur actuel de la ligne $p$ à la valeur \textit{q}. S'ils sont égaux, alors on aura $M_{pq} = 1$ et nous devons avancer le curseur vers le nœud suivant de la liste de la ligne \textit{p}. Sinon, nous saurons que $M_{pq} = 0$. 
+			
+			Nous supposons que la liste d'adjacence $List$, le nombre de fils $k$ ainsi que l'arbre $k^2$-tree $A$ sont des variables globales. Pour construire l'arbre à partir de la racine, elle sera invoquée comme suit :  ConstructK2Tree(N,1,0,0). Après avoir construit l'arbre $A$ sous forme d'un tableau de niveau, nous procèderons à la construction des deux structures selon les deux formules suivantes :
 			\begin{itemize}[label=$\bullet$]
 			 	\item T = $A_1: A_2:. . . :A_{h-1}$
 			 	\item L = $A_h$
@@ -518,7 +520,7 @@ Des versions itératives de l'algorithme peuvent être établies. Cependant, ell
 			\end{algorithm}
 	
 	
-		Une fois construites, les deux structures, T et L, permettent d'extraire les voisins directs et inverses d'un nœud directement sans décompression. Nous fournissons dans l'annexe \ref{k2_annexe} les détails de ces  algorithmes d'extraction de voisinage.		
+		Une fois construites, les deux structures (T et L) permettent d'extraire les voisins directs et inverses d'un nœud directement sans décompression. Nous fournissons dans l'annexe \ref{k2_annexe} les détails de ces  algorithmes d'extraction de voisinage.		
 			
 	
 
@@ -584,7 +586,7 @@ Des versions itératives de l'algorithme peuvent être établies. Cependant, ell
 	
 	\section{P-GraCE :}
 	
-	Notre deuxième moteur \gls{P-GraCE} est un moteur de compression par extraction de motifs. Il englobe quatre approches de compression différentes mais qui partagent toutes le même schéma globale de compression.  Nous présenterons dans cette partie, en détails, leurs principes de fonctionnement et les différents phases qui les constituent.
+	Notre deuxième moteur \gls{P-GraCE} est un moteur de compression par extraction de motifs. Il englobe quatre approches de compression différentes mais qui partagent toutes le même schéma global de compression.  Nous présenterons dans cette partie, en détails, leur principe de fonctionnement et les différents phases qui les constituent.
 	
 		\subsection{Principe de fonctionnement :}
 		
@@ -599,7 +601,7 @@ Des versions itératives de l'algorithme peuvent être établies. Cependant, ell
 
 \item Extraction et évaluation des motifs : Durant cette phase, une détection des motifs les plus denses ou les plus fréquents est réalisée. Leur évaluation dans cette phase permet de ne garder que les structures (motifs) susceptibles de donner une meilleur compression.
 
-\item Traitement des motifs: Ce module permet d'encoder ou d'agréger, dans certains cas, les motifs déjà découverts dans le but de minimiser d'avantage la taille du graphe en sortie. Dans d'autres cas, le module retourne une liste de structures sélectionnées parmi les motifs précédemment identifiés en utilisant des heuristiques dans le but de ne garder que les motifs importants du graphe. %Nous notons que l'utilisation de ce module n'est pas présente dans toutes les méthodes de ce moteur mais dans la plupart 
+\item Traitement des motifs: Ce module permet d'encoder ou d'agréger, dans certains cas, les motifs déjà découverts dans le but de minimiser davantage la taille du graphe en sortie. Dans d'autres cas, le module retourne une liste de structures sélectionnées parmi les motifs précédemment identifiés en utilisant des heuristiques dans le but de ne garder que les motifs importants du graphe. %Nous notons que l'utilisation de ce module n'est pas présente dans toutes les méthodes de ce moteur mais dans la plupart 
 
 \item Écriture du graphe compressé sur le fichier de sortie.
 \end{enumerate}
@@ -609,7 +611,7 @@ La figure \ref{P_grace} permet d'illustrer le principe de fonctionnement globale
 
 \begin{figure}[H]
 	\includegraphics[scale=0.48]{./ressources/image/pgrace.jpg}
-	\caption[Vue globale sur le fonctionnement du moteur \gls{P-GraCE}.]{Vue globale sur le fonctionnement du moteur \gls{P-GraCE}.}
+	\caption[Vue globale sur le fonctionnement du moteur \gls{P-GraCE}.]{Vue globale sur le fonctionnement du moteur P-GraCE.}
 	\label{P_grace}
 \end{figure}
 
@@ -643,7 +645,7 @@ Nous présenterons dans ce qui suit les trois phases de chaque approche incluse 
 		
 		\subsubsection{Extraction des motifs :}
 
-La phase d'extraction de motifs est une phase très importante	 dans le processus de compression. Elle permet de trouver les composantes les plus denses qui représentent en générale l'information utile dans un graphe de données. Plusieurs techniques existent pour réaliser cette tâche. Elles diffèrent dans la qualité des sous-structures découvertes selon le domaine d'application et le type de graphe en entrée. Nous présenterons ci-dessous les quatre méthodes offertes par le moteur P-GraCE.
+La phase d'extraction de motifs est une phase très importante	 dans le processus de compression. Elle permet de trouver les composantes les plus denses qui représentent en général l'information utile dans un graphe de données. Plusieurs techniques existent pour réaliser cette tâche. Elles diffèrent dans la qualité des sous-structures découvertes selon le domaine d'application et le type de graphe en entrée. Nous présenterons ci-dessous les quatre méthodes offertes par le moteur P-GraCE.
 		
 \begin{enumerate}
 
@@ -651,7 +653,7 @@ La phase d'extraction de motifs est une phase très importante	 dans le processu
 Le beam search est une méthode de recherche locale gloutonne. C'est une version améliorée de l'algorithme de recherche en largeur \gls{bfs}. Elle permet de n'explorer que les $k$ meilleurs fils dans chaque niveau à travers des heuristiques d'évaluation.
 
 Dans le cas d'extraction de motifs dans un graphe, le beam search commence par considérer que chaque nœud du graphe est un motif. Il utilise pour cela un arbre de recherche où ses nœuds sont des sous-structures. À chaque itération les motifs sont étendus par une arête et un nœud donnant ainsi un ensemble de sous-structures. Par la suite, les $k$ meilleurs sous-structures sont choisies. Les fils restants sont donc élagués. %Le processus continues jusqu'à ce que
-Cette alternative sera employée pour le cas des graphes étiquetés. Nous fournissons ci-après l'algorithme du beam search que nous avons utiliser. 
+Cette alternative sera employée pour le cas des graphes étiquetés. Nous fournissons ci-après l'algorithme du beam search que nous avons utilisé. 
 
 
 \begin{algorithm}[H]
@@ -698,7 +700,7 @@ Afin de mieux illustrer le fonctionnement de cet algorithme, nous proposons l'ex
 	\label{beam}
  \end{figure}
  
- Au départ chaque nœud est considéré comme une sous-structure, nous obtenons donc quartes sous structures:  A, B, C et X. Par la suite, chacune des sous structures  est étendues par un sommet et une arête tout en estimant le gain obtenu par chaque extension. Le sommet C  ne peut être étendu car il possède  uniquement des arêtes entrantes. Nous obtenons donc encore quatre sous structures : A-B, A-C, B-C et X-C. Les trois premières sous-structures donnent le même gain de 24 bits. Tant dis que la quatrième donne une configuration non permise à cause des chevauchement entre ses instances qui possèdent le nœud x  en commun. Uniquement la sous-structure A-B peut être étendue dans le prochain niveau. Cette dernière étape donne ainsi le motif A-B-C apportant un gain de 64 bits et qui est considéré comme la meilleur sous-structure.  
+ Au départ chaque nœud est considéré comme une sous-structure, nous obtenons donc quartes sous structures:  A, B, C et X. Par la suite, chacune des sous structures  est étendues par un sommet et une arête tout en estimant le gain obtenu par chaque extension. Nous obtenons donc encore quatre sous structures : A-B, A-C, B-C et X-C. Les trois premières sous-structures donnent le même gain de 24 bits. Tant dis que la quatrième donne une configuration non permise à cause des chevauchements entre ses instances qui possèdent le nœud x  en commun.  La dernière étape donne ainsi le motif A-B-C apportant un gain de 64 bits et qui représente la meilleur sous-structure.  
  
  \begin{figure}[H]
 	\centering
@@ -721,7 +723,7 @@ Afin de mieux illustrer le fonctionnement de cet algorithme, nous proposons l'ex
 
 \item \textbf{Méthodes de clustering :}
 
-Plusieurs méthodes de clustering existent dans la littérature. P-GraCE utilise un ensemble de  méthodes de clustering destinées pour compresser un graphe de données en entrée. nous les détaillons dans ce qui suit. 
+Plusieurs méthodes de clustering existent dans la littérature. P-GraCE utilise un ensemble de  méthodes de clustering destinées pour compresser un graphe de données en entrée. Nous les détaillons dans ce qui suit. 
 
 \textbf{\textit{SlashBurn}} : Cette technique part de l'observation  que les graphes du monde réel sont facilement décomposables en supprimant leurs nœuds concentrateurs qui sont définies comme les nœuds ayant un degré maximale dans le graphe G.  
 
@@ -729,7 +731,7 @@ Plusieurs méthodes de clustering existent dans la littérature. P-GraCE utilise
 
 À chaque itération le nœud concentrateur est supprimé et le graphe est décomposé en un nœud concentrateur (hub), un
 \newacronym{gcc}{CCG}{Composant Connecté Géant}
-\gls{gcc} et des rayons restants que nous définissons comme étant le composant connecté non géant connecté aux anciens \gls{gcc}. Le nœud concentrateur obtient ainsi le plus petit identifiant , les nœuds des rayons (spokes) reçoivent les identifiants les plus élevés  dans l’ordre décroissant de la taille du composant connecté auquel ils appartiennent, et le nouveau \gls{gcc} prend les identifiants restants. Le même processus s'applique aux nœuds dans \gls{gcc}, de manière récursive.\\
+\gls{gcc} et des rayons restants que nous définissons comme étant le composant connecté non géant connecté aux anciens \gls{gcc}. Le nœud concentrateur obtient ainsi le plus petit identifiant , les nœuds des rayons (spokes) reçoivent les identifiants les plus élevés  dans l’ordre décroissant de la taille du composant connecté auquel ils appartiennent, et le nouveau \gls{gcc} prend les identifiants restants. Le même processus s'applique aux nœuds du nouveau \gls{gcc}, de manière récursive.
 
 Nous illustrons le principe de fonctionnement de cette méthode de clustering sur le graphe de la figure \ref{Img:slashb}. Le nœud concentrateur (8) obtient le plus petit identifiant (1), les nœuds des rayons reçoivent les identifiants les plus élevés (9-16), et le \gls{gcc} prend les identifiants restants (2-8). La prochaine itération considère le nouveau \gls{gcc}. Nous fournissons l'algorithme détaillé en annexe \ref{alg:SlashBurn}.
 
@@ -741,28 +743,10 @@ Nous illustrons le principe de fonctionnement de cette méthode de clustering su
 	\label{Img:slashb}
  \end{figure}
 
-\textbf{\textit{KCBC}} : Cette technique se base sur le principe de dégénérescence \footnote{: La dégénérescence d’un graphe G est le plus petit nombre k de
+\textbf{\textit{K-Cores}} : Cette technique se base sur le principe de dégénérescence \footnote{: La dégénérescence d’un graphe G est le plus petit nombre k de
  telle sorte que chaque sous-graphe $S \in G$ contient un sommet de degré au plus k}. Soit G un graphe non orienté, nous notons par $\Delta$(G) le degré maximal des nœuds de G. Un k-core de G est un sous graphe H de taille maximale tel que $\Delta(H) \le k$ avec k entier positif.\\
 Pour décomposer le graphe, la méthode passe par quatre étapes. D'abord, le degré k de chaque nœud du graphe est calculé. Ensuite, pour chaque degré k allant du plus grand au plus petit le graphe est décomposé en supprimant tous les nœuds dont le degré est inférieure à k, l'opération s'arrête si la décomposition donne un ensemble non vide et le k est choisit comme $k_{max}$ sinon elle se termine quand $k_{max}$=1. Après la décomposition, chaque composant est identifié comme étant une structure. Enfin, les arêtes entre les structures précédemment identifiées sont supprimées. L'algorithme de la méthode est donné en Annexe (\ref{alg:KCBC})\\
 
-
-\textbf{\textit{Louvain}} : C'est un algorithme glouton hiérarchique d'extraction de communauté applicable à de grands graphes. La méthode permet de partitionner un graph en s'appuyant sur la principe de modularité. La modularité est une métrique comprise entre -1 et 1 qui mesure la densité des arêtes à l'intérieure d'un sous graphe comparée à celle des arêtes reliant ce dernier aux autres sous-graphes, par la suite, l'optimisation de la modularité conduit à un meilleur partitionnement. Pour un graphe pondéré, la modularité est donnée par :    
-
-\begin{equation} \label{eq:lovain}
-\textit{Q} = \frac{1}{2m} \sum_{ij}[A_{ij} - \frac{{k}_{i}{k}_{j}}{2m}]  \delta({c}_{i},{c}_{j})
-\end{equation}
-
-où :
-\begin{itemize}
-\item $A_{ij}$ est le poids de l'arrête entre le nœud i et le nœud j.
-\item ${k}_{i},{k}_{j}$ sont les poids des arêtes liées aux nœuds  i et  j respectivement.
-\item $2m$ est la somme des poids des arêtes du graphe. 
-\item ${c}_{i}, {c}_{j}$ sont les communautés des nœuds.
-\item $\delta$ est une simple fonction de Dirac \footnote{Une fonction de deux variables qui est égale à 1 si celles-ci sont égales, et 0 sinon. Elle est symbolisé par la lettre $\delta$ (delta minuscule) de l'alphabet grec.}.
-\end{itemize}
-
-Pour maximiser la modularité, Louvain applique deux phases d'une manière itérative. Dans la première phase, les nœuds sont affectés dans des petites communautés où chaque nœud représente une communauté. Ensuite, pour chaque nœud i, nous calculons la différence de modularité $\Delta\textit{Q}$ obtenue après le déplacement de i de sa propre communauté vers les communautés de chacun de ses voisins j. Une fois les différences calculées, i est déplacé vers la communauté qui maximise sa modularité. Si aucune augmentation n'est possible, i reste dans sa communauté d'origine. L'opération est répétée sur chaque nœud de façon itérative jusqu'à ce qu'aucune amélioration n'est possible.
-Dans la seconde phase, les nœuds de chaque communauté sont regroupés dans un seul nœud et un nouveau graphe est construit. Les arêtes entre les nœuds dans la communauté sont représentées par des boucles sur la communauté et les arêtes d'une communauté vers une autre sont représentées par une seule arête pondérée. Le processus est répété de manière itérative. Pour exploiter cette méthode dans notre travail, on considère les nœuds regroupés obtenus à la fin comme étant des structures. L'algorithme de la méthode est donné en annexe \ref{alg:Lovain} .\\
 
 \textbf{\textit{Spectral}} : Cette méthode utilise les résultats d'algèbre linéaire afin de trouver une partition du graphe. L'approche générale consiste à utiliser une méthode de classification standard (généralement k-means) sur  les premiers vecteurs propres (vecteurs de Fiedler) de la matrice Laplaciènne du graphe. La matrice Laplaciènne est définie comme suit : 
 \[{M}_{Lap} :=
@@ -828,11 +812,13 @@ Une fois les signatures sont construites, les nœuds ayant les mêmes valeurs se
 	\label{jacc}
 \end{figure}
 
+Après l'étape de clustering,  une arborescence est ensuite construite pour chaque ensemble de sommets ayant les même signatures et qui permettra d'extraire les sous-structures (motifs) denses du graphe à travers un parcours de la racine vers les feuilles. 
+
 \item \textbf{Extraction de Motifs de la matrice d'adjacence:}
 
-La dernière méthode d'extraction de motifs offerte par le moteur P-GraCE se base sur les blocs les plus fréquents dans la matrice d'adjacence. Cette méthode est destinée aux graphes ayant une matrice d'adjacence contenant de larges zones nulles. L'ensemble des motifs à découvrir est prédéfinies aux départ et consiste en trois types de motifs qui sont paramétrés par la taille du motifs :
+La dernière méthode d'extraction de motifs offerte par le moteur P-GraCE se base sur les blocs les plus fréquents dans la matrice d'adjacence. Cette méthode est destinée aux graphes ayant une matrice d'adjacence contenant de larges zones nulles. L'ensemble des motifs à découvrir est prédéfinies au départ et consiste en trois types de motifs qui sont paramétrés par la taille du motif :
 	\begin{enumerate}[label=(\alph*)]
-		\item \textbf{Type 01 :} Ce premier ensemble de motifs consiste en les vecteurs ayant uniquement deux '1' ,le premier dans le bit de poids fort et un autre dans l'une des position restante, et le vecteur nul. Pour une taille de motifs $2^n$ bits, nous obtenons un ensemble de taille $2^n$.
+		\item \textbf{Type 01 :} Ce premier ensemble de motifs consiste en les vecteurs ayant uniquement deux '1', le premier dans le bit de poids fort et un autre dans l'une des position restante, et le vecteur nul. Pour une taille de motif de $2^n$ bits, nous obtenons un ensemble de taille $2^n$.
 		
 		
 		
@@ -848,10 +834,10 @@ Chaque ligne de la matrice d'adjacence est donc divisée en plusieurs blocs ayan
 		
 		\subsubsection{Évaluation des motifs :}
 		
-		 Dans cette deuxième phase, P-GraCE cherche à obtenir la meilleur compression en filtrant les sous-structures et ne gardant que celles qui offrent un bon \gls{mdl}. 
+		 Dans cette deuxième phase, P-GraCE cherche à obtenir la meilleur compression en filtrant les sous-structures et en ne gardant que celles qui offrent un bon \gls{mdl}. 
 		 
 		 \begin{enumerate}
-		 \item Comme nous l'avons déjà préciser P-GraCE utilise le beam-search pour le cas des graphes  étiquetés. Il est fondamentalement guidé par le principe \gls{mdl}. L'évaluation heuristique effectuée suppose que la meilleure sous-structure est celle qui minimise le \gls{mdl} du graphe en entrée lorsqu'il est compressé par cette sous-structure. Notons la longueur de description de S par DL (S), la longueur de description du graphe d'entrée G  par DL (G) et la longueur de description du graphe après compression par DL (G | S). L'heuristique est alors rien d'autre que le taux de compression et peut être définie ainsi :
+		 \item Comme nous l'avons déjà précisé P-GraCE utilise le beam-search pour le cas des graphes  étiquetés. Il est fondamentalement guidé par le principe \gls{mdl}. L'évaluation heuristique effectuée suppose que la meilleure sous-structure est celle qui minimise le \gls{mdl} du graphe en entrée lorsqu'il est compressé par cette sous-structure(S). Notons la longueur de description de S par \textit{DL(S)}, la longueur de description du graphe d'entrée G  par \textit{DL(G)} et la longueur de description du graphe après compression par \textit{DL(G|S)}. L'heuristique est alors rien d'autre que le ratio de compression et peut être définie ainsi :
 		 
 		\begin{center}
 		compression = $\frac{DL(G)}{DL(S)+DL(G|S)} $
@@ -859,10 +845,10 @@ Chaque ligne de la matrice d'adjacence est donc divisée en plusieurs blocs ayan
 		
 		\item  Dans le cas de l'utilisation des méthodes de clustering, nous obtenons une liste des structures les plus fréquentes. Pour chaque structure identifiée nous cherchons le motif qui la décrit le mieux en se basant sur un ensemble prédéfini de motifs (étoile, clique, noyau bipartie, semi clique, semi noyau bipartie). Afin de trouver le motif approximatif de la structure, nous utiliserons les formules proposées dans \citep{koutra2015summarizing} (voir section \ref{vog_desc}).
 		
-		\item Dans le cas de l'utilisation des fonctions de hachage, nous utilisons le gain apporté par la compression des motifs comme métrique d'évaluation. Nous utilisons pour cela la même formule proposée dans \citep{buehrer2008scalable}. En effet, la qualité de compression d'un motif est calculée en fonction de sa fréquence dans la liste d'adjacence, et de sa taille qui est le nombre de liens qu'il contient (Formule \ref{eqcompperf}).
+		\item Dans le cas de l'utilisation de la technique du MinHashing, nous utilisons le gain apporté par la compression des motifs comme métrique d'évaluation. Nous utilisons pour cela la même formule proposée dans \citep{buehrer2008scalable}. En effet, la qualité de compression d'un motif est calculée en fonction de sa fréquence dans la liste d'adjacence, et de sa taille qui est le nombre de liens qu'il contient (Formule \ref{eqcompperf}).
 				%%% Formule
 				\begin{equation}
-				Compression(P)=(P.fréquence-1)(P.taille-1)-1
+				Compression(P)=(P.frequence-1)(P.taille-1)-1
 				\label{eqcompperf}
 				\end{equation}
 				
@@ -878,7 +864,7 @@ Chaque ligne de la matrice d'adjacence est donc divisée en plusieurs blocs ayan
 		
 La première consiste à faire une agrégation des nœuds du meilleur motif. Les trois étapes seront donc répétées jusqu'à ce que la taille du graphe en sortie ne peut plus être optimisée. Elle est appliquée dans le cas de l'approche beam-search.
 
- La deuxième alternative consiste à considérer un ensemble de la liste des sous-structures de l'étape 2 représentent le compressé du graphe de données. Nous effectuons une sélection à partir de l'ensemble des structures initiales pour obtenir un modèle (ensemble de structure) avec un MDL optimal. Dans ce cas de figure, la sélection diffère selon l'approche utilisée. Dans le cas de l'approche basée sur les méthodes de clustering, la sélection se fait à travers plusieurs algorithmes. Nous présentons ci dessous les méthodes que nous allons utiliser durant cette phase:
+ La deuxième alternative consiste à considérer que  la liste des sous-structures de l'étape 2 représentent le compressé du graphe de données. Nous effectuons une sélection à partir de l'ensemble des structures initiales pour obtenir un modèle (ensemble de structures) avec un MDL optimal. Cette option sera employée dans  l'approche basée sur les méthodes de clustering . La sélection se fait à travers plusieurs algorithmes. Nous présentons ci dessous les méthodes que nous allons utiliser durant cette phase:
 \begin{itemize}
 \item Top10 : Cette méthode commence par ordonner les sous structures selon le gain de codage local apporté par chacune d'elles. Le gain de codage local est définit par L(g,$\emptyset$) - L(g,$\omega$) où L(g,$\emptyset$) représente le codage de g (g est le sous graphe contenant la structure) en tant qu'erreur (un modèle vide) et L(g,$\omega$) est le cout de codage de g avec la structure $\omega$. Elle sélectionne ensuite les k meilleurs structures ayant un gain local élevé. \newacronym{gnf}{GNF}{Greedy'nForget}
 \item \gls{gnf} : Au lieu de prendre en compte toutes les combinaisons possibles des structures, l'heuristique 
@@ -964,9 +950,9 @@ La première consiste à faire une agrégation des nœuds du meilleur motif. Les
 	
 	\section{Conclusion}
 
-Dans ce chapitre, nous avons expliqué la partie conceptuelle de nos deux moteurs: $k^2$-GraCE et P-GraCE, qui  représentent les deux classes qui intéressent notre recherche. Nous avons présenté leurs différents modules et fonctionnalités tout en clarifiant leurs paramètres ainsi que leur principe de fonctionnement.
+Dans ce chapitre, nous avons expliqué la partie conceptuelle de nos deux moteurs: $k^2$-GraCE et P-GraCE, qui  représentent les deux classes qui font l'objet de notre recherche. Nous avons présenté leur différents modules et fonctionnalités tout en clarifiant leurs paramètres ainsi que leur principe de fonctionnement.
 
-	Dans le chapitres suivant, nous présenteront les choix d'implémentation que nous avons effectué. Nous décrirons l'environnement de développement ainsi que l'architecture globale de notre projet. 
+	Dans le chapitres suivant, nous présenterons les choix d'implémentation que nous avons effectués. Nous décrirons l'environnement de développement ainsi que l'architecture globale de notre projet. 
 	
 	
 	
@@ -986,17 +972,15 @@ Dans ce chapitre, nous avons expliqué la partie conceptuelle de nos deux moteur
 			\textbf {Conclusion générale}} \\[0.5in]
 			\addcontentsline{toc}{chapter}{\numberline{}Introduction générale}
 			\normalsize
-De nos jours, les graphes sont omniprésents. Cependant, leur taille présente un obstacle presque insurmontable à la compréhension du caractère essentiel des données. D'où la nécessité de la compression qui permet de réduire la taille des graphes tout en gardant le caractère utile de l'information incluse dans ces derniers.
+De nos jours, les graphes sont omniprésents. Cependant, leur taille présente un obstacle presque insurmontable à la compréhension du caractère essentiel des données. D'où la nécessité de la compression qui permet de réduire la taille des graphes tout en gardant le caractère utile de l'information incluse dans ces derniers.\\
 
-Dans notre travail, nous nous sommes focalisées  sur les méthodes de compression basées sur l'extraction de motifs et celles basées sur les arbres $k^2$-trees. Dans un premier temps, nous avons étudié les différentes méthodes et techniques s'inscrivant dans les deux classes ainsi que leurs différentes classifications existantes dans la littérature. Cette étude nous a initié au domaine de compression et nous a permis de mieux comprendre l'approche théorique de chaque classe. Suite à cela, nous avons proposé une nouvelle classification consistant en une rectification d'une ancienne classification proposée dans un Master précédent \citep{master2017}. Nous nous sommes basées pour cela sur le principe de fonctionnement et les fondements théoriques de ces méthode. Nous avons conclu cette partie en établissant une étude comparative au sein d'une même classe et entre les deux classes en considérant différents critères: type de graphe en entrée, type de compression, .... 
+Dans notre travail, nous nous sommes focalisées  sur les méthodes de compression basées sur l'extraction de motifs et celles basées sur les arbres $k^2$-trees. Dans un premier temps, nous avons étudié les différentes méthodes et techniques s'inscrivant dans les deux classes ainsi que leurs différentes classifications existantes dans la littérature. Cette étude nous a initié au domaine de compression et nous a permis de mieux comprendre l'approche théorique de chaque classe. Suite à cela, nous avons proposé une nouvelle classification consistant en une rectification d'une ancienne classification proposée dans un Master précédent \citep{master2017}. Nous nous sommes basées pour cela sur le principe de fonctionnement et les fondements théoriques de ces méthodes. Nous avons conclu cette partie en établissant une étude comparative au sein d'une même classe et entre les deux classes en considérant différents critères: type de graphe en entrée, type de compression, .... \\
 
-La deuxième partie de notre travail consiste en l'implémentation d'une méthode de chaque classe que nous avons avons proposées dans la première étape dans le but de les réunir dans une même plateforme et d'établir une comparaison plus objective entre ces techniques. De ce fait, nous avons proposé deux moteurs de compression de graphe (un moteur par classe). Le premier moteur $k^2$-GraCE exploite les propriétés de la matrice d'adjacence pour compresser le graphe. Il supporte trois type de graphe : graphe statique orienté, graphe statique non orienté et les graphes dynamiques. Nous l'avons doté d'une phase de pré-traitement qui permet d'exploiter davantage les caractéristiques des graphes. Le deuxième moteur P-GraCE quant à lui supporte trois type de graphe : graphe orienté statique, graphe non orienté statique et finalement les graphes étiquetés. Il englobe quatre approches de compression : une approche basée sur le beam search, une approche basée sur les méthodes de clustering, une approche basée sur le MinHashing et une approche basée sur l'extraction de motifs à partir de la matrice d'adjacence. Nous avons aussi proposé une nouvelle méthode de compression s'intitulant DDSM destinée pour les graphes dynamiques et permettant de fournir une compression interprétable du graphe initial. 
+La deuxième partie de notre travail consiste en l'implémentation d'une méthode de chaque classe que nous  avons proposées dans la première étape dans le but de les réunir dans une même plateforme et d'établir une comparaison plus objective entre ces techniques. De ce fait, nous avons proposé deux moteurs de compression de graphe (un moteur par classe). Le premier moteur $k^2$-GraCE exploite les propriétés de la matrice d'adjacence pour compresser le graphe. Il supporte trois types de graphe : graphes statiques orientés, graphes statiques non orientés et les graphes dynamiques. Nous l'avons doté d'une phase de pré-traitement qui permet d'exploiter davantage les caractéristiques des graphes. Le deuxième moteur P-GraCE quant à lui supporte trois types de graphe : graphes orientés statiques, graphes non orientés statiques et finalement les graphes étiquetés. Il englobe quatre approches de compression : une approche basée sur le beam search, une approche basée sur les méthodes de clustering, une approche basée sur le MinHashing et une approche basée sur l'extraction de motifs à partir de la matrice d'adjacence. Nous avons aussi proposé une nouvelle méthode de compression s'intitulant DDSM destinée pour les graphes dynamiques et permettant de fournir une compression interprétable du graphe initial. \\
 
-La dernière étape de notre projet représente une étape d'évaluation des deux moteurs de compression ainsi que la méthode que nous avons proposée. Nous avons utilisé pour cela des graphes réels issus de domaines différents ainsi que trois métriques d'évaluation : le ratio de compression, le nombre de bits par nœud et le temps d'exécution. Dans le cas du moteur $k^2$-GraCE, nous avons montré que l'utilisation de la matrice d'adjacence dégrade les performances en terme de temps d'exécution et que l'utilisation de la liste d'adjacence ou la structure de la bibliothèque \gls{snap} est meilleur. Pour le module de pré-traitement de ce moteur, nous avons constaté que  l'utilisation d'algorithme de ré-ordonnancement  ne donne une amélioration que dans le cas des graphes qui ne sont pas issus du domaine du web. Nous avons aussi obtenu une amélioration d'un facteur de 2 du ratio de compression lorsque la partie supérieure uniquement de la matrice est considérer. Le meilleur ratio obtenu pour ce moteur est de 5474 dans le cas du graphe Retilia--toroise-network-bsv qui est un graphe dynamique.
-
-Pour le deuxième moteur P-GracE, les tests ont montré que dans le cas de la méthode basée sur les propriétés de la matrice d'adjacence les motifs de classe une ou de classe trois sont plus intéressant. Nous avons aussi constaté que l'approche basée sur les méthodes de clustering produit une meilleur compression lors de l'utilisation des trois méthodes de clustering ensmbles comme méthode d'extraction de motifs et la méthode Step comme méthode de sélection. Concernant la méthode que nous avons proposée, nous avons obtenu un ratio de compression qui se stabilise à partir de 50 permutations avec un temps de compression compétitif.  
-
-La comparaison entre les deux moteurs a montré que le moteur $k^2$-GraCE donne des résultat nettement meilleur que le moteur P-GraCE en terme de taux de compression. Cependant, le moteur P-GraCE offre une compression dans un temps meilleur facilitant l'analyse et la compréhension du graphe initiale à travers ses sous-structures les plus importantes ayant généralement une interprétation selon le domaine d'application.  
+La dernière étape de notre projet représente une étape d'évaluation des deux moteurs de compression ainsi que la méthode que nous avons proposée. Nous avons utilisé pour cela des graphes réels issus de domaines différents ainsi que trois métriques d'évaluation : le ratio de compression, le nombre de bits par nœud et le temps d'exécution. Dans le cas du moteur $k^2$-GraCE, nous avons montré que l'utilisation de la matrice d'adjacence dégrade les performances en terme de temps d'exécution et que l'utilisation de la liste d'adjacence ou la structure de la bibliothèque \gls{snap} est meilleur. Pour le module de pré-traitement de ce moteur, nous avons constaté que  l'utilisation d'algorithme de ré-ordonnancement  ne donne une amélioration que dans le cas des graphes qui ne sont pas issus du domaine du web. Nous avons aussi obtenu une amélioration d'un facteur de 2 du ratio de compression lorsque la partie supérieure uniquement de la matrice est considérée. Le meilleur ratio obtenu pour ce moteur est de 5474 dans le cas du graphe Retilia--toroise-network-bsv qui est un graphe dynamique.
+Pour le deuxième moteur P-GracE, les tests ont montré que, dans le cas de la méthode basée sur les propriétés de la matrice d'adjacence, les motifs de classe une (01) ou de classe trois (03) sont plus intéressants. Nous avons aussi constaté que l'approche basée sur les méthodes de clustering produit une meilleur compression lors de l'utilisation des trois méthodes de clustering ensembles comme méthode d'extraction de motifs et la méthode \textit{Step} comme méthode de sélection. Concernant la méthode que nous avons proposée, nous avons obtenu un ratio de compression qui se stabilise à partir de 50 permutations avec un temps de compression compétitif.  
+La comparaison entre les deux moteurs a montré que le moteur $k^2$-GraCE donne des résultat nettement meilleur que le moteur P-GraCE en terme de taux de compression. Cependant, le moteur P-GraCE offre une compression dans un temps meilleur tout en produisant une compression qui facilite l'analyse et la compréhension du graphe initial à travers ses sous-structures les plus importantes ayant généralement une interprétation selon le domaine d'application.  \\
 	
 	
 Comme perspective à ce travail, nous aimerions bien tester nos deux moteurs avec des graphes encore plus larges pour pouvoir les évaluer davantage. Nous voudrons aussi tester notre méthode contre les méthodes existantes dans la littérature, notamment TimeCrunch \citep{shah2015timecrunch}, sur les mêmes graphes afin de mieux comparer et situer notre contribution dans la littérature.
