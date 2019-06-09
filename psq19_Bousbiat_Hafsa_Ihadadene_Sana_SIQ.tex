@@ -400,7 +400,7 @@ Durant cette première phase, le moteur $k^2$-GraCE utilise des stratégies qui 
 			
 			\end{itemize}
 		
-	Le deuxième type de graphe supporté par le moteur $k^2$-GraCE correspond aux graphes statiques non orientés. Dans ce cas, nous obtenons une matrice d'adjacence symétrique. De ce fait, nous proposons de ne considérer que la partie triangulaire supérieure pour enlever la redondance porté par la symétrie. L'arbre construit ainsi offre toujours la possibilité d'extraire le voisinage d'un nœuds sans avoir recours à une décompression. En effet, extraire les voisins d'un nœud dans le graphe initial revient à extraire les voisins directs et inverses dans la nouvelle matrice construite en utilisant les mêmes algorithmes de l'annexe \ref{k2_annexe}.
+	Le deuxième type de graphe supporté par le moteur $k^2$-GraCE correspond aux graphes statiques non orientés. Dans ce cas, nous obtenons une matrice d'adjacence symétrique. De ce fait, nous proposons de ne considérer que la partie triangulaire supérieure pour enlever la redondance portée par la symétrie. L'arbre construit ainsi offre toujours la possibilité d'extraire le voisinage d'un nœuds sans avoir recours à une décompression. En effet, extraire les voisins d'un nœud dans le graphe initial revient à extraire les voisins directs et inverses dans la nouvelle matrice construite en utilisant les mêmes algorithmes de l'annexe \ref{k2_annexe}.
 	 Si nous prenons l'exemple du nœuds 2 dans la figure \ref{k2_non}, ses voisins sont représentés par les 1 de la deuxième ligne ou de la deuxième colonne dans la matrice d'origine (matrice gauche) et par l'union des cellules ayant un 1 de la deuxième ligne et de la deuxième colonne dans la matrice droite ce qui nous donne : $v(2) = \{1, 2, 5,6\}$.
 	
 \begin{figure}[H]
