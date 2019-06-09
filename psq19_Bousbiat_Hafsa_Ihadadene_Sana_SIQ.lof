@@ -44,7 +44,7 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces R\IeC {\'e}sultats de tests du moteur $K^2$-Grace selon les diff\IeC {\'e}rents types de repr\IeC {\'e}sentations du graphe en entr\IeC {\'e}e.\relax }}{81}{figure.caption.52}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Ratio de compression du moteur $K^2$-Grace en fonction du param\IeC {\`e}tre K (cas statique)\relax }}{82}{figure.caption.53}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }uds en fonction du param\IeC {\`e}tre K\relax }}{83}{figure.caption.54}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }uds et Ratio de compression du moteur en fonction du param\IeC {\`e}tre K (cas dynamique)\relax }}{84}{figure.caption.55}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Nombre de bits par n\IeC {\oe }ud et Ratio de compression du moteur en fonction du param\IeC {\`e}tre K (cas dynamique)\relax }}{84}{figure.caption.55}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace : Temps de compression en fonction de K\relax }}{85}{figure.caption.56}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace :Ratio de compression selon l'ordre des n\IeC {\oe }uds\relax }}{86}{figure.caption.57}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces R\IeC {\'e}sultats de compression de $K^2$-Grace avec/sans pr\IeC {\'e}-traitement (cas non orient\IeC {\'e})\relax }}{87}{figure.caption.58}
