@@ -333,14 +333,14 @@ Dans cette section, nous présenterons  notre premier moteur baptisé \gls{$k^2$
 
 		\subsection{Principe de fonctionnement :}
 		
-	Le moteur $k^2$-GraCE a été conçu pour permettre la compression de graphes statiques ou dynamiques et orientés ou non orientés. Il se base sur les travaux de Brisaboa et al. \citep{brisaboa2009k}. Il offre la possibilité de construire le graphe compressé à partir de la matrice d'adjacence, de la liste d'adjacence ou du graphe directement. Il permet aussi dans le cas des graphes dynamiques de réduire davantage la taille de l'arbre en le construisant n'ont pas à partir de la matrice d'adjacence initiale mais en calculant une matrice de différence entre les instants $t_i$. 
+	Le moteur $k^2$-GraCE a été conçu pour permettre la compression de graphes statiques ou dynamiques et orientés ou non orientés. Il se base sur les travaux de Brisaboa et al. \citep{brisaboa2009k}. Il offre la possibilité de construire le graphe compressé à partir de la matrice d'adjacence, de la liste d'adjacence ou du graphe directement. Il permet aussi dans le cas des graphes dynamiques de réduire davantage la taille de l'arbre en le construisant non pas à partir de la matrice d'adjacence initiale mais en calculant une matrice de différence entre les instants $t_i$. 
 	
 	
 $k^2$-GraCE est un moteur de compression sans perte de données. En effet, il construit en sortie un arbre $k^2$-tree incluant toute information présente dans le graphe initial. Cette information est représentée sous forme de deux chaines binaires. Le processus de compression d'un graphe de données par le moteur $k^2$-GraCE passe par les étapes suivantes :
 \begin{enumerate}
 \item Lecture et structuration du graphe de données en entrée 
 \item Pré-traitement : cette étape est optionnelle, elle ne figure pas dans l'algorithme de base. 
-\item Construction récursive de l'arbre k2-tree à partir de la matrice d'adjacence (la liste d'adjacence ou du graphe directement) et la concaténation des différents niveaux dans une première chaine T, à l'exception du dernier niveau qui sera stocké dans une deuxième chaine L.
+\item Construction récursive de l'arbre k2-tree à partir de la matrice d'adjacence (ou de la liste d'adjacence ou du graphe directement) et la concaténation des différents niveaux de l'arbre dans une première chaine T, à l'exception du dernier niveau qui sera stocké dans une deuxième chaine L.
 
 \item Écriture du graphe compressé sur le fichier de sortie.
 \end{enumerate}
@@ -353,7 +353,7 @@ Nous illustrons ces phases par la figure \ref{k2grace} qui donne une vue globale
 \caption[Principe de fonctionnement du moteur $k^2$-GraCE]{Principe de fonctionnement du moteur $k^2$-GraCE.}
 			\label{k2grace}
 \end{figure}
-Après avoir expliquer de manière générale le principe de fonctionnement du moteur $k^2$-GraCE, nous présenterons dans ce qui suit les détails des deux phases : la phase de pré-traitement et la phase de compression (construction de l'arbre). Nous allons tout d'abords commencer par présenter les notations et opérations de bases qui seront utilisées par la suite. Nous enchainerons par les différents algorithmes de construction selon le type de graphe en entrée.
+Après avoir expliquer de manière générale le principe de fonctionnement du moteur $k^2$-GraCE, nous présenterons dans ce qui suit les détails des deux phases : la phase de pré-traitement et la phase de compression (construction de l'arbre). Nous allons tout d'abords commencer par présenter les notations et opérations de base qui seront utilisées par la suite. Nous enchainerons par les différents algorithmes de construction selon le type de graphe en entrée.
 		
 		\subsection{Paramètre et notations :}
 				
@@ -933,7 +933,7 @@ La première consiste à faire une agrégation des nœuds du meilleur motif. Les
 	   \ELSE 
 	   \STATE STOP
 	  \ENDIF
-		\STATE $\mathcal{C}$ = $\mathcal{C} \setminus {s}$
+		\STATE $\mathcal{C}$ = $\mathcal{C} \setminus {Best-Structure}$
 	\ENDWHILE
 	\end{algorithmic}
 		\end{algorithm}
