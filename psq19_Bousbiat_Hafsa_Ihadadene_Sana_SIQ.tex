@@ -524,7 +524,7 @@ Des versions itératives de l'algorithme peuvent être établies. Cependant, ell
 			
 	
 
-	Un autre type de graphe supporté par notre moteur est le type de graphes dynamiques. Ces graphes sont représentés par un ensemble de graphes statiques chacun capturé à un instant $t_i$. De ce fait, l'algorithme de construction peut être facilement adapté avec chaque nœud dans l'arbre contenant, cette fois-ci, un vecteur de bits chacun faisant référence à un instant $t_i$. Nous fournissons ci-après (algorithme \ref{alg:dynk2_tree}) l'algorithme de construction de l'arbre $k^2$-tree à partir de la matrice d'adjacence tridimensionnelle.\\
+	Dans le cas des graphes dynamiques. Ces graphes sont représentés par un ensemble de graphes statiques chacun capturé à un instant $t_i$. De ce fait, l'algorithme de construction peut être facilement adapté avec chaque nœud dans l'arbre contenant, cette fois-ci, un vecteur de bits chacun faisant référence à un instant $t_i$. Nous fournissons ci-après (algorithme \ref{alg:dynk2_tree}) l'algorithme de construction de l'arbre $k^2$-tree à partir de la matrice d'adjacence tridimensionnelle.\\
 	
 
 
@@ -726,14 +726,12 @@ Afin de mieux illustrer le fonctionnement de cet algorithme, nous proposons l'ex
 Plusieurs méthodes de clustering existent dans la littérature. P-GraCE utilise un ensemble de  méthodes de clustering destinées pour compresser un graphe de données en entrée. Nous les détaillons dans ce qui suit. 
 
 \textbf{\textit{SlashBurn}} : Cette technique part de l'observation  que les graphes du monde réel sont facilement décomposables en supprimant leurs nœuds concentrateurs qui sont définies comme les nœuds ayant un degré maximale dans le graphe G.  
+ 
+À chaque itération le graphe est décomposé en un nœud concentrateur appelé hub, un
+\newacronym{gcc}{CCG}{Composant Connecté Géant} \gls{gcc} définit comme étant la composante connexe ayant le degré maximal et les composantes connexes restantes que nous appelons composantes non géantes . Le hub obtient le plus petit identifiant, les nœuds des composantes non géantes reçoivent les identifiants les plus élevés  dans l'ordre décroissant de la taille de la composante connectée auquel ils appartiennent, et le nouveau \gls{gcc} prend les identifiants restants. Le même processus s'applique aux nœuds du nouveau \gls{gcc}, de manière récursive.
+A la fin de l'algorithme, chaque hub et l'ensemble de ses voisins seront considérés comme une structure. Ainsi que chaque composante connexe non connectée.
 
-%Ce module de P-GraCE permet donc de réordonner les nœuds du graphe de tel sorte à avoir un plus petit nombre de blocs plus denses dans la matrice d'adjacence qui représentent les motifs en sortie.  
-
-À chaque itération le nœud concentrateur est supprimé et le graphe est décomposé en un nœud concentrateur (hub), un
-\newacronym{gcc}{CCG}{Composant Connecté Géant}
-\gls{gcc} et des rayons restants que nous définissons comme étant le composant connecté non géant connecté aux anciens \gls{gcc}. Le nœud concentrateur obtient ainsi le plus petit identifiant , les nœuds des rayons (spokes) reçoivent les identifiants les plus élevés  dans l’ordre décroissant de la taille du composant connecté auquel ils appartiennent, et le nouveau \gls{gcc} prend les identifiants restants. Le même processus s'applique aux nœuds du nouveau \gls{gcc}, de manière récursive.
-
-Nous illustrons le principe de fonctionnement de cette méthode de clustering sur le graphe de la figure \ref{Img:slashb}. Le nœud concentrateur (8) obtient le plus petit identifiant (1), les nœuds des rayons reçoivent les identifiants les plus élevés (9-16), et le \gls{gcc} prend les identifiants restants (2-8). La prochaine itération considère le nouveau \gls{gcc}. Nous fournissons l'algorithme détaillé en annexe \ref{alg:SlashBurn}.
+Nous illustrons le principe de fonctionnement de cette méthode de clustering sur le graphe de la figure \ref{Img:slashb}. Le nœud hub (8) obtient le plus petit identifiant (1), les nœuds des composantes  non géantes reçoivent les identifiants les plus élevés (9-16), et le \gls{gcc} prend les identifiants restants (2-8). La prochaine itération considère le nouveau \gls{gcc}. Nous fournissons l'algorithme détaillé en annexe \ref{alg:SlashBurn}.
 
 \begin{figure}[H]
 	\centering
@@ -748,27 +746,12 @@ Nous illustrons le principe de fonctionnement de cette méthode de clustering su
 Pour décomposer le graphe, la méthode passe par quatre étapes. D'abord, le degré k de chaque nœud du graphe est calculé. Ensuite, pour chaque degré k allant du plus grand au plus petit le graphe est décomposé en supprimant tous les nœuds dont le degré est inférieure à k, l'opération s'arrête si la décomposition donne un ensemble non vide et le k est choisit comme $k_{max}$ sinon elle se termine quand $k_{max}$=1. Après la décomposition, chaque composant est identifié comme étant une structure. Enfin, les arêtes entre les structures précédemment identifiées sont supprimées. L'algorithme de la méthode est donné en Annexe (\ref{alg:KCBC})\\
 
 
-\textbf{\textit{Spectral}} : Cette méthode utilise les résultats d'algèbre linéaire afin de trouver une partition du graphe. L'approche générale consiste à utiliser une méthode de classification standard (généralement k-means) sur  les premiers vecteurs propres (vecteurs de Fiedler) de la matrice Laplaciènne du graphe. La matrice Laplaciènne est définie comme suit : 
-\[{M}_{Lap} :=
-			\left\{
-			\begin{array}{r c l}
-			\sum_{k=1}^n poids(i,k)   & si & i=j \\
-			-poids(i,j) & sinon
-			\end{array}
-			\right.
-			\]
-			\\
-Chaque vecteur de Fiedler permet d’obtenir une partition du graphe en
-deux parties. Pour partitionner le graphe, nous devons minimiser le coût de coupe de la bissection, cela revient à trouver un vecteur $x \in \{-1,1\}^n $ qui minimise $x^T M_{Lap}x$. Pour cela, nous résolvons le système linéaire $M_{Lap}x = \lambda x$.
-
-L'algorithme prend comme entrée la matrice d'adjacence que nous notons A, une autre matrice diagonal notée D est crée tel que :    
-D : \[{d}_{i} := \sum_{(v_i,v_j) \in E_m} e(v_i,v_j)
-			\]
-			\\
-L'algorithme calcule ensuite le deuxième plus petit vecteur propre \textit{y} de la matrice Laplacienne Q = D - A. Ce vecteur propre (vecteur de Fiedler) contient une valeur pour chaque nœud du graphe, à partir de cette valeur le nœud est affecté à l'une des deux partition. Soit r le médian pondéré des valeurs de \textit{y}. Chaque valeur $y_j$ du vecteur propre est comparée à r et le nœud est affecté à une partition selon le résultat de la comparaison.\\
-	
-
-
+\textbf{\textit{Spectral}} : Cette méthode se fonde sur l'utilisation des k-means dans un nouveau espace, celui des k premiers vecteurs propres de la matrice dite Laplacienne du graphe. La matrice laplacien peut être défini de la façon suivante : L = D - A où D représente la matrice des degrés, e.i ${d}_{i} := \sum_{(v_i,v_j) \in E_m} e(v_i,v_j)$ et A la matrice d'adjacence du graphe. Quand le graphe est composé de k composantes connexes, on peut les
+retrouver à partir des k premiers vecteurs propres de la matrice
+laplacienne. Il suffit de choisir le nombre k des sous graphes souhaités (k est généré aléatoirement) puis de représenter chaque sommet dans un espace à k dimensions où les coordonnées correspondent
+aux valeurs des k premiers vecteurs propres. Dans cet espace, l'ensemble des sommets fortement
+connectées entre eux seront très proches (voire similaire si l’ensemble est une composante connexe) et les ensembles faiblement connectés seront très éloignés. Un simple
+k-means suffit alors à discriminer les différents clusters. L'algorithme est présenté dans l'annexe \ref{alg:spectral}
 
 \item \textbf{Le MinHash:}
 
@@ -860,13 +843,13 @@ Chaque ligne de la matrice d'adjacence est donc divisée en plusieurs blocs ayan
 		   
 		\subsubsection{Traitement des motifs :}
 		
-		Nous proposons pour traiter les motifs dans le moteur P-GraCE plusieurs alternatives, cela dépend de la méthode utilisé.
+		Nous proposons pour traiter les motifs dans le moteur P-GraCE plusieurs alternatives, cela dépend de la méthode utilisée.
 		
 La première consiste à faire une agrégation des nœuds du meilleur motif. Les trois étapes seront donc répétées jusqu'à ce que la taille du graphe en sortie ne peut plus être optimisée. Elle est appliquée dans le cas de l'approche beam-search.
 
- La deuxième alternative consiste à considérer que  la liste des sous-structures de l'étape 2 représentent le compressé du graphe de données. Nous effectuons une sélection à partir de l'ensemble des structures initiales pour obtenir un modèle (ensemble de structures) avec un MDL optimal. Cette option sera employée dans  l'approche basée sur les méthodes de clustering . La sélection se fait à travers plusieurs algorithmes. Nous présentons ci dessous les méthodes que nous allons utiliser durant cette phase:
+ La deuxième alternative consiste à considérer que  la liste des sous-structures de l'étape d'évaluation représentent le compressé du graphe de données : Nous effectuons une sélection à partir de l'ensemble des structures initiales pour obtenir un modèle (ensemble de structures) avec un MDL optimal. Cette option sera employée dans  l'approche basée sur les méthodes de clustering. La sélection se fait à travers plusieurs algorithmes. Nous présentons ci dessous les méthodes que nous allons utilisons durant cette phase:
 \begin{itemize}
-\item Top10 : Cette méthode commence par ordonner les sous structures selon le gain de codage local apporté par chacune d'elles. Le gain de codage local est définit par L(g,$\emptyset$) - L(g,$\omega$) où L(g,$\emptyset$) représente le codage de g (g est le sous graphe contenant la structure) en tant qu'erreur (un modèle vide) et L(g,$\omega$) est le cout de codage de g avec la structure $\omega$. Elle sélectionne ensuite les k meilleurs structures ayant un gain local élevé. \newacronym{gnf}{GNF}{Greedy'nForget}
+\item TopK : Cette méthode commence par ordonner les sous structures selon le gain de codage local apporté par chacune d'elles. Le gain de codage local est définit par L(g,$\emptyset$) - L(g,$\omega$) où g est le plus grand sous graphe complet englobant la structure, L(g,$\emptyset$) représente le cout de codage de g en tant qu'erreur et L(g,$\omega$) est le cout de codage de g avec la structure $\omega$,. Elle sélectionne ensuite les k meilleurs structures ayant un gain local élevé. \newacronym{gnf}{GNF}{Greedy'nForget}
 \item \gls{gnf} : Au lieu de prendre en compte toutes les combinaisons possibles des structures, l'heuristique 
 \gls{gnf}
  considère les structures selon un ordre décroissant de leur gain d'encodage local. Elle parcourt structure par structure et inclut dans le modèle celle qui réduit le MDL. L'algorithme de \gls{gnf} est présenté dans ce qui suit (\ref{alg:GNF})   
@@ -970,13 +953,13 @@ Dans ce chapitre, nous avons expliqué la partie conceptuelle de nos deux moteur
 \newpage
 \Huge{ 
 			\textbf {Conclusion générale}} \\[0.5in]
-			\addcontentsline{toc}{chapter}{\numberline{}Introduction générale}
+			\addcontentsline{toc}{chapter}{\numberline{}Conclusion générale}
 			\normalsize
 De nos jours, les graphes sont omniprésents. Cependant, leur taille présente un obstacle presque insurmontable à la compréhension du caractère essentiel des données. D'où la nécessité de la compression qui permet de réduire la taille des graphes tout en gardant le caractère utile de l'information incluse dans ces derniers.\\
 
 Dans notre travail, nous nous sommes focalisées  sur les méthodes de compression basées sur l'extraction de motifs et celles basées sur les arbres $k^2$-trees. Dans un premier temps, nous avons étudié les différentes méthodes et techniques s'inscrivant dans les deux classes ainsi que leurs différentes classifications existantes dans la littérature. Cette étude nous a initié au domaine de compression et nous a permis de mieux comprendre l'approche théorique de chaque classe. Suite à cela, nous avons proposé une nouvelle classification consistant en une rectification d'une ancienne classification proposée dans un Master précédent \citep{master2017}. Nous nous sommes basées pour cela sur le principe de fonctionnement et les fondements théoriques de ces méthodes. Nous avons conclu cette partie en établissant une étude comparative au sein d'une même classe et entre les deux classes en considérant différents critères: type de graphe en entrée, type de compression, .... \\
 
-La deuxième partie de notre travail consiste en l'implémentation d'une méthode de chaque classe que nous  avons proposées dans la première étape dans le but de les réunir dans une même plateforme et d'établir une comparaison plus objective entre ces techniques. De ce fait, nous avons proposé deux moteurs de compression de graphes (un moteur par classe). Le premier moteur $k^2$-GraCE exploite les propriétés de la matrice d'adjacence pour compresser le graphe. Il supporte trois types de graphe : graphes statiques orientés, graphes statiques non orientés et les graphes dynamiques. Nous l'avons doté d'une phase de pré-traitement qui permet d'exploiter davantage les caractéristiques des graphes. Le deuxième moteur P-GraCE quant à lui supporte trois types de graphe : graphes orientés statiques, graphes non orientés statiques et finalement les graphes étiquetés. Il englobe quatre approches de compression : une approche basée sur le beam search, une approche basée sur les méthodes de clustering, une approche basée sur le MinHashing et une approche basée sur l'extraction de motifs à partir de la matrice d'adjacence. Nous avons aussi proposé une nouvelle méthode de compression s'intitulant DDSM destinée pour les graphes dynamiques et permettant de fournir une compression interprétable du graphe initial. \\
+La deuxième partie de notre travail consiste en l'implémentation d'une méthode de chaque classe que nous  avons proposée dans la première étape dans le but de les réunir dans une même plateforme et d'établir une comparaison plus objective entre ces techniques. De ce fait, nous avons proposé deux moteurs de compression de graphes (un moteur par classe). Le premier moteur $k^2$-GraCE exploite les propriétés de la matrice d'adjacence pour compresser le graphe. Il supporte trois types de graphe : graphes statiques orientés, graphes statiques non orientés et les graphes dynamiques. Nous l'avons doté d'une phase de pré-traitement qui permet d'exploiter davantage les caractéristiques des graphes. Le deuxième moteur P-GraCE quant à lui supporte trois types de graphe : graphes orientés statiques, graphes non orientés statiques et finalement les graphes étiquetés. Il englobe quatre approches de compression : une approche basée sur le beam search, une approche basée sur les méthodes de clustering, une approche basée sur le MinHashing et une approche basée sur l'extraction de motifs à partir de la matrice d'adjacence. Nous avons aussi proposé une nouvelle méthode de compression s'intitulant DDSM destinée pour les graphes dynamiques et permettant de fournir une compression interprétable du graphe initial. \\
 
 La dernière étape de notre projet représente une étape d'évaluation des deux moteurs de compression ainsi que la méthode que nous avons proposée. Nous avons utilisé pour cela des graphes réels issus de domaines différents ainsi que trois métriques d'évaluation : le ratio de compression, le nombre de bits par nœud et le temps d'exécution. Dans le cas du moteur $k^2$-GraCE, nous avons montré que l'utilisation de la matrice d'adjacence dégrade les performances en terme de temps d'exécution et que l'utilisation de la liste d'adjacence ou la structure de la bibliothèque \gls{snap} donne des résultats meilleurs. Pour le module de pré-traitement de ce moteur, nous avons constaté que  l'utilisation d'algorithme de ré-ordonnancement  ne donne une amélioration que dans le cas des graphes qui ne sont pas issus du domaine du web. Nous avons aussi obtenu une amélioration d'un facteur de 2 du ratio de compression lorsque la partie supérieure uniquement de la matrice est considérée. Le meilleur ratio obtenu pour ce moteur est de 5474 dans le cas du graphe Retilia--toroise-network-bsv qui est un graphe dynamique.
 Pour le deuxième moteur P-GracE, les tests ont montré que, dans le cas de la méthode basée sur les propriétés de la matrice d'adjacence, les motifs de la classe (01) ou de la classe (03) (i.e les motifs de ayant la forme suivante: 10...010...0) sont plus intéressants. Nous avons aussi constaté que l'approche basée sur les méthodes de clustering produit une meilleur compression lors de l'utilisation des trois méthodes de clustering ensemble comme méthode d'extraction de motifs et la méthode \textit{Step} comme méthode de sélection. Concernant la méthode que nous avons proposée, nous avons obtenu un ratio de compression qui se stabilise à partir de 50 permutations avec un temps de compression compétitif.  
@@ -1123,24 +1106,28 @@ ASOregon &  13 milles nœuds & 37 milles liens \\ \hline
 							\item n : nombre de nœuds dans le graphe 
 							
 						\end{itemize}
-					\textbf{Sortie :} ensemble de structures\\							\noindent\rule{\textwidth}{1pt}
+					\textbf{Sortie :} structures : ensemble de structures\\							\noindent\rule{\textwidth}{1pt}
 						
 						
 				\begin{algorithmic} [1]
-				 \STATE 
+				
 				 \STATE D = [] //tableau de degré
-				 \STATE GCC : un graph				 				 \FOR{ i=0 .. n-1}
-				 \STATE D[i] = \textbf{Degré}(i)
+				 \STATE composantesConx = \{\} //Ensemble de sous graphes connexes
+				 \STATE GCC = G			 
+				 \WHILE{tailleGCC >2} 	 
+				 \FOR{ $v_i \in V$}
+				 \STATE D[i] = \textbf{Degré}($v_i$)
 				 \ENDFOR
 				 
-					\STATE hub = \{ i | max(D[i])\}
+					\STATE hub = \{ $v_i$ | i=max(D[i])\}
+					\STATE composantesConx = \textbf{composantes-connexe}(GCC)
+					\STATE Etoile = GCC($hub \cup \textbf{vosins}(hub)$)
+					\STATE GCC = \{ $g \in composantesConx$ | g ayant le degré maximal \}
+					\STATE structures = $structures \cup Etoile \cup \{composantesConx/GCC\}$
 					
-					\STATE spokes = \{ i | min(D[i])\} //nœuds isolés 
-					\STATE GCC = G(V) - \{$e_{hub}$\} - \{$e_{spokes}$\}
-					
-					
+					\ENDWHILE
 				
-				\STATE SlashBurn(GCC, Taille du GCC)  
+				
 				\end{algorithmic}
 			\end{algorithm}
 
@@ -1202,38 +1189,29 @@ ASOregon &  13 milles nœuds & 37 milles liens \\ \hline
 			\end{algorithm}
 
 \newpage
-\label{Louvain}
+\label{Spectral}
 
 
 \begin{algorithm}[H]
-					\label{alg:Lovain}
-					\caption{Louvain}
+					\label{alg:spectral}
+					\caption{Spectral}
 					\textbf{Entrée :}
 						\begin{itemize}[label=$\bullet$]
-							\item G(V,E) : Graphe non orienté pondéré
-							\item n : nombre de nœuds dans le graphe 
+							\item A : matrice d'adjacence du graphe
+							\item k : nombre de clusters généré aléatoirement. 
 							
 						\end{itemize}
-					\textbf{Sortie :} ensemble de structures\\							\noindent\rule{\textwidth}{1pt}
+					\textbf{Sortie :} ensemble de clusters\\							\noindent\rule{\textwidth}{1pt}
 						
 						
 				\begin{algorithmic} [1]
-				 \STATE //Phase 1
-				 \STATE $C$ = \{\{$v_i$ \} | $v_i \in G(V)$ \}
-				 \REPEAT
-				 \FOR{ $v_i \in C_x$ and $v_j \in C_y$ and $(v_i,v_j) \in G(E)$}
-					\STATE H = \{ $\Delta Q_i(C_x,C_y)$ | $C_x,C_y \in C$ \}
-					\IF{\textit{max}$\Delta Q_i(C_x,C_y)$ > 0}
-					\STATE $C_y$ = $C_y \cup \{v_i\}$
-					\STATE $C_x$ = $C_x$ - \{$v_i$\}
-					 \ENDIF
-					  \ENDFOR
-					  \STATE //Phase 2
-					 \STATE V' = \{ $C_x$ | $C_x \in C$ \}
-					  \STATE E' = \{ $\sum \frac{(v_i,v_j)}{1}$ | $v_i \in C_x$ | $v_j \in C_y$ | $e_{i,j} \in G(E)$ \}
-					 \STATE G = G'(V',E')
-					  \UNTIL{aucune amélioration possible}
-				\STATE ensemble de structures = \{ $v_i$ | $v_i \in G$ \} 	   
+				\STATE Calculer D la matrice des degrés de G.				 
+				 \STATE Calculer L la matrice Laplacienne de G : L = D - A
+				 \STATE  Calculer les k premiers vecteurs propres $u_1$, . . . , $u_k$ de L.
+				 \STATE Former la matrice U de taille $n \times k$ dont les colonnes
+sont $u_1$, . . . , $u_k$
+\STATE Créer des clusters $C_1$, . . . , $C_k$ sur les n lignes de U par
+k-means
 				\end{algorithmic}
 			\end{algorithm}
 
