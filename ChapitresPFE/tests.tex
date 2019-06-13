@@ -21,7 +21,7 @@ Dans ce chapitre, nous exposerons les différents résultats des mesures de perf
 	\end{itemize}
 	\section{Présentation des graphes de test}
 	Le tableau \ref{graphTest} regroupe les différents graphes de test utilisés pour l'évaluation de nos deux moteurs $k^2$-Grace et P-Grace. La première colonne classe les graphes selon leur type : Statique non orienté étiqueté, Statique non orienté non étiqueté, Statique  orienté et Dynamique orienté. Cette diversité revient à la particularité des graphes pris en entrées et leur caractéristiques qui diffèrent d'une méthode à une autre.
-Nous fournissons également une présentation des domaines d'application à partir desquels  les graphes sont issus. Le tableau donne également les caractéristiques de chaque graphe représenté par le nombre de nœuds et le nombre de liens. 
+Nous fournissons également une présentation des domaines d'application à partir desquels  les graphes sont issus. Le tableau donne également les caractéristiques de chaque graphe représentées par le nombre de nœuds et le nombre de liens. Dans le cas des graphes dynamiques, le nombre de liens désigne le nombre de liens temporels.
 	 
 
 	\begin{table}[H]
@@ -45,9 +45,10 @@ Nous fournissons également une présentation des domaines d'application à part
                            & \multicolumn{2}{l|}{}                                   & web-polblogs  \citep{rep1}                & 644                    & 2280                    & Graphe du Web                                                                         \\ \cline{4-7}
                            & \multicolumn{2}{l|}{}                                    & wiki-Vote   \citep{snapnets}                  & 7115                   & 103689                  & Graphes des réseaux sociaux                                                               \\ \cline{1-7}
                          
-\multirow{3}{*}{ \rotatebox[origin=c]{90}{ Dynamique }} & \multicolumn{2}{l|}{\multirow{3}{*}{  Orienté }}            & aves-weaver-social \citep{rep1}   & 441                    &                         & Réseaux sociaux                                                                    \\ \cline{4-7}
-                           & \multicolumn{2}{l|}{}                                    & reptilia-tortoise-network-bsv \citep{rep1} & 360                    &                         & Réseaux d'interaction des animaux                                                  \\ \cline{4-7}
-                           & \multicolumn{2}{l|}{}                                    & reptilia-tortoise-network-fi  \citep{rep1}& 784                    &                         & Réseaux d'interaction des animaux                                                  \\ \cline{1-7}
+\multirow{3}{*}{ \rotatebox[origin=c]{90}{ Dynamique }} & \multicolumn{2}{l|}{\multirow{3}{*}{  Orienté }}            & aves-weaver-social \citep{rep1}   & 445                    &               1400         & Réseaux d’interaction
+des animaux \\ \cline{4-7}
+                           & \multicolumn{2}{l|}{}                                    & reptilia-tortoise-network-bsv \citep{rep1} & 360                    &                554         & Réseaux d'interaction des animaux                                                  \\ \cline{4-7}
+                           & \multicolumn{2}{l|}{}                                    & reptilia-tortoise-network-fi  \citep{rep1}& 784                    &             1700            & Réseaux d'interaction des animaux                                                  \\ \cline{1-7}
 \end{tabular}
 \caption{Description des Graphes de Tests}
 \label{graphTest}
@@ -220,12 +221,12 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 
 	\section{Évaluation du moteur P-GraCE}
 	
-	Nous évaluerons, dans cette partie, les quatre approches de compression par extraction de motifs incluses dans le moteur P-GraCE. 
-	Dans un premier temps, nous étudierons aussi le rondement du beam-search en fonction du niveau d'agrégation.  Nous enchainerons par la suite avec l'évaluation des performances de compression par extraction de motifs en utilisant des méthodes de détection de communautés. Nous aborderons par la suite l'approche basée sur les propriétés de la matrice d'adjacence où nous allons étudier l'influence du type et de la taille des motifs sur les mesures de performances.
-	Finalement, nous présenterons les différents tests relatifs à la méthode de compression que nous avons proposée: DDSM qui est destinée aux graphes dynamiques.
-	\subsection{Évaluation de l'algorithme du beam-search :}
+	Nous évaluerons, dans cette partie, les méthodes de compression par extraction de motifs incluses dans le moteur P-GraCE. 
+	Dans un premier temps, nous étudierons  le rondement de la méthode Subdue en fonction du niveau d'agrégation.  Nous enchainerons par la suite avec l'évaluation des performances de compression de \gls{vog} et \gls{ConDenSe} en fonction de la méthode de détection de communautés et de l'heuristique de sélection utilisés pour la compression. Nous aborderons par la suite l'approche basée sur les propriétés de la matrice d'adjacence représentée par la méthode \gls{gcupmt} où nous allons étudier l'influence du type et de la taille des motifs sur les mesures de performances.
+	Finalement, nous présenterons les différents tests relatifs à la méthode de compression que nous avons proposée: \gls{ddsm} qui est destinée aux graphes dynamiques.
+	\subsection{Évaluation de la méthode Subdue:}
 	
-  Durant cette section, nous considérons le cas des graphes non orientés et étiquetés. Nous évaluerons le rendement de compression de l'algorithme du beam-search sur ces derniers tout en prêtant attention au temps d'exécution. Le tableau ci-dessous résume les résultats obtenus.
+  Durant cette section, nous considérons le cas des graphes non orientés et étiquetés. Nous évaluerons le rendement de compression de l'algorithme Subdue sur ces derniers tout en prêtant attention au temps d'exécution. La figure ci-dessous résume les résultats obtenus.
   
 
 	\begin{figure}[H]
@@ -233,7 +234,7 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 			
 			\includegraphics[scale=0.37]{ressources/image/beam.png}
 			
-			\caption{Résultats des tests du beam-search.}
+			\caption{Résultats des tests de Subdue.}
 			\label{fig:test-beam}
 	
 	\end{figure}
@@ -242,13 +243,13 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 	
 	  La figure \ref{fig:test-beam} illustre les résultats de tests obtenus pour différents graphes en fonction du nombre d'itérations de l'algorithme (le niveau d'agrégation). Nous constatons une amélioration du ratio de compression dans la majorité des cas. En contre partie, nous remarquons que le temps d'exécution  augmente surtout dans le cas des grands graphes (exemple du graphe credits). Le choix du nombre d'itérations (niveau de la hiérarchie d'agrégation) dépend des performances voulues. Cependant, nous pensons qu'un  nombre d'itération égale à 70 offre déjà un bon compromis entre le temps d'exécution et le ratio de compression.
 	
-	\subsection{Évaluation des techniques basées sur les méthodes de clustering :}
+	\subsection{Évaluation des techniques basées sur les méthodes de clustering (\gls{vog} et \gls{ConDenSe}) :}
 	
-	Dans cette partie, nous proposons de tester les méthodes de compression basées sur les techniques de clustering en faisant varier différents paramètres. Dans un premier temps, nous fixerons  Slashburn comme méthode d'extraction de motifs et nous évaluerons les performances de compression obtenus avec la méthode de sélection \textit{topk} en considérant à chaque fois une portion uniquement des structures découvertes (k=25\%,k= 33,33\%, k=50\%, k=100\%). Par la suite, nous étudierons l'effet  du choix de la méthode de sélection sur la qualité de compression en  utilisant la même méthode d'extraction de motifs. Finalement, nous analyserons l'effet de la méthode de clustering sur les résultats en fixant cette fois la méthode \textit{Step} comme méthode de sélection.
+	Dans cette partie, nous proposons de tester les méthodes de compression basées sur les techniques de clustering à savoir \gls{vog} et \gls{ConDenSe} en faisant varier différents paramètres. Dans un premier temps, nous fixerons  Slashburn comme méthode d'extraction de motifs et nous évaluerons les performances de compression obtenus avec la méthode de sélection \textit{TopK} en considérant à chaque fois une portion uniquement des structures découvertes (k=25\%,k= 33,33\%, k=50\%, k=100\%). Par la suite, nous étudierons l'effet  du choix de la méthode de sélection sur la qualité de compression en  utilisant la même méthode d'extraction de motifs. Finalement, nous analyserons l'effet de la méthode de clustering sur les résultats en fixant cette fois la méthode \textit{Step} comme méthode de sélection. Rappelons que la méthode \gls{vog} utilise SlashBurn comme méthode de clustering et les trois méthodes \textit{Plain}, \textit{TopK} et \gls{gnf} comme méthodes de sélection. De son coté \gls{ConDenSe} utilise plusieurs méthodes de clustering et la méthode \textit{Step} comme méthode de sélection.
 	
 	
 		
-		\subsubsection{Étude de l'influence du nombre de structures sélectionnées :}
+		\subsubsection{Étude de l'influence du nombre de structures sélectionnées (\gls{vog}):}
 	
 		
 		\begin{figure}[H]
@@ -261,9 +262,9 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 	
 	\end{figure}
 	
-	La figure \ref{fig:test-select} illustre les mesures des trois métriques : ratio de compression, nombre de bits par nœud et le temps d'exécution en considérant différentes portions des sous-structures découvertes. Nous remarquons que le ratio de compression est presque équivalent pour les différentes valeurs de k. Cependant, nous observons bien que la considération de toutes les structures donne un meilleur ratio de compression de 1,06 pour chocWiki, de 1,23 pour netscience et de 1,03 pour le graphe Caida. Cette hypothèse peut être facilement confirmée avec le nombre de bits par noeud qui atteint sa valeur minimale avec la méthode \textit{Plain}. Quant au temps d'exécution, nous constatons  que la méthode \textit{Plain} offre toujours de meilleur performance. En effet, la méthode \textit{topk} ordonne les sous-structures selon le gain d'encodage local avant la sélection engendrant ainsi un temps supplémentaire contrairement à la méthode \textit{plain} qui sélectionne toutes les sous-structures sans aucun ordre. 
+	La figure \ref{fig:test-select} illustre les mesures des trois métriques : ratio de compression, nombre de bits par nœud et le temps d'exécution en considérant différentes portions des sous-structures découvertes. Nous remarquons que le ratio de compression est presque équivalent pour les différentes valeurs de k. Cependant, nous observons bien que la considération de toutes les structures donne un meilleur ratio de compression de 1,06 pour chocWiki, de 1,23 pour netscience et de 1,03 pour le graphe Caida. Cette hypothèse peut être facilement confirmée avec le nombre de bits par noeud qui atteint sa valeur minimale avec la méthode \textit{Plain}. Quant au temps d'exécution, nous constatons  que la méthode \textit{Plain} offre toujours de meilleur performance. En effet, la méthode \textit{TopK} ordonne les sous-structures selon le gain d'encodage local avant la sélection engendrant ainsi un temps supplémentaire contrairement à la méthode \textit{plain} qui sélectionne toutes les sous-structures sans aucun ordre. Nous déduisons donc que \gls{vog} donne une meilleur qualité de compression avec Plain comme méthode de sélection.
 		
-		\subsubsection{Étude de l'influence de la méthode de sélection :}
+		\subsubsection{Étude de l'influence de la méthode de sélection (\gls{vog} vs \gls{ConDenSe}):}
 		
 		\begin{figure}[H]
 	
@@ -277,14 +278,14 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 		
 		Dans cette partie, nous présenterons les tests relatifs à l'utilisation de trois méthodes de sélection : Step, \gls{gnf} et \textit{Plain}. La figure \ref{fig:test-vogcond} résume les résultats obtenus sur  trois graphes non orientés statiques.
 		
-		Nous remarquons que la méthode Step donne de meilleur performances de compression avec un ratio maximale de 1,26 pour le graphe netscience qui compte 379 nœuds. En effet, si nous voulons classer ces méthodes de sélection selon les résultats du ratio et le nombre de bits par nœud nous obtenons le classement suivant: Step, \textit{Plain} et \gls{gnf} et ce pour tout les graphes utilisés dans ce test. Par contre, nous remarquons que la méthode Step donne un temps d'exécution qui est très élevé par rapport aux deux autres méthodes surtout dans le cas des grands graphes. Par exemple dans le cas du graphe Caida, nous avons obtenu un temps d'exécution de plus de quatre (04) heures avec la méthode Step  contre un temps d'exécution entre une (01) et deux (02) minutes pour les deux autres méthodes pour une amélioration de 0,04 dans le ratio de compression.
+		Nous remarquons que la méthode Step donne de meilleur performances de compression avec un ratio maximale de 1,26 pour le graphe netscience qui compte 379 nœuds. En effet, si nous voulons classer ces méthodes de sélection selon les résultats du ratio et le nombre de bits par nœud nous obtenons le classement suivant: Step, \textit{Plain} et \gls{gnf} et ce pour tout les graphes utilisés dans ce test. Par contre, nous remarquons que la méthode Step donne un temps d'exécution qui est très élevé par rapport aux deux autres méthodes surtout dans le cas des grands graphes. Par exemple dans le cas du graphe Caida, nous avons obtenu un temps d'exécution de plus de quatre (04) heures avec la méthode Step  contre un temps d'exécution entre une (01) et deux (02) minutes pour les deux autres méthodes pour une amélioration de 0,04 dans le ratio de compression. Nous tirant donc la conclusion que \gls{ConDenSe} avec son heuristique de sélection \textit{Step} donne de meilleures résultats de compression que la méthode \gls{vog} avec ses deux algorithmes de sélection \textit{Plain} et \gls{gnf} mais avec un temps d'exécution défavorable.
 		
-		\subsubsection{Étude de l'influence de la méthode de clustering :}	
+		\subsubsection{Étude de l'influence de la méthode de clustering sur les performance de \gls{ConDenSe}:}	
 		
 		\begin{figure}[H]
 			\centering
 			
-			\includegraphics[scale=0.7]{ressources/image/clustmthd.png}
+			\includegraphics[scale=0.6]{ressources/image/clustmthd.png}
 			
 			\caption{Résultats des tests de l'influence de la méthode de clustering .}
 			\label{fig:test-clustmtd}
@@ -294,15 +295,16 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 	
 	Dans ce dernier test, nous nous sommes intéressées à voir le gain apporté par la méthode de clustering dans le ratio de compression. La figure \ref{fig:test-clustmtd} illustre les résultat obtenus. Nous avons considéré trois (03) méthodes de clustering: Slashburn, Spectral et K-cores. 
 	
-	Selon le graphe, les deux méthodes de compression Spectral et K-Cores donnent de meilleur résultat que SLashburn pour les différents graphes. En effet, dans le cas du graphe ChocWiki la méthode spectrale donne le meilleur ratio (1,30). Tant dis que dans le cas des deux autres graphes, netscience et Caida, la méthode K-cores donne un meilleur ratio de 1,35 et 1,18 respectivement. Cependant, la combinaison des trois méthodes d'extraction de motifs donne une amélioration significative du ratio dans les trois graphes de test.
-	
+	Selon le graphe, les deux méthodes de compression Spectral et K-Cores donnent de meilleur résultat que SlaShburn pour les différents graphes. En effet, dans le cas du graphe ChocWiki la méthode spectrale donne le meilleur ratio (1,30). Tant dis que dans le cas des deux autres graphes, netscience et Caida, la méthode K-cores donne un meilleur ratio de 1,35 et 1,18 respectivement. Cependant, la combinaison des trois méthodes d'extraction de motifs donne une amélioration significative du ratio dans les trois graphes de test. 
+Nous déduisons donc que \gls{ConDenSe} donne de très bon résultats quand les trois méthodes de détection de communautés sont appliquées ensemble.
+
 	%Nous mesurons aussi le nombre de sous-strcuture dans chaque cas que nous accompagnons dans le tableau en dessous de la figure \ref{fig:test-clustmtd}. Nous remarquons que Slashburn donne dans tous les cas un nombre plus grands de sous-structures que les deux autres méthodes.
 	
 	
 	
-	\subsection{Étude de l'influence du type et de la taille des motifs dans les méthodes basées sur la matrice d'adjacence :}
+	\subsection{Étude de l'influence du type et de la taille des motifs dans la méthode \gls{gcupmt} :}
 	
-	Durant cette partie, nous présenterons les résultats obtenus lors de l'évaluation de l'extraction de motifs à partir de la matrice d'adjacence. La figure \ref{fig:test-m} illustre l'évolution du ratio de compression en fonction de la taille du motif pour les trois classes offertes par le moteur P-GracE.
+	Durant cette partie, nous présenterons les résultats obtenus lors de l'évaluation de l'extraction de motifs à partir de la matrice d'adjacence à travers la méthode \gls{gcupmt}. La figure \ref{fig:test-m} illustre l'évolution du ratio de compression en fonction de la taille du motif pour les trois types de motifs offerts par le moteur P-GracE.
 		\begin{figure}[H]
 		\begin{center}
 		
@@ -315,7 +317,7 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 		\end{center}
 	\end{figure}
 	
-	Dans le cas de la première et la troisième classe de motifs, nous remarquons une amélioration du ratio de compression lorsque leur taille prend des grandes valeurs. Cette observation est du au gain obtenu en remplaçant des motifs de taille $2^n$ bits par \textit{n} bits pour la premier type de motfs et \textit{n+1} bits pour le troisième, par exemple les motifs de taille 256bits seront remplacés par uniquement 8bits dans le cas de la classe (01) et par 9bits dans le cas de la classe (03). Pour la deuxième classe de motifs, le ratio de compression est resté presque constant pour différentes valeurs de la taille des motifs. Nous remarquons aussi que ce dernier au tour de 1 dans la majorité des cas signifiant ainsi que le taille du graphe en sortie est presque équivalente à la taille du graphe initial. Ce résultat ne peut être obtenu que dans le cas où peu de motifs ont été trouvés dans la matrice d'adjacence. Nous constatons donc que les motifs de cette deuxième classe ne sont pas fréquents dans les matrices d'adjacence des graphes réels. 
+	Dans le cas de la première et la troisième classe de motifs, nous remarquons une amélioration du ratio de compression lorsque leur taille prend des grandes valeurs. Cette observation est du au gain obtenu en remplaçant des motifs de taille $2^n$ bits par \textit{n} bits pour le premier type de motifs et \textit{n+1} bits pour le troisième, par exemple les motifs de taille 256bits seront remplacés par uniquement 8bits dans le cas de la classe (01) et par 9bits dans le cas de la classe (03). Pour la deuxième classe de motifs, le ratio de compression est resté presque constant pour différentes valeurs de la taille des motifs. Nous remarquons aussi que ce dernier est autour de 1 dans la majorité des cas, signifiant ainsi que la taille du graphe en sortie est presque équivalente à la taille du graphe initial. Ce résultat ne peut être obtenu que dans le cas où peu de motifs ont été trouvés dans la matrice d'adjacence. Nous constatons donc que les motifs de cette deuxième classe ne sont pas fréquents dans les matrices d'adjacence des graphes réels. 
 	
 	
 	
@@ -357,11 +359,11 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 	
 	Nous fournissons dans la figure \ref{fig:stat-DDSM} les différentes sous-structures découvertes pour un exemple d'exécution avec 50 permutations. Dans le cas du graphe Aves-weaver-social, nous remarquons que nous obtenons 30 sous-structures denses qui apparaissent de manière périodique et une seule sous-strcuture qui apparait de manière aléatoire. Les sous-structures périodiques représentent donc des utilisateurs du réseaux qui s'envoient des messages  périodiquement (exemple: réunion dans un contexte de télé-travail, des groupes d'étude, ...). Dans les deux autres réseaux qui font parties des réseaux d'interaction des animaux nous remarquons des sous-structures constantes qui représentent peut être des animaux appartenant à un même troupeau. Nous observons aussi des sous-strcutures périodiques qui peuvent être interprétées comme des chasses d'animaux pour la nourriture. Un autre type sont les sous-structures qui apparaissent dans une seule période représentant en générale le phénomène de couplage chez les animaux dans des périodes bien précises.
 	
-	DDSM offre ainsi non pas uniquement la compression du graphe initial mais aussi la possibilité de l'analyser et d'interpréter les informations les plus pertinentes incluses dans ce dernier.
+	\gls{ddsm} offre ainsi non pas uniquement la compression du graphe initial mais aussi la possibilité de l'analyser et d'interpréter les informations les plus pertinentes incluses dans ce dernier.
 	
 	\section{Comparaison entre les différentes méthodes:}
 	
-	Après avoir évaluer les différentes configurations possibles des deux moteurs : $k^2$-GraCE et P-GraCE, nous nous intéresserons dans cette partie à établir une étude comparative entre les méthodes implémentées dans les deux moteurs ainsi que les classes auxquelles elles appartiennent. Cette partie sera donc organisée en trois sous-sections chacune englobant les méthodes de compression acceptant le même type de graphe en entrée.
+	Après avoir évaluer les différentes configurations possibles des deux moteurs : $k^2$-GraCE et P-GraCE, nous nous intéresserons dans cette partie à établir une étude comparative entre les méthodes implémentées dans les deux moteurs ainsi que les classes auxquelles elles appartiennent. Cette partie sera donc organisée en trois sous-sections, chacune englobe les méthodes de compression acceptant le même type de graphe en entrée.
 	
 	\subsection{Évaluation des méthodes destinées aux graphes orientés statiques :}
 \begin{figure}[H]
@@ -374,7 +376,7 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 		\end{center}
 	\end{figure}	
 	
-	Nous considérons dans cette partie les graphes orientés: bio, web-edu et web-polblogs, pour comparer entre trois méthodes de compression destinées pour ce type de graphe: $k^2$-GraCE, l'approche du Minhashing et enfin l'approche basée sur la matrice d'adjacence. Nous utilisons pour cela deux métriques : le ratio de compression (figure à gauche) et le temps d'exécution (figure à droite). Nous remarquons que le moteur $k^2$-GraCE donne les meilleurs résultats en terme d'espace mémoire (le meilleur ratio). Cependant, il donne le plus grand temps d'exécution. Nous observons aussi que les deux autres méthodes donnent des résultats presque équivalents dans le des graphes bio et web-polblogs, et que la technique du Minhashing donne un meilleur résultat dans le cas du graphe web-edu avec un ratio de 112 vs un ratio de 26 pour la méthode basée sur la matrice d'adjacence. 
+	Nous considérons dans cette partie les graphes orientés: bio, web-edu et web-polblogs, pour comparer entre trois méthodes de compression destinées pour ce type de graphe: $k^2$-GraCE pour les graphes orientés statique, la méthode \gls{dsm} et enfin la méthode \gls{gcupmt} basée sur la matrice d'adjacence. Nous utilisons pour cela deux métriques : le ratio de compression (figure à gauche) et le temps d'exécution (figure à droite). Nous remarquons que le moteur $k^2$-GraCE donne les meilleurs résultats en terme d'espace mémoire (le meilleur ratio). Cependant, il donne le plus grand temps d'exécution. Nous observons aussi que les deux autres méthodes donnent des résultats presque équivalents dans le des graphes bio et web-polblogs, et que la méthode \gls{dsm} donne un meilleur résultat dans le cas du graphe web-edu avec un ratio de 112 vs un ratio de 26 pour la méthode \gls{gcupmt}. 
 	
 	\subsection{Évaluation des méthodes destinées aux graphes non orientés statiques :}
 	
@@ -385,9 +387,9 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 	\label{fig:K2-vog}
 \end{figure}	
 
-	La figure \ref{fig:K2-vog}  donne les résultats de compression: ratio et temps de compression des deux méthodes de compression des moteur P-GraCE et $k^2$-GraCE dans le cas des graphes non orientés statiques. Nous utilisons dans ce test les graphes : ChocWiki, Caida et netscience. Pour le moteur $k^2$-GraCE, nous fixerons la valeur de k à 2 en considérant uniquement la partie supérieure de la matrice d'adjacence. Tant dis que pour le moteur P-GraCE, nous utiliserons l'approche basée sur la méthode de clustering avec Spectral comme méthode de clustering et la méthode \textit{step} comme méthode de sélection.
+	La figure \ref{fig:K2-vog}  donne les résultats de compression: ratio et temps de compression des deux méthodes de compression des moteur P-GraCE et $k^2$-GraCE dans le cas des graphes non orientés statiques. Nous utilisons dans ce test les graphes : ChocWiki, Caida et netscience. Pour le moteur $k^2$-GraCE, nous fixerons la valeur de k à 2 en considérant uniquement la partie supérieure de la matrice d'adjacence. Tant dis que pour le moteur P-GraCE, nous utiliserons \gls{ConDenSe} avec l'ensemble des méthodes de clustering pour l'extraction de motifs et la méthode \textit{step} pour la sélection.
 	
-	D'après l'illustration, nous observons que le ratio de compression du moteur $k^2$-GraCE  est nettement meilleur que celui du moteur P-GraCE. Nous citons l'exemple du graphe Caida qui comptent 26475 nœuds et 53381 arêtes où nous obtenons un ratio de compression de 879 dans $k^2$-GraCE contre un ratio de 1,17 avec le moteur P-GraCE. Quant au temps d'exécution, nous remarquons que le moteur P-GraCE  est beaucoup plus rapide que à $k^2$-GraCE surtout lorsque la taille du graphe devient grande (exemple du graphe Caida).
+	D'après l'illustration, nous observons que le ratio de compression du moteur $k^2$-GraCE  est nettement meilleur que celui du moteur P-GraCE. Nous citons l'exemple du graphe Caida qui comptent 26475 nœuds et 53381 arêtes où nous obtenons un ratio de compression de 879 dans $k^2$-GraCE contre un ratio de 1,40 avec le moteur P-GraCE. Quant au temps d'exécution, nous remarquons que le moteur $k^2$-GraCE est beaucoup plus rapide que P-GraCE surtout lorsque la taille du graphe devient grande (exemple du graphe Caida).
  
 	
 	\subsection{Évaluation des méthodes destinées aux graphes dynamiques :}
@@ -405,19 +407,19 @@ Nous constatons donc que l'utilisation de ce module n'a pas amélioré les perfo
 	\end{figure}
 	
 	
-	Nous remarquons que la ratio de compression est meilleur dans le moteur $k2$-GraCE. En effet, la méthode DDSM donne un ratio de compression très faible en le comparant avec le moteur $k^2$-GraCE (exemple: 3689 vs 129 pour le graphe aves-social-network). Cependant, nous observons bien que le temps d'exécution est nettement meilleur dans le cas de notre méthode. Nous rappelons aussi que notre méthode permet d'extraire les sous-graphes et les communautés les plus denses (les plus importantes) ainsi que leur comportement temporel avec un accès direct alors que le moteur $k^2$-GraCE nécessite un traitement supplémentaire qui peut être lourd dans le cas des grands graphes. 
+	Nous remarquons que la ratio de compression est meilleur dans le moteur $k^2$-GraCE. En effet, la méthode \gls{ddsm} donne un ratio de compression très faible en la comparant avec le moteur $k^2$-GraCE (exemple: 3689 vs 129 pour le graphe aves-social-network). Cependant, nous observons bien que le temps d'exécution est nettement meilleur dans le cas de notre méthode. Nous rappelons aussi que notre méthode permet d'extraire les sous-graphes et les communautés les plus denses (les plus importantes) ainsi que leur comportement temporel avec un accès direct alors que le moteur $k^2$-GraCE nécessite un traitement supplémentaire qui peut être lourd dans le cas des grands graphes. 
 	
 	 
 	
 	\section{Synthèse des tests}
 	
-	A travers ce chapitre,  nous avons pu évaluer nos deux moteurs tout en étudiant l'effet de différentes configurations sur leur performance. Des datasets de domaines hétérogènes ont été employés durant cette étape afin de déduire l'influence de ces derniers sur le choix de l'algorithme de compression. Nous avons opté pour trois métriques d'évaluation : ratio de compression, le nombre de bits par nœuds et le temps d'exécution de l'algorithme de compression.
+	A travers ce chapitre,  nous avons pu évaluer nos deux moteurs tout en étudiant l'effet de différentes configurations sur leurs performances. Des datasets de domaines hétérogènes ont été employés durant cette étape afin de déduire l'influence de ces derniers sur le choix de l'algorithme de compression. Nous avons opté pour trois métriques d'évaluation : ratio de compression, le nombre de bits par nœud et le temps d'exécution de l'algorithme de compression.
 	
-	Dans le cas du moteur $k^2$-GraCE, nous avons constaté que l'utilisation de la matrice d'adjacence pour la construction de l'arbre est trop couteuse en temps d'exécution. L'utilisation de la structure proposée dans la bibliothèque \gls{snap} donne des résultats nettement meilleurs pour cette métrique. Nous avons aussi observé que le choix du paramètre k influe fortement sur les performances de la compression. Selon les résultats obtenus, la valeur optimale dans le cas statique est bien k=2. De plus, nous avons constaté que l'utilisation d'un ré-ordonnancement des nœuds n'est intéressante que dans le cas des graphes autres que les graphes du web où nous avons obtenu une amélioration du ratio de compression d'un facteur de 1,4 dans le cas du graphe wiki-Vote. La généralisation  proposée pour le cas des graphes statiques non orientés permet de doubler le ratio de compression améliorant ainsi la qualité de la compression. D'autre part, nous avons remarqué que l'utilisation du graphe original dans le cas dynamique donne de meilleurs résultats. En effet, nous avons constaté que l'utilisation de la matrice de différence n'est bénéfique que dans le cas où les captures possèdent un degré élevé de ressemblance des liens, ce qui n'est généralement pas le cas dans les graphes réels.
+	Dans le cas du moteur $k^2$-GraCE, nous avons constaté que l'utilisation de la matrice d'adjacence pour la construction de l'arbre est trop couteuse en temps d'exécution. L'utilisation de la structure proposée dans la bibliothèque \gls{snap} donne des résultats nettement meilleurs pour cette métrique. Nous avons aussi observé que le choix du paramètre k influe fortement sur les performances de la compression. Selon les résultats obtenus, la valeur optimale dans le cas statique est bien k=2. De plus, nous avons constaté que l'utilisation d'un ré-ordonnancement des nœuds n'est intéressant que dans le cas des graphes autres que les graphes du web où nous avons obtenu une amélioration du ratio de compression d'un facteur de 1,4 dans le cas du graphe wiki-Vote. La généralisation  proposée pour le cas des graphes statiques non orientés permet de doubler le ratio de compression améliorant ainsi la qualité de la compression. D'autre part, nous avons remarqué que l'utilisation du graphe original dans le cas dynamique donne de meilleurs résultats. En effet, nous avons constaté que l'utilisation de la matrice de différence n'est bénéfique que dans le cas où les captures possèdent un degré élevé de ressemblance des liens, ce qui n'est généralement pas le cas dans les graphes réels.
 	
-	Le deuxième moteur, P-GraCE, permet de compresser le graphe en entrée avec ses sous-structures les plus importantes. Les tests ont montré qu'il n'est pas intéressant d'utiliser le deuxième type de motifs dans les méthodes basées sur les propriétés de la matrice d'adjacence car il est peu fréquent dans les graphes réels. Pour le beam-search, nous avons bien remarqué que le niveau d'agrégation doit être choisi d'une manière qui assure un compromis entre le temps d'exécution et le ratio de compression. L'évaluation des différentes phases de  l'approche basée sur les méthodes de clustering a montré que les paramètres donnant les meilleurs performances consiste en :(1) l'utilisation de la méthode \textit{Step} comme méthode de sélection, (2) l'utilisation des trois méthodes de clustering ensembles pour l'extraction de motifs. Finalement, l'évaluation de la méthode que nous proposons a montré qu'elle donne des résultats compétitifs en terme de temps de compression. Certes, le moteur k2-GraCE offre un meilleur ratio dans le cas dynamique mais il n'offre pas les mêmes avantages que la méthode que nous proposons. En effet, le résultat obtenu par DDSM permet une analyse très rapide des communautés et leurs comportements temporels.
+	Le deuxième moteur, P-GraCE, permet de compresser le graphe en entrée avec ses sous-structures les plus importantes. Les tests ont montré qu'il n'est pas intéressant d'utiliser le deuxième type de motifs dans la méthode  basée sur les propriétés de la matrice d'adjacence (\gls{gcupmt}) car il est peu fréquent dans les graphes réels. Pour la méthode Subdue, nous avons bien remarqué que le niveau d'agrégation doit être choisi d'une manière qui assure un compromis entre le temps d'exécution et le ratio de compression. L'évaluation des méthodes basées sur les techniques de clustering, à savoir \gls{vog} et \gls{ConDenSe}, a montré que l'utilisation de la méthode \gls{ConDenSe} donne les meilleurs performances avec : (1) \textit{Step} comme méthode de sélection, (2) l'ensemble des trois méthodes de clustering pour l'extraction de motifs. Finalement, l'évaluation de la méthode \gls{ddsm} que nous proposons a montré qu'elle donne des résultats compétitifs en terme de temps de compression. Certes, le moteur $k^2$-GraCE offre un meilleur ratio dans le cas dynamique mais il n'offre pas les mêmes avantages que la méthode que nous proposons. En effet, le résultat obtenu par \gls{ddsm} permet une analyse très rapide des communautés et leurs comportements temporels.
 	
-	La comparaison entre les deux moteurs nous a amené à déduire que l'utilisation du moteur $k^2$-GraCE est meilleur dans le cas où le but est de diminuer la taille du graphe uniquement. Cependant, le moteur P-GraCE permet d'avoir des informations interprétables qui aident dans l'analyse du graphe car il permet de synthétiser l'information incluse dans le graphe initiale sous forme des sous-structures les plus pertinentes.
+	La comparaison entre les deux moteurs nous a amené à déduire que l'utilisation du moteur $k^2$-GraCE est meilleur dans le cas où le but est de diminuer la taille du graphe uniquement. Cependant, le moteur P-GraCE permet d'avoir des informations interprétables qui aident dans l'analyse du graphe car il permet de synthétiser l'information incluse dans le graphe initial sous forme des sous-structures les plus pertinentes.
 	
 	
 	
