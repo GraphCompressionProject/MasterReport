@@ -103,7 +103,7 @@
 \contentsline {section}{\numberline {5.6}Comparaison entre les diff\IeC {\'e}rentes m\IeC {\'e}thodes:}{99}{section.5.6}
 \contentsline {subsection}{\numberline {5.6.1}\IeC {\'E}valuation des m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes orient\IeC {\'e}s statiques :}{99}{subsection.5.6.1}
 \contentsline {subsection}{\numberline {5.6.2}\IeC {\'E}valuation des m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes non orient\IeC {\'e}s statiques :}{100}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}\IeC {\'E}valuation des m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes dynamiques :}{101}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.3}\IeC {\'E}valuation des m\IeC {\'e}thodes destin\IeC {\'e}es aux graphes dynamiques :}{100}{subsection.5.6.3}
 \contentsline {section}{\numberline {5.7}Synth\IeC {\`e}se des tests}{101}{section.5.7}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Conclusion g\IeC {\'e}n\IeC {\'e}rale}{103}{section.5.7}
 \contentsline {chapter}{\numberline {A}Extraction de voisins dans un arbre $k^2$-tree}{105}{appendix.A}
